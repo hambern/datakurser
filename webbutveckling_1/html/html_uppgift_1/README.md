@@ -4,16 +4,28 @@
 
 I denna uppgift får du:
 
-- En png-bild på den färdiga sidan
-- En css-fil med CSS-kod. Denna får du _inte_ röra.
-- En html-fil där taggarna tagits bort
+- En [png-bild](facit.png) på den färdiga sidan
+- En [css-fil](style.css) med CSS-kod. Denna får du _inte_ röra.
+- En [html-fil](index.html) där taggarna tagits bort
 
 Din uppgift är att skriva tillbaka rätt taggar på rätt ställe så att din hemsida ser exakt ut som bilden.
 
 När du är klar packar du hela din mapp till en zip-fil och lämnar in den
 
+## Taggar
+
+De taggar som är bra att känna till är:
+
+- Länk: `a`
+- Bild: `img`
+- Stycke: `p`
+- Block: `div`
+- Rubriker: `h1`, `h2`, `h3`
+- Tabeller: `table`, `th`, `tr`, `td`
+- Listor: `ol`, `ul`, `li`
+- Avdelare: `hr`
+
 ## Tips
 
 - Det enda attribut du behöver använda är `href` i länktaggen
-- Horisontella avdelare gör du med taggen: `<hr>`
-- Tänk att indentera din kod så blir det lättare att hitta eventuella fel
+- Tänk att [indentera](https://www.freecodecamp.org/news/how-to-indent-in-html-and-why-it-is-important/) din kod så blir det lättare att hitta eventuella fel
