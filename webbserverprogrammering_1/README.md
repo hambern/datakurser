@@ -47,8 +47,8 @@ Du kan också, när du fyllt i korrekt information i PhpStorm, logga in via ssh 
    2. Port: `3690`
    3. Username: Ditt login till servern (börjar i regel med dina initialer följt av en serie siffror)
    4. Password: Det lösenord du fått till servern
-   5. Root path: `home/student/vt24/` följt av ditt användarnamn
-   6. Web server url: `http://student.oedu.se/~` följt av ditt användarnamn
+   5. Root path: `home/student/vt24/ditt_login`
+   6. Web server url: `http://student.oedu.se/~ditt_login`
 4. Ange följande information under "Mappings"
    1. Local path: Välj den mapp på datorn du vill använda. Skapa exempelvis en mapp som synkas till OneDrive med namnet `Kod`
    2. Deplyment path: `/public_html`
