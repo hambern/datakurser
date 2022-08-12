@@ -16,7 +16,7 @@ I denna mapp finns följande mappar:
 
 De kunskaper du ska inhämta till detta kursmoment hittar du på adressen: https://www.w3schools.com/git/default.asp
 
-## lektioner
+## Lektioner
 
 I denna mapp lägger jag upp alla kortare genomgångar vi genomför under kursen
 
