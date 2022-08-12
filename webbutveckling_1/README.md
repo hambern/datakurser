@@ -12,6 +12,7 @@ I denna mapp finns följande mappar:
 - [html](html)
 - [javascript](javascript)
 - [lektioner](lektioner)
+- [projekt](projekt)
 
 ## Validering
 
