@@ -5,7 +5,7 @@
 I denna uppgift får du:
 
 - En [png-bild](facit.png) på den färdiga sidan
-- En [css-fil](style.css) med CSS-kod. Denna får du _inte_ röra.
+- En [css-fil](style.css) med CSS-kod. Denna får du _inte_ röra. Däremot får du gärna titta på den.
 - En [html-fil](index.html) där taggarna tagits bort
 
 Din uppgift är att skriva tillbaka rätt taggar på rätt ställe så att din hemsida ser exakt ut som bilden.
