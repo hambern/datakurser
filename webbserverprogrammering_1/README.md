@@ -41,7 +41,7 @@ Du kan också, när du fyllt i korrekt information i PhpStorm, logga in via ssh 
 ### Anslut via PhpStorm
 
 1. Gå via menyn in på `File > Settings > Build, Execution, Deployment > Depolyment`
-2. Lägg till en server via +-symbolen av typen `SFTP` och ange exempelvis namnet `student.oedu.se`
+2. Lägg till en server via `+`-symbolen av typen `SFTP` och ange exempelvis namnet `student.oedu.se`
 3. Ange följande information under "Connection":
    1. Host: `student.oedu.se`
    2. Port: `3690`
