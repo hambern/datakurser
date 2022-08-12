@@ -7,7 +7,7 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogramm
 I denna mapp finns följande mappar:
 
 - [git](git)
-- [lektioner](git)
+- [lektioner](lektioner)
 - [linux](linux)
 - [projekt](projekt)
 - [sql](sql)

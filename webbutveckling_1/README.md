@@ -2,6 +2,17 @@
 
 Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 
+## Mappar
+
+I denna mapp finns följande mappar:
+
+- [bootstrap](bootstrap)
+- [cms](cms)
+- [css](css)
+- [html](html)
+- [javascript](javascript)
+- [lektioner](lektioner)
+
 ## Validering
 
 Ta gärna för vana att alltid validera dina filer innan inlämning. På så vis får du veta om du gjort något fel, och det är dessutom det första jag gör när jag rättar de uppgifter du lämnar in.
