@@ -6,28 +6,41 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogramm
 
 I denna mapp finns följande mappar:
 
-- git
-- lektioner
-- linux
-- projekt
-- sql
+- [git](git)
+- [lektioner](git)
+- [linux](linux)
+- [projekt](projekt)
+- [sql](sql)
 
-## GIT
+## Validering
 
-De kunskaper du ska inhämta till detta kursmoment hittar du på adressen: https://www.w3schools.com/git/default.asp
+Ta gärna för vana att alltid validera dina filer innan inlämning. På så vis får du veta om du gjort något fel, och det är dessutom det första jag gör när jag rättar de uppgifter du lämnar in.
 
-## Lektioner
+- Validering av HTML5: http://html5.validator.nu
+- Validering av CSS: http://jigsaw.w3.org/css-validator (Ange CSS nivå 3 under "Fler val" och ställ in "Alla" under "Varningar")
 
-I denna mapp lägger jag upp alla kortare genomgångar vi genomför under kursen
+## Information om skolans server
 
-## Linux
+### Information om utvecklingsservern som vi jobbar på
 
-De kunskaper du ska inhämta till detta kursmoment hittar du på adressen: https://linuxize.com/post/basic-linux-commands/
+- Servernamn: `student.oedu.se`
+- För phpmyadmin: `admin.student.oedu.se`
+- Din hemsida: `student.oedu.se/~ditt_login`
 
-## Projekt
 
-I denna mapp finns de delar som kommer att användas till vårens projekt
+### Filöverföring
 
-## SQL
+Man kan skicka filer via ssh (sftp), standard port är 22 men på denna server är den satt till 3690. Det finns flera olika sätt föra över filer.
 
-De kunskaper du ska inhämta till detta kursmoment hittar du på adressen: https://www.w3schools.com/sql/default.asp
+### Logga in via ssh på port 3690
+
+`ssh -p 3690 ditt_login@student.oedu.se`
+
+Du kan också, när du fyllt i korrekt information i PhpStorm, logga in via ssh genom `Tools > Start SSH Session` i menyn.
+
+### Kolla så att ni kan:
+
+1. Föra över filer till servern hemifrån.
+2. Logga in på servern hemifrån.
+3. Editera filer som ligger på servern.
+4. Titta på din egen sida via `http://student.oedu.se/~ditt_login` i en webbläsare.

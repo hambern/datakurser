@@ -26,6 +26,8 @@ Man kan skicka filer via ssh (sftp), standard port är 22 men på denna server �
 
 `ssh -p 3690 ditt_login@student.oedu.se`
 
+Du kan också, när du fyllt i korrekt information i PhpStorm, logga in via ssh genom `Tools > Start SSH Session` i menyn.
+
 ### Kolla så att ni kan:
 
 1. Föra över filer till servern hemifrån.
