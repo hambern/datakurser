@@ -8,7 +8,6 @@ Din uppgift är att skapa ett externt CSS-dokument som formaterar ett på förha
 - CSS-filen `style.css` ska vara ett externt CSS
 - All formatering ska ske i filen `style.css`
 - HTML-koden i `ìndex.html` skall användas och skall inte ändras, alla formatering ska ske via `style.css`
-- Som hjälp för hur slutresultatet ska se ut
 - Facit kan du se via: [facit.jpg](facit.jpg) (visar hur webbsidan ser ut i webbläsaren Firefox).
 - När du är klar packar du hela din mapp till en zip-fil och lämnar in den
 
