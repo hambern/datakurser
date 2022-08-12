@@ -8,7 +8,7 @@ I denna uppgift får du:
 - En [css-fil](style.css) med CSS-kod. Denna får du _inte_ röra. Däremot får du gärna titta på den.
 - En [html-fil](index.html) där taggarna tagits bort
 
-Din uppgift är att skriva tillbaka rätt taggar på rätt ställe så att din hemsida ser exakt ut som bilden.
+Din uppgift är att skriva tillbaka rätt taggar på rätt ställe så att din hemsida ser ut som bilden (vissa avvikelser kommer förekomma).
 
 När du är klar packar du hela din mapp till en zip-fil och lämnar in den
 
