@@ -28,4 +28,8 @@ De taggar som är bra att känna till är:
 ## Tips
 
 - Det enda attribut du behöver använda är `href` i länktaggen
-- Tänk att [indentera](https://www.freecodecamp.org/news/how-to-indent-in-html-and-why-it-is-important/) din kod så blir det lättare att hitta eventuella fel
+- Tänk på att [indentera](https://www.freecodecamp.org/news/how-to-indent-in-html-and-why-it-is-important/) din kod så blir det lättare att hitta eventuella fel
+
+## Bedömning
+
+Denna uppgifts bedöms med antingen "Klarat", "Genomfört" eller "Inte genomfört"
