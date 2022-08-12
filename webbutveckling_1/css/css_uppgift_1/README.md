@@ -1,14 +1,15 @@
 # CSS - uppgift 1
 
-Din uppgift är att skapa ett externt CSS-dokument som formaterar ett på förhand givet HTML5-dokument.\
+Din uppgift är att skapa ett externt CSS-dokument som formaterar ett på förhand givet HTML5-dokument
 
 ## Följande instruktioner gäller:
 
-- Filens namn ska vara "style.css"
-- CSS-filen "style.css" ska vara ett externt CSS
-- All formatering ska ske i filen "style.css"
-- HTML koden nedan skall använads och skall inte ändras, alla formatering ska ske via "style.css".
-- Som hjälp för hur slutresultatet ska se ut finns en [bild](https://student.oedu.se/lib/exe/fetch.php?media=e_uppgift.jpg "e_uppgift.jpg (128.4 KB)"), som visar hur webbsidan ska se ut (visar hur webbsidan ser ut i webbläsaren Firefox).
+- Filens namn ska vara `style.css`
+- CSS-filen `style.css` ska vara ett externt CSS
+- All formatering ska ske i filen `style.css`
+- HTML-koden i `ìndex.html` skall användas och skall inte ändras, alla formatering ska ske via `style.css`
+- Som hjälp för hur slutresultatet ska se ut
+- Facit kan du se via: [facit.jpg](facit.jpg) (visar hur webbsidan ser ut i webbläsaren Firefox).
 - När du är klar packar du hela din mapp till en zip-fil och lämnar in den
 
 ## Följande gäller för sidan och ingående delars layout
