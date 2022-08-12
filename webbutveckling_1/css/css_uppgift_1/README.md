@@ -11,13 +11,15 @@ Din uppgift är att skapa ett externt CSS-dokument som formaterar ett på förha
 - Som hjälp för hur slutresultatet ska se ut finns en [bild](https://student.oedu.se/lib/exe/fetch.php?media=e_uppgift.jpg "e_uppgift.jpg (128.4 KB)"), som visar hur webbsidan ska se ut (visar hur webbsidan ser ut i webbläsaren Firefox).
 - När du är klar packar du hela din mapp till en zip-fil och lämnar in den
 
-## Följande gäller för sidan och ingående delars layout: Allmänt
+## Följande gäller för sidan och ingående delars layout
+
+### Allmänt
 
 - body - Bakgrundsfärgen skall vara #E5E5E5. Texten skall ha typsnittet "Trebuchet MS" och därefter Helvetica, Arial och sans-serif. Texten skall ha storleken 0.8 em och ha färgen #6C6C6C.
 - a - Skall inte vara understrukna i utgångsläget, men understrukna då muspekaren förs över.
 - ul - Skall ha en svart prickad ram på 1px, en marginal på 1em, en utfyllnad på 1em, listans punkter ska ligga innanför ramen, texten skall vara kursiv och textstorleken 0.8em
 
-## Sidans indelning
+### Sidans indelning
 
 - article - skall ha vit som bakgrundsfärg. Den skall ha bredden 800 pixlar och ha en heldragen ram som är 1 pixel bred och har färgen #666666. Elementet skall vara centrerat i sidan.
 - header - skall ha en utfyllnad på 10 pixlar, ha en marginal på 3 pixlar åt alla håll utom nedåt där marginalen skall vara 20 pixlar. Den skall vidare ha en prickad ram som är 2 pixlar tjock och har färgen #999999. Rubriker av typen h1 inom "header" skall ha färgen #FFAA01 och vara av storleken 2em. All text i sidhuvudet skall vara högerjusterad.
@@ -31,7 +33,7 @@ Din uppgift är att skapa ett externt CSS-dokument som formaterar ett på förha
 - td.number - tabellceller med siffor skall ha högerjusterad text.
 - footer - skall ha en heldragen ram med bredden 1 pixel och färgen #999999. Den skall ha en marginal på 3 pixlar runt om. Texten skall vara 0.8em stor, vara *kursiverad* och centrerad i sidfoten. Länkfärgen i "footer" skall vara #1292FF.
 
-Förutom detta ska ingen annan formatering göras.
+Bortsett från detta ska ingen annan formatering göras.
 
 ## Betyg
 Denna uppgift bedöms med betyget E eller F.\
