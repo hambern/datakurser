@@ -35,6 +35,6 @@ Din uppgift är att skapa ett externt CSS-dokument som formaterar ett på förha
 
 Bortsett från detta ska ingen annan formatering göras.
 
-## Betyg
-Denna uppgift bedöms med betyget E eller F.\
-Lycka till!
+## Bedömning
+
+Denna uppgifts bedöms med antingen "Klarat", "Genomfört" eller "Inte genomfört"
