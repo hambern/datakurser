@@ -36,3 +36,5 @@ Denna uppgifts bedöms med antingen "Klarat", "Genomfört" eller "Inte genomför
 
 1. När du är klar kan du lägga till några extra-fält i ditt formulär. En lista på sådana hittar du på: https://www.w3schools.com/html/html_form_input_types.asp
 2. Studera `action.php` och försök lista ut hur filen fungerar och gör att den skriver ut informationen från dina nya fält också
+
+Lämna gärna in även din specialdesignade sida
