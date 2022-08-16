@@ -11,6 +11,8 @@ I denna uppgift ska du skapa ett formulär och använda det för att skicka info
 
 ## Instruktioner
 
+Läs på om hur du gör formulär på: https://www.w3schools.com/html/html_forms.asp
+
 Skapa ett formulär som ser ut som facit. Detta innebär följande:
 
 1. Koppla html-filen till `style.css` i head-sektionen
