@@ -10,6 +10,6 @@ De kunskaper du ska inhämta till detta kursmoment hittar du på adressen: https
 
 Självtestet hittar du på adressen: https://www.w3schools.com/css/css_quiz.asp
 
-## Uppgift
+## Uppgifter
 
-Den uppgift du ska göra och lämna in hittar du här: [css_uppgift_1](css_uppgift_1)
+1. [css_uppgift_1](css_uppgift_1)
