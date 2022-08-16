@@ -7,9 +7,9 @@ I denna uppgift får du:
 - En [html-fil](index.html) där väsentliga taggarna tagits bort
 - En [php-fil](action.php) där formulärets data granskas. Denna får du _inte_ röra. Däremot får du gärna titta på den.
 
-I denna uppgift ska du skapa ett formulär och använda det för att skicka information
-
 ## Instruktioner
+
+I denna uppgift ska du skapa ett formulär och använda det för att skicka information
 
 Läs på om hur du gör formulär på: https://www.w3schools.com/html/html_forms.asp
 

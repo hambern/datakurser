@@ -1,12 +1,12 @@
 # HTML - uppgift 1
 
-## Instruktioner
-
 I denna uppgift får du:
 
 - En [png-bild](facit.png) på den färdiga sidan
 - En [css-fil](style.css) med CSS-kod. Denna får du _inte_ röra. Däremot får du gärna titta på den.
 - En [html-fil](index.html) där taggarna tagits bort
+
+## Instruktioner
 
 Din uppgift är att skriva tillbaka rätt taggar på rätt ställe så att din hemsida ser ut som bilden (vissa avvikelser kommer förekomma).
 
