@@ -35,7 +35,7 @@ De taggar som är bra att känna till är:
 
 Denna uppgifts bedöms med antingen "Klarat", "Genomfört" eller "Inte genomfört"
 
-## Extra-uppgifter
+## Extrauppgifter
 
 När du är klar och har lämnat in kan du:
 
