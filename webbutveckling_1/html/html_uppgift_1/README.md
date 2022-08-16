@@ -42,4 +42,14 @@ När du är klar och har lämnat in kan du:
 1. Leka med designen, ändra gärna i css-filen och se vad som händer
 2. Lägg in passande bilder till artikeln. Använd gärna sidan https://unsplash.com där du kan hitta bilder som är fria att använda
 
+### Tips
+
+Du kan göra bilderna responsiva genom att lägga till följande kod till css-filen:
+
+~~~css
+img {
+    width: 100%;
+}
+~~~
+
 Lämna gärna in även din specialdesignade sida
