@@ -9,6 +9,7 @@ I denna mapp finns följande mappar:
 - [bootstrap](bootstrap)
 - [cms](cms)
 - [css](css)
+- [extrauppgifter](extrauppgifter)
 - [html](html)
 - [javascript](javascript)
 - [lektioner](lektioner)

@@ -6,6 +6,7 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogramm
 
 I denna mapp finns följande mappar:
 
+- [extrauppgifter](extrauppgifter)
 - [git](git)
 - [lektioner](lektioner)
 - [linux](linux)
