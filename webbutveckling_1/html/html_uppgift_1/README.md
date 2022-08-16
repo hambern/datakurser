@@ -12,7 +12,7 @@ Din uppgift är att skriva tillbaka rätt taggar på rätt ställe så att din h
 
 När du är klar packar du hela din mapp till en zip-fil och lämnar in den
 
-## Taggar
+### Taggar
 
 De taggar som är bra att känna till är:
 
@@ -25,13 +25,13 @@ De taggar som är bra att känna till är:
 - Listor: `ol`, `ul`, `li`
 - Avdelare: `hr`
 
-## Tips
+### Tips
 
 - Läs på om hur du skriver HTML på: https://www.w3schools.com/html/html_basic.asp
 - Det enda attribut du behöver använda är `href` i länktaggen
 - Tänk på att [indentera](https://www.freecodecamp.org/news/how-to-indent-in-html-and-why-it-is-important/) din kod så blir det lättare att hitta eventuella fel
 
-## Bedömning
+### Bedömning
 
 Denna uppgifts bedöms med antingen "Klarat", "Genomfört" eller "Inte genomfört"
 
