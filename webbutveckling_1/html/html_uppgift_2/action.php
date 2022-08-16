@@ -9,4 +9,4 @@ elseif (empty($_POST['movie']))
 elseif (empty($_POST['book']))
     echo "Det saknas en bok. ";
 else
-    echo "<code><pre>" . print_r($_POST, true) . "</code></pre>";
+    echo "Hej ". $_POST['name'] .". Din favoritfilm är ". $_POST['movie'] ." och din favoritbok är ". $_POST['book'] .".";
