@@ -28,7 +28,7 @@ Skapa ett formulär som ser ut som facit. Detta innebär följande:
 7. Skickaknappen ska bestå av ett inputfält `<input>` i ett eget stycke `<p>`
 8. När du är klar zippar du hela din mapp och lämnar in
 
-## Bedömning
+### Bedömning
 
 Denna uppgifts bedöms med antingen "Klarat", "Genomfört" eller "Inte genomfört"
 
