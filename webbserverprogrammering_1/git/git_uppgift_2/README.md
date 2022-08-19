@@ -1,6 +1,6 @@
 # GIT - Uppgift 2
 
-I denna uppgift ska du skapa ditt första lokala git-repository
+I denna uppgift ska du skapa din användare på GitLab och synka det med ditt lokala repository
 
 ## Instruktioner
 
