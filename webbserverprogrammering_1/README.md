@@ -13,6 +13,54 @@ I denna mapp finns följande mappar:
 - [projekt](projekt)
 - [sql](sql)
 
+## Planering
+
+| Vecka | Moment |
+| --- | --- |
+| 34 | Linux |
+| 35 | |
+| 36 | |
+| 37 | |
+| 38 | |
+| 39 | |
+| 40 | |
+| 41 | |
+| 42 | |
+| 43 | |
+| 44 | **Höstlov** |
+| 45 | |
+| 46 | |
+| 47 | |
+| 48 | |
+| 49 | |
+| 50 | |
+| 51 | |
+| 52 | **Jullov** |
+| 1 | |
+| 2 | |
+| 3 | |
+| 4 | |
+| 5 | |
+| 6 | |
+| 7 | |
+| 8 | |
+| 9 | |
+| 10 | **Sportlov** |
+| 11 | |
+| 12 | |
+| 13 | |
+| 14 | **Påsklov** |
+| 15 | |
+| 16 | |
+| 17 | |
+| 18 | |
+| 19 | |
+| 20 | |
+| 21 | |
+| 22 | |
+| 23 | |
+| 24 | **Skolavslutning** |
+
 ## Validering
 
 Ta gärna för vana att alltid validera dina filer innan inlämning. På så vis får du veta om du gjort något fel, och det är dessutom det första jag gör när jag rättar de uppgifter du lämnar in.

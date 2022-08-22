@@ -15,6 +15,54 @@ I denna mapp finns följande mappar:
 - [lektioner](lektioner)
 - [projekt](projekt)
 
+## Planering
+
+| Vecka | Moment | Uppgift |
+| --- | --- | --- |
+| 34 | _HTML_ | |
+| 35 | | html_uppgift_1 |
+| 36 | | html_uppgift_2 |
+| 37 | _CSS_ | |
+| 38 |  | css_uppgift_1 |
+| 39 |  | css_uppgift_2 |
+| 40 |  | css_uppgift_3 |
+| 41 |  | css_uppgift_4 |
+| 42 | | |
+| 43 | | |
+| 44 | **Höstlov** | |
+| 45 | _Webbens historia_ | |
+| 46 | | |
+| 47 | | |
+| 48 | | |
+| 49 | | |
+| 50 | | projekt_fragesport |
+| 51 | | | 
+| 52 | **Jullov** | |
+| 1 | | |
+| 2 | | |
+| 3 | | projekt_gastbok |
+| 4 | | |
+| 5 | | |
+| 6 | | projekt_blogg |
+| 7 | | |
+| 8 | | |
+| 9 | _Avslutningsprojekt_ | projekt_slut |
+| 10 | **Sportlov** | |
+| 11 | | |
+| 12 | | |
+| 13 | | |
+| 14 | **Påsklov** | |
+| 15 | | |
+| 16 | | |
+| 17 | | |
+| 18 | | |
+| 19 | | |
+| 20 | | |
+| 21 | | |
+| 22 | | |
+| 23 | | |
+| 24 | **Skolavslutning** | |
+
 ## Validering
 
 Ta gärna för vana att alltid validera dina filer innan inlämning. På så vis får du veta om du gjort något fel, och det är dessutom det första jag gör när jag rättar de uppgifter du lämnar in.
