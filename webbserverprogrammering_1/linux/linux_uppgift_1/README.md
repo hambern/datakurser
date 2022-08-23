@@ -2,7 +2,7 @@
 
 ## Kommandon
 
-Vad gör följande kommandon? Skapa ett dokument där du skriver en mening vardera om vad följande kommandon gör. Ett tips är att du kan använda linux inbyggda kommandomanual `man`. Den kommer du åt genom att skriva `man` följt av det kommando du vill veta mer om. Du kan också använda denna sida: <https://sunlightmedia.org/sv/grundl%C3%A4ggande-kommandon-i-linux/>
+Vad gör följande kommandon? Skapa ett dokument där du skriver på svenska en mening vardera om vad följande kommandon gör. Ett tips är att du kan använda linux inbyggda kommandomanual `man`. Den kommer du åt genom att skriva `man` följt av det kommando du vill veta mer om. Du kan också använda denna sida: <https://sunlightmedia.org/sv/grundl%C3%A4ggande-kommandon-i-linux/>
 
 1. `man`
 2. `pwd`
