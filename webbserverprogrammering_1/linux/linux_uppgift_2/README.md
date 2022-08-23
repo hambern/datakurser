@@ -37,18 +37,18 @@ Första bokstaven är `d` om den är en mapp och `-` om den är en fil.
 
 ### 3 bokstäver
 
-- r = read permission
-- w = write permission
-- x = execute permission
-- = no permission
+- `r` = read permission
+- `w` = write permission
+- `x` = execute permission
+- `-` = no permission
 
 ### Exempel på fil med 740 rättigheter:
 
 `-rw-r----- 1 root admin 8187 2010-11-22 13:35`
 
-- rw- användaren "root" har read och write rättigheter.
-- r-- "admin" gruppen har read rättigheter.
-- --- andra användare har inga rättigheter.
+- `rw-` användaren "root" har read och write rättigheter.
+- `r--` "admin" gruppen har read rättigheter.
+- `---` andra användare har inga rättigheter.
 
 ### I siffror
 
