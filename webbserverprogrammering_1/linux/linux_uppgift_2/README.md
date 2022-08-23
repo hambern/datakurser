@@ -1,5 +1,16 @@
 # Linux - Uppgift 2
 
+## Instruktioner
+
+I denna uppgift ska du skapa lära dig mer om filrättigheter. Läs informationen nedan under rubriken "Rättigheter" och gör följande saker. Skriv gärna ner svaren på frågorna.
+
+1. Vilka rättigheter är det på filen `konto.txt` på din användare och vilka har rätt att göra ändringar i den?
+2. Vilka rättigheter är det på mappen `public_html/` och vilka har rätt att se innehållet i den?
+3. Vilket `chmod`-kommando bör du köra för att ge följande rättigheter till en mapp och _allt_ dess innehåll?
+   1. Ägaren ska kunna läsa, skriva och köra alla filer
+   2. Gruppen ska kunna läsa och köra, men inte skriva
+   3. Övriga ska kunna köra, men varken läsa eller skriva
+
 ## Rättigheter
 
 För att ändra rättigheterna till en fil eller mapp använder man följande kommando:
