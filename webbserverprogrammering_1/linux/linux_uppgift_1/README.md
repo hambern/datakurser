@@ -23,6 +23,8 @@ Vad gör följande kommandon? Skapa ett dokument där du skriver en mening varde
 17. `rmdir`
 18. `wc`
 19. `tree`
+20. `vim`
+21. `vimtutor`
 
 ## Spara tid
 
