@@ -30,5 +30,5 @@ Vad gör följande kommandon? Skapa ett dokument där du skriver en mening varde
 
 Två metoder för att spara tid i terminalen är att använda piltangenterna upp och ner samt tangenten tab.
 
-18. Vad gör piltangenterna upp och ner?
-19. Vad gör `tab`-tangenten i terminalen?
+22. Vad gör piltangenterna upp och ner?
+23. Vad gör `tab`-tangenten i terminalen?
