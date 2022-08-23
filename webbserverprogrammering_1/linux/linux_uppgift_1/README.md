@@ -26,11 +26,11 @@ Vad gör följande kommandon? Skapa ett dokument där du skriver på svenska en 
 20. `vim`
 21. `vimtutor`
 
-## Spara tid
+## Bra att veta
 
-Två metoder för att spara tid i terminalen är att använda piltangenterna upp och ner samt tangenten tab.
+Det är inte bara alla kommandon som är bra att veta. Det är också bra att veta hur själva terminalen fungerar:
 
-22. Vad gör piltangenterna upp och ner?
-23. Vad gör `tab`-tangenten i terminalen?
-24. Vad gör kortkommandot `Ctrl + C`?
-25. Vad gör kortkommandot `Ctrl + Z`?
+22.  Vad gör piltangenterna upp och ner?
+23.  Vad gör `tab`-tangenten i terminalen?
+24.  Vad gör kortkommandot `Ctrl + C`?
+25.  Vad gör kortkommandot `Ctrl + Z`?
