@@ -2,7 +2,7 @@
 
 ## Kommandon
 
-Vad gör följande kommandon? Skapa ett dokument där du skriver en mening vardera om vad följande kommandon gör. Ett tips är att du kan använda linux inbyggda kommandomanual `man`. Den kommer du åt genom att skriva `man` följt av det kommando du vill veta mer om.
+Vad gör följande kommandon? Skapa ett dokument där du skriver en mening vardera om vad följande kommandon gör. Ett tips är att du kan använda linux inbyggda kommandomanual `man`. Den kommer du åt genom att skriva `man` följt av det kommando du vill veta mer om. Du kan också använda denna sida: <https://sunlightmedia.org/sv/grundl%C3%A4ggande-kommandon-i-linux/>
 
 1. `man`
 2. `pwd`
@@ -13,14 +13,16 @@ Vad gör följande kommandon? Skapa ett dokument där du skriver en mening varde
 7. `ls`
 8. `ll`
 9. `cat`
-10. `echo`
-11. `touch`
-12. `mv`
-13. `cp`
-14. `rm`
-15. `rmdir`
-16. `wc`
-17. `tree`
+10. `more`
+11. `less`
+12. `echo`
+13. `touch`
+14. `mv`
+15. `cp`
+16. `rm`
+17. `rmdir`
+18. `wc`
+19. `tree`
 
 ## Spara tid
 
