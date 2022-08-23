@@ -32,3 +32,5 @@ Två metoder för att spara tid i terminalen är att använda piltangenterna upp
 
 22. Vad gör piltangenterna upp och ner?
 23. Vad gör `tab`-tangenten i terminalen?
+24. Vad gör kortkommandot `Ctrl + C`?
+25. Vad gör kortkommandot `Ctrl + Z`?
