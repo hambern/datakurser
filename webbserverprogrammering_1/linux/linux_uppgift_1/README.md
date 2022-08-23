@@ -14,7 +14,7 @@ Vad gör följande kommandon? Skapa ett dokument där du skriver en mening varde
 8. `ll`
 9. `cat`
 10. `echo`
-11. `less`
+11. `touch`
 12. `mv`
 13. `cp`
 14. `rm`
