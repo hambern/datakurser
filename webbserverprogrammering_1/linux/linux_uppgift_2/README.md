@@ -2,7 +2,7 @@
 
 ## Instruktioner
 
-I denna uppgift ska du skapa lära dig mer om filrättigheter. Läs informationen nedan under rubriken "Rättigheter" och gör följande saker. Skriv gärna ner svaren på frågorna.
+I denna uppgift ska du lära dig mer om filrättigheter. Läs informationen nedan under rubriken "Rättigheter" och gör följande saker. Skriv gärna ner svaren på frågorna.
 
 1. Vilka rättigheter är det på filen `konto.txt` på din användare och vilka har rätt att göra ändringar i den?
 2. Vilka rättigheter är det på mappen `public_html/` och vilka har rätt att se innehållet i den?
