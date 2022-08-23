@@ -25,7 +25,7 @@ För att ändra rättigheterna till en fil eller mapp använder man följande ko
 
 För att kolla rättigheterna:
 
-- `ls -la <mapp>` visar filerna som finns i denna mapp. Om ingen mapp anges visas filerna i mappen som användaren befinner sig i.
+- `ls -la <mapp>` eller `ll <mapp>` visar filerna som finns i denna mapp. Om ingen mapp anges visas filerna i mappen som användaren befinner sig i.
 
 Första bokstaven är `d` om den är en mapp och `-` om den är en fil.
 
