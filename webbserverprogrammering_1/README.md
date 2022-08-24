@@ -15,14 +15,14 @@ I denna mapp finns följande mappar:
 
 ## Planering
 
-| Vecka | Moment |
-| --- | --- |
-| 34 | Linux |
-| 35 | |
-| 36 | |
-| 37 | |
-| 38 | |
-| 39 | |
+| Vecka | Moment | Uppgift |
+| --- | --- | --- |
+| 34 | _Linux & Git_ | linux_uppgift_1 |
+| 35 | | git_uppgift_1 |
+| 36 | | git_uppgift_2 |
+| 37 | | linux_uppgift_2 |
+| 38 | | git_uppgift_3 |
+| 39 | | linux_uppgift_3 |
 | 40 | |
 | 41 | |
 | 42 | |
