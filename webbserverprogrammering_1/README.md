@@ -24,7 +24,7 @@ I denna mapp finns följande mappar:
 | 38 | | git_uppgift_3 |
 | 39 | | linux_uppgift_3 |
 | 40 | | https://www.w3schools.com/git/ |
-| 41 | |
+| 41 | | git_uppgift_4 |
 | 42 | |
 | 43 | |
 | 44 | **Höstlov** |
