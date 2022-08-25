@@ -12,14 +12,15 @@ Din uppgift är att skriva tillbaka rätt taggar på rätt ställe så att din h
 
 När du är klar packar du hela din mapp till en zip-fil och lämnar in den
 
-### Taggar
+### Element
 
-De taggar som är bra att känna till är:
+De element som är bra att känna till är:
 
 - Länk: `a`
 - Bild: `img`
 - Stycke: `p`
 - Block: `div`
+- Kursiv text: `i`
 - Rubriker: `h1`, `h2`, `h3`
 - Tabeller: `table`, `th`, `tr`, `td`
 - Listor: `ol`, `ul`, `li`

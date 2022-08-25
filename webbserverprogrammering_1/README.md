@@ -23,7 +23,7 @@ I denna mapp finns följande mappar:
 | 37 | | linux_uppgift_2 |
 | 38 | | git_uppgift_3 |
 | 39 | | linux_uppgift_3 |
-| 40 | |
+| 40 | | https://www.w3schools.com/git/ |
 | 41 | |
 | 42 | |
 | 43 | |
