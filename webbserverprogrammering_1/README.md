@@ -13,53 +13,15 @@ I denna mapp finns följande mappar:
 - [projekt](projekt)
 - [sql](sql)
 
-## Planering
+## Uppgifter
 
-| Vecka | Moment | Uppgift |
-| --- | --- | --- |
-| 34 | _Linux & Git_ | linux_uppgift_1 |
-| 35 | | git_uppgift_1 |
-| 36 | | git_uppgift_2 |
-| 37 | | linux_uppgift_2 |
-| 38 | | git_uppgift_3 |
-| 39 | | linux_uppgift_3 |
-| 40 | | https://www.w3schools.com/git/ |
-| 41 | | git_uppgift_4 |
-| 42 | |
-| 43 | |
-| 44 | **Höstlov** |
-| 45 | |
-| 46 | |
-| 47 | |
-| 48 | |
-| 49 | |
-| 50 | |
-| 51 | |
-| 52 | **Jullov** |
-| 1 | |
-| 2 | |
-| 3 | |
-| 4 | |
-| 5 | |
-| 6 | |
-| 7 | |
-| 8 | |
-| 9 | |
-| 10 | **Sportlov** |
-| 11 | |
-| 12 | |
-| 13 | |
-| 14 | **Påsklov** |
-| 15 | |
-| 16 | |
-| 17 | |
-| 18 | |
-| 19 | |
-| 20 | |
-| 21 | |
-| 22 | |
-| 23 | |
-| 24 | **Skolavslutning** |
+- [linux_uppgift_1](webbserverprogrammering_1/linux/linux_uppgift_1)
+- [git_uppgift_1](webbserverprogrammering_1/git/git_uppgift_1)
+- [git_uppgift_2](webbserverprogrammering_1/git/git_uppgift_2)
+- [linux_uppgift_2](webbserverprogrammering_1/linux/linux_uppgift_2)
+- [git_uppgift_3](webbserverprogrammering_1/git/git_uppgift_3)
+- [linux_uppgift_3](webbserverprogrammering_1/linux/linux_uppgift_3)
+- [git_uppgift_4](webbserverprogrammering_1/git/git_uppgift_4)
 
 ## Validering
 
