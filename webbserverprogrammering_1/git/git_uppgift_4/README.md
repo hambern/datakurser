@@ -19,6 +19,6 @@ I mappen `git` ska du skapa en fil som heter `uppgift_4.txt` däri ska du svara 
 4. Om du har lagt till en fil och "commitat" den! Hur gör man om man vill radera denna commit?
 5. Om du gjort en commit och vill göra en liten ändring utan att skapa en ny commit, hur gör du då?
 6. Läs på, testa och förklara vad `git commit --amend` gör.
-7. Läs på, testa och förklara vad `git diff --cached`gör.
+7. Läs på, testa och förklara vad `git diff --cached` gör.
 
 Gå in på filen på GitLab, kopiera URL-adressen och lämna in den på uppgiften på Vklass. Jag ska kunna klicka på länken och läsa svaren på ovanstående frågor.
