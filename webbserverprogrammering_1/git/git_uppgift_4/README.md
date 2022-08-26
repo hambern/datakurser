@@ -17,7 +17,7 @@ I mappen `git` ska du skapa en fil som heter `uppgift_4.txt` däri ska du svara 
 2. Om du har gjort ändringar i en fil men vill ta bort allt som är "modified" hur skriver man då? Testa att det fungerar.
 3. Om du har lagt till en fil men vill ta bort den från "staged" area. Hur skriver du för att ta bort filen? Testa så att det fungerar.
 4. Om du har lagt till en fil och "commitat" den! Hur gör man om man vill radera denna commit? Testa så att det fungerar.
-6. Läs på, testa och förklara vad `git commit --amend` gör.
-7. Läs på, testa och förklara vad `git diff --cached` gör.
+5. Läs på, testa och förklara vad `git commit --amend` gör.
+6. Läs på, testa och förklara vad `git diff --cached` gör.
 
 Gå in på filen på GitLab, kopiera URL-adressen och lämna in den på uppgiften på Vklass. Jag ska kunna klicka på länken och läsa svaren på ovanstående frågor.
