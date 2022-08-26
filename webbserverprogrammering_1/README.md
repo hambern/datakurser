@@ -15,13 +15,13 @@ I denna mapp finns följande mappar:
 
 ## Uppgifter
 
-- [linux_uppgift_1](webbserverprogrammering_1/linux/linux_uppgift_1)
-- [git_uppgift_1](webbserverprogrammering_1/git/git_uppgift_1)
-- [git_uppgift_2](webbserverprogrammering_1/git/git_uppgift_2)
-- [linux_uppgift_2](webbserverprogrammering_1/linux/linux_uppgift_2)
-- [git_uppgift_3](webbserverprogrammering_1/git/git_uppgift_3)
-- [linux_uppgift_3](webbserverprogrammering_1/linux/linux_uppgift_3)
-- [git_uppgift_4](webbserverprogrammering_1/git/git_uppgift_4)
+1. [linux_uppgift_1](webbserverprogrammering_1/linux/linux_uppgift_1)
+2. [git_uppgift_1](webbserverprogrammering_1/git/git_uppgift_1)
+3. [git_uppgift_2](webbserverprogrammering_1/git/git_uppgift_2)
+4. [linux_uppgift_2](webbserverprogrammering_1/linux/linux_uppgift_2)
+5. [git_uppgift_3](webbserverprogrammering_1/git/git_uppgift_3)
+6. [linux_uppgift_3](webbserverprogrammering_1/linux/linux_uppgift_3)
+7. [git_uppgift_4](webbserverprogrammering_1/git/git_uppgift_4)
 
 ## Validering
 
