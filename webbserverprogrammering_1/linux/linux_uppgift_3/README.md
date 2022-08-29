@@ -2,7 +2,7 @@
 
 ## Instruktioner
 
-I denna uppgift ska du lära dig mer om filrättigheter. Läs informationen nedan under rubriken "Rättigheter" och gör följande saker. Skriv gärna ner svaren på frågorna.
+I denna uppgift ska du lära dig mer om filrättigheter. Läs informationen nedan under rubriken "Rättigheter" och gör följande saker. Skriv ner svaren på frågorna i en textfil med namnet `linux_uppgift_3.txt` i mappen `linux/` i din webbserverutveckligs-mapp. Gitta därefter in den på ditt repository.
 
 1. Vilka rättigheter är det på filen `konto.txt` på din användare och vilka har rätt att göra ändringar i den?
 2. Vilka rättigheter är det på mappen `public_html/` och vilka har rätt att se innehållet i den?
