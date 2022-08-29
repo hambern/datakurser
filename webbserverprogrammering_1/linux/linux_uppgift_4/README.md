@@ -1,10 +1,10 @@
 # Linux - Uppgift 4
 
-I denna uppgift ska du lära dig hur du kan använda dig av terminalen för att omdirigera standard out för att skapa nya filer. Utför nedanstående undersökningar en i taget och skriv ner svaren på frågorna i en textfil med namnet `linux_uppgift_4.txt` i mappen `linux/` i din webbserverutveckligs-mapp. Gitta därefter in den på ditt repository.
+I denna uppgift ska du lära dig hur du kan använda dig av terminalen för att omdirigera standard out för att skapa nya filer. Utför nedanstående undersökningar en i taget och skriv ner svaren på frågorna i en textfil med namnet `linux_uppgift_4.txt` i mappen `linux` i din webbserverprogrammerings-mapp. Gitta därefter in den på ditt repository.
 
 ## Instruktioner
 
-1. Testa att i mappen `linux/` på din användare skriva kommandot `echo "Jag lär mig Linux"`. Vad händer?
+1. Testa att i mappen `linux` på din användare skriva kommandot `echo "Jag lär mig Linux"`. Vad händer?
 2. Testa att istället skriva kommandot `echo "Jag lär mig Linux" > trash`. Vad händer nu? Kontrollera innehållet i mappen.
 3. Vad är det för skillnad på följande två kommandon?
     1. `echo "Jag lär mig Linux" > trash`
