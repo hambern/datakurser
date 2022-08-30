@@ -12,6 +12,15 @@ I denna uppgift ska du lära dig mer om filrättigheter. Läs informationen neda
    1. Ägaren ska kunna läsa, skriva och köra alla filer
    2. Gruppen ska kunna läsa och köra, men inte skriva
    3. Övriga ska kunna köra, men varken läsa eller skriva
+6. Gitta in din kod med följande rader:
+
+~~~~
+git pull
+git add --all
+git commit -m "linux_uppgift_3"
+git push
+~~~~
+
 
 ## Rättigheter
 
