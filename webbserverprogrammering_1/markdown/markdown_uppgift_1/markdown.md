@@ -3,7 +3,7 @@
 - PHP is an acronym for "PHP: Hypertext Preprocessor"
 - PHP is a widely-used, open source scripting language
 - PHP scripts are executed on the server
-- PHP is free to download and use 
+- PHP is free to download and use
  
 > **PHP is an amazing and popular language!**
 > 
@@ -11,7 +11,9 @@
 It is deep enough to run large social networks!
 It is also easy enough to be a beginner's first server side language!
 
----
+[This is a link to W3Schools](https://www.w3schools.com/php)
+
+![](https://images.unsplash.com/photo-1599507593548-0187ac4043c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80)
 
 ## What is a PHP File?
 
@@ -45,3 +47,9 @@ The PHP arithmetic operators are used with numeric values to perform common arit
 | /        | Division       | $x / $y  | Quotient of $x and $y                   |
 | %        | Modulus        | $x % $y  | Remainder of $x divided by $y           |
 | **       | Exponentiation | $x ** $y | Result of raising $x to the $y'th power |
+
+## What to do?
+
+- [x] Read the assignment
+- [ ] Mark it up with markdown
+- [ ] Git push the markdown file to the repository
