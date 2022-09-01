@@ -4,6 +4,7 @@ Din uppgift är att skapa ett externt CSS-dokument som formaterar ett på förha
 
 - <https://www.w3schools.com/css/css_syntax.asp>
 - <https://www.w3schools.com/css/css_selectors.asp>
+- <https://www.w3schools.com/css/css_howto.asp>
 - <https://www.w3schools.com/cssref/default.asp>
 
 ## Instruktioner
