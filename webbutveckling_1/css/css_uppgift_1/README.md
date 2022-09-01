@@ -1,8 +1,12 @@
 # CSS - uppgift 1
 
-Din uppgift är att skapa ett externt CSS-dokument som formaterar ett på förhand givet HTML5-dokument
+Din uppgift är att skapa ett externt CSS-dokument som formaterar ett på förhand givet HTML5-dokument. Använd gärna följande delar i W3Schools:
 
-## Följande instruktioner gäller:
+- <https://www.w3schools.com/css/css_syntax.asp>
+- <https://www.w3schools.com/css/css_selectors.asp>
+- <https://www.w3schools.com/cssref/default.asp>
+
+## Instruktioner
 
 - Filens namn ska vara `style.css`
 - CSS-filen `style.css` ska vara ett externt CSS
