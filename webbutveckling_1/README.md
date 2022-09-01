@@ -15,53 +15,18 @@ I denna mapp finns följande mappar:
 - [lektioner](lektioner)
 - [projekt](projekt)
 
-## Planering
+## Uppgifter
 
-| Vecka | Moment | Uppgift |
-| --- | --- | --- |
-| 34 | _HTML_ | |
-| 35 | | html_uppgift_1 |
-| 36 | | html_uppgift_2 |
-| 37 | _CSS_ | |
-| 38 |  | css_uppgift_1 |
-| 39 |  | css_uppgift_2 |
-| 40 |  | css_uppgift_3 |
-| 41 |  | css_uppgift_4 |
-| 42 | | |
-| 43 | | |
-| 44 | **Höstlov** | |
-| 45 | _Webbens historia_ | |
-| 46 | | |
-| 47 | | |
-| 48 | | |
-| 49 | | |
-| 50 | | projekt_fragesport |
-| 51 | | | 
-| 52 | **Jullov** | |
-| 1 | | |
-| 2 | | |
-| 3 | | projekt_gastbok |
-| 4 | | |
-| 5 | | |
-| 6 | | projekt_blogg |
-| 7 | | |
-| 8 | | |
-| 9 | _Avslutningsprojekt_ | projekt_slut |
-| 10 | **Sportlov** | |
-| 11 | | |
-| 12 | | |
-| 13 | | |
-| 14 | **Påsklov** | |
-| 15 | | |
-| 16 | | |
-| 17 | | |
-| 18 | | |
-| 19 | | |
-| 20 | | |
-| 21 | | |
-| 22 | | |
-| 23 | | |
-| 24 | **Skolavslutning** | |
+1. [html_uppgift_1](html/html_uppgift_1)
+2. [html_uppgift_2](html/html_uppgift_2)
+3. [css_uppgift_1](css/css_uppgift_1)
+4. [css_uppgift_2](css/css_uppgift_2)
+5. [css_uppgift_3](css/css_uppgift_3)
+6. [css_uppgift_4](css/css_uppgift_4)
+7. [projekt_fragesport](projekt/projekt_fragesport)
+8. [projekt_gastbok](projekt/projekt_gastbok)
+9. [projekt_blogg](projekt/projekt_blogg)
+9. [projekt_slut](projekt/projekt_slut)
 
 ## Validering
 
