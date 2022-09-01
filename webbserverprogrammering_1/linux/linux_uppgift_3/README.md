@@ -55,9 +55,9 @@ Första bokstaven är `d` om den är en mapp och `-` om den är en fil.
 
 ### Exempel på fil med 740 rättigheter:
 
-`-rw-r----- 1 root admin 8187 2010-11-22 13:35`
+`-rwxr----- 1 root admin 8187 2010-11-22 13:35`
 
-- `rw-` användaren "root" har read och write rättigheter.
+- `rwx` användaren "root" har read och write rättigheter.
 - `r--` "admin" gruppen har read rättigheter.
 - `---` andra användare har inga rättigheter.
 
