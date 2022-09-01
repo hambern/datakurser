@@ -43,7 +43,3 @@ Sidan har följande struktur. Observera att alla länkar är inte är kopplade t
 - ett footer-element som utgör sidans sidfot som innehåller ett p-element.
 
 Det är viktigt att du studerar html-dokumentets uppbyggnad och vilka olika taggar, id och klasser som används.
-
-### Inlämning
-
-Om du vill använda bilder utöver det som är givet, som bakgrunder för olika element måste dessa bilder länkas in ifrån CSS-dokumentet. Du måste då också packa ihop CSS-filen samt dessa bilder i en zip-fil. Här är kravet att dessa bilder skall placeraras i style-mappen, d.v.s. samma mapp som css-filen ligger i.
