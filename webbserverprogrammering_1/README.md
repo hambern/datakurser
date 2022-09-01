@@ -22,8 +22,9 @@ I denna mapp finns följande mappar:
 5. [linux_uppgift_2](webbserverprogrammering_1/linux/linux_uppgift_2)
 6. [linux_uppgift_3](webbserverprogrammering_1/linux/linux_uppgift_3)
 7. [git_uppgift_4](webbserverprogrammering_1/git/git_uppgift_4)
-8. [linux_uppgift_4](webbserverprogrammering_1/linux/linux_uppgift_4)
-9. [linux_uppgift_5](webbserverprogrammering_1/linux/linux_uppgift_5)
+8. [git_uppgift_5](webbserverprogrammering_1/git/git_uppgift_5)
+9. [linux_uppgift_4](webbserverprogrammering_1/linux/linux_uppgift_4)
+10. [linux_uppgift_5](webbserverprogrammering_1/linux/linux_uppgift_5)
 
 ## Validering
 
