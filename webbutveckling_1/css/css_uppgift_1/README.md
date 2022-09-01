@@ -1,4 +1,4 @@
-# CSS - uppgift 1
+# CSS - Uppgift 1
 
 Din uppgift är att skapa ett externt CSS-dokument som formaterar ett på förhand givet HTML5-dokument. Använd gärna följande delar i W3Schools:
 
