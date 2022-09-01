@@ -15,9 +15,10 @@ I denna uppgift ska du lära dig mer om filrättigheter. Läs informationen neda
 6. Gitta in din kod med följande rader:
 
 ~~~~
-git pull
+git status
 git add --all
-git commit -m "linux_uppgift_3"
+git commit -m "linux_uppgift_2"
+git pull
 git push
 ~~~~
 

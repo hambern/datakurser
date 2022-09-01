@@ -11,8 +11,9 @@ I denna uppgift ska du få bekanta dig med textredigeraren Vim. Det är en textr
 5. Gitta in din kod med följande rader:
 
 ~~~~
-git pull
+git status
 git add --all
 git commit -m "linux_uppgift_2"
+git pull
 git push
 ~~~~
