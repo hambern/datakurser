@@ -8,7 +8,7 @@ html {
 
 body {
     width: 60em;
-    margin: 1em auto;
+    margin: auto;
     background: whitesmoke;
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -19,9 +19,33 @@ a {
     color: cornflowerblue;
 }
 
+footer a {
+    color: darkslateblue;
+}
+
+header h3 {
+    color: white;
+}
+
+aside h3 {
+    color: crimson;
+}
+
+article h3 {
+    color: lightcoral;
+}
+
+.comment {
+    background: white;
+    padding: 1em 2em;
+}
+
 header, aside, #articles, footer { padding: 2em; }
 
-header { border-bottom: 1em solid crimson; }
+header {
+    background: lightcoral;
+    border-bottom: 1em solid crimson;
+}
 
 aside, #articles { float: left; }
 
@@ -48,7 +72,12 @@ ul {
 
 article {
     border-bottom: 1px solid lightgray;
-    padding: 2em;
+    padding-bottom: 2em;
+}
+
+.datetime {
+    color: crimson;
+    font-size: .8em;
 }
 
 .calendar {
@@ -57,6 +86,8 @@ article {
 
 footer {
     clear: both;
+    background: lightcoral;
+    border-top: 1em solid crimson;
 }
 
 table {
