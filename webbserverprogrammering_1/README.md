@@ -27,6 +27,10 @@ I denna mapp finns följande mappar:
 10. [linux_uppgift_5](linux/linux_uppgift_5)
 11. [markdown_uppgift_1](markdown/markdown_uppgift_1)
 
+## Program
+
+I denna kurs kan du använda dig av PhpStorm. Men det är minst lika smidigt och framförallt snabbare att använda dig av ett terminalprogram. Då kan du logga in med ssh och arbeta direkt på din server med Vim. Du kan ladda ner Windows terminal via följande länk: <https://aka.ms/terminal>
+
 ## Validering
 
 Ta gärna för vana att alltid validera dina filer innan inlämning. På så vis får du veta om du gjort något fel, och det är dessutom det första jag gör när jag rättar de uppgifter du lämnar in.
