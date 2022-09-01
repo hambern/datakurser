@@ -11,7 +11,10 @@ I denna uppgift får du:
 
 I denna uppgift ska du skapa ett formulär och använda det för att skicka information
 
-Läs på om hur du gör formulär på: https://www.w3schools.com/html/html_forms.asp
+Läs på om hur du gör formulär på:
+
+- <https://www.w3schools.com/html/html_forms.asp>
+- <https://www.w3schools.com/html/html_forms_attributes.asp>
 
 Skapa ett formulär som ser ut som facit. Detta innebär följande:
 

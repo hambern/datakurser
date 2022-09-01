@@ -4,8 +4,8 @@
 
 I denna uppgift ska du lära dig mer om filrättigheter. Läs informationen nedan under rubriken "Rättigheter" och gör följande saker. Skriv ner svaren på frågorna i en textfil med namnet `linux_uppgift_3.txt` i mappen `linux/` i din webbserverutveckligs-mapp. Gitta därefter in den på ditt repository.
 
-1. Vilka rättigheter är det på filen `konto.txt` på din användare och vilka har rätt att göra ändringar i den?
-2. Vilka rättigheter är det på mappen `public_html/` och vilka har rätt att se innehållet i den?
+1. Vilka rättigheter är det på filen `konto.txt` på din användare och vilka har rätt att göra ändringar i den? Uttryck rättigheterna i form av siffror (ex. 755).
+2. Vilka rättigheter är det på mappen `public_html/` och vilka har rätt att se innehållet i den? Uttryck rättigheterna i form av siffror.
 3. 755 är standardrättigheterna på nya filer och mappar. Vad betyder det?
 4. Vilket kommando bör du köra för att se vilka grupper din användare tillhör?
 5. Vilket `chmod`-kommando bör du köra för att ge följande rättigheter till mappen `temp` och _allt_ dess innehåll?
@@ -15,9 +15,10 @@ I denna uppgift ska du lära dig mer om filrättigheter. Läs informationen neda
 6. Gitta in din kod med följande rader:
 
 ~~~~
-git pull
+git status
 git add --all
-git commit -m "linux_uppgift_3"
+git commit -m "linux_uppgift_2"
+git pull
 git push
 ~~~~
 
@@ -55,9 +56,9 @@ Första bokstaven är `d` om den är en mapp och `-` om den är en fil.
 
 ### Exempel på fil med 740 rättigheter:
 
-`-rw-r----- 1 root admin 8187 2010-11-22 13:35`
+`-rwxr----- 1 root admin 8187 2010-11-22 13:35`
 
-- `rw-` användaren "root" har read och write rättigheter.
+- `rwx` användaren "root" har read och write rättigheter.
 - `r--` "admin" gruppen har read rättigheter.
 - `---` andra användare har inga rättigheter.
 
