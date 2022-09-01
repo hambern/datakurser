@@ -4,6 +4,8 @@ Syftet med denna uppgift är att du ska visa att du kan skapa en tvåkolumnslayo
 HTML5-dokument. Läs gärna följande delar i W3Schools innan du börjar:
 
 - <https://www.w3schools.com/css/css_float.asp>
+- <https://www.w3schools.com/css/css_selectors.asp>
+- <https://www.w3schools.com/csS/css3_box-sizing.asp>
 
 Innehållsmässigt är HTML-dokumentet en fiktiv bloggsida som innehåller tre blogginlägg och några kommentarer. Längre ned
 i dokumentet presenteras dokumentets uppbyggnad och resonemanget bakom uppmärkningen. Denna del är viktig dels för att
@@ -16,7 +18,7 @@ Din uppgift är att göra ett CSS-dokument med namnet `style.css`. Denna CSS ska
 
 - Body ska ha en bredd på 60em.
 
-- Layouten ska vara centrerad på sidan. Detta innebär att om fönstret förstoras så ska det lediga utrymmet fördelas jämt på vardera sida om innehållet. Det inn bär alltså inte att texten ska vara centrerad.
+- Layouten ska vara centrerad på sidan. Detta innebär att om fönstret förstoras så ska det lediga utrymmet fördelas jämt på vardera sida om innehållet. Det innebär alltså inte att texten ska vara centrerad.
 
 - Layouten ska ha två kolumner. Den ena kolumnen ska innehålla en navigeringsmeny m.m. (se mer om detta nedan) med klickbara länkar. Den andra kolumnen skall innehålla blogginläggen.Du väljer själv om navigeringsmeny skall ligga till höger eller vänster om blogginläggen.
 

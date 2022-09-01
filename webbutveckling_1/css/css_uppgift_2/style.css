@@ -1,5 +1,80 @@
-body {
-    width: 60em;
-    margin: auto;
+* {
+    box-sizing: border-box;
 }
 
+html {
+    background: bisque;
+}
+
+body {
+    width: 60em;
+    margin: 1em auto;
+    background: whitesmoke;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+header, aside, #articles, footer { padding: 2em; }
+
+header { border-bottom: 1em solid crimson; }
+
+aside, #articles { float: left; }
+
+aside {
+    width: 20em;
+    text-align: center;
+}
+
+ul {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+}
+
+#aboutme > img {
+    border-radius: 999em;
+    border: 1px solid lightgray;
+}
+
+#articles {
+    width: 40em;
+    border-left: 1px solid lightgray;
+}
+
+article {
+    border-bottom: 1px solid lightgray;
+    padding: 2em;
+}
+
+.calendar {
+    width: 100%;
+}
+
+footer {
+    clear: both;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: white;
+}
+
+thead > tr {
+    background: lightcoral;
+    font-weight: bolder;
+    color: white;
+}
+
+td.holiday {
+    color: crimson;
+    font-weight: bolder;
+}
