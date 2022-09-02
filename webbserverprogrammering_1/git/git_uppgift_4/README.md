@@ -13,6 +13,10 @@ I denna uppgift ska du visa att du lärt dig grundläggande git-funktioner. Orga
 
 I mappen `git` ska du skapa en fil som heter `uppgift_4.txt` däri ska du svara på följande frågor och göra en ny commit efter varje fråga. Svara på fråga 1, gör en ny commit, svara på fråga 2, gör en ny commit och fortsätt så. Glöm inte att testa alla kommandon.
 
+Läs följande sida på W3Schools:
+
+- <https://www.w3schools.com/git/git_commit.asp?remote=gitlab>
+
 1. Vad innebär det att "committa" och vad skriver du för att göra det?
 2. Om du har gjort ändringar i en fil men vill ta bort allt som är "modified" hur skriver man då? Testa att det fungerar.
 3. Om du har lagt till en fil men vill ta bort den från "staged" area. Hur skriver du för att ta bort filen? Testa så att det fungerar.
