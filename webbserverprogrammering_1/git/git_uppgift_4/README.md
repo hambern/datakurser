@@ -16,6 +16,9 @@ I mappen `git` ska du skapa en fil som heter `uppgift_4.txt` däri ska du svara 
 Läs följande sida på W3Schools:
 
 - <https://www.w3schools.com/git/git_commit.asp?remote=gitlab>
+- <https://www.w3schools.com/git/git_revert.asp?remote=gitlab>
+- <https://www.w3schools.com/git/git_reset.asp?remote=gitlab>
+- <https://www.w3schools.com/git/git_amend.asp?remote=gitlab>
 
 1. Vad innebär det att "committa" och vad skriver du för att göra det?
 2. Om du har gjort ändringar i en fil men vill ta bort allt som är "modified" hur skriver man då? Testa att det fungerar.
