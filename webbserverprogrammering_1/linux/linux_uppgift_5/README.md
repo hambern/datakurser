@@ -1,6 +1,6 @@
 # Linux - Uppgift 5
 
-I denna uppgift ska du få lära dig att söka i filer och mappar med hjälp av terminalen. Utför nedanstående undersökningar en i taget och skriv ner svaren på frågorna i en textfil med namnet `linux_uppgift_5.txt` i mappen `linux/` i din webbserverutveckligs-mapp. Gitta därefter in den på ditt repository.
+I denna uppgift ska du få lära dig att söka i filer och mappar med hjälp av terminalen. Utför nedanstående undersökningar en i taget och skriv ner svaren på frågorna i en markdownfil med namnet `linux_uppgift_5.md` i mappen `linux/` i din webbserverutveckligs-mapp. Gitta därefter in den på ditt repository.
 
 ## Hitta filer
 
@@ -25,3 +25,8 @@ För att söka i enstaka filer i Linux kan du använda dig av kommandot `grep`
     2. Karl
     3. Linda
 8. Hur ska du skriva för att skapa filen `sven` under din egen mapp `linux` där du bara listar de personer som har namn som innehåller "sven"?
+
+## Lämna in
+
+- Gitta in dina ändringar och kopiera url:en till `linux_uppgift_5.md`
+- Lämna in den länken på uppgiften `linux_uppgift_5` på Vklass

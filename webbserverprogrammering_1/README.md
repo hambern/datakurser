@@ -24,8 +24,8 @@ I denna mapp finns följande mappar:
 7. [git_uppgift_4](git/git_uppgift_4)
 8. [git_uppgift_5](git/git_uppgift_5)
 9. [linux_uppgift_4](linux/linux_uppgift_4)
-10. [linux_uppgift_5](linux/linux_uppgift_5)
-11. [markdown_uppgift_1](markdown/markdown_uppgift_1)
+10. [markdown_uppgift_1](markdown/markdown_uppgift_1)
+11. [linux_uppgift_5](linux/linux_uppgift_5)
 
 ## Program
 
