@@ -28,9 +28,11 @@ I denna mapp finns följande mappar:
 11. [linux_uppgift_5](linux/linux_uppgift_5)
 12. [git_uppgift_6](git/git_uppgift_6)
 
-## Program
+## Windows Terminal
 
 I denna kurs kan du använda dig av PhpStorm. Men det är minst lika smidigt och framförallt snabbare att använda dig av ett terminalprogram. Då kan du logga in med ssh och arbeta direkt på din server med Vim. Du kan ladda ner Windows terminal via följande länk: <https://aka.ms/terminal>
+
+### Koppla din dator till ditt studentkonto
 
 För att kunna logga in utan att behöva skriva lösenordet varje gång måste du använda dig av SSH-nycklar:
 
@@ -41,6 +43,18 @@ För att kunna logga in utan att behöva skriva lösenordet varje gång måste d
 5. Skapa en fil för godkända nycklar `vim ~/.ssh/authorized_keys`
 6. Klistra in innehållet från punkt 5. Spara med `:wq`
 7. Ta bort den skickade nyckelfilen med `rm ~/id_rsa.pub`
+
+### Autostarta på student-servern
+
+För att autostarta som inloggad på din användare på studentservern måste du genomgå följande steg:
+
+1. Gå in på "Settings" i Windows-terminalen
+2. Skapa en ny profil via "+ Add new profile"
+3. Duplicera Windows PowerShell
+4. Ge profilen ett namn ex "Student-servern"
+5. Sätt command line till `ssh -p 3690 ditt_login@student.oedu.se` och spara profilen
+6. Gå in på "Startup" via vänstermenyn
+7. Ändra "Default profile" till den profil du precis skapade
 
 ## Validering
 
