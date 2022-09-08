@@ -89,7 +89,7 @@ För att kunna logga in utan att behöva skriva lösenordet varje gång måste d
 2. Kopiera den till din server med `scp -P 3690 C:\Users\ditt_användarnamn\.ssh\id_rsa.pub ditt_login@student.oedu.se:~`
 3. Logga in till din server med lösenordet `ssh -p 3690 ditt_login@student.oedu.se`
 4. Öppna filen du skickade med `cat ~/id_rsa.pub` och kopiera innehållet
-5. Skapa en fil för godkända nycklar `vim ~/.ssh/authorized_keys`
+5. Skapa en fil för godkända nycklar med `vim ~/.ssh/authorized_keys`
 6. Klistra in innehållet från punkt 5. Spara med `:wq`
 7. Ta bort den skickade nyckelfilen med `rm ~/id_rsa.pub`
 
