@@ -28,34 +28,6 @@ I denna mapp finns följande mappar:
 11. [linux_uppgift_5](linux/linux_uppgift_5)
 12. [git_uppgift_6](git/git_uppgift_6)
 
-## Windows Terminal
-
-I denna kurs kan du använda dig av PhpStorm och "Start SSH Session...". Men det är minst lika smidigt och framförallt snabbare och coolare att använda sig av ett terminalprogram. Då kan du logga in med ssh och arbeta direkt på din server med Vim. Du kan ladda ner Windows terminal via följande länk: <https://aka.ms/terminal>
-
-### Koppla din dator till ditt studentkonto
-
-För att kunna logga in utan att behöva skriva lösenordet varje gång måste du använda dig av SSH-nycklar:
-
-1. I terminalen skriver du `ssh-keygen` för att generera en nyckel. Tryck enter på alla frågor.
-2. Kopiera den till din server med `scp -P 3690 C:\Users\ditt_användarnamn\.ssh\id_rsa.pub ditt_login@student.oedu.se:~`
-3. Logga in till din server med lösenordet `ssh -p 3690 ditt_login@student.oedu.se`
-4. Öppna filen du skickade med `cat ~/id_rsa.pub` och kopiera innehållet
-5. Skapa en fil för godkända nycklar `vim ~/.ssh/authorized_keys`
-6. Klistra in innehållet från punkt 5. Spara med `:wq`
-7. Ta bort den skickade nyckelfilen med `rm ~/id_rsa.pub`
-
-### Autostarta på student-servern
-
-För att autostarta som inloggad på din användare på studentservern måste du genomgå följande steg:
-
-1. Gå in på "Settings" i Windows-terminalen
-2. Skapa en ny profil via "+ Add new profile"
-3. Duplicera Windows PowerShell
-4. Ge profilen ett namn ex "Student-servern"
-5. Sätt command line till `ssh -p 3690 ditt_login@student.oedu.se` och spara profilen
-6. Gå in på "Startup" via vänstermenyn
-7. Ändra "Default profile" till den profil du precis skapade
-
 ## Validering
 
 Ta gärna för vana att alltid validera dina filer innan inlämning. På så vis får du veta om du gjort något fel, och det är dessutom det första jag gör när jag rättar de uppgifter du lämnar in.
@@ -70,7 +42,6 @@ Ta gärna för vana att alltid validera dina filer innan inlämning. På så vis
 - Servernamn: `student.oedu.se`
 - För phpmyadmin: `admin.student.oedu.se`
 - Din hemsida: `student.oedu.se/~ditt_login`
-
 
 ### Filöverföring
 
@@ -105,3 +76,31 @@ Du kan också, när du fyllt i korrekt information i PhpStorm, logga in via ssh 
 3. Redigera filer som ligger på servern
 4. Titta på din egen sida via `http://student.oedu.se/~ditt_login` i en webbläsare
 5. Ansluta en mapp i PhpStorm till servern
+
+## Windows Terminal
+
+I denna kurs kan du använda dig av PhpStorm och "Start SSH Session...". Men det är minst lika smidigt och framförallt snabbare och coolare att använda sig av ett terminalprogram. Då kan du logga in med ssh och arbeta direkt på din server med Vim. Du kan ladda ner Windows terminal via följande länk: <https://aka.ms/terminal>
+
+### Koppla din dator till ditt studentkonto
+
+För att kunna logga in utan att behöva skriva lösenordet varje gång måste du använda dig av SSH-nycklar:
+
+1. I terminalen skriver du `ssh-keygen` för att generera en nyckel. Tryck enter på alla frågor.
+2. Kopiera den till din server med `scp -P 3690 C:\Users\ditt_användarnamn\.ssh\id_rsa.pub ditt_login@student.oedu.se:~`
+3. Logga in till din server med lösenordet `ssh -p 3690 ditt_login@student.oedu.se`
+4. Öppna filen du skickade med `cat ~/id_rsa.pub` och kopiera innehållet
+5. Skapa en fil för godkända nycklar `vim ~/.ssh/authorized_keys`
+6. Klistra in innehållet från punkt 5. Spara med `:wq`
+7. Ta bort den skickade nyckelfilen med `rm ~/id_rsa.pub`
+
+### Autostarta på student-servern
+
+För att autostarta som inloggad på din användare på studentservern måste du genomgå följande steg:
+
+1. Gå in på "Settings" i Windows-terminalen
+2. Skapa en ny profil via "+ Add new profile"
+3. Duplicera Windows PowerShell
+4. Ge profilen ett namn ex "Student-servern"
+5. Sätt command line till `ssh -p 3690 ditt_login@student.oedu.se` och spara profilen
+6. Gå in på "Startup" via vänstermenyn
+7. Ändra "Default profile" till den profil du precis skapade
