@@ -30,7 +30,7 @@ I denna mapp finns följande mappar:
 
 ## Windows Terminal
 
-I denna kurs kan du använda dig av PhpStorm. Men det är minst lika smidigt och framförallt snabbare att använda dig av ett terminalprogram. Då kan du logga in med ssh och arbeta direkt på din server med Vim. Du kan ladda ner Windows terminal via följande länk: <https://aka.ms/terminal>
+I denna kurs kan du använda dig av PhpStorm och "Start SSH Session...". Men det är minst lika smidigt och framförallt snabbare och coolare att använda sig av ett terminalprogram. Då kan du logga in med ssh och arbeta direkt på din server med Vim. Du kan ladda ner Windows terminal via följande länk: <https://aka.ms/terminal>
 
 ### Koppla din dator till ditt studentkonto
 
