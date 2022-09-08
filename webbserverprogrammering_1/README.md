@@ -32,6 +32,16 @@ I denna mapp finns följande mappar:
 
 I denna kurs kan du använda dig av PhpStorm. Men det är minst lika smidigt och framförallt snabbare att använda dig av ett terminalprogram. Då kan du logga in med ssh och arbeta direkt på din server med Vim. Du kan ladda ner Windows terminal via följande länk: <https://aka.ms/terminal>
 
+För att kunna logga in utan att behöva skriva lösenordet varje gång måste du använda dig av SSH-nycklar:
+
+1. I terminalen skriver du `ssh-keygen` för att generera en nyckel
+2. Kopiera den till den server med `scp -P 3690 ~\.ssh\id_rsa.pub ditt_login@student.oedu.se:~`
+3. Logga in till din server med lösenordet `ssh -p 3690 ditt_login@student.oedu.se`
+4. Öppna filen du skickade med `cat ~/id_rsa.pub` och kopiera innehållet
+5. Skapa en fil för godkända nycklar `vim ~/.ssh/authorized_keys`
+6. Klistra in innehållet från punkt 5. Spara med `:wq`
+7. Ta bort den skickade nyckelfilen med `rm ~/id_rsa.pub`
+
 ## Validering
 
 Ta gärna för vana att alltid validera dina filer innan inlämning. På så vis får du veta om du gjort något fel, och det är dessutom det första jag gör när jag rättar de uppgifter du lämnar in.
