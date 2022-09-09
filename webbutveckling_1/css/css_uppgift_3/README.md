@@ -11,6 +11,11 @@ Förskjutningen för element med relative, fixed och absolute styrs sedan med eg
 
 Element som är positionerade med relative, fixed eller absolute kan ha en position på z-axeln (dvs ligga ovanpå varandra). Positionen på z-axeln styrs med egenskapen z-index som kan ha ett heltal som värde (eller auto).
 
+Läs gärna och öva på exemplen på dessa sidor:
+
+- <https://www.w3schools.com/css/css_positioning.asp>
+- <https://www.w3schools.com/css/css_z-index.asp>
+
 ## Instruktioner
 
 Till denna uppgift finns en HTML-fil och 4 bilder. Dessa får du inte göra några ändringar i.
@@ -23,4 +28,4 @@ Till denna uppgift finns en HTML-fil och 4 bilder. Dessa får du inte göra någ
 6.  Text med `class="displaced"` ska förskjutas 6px uppåt i förhållande till där den annars skulle ha legat. Fontstorleken för sådan text ska vara 18px och texten ska ha färgen #33CCFF.
 7.  `bild1.gif`, `bild2.gif` och `bild3.gif` ska positioneras ovanpå varandra i bestämd ordning (bild1 överst, bild2 i mitten och bild3 underst). Alla bilderna ska ligga 100px från högra sidan och 150px från toppen av webläsarfönstret. De ska sedan följa med texten då sidan scrollas.
 
-Testa att scrolla på sidan och ändra storleken på webläsarfönstret så att du ser och förstår hur de positioneringar du gjort fungerar. Det bör se ut ungefär som `facit.jpg`
+Testa att scrolla på sidan och ändra storleken på webbläsarfönstret så att du ser och förstår hur de positioneringar du gjort fungerar. Det bör se ut ungefär som `facit.jpg`
