@@ -15,6 +15,7 @@ I mappen `git` ska du skapa en fil som heter `uppgift_5.txt` däri ska du svara 
 
 Läs följande sida på W3Schools:
 
+- <https://www.w3schools.com/git/git_staging_environment.asp?remote=gitlab>
 - <https://www.w3schools.com/git/git_commit.asp?remote=gitlab>
 - <https://www.w3schools.com/git/git_revert.asp?remote=gitlab>
 - <https://www.w3schools.com/git/git_reset.asp?remote=gitlab>
