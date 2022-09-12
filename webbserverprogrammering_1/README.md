@@ -98,7 +98,7 @@ För att kunna logga in utan att behöva skriva lösenordet varje gång måste d
 För att autostarta som inloggad på din användare på studentservern måste du genomgå följande steg:
 
 1. Gå in på "Settings" i Windows-terminalen
-2. Skapa en ny profil via "+ Add new profile"
+2. Skapa en ny profil via "+ Add a new profile"
 3. Duplicera Windows PowerShell
 4. Ge profilen ett namn ex "Student-servern"
 5. Sätt command line till `ssh -p 3690 ditt_login@student.oedu.se` och spara profilen
