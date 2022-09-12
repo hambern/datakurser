@@ -104,3 +104,7 @@ För att autostarta som inloggad på din användare på studentservern måste du
 5. Sätt command line till `ssh -p 3690 ditt_login@student.oedu.se` och spara profilen
 6. Gå in på "Startup" via vänstermenyn
 7. Ändra "Default profile" till den profil du precis skapade
+
+### Börja i en speciell mapp på servern (överkurs)
+
+Om du vill börja på en speciell mapp på servern som inte är root-mappen `~/` byter du ut command line-kommandot till: `ssh -t -p 3690 ditt_login@student.oedu.se "cd public_html/din_mapp && bash"`. Notera att cd-kommandot måste vara inom dubbla citationstecken och avslutas med `&& bash`
