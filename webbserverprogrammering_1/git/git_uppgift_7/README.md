@@ -6,4 +6,6 @@ I denna uppgift ska du få lära dig hur `.gitignore` funkar och hur du kan få 
 
 ## Instruktioner
 
+Till denna uppgift följer en mapp med en mängd olika filer. Din uppgift är att skapa en git-ignore-fil som gör följande:
 
+1. 
