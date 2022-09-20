@@ -1,0 +1,124 @@
+/*
+    Allt som skrivs mellan slash-stjärna och stjärna-slash (som denna text) är en kommentar till koden och påverkar inte kodens funktion. För att koden ska bli funktionell måste den lyftas ut ur detta block. När du läst denna kommentar går det bra att ta bort den.
+*/
+
+* {
+/*
+    Stjärnan som selektor innebär att dessa regler gäller för precis alla element. Man bör vara försiktig med att uppställa regler för alla element. Denna regel innebär att utfyllnaden (padding) och ramen (border) ingår i elementets totala bredd, exempelvis när du sätter en regel för elementets bredd (width).
+
+    box-sizing: border-box;
+*/
+}
+
+html {
+/*
+    Här sätter vi regler för själva html-elementet. Genom att bestämma html-elementets bakgrund (background-color) bestämmer vi bakgrundsfärgen för hela sidan.
+
+    background-color: #F2CC8F;
+*/
+}
+
+body {
+/*
+    I body-elementet ligger den synliga delen av sidans innehåll. Här kan vi bestämma sådant som typsnitt (font-family), textstorlek (font-size), radhöjd (line-height), bakgrundsfärg, bredd (width), maximal bredd (max-width), marginaler (margin) och utfyllnad (padding)
+
+    font-family: "Lucida Sans", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    background-color: #F4F1DE;
+    width: 60em;
+    max-width: 100%;
+    margin: auto;
+    padding: 2em;
+*/
+}
+
+h1 {
+/*
+    h1 reglerar elementet h1. I det här fallet vill vi bestämma elementets bakgrundsfärg, text-position (text-align), utfyllnad, textfärg (color), topp-marginal (top-margin) och kant (border)
+
+    background-color: #81B29A;
+    text-align: center;
+    padding: 2em;
+    color: #3D405B;
+    margin-top: 0;
+    border: 2px solid #3D405B;
+*/
+}
+
+#first-paragraph {
+/*
+    Vi vill här skapa en ingress av det första stycket. Det gör vi i det här fallet genom att ge första p-elementet id:t "first-paragraph" och här i css:en använda en id-selektor (#). Dessa regler kommer då endast att gälla för det innehåll som ligger i elementet med id:t "first-paragraph". I detta fall vill vi ge detta element en ny text-bredd (font-weight) och textstorlek.
+
+    font-weight: bolder;
+    font-size: 1.2em;
+*/
+}
+
+table {
+/*
+    table-elementet skapar tillsammans med tr, th och td en tabell. I det här fallet vill vi reglera tabellens bredd (width), göra att den flyter till höger om övrigt innehåll (float), textstorlek, bakgrundsfärg, textfärg, göra att tabellcellerna sitter ihop (border-collapse) och vänstermarginalen till övrigt innehåll (margin-left)
+
+    width: 40%;
+    float: right;
+    font-size: 0.7em;
+    background-color: #3D405B;
+    color: white;
+    border-collapse: collapse;
+    margin-left: 2em;
+*/
+}
+
+td, th {
+/*
+    Denna regel kommer att gälla BÅDE td-element och th-element. Detta åstadkommer man med ett kommatecken. I detta fall vill vi bara göra tabellcellerna lite luftigare genom att de dem lite utfyllnad (padding)
+
+    padding: 0.5em;
+*/
+}
+
+th {
+/*
+    Vi vill nu lägga till en extra-regel som bara ska gälla th-elementen. I det här fallet vill vi att texten ska ligga till höger i cellen (text-align)
+
+    text-align: right;
+*/
+}
+
+tr:nth-child(odd) {
+/*
+    Här siktar vi in oss på tr-elementen (tabellraderna), men inte alla. Vi vill bara reglera varannan rad, de med jämna radtal: rad 2, 4, 6, 8 etc. Vi vill här ge dessa en annan bakgrundsfärg
+
+    background-color: #474B6B;
+*/
+}
+
+.code {
+/*
+    Här vill vi skapa ett speciellt utseende på de delar som innehåller kod. Därför har vi satt klassen "code" på dessa i html:en varpå vi kan reglera bara dem här. I det här fallet vill vi reglera typsnitt, bakgrundsfärg, textfärg, utfyllnad och kant-radie för att skapa rundare hörn (border-radius)
+
+    font-family: Consolas, monospace;
+    background-color: #3D405B;
+    color: white;
+    padding: 1em;
+    border-radius: 1em;
+*/
+}
+
+ul {
+/*
+    ul-elementet skapar en punktlista. I det här fallet vill vi bestämma att själva punkten ska ligga i själva elementet istället för utanför det (list-style-position)
+
+    list-style-position: inside;
+*/
+}
+
+li {
+/*
+    Det sista vi ska reglera är li-elementet. Li står för list-item och innehåller de enskilda punkterna i punktlistan. Här vill vi reglera elementets bakgrundsfärg, marginal och utfyllnaden till vänster (padding-left)
+
+    background-color: white;
+    margin: 1em 0;
+    padding-left: 1em;
+*/
+}

@@ -11,7 +11,7 @@
 
 <table>
     <tr>
-        <td colspan="2">Cascading Style Sheets</td>
+        <th colspan="2">Cascading Style Sheets</th>
     </tr>
     <tr>
         <th>Filändelse</th>
@@ -54,9 +54,9 @@
         CSS används av de flesta stora webbplatser. CSS-dokumentet inkluderas oftast med hjälp av ett link-element:
     </p>
 
-    <div class="code">
-        <pre>&lt;link rel="stylesheet" type="text/css" href="sökvägen/till/stilmallen.css"&gt;</pre>
-    </div>
+    <p class="code">
+        &lt;link rel="stylesheet" type="text/css" href="sökvägen/till/stilmallen.css"&gt;
+    </p>
 
     <p>
         Denna rad specificerar sökvägen till filen med stilspecifikationerna (href="sökvägen/till/stilmallen.css") och hur webbläsaren ska tolka filen (rel="stylesheet" type="text/css").
@@ -65,9 +65,9 @@
         Ett annat sätt att använda CSS i ett HTML eller XHTML-dokument är style-elementet, som kan användas på två sätt. Det första är att inkludera CSS-filen via en CSS-instruktion:
     </p>
 
-    <div class="code">
-        <pre>&lt;style type="text/css"&gt;@import url(stilmall.css);&lt;/style&gt;</pre>
-    </div>
+    <p class="code">
+        &lt;style type="text/css"&gt;@import url(stilmall.css);&lt;/style&gt;
+    </p>
 
     <p>
         Alternativt går det att skriva in CSS-koden direkt i style-elementet. Detta är inte rekommenderat då det kan uppstå problem med äldre webbläsare då de tolkar CSS-koden som en del av HTML-koden och därför visar koden direkt på webbsidan. En annan anledning är också för att det blir krångligare att ändra koden i efterhand sedan. Det är därför rekommenderat att använda ett link-element för att koppla CSS-kod till webbsidor, dels för att spara bandbredd och dels att en HTML-tolk och XHTML-tolk hanterar style-element på olika sätt.
@@ -75,6 +75,22 @@
     <p>
         CSS-tekniken har ibland kritiserats för att komplicera arbetet för webbutvecklare då många webbläsares stöd för CSS-standarden varierar kraftigt, webbläsaren Internet Explorer version 6 och tidigare är ofta utsatta för dessa anklagelser. Vissa speciella designdelar anses vara onödigt komplicerade som till exempel horisontell och vertikal centrering av olika element.
     </p>
+
+</section>
+
+<section id="selectors">
+
+    <h2>Selektorer</h2>
+
+    <p>Det finns i princip fem olika sätt att välja vilken innehållstyp man vill justera:</p>
+
+    <ul>
+        <li>Enkel selektion baserad på elementnamn, klass och id</li>
+        <li>Kombinerad selektion baserad på relationen mellan elementen</li>
+        <li>Pseudo-klass-selektion baserad på elementens tillstånd</li>
+        <li>Pseudo-element-selektion baserad på en del av element</li>
+        <li>Attribut-selektion baserad på elementens olika attribut</li>
+    </ul>
 
 </section>
 
