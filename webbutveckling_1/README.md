@@ -28,6 +28,13 @@ I denna mapp finns följande mappar:
 9. [projekt_blogg](projekt/projekt_blogg)
 9. [projekt_slut](projekt/projekt_slut)
 
+## Roliga kluringar
+
+1. [Hambergs kluring 1](https://student.oedu.se/~mh6802/kul/mattias_kul_01/)
+2. [Hambergs kluring 2](https://student.oedu.se/~mh6802/kul/mattias_kul_02/)
+3. [Hambergs kluring 3](https://student.oedu.se/~mh6802/kul/mattias_kul_03/)
+4. [Notpron](http://notpron.org/notpron/)
+
 ## Validering
 
 Ta gärna för vana att alltid validera dina filer innan inlämning. På så vis får du veta om du gjort något fel, och det är dessutom det första jag gör när jag rättar de uppgifter du lämnar in.
