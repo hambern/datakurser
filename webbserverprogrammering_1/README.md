@@ -27,6 +27,7 @@ I denna mapp finns följande mappar:
 10. [markdown_uppgift_1](markdown/markdown_uppgift_1)
 11. [linux_uppgift_5](linux/linux_uppgift_5)
 12. [git_uppgift_6](git/git_uppgift_6)
+13. [git_uppgift_7](git/git_uppgift_7)
 
 ## Validering
 
