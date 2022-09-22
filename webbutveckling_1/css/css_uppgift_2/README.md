@@ -9,10 +9,7 @@ HTML5-dokument. Läs gärna följande delar i W3Schools innan du börjar:
 - <https://www.w3schools.com/css/css_boxmodel.asp>
 - <https://www.w3schools.com/csS/css3_box-sizing.asp>
 
-Innehållsmässigt är HTML-dokumentet en fiktiv bloggsida som innehåller tre blogginlägg och några kommentarer. Längre ned
-i dokumentet presenteras dokumentets uppbyggnad och resonemanget bakom uppmärkningen. Denna del är viktig dels för att
-kunna förstå hur du kan göra ett CSS för just den här uppgiften, dels för att du kan lära dig hur man kan resonera kring
-semantiskt rimlig uppmärkning. Filen [exmepel.png](exempel.png) är ett exempel på hur en godkänt lösning kan se ut. Använd den gärna för inspiration.
+Innehållsmässigt är HTML-dokumentet en fiktiv bloggsida som innehåller tre blogginlägg och några kommentarer.Längre ned i dokumentet presenteras dokumentets uppbyggnad och resonemanget bakom uppmärkningen. Denna del är viktig dels för att kunna förstå hur du kan göra ett CSS för just den här uppgiften, dels för att du kan lära dig hur man kan resonera kring semantiskt rimlig uppmärkning. Filen [exmepel.png](exempel.png) är ett exempel på hur en godkänt lösning kan se ut. Använd den gärna för inspiration.
 
 ### Instruktioner
 
