@@ -16,6 +16,6 @@ Utgå ifrån det HTML-dokument som följer med denna uppgift. Din uppgift är at
 Följande krav gäller:
 
 - **I alla lägen** ska body-elementet vara centrerat och maximalt 60em brett. Tabellen och alla bilderna ska göras responsiva. Deras bredd ska alltså anpassas till deras respektive elements bredd. Header-elementet ska ligga ovanför övriga element och footer-elementet ska ligga nederst på sidan.
-- **I mobiltelefonens vertikala läge** ska alla delar av sidan hamna ovanför varandra. Inga delar av sidan ska alltså flyta.
-- **I ipadens vertikala läge** ska porträttbilden (i aside-elementet) ligga bredvid texten som hör ihop med den. I övrigt ska sidan ha en enda kolumn.
-- **I ipadens horisontella läge** ska sidan ha två kolumner med sidans inlägg på ena och informationen om författaren på den andra sidan. I detta läge ska porträttbilden, precis som i mobiltelefonens vertikala läge, ligga ovanför texten.
+- **I mobiltelefonens vertikala läge** ska alla delar av sidan hamna ovanför varandra. Inga delar av sidan ska alltså flyta. [Se facit-bilden](iphone_12_pro_vertical.png)
+- **I ipadens vertikala läge** ska porträttbilden (i aside-elementet) ligga bredvid texten som hör ihop med den. I övrigt ska sidan ha en enda kolumn. [Se facit-bilden](ipad_mini_vertical.png)
+- **I ipadens horisontella läge** ska sidan ha två kolumner med sidans inlägg på ena och informationen om författaren på den andra sidan. I detta läge ska porträttbilden, precis som i mobiltelefonens vertikala läge, ligga ovanför texten. [Se facit-bilden](ipad_mini_horizontal.png)
