@@ -6,6 +6,7 @@ HTML5-dokument. Läs gärna följande delar i W3Schools innan du börjar:
 - <https://www.w3schools.com/css/css_float.asp>
 - <https://www.w3schools.com/css/css_selectors.asp>
 - <https://www.w3schools.com/cssref/css_units.asp>
+- <https://www.w3schools.com/css/css_boxmodel.asp>
 - <https://www.w3schools.com/csS/css3_box-sizing.asp>
 
 Innehållsmässigt är HTML-dokumentet en fiktiv bloggsida som innehåller tre blogginlägg och några kommentarer. Längre ned
