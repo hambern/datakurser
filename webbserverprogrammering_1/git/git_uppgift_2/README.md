@@ -1,14 +1,12 @@
 # GIT - Uppgift 2
 
-I denna uppgift ska du skapa din användare på GitLab och synka det med ditt lokala repository
-
-## Instruktioner
-
-Läs följande sidor på W3Schools:
+I denna uppgift ska du skapa din användare på GitLab och synka det med ditt lokala repository. Läs följande sidor på W3Schools:
 
 - <https://www.w3schools.com/git/git_remote_getstarted.asp?remote=gitlab>
 - <https://www.w3schools.com/git/git_security_ssh.asp?remote=gitlab>
 - <https://www.w3schools.com/git/git_remote_add_ssh.asp?remote=gitlab>
+
+## Instruktioner
 
 1. Fyll i uppgifterna på: https://gitlab.com/users/sign_up/. Ange gärna din privata epost-adress. Du kan exempelvis logga in via Google.
 2. Välj "Create project" och döp ditt repository till "Webbserverprogrammering 1" och gör det gärna privat.
