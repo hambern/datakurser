@@ -1,6 +1,11 @@
 # GIT - Uppgift 1
 
-I denna uppgift ska du skapa ditt första lokala git-repository
+I denna uppgift ska du skapa ditt första lokala git-repository. Läs följande innan du sätter igång:
+
+- <https://www.w3schools.com/git/git_getstarted.asp?remote=gitlab>
+- <https://www.w3schools.com/git/git_new_files.asp?remote=gitlab>
+- <https://www.w3schools.com/git/git_staging_environment.asp?remote=gitlab>
+- <https://www.w3schools.com/git/git_commit.asp?remote=gitlab>
 
 ## Instruktioner
 
