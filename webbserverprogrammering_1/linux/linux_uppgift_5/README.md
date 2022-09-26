@@ -8,7 +8,7 @@ För att hitta filer i Linux kan du använda dig av kommandot `find`: <https://w
 
 1. Testa och förklara skillnaden på dessa kommandon:
     1. `find ~mh6802/public -name "person"` 
-    2. `find ~mh6802/public -name "person*'"`
+    2. `find ~mh6802/public -name "person*"`
     3. `find ~mh6802/public -name "person.*"`
     4. `find ~mh6802/public -name "person*.*"`
 2. Hur kan du skapa ett kommando för att hitta alla filer av typen `.txt` under min användare?
