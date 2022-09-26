@@ -4,7 +4,7 @@ I denna uppgift ska du få lära dig att söka i filer och mappar med hjälp av 
 
 ## Hitta filer
 
-För att hitta filer i Linux kan du använda dig av kommandot `find`
+För att hitta filer i Linux kan du använda dig av kommandot `find`: <https://www.hostinger.com/tutorials/how-to-use-find-and-locate-commands-in-linux/>
 
 1. Testa och förklara skillnaden på dessa kommandon:
     1. `find ~mh6802 -name "person"` 
@@ -15,7 +15,7 @@ För att hitta filer i Linux kan du använda dig av kommandot `find`
 
 ## Hitta rader i en fil
 
-För att söka i enstaka filer i Linux kan du använda dig av kommandot `grep`
+För att söka i enstaka filer i Linux kan du använda dig av kommandot `grep`: <https://www.hostinger.com/tutorials/grep-command-in-linux-useful-examples/>
 
 4. På min användare `mh6802` finns det i mappen `public` en fil som heter `folk`. Vad händer när du kör kommandot `grep "Sven" ~mh6802/public/folk`?
 5. Jämför ovanstående resultat med resultatet av `grep -w "Sven" ~mh6802/public/folk`. Vad är skillnaden?
