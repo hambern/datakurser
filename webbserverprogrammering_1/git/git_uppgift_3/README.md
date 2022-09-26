@@ -1,6 +1,8 @@
 # GIT - Uppgift 3
 
-I denna uppgift ska du göra ändringar till din README-fil på GitLab och sedan hämta hem dessa ändringar till din lokala server
+I denna uppgift ska du göra ändringar till din README-fil på GitLab och sedan hämta hem dessa ändringar till din lokala server. Läs följande sida på W3Schools:
+
+- <https://www.w3schools.com/git/git_remote_edit_code.asp?remote=gitlab>
 
 ## Instruktioner
 
