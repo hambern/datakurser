@@ -78,7 +78,7 @@ I denna kurs kan du använda dig av PhpStorm och "Start SSH Session...". Men det
 
 ### Koppla din dator till ditt studentkonto
 
-För att kunna logga in utan att behöva skriva lösenordet varje gång måste du använda dig av SSH-nycklar:
+För att kunna logga in utan att behöva skriva lösenordet måste du använda dig av SSH-nycklar:
 
 1. I terminalen skriver du `ssh-keygen` för att generera en nyckel. Tryck enter på alla frågor.
 2. Kopiera den till din server med `scp -P 3690 C:\Users\ditt_användarnamn\.ssh\id_rsa.pub ditt_login@student.oedu.se:~`
