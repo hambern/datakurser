@@ -1,8 +1,16 @@
 # GIT - Uppgift 5
 
+I denna uppgift ska du visa att du lärt dig grundläggande git-funktioner. Läs följande sida på W3Schools:
+
+- <https://www.w3schools.com/git/git_staging_environment.asp?remote=gitlab>
+- <https://www.w3schools.com/git/git_commit.asp?remote=gitlab>
+- <https://www.w3schools.com/git/git_revert.asp?remote=gitlab>
+- <https://www.w3schools.com/git/git_reset.asp?remote=gitlab>
+- <https://www.w3schools.com/git/git_amend.asp?remote=gitlab>
+
 ## Instruktioner
 
-I denna uppgift ska du visa att du lärt dig grundläggande git-funktioner. Organisera din webbserverprogrammeringsmapp så att den innehåller följande mappar såhär:
+Organisera din webbserverprogrammeringsmapp så att den innehåller följande mappar såhär:
 
 ~~~
 ├── git
@@ -12,14 +20,6 @@ I denna uppgift ska du visa att du lärt dig grundläggande git-funktioner. Orga
 ~~~
 
 I mappen `git` ska du skapa en fil som heter `uppgift_5.txt` däri ska du svara på följande frågor och göra en ny commit efter varje fråga. Svara på fråga 1, gör en ny commit, svara på fråga 2, gör en ny commit och fortsätt så. Glöm inte att testa alla kommandon.
-
-Läs följande sida på W3Schools:
-
-- <https://www.w3schools.com/git/git_staging_environment.asp?remote=gitlab>
-- <https://www.w3schools.com/git/git_commit.asp?remote=gitlab>
-- <https://www.w3schools.com/git/git_revert.asp?remote=gitlab>
-- <https://www.w3schools.com/git/git_reset.asp?remote=gitlab>
-- <https://www.w3schools.com/git/git_amend.asp?remote=gitlab>
 
 1. Vad innebär det att "committa" och vad skriver du för att göra det?
 2. Om du har gjort ändringar i en fil men vill ta bort allt som är "modified" hur skriver man då? Testa att det fungerar.
