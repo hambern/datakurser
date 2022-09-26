@@ -30,13 +30,6 @@ I denna mapp finns följande mappar:
 13. [git_uppgift_7](git/git_uppgift_7)
 14. [git_uppgift_8](git/git_uppgift_8)
 
-## Validering
-
-Ta gärna för vana att alltid validera dina filer innan inlämning. På så vis får du veta om du gjort något fel, och det är dessutom det första jag gör när jag rättar de uppgifter du lämnar in.
-
-- Validering av HTML5: http://html5.validator.nu
-- Validering av CSS: http://jigsaw.w3.org/css-validator (Ange CSS nivå 3 under "Fler val" och ställ in "Alla" under "Varningar")
-
 ## Information om skolans server
 
 ### Information om utvecklingsservern som vi jobbar på
