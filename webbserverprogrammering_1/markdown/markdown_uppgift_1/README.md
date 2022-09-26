@@ -1,9 +1,10 @@
 # Markdown - Uppgift 1
 
-I denna uppgift ska du, med hjälp av Markdown och [The Markdown Guide](https://www.markdownguide.org) formatera ett dokument så att det efterliknar facit-bilden.
+I denna uppgift ska du, med hjälp av Markdown och [The Markdown Guide](https://www.markdownguide.org) och [cheatsheet.md](cheatsheet.md) formatera ett dokument så att det efterliknar facit-bilden.
 
 - Länk till [markdown_uppgift_1](markdown_uppgift_1.md)
 - Länk till [facit](facit.png)
+- Länk till [cheatsheet](cheatsheet.md)
 
 ## Instruktioner
 
