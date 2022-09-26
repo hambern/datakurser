@@ -1,6 +1,8 @@
 # Git - Uppgift 6
 
-I denna uppgift ska du skapa ett repository du kan dela med med din klass och som ni alla kan "committa" till
+I denna uppgift ska du skapa ett repository du kan dela med med din klass och som ni alla kan "committa" till. Läs gärna följande innan du sätter igång:
+
+- <https://www.w3schools.com/git/git_pull_from_remote.asp?remote=gitlab>
 
 ## Instruktioner
 
