@@ -7,9 +7,9 @@ I denna uppgift ska du få lära dig att söka i filer och mappar med hjälp av 
 För att hitta filer i Linux kan du använda dig av kommandot `find`: <https://www.hostinger.com/tutorials/how-to-use-find-and-locate-commands-in-linux/>
 
 1. Testa och förklara skillnaden på dessa kommandon:
-    1. `find ~mh6802 -name "person"` 
-    2. `find ~mh6802 -name 'person*'`
-    3. `find ~mh6802 -name 'person.*'`
+    1. `find ~mh6802/public -name "person"` 
+    2. `find ~mh6802/public -name 'person*'`
+    3. `find ~mh6802/public -name 'person.*'`
 2. Hur kan du skapa ett kommando för att hitta alla filer av typen `.txt` under min användare?
 3. Använd en omdirigering av standard output för att skriva in sökresultatet i en fil med namnet `finds` i din linux-mapp
 
