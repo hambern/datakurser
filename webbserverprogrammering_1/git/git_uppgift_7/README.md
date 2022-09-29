@@ -8,7 +8,7 @@ I denna uppgift ska du få lära dig hur `.gitignore` funkar och hur du kan få 
 
 Till denna uppgift följer en mapp med en mängd olika filer. Din uppgift är att skapa en git-ignore-fil som gör följande:
 
-1. Ladda ner mappen `files` som ligger i denna mapp
+1. Ladda ner mappen `filer` som ligger i denna mapp
 2. Ladda upp mappen `filer` till din server. Detta kan du göra med kommandot `scp` i Windows Poweshell: `scp -rP 3690 sökvägen_till_filer-mappen ditt_login@student.oedu.se:~/public_html/webbserverprogrammering_1/git/`
 3. Skapa en `.gitignore`-fil
 4. Dolda mappar och deras innehåll ska inte indexeras
@@ -18,7 +18,7 @@ Till denna uppgift följer en mapp med en mängd olika filer. Din uppgift är at
 När du gittat in dina filer ska det alltså se ut såhär:
 
 ~~~
-├── temp
+├── filer
     ├── config.yaml
     └── showme.jpg
 ├── kalkylark.xlsx
