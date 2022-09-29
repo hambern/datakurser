@@ -10,10 +10,10 @@ Den första som kommer till denna uppgift får i uppgift att skapa ett "bare" re
 
 1. Alla, även personen som har skapat `shared_bare.git`, ska nu hämta ner det tomma repot till en mapp på sin egen användare. När ni står direkt under er användare `~/` ska du klona repot med kommandot: `git clone ~username/shared_bare.git`. "username" är användarnamnet till den som skapade det delade repositoryt. Du bör då få en mapp som heter `shared_bare` direkt under din användare. Gå in i den...
 2. Låt nu alla i tur och ordning genomgå följande steg:
-   1. Skapa en fil som heter members med vim och skriv ert namn i den filen på en ny rad
-   2. Spara filen, lägg till den, commita den och skicka den sen till remote (git push)
+   1. Skapa en fil som heter `members` med vim och skriv ditt namn i den filen på en ny rad
+   2. Spara filen, lägg till den, commita den och skicka den sen till remote med `git push`
    3. Kör `git pull` och se vad som händer, tex `ls -la` och sen `cat members`
-   4. Alla kör `git tree` (ett git-alias) för att se hur det ser ut
+   4. Kör `git tree` (ett git-alias) för att se hur det ser ut
 3. Skapa en egen fil med ditt användarnamn och fyll den med ett innehåll. Lägg till den och gitta in den till repositoryt. Glöm inte att "pulla" repositoryt innan du "pushar"!
 4. Gör förändringar i någon annans fil, "committa", "pulla" och "pusha" dina förändringar. Om du blir varnad för conflikter, lös dem med hjälp av kommandot `git merge`
 5. Skapa en fil som heter `chat` (om den inte redan finns) och försök föra ett samtal i den med dina kamrater
