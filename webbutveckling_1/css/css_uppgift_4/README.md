@@ -19,3 +19,5 @@ Följande krav gäller:
 - **I mobiltelefonens vertikala läge** ska alla delar av sidan hamna ovanför varandra. Inga delar av sidan ska alltså flyta. [Se facit-bilden](iphone_12_pro_vertical.png)
 - **I ipadens vertikala läge** ska porträttbilden (i aside-elementet) ligga bredvid texten som hör ihop med den. I övrigt ska sidan ha en enda kolumn. [Se facit-bilden](ipad_mini_vertical.png)
 - **I ipadens horisontella läge** ska sidan ha två kolumner med sidans inlägg på ena och informationen om författaren på den andra sidan. I detta läge ska porträttbilden, precis som i mobiltelefonens vertikala läge, ligga ovanför texten. [Se facit-bilden](ipad_mini_horizontal.png)
+
+Men du uppmuntras och förväntas att ta ut svängarna betydligt mer än så i din design. Gör sidan snygg helt enkelt.
