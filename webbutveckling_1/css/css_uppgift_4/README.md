@@ -11,7 +11,7 @@ I denna uppgift ska du få lära dig hur du gör en sida responsiv. Att den är 
 
 ## Instruktioner
 
-Utgå ifrån det HTML-dokument som följer med denna uppgift. Din uppgift är att få dokumentet att se bra ut, både på datorskärmen och i mobilen. Ett tips för att kontrollera hur sidan ser ut i en mobil är att använda dig av inspekteraren. I den kan du näst längst upp till vänster välja användarklient.
+Utgå ifrån det HTML-dokument som följer med denna uppgift. Din uppgift är att få dokumentet att se bra ut, både på datorskärmen och i mobilen. Ett tips för att kontrollera hur sidan ser ut i en mobil är att använda dig av inspekteraren. I den kan du näst längst upp till vänster välja användarklient. För att lösa uppgiften kommer du måsta lägga till en viktig rad i `<head>` i HTML-filen. I övrigt bör det räcka att du redigerar CSS-koden.
 
 Följande krav gäller:
 
