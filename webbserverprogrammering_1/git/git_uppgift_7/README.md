@@ -10,9 +10,10 @@ Till denna uppgift följer en mapp med en mängd olika filer. Din uppgift är at
 
 1. Ladda ner mappen `files` som ligger i denna mapp
 2. Ladda upp mappen `filer` till din server. Detta kan du göra med kommandot `scp` i Windows Poweshell: `scp -rP 3690 sökvägen_till_filer-mappen ditt_login@student.oedu.se:~/public_html/webbserverprogrammering_1/git/`
-3. Dolda mappar och deras innehåll ska inte indexeras
-4. Endast filerna `config.yaml` och `showme.jpg` i mappen `temp` ska indexeras
-5. Alla filer i rooten ska indexeras förutom `powerpoint.pptx` och `ignore.jpg`
+3. Skapa en `.gitignore`-fil
+4. Dolda mappar och deras innehåll ska inte indexeras
+5. Endast filerna `config.yaml` och `showme.jpg` i mappen `temp` ska indexeras
+6. Alla filer i rooten ska indexeras förutom `powerpoint.pptx` och `ignore.jpg`
 
 När du gittat in dina filer ska det alltså se ut såhär:
 
