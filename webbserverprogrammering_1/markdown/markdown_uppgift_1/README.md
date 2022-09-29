@@ -17,7 +17,7 @@ I denna uppgift ska du, med hjälp av Markdown och [The Markdown Guide](https://
 
 **Tips 2:** Vill du vara än mer "Wild and crazy" finns otaliga andra markdownredigerare du kan använda dig av. Testa exempelvis:
 
-- <https:/stackedit.io>
+- <https://stackedit.io>
 - <https://dillinger.io/>
 - <https://hackmd.io/>
 - <https://onlinemarkdowneditor.dev/>
