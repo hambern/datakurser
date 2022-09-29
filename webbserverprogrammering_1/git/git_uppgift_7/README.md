@@ -8,9 +8,10 @@ I denna uppgift ska du få lära dig hur `.gitignore` funkar och hur du kan få 
 
 Till denna uppgift följer en mapp med en mängd olika filer. Din uppgift är att skapa en git-ignore-fil som gör följande:
 
-1. Dolda mappar och deras innehåll ska inte indexeras
-2. Endast filerna `config.yaml` och `showme.jpg` i mappen `temp` ska indexeras
-3. Alla filer i rooten ska indexeras förutom `powerpoint.pptx` och `ignore.jpg`
+1. Ladda upp mappen filer till din server. Detta kan du göra med kommandot `scp` i Windows Poweshell: `scp -rP 3690 <sökvägen till filer-mappen> ditt_login@student.oedu.se:~/public_html/webbserverprogrammering_1/git/`.
+2. Dolda mappar och deras innehåll ska inte indexeras
+3. Endast filerna `config.yaml` och `showme.jpg` i mappen `temp` ska indexeras
+4. Alla filer i rooten ska indexeras förutom `powerpoint.pptx` och `ignore.jpg`
 
 När du gittat in dina filer ska det alltså se ut såhär:
 
