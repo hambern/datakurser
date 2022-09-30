@@ -1,0 +1,16 @@
+body {
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 35rem;
+    font-family: 'Calibri', sans-serif;
+}
+
+blockquote {
+    margin: 1em 0;
+    padding: 1em;
+    background-color: lightgoldenrodyellow;
+}
+
+video {
+    width: 100%;
+}
