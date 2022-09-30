@@ -1,6 +1,6 @@
 # CSS - Uppgift 5
 
-I denna uppgift ska du få lära dig hur du lägger en filmer på din hemsida. Innan HTML5 var man tungen att använda sig av någon slags videospelare om man ville visa video på sin hemsida. Men nu har vi tillgång till betydligt smidigare metoder.Nu kan vi göra såhär:
+I denna uppgift ska du få lära dig hur du lägger en filmer på din hemsida. Innan HTML5 var man tungen att använda sig av någon slags videospelare om man ville visa video på sin hemsida. Men nu har vi tillgång till betydligt smidigare metoder. Nu kan vi göra såhär:
 
 ~~~html
 <video src="videos/basta_filmen.mp4" controls>
