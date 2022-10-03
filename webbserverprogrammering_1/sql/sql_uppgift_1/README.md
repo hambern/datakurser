@@ -1,10 +1,22 @@
 # SQL - Uppgift 1
 
-I den här uppgiften ska du få lära dig att logga in på en databas och titta på dess innehåll. Poängen är att du ska lära dig hur du navigerar dig fram i databasen via terminalen. Läs följande sidor på W3Schools:
+I den här uppgiften ska du få lära dig att logga in på en databas, titta på och söka i dess innehåll. Poängen är att du ska lära dig hur du navigerar dig fram i databasen. Läs följande sidor på W3Schools:
 
-- <https://www.w3schools.com/sql/default.asp>
-- <https://www.w3schools.com/sql/sql_intro.asp>
-- <https://www.w3schools.com/sql/sql_select.asp>
+- <https://www.w3schools.com/mysql/default.asp>
+- <https://www.w3schools.com/mysql/mysql_intro.asp>
+- <https://www.w3schools.com/mysql/mysql_rdbms.asp>
+- <https://www.w3schools.com/mysql/mysql_sql.asp>
+- <https://www.w3schools.com/mysql/mysql_select.asp>
+- <https://www.w3schools.com/mysql/mysql_where.asp>
+- <https://www.w3schools.com/mysql/mysql_and_or.asp>
+- <https://www.w3schools.com/mysql/mysql_orderby.asp>
+- <https://www.w3schools.com/mysql/mysql_limit.asp>
+- <https://www.w3schools.com/mysql/mysql_min_max.asp>
+- <https://www.w3schools.com/mysql/mysql_count_avg_sum.asp>
+- <https://www.w3schools.com/mysql/mysql_like.asp>
+- <https://www.w3schools.com/mysql/mysql_wildcards.asp>
+- <https://www.w3schools.com/mysql/mysql_in.asp>
+- <https://www.w3schools.com/mysql/mysql_between.asp>
 - [cheatsheet.md](cheatsheet.md)
 
 ## Kom igång

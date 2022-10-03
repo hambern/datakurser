@@ -1,11 +1,11 @@
 # SQL
 
-De kunskaper du ska inhämta till detta kursmoment hittar du på adressen: https://www.w3schools.com/sql/default.asp
+De kunskaper du ska inhämta till detta kursmoment hittar du på adressen: https://www.w3schools.com/mysql/default.asp
 
 ## Övningar
 
-Övningsuppgifter hittar du på adressen: https://www.w3schools.com/sql/exercise.asp
+Övningsuppgifter hittar du på adressen: https://www.w3schools.com/mysql/mysql_exercises.asp
 
 ## Självtest
 
-Självtestet hittar du på adressen: https://www.w3schools.com/sql/sql_quiz.asp
+Självtestet hittar du på adressen: https://www.w3schools.com/mysql/mysql_quiz.asp
