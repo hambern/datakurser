@@ -5,6 +5,7 @@ I den här uppgiften ska du få lära dig att logga in på en databas och titta 
 - <https://www.w3schools.com/sql/default.asp>
 - <https://www.w3schools.com/sql/sql_intro.asp>
 - <https://www.w3schools.com/sql/sql_select.asp>
+- [cheatsheet.md](cheatsheet.md)
 
 ## Kom igång
 
@@ -18,16 +19,18 @@ I den här uppgiften ska du få lära dig att logga in på en databas och titta 
 ## Instruktioner
 
 1. Skapa filen `sql_uppgift_1.md` i mallen `sql/` i ditt eget respository
-2. Besvara följande frågor utifrån tabellen `names`:
-
+2. Besvara följande frågor utifrån tabellen `names`. Använd gärna [cheatsheet.md](cheatsheet.md):
+    
     1. Visa alla personer har ett efternamn som slutar på "son"?
     2. Visa alla personer har ett förnamn som inte innehåller "a"?
     3. Visa alla personer som har både ett för- och ett efternamn som börjar på "e" och du vill har dem sorterade efter förnamn?
     4. Hur många rader innehåller tabellen?
-    
-3. Besvara följande frågor utifrån tabellen `students`:
 
+3. Besvara följande frågor utifrån tabellen `students`:
+    
     5. Hur många elever är kvinnor och har ett efternamn som börjar på "An"?
     6. Du vill endast ha ut den äldsta eleven
     7. Du vill endast ha ut den yngsta eleven
     8. Du vill ha alla som bor på "Storgatan" eller "Skogsvägen"
+
+4. Spara filen och gitta in den till ditt repository. Lämna därefter in url-addressen till filen på GitLab.
