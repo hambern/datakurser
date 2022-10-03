@@ -18,7 +18,7 @@ Till denna uppgift följer en mapp med en mängd olika filer. Din uppgift är at
 När du gittat in dina filer ska det alltså se ut såhär:
 
 ~~~
-├── filer
+├── temp
     ├── config.yaml
     └── showme.jpg
 ├── kalkylark.xlsx
