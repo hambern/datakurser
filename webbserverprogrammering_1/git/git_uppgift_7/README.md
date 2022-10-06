@@ -14,14 +14,15 @@ I denna uppgift ska du få lära dig hur `.gitignore` funkar och hur du kan få 
     - Endast filerna `config.yaml` och `showme.jpg` i mappen `temp` ska indexeras
     - Alla filer i rooten ska indexeras förutom `powerpoint.pptx` och `ignore.jpg`
 
-När du gittat in dina filer ska det alltså se ut såhär:
+När du gittat in dina filer ska det alltså se ut ungefär såhär:
 
 ~~~
 ├── temp
     ├── config.yaml
     └── showme.jpg
 ├── kalkylark.xlsx
-└── todo.log
+├── todo.log
+└── .gitignore
 ~~~ 
 
 **Tips:** Försök skriva så generella regler som möjligt. Ju färre rader i `.gitignore` desto bättre
