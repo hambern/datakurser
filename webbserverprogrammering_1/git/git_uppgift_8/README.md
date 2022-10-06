@@ -1,6 +1,6 @@
 # Git - Uppgift 8
 
-I denna uppgift ska du skapa ett git-repository, med en gitignore-fil för din Java-kod i Programmering 2-kursen. Läs gärna följande delar:
+I denna uppgift ska du skapa ett git-repository i en lokal fil på din dator, med en gitignore-fil som du kan använda för att versionshantera din Java-kod i Programmering 2-kursen. Läs gärna följande delar:
 
 - <https://www.w3schools.com/git/git_remote_getstarted.asp?remote=gitlab>
 - <https://www.w3schools.com/git/git_push_to_remote.asp?remote=gitlab>
@@ -23,3 +23,5 @@ I denna uppgift ska du skapa ett git-repository, med en gitignore-fil för din J
 ~~~
 6. Pusha upp den kod du skapat i Programmering 2 till det nya projektet
 7. När du testat så att du fått med alla filer kan du meddela Daniel varpå han kan kontrollera att det fungerar.
+
+**Tips:** Använd gärna programmet "Git Bash" för att kunna använda linuxkommandon på din lokala dator. Du kan dock också använda "Windows PowerShell" men det gör det hela lite klurigare.
