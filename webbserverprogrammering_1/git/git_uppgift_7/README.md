@@ -6,14 +6,12 @@ I denna uppgift ska du få lära dig hur `.gitignore` funkar och hur du kan få 
 
 ## Instruktioner
 
-Till denna uppgift följer en mapp med en mängd olika filer. Din uppgift är att skapa en git-ignore-fil som gör följande:
-
 1. Ladda ner mappen `filer` som ligger i denna mapp
 2. Ladda upp mappen `filer` till din server. Detta kan du göra med kommandot `scp` i Windows Poweshell: `scp -rP 3690 sökvägen_till_filer-mappen ditt_login@student.oedu.se:~/public_html/webbserverprogrammering_1/git/`
-3. Skapa en `.gitignore`-fil
-4. Dolda mappar och deras innehåll ska inte indexeras
-5. Endast filerna `config.yaml` och `showme.jpg` i mappen `temp` ska indexeras
-6. Alla filer i rooten ska indexeras förutom `powerpoint.pptx` och `ignore.jpg`
+3. Skapa en `.gitignore`-fil och skriv in regler som gör följande:
+    - Dolda mappar och deras innehåll ska inte indexeras
+    - Endast filerna `config.yaml` och `showme.jpg` i mappen `temp` ska indexeras
+    - Alla filer i rooten ska indexeras förutom `powerpoint.pptx` och `ignore.jpg`
 
 När du gittat in dina filer ska det alltså se ut såhär:
 
@@ -24,3 +22,5 @@ När du gittat in dina filer ska det alltså se ut såhär:
 ├── kalkylark.xlsx
 └── todo.log
 ~~~ 
+
+**Tips:** Försök skriva så generella regler som möjligt. Ju färre rader i `.gitignore` desto bättre
