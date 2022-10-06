@@ -9,7 +9,7 @@ I denna uppgift ska du få lära dig hur `.gitignore` funkar och hur du kan få 
 1. Ladda ner mappen `filer` som ligger i denna mapp
 2. Ladda upp mappen `filer` till din server. Detta kan du göra med kommandot `scp` i Windows Poweshell: `scp -rP 3690 sökvägen_till_filer-mappen ditt_login@student.oedu.se:~/public_html/webbserverprogrammering_1/git/`
 3. Skapa en `.gitignore`-fil och skriv in regler som gör följande:
-    - Dolda mappar och deras innehåll ska inte indexeras
+    - Dolda mappar och deras innehåll ska inte indexeras (alla filer och mappar som inleds med en punkt)
     - Endast filerna `config.yaml` och `showme.jpg` i mappen `temp` ska indexeras
     - Alla filer i rooten ska indexeras förutom `powerpoint.pptx` och `ignore.jpg`
 
