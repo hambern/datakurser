@@ -19,9 +19,8 @@ I denna uppgift ska du skapa ett git-repository i en lokal fil på din dator, me
 .metadata
 .recommenders
 *.dat
-# etc...
 ~~~
 6. Pusha upp den kod du skapat i Programmering 2 till det nya projektet
-7. När du testat så att du fått med alla filer kan du meddela Daniel varpå han kan kontrollera att det fungerar.
+7. När du testat så att du fått med alla filer kan du meddela Daniel via Teams varpå han kan kontrollera att det fungerar.
 
 **Tips:** Använd gärna programmet "Git Bash" för att kunna använda linuxkommandon på din lokala dator. Du kan dock också använda "Windows PowerShell" men det gör det hela lite klurigare.
