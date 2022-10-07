@@ -20,9 +20,9 @@ I denna uppgift ska du få skapa en hemsida som använder sig av Riksdagens öpp
 - <https://www.w3schools.com/html/html_form_elements.asp>
 
 ### Instruktioner
-1. Utgå ifrån den kod du hittar i `index.php`
+1. Utgå ifrån den kod du hittar i `index.php`. Läs kommentarerna för att få veta vad de olika raderna gör
 2. Skapa en förfrågan till [API:et](https://data.riksdagen.se/data/ledamoter/skapa-sokfraga-for-ledamotsdata/) som ger dig det svar du vill ha
-3. Presentera därefter dina ledamöter på ett grafiskt intressant sätt. Tänk på att använda deras bilder. Du hittar adressen till bildfilerna i API-svaret
+3. Presentera därefter dina ledamöter på ett grafiskt intressant sätt genom att loopa igenom arrayen. Tänk på att använda ledarmöternas bilder. Du hittar adressen till bildfilerna i API-svaret
 4. Gör det möjligt för en besökare att själv påverka förfrågan till API:et via ett formulär. Du kan exempelvis låta din besökare välja parti.
 5. Lämna in uppgiften på Vklass
 
