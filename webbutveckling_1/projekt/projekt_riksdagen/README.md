@@ -15,6 +15,7 @@ I denna uppgift ska du få skapa en hemsida som använder sig av Riksdagens öpp
 
 - <https://www.w3schools.com/php/php_arrays.asp>
 - <https://www.w3schools.com/php/php_looping.asp>
+- <https://www.w3schools.com/php/php_json.asp>
 - <https://www.w3schools.com/html/html_forms.asp>
 - <https://www.w3schools.com/html/html_form_elements.asp>
 
