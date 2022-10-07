@@ -11,7 +11,12 @@ Här är API en mer robust lösning. Eftersom väderappen är ett program kan de
 Om ett program har ett öppet API så kan vem som helst använda sig av det i sina egna program. Som i det första exemplet med väderappen. Och API:er är ju lite som byggstenar, som kan användas tillsammans med varandra. Ju fler byggstenar som finns tillgängliga, desto fler grymma projekt kan byggas. Man kan till exempel tänka sig ett program som använder sig av SMHI:s API och Booli:s API för att visa vilket hus man bör köpa för att få flest soltimmar per år.
 
 ## Denna uppgift
-I denna uppgift ska du få skapa en hemsida som använder sig av Riksdagens öppna API, och närmare bestämt deras [API med ledamotsdata](https://data.riksdagen.se/data/ledamoter/skapa-sokfraga-for-ledamotsdata/). Därifrån kan du hämta aktuell information om våra folkvalda politiker. Du kan därefter välja att designa denna information på vilket sätt du vill.
+I denna uppgift ska du få skapa en hemsida som använder sig av Riksdagens öppna API, och närmare bestämt deras [API med ledamotsdata](https://data.riksdagen.se/data/ledamoter/skapa-sokfraga-for-ledamotsdata/). Därifrån kan du hämta aktuell information om våra folkvalda politiker. Du kan därefter välja att designa denna information på vilket sätt du vill. Läs gärna följande sidor på W3Schools:
+
+- <https://www.w3schools.com/php/php_arrays.asp>
+- <https://www.w3schools.com/php/php_looping.asp>
+- <https://www.w3schools.com/html/html_forms.asp>
+- <https://www.w3schools.com/html/html_form_elements.asp>
 
 ### Instruktioner
 1. Utgå ifrån den kod du hittar i `index.php`
