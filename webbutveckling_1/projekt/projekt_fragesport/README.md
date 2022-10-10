@@ -22,7 +22,7 @@ Internetmuseum grundades i december 2014 och blev i juni 2016 invalt i Sveriges 
 7. Det ska finnas en “tack för att du genomförde min frågesport”-sida där du visar resultatet
 8. Det ska finnas en highscore-lista där du listar de som fått flest poäng
 9. Formge din frågesport med hjälp av CSS. Denna gång är utformningen väldigt fri. Men en god formgivning ska bland annat ha följande kvaliteter:
-   - **Vacker**. Använd ett vackert färgschema (https://coolors.co/) exempelvis
+   - **Vacker**. Sidan bör givetvis se vacker ut för dina besökare
    - **Tydlig**. Man bör enkelt se vad som ska göras och hur man ska göra det
    - **Tillgänglig**. Även synskadade bör kunna läsa dina frågor. Välj ett lättläst typsnitt och tänk på kontrasten mellan bakgrunden och texten
    - **Responsiv**. Det blir allt vanligare att surfa med mobilen. Kontrollera så att sidan också ser bra ut på mobiltelefonen
@@ -30,3 +30,14 @@ Internetmuseum grundades i december 2014 och blev i juni 2016 invalt i Sveriges 
 10. Testa din frågesport via mobilen, samt minst två webbläsare och kontrollera så att allt fungerar och ser ut som det ska.
 11. Glöm inte bort att validera din kod. Varningar kan vara okej, men direkta fel får inte förekomma.
 12. Lämna in din färdiga frågesport på vklass.
+
+### Tips och tricks
+
+- På denna sida kan du välja bland tusentals vackra färgscheman till din sida: <https://coolors.co/>
+- Detta är ett exempel på hur du kan göra radio-knappar till vanliga knappar:
+<https://jsfiddle.net/hambern/er6Lypbk>
+- Du får också använda något slags bibliotek för att göra knapparna elegantare. Kolla t.ex. på följande:
+  - <https://www.cssscript.com/material-design-checkbox-radio-button-icheck/>
+  - <https://www.cssscript.com/beautiful-checkbox-and-radio-button-replacement-with-pure-css-magic-check/>
+  - <https://vitalcss.com/>
+- Detta är ett exempel på hur du kan visa bara en fråga i taget och sedan, via en knapp, kan visa nästa fråga: <https://jsfiddle.net/hambern/u1refgqy>
