@@ -1,6 +1,6 @@
 # Projekt - Frågesport
 
-Webben - som vi känner den idag - uppfanns av Tim Berners-Lee, helt själv i på Cern-institutet i Schweiz 1989. I den här uppgiften ska du, utifrån sveriges internetmuseum, skapa en frågesport som testar din besökares kunskaper om webbens historia från 1989 fram till idag. Denna uppgift ska testa utveckla och testa såväl dina kunskaper i HTML och CSS som i PHP. Det är alltså ett samarbetsprojekt mellan Webbutvecklings-kursen och Programmering 1 där de olika kurserna kommer att titta på olika aspekter av din kod.
+Webben - som vi känner den idag - uppfanns av Tim Berners-Lee, helt själv i på Cern-institutet i Schweiz 1989. I den här uppgiften ska du, utifrån sveriges internetmuseum, skapa en frågesport som testar din besökares kunskaper om webbens historia från 1989 fram till idag. Denna uppgift ska utveckla och testa såväl dina kunskaper i HTML och CSS som i PHP. Det är alltså ett samarbetsprojekt mellan Webbutvecklings-kursen och Programmering 1 där de olika kurserna kommer att titta på olika aspekter av din kod.
 
 ### Internetmuseum
 
