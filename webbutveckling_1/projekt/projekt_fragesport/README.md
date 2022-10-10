@@ -14,16 +14,19 @@ Internetmuseum grundades i december 2014 och blev i juni 2016 invalt i Sveriges 
 1. Läs på om internets historia på https://www.internetmuseum.se/
 2. Utifrån informationen ska du skapa en frågesport med minst 15 centrala fakta.
 3. Svarsalternativen ska vara märkta med antingen flervalsfält (select), radioknappar (radio), range eller checkboxar. Läs mer om HTML5-formulär via följande sida https://www.w3schools.com/html/html_forms.asp/.
+    - Minst en fråga ska använda sig av select https://www.w3schools.com/html/html_form_elements.asp
+    - Minst en fråga ska använda sig av radioknappar https://www.w3schools.com/html/html_form_input_types.asp
+    - Minst en fråga ska använda sig av range https://www.w3schools.com/html/html_form_input_types.asp
 4. Man ska skriva in sitt namn (används till en high-score-lista)
-5. Minst en fråga ska ha en tillhörande bild.
-6. Minst en fråga ska ha en tillhörande video.
+5. Minst en fråga ska ha en tillhörande bild och minst en fråga ska ha en tillhörande video.
 7. Det ska finnas en “tack för att du genomförde min frågesport”-sida där du visar resultatet
 8. Det ska finnas en highscore-lista där du listar de som fått flest poäng
 9. Formge din frågesport med hjälp av CSS. Denna gång är utformningen väldigt fri. Men en god formgivning ska bland annat ha följande kvaliteter:
-   - Tydlighet. Man bör enkelt se vad som ska göras och hur man ska göra det.
-   - Tillgänglighet. Även synskadade bör kunna läsa dina frågor. Välj ett lättläst typsnitt och tänk på kontrasten mellan bakgrunden och texten.
-   - Responsivitet. Det blir allt vanligare att surfa med mobilen. Kontrollera så att sidan också ser bra ut på mobiltelefonen.
-   - Kodkvalitet. Tänk på att koden ska vara lättläst (indenterad), effektiv (kort), och ha logiskt namngivna element, id:n och klasser.
+   - **Vacker**. Använd ett vackert färgschema (https://coolors.co/) exempelvis
+   - **Tydlig**. Man bör enkelt se vad som ska göras och hur man ska göra det
+   - **Tillgänglig**. Även synskadade bör kunna läsa dina frågor. Välj ett lättläst typsnitt och tänk på kontrasten mellan bakgrunden och texten
+   - **Responsiv**. Det blir allt vanligare att surfa med mobilen. Kontrollera så att sidan också ser bra ut på mobiltelefonen
+   - **Kodkvalitet**. Tänk på att koden ska vara lättläst (indenterad), effektiv (kort), och ha logiskt namngivna element, id:n och klasser
 10. Testa din frågesport via mobilen, samt minst två webbläsare och kontrollera så att allt fungerar och ser ut som det ska.
 11. Glöm inte bort att validera din kod. Varningar kan vara okej, men direkta fel får inte förekomma.
 12. Lämna in din färdiga frågesport på vklass.
