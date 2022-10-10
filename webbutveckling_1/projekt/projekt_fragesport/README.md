@@ -1,4 +1,4 @@
-# Frågesport om webbens historia
+# Projekt - Frågesport
 
 Webben - som vi känner den idag - uppfanns av Tim Berners-Lee, helt själv i på Cern-institutet i Schweiz 1989. I den här uppgiften ska du, utifrån sveriges internetmuseum, skapa en frågesport som testar din besökares kunskaper om webbens historia från 1989 fram till idag. Denna uppgift ska testa utveckla och testa såväl dina kunskaper i HTML och CSS som i PHP. Det är alltså ett samarbetsprojekt mellan Webbutvecklings-kursen och Programmering 1 där de olika kurserna kommer att titta på olika aspekter av din kod.
 
@@ -41,3 +41,4 @@ Internetmuseum grundades i december 2014 och blev i juni 2016 invalt i Sveriges 
   - <https://www.cssscript.com/beautiful-checkbox-and-radio-button-replacement-with-pure-css-magic-check/>
   - <https://vitalcss.com/>
 - Detta är ett exempel på hur du kan visa bara en fråga i taget och sedan, via en knapp, kan visa nästa fråga: <https://jsfiddle.net/hambern/u1refgqy>
+- Detta är ett lite mer avancerat exempel där jag dessutom lagt till en animation: <https://jsfiddle.net/hambern/1koj2epx/>
