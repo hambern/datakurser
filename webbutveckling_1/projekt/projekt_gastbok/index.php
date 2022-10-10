@@ -46,8 +46,8 @@
             <textarea class="form-control" rows="6" name="message" id="message" placeholder="Meddelande"></textarea>
         </div>
         <div class="">
-            <input type="submit" class="btn btn-primary" id="submit" value="Skriv i gästboken"></input>
-            <input type="reset" class="btn btn-link" id="reset" value="Återställ"></input>
+            <input type="submit" class="btn btn-primary" id="submit" value="Skriv i gästboken">
+            <input type="reset" class="btn btn-link" id="reset" value="Återställ">
         </div>
     </form>
 
@@ -70,7 +70,7 @@
                     <p class="card-text">Suspendisse fermentum interdum nulla. Duis eu ornare metus. Maecenas euismod nunc tempus leo sollicitudin fringilla. Sed erat ipsum, varius sed enim vel, convallis imperdiet dui.</p>
                     <p class="card-text text-muted"><i class="bi bi-clock"></i> 2022-02-02 20:20</p>
                     <a href="mailto:claudio@cicero.se" class="card-link">Claudio Cicero</a>
-                    <a href="http://cicero.se" class="card-link">Länk</a>
+                    <a href="https://cicero.se" class="card-link">Länk</a>
                 </div>
             </div>
         </div>
