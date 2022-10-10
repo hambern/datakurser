@@ -18,10 +18,13 @@ I denna uppgift ska du få testa att använda dig av Bootstrap. För att kunna g
 
 ~~~html
 <!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled Bootstrap icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
 
 <!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 ~~~
 
 ## Läs på
@@ -33,7 +36,9 @@ Nästa steg är att försöka förstå hur du använder dig av Bootstraps funkti
 
 ## Regler & tips
 
-1. Ditt slutresultat ska se typ exakt ut som facitbilderna
-2. Du får inte skriva någon egen css-kod
-3. Du kan behöva ändra html-strukturen en aning
-4. Inga class- och for-attribut ska vara tomma. Använd dem för ledtrådar för hur du ska lösa uppgiften.
+1. Ditt slutresultat ska se ut som facitbilderna:
+    - [Facit för iPhone 12 Pro](facit_iphone_12_pro.png)
+    - [Facit för iPad mini (stående)](facit_ipad_mini_vertical.png)
+    - [Facit för iPad mini (liggande)](facit_ipad_mini_horizontal.png)
+2. Du får inte skriva någon *egen* css-kod. Du får endast använda dig av Bootstraps klasser.
+3. Använd ledtrådarna i html-filen för att lista ut hur du ska lösa designuppgiften
