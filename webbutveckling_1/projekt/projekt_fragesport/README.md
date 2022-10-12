@@ -36,10 +36,6 @@ Internetmuseum grundades i december 2014 och blev i juni 2016 invalt i Sveriges 
 - På denna sida kan du välja bland tusentals vackra färgscheman till din sida: <https://coolors.co/>
 - Detta är ett exempel på hur du kan göra radio-knappar till vanliga knappar:
 <https://jsfiddle.net/hambern/er6Lypbk>
-- Du får också använda något slags bibliotek för att göra knapparna elegantare. Kolla t.ex. på följande:
-  - <https://www.cssscript.com/material-design-checkbox-radio-button-icheck/>
-  - <https://www.cssscript.com/beautiful-checkbox-and-radio-button-replacement-with-pure-css-magic-check/>
-  - <https://vitalcss.com/>
 - Detta är ett exempel på hur du kan visa bara en fråga i taget och sedan, via en knapp, kan visa nästa fråga: <https://jsfiddle.net/hambern/u1refgqy>
 - Detta är ett lite mer avancerat exempel där jag dessutom lagt till en animation: <https://jsfiddle.net/hambern/1koj2epx/>
 - Kika gärna också på CSS-avdelningen på denna praktiska sida: <https://10015.io/>
