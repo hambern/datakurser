@@ -7,7 +7,7 @@ I denna uppgift ska du få testa på några av de olika funktioner som finns inb
 ## Instruktioner
 
 -  Skapa en fil i ditt kurs-repository med namnet `sql_uppgift_2.md` i din sql-mapp. I den ska du svara på frågorna nedan.
-- Logga in i MySQL med terminalkommandot: mysql -u student -p -h localhost. Ange lösenordet student när du ombeds göra det. -u står för "user", -p står för att du ska ange lösenord och -h står för "host".
+- Logga in i MySQL med terminalkommandot: `mysql -u student -p -h localhost`. Ange lösenordet `student` när du ombeds göra det. -u står för "user", -p står för att du ska ange lösenord och -h står för "host".
 - Lös följande uppgifter med mysql-prompten och anteckna dina kommandon i `sql_uppgift_2.md`:
     1. (5+3)*14
     2. Värdet av PI
