@@ -19,8 +19,8 @@ I denna uppgift ska du få testa på några av de olika funktioner som finns inb
     7. Vilken *tid och datum* är det just nu?
     8. Vilket *år* det är det just nu?
     9. Vilken *vecka* är det nu? Om ni får fel beror det på att man räknar veckor lite olika i världen. Fixa så att det blir rätt. Läs om WEEK och olika argument. Det finns 7 olika sätt att beräkna veckonummer på... Vilket sätt använder vi oss av i Sverige?
-    10. Hur många fler dagar jag har har tillbringat på denna jord jämfört med er! (Jag är född 1982-09-21) **Tips** DATEDIFF
+    10. Hur många dagar äldre är jag än du? (Jag är född 1982-09-21) Använd DATEDIFF
     11. Denna månads namn med MONTHNAME, för att få det på svenska kan man först skriva: `SET lc_time_names = 'sv_SE';`
     12. Använd `DATE_FORMAT(date,format)` för att få ut tiden just nu på formatet: '13 februari år 2009 kl 13.37'
-    13. Tiden 1 timme in i framtiden. **Tips** DATE_ADD
-    14. Tiden för 1 timme sedan. **Tips** DATE_SUB
+    13. Tiden 1 timme in i framtiden. Använd DATE_ADD
+    14. Tiden för 1 timme sedan. Använd DATE_SUB
