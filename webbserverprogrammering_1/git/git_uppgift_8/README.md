@@ -27,5 +27,5 @@ Om du använder "Git Bash" kan du stöta på en del problem:
 
 ~~~
 eval $(ssh-agent -s)
-ssh-add /c/Users/<ditt_användarnamn>/.ssh/id_rsa
+ssh-add /c/Users/ditt_användarnamn/.ssh/id_rsa
 ~~~
