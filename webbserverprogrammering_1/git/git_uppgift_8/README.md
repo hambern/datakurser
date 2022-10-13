@@ -20,7 +20,7 @@ I denna uppgift ska du skapa ett git-repository i mappen `eclipse-workspace` på
 
 ## Git Bash-tricks
 
-Om du använder "Git Bash" kan du stöta på en del problem:
+Om du använder "Git Bash" kan du visserligen använda linux-kommandon på din lokala maskin men du kan också stöta på en del problem:
 
 - Om du vill klistra in text gör du det enklast genom att högerklicka och välja "Paste"
 - Om du har svårt att pusha till ditt repository måste du berätta vilken ssh-nyckel du ska använda. Kör följande kod:
