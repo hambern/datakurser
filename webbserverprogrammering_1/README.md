@@ -30,6 +30,7 @@ I denna mapp finns följande mappar:
 13. [git_uppgift_7](git/git_uppgift_7)
 14. [git_uppgift_8](git/git_uppgift_8)
 15. [sql_uppgift_1](sql/sql_uppgift_1)
+16. [sql_uppgift_2](sql/sql_uppgift_2)
 
 ## Information om skolans server
 
