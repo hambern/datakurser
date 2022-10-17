@@ -54,3 +54,9 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
+
+# Oedu Additions
+*.class
+*.jar
+.idea
+*.dat
