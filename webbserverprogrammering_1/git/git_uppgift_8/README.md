@@ -15,7 +15,7 @@ I denna uppgift ska du skapa ett git-repository i mappen `eclipse-workspace` på
     1. Initiera ett repository med `git init`
     2. Koppla sedan ditt repository till ditt repository på GitLab med `git remote add origin git@gitlab.com:ditt_användarnamn/namnet_på_ditt_repository.git`
 6. Eftersom du inte anslutit till Gitlab från din lokala dator behöver du lägga till din ssh-nyckel. I Git bash gör du detta på följande sätt:
-    1. `cat /c/ Users/ditt_användarnamn/.ssh/id_rsa.pub | clip` för att kopiera din nuvarande ssh-nyckel till utklippet.
+    1. `cat /c/Users/ditt_användarnamn/.ssh/id_rsa.pub | clip` för att kopiera din nuvarande ssh-nyckel till utklippet.
     2. Lägg till din ssh-nyckel på Gitlab under dina användarinställningar genom att klistra in den kod du fick i steget ovan
     3. I Git bash skriver du `eval $(ssh-agent -s)` för att starta ssh-klienten
     4. Lägg till din ssh-nyckel med `ssh-add /c/Users/ditt_användarnamn/.ssh/id_rsa`
