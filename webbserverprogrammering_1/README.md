@@ -32,7 +32,8 @@ I denna mapp finns följande mappar:
 15. [sql_uppgift_1](sql/sql_uppgift_1)
 16. [sql_uppgift_2](sql/sql_uppgift_2)
 17. [sql_uppgift_3](sql/sql_uppgift_3)
-18. [projekt_riksdagen](projekt/projekt_riksdagen)
+18. [sql_uppgift_4](sql/sql_uppgift_4)
+19. [projekt_riksdagen](projekt/projekt_riksdagen)
 
 ## Information om skolans server
 
