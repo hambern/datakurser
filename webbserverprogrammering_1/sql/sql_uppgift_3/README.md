@@ -17,7 +17,7 @@ Skriv dina svar i en fil vid namn `sql_uppgift_3.md` under mappen `sql`.
 7. Skriv en fråga som visar vilka olika valörer av varje valuta som finns i tabellen. En rad per valuta och valör. Använd `DISTINCT`
 8. Om du vill veta hur många det finns av varje valör i en valuta, hur tar du reda på det? Använd `GROUP BY`. Ex på godkänt resultat för kr:
 
-~~~sql
+~~~
 +----------------------+------------+
 |  valor               |  quantity  |
 +----------------------+------------+
