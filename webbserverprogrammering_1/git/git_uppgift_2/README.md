@@ -3,8 +3,8 @@
 I denna uppgift ska du skapa din användare på GitLab och synka det med ditt lokala repository. Läs följande sidor på W3Schools:
 
 - <https://www.w3schools.com/git/git_remote_getstarted.asp?remote=gitlab>
-- <https://www.w3schools.com/git/git_security_ssh.asp?remote=gitlab>
 - <https://www.w3schools.com/git/git_remote_add_ssh.asp?remote=gitlab>
+- <https://www.w3schools.com/git/git_security_ssh.asp?remote=gitlab>
 
 ## Instruktioner
 
