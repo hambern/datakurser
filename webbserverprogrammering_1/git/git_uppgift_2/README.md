@@ -13,7 +13,12 @@ I denna uppgift ska du skapa din användare på GitLab och synka det med ditt lo
 3. För att kunna synka till ditt GitLab-repository måste du lägga in din SSH-nyckel
    1. Gå in i terminalen och skapa en ssh-nyckel på din server med kommandot `ssh-keygen`. Du behöver inte göra några förändringar utan tryck bara på enter tills du är tillbaka till prompten igen
    2. Kontrollera så att du har en fungerande SSH-nyckel med kommandot `cat ~/.ssh/id_rsa.pub`. Du bör då få upp en mängd tecken som inleds med "ssh-rsa" och avslutas med ditt användarnamn och server.
-   3. Kopiera all den informationen
+   3. Kopiera __hela__ den informationen. Den kan exempelvis se ut såhär:
+
+~~~
+ssh-rsa AAAAB2NzaC1yc2EAAAADAQABAAABgQDFIakax9btEe04fgj0LM3x1Gz/3BNrl1bZ1aZ9rBEJUkKHYUbQjCJE+I+WcoxKnZlnk1tGk+aWqmJOo88XOGwCrIBjWKU/RmYYb+oKImF5SD5ecy2OpbuNYRJ+1JVUg5ngWCuZFldnKaT77/wBxwilbAUm7ryYxJ+zw+tT1VJU1kIE+tdyZCFcVi3x0Bk1yC7zWJDF5OJfxX5lah/aiyqvF5fj//I/uZHoLSylfyFyurVIrASBdExOaC7JgiTdxtCadLAEe5rktBO19ZhbYKwOOK/hMSXmrclXYOKRlttVJ+xuQvdey+Vj0/F2trrxvcaLLWXKZVtPVWnP5RfdVJe0SGfInIZZUeZPTYHAvj06LdTony66S5yfxJb3oxeCOH+j5YddrvbpAEYE74RmRyBvzvYnot6qEWAtTKYxmqDeSHG9zzjPRM9WB85hBEWEYWjVJcAjQ6HnAx6rGm4fWBx9+pU6u6d1Epy6s0H1Ehxpfy/yv3xH2o1vKSftZjV7hhU= aa0002@student
+~~~
+
    4. Gå nu tillbaka till GitLab och lägg till den SSH-nyckeln till ditt repository
    5. Du kan nu krypterat skicka information mellan din server och GitLab
 4. För att synka ditt repository på servern med det på GitLab måste du nu köra följande kommandon i terminalen:
