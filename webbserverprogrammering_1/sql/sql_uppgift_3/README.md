@@ -3,6 +3,7 @@
 I denna uppgift ska du också jobba emot student-databasens money-tabell. Läs gärna följande delar på W3Schools:
 
 - <https://www.w3schools.com/mysql/mysql_select.asp>
+- <https://www.w3schools.com/mysql/mysql_alias.asp>
 - <https://www.w3schools.com/mysql/mysql_where.asp>
 - <https://www.w3schools.com/mysql/mysql_and_or.asp>
 - <https://www.w3schools.com/mysql/mysql_count_avg_sum.asp>
