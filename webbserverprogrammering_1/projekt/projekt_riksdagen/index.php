@@ -17,7 +17,7 @@ echo json_encode(get_riksdagen_members());<?php
 
 include('riksdagen_api.php');
 
-if (isset($_GET['c']) && $_GET['c'] == 'update')
+if (isset($_GET['do']) && $_GET['do'] == 'update')
 {
     // Radera allt innehåll i tabellen rik_members
     // Hämta den senaste datan via get_members()

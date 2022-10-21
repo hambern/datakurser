@@ -28,8 +28,8 @@ Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. An
     - `party` - ledamotens partibeteckning
     - `state` - ledamotens valkrets
     - `image` - url-adressen till en porträttbild av ledamoten
-3. Utgå ifrån `index.php` och följ instruktionerna där. När man lägger till `?c=update` ska du tömma din lokala tabell, hämta ut den senaste informationen från riksdagen, lagra informationen i din databastabell och visa informationen på hemsidan.
-4. Om du inte lägger till `?c=update` ska du _enbart_ visa din information du har i din databas
+3. Utgå ifrån `index.php` och följ instruktionerna där. När man lägger till `?do=update` ska du tömma din lokala tabell, hämta ut den senaste informationen från riksdagen, lagra informationen i din databastabell och visa informationen på hemsidan.
+4. Om du inte lägger till `?do=update` ska du _enbart_ visa din information du har i din databas
 5. Gör det möjligt för din besökare att via get-variabler:
     - `?party=S` - visa endast S-politiker
     - `?gender=kvinna` - visa endast kvinnor
