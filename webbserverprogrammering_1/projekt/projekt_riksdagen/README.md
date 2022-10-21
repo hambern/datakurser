@@ -1,6 +1,16 @@
 # Projekt - Riksdagen
 
-I denna uppgift ska du få skapa, lägga in, radera och hämta ut information ur en databas. Den information ni ska jobba med ska ni hämta ifrån riksdagens öppna api. Mer information om hur api:et fungerar hittar du på <https://data.riksdagen.se/data/ledamoter/skapa-sokfraga-for-ledamotsdata/>
+I denna uppgift ska du få skapa, lägga in, radera och hämta ut information ur en databas. Den information ni ska jobba med ska ni hämta ifrån riksdagens öppna api. Mer information om hur api:et fungerar hittar du på <https://data.riksdagen.se/data/ledamoter/skapa-sokfraga-for-ledamotsdata/>. Läs följande delar i W3Schools innan du sätter igång:
+
+- <https://www.w3schools.com/php/php_json.asp>
+- <https://www.w3schools.com/php/func_network_header.asp>
+- <https://www.w3schools.com/php/php_mysql_intro.asp>
+- <https://www.w3schools.com/php/php_mysql_connect.asp>
+- <https://www.w3schools.com/php/php_mysql_insert.asp>
+- <https://www.w3schools.com/php/php_mysql_insert_multiple.asp>
+- <https://www.w3schools.com/php/php_mysql_select.asp>
+- <https://www.w3schools.com/php/php_mysql_delete.asp>
+- <https://www.w3schools.com/php/php_mysql_select_limit.asp>
 
 ## Instruktioner
 
@@ -20,9 +30,10 @@ Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. An
     - `image` - url-adressen till en porträttbild av ledamoten
 3. Utgå ifrån `index.php` och följ instruktionerna där. När man lägger till `?c=update` ska du tömma din lokala tabell, hämta ut den senaste informationen från riksdagen, lagra informationen i din databastabell och visa informationen på hemsidan.
 4. Om du inte lägger till `?c=update` ska du _enbart_ visa din information du har i din databas
-5. Gör det möjligt för din besökare att via exempelvis:
-    - `?party=S` - endast visa S-politiker
-    - `?gender=kvinna` - endast visa kvinnor
-    - `?name=Åke` - endast visa ledamöter vars för- eller efternamn innehåller "Åke"
+5. Gör det möjligt för din besökare att via get-variabler:
+    - `?party=S` - visa endast S-politiker
+    - `?gender=kvinna` - visa endast kvinnor
+    - `?name=Åke` - visa endast ledamöter vars för- eller efternamn innehåller "Åke"
     - `?sort=born` - sortera resultaten utifrån födelseår
+    - `?limit=3` - endast visa tre ledamöter
 6. Lek vidare med ditt eget api genom att lägga till ytterligare sätt för din att påverka hämtningen av data
