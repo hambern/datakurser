@@ -46,6 +46,7 @@ Läs följande sidor innan du gör denna uppgift:
 | Elev | År | Länk |
 | --- | --- | --- |
 | Adrian Näslund | 2022 | https://student.oedu.se/~an0084/Webbutveckling%201/CSS/css_uppgift_5/ |
+| Alishaha Anwari | 2022 | https://student.oedu.se/~aa0045/Webbutveckling_1/Uppgifter/CSSUppgift_5/ |
 
 ## Tips och tricks
 
