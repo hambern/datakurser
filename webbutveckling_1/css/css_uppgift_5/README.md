@@ -51,6 +51,7 @@ Läs följande sidor innan du gör denna uppgift:
 ## Tips och tricks
 
 - Testa att göra dina iframes responsiva. Mer om det kan du läsa här: https://www.w3schools.com/howto/howto_css_responsive_iframes.asp
+- Testa att lägga in en animation på din sida: https://www.w3schools.com/css/css3_animations.asp
 - Testa att få en video att starta automatiskt: https://www.w3schools.com/html/html5_video.asp
 - Prova att göra så att filmen loopas om och om igen: https://www.w3schools.com/html/html5_video.asp
 - Försök också gärna göra filmerna svartvita: https://www.w3schools.com/cssref/css3_pr_filter.asp
