@@ -4,6 +4,11 @@ I denna uppgift ska du få skapa, lägga in, radera och hämta ut information ur
 
 ## Instruktioner
 
+Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. Använd följande plugins till Chrome för att underlätta arbetet:
+
+- [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh) för att formattera json-koden på ett läsbart sätt
+- [Talend API Tester](https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm) för att testa ditt API
+
 1. Skapa en tabell via phpMyAdmin i din egen databas som heter `rik_members`
 2. Den ska förrutom en `id`-kolumn med `auto increment primary key` även lagra följande information:
     - `born` - året ledamoten föddes
