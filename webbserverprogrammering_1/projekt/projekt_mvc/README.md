@@ -56,7 +56,6 @@ I denna uppgift ska du skapa ditt eget MVC-ramverk. Även om det finns färdiga 
 5. Titta sedan i repositoryt <https://gitlab.com/Hambern/mvc> vilka filer som ska ligga i dessa mappar. Titta gärna i filerna men undvik att kopiera innehållet rakt av. Genom att faktiskt skriva koden själv får man en bättre hum om vad man gör.
 6. Skapa de filer du behöver. Börja med `index.php` i `public`-mappen och skapa sedan de filer som behövs för att undvika felmeddelanden. Testa din kod hela tiden via webbläsaren.
 7. När du fått allt att fungera ska du gitta in din kod och svara på följande frågor i filen `projekt_mvc.md` i `projekt`-mappen i ditt kursrepository:
-
     1. Vad gör `.htaccess` i `public`-mappen?
     2. Vad gör `.htaccess` i `app`-mappen?
     3. Vilken funktion har funktionen `spl_autoload_register()` i filen `app/init.php`?
