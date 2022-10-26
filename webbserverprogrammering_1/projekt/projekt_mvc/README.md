@@ -46,7 +46,7 @@ I denna uppgift ska du skapa ditt eget MVC-ramverk. Även om det finns färdiga 
 │   ├── models
 │   └── views
 │       ├── home
-│       └── users
+│       └── students
 ├── public
 │   ├── assets
 │   └── partials
@@ -62,12 +62,12 @@ I denna uppgift ska du skapa ditt eget MVC-ramverk. Även om det finns färdiga 
     4. Vilken funktion har funktionen `call_user_func_array()` i filen `app/core/App.php`?
     5. Både `app/core/App.php` och `app/core/Model.php` innehåller metoden `__construct()`. Vad gör den?
     6. Vad är poängen med att metoden `view()` ligger `app/core/Controller.php` istället för i ex `app/controllers/home.php`?
-    7. När du besöker url:en `public/users` kommer applikationen läsa in följande filer. Men vi vilken ordning?
-        1. app/views/users/index.php
+    7. När du besöker url:en `public/students` kommer applikationen läsa in följande filer. Men vi vilken ordning?
+        1. app/views/students/index.php
         2. app/core/App.php
-        3. app/controllers/users.php
+        3. app/controllers/students.php
         4. public/index.php
-        5. app/models/User.php
+        5. app/models/Student.php
         6. app/init.php
     8. Låt oss säga att du vill lägga till en sida `public/contact` där du kan ange ditt telefonnummer och e-postadress. För detta behöver du ingen databaskoppling. Var skulle du behöva göra dina förändringar?
     9. Om du istället för HTML vill visa datan som en json-array. Var skulle du behöva göra dina förändringar?
