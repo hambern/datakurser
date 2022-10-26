@@ -4,9 +4,9 @@ include('riksdagen_api.php');
 
 if (isset($_GET['do']) && $_GET['do'] == 'update')
 {
-    // Radera allt innehåll i tabellen rik_members
-    // Hämta den senaste datan via get_members()
-    // Stoppa in den senaste datan i rik_members
+    // 1. Radera allt innehåll i tabellen rik_members
+    // 2. Hämta den senaste datan via get_members()
+    // 3. Stoppa in den senaste datan i rik_members
 }
 
 // Hämta data om ledamöterna från tabellen rik_members
