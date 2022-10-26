@@ -19,7 +19,7 @@ $url = 'https://data.riksdagen.se/personlista/?'.http_build_query($query); // S�
 
 $json = file_get_contents($url); // Skickar förfrågan och hämtar svaret från API:et
 
-$data = json_decode($json, true); // Omvandlar json-datan till en php-array du sedan kan mata ut via exempelvis en while-loop
+$data = json_decode($json, true); // Omvandlar json-datan till en php-array du sedan kan mata ut via exempelvis en while- eller foreach-loop
 
 ?>
 <!doctype html>

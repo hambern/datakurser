@@ -39,10 +39,19 @@ Läs följande sidor innan du gör denna uppgift:
 5. Minst ett klipp måste du lägga till ifrån Vimeo. Hur du gör det kan du läsa om här: https://vimeo.zendesk.com/hc/en-us/articles/224969968-Embedding-videos-overview
 6. Designa din topplista så att den blir snygg och funkar med såväl bred som smal skärm
 7. Lämna in den på vklass
-8. Lek vidare med din sida:
+8. Lek vidare med din sida
+
+## Exempel
+
+| Elev | År | Länk |
+| --- | --- | --- |
+| Adrian Näslund | 2022 | https://student.oedu.se/~an0084/Webbutveckling%201/CSS/css_uppgift_5/ |
+| Alishaha Anwari | 2022 | https://student.oedu.se/~aa0045/Webbutveckling_1/Uppgifter/CSSUppgift_5/ |
 
 ## Tips och tricks
+
 - Testa att göra dina iframes responsiva. Mer om det kan du läsa här: https://www.w3schools.com/howto/howto_css_responsive_iframes.asp
+- Testa att lägga in en animation på din sida: https://www.w3schools.com/css/css3_animations.asp
 - Testa att få en video att starta automatiskt: https://www.w3schools.com/html/html5_video.asp
 - Prova att göra så att filmen loopas om och om igen: https://www.w3schools.com/html/html5_video.asp
 - Försök också gärna göra filmerna svartvita: https://www.w3schools.com/cssref/css3_pr_filter.asp
