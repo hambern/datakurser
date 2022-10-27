@@ -26,9 +26,7 @@ Fördjupa dina kunskaper om MVC-principen genom att titta på följande filmer:
 
 [![](https://img.youtube.com/vi/OsCTzGASImQ/0.jpg)](https://www.youtube.com/watch?v=OsCTzGASImQ&list=PLfdtiltiRHWGXVHXX09fxXDi-DqInchFD)
 
-Titta också på den kod du hittar på:
-
-<https://gitlab.com/Hambern/mvc>
+Titta också på den kod du hittar på <https://gitlab.com/Hambern/mvc>
 
 ## Visual Studio Code
 
@@ -48,6 +46,7 @@ I denna uppgift ska du skapa ditt eget MVC-ramverk. Även om det finns färdiga 
 3. I den mappen ska du skapa följande mappstruktur:
 
 ~~~bash
+.
 ├── app
 │   ├── controllers
 │   ├── core
@@ -55,28 +54,27 @@ I denna uppgift ska du skapa ditt eget MVC-ramverk. Även om det finns färdiga 
 │   └── views
 │       ├── home
 │       └── students
-├── public
-│   ├── assets
-│   └── partials
+├── assets
+└── partials
 ~~~
 
 4. Nu är det dags att skapa ett nytt projekt på GitLab och gitta in ditt eget MVC-ramverk dit. Detta kan du sedan återanvända som startpunkt i dina framtida projekt.
 5. Titta sedan i repositoryt <https://gitlab.com/Hambern/mvc> vilka filer som ska ligga i dessa mappar. Titta gärna i filerna men undvik att kopiera innehållet rakt av. Genom att faktiskt skriva koden själv får man en bättre hum om vad man gör.
-6. Skapa de filer du behöver. Börja med `index.php` i `public`-mappen och skapa sedan de filer som behövs för att undvika felmeddelanden. Testa din kod hela tiden via webbläsaren.
+6. Skapa de filer du behöver. Börja med `index.php` (tänk på vilka filrättigheter filen behöver ha) och skapa sedan de filer som behövs för att undvika de felmeddelanden du får. Testa din kod hela tiden via webbläsaren.
 7. När du fått allt att fungera ska du gitta in din kod och svara på följande frågor i filen `projekt_mvc.md` i `projekt`-mappen i ditt kursrepository:
-    1. Vad gör `.htaccess` i `public`-mappen?
+    1. Vad gör `.htaccess` i root-mappen?
     2. Vad gör `.htaccess` i `app`-mappen?
     3. Vilken funktion har funktionen `spl_autoload_register()` i filen `app/init.php`?
     4. Vilken funktion har funktionen `call_user_func_array()` i filen `app/core/App.php`?
     5. Både `app/core/App.php` och `app/core/Model.php` innehåller metoden `__construct()`. Vad gör den?
-    6. Vad är poängen med att metoden `view()` ligger `app/core/Controller.php` istället för i ex `app/controllers/home.php`?
-    7. När du besöker url:en `public/students` kommer applikationen läsa in följande filer. Men vi vilken ordning?
-        1. app/views/students/index.php
-        2. app/core/App.php
-        3. app/controllers/students.php
-        4. public/index.php
-        5. app/models/Student.php
-        6. app/init.php
-    8. Låt oss säga att du vill lägga till en sida `public/contact` där du kan ange ditt telefonnummer och e-postadress. För detta behöver du ingen databaskoppling. Var skulle du behöva göra dina förändringar?
+    6. Vad är poängen med att metoden `view()` ligger i `app/core/Controller.php` istället för i ex `app/controllers/home.php`?
+    7. När du besöker url:en `/students` kommer applikationen läsa in följande filer. Men vi vilken ordning?
+        1. `app/views/students/index.php`
+        2. `app/core/App.php`
+        3. `app/controllers/students.php`
+        4. `index.php`
+        5. `app/models/Student.php`
+        6. `app/init.php`
+    8. Låt oss säga att du vill lägga till en sida `/contact` där du kan ange ditt telefonnummer och e-postadress. För detta behöver du ingen databaskoppling. Var skulle du behöva göra dina förändringar?
     9. Om du istället för HTML vill visa datan som en json-array. Var skulle du behöva göra dina förändringar?
 8. Gitta in svaren på ovanstående frågor till ditt kurs-repository
