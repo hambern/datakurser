@@ -30,16 +30,24 @@ Titta också på den kod du hittar på:
 
 <https://gitlab.com/Hambern/mvc>
 
+## Visual Studio Code
+
+Du får gärna fortsätta jobba i terminalen även här. Men till projekt av den här storleken underlättar det onekligen att använda sig av en IDE. Du är vid det här laget säkert bekväm att arbeta i PhpStorm, och det kan du göra även med denna uppgift. Men ge gärna Visual Studio Code en chans i denna uppgift:
+
+- Ladda ner programmet här: <https://code.visualstudio.com/>
+- Installera därefter extension-paketet "Remote - SSH": <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
+
+Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator.
 
 ## Instruktioner
 
-I denna uppgift ska du skapa ditt eget MVC-ramverk. Även om det finns färdiga ramverk du kan använda är det nyttigt att sätta sig in i vad dessa ramverk faktiskt gör, och då finns det inget bättre sätt än att själv bygga ett. Jag ser gärna att du arbetar i terminalen även här. Men till projekt av den här storleken underlättar det onekligen att använda sig av exempelvis PhpStorm.
+I denna uppgift ska du skapa ditt eget MVC-ramverk. Även om det finns färdiga ramverk du kan använda är det nyttigt att sätta sig in i vad dessa ramverk faktiskt gör, och då finns det inget bättre sätt än att själv bygga ett.
 
 1. Ta del av materialet ovan och bilda dig en bild av vad det är du ska bygga
 2. Skapa en mapp direkt under din `public_html`-mapp som heter `mvc`. Använd exempelvis kommandot `mkdir ~/public_html/mvc`
 3. I den mappen ska du skapa följande mappstruktur:
 
-~~~
+~~~bash
 ├── app
 │   ├── controllers
 │   ├── core
