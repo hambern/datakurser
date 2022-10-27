@@ -64,7 +64,7 @@ I denna uppgift ska du skapa ditt eget MVC-ramverk. Även om det finns färdiga 
         1. `app/views/students/index.php`
         2. `app/core/App.php`
         3. `app/controllers/students.php`
-        4. `public/index.php`
+        4. `index.php`
         5. `app/models/Student.php`
         6. `app/init.php`
     8. Låt oss säga att du vill lägga till en sida `/contact` där du kan ange ditt telefonnummer och e-postadress. För detta behöver du ingen databaskoppling. Var skulle du behöva göra dina förändringar?
