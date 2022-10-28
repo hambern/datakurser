@@ -42,7 +42,18 @@ I denna mapp finns följande mappar:
 
 - Servernamn: `student.oedu.se`
 - För phpmyadmin: `admin.student.oedu.se`
-- Din hemsida: `student.oedu.se/~ditt_login`
+- Din hemsida: `student.oedu.se/~ditt_login``
+
+### Din databas
+
+Du har tillgång till en databas som ligger på student.oedu.se. Den information du behöver för att ansluta den är
+
+- Värd: `localhost`
+- Användarnamn: ditt login till student.oedu.se (två bokstäver följt av ett antal siffror)
+- Lösenord: ditt lösenord till student.oedu.se (ett komplicerat autogenererat lösenord)
+- Databas: ditt login
+
+Du kan titta på innehållet i din databas genom att logga in via `admin.student.oedu.se`
 
 ### Filöverföring
 
