@@ -122,3 +122,4 @@ mysql> DESC join_items;
 | js0016 | Jonathan Söderlind      |     0 |
 +--------+-------------------------+-------+
 ~~~
+8. Denna uppgift ska du inte bara gitta upp till ditt repository utan även lämna in till vklass. Lämna in url-adressen till filen `sql_uppgift_4.md` på uppgiften "sql_uppgift_4" på Vklass.
