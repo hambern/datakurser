@@ -42,7 +42,7 @@ I denna mapp finns följande mappar:
 
 - Servernamn: `student.oedu.se`
 - För phpmyadmin: `admin.student.oedu.se`
-- Din hemsida: `student.oedu.se/~ditt_login``
+- Din hemsida: `student.oedu.se/~ditt_login`
 
 ### Din databas
 
