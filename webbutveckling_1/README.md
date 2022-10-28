@@ -7,7 +7,6 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 I denna mapp finns följande mappar:
 
 - [bootstrap](bootstrap)
-- [cms](cms)
 - [css](css)
 - [extrauppgifter](extrauppgifter)
 - [html](html)
