@@ -1,6 +1,6 @@
 # CMS
 
-I detta kursmoment ska vi installera och redigera en hemsida med CMS-verktyget Wordpress. Ett CMS(Content Management System) är en stor mängd redan färdig kod (i detta fall PHP) som ger dig funktioner som att logga in, skapa, redigera och ta bort innehåll samt visa detta innehåll för en besökare.
+I detta kursmoment ska vi installera och redigera en hemsida med CMS-verktyget Wordpress. Ett CMS (Content Management System) är en (enormt) stor mängd redan färdig kod (i detta fall PHP) som ger dig funktioner som att logga in, skapa, redigera och ta bort innehåll samt visa detta innehåll för en besökare.
 
 Några av de mest populära CMS:en som både är gratis och skrivna i PHP är:
 
