@@ -40,9 +40,9 @@ I denna mapp finns följande mappar:
 
 ### Information om utvecklingsservern som vi jobbar på
 
-- Servernamn: <student.oedu.se>
-- För phpmyadmin: <admin.student.oedu.se>
-- Din hemsida: <student.oedu.se/~ditt_login>
+- Servernamn: `student.oedu.se`
+- För phpmyadmin: <https://admin.student.oedu.se>
+- Din hemsida: <https://student.oedu.se/~ditt_login>
 
 ### Din databas
 
@@ -53,7 +53,7 @@ Du har tillgång till en databas som ligger på student.oedu.se. Den information
 - Lösenord: ditt lösenord till student.oedu.se (ett komplicerat autogenererat lösenord)
 - Databas: ditt login
 
-Du kan titta på innehållet i din databas genom att logga in via <admin.student.oedu.se>
+Du kan titta på innehållet i din databas genom att logga in via <https://admin.student.oedu.se>
 
 ### Filöverföring
 
