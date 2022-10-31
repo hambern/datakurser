@@ -34,7 +34,7 @@ Fördjupa dina kunskaper om MVC-principen genom att titta på följande filmer:
 
 [![](https://img.youtube.com/vi/OsCTzGASImQ/0.jpg)](https://www.youtube.com/watch?v=OsCTzGASImQ&list=PLfdtiltiRHWGXVHXX09fxXDi-DqInchFD)
 
-Titta också på den kod du hittar på <https://gitlab.com/Hambern/mvc>
+Titta också på den kod du hittar på <https://gitlab.com/Hambern/mvc>, eller <https://gitlab.com/Hambern/whattodo> som använder samma mvc-system som bas.
 
 ## Visual Studio Code
 
