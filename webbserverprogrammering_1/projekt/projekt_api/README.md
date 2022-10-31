@@ -18,3 +18,11 @@ Nedan följer en lista på spännande och intressanta öppna API:er
 | Random Useless Facts | https://uselessfacts.jsph.pl/ | - |
 | Breezometer | https://docs.breezometer.com/api-documentation/ | Key |
 | Fruityvice | https://www.fruityvice.com/ | - |
+| Rusty Beer | https://rustybeer.herokuapp.com/docs | - |
+| Deck of Cards | https://deckofcardsapi.com/ | - |
+| D&D 5e API | https://www.dnd5eapi.co/ | - |
+| Open 5e | https://open5e.com/api-docs | - |
+| FreeToGame | https://www.freetogame.com/api-doc | - |
+| Geek Joke API | https://github.com/sameerkumar18/geek-joke-api | - |
+| Joke API | https://v2.jokeapi.dev/ | - |
+| jService | http://jservice.io/ | - |
