@@ -26,3 +26,7 @@ Nedan följer en lista på spännande och intressanta öppna API:er
 | Geek Joke API | https://github.com/sameerkumar18/geek-joke-api | - |
 | Joke API | https://v2.jokeapi.dev/ | - |
 | jService | http://jservice.io/ | - |
+| Airtel IP | https://sys.airtel.lv/ip2country/192.121.39.106/?full=true | - |
+| IP-Geo | https://api.techniknews.net/ipgeo/ | - |
+| Open Topo Data | https://www.opentopodata.org/ | - |
+| RestCountries | https://restcountries.com/ | - |
