@@ -29,4 +29,4 @@ Nedan följer en lista på spännande och intressanta öppna API:er
 | Airtel IP | https://sys.airtel.lv/ip2country/192.121.39.106/?full=true | - |
 | IP-Geo | https://api.techniknews.net/ipgeo/ | - |
 | Open Topo Data | https://www.opentopodata.org/ | - |
-| RestCountries | https://restcountries.com/ | - |
+| REST Countries | https://restcountries.com/ | - |
