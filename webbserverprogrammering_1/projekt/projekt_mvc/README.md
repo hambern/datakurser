@@ -6,6 +6,14 @@ MVC är ett arkitekturmönster för systemutveckling. Trygve Reenskaug skapade M
 - _Model_ utgör den information som applikationen bearbetar och arbetar i regel emot en databas.
 - _View_ renderar en lämplig vy för användaren. I webbapplikationer är det här vi hittar själva HTML-koden.
 
+## En liknelse
+
+Man kan likna applikationen - din kod - med ett företag som har tre anställda:
+
+- _En receptionist_ (controller) som tar emot kundens förfrågningar
+- _En lagerarbetare_ (model) som tar emot och lämnar ut varor
+- _En leverantör_ (view) som paketerar varan på dett sätt kunden vill ha den
+
 ![](https://upload.wikimedia.org/wikipedia/commons/b/b5/ModelViewControllerDiagram2.svg)
 
 ## MVC i praktiken
