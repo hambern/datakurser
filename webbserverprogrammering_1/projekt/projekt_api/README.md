@@ -30,3 +30,13 @@ Nedan följer en lista på spännande och intressanta öppna API:er
 | IP-Geo | https://api.techniknews.net/ipgeo/ | - |
 | Open Topo Data | https://www.opentopodata.org/ | - |
 | REST Countries | https://restcountries.com/ | - |
+| What3Words | https://developer.what3words.com/public-api | Key |
+| Covid-19 API | https://github.com/M-Media-Group/Covid-19-API | - |
+| The Nobel Prize | https://www.nobelprize.org/about/developer-zone-2/ | - |
+| Evil Insult Generator | https://evilinsult.com/api/ | - |
+| Advice Slip JSON API | https://api.adviceslip.com/ | - |
+| Stoicism Quotes | https://github.com/tlcheah2/stoic-quote-lambda-public-api | - |
+| Numbers API | http://numbersapi.com/ | - |
+| Aztro | https://aztro.readthedocs.io/en/latest/ | - |
+
+För ännu fler API:er kan du kolla in listan på denna sida: <https://github.com/public-apis/public-apis>
