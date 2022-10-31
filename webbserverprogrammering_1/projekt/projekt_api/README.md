@@ -9,7 +9,7 @@ Nedan följer en lista på spännande och intressanta öppna API:er
 | Agify | https://agify.io/ | - |
 | The Bored API | https://www.boredapi.com/ | - |
 | CountAPI | https://countapi.xyz/ | - |
-| Host.io | https://host.io/ | Auth |
+| Host.io | https://host.io/ | Key |
 | Gitter | https://developer.gitter.im/ | Key |
 | Nationalize | https://nationalize.io/ | - |
 | QR Code | https://www.qrtag.net/api/ | - |
