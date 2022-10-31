@@ -14,7 +14,7 @@ Man kan likna applikationen - din kod - med ett företag som har tre anställda:
 - _En lagerarbetare_ (model) som tar emot och lämnar ut varor
 - _En leverantör_ (view) som paketerar varan på dett sätt kunden vill ha den
 
-![](https://upload.wikimedia.org/wikipedia/commons/b/b5/ModelViewControllerDiagram2.svg)
+![](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/820/original/mvc-structure.png)
 
 ## MVC i praktiken
 
