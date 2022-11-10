@@ -11,7 +11,7 @@ Ett vanligt sätt att påbörja projekt är att man utgår ifrån redan färdig 
 
 ## Din uppgift
 
-1. Börja gärna med att titta på följande film på Laracast: <https://laracasts.com/series/laravel-8-from-scratch/episodes/1>
+1. Börja gärna med att titta på följande film på Laracast: <https://laracasts.com/series/laravel-8-from-scratch/episodes/3>
 2. Installera Laravel i en mapp under `public_html` använd gärna Composer <https://getcomposer.org/> som finns installerat på servern.
 3. Följ de instruktioner du kan hitta i dokumentationen <https://laravel.com/docs/8.x/installation>
 4. Få det att fungera med din databas genom att skriva in korrekta databas-uppgifter
