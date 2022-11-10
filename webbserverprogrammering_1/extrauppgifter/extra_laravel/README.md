@@ -11,8 +11,9 @@ Ett vanligt sätt att påbörja projekt är att man utgår ifrån redan färdig 
 
 ## Din uppgift
 
-1. Installera Laravel i en mapp under `public_html` använd gärna Composer <https://getcomposer.org/> som finns installerat på servern
-2. Få det att fungera med din databas genom att skriva in korrekta databas-uppgifter
-3. Skapa ett gitrepository för din Laravel-sida. En lämplig `.gitignore` borde redan finnas i mappen efter installatallationen
-4. Bekanta dig med Artisan <https://laravel.com/docs/8.x/artisan> som är Laravels Command Line Interface som kan användas till otroligt mycket under byggprocessen
-5. Bygg något roligt
+1. Installera Laravel i en mapp under `public_html` använd gärna Composer <https://getcomposer.org/> som finns installerat på servern.
+2. Följ de instruktioner du kan hitta i dokumentationen <https://laravel.com/docs/8.x/installation>
+3. Få det att fungera med din databas genom att skriva in korrekta databas-uppgifter
+4. Skapa ett gitrepository för din Laravel-sida. En lämplig `.gitignore` borde redan finnas i mappen efter installatallationen
+5. Bekanta dig med Artisan <https://laravel.com/docs/8.x/artisan> som är Laravels Command Line Interface som kan användas till otroligt mycket under byggprocessen
+6. Bygg något roligt
