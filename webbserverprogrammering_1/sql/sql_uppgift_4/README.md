@@ -33,7 +33,7 @@ mysql> DESC join_posts;
 +---------+------------+------+-----+---------+----------------+
 | id      | int        | NO   | PRI | NULL    | auto_increment |
 | user_id | int        | NO   | MUL | NULL    |                |
-| name    | mediumtext | NO   |     | NULL    |                |
+| content | mediumtext | NO   |     | NULL    |                |
 | date    | datetime   | NO   |     | NULL    |                |
 +---------+------------+------+-----+---------+----------------+
 4 rows in set (0.00 sec)
