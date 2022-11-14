@@ -2,6 +2,14 @@
 
 I denna uppgift ska du få skapa, lägga in, radera och hämta ut information ur en databas. Den information ni ska jobba med ska ni hämta ifrån riksdagens öppna api. Mer information om hur api:et fungerar hittar du på <https://data.riksdagen.se/data/ledamoter/skapa-sokfraga-for-ledamotsdata/>. Läs följande delar i W3Schools innan du sätter igång:
 
+### MySQL
+
+- <https://www.w3schools.com/mysql/mysql_datatypes.asp>
+- <https://www.w3schools.com/mysql/mysql_ref_functions.asp>
+- <https://www.w3schools.com/mysql/mysql_autoincrement.asp>
+
+### PHP
+
 - <https://www.w3schools.com/php/php_json.asp>
 - <https://www.w3schools.com/php/func_network_header.asp>
 - <https://www.w3schools.com/php/php_mysql_intro.asp>
@@ -11,6 +19,15 @@ I denna uppgift ska du få skapa, lägga in, radera och hämta ut information ur
 - <https://www.w3schools.com/php/php_mysql_select.asp>
 - <https://www.w3schools.com/php/php_mysql_delete.asp>
 - <https://www.w3schools.com/php/php_mysql_select_limit.asp>
+
+## Visual Studio Code
+
+Du får gärna fortsätta jobba i terminalen även här. Men till projekt av den här storleken underlättar det onekligen att använda sig av en IDE (Integrated Development Environment). Du är vid det här laget säkert bekväm att arbeta i PhpStorm, och det kan du göra även med denna uppgift. Men ge gärna Visual Studio Code en chans i denna uppgift:
+
+- Ladda ner programmet här: <https://code.visualstudio.com/>
+- Installera därefter extension-paketet "Remote - SSH": <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
+
+Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator.
 
 ## Instruktioner
 
@@ -29,7 +46,7 @@ Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. An
     - `state` - ledamotens valkrets
     - `image` - url-adressen till en porträttbild av ledamoten
     - `updated_at` - klockslaget informationen uppdaterades senast. Tips `NOW()`.
-3. Utgå ifrån `index.php` och följ instruktionerna där. När man lägger till `?do=update` ska du tömma din lokala tabell, hämta ut den senaste informationen från riksdagen, lagra informationen i din databastabell och visa informationen på hemsidan.
+3. Utgå ifrån `index.php` och följ instruktionerna där. När man lägger till `?do=update` ska du tömma din lokala tabell, hämta ut den senaste informationen från riksdagen, lagra informationen i din databastabell och visa informationen på hemsidan. Välj passande data-typer till de olika columnerna: <https://www.w3schools.com/mysql/mysql_datatypes.asp>
 4. Om du inte lägger till `?do=update` ska du _enbart_ visa din information du har i din databas
 5. Gör det möjligt för din besökare att via post-anrop (för att skicka post-anrop kan du använda Talend API Tester):
     - `$_POST['party'] = S` - visa endast S-politiker
@@ -38,4 +55,5 @@ Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. An
     - `$_POST['sort'] = born` - sortera resultaten utifrån födelseår
     - `$_POST['limit'] = 3` - endast visa tre ledamöter
 6. Försök gärna att få ditt skript att - om personen redan finns i databasen - uppdatera informationen istället för att först radera den
-7. Lek gärna vidare med ditt api genom att lägga till ytterligare columner i din databas och ytterligare sätt för användarna av ditt API att påverka hämtningen av data
+7. Kolla så att din kod följer dessa principer <https://blog.unitybuddy.com/top-10-coding-principles-every-developer-must-know>
+8. Lek gärna vidare med ditt api genom att lägga till ytterligare columner i din databas och ytterligare sätt för användarna av ditt API att påverka hämtningen av data

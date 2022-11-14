@@ -40,3 +40,7 @@ Nedan följer en lista på spännande och intressanta öppna API:er
 | Aztro | https://aztro.readthedocs.io/en/latest/ | - |
 
 För ännu fler API:er kan du kolla in listan på denna sida: <https://github.com/public-apis/public-apis>
+
+## Uppgift
+
+- Gör något kul med något av API:erna ovan
