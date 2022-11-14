@@ -27,19 +27,19 @@ mysql> DESC join_users;
 ~~~
 
 ~~~
-mysql> DESC join_items;
+mysql> DESC join_posts;
 +---------+------------+------+-----+---------+----------------+
 | Field   | Type       | Null | Key | Default | Extra          |
 +---------+------------+------+-----+---------+----------------+
 | id      | int        | NO   | PRI | NULL    | auto_increment |
 | user_id | int        | NO   | MUL | NULL    |                |
-| name    | mediumtext | NO   |     | NULL    |                |
+| content | mediumtext | NO   |     | NULL    |                |
 | date    | datetime   | NO   |     | NULL    |                |
 +---------+------------+------+-----+---------+----------------+
 4 rows in set (0.00 sec)
 ~~~
 
-1. Visa alla inlägg som användaren med id `17` har gjort?
+1. Visa alla inlägg i `join_posts` som användaren med id `17` har gjort?
 2. Visa alla inlägg som användaren med login `eb0027` har gjort?
 3. Skriv en fråga som visar hur många inlägg användaren med id `17` har gjort (använd `COUNT`).
 4. Skriv en fråga som visar hur många inlägg användaren med login `eb0027` har (använd `COUNT`).
