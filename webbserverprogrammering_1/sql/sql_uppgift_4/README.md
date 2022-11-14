@@ -43,7 +43,7 @@ mysql> DESC join_posts;
 2. Visa alla inlägg som användaren med login `eb0027` har gjort?
 3. Skriv en fråga som visar hur många inlägg användaren med id `17` har gjort (använd `COUNT`).
 4. Skriv en fråga som visar hur många inlägg användaren med login `eb0027` har (använd `COUNT`).
-5. Skriv en fråga som ger följande svarstabell:
+5. Skriv en fråga som ger följande svarstabell. Använd `GROUP BY` och `COUNT()`:
 
 ~~~
 +--------+-------------------------+-------+
@@ -106,7 +106,7 @@ mysql> DESC join_posts;
 +--------+-------------------------+-------+
 ~~~
 
-7. Skriv en fråga som ger följande svarstabell, alltså bara de som inte har gjort något inlägg:
+7. Skriv en fråga som ger följande svarstabell, alltså bara de som inte har gjort något inlägg. Använd `HAVING`:
 
 ~~~
 +--------+-------------------------+-------+
