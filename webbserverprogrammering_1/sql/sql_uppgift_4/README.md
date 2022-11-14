@@ -47,7 +47,7 @@ mysql> DESC join_posts;
 
 ~~~
 +--------+-------------------------+-------+
-| login  | name                    | items |
+| login  | name                    | posts |
 +--------+-------------------------+-------+
 | vm8563 | Victor Möller           |    12 |
 | eb0027 | Emelie Boström          |    12 |
@@ -110,7 +110,7 @@ mysql> DESC join_posts;
 
 ~~~
 +--------+-------------------------+-------+
-| login  | name                    | items |
+| login  | name                    | posts |
 +--------+-------------------------+-------+
 | dj0006 | Dennis Johansson        |     0 |
 | ka2211 | Khaled Al Moulla        |     0 |
