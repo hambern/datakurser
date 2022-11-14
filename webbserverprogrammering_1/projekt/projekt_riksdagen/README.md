@@ -2,6 +2,13 @@
 
 I denna uppgift ska du få skapa, lägga in, radera och hämta ut information ur en databas. Den information ni ska jobba med ska ni hämta ifrån riksdagens öppna api. Mer information om hur api:et fungerar hittar du på <https://data.riksdagen.se/data/ledamoter/skapa-sokfraga-for-ledamotsdata/>. Läs följande delar i W3Schools innan du sätter igång:
 
+### MySQL
+
+- <https://www.w3schools.com/mysql/mysql_datatypes.asp>
+- <https://www.w3schools.com/mysql/mysql_ref_functions.asp>
+
+### PHP
+
 - <https://www.w3schools.com/php/php_json.asp>
 - <https://www.w3schools.com/php/func_network_header.asp>
 - <https://www.w3schools.com/php/php_mysql_intro.asp>
@@ -29,7 +36,7 @@ Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. An
     - `state` - ledamotens valkrets
     - `image` - url-adressen till en porträttbild av ledamoten
     - `updated_at` - klockslaget informationen uppdaterades senast. Tips `NOW()`.
-3. Utgå ifrån `index.php` och följ instruktionerna där. När man lägger till `?do=update` ska du tömma din lokala tabell, hämta ut den senaste informationen från riksdagen, lagra informationen i din databastabell och visa informationen på hemsidan.
+3. Utgå ifrån `index.php` och följ instruktionerna där. När man lägger till `?do=update` ska du tömma din lokala tabell, hämta ut den senaste informationen från riksdagen, lagra informationen i din databastabell och visa informationen på hemsidan. Välj passande data-typer till de olika columnerna: <https://www.w3schools.com/mysql/mysql_datatypes.asp>
 4. Om du inte lägger till `?do=update` ska du _enbart_ visa din information du har i din databas
 5. Gör det möjligt för din besökare att via post-anrop (för att skicka post-anrop kan du använda Talend API Tester):
     - `$_POST['party'] = S` - visa endast S-politiker
