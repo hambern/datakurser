@@ -31,11 +31,11 @@ Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. An
     - `updated_at` - klockslaget informationen uppdaterades senast. Tips `NOW()`.
 3. Utgå ifrån `index.php` och följ instruktionerna där. När man lägger till `?do=update` ska du tömma din lokala tabell, hämta ut den senaste informationen från riksdagen, lagra informationen i din databastabell och visa informationen på hemsidan.
 4. Om du inte lägger till `?do=update` ska du _enbart_ visa din information du har i din databas
-5. Gör det möjligt för din besökare att via get-variabler:
-    - `?party=S` - visa endast S-politiker
-    - `?gender=kvinna` - visa endast kvinnor
-    - `?name=Åke` - visa endast ledamöter vars för- eller efternamn innehåller "Åke"
-    - `?sort=born` - sortera resultaten utifrån födelseår
-    - `?limit=3` - endast visa tre ledamöter
+5. Gör det möjligt för din besökare att via post-anrop (för att skicka post-anrop kan du använda Talend API Tester):
+    - `$_POST['party'] = S` - visa endast S-politiker
+    - `$_POST['gender'] = kvinna` - visa endast kvinnor
+    - `$_POST['name'] = Åke` - visa endast ledamöter vars för- eller efternamn innehåller "Åke"
+    - `$_POST['sort'] = born` - sortera resultaten utifrån födelseår
+    - `$_POST['limit'] = 3` - endast visa tre ledamöter
 6. Försök gärna att få ditt skript att - om personen redan finns i databasen - uppdatera informationen istället för att först radera den
 7. Lek gärna vidare med ditt api genom att lägga till ytterligare columner i din databas och ytterligare sätt för användarna av ditt API att påverka hämtningen av data
