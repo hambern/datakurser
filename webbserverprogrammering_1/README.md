@@ -2,17 +2,6 @@
 
 Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogrammering 1
 
-## Mappar
-
-I denna mapp finns följande mappar:
-
-- [extrauppgifter](extrauppgifter)
-- [git](git)
-- [lektioner](lektioner)
-- [linux](linux)
-- [projekt](projekt)
-- [sql](sql)
-
 ## Uppgifter
 
 1. [linux_uppgift_1](linux/linux_uppgift_1)

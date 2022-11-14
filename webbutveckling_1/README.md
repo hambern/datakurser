@@ -2,18 +2,6 @@
 
 Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 
-## Mappar
-
-I denna mapp finns följande mappar:
-
-- [bootstrap](bootstrap)
-- [css](css)
-- [extrauppgifter](extrauppgifter)
-- [html](html)
-- [javascript](javascript)
-- [lektioner](lektioner)
-- [projekt](projekt)
-
 ## Uppgifter
 
 1. [html_uppgift_1](html/html_uppgift_1)
