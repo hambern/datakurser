@@ -8,7 +8,7 @@
  */
 function get_riksdagen_members(array $query = []) {
 
-    $params = [
+    $params = [ // Sätter standardparametrar
         'iid'       => '',
         'fnamn'     => '',
         'enamn'     => '',
@@ -24,7 +24,7 @@ function get_riksdagen_members(array $query = []) {
         'termlista' => ''
     ];
 
-    foreach ($params as $key => $value) {
+    foreach ($params as $key => $value) { // Ersätter standardparametrar med egna parametrar om de finns
         if (!empty($query[$key])) {
             $params[$key] = $query[$key];
         }
