@@ -1,6 +1,6 @@
 <?php
 
-function get_riksdagen_members($query = null) {
+function get_riksdagen_members(array $query = []) {
 
     if (empty($query)) // Om ingen fråga skickas används denna standard-fråga
     {
