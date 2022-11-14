@@ -6,6 +6,7 @@ I denna uppgift ska du få skapa, lägga in, radera och hämta ut information ur
 
 - <https://www.w3schools.com/mysql/mysql_datatypes.asp>
 - <https://www.w3schools.com/mysql/mysql_ref_functions.asp>
+- <https://www.w3schools.com/mysql/mysql_autoincrement.asp>
 
 ### PHP
 
