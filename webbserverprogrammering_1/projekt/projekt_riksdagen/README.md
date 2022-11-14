@@ -20,6 +20,15 @@ I denna uppgift ska du få skapa, lägga in, radera och hämta ut information ur
 - <https://www.w3schools.com/php/php_mysql_delete.asp>
 - <https://www.w3schools.com/php/php_mysql_select_limit.asp>
 
+## Visual Studio Code
+
+Du får gärna fortsätta jobba i terminalen även här. Men till projekt av den här storleken underlättar det onekligen att använda sig av en IDE (Integrated Development Environment). Du är vid det här laget säkert bekväm att arbeta i PhpStorm, och det kan du göra även med denna uppgift. Men ge gärna Visual Studio Code en chans i denna uppgift:
+
+- Ladda ner programmet här: <https://code.visualstudio.com/>
+- Installera därefter extension-paketet "Remote - SSH": <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
+
+Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator.
+
 ## Instruktioner
 
 Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. Använd följande plugins till Chrome för att underlätta arbetet:
