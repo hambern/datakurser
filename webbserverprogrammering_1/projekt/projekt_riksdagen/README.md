@@ -37,4 +37,5 @@ Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. An
     - `?name=Åke` - visa endast ledamöter vars för- eller efternamn innehåller "Åke"
     - `?sort=born` - sortera resultaten utifrån födelseår
     - `?limit=3` - endast visa tre ledamöter
-6. Lek gärna vidare med ditt eget api genom att lägga till ytterligare columner i din databas och ytterligare sätt för användarna av ditt API att påverka hämtningen av data
+6. Försök gärna att få ditt skript att - om personen redan finns i databasen - uppdatera informationen istället för att först radera den
+7. Lek gärna vidare med ditt api genom att lägga till ytterligare columner i din databas och ytterligare sätt för användarna av ditt API att påverka hämtningen av data
