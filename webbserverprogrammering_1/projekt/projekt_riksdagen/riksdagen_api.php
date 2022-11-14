@@ -8,25 +8,29 @@
  */
 function get_riksdagen_members(array $query = []) {
 
-    if (empty($query)) // Om ingen fråga skickas används denna standard-fråga
-    {
-        $query = ['iid' => '',
-            'fnamn' => '',
-            'enamn' => '',
-            'f_ar' => '',
-            'kn' => '',
-            'parti' => '',
-            'valkrets' => '',
-            'rdlstatus' => '',
-            'org' => '',
-            'utformat' => 'json',
-            'sort' => 'född_år',
-            'sortorder' => 'desc',
-            'termlista' => ''
-        ];
+    $params = [
+        'iid'       => '',
+        'fnamn'     => '',
+        'enamn'     => '',
+        'f_ar'      => '',
+        'kn'        => '',
+        'parti'     => '',
+        'valkrets'  => '',
+        'rdlstatus' => '',
+        'org'       => '',
+        'utformat'  => 'json',
+        'sort'      => 'född_år',
+        'sortorder' => 'desc',
+        'termlista' => ''
+    ];
+
+    foreach ($params as $key => $value) {
+        if (!empty($query[$key])) {
+            $params[$key] = $query[$key];
+        }
     }
 
-    $url = 'https://data.riksdagen.se/personlista/?'.http_build_query($query); // Sätter ihop API-frågan som ska användas
+    $url = 'https://data.riksdagen.se/personlista/?'.http_build_query($params); // Sätter ihop API-frågan som ska användas
 
     $json = file_get_contents($url); // Skickar förfrågan och hämtar svaret från API:et
 
