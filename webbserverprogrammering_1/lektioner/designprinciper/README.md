@@ -34,5 +34,18 @@ Om du har samma kod på fler än två ställen, överväg att göra det till en 
 
 Men det är viktigt att inte missbruka det. Se upp för att koppla ihop sådant som inte hör ihop bara för att de har en liknande kod.
 
-DRY-kod är lätt att underhålla och det är lättare att felsöka en loop som körs 50 gånger  än 50 separata kodblock som gör samma sak.
+DRY-kod är lätt att underhålla och det är lättare att felsöka en loop som körs 50 gånger än 50 separata kodblock som gör samma sak.
 
+## 3. Open/Closed-principen
+
+Försök eftersträva att skriva kod som är öppen för utbyggnad, men stängd för förändringar. Detta är extra viktigt när du skriver kod som andra ska använda och arbeta med. Där vill man inte att grundläggande funktioner ska förändras eftersom deras egna program kan sluta fungera.
+
+Släpp istället kod som är enkel och tydlig i sin grundläggande funktionalitet men som är öppen för utbyggnad av andra. Detta gör koden både stabilare och enklare att underhålla.
+
+## 4. Sammanställning över arv
+
+När man jobbar objektorienterat finns det lägen där det är okej att objekt ärver beteenden från andra - om objekten är utbytbara. Men generellt är det klokare att använda självständiga objekt som istället använder varandras funktionalitet. Objektet "bil" ska inte ärva objektet "motor"s funktioner utan sammanställa och använda motorn istället. Bilen _är_ inte en motor, den _har_ en motor.
+
+Rent konkret kan detta innebära att man i objektet konstruktor sammanställer de övriga objekt som behövs för att sedan använda dessa. På det sättet slipper man komplicerade arvshierarkier och koden blir också mer testbar då man enkelt kan byta ut enskilda komponenter.
+
+## 5. 
