@@ -38,7 +38,7 @@ Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. An
 
 1. Skapa en tabell via phpMyAdmin i din egen databas som heter `rik_members`
 2. Den ska förrutom en `id`-kolumn med `auto increment primary key` även lagra följande information:
-    - `born` - året ledamoten föddes. Använd `VARCHAR`
+    - `born` - året ledamoten föddes. Använd `YEAR`
     - `gender` - ledamotets könstillhörighet. Använd `ENUM`
     - `last_name` - ledamotens efternamn. Använd `VARCHAR`
     - `first_name` - ledamotens förnamn. Använd `VARCHAR`
