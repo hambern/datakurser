@@ -38,16 +38,16 @@ Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. An
 
 1. Skapa en tabell via phpMyAdmin i din egen databas som heter `rik_members`
 2. Den ska förrutom en `id`-kolumn med `auto increment primary key` även lagra följande information:
-    - `born` - året ledamoten föddes
-    - `gender` - ledamotets könstillhörighet
-    - `last_name` - ledamotens efternamn
-    - `first_name` - ledamotens förnamn
-    - `party` - ledamotens partibeteckning
-    - `state` - ledamotens valkrets
-    - `image` - url-adressen till en porträttbild av ledamoten
-    - `updated_at` - klockslaget informationen uppdaterades senast. Tips `NOW()`.
+    - `born` - året ledamoten föddes. Använd `VARCHAR`
+    - `gender` - ledamotets könstillhörighet. Använd `ENUM`
+    - `last_name` - ledamotens efternamn. Använd `VARCHAR`
+    - `first_name` - ledamotens förnamn. Använd `VARCHAR`
+    - `party` - ledamotens partibeteckning. Använd `VARCHAR`
+    - `state` - ledamotens valkrets. Använd `VARCHAR`
+    - `image` - url-adressen i textformat till en porträttbild av ledamoten. Använd `VARCHAR`
+    - `updated_at` - klockslaget informationen uppdaterades senast. Använd `DATETIME`. Använd gärna `NOW()` som default.
 3. Utgå ifrån `index.php` och följ instruktionerna där. När man lägger till `?do=update` ska du tömma din lokala tabell, hämta ut den senaste informationen från riksdagen, lagra informationen i din databastabell och visa informationen på hemsidan. Välj passande data-typer till de olika columnerna: <https://www.w3schools.com/mysql/mysql_datatypes.asp>
-4. Om du inte lägger till `?do=update` ska du _enbart_ visa din information du har i din databas
+4. Om du inte lägger till `?do=update` ska du _enbart_ visa din information du har i din databas. Inget anrop ska då göras till riksdagens API.
 5. Gör det möjligt för din besökare att via post-anrop (för att skicka post-anrop kan du använda Talend API Tester):
     - `$_POST['party'] = S` - visa endast S-politiker
     - `$_POST['gender'] = kvinna` - visa endast kvinnor
