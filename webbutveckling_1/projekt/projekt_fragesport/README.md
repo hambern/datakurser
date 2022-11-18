@@ -13,7 +13,7 @@ Internetmuseum grundades i december 2014 och blev i juni 2016 invalt i Sveriges 
 
 1. Läs på om internets historia på https://www.internetmuseum.se/
 2. Utifrån informationen ska du skapa en frågesport med minst 15 centrala fakta.
-3. Svarsalternativen ska vara märkta med antingen flervalsfält (select), radioknappar (radio), range eller checkboxar. Läs mer om HTML5-formulär via följande sida https://www.w3schools.com/html/html_forms.asp/.
+3. Svarsalternativen ska vara märkta med antingen flervalsfält (select), radioknappar (radio), range eller checkboxar. Läs mer om HTML5-formulär via följande sida https://www.w3schools.com/html/html_forms.asp
     - Minst en fråga ska använda sig av select https://www.w3schools.com/html/html_form_elements.asp
     - Minst en fråga ska använda sig av radioknappar https://www.w3schools.com/html/html_form_input_types.asp
     - Minst en fråga ska använda sig av range https://www.w3schools.com/html/html_form_input_types.asp
