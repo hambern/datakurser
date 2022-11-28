@@ -15,10 +15,10 @@ Logga in i MySQL med terminalkommandot: `mysql -u student -p -h localhost`. Ange
 
 Skriv dina svar i en fil vid namn `sql_uppgift_3.md` under mappen `sql`.
 
-1. Skriv en fråga som ger en rad till svar och det är hur många rader det finns i tabellen.
-2. Skriv en fråga som ger en rad till svar och det är hur många rader det finns av valutan `Kr`.
+1. Skriv en fråga som ger en rad till svar och det är hur många rader det finns i tabellen. Använd `COUNT()`
+2. Skriv en fråga som ger en rad till svar och det är hur många rader det finns av valutan `Kr`. Använd `WHERE`
 3. Skriv en fråga som visar alla rader som inte är av valutan `Kr`.
-4. Skriv en fråga som summerar hur mycket det finns av dollar i tabellen.
+4. Skriv en fråga som summerar hur mycket det finns av dollar i tabellen. Använd `SUM()`
 5. Skriv en fråga som visar vilka olika valutor som finns i tabellen. En rad per valuta. Använd `DISTINCT`
 6. Skriv en fråga som visar vilka olika valörer som finns i tabellen. En rad per valör. Använd `DISTINCT`
 7. Skriv en fråga som visar vilka olika valörer av varje valuta som finns i tabellen. En rad per valuta och valör. Använd `DISTINCT`
@@ -39,4 +39,4 @@ Skriv dina svar i en fil vid namn `sql_uppgift_3.md` under mappen `sql`.
 +----------------------+------------+
 ~~~
 
-9. Om du vill veta hur mycket pengar det totalt finns i valutan `Kr`. Hur ser frågan ut? Använd `GROUP BY`.
+9. Om du vill veta hur mycket pengar det totalt finns av varje enskild valuta. Hur ser frågan ut? Använd `SUM()` och `GROUP BY`.
