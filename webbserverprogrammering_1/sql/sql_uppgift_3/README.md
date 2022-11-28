@@ -40,3 +40,14 @@ Skriv dina svar i en fil vid namn `sql_uppgift_3.md` under mappen `sql`.
 ~~~
 
 9. Om du vill veta hur mycket pengar det totalt finns av varje enskild valuta. Hur ser frågan ut? Använd `SUM()` och `GROUP BY`.
+
+~~~
++----------+------------+
+| currency | SUM(valor) |
++----------+------------+
+| Kr       |    1821078 |
+| DM       |         51 |
+| dollar   |         61 |
+| EURO     |          5 |
++----------+------------+
+~~~
