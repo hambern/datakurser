@@ -14,8 +14,11 @@ Internetmuseum grundades i december 2014 och blev i juni 2016 invalt i Sveriges 
 1. Läs på om internets historia på https://www.internetmuseum.se/
 2. Utifrån informationen ska du skapa en frågesport med minst 15 centrala fakta.
 3. Svarsalternativen ska vara märkta med antingen flervalsfält (select), radioknappar (radio), range eller checkboxar. Undvik gärna text-fält då de är mer svår-rättade. Läs mer om HTML5-formulär via följande sida https://www.w3schools.com/html/html_forms.asp
-4. Man ska skriva in sitt namn (används till en high-score-lista)
-5. Minst en fråga ska ha en tillhörande bild och minst en fråga ska ha en tillhörande video.
+4. Flödet kan exempelvis se ut såhär:
+   - `index.php` Innehåller _ett_ formulär för namn och svarsalternativ som skickas till...
+   - `answer.php` som rättar svaren och sparar resultatet i `results.txt` varpå den visar upp både besökarens resultat och den aktuella high-score-topplistan.
+5. Man ska skriva in sitt namn (används till en high-score-lista)
+6. Minst en fråga ska ha en tillhörande bild och minst en fråga ska ha en tillhörande video.
 7. Det ska finnas en “tack för att du genomförde min frågesport”-sida där du visar resultatet
 8. Det ska finnas en highscore-lista där du listar de som fått flest poäng
 9. Formge din frågesport med hjälp av CSS. Denna gång är utformningen väldigt fri. Men en god formgivning ska bland annat ha följande kvaliteter:
