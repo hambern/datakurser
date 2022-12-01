@@ -39,3 +39,8 @@ Internetmuseum grundades i december 2014 och blev i juni 2016 invalt i Sveriges 
 - Detta är ett exempel på hur du kan visa bara en fråga i taget och sedan, via en knapp, kan visa nästa fråga: <https://jsfiddle.net/hambern/u1refgqy>
 - Detta är ett lite mer avancerat exempel där jag dessutom lagt till en animation: <https://jsfiddle.net/hambern/1koj2epx/>
 - Kika gärna också på CSS-avdelningen på denna praktiska sida: <https://10015.io/>
+
+### Strålande elevexempel
+
+- Jacob Bergren (2020) <https://student.oedu.se/~jb0015/Programering/F-Textfiler/U6-Fragesport/fragesport.php>
+- Henrik Hellström (2021) <https://student.oedu.se/~hh0022/Webbutveckling/Fr%c3%a5gesport/>
