@@ -17,7 +17,7 @@ Internetmuseum grundades i december 2014 och blev i juni 2016 invalt i Sveriges 
 4. Flödet kan exempelvis se ut såhär:
    - `index.php` Innehåller _ett_ formulär för namn och svarsalternativ som skickas till...
    - `answer.php` som rättar svaren och sparar resultatet i `results.txt` varpå den visar upp både besökarens resultat och den aktuella high-score-topplistan.
-5. Man ska skriva in sitt namn (används till en high-score-lista)
+5. Man ska skriva in sitt namn (används till high-score-listan)
 6. Minst en fråga ska ha en tillhörande bild och minst en fråga ska ha en tillhörande video.
 7. Det ska finnas en “tack för att du genomförde min frågesport”-sida där du visar resultatet
 8. Det ska finnas en highscore-lista där du listar de som fått flest poäng
