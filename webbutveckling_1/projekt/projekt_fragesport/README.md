@@ -42,5 +42,5 @@ Internetmuseum grundades i december 2014 och blev i juni 2016 invalt i Sveriges 
 
 ### Strålande elevexempel
 
-- Jacob Bergren (2020) <https://student.oedu.se/~jb0015/Programering/F-Textfiler/U6-Fragesport/fragesport.php>
+- Jacob Berggren (2020) <https://student.oedu.se/~jb0015/Programering/F-Textfiler/U6-Fragesport/fragesport.php>
 - Henrik Hellström (2021) <https://student.oedu.se/~hh0022/Webbutveckling/Fr%c3%a5gesport/>
