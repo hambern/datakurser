@@ -13,12 +13,12 @@ Internetmuseum grundades i december 2014 och blev i juni 2016 invalt i Sveriges 
 
 1. Läs på om internets historia på https://www.internetmuseum.se/
 2. Utifrån informationen ska du skapa en frågesport med minst 15 centrala fakta.
-3. Svarsalternativen ska vara märkta med antingen flervalsfält (select), radioknappar (radio), range eller checkboxar. Läs mer om HTML5-formulär via följande sida https://www.w3schools.com/html/html_forms.asp/.
-    - Minst en fråga ska använda sig av select https://www.w3schools.com/html/html_form_elements.asp
-    - Minst en fråga ska använda sig av radioknappar https://www.w3schools.com/html/html_form_input_types.asp
-    - Minst en fråga ska använda sig av range https://www.w3schools.com/html/html_form_input_types.asp
-4. Man ska skriva in sitt namn (används till en high-score-lista)
-5. Minst en fråga ska ha en tillhörande bild och minst en fråga ska ha en tillhörande video.
+3. Svarsalternativen ska vara märkta med antingen flervalsfält (select), radioknappar (radio), range eller checkboxar. Undvik gärna text-fält då de är mer svår-rättade. Läs mer om HTML5-formulär via följande sida https://www.w3schools.com/html/html_forms.asp
+4. Flödet kan exempelvis se ut såhär:
+   - `index.php` Innehåller _ett_ formulär för namn och svarsalternativ som skickas till...
+   - `answer.php` som rättar svaren och sparar resultatet i `results.txt` varpå den visar upp både besökarens resultat och den aktuella high-score-topplistan.
+5. Man ska skriva in sitt namn (används till high-score-listan)
+6. Minst en fråga ska ha en tillhörande bild och minst en fråga ska ha en tillhörande video.
 7. Det ska finnas en “tack för att du genomförde min frågesport”-sida där du visar resultatet
 8. Det ska finnas en highscore-lista där du listar de som fått flest poäng
 9. Formge din frågesport med hjälp av CSS. Denna gång är utformningen väldigt fri. Men en god formgivning ska bland annat ha följande kvaliteter:
@@ -39,3 +39,8 @@ Internetmuseum grundades i december 2014 och blev i juni 2016 invalt i Sveriges 
 - Detta är ett exempel på hur du kan visa bara en fråga i taget och sedan, via en knapp, kan visa nästa fråga: <https://jsfiddle.net/hambern/u1refgqy>
 - Detta är ett lite mer avancerat exempel där jag dessutom lagt till en animation: <https://jsfiddle.net/hambern/1koj2epx/>
 - Kika gärna också på CSS-avdelningen på denna praktiska sida: <https://10015.io/>
+
+### Strålande elevexempel
+
+- Jacob Berggren (2020) <https://student.oedu.se/~jb0015/Programering/F-Textfiler/U6-Fragesport/fragesport.php>
+- Henrik Hellström (2021) <https://student.oedu.se/~hh0022/Webbutveckling/Fr%c3%a5gesport/>
