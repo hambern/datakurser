@@ -7,11 +7,10 @@ I denna uppgift ska du få skapa, lägga in, radera och hämta ut information ur
 - <https://www.w3schools.com/mysql/mysql_datatypes.asp>
 - <https://www.w3schools.com/mysql/mysql_ref_functions.asp>
 - <https://www.w3schools.com/mysql/mysql_autoincrement.asp>
+- <https://www.w3schools.com/mysql/func_mysql_truncate.asp>
 
 ### PHP
 
-- <https://www.w3schools.com/php/php_json.asp>
-- <https://www.w3schools.com/php/func_network_header.asp>
 - <https://www.w3schools.com/php/php_mysql_intro.asp>
 - <https://www.w3schools.com/php/php_mysql_connect.asp>
 - <https://www.w3schools.com/php/php_mysql_insert.asp>
@@ -46,14 +45,16 @@ Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. An
     - `state` - ledamotens valkrets. Använd `VARCHAR`
     - `image` - url-adressen i textformat till en porträttbild av ledamoten. Använd `VARCHAR`
     - `updated_at` - klockslaget informationen uppdaterades senast. Använd `DATETIME`. Använd gärna `NOW()` som default.
-3. Utgå ifrån `index.php` och följ instruktionerna där. När man lägger till `?do=update` ska du:
-    - Tömma din lokala tabell `TRUNCATE`
-    - Hämta ut den senaste informationen från riksdagen
-    - Lagra informationen i din databastabell `INSERT`
-    - Hämta ut informationen från databasen `SELECT`
+3. Utgå ifrån `index.php` och `riksdagen_api.php` du hittar i denna mapp.
+    - Innan du gör något annat bör du skapa en databaskoppling. Använd gärna den objektorienterade varianten på: <https://www.w3schools.com/php/php_mysql_connect.asp>
+4. När man lägger till `?do=update` ska du:
+    - Tömma din lokala tabell. Använd `TRUNCATE` <https://www.w3schools.com/mysql/func_mysql_truncate.asp>
+    - Hämta ut den senaste informationen från riksdagen. Använd `get_riksdagen_members()`
+    - Lagra informationen i din databastabell. Använd `INSERT`
+    - Hämta ut informationen från databasen. Använd `SELECT`
     - Visa den på hemsidan i json-format
-4. Om du inte lägger till `?do=update` ska du _enbart_ visa din information du har i din databas. Inget anrop ska då göras till riksdagens API.
-5. Gör det möjligt för din besökare att via post-anrop (för att skicka post-anrop kan du använda Talend API Tester):
+5. Om du inte lägger till `?do=update` ska du _enbart_ visa din information du har i din databas. Inget anrop ska då göras till riksdagens API.
+6. Gör det möjligt för din besökare att via post-anrop (för att skicka post-anrop kan du använda Talend API Tester):
     - `$_POST['party'] = S` - visa endast S-politiker
     - `$_POST['gender'] = kvinna` - visa endast kvinnor
     - `$_POST['name'] = Åke` - visa endast ledamöter vars för- eller efternamn innehåller "Åke"
