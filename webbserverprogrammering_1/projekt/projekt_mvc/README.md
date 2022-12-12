@@ -86,3 +86,7 @@ I denna uppgift ska du skapa ditt eget MVC-ramverk. Även om det finns färdiga 
     8. Låt oss säga att du vill lägga till en sida `/contact` där du kan ange ditt telefonnummer och e-postadress. För detta behöver du ingen databaskoppling. Var skulle du behöva göra dina förändringar?
     9. Om du istället för HTML vill visa datan som en json-array. Var skulle du behöva göra dina förändringar?
 8. Gitta in svaren på ovanstående frågor till ditt kurs-repository
+
+## OpenAI ChatGPT
+
+Om du kör fast i din kodning, tveka inte att ställa frågor till Open AI:s chattbot ChatGPT som är förvånansvärt skicklig på att skriva kod. Var bara tydlig med vilket slags språk du vill ha hjälp med, exempelvis HTML, CSS, PHP eller Java: <https://chat.openai.com/>. Undvik dock att använda tjänsten för att svara på dina frågor och lösa dina uppgifter eftersom det förhindrar din egen inlärning. Men som assistent som svarar på dina frågor och funderar är det ett bra verktyg.

@@ -108,3 +108,7 @@ För att autostarta som inloggad på din användare på studentservern måste du
 ### Börja i en speciell mapp på servern (överkurs)
 
 Om du vill börja på en speciell mapp på servern som inte är root-mappen `~/` byter du ut command line-kommandot till: `ssh -t -p 3690 ditt_login@student.oedu.se "cd public_html/din_mapp && bash"`. Notera att cd-kommandot måste vara inom dubbla citationstecken och avslutas med `&& bash`
+
+## OpenAI ChatGPT
+
+Om du kör fast i din kodning, tveka inte att ställa frågor till Open AI:s chattbot ChatGPT som är förvånansvärt skicklig på att skriva kod. Var bara tydlig med vilket slags språk du vill ha hjälp med, exempelvis HTML, CSS, PHP eller Java: <https://chat.openai.com/>. Undvik dock att använda tjänsten för att svara på dina frågor och lösa dina uppgifter eftersom det förhindrar din egen inlärning. Men som assistent som svarar på dina frågor och funderar är det ett bra verktyg.
