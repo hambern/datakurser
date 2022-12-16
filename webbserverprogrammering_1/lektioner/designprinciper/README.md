@@ -17,8 +17,8 @@ Det betyder att du ska skriva kod så enkelt som möjligt. Fastna inte i att fö
 Här är en enkel funktion:
 
 ~~~php
-function addNumbers(num1,num2){
-    return num1 + num2;
+function addNumbers($num1,$num2){
+    return $num1 + $num2;
 }
 ~~~
 
@@ -31,6 +31,30 @@ Använd tydliga variabelnamn. Dra nytta av kodningsbibliotek för att använda b
 DRY (Don't Repeat Yourself!) betyder att du inte ska skriva återkommande kod, utan använda abstraktion för att abstrahera vanliga saker till ett enda ställe.
 
 Om du har samma kod på fler än två ställen, överväg att göra det till en separat metod, eller om du använder ett hårdkodat värde mer än en gång, gör det till en konstant. Fördelen med denna objektorienterade designprincip är att koden blir lättare att underhålla.
+
+Följande kod:
+
+~~~php
+function addNumberSequence($number) {
+    $number = $number + 1;
+    $number = $number + 2;
+    $number = $number + 3;
+    $number = $number + 4;
+    $number = $number + 5;
+    return $number;
+}
+~~~
+
+Är exempelvis betydligt sämre än följande: 
+
+~~~php
+function addNumberSequence($number, $add = 5) {
+    foreach (range(1, $add) as $addition) {
+        $number = $number + $addition
+    }
+    return number;
+}
+~~~
 
 Men det är viktigt att inte missbruka det. Se upp för att koppla ihop sådant som inte hör ihop bara för att de har en liknande kod.
 
