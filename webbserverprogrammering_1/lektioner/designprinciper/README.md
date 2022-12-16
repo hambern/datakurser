@@ -1,10 +1,8 @@
 # Designprinciper alla bör känna till
 
-Hej kompisar! Jag skulle vilja gå in på vårt ämne utan att slösa tid.
+Detta är en översättning och en anpassning av följande artikel: <https://www.makeuseof.com/tag/basic-programming-principles/>.
 
-Det är lätt att skriva kod. Men det är svårt att skriva bra kod.
-
-Dålig kod finns i många former. Stökig kod, massiva if-else-kedjor, program som går sönder efter en justering och obegripliga variabler.
+Det är lätt att skriva kod. Men det är svårt att skriva bra kod. Dålig kod finns i många former. Stökig kod, massiva if-else-kedjor, program som går sönder efter en justering och obegripliga variabler.
 
 Om du vill vara en programmerare, nöj dig inte med genvägar. Sikta på att skriva kod som är lätt för dig och för alla andra utvecklare i ditt team att underhålla. Men hur skriver man en bra kod? Du skriver bra kod genom att vara disciplinerad med dina programmeringsprinciper. nu ska vi se några programmeringsprinciper som kan hjälpa dig att bli en bra utvecklare.
 
