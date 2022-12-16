@@ -18,7 +18,7 @@ Men projektet kan i princip bli hur stort som helst.
 
 ## Tips till Webbserverprogrammering 1
 
-- Kika på och utgå ifrån det enkla MVC du kan hitta på följande repository: <https://gitlab.com/Hambern/mvc/-/tree/login>
+- Kika på och utgå ifrån det enkla MVC du kan hitta på följande repository: <https://gitlab.com/Hambern/mvc>
 - Installera JSON Viewer för att kunna ta del av json-svar direkt i webbläsaren: <https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh>
 - Installera Talend API Tester för att kunna skicka och ta emot svar i ditt API: <https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm>
 - När du lägger till nya klasser försök att hålla dig till "regeln" att varje klass bör ha en egen fil med samma namn som klassen.
@@ -43,3 +43,7 @@ Ni ska enligt ett givet körschema visa vad ni har gjort (ni får 10 min på er)
 - Ni ska lämna in den slutgiltiga projektplanen som PDF (den som matchar det ni har gjort) via git till Joakim och via inlämning i vklass till Daniel senast den 1/6 kl 23.59.
 - Ni ska lämna in koden till Daniel via inlämning i vklass. Gör en ZIP-fil av de filer som hör till projektet (.java-filer ur src-mappen och om ni använt andra resurser som t.ex. bilder).
 - Ni ska ha gittan in koden till Gitlab.
+
+## OpenAI ChatGPT
+
+Om du kör fast i din kodning, tveka inte att ställa frågor till Open AI:s chattbot ChatGPT som är förvånansvärt skicklig på att skriva kod. Var bara tydlig med vilket slags språk du vill ha hjälp med, exempelvis HTML, CSS, PHP eller Java: <https://chat.openai.com/>. Undvik dock att använda tjänsten för att svara på dina frågor och lösa dina uppgifter eftersom det förhindrar din egen inlärning. Men som assistent som svarar på dina frågor och funderar är det ett bra verktyg.

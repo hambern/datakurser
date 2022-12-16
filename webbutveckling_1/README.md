@@ -83,3 +83,7 @@ Du kan också, när du fyllt i korrekt information i PhpStorm, logga in via ssh 
 3. Redigera filer som ligger på servern
 4. Titta på din egen sida via `http://student.oedu.se/~ditt_login` i en webbläsare
 5. Ansluta en mapp i PhpStorm till servern
+
+## OpenAI ChatGPT
+
+Om du kör fast i din kodning, tveka inte att ställa frågor till Open AI:s chattbot ChatGPT som är förvånansvärt skicklig på att skriva kod. Var bara tydlig med vilket slags språk du vill ha hjälp med, exempelvis HTML, CSS, PHP eller Java: <https://chat.openai.com/>. Undvik dock att använda tjänsten för att svara på dina frågor och lösa dina uppgifter eftersom det förhindrar din egen inlärning. Men som assistent som svarar på dina frågor och funderar är det ett bra verktyg.

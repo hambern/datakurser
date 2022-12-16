@@ -7,7 +7,7 @@ I denna uppgift ska du få skapa, lägga in, radera och hämta ut information ur
 - <https://www.w3schools.com/mysql/mysql_datatypes.asp>
 - <https://www.w3schools.com/mysql/mysql_ref_functions.asp>
 - <https://www.w3schools.com/mysql/mysql_autoincrement.asp>
-- <https://www.w3schools.com/mysql/func_mysql_truncate.asp>
+- <https://www.w3schools.com/sql/sql_ref_drop_table.asp>
 
 ### PHP
 
@@ -63,3 +63,7 @@ Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. An
 6. Försök gärna att få ditt skript att - om personen redan finns i databasen - uppdatera informationen istället för att först radera den
 7. Kolla så att din kod följer dessa principer <https://blog.unitybuddy.com/top-10-coding-principles-every-developer-must-know>
 8. Lek gärna vidare med ditt api genom att lägga till ytterligare columner i din databas och ytterligare sätt för användarna av ditt API att påverka hämtningen av data
+
+## OpenAI ChatGPT
+
+Om du kör fast i din kodning, tveka inte att ställa frågor till Open AI:s chattbot ChatGPT som är förvånansvärt skicklig på att skriva kod. Var bara tydlig med vilket slags språk du vill ha hjälp med, exempelvis HTML, CSS, PHP eller Java: <https://chat.openai.com/>. Undvik dock att använda tjänsten för att svara på dina frågor och lösa dina uppgifter eftersom det förhindrar din egen inlärning. Men som assistent som svarar på dina frågor och funderar är det ett bra verktyg.
