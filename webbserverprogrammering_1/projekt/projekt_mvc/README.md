@@ -14,6 +14,8 @@ Man kan likna applikationen - din kod - med ett företag som har tre anställda:
 - _En lagerarbetare_ (model) som tar emot och lämnar ut varor
 - _En leverantör_ (view) som paketerar varan på dett sätt kunden vill ha den
 
+Då man ibland kan måsta byta ut en receptionist, lagerarbetare eller leverantör kan det vara klokt att separera dessa arbetsuppgifter ifrån varandra så att en nyanställd får en begränsad mängd arbetsuppgifter att sätta sig in i. Att dela upp ansvarsområden på olika anställda är också ett bra sätt att undvika onödiga konflikter om hur saker ska göras, så länge var och an av dem sköter sina respektive uppgifter.
+
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20210629165722/mvc.png)
 
 ## MVC i praktiken
