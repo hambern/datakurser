@@ -50,7 +50,7 @@
 
     <div>
         <!--
-        Inläggen ska presenteras i kort som i sin tur ligger i rad-kolumner
+        Inläggen ska presenteras i kort `card` som i sin tur ligger i rad-kolumner
         På smala skärmar ska de visas i en kolumn, på lite större på två. På riktigt stora skärmar ska de visas i fyra kolumner
         Innan tiden ska du använda en ikon från Bootstrap icons. Den heter `clock` och bör gå att hitta via deras hemsida
         Namnet ska vara länkat till besökarens e-post-address medan länken ska vara länkad till besökarens hemsida
