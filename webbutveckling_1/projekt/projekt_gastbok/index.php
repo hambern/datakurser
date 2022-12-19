@@ -35,8 +35,8 @@
         <input type="text" id="homepage" name="homepage">
         <input type="text" id="header" name="header">
         <textarea id="content" name="content" cols="" rows=""></textarea>
-        <input type="button" value="Skriv i gästboken">
-        <input type="button" value="Återställ">
+        <input type="submit" value="Skriv i gästboken">
+        <input type="reset" value="Återställ">
     </form>
 
     <nav>
