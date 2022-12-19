@@ -78,6 +78,59 @@
                       {
                         "enabled": true,
                         "type": "Text",
+                        "name": "content",
+                        "value": "${randomString(\"50\", true, true, false)}"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "token",
+                        "value": "${\"token\"}"
+                      }
+                    ]
+                  },
+                  "bodyType": "Form"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  },
+                  "host": "student.oedu.se",
+                  "path": "/~mh6802/mvc/posts/create"
+                },
+                "id": "6e783d20-f6e7-4206-b0fe-e3f4e5fa5ddc",
+                "name": "Create post",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": [
+                      {
+                        "enabled": true,
+                        "type": "Text",
                         "name": "token",
                         "value": "${\"token\"}"
                       }
@@ -480,132 +533,6 @@
           ]
         }
       ]
-    },
-    {
-      "entity": {
-        "type": "Project",
-        "id": "8432ff64-6a27-422a-b198-dac5d1dac356",
-        "name": "Tarot"
-      },
-      "children": [
-        {
-          "entity": {
-            "type": "Request",
-            "method": {
-              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
-              "name": "GET"
-            },
-            "body": {
-              "formBody": {
-                "overrideContentType": true,
-                "encoding": "application/x-www-form-urlencoded",
-                "items": []
-              },
-              "bodyType": "Text"
-            },
-            "uri": {
-              "query": {
-                "delimiter": "&",
-                "items": [
-                  {
-                    "enabled": true,
-                    "name": "page",
-                    "value": "1"
-                  }
-                ]
-              },
-              "scheme": {
-                "name": "http",
-                "version": "V11"
-              },
-              "host": "h82.se",
-              "path": "/api/v1/cards"
-            },
-            "id": "3e89d9a1-74c7-4cbc-9a29-4f4cb294fa19",
-            "name": "Get all cards",
-            "headers": []
-          }
-        },
-        {
-          "entity": {
-            "type": "Request",
-            "method": {
-              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
-              "name": "GET"
-            },
-            "body": {
-              "formBody": {
-                "overrideContentType": true,
-                "encoding": "application/x-www-form-urlencoded",
-                "items": []
-              },
-              "bodyType": "Text"
-            },
-            "uri": {
-              "query": {
-                "delimiter": "&",
-                "items": []
-              },
-              "scheme": {
-                "name": "http",
-                "version": "V11"
-              },
-              "host": "h82.se",
-              "path": "/api/v1/cards/1"
-            },
-            "id": "5007a525-79d6-469e-85e8-d7296adb1b6a",
-            "name": "Get one card",
-            "headers": []
-          }
-        },
-        {
-          "entity": {
-            "type": "Request",
-            "method": {
-              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
-              "name": "GET"
-            },
-            "body": {
-              "formBody": {
-                "overrideContentType": true,
-                "encoding": "application/x-www-form-urlencoded",
-                "items": []
-              },
-              "bodyType": "Text"
-            },
-            "uri": {
-              "query": {
-                "delimiter": "&",
-                "items": []
-              },
-              "scheme": {
-                "name": "http",
-                "version": "V11"
-              },
-              "host": "h82.se",
-              "path": "/api/v1/cards/random/3"
-            },
-            "id": "56b84719-3e91-44eb-b956-3920c99850bd",
-            "name": "Get random cards",
-            "headers": []
-          }
-        }
-      ]
-    }
-  ],
-  "environments": [
-    {
-      "id": "6e02a2af-0ba9-4107-8e9b-a6bb7816408f",
-      "name": "MVC",
-      "variables": {
-        "dba2caf3-1a29-4dca-8c69-293a7bab6f69": {
-          "createdAt": "2022-12-15T14:36:40.258+01:00",
-          "name": "token",
-          "value": "be2518712f3e0eb5255ad4094f634811e38e5523",
-          "enabled": true,
-          "private": false
-        }
-      }
     }
   ]
 }
