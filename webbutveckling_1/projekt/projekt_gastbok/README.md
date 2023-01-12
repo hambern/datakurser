@@ -34,11 +34,12 @@ Nästa steg är att försöka förstå hur du använder dig av Bootstraps funkti
 - <https://getbootstrap.com/docs/5.2/getting-started/introduction/>
 - <https://www.w3schools.com/bootstrap5/index.php>
 
-## Regler & tips
+## Instruktioner
 
-1. Ditt slutresultat ska se ut som facitbilderna:
+
+1. Utgå ifrån filen `index.php`. Läs kommentarerna i koden. Där får du mycket hjälpsamma tips på hur du ska gå till väga.
+2. Ditt slutresultat ska se ut som facitbilderna:
     - [Facit för iPhone 12 Pro](facit_iphone_12_pro.png)
     - [Facit för iPad mini (stående)](facit_ipad_mini_vertical.png)
     - [Facit för iPad mini (liggande)](facit_ipad_mini_horizontal.png)
-2. Du får inte skriva någon *egen* css-kod. Du får endast använda dig av Bootstraps klasser.
-3. Använd ledtrådarna i html-filen för att lista ut hur du ska lösa designuppgiften
+3. Du får inte skriva någon *egen* css-kod. Du får endast använda dig av Bootstraps klasser.
