@@ -33,6 +33,7 @@ Nästa steg är att försöka förstå hur du använder dig av Bootstraps funkti
 
 - <https://getbootstrap.com/docs/5.2/getting-started/introduction/>
 - <https://www.w3schools.com/bootstrap5/index.php>
+- Detta är en väldigt informativ och bra video om Bootstrap 5 på YouTube: <https://www.youtube.com/watch?v=Jyvffr3aCp0>
 
 ## Instruktioner
 
