@@ -69,9 +69,10 @@ I denna uppgift ska du skapa ditt eget MVC-ramverk. Även om det finns färdiga 
 ~~~
 
 4. Nu är det dags att skapa ett nytt projekt på GitLab och gitta in ditt eget MVC-ramverk dit. Detta kan du sedan återanvända som startpunkt i dina framtida projekt.
-5. Titta sedan i repositoryt <https://gitlab.com/Hambern/mvc> vilka filer som ska ligga i dessa mappar. Titta gärna i filerna men undvik att kopiera innehållet rakt av. Genom att faktiskt skriva koden själv får man en bättre hum om vad man gör.
-6. Skapa de filer du behöver. Börja med `index.php` (tänk på vilka filrättigheter filen behöver ha) och skapa sedan de filer som behövs för att undvika de felmeddelanden du får. Testa din kod hela tiden via webbläsaren.
-7. När du fått allt att fungera ska du gitta in din kod och svara på följande frågor i filen `projekt_mvc.md` i `projekt`-mappen i ditt kursrepository:
+5. Titta sedan i repositoryt <https://gitlab.com/Hambern/mvc> vilka filer som ska ligga i dessa mappar. Titta gärna i filerna men undvik att kopiera innehållet rakt av. Genom att faktiskt skriva koden själv får man en bättre hum om vad man gör
+6. Glöm inte att hela tiden testa din kod i webbläsaren, så att allt fungerar.
+7. Skapa de filer du behöver. Börja med `index.php` (tänk på vilka filrättigheter filen behöver ha) och skapa sedan de filer som behövs för att undvika de felmeddelanden du får. Testa din kod hela tiden via webbläsaren.
+8. När du fått allt att fungera ska du gitta in din kod och svara på följande frågor i filen `projekt_mvc.md` i `projekt`-mappen i ditt kursrepository:
     1. Vad gör `.htaccess` i root-mappen?
     2. Vad gör `.htaccess` i `app`-mappen?
     3. Vilken funktion har funktionen `spl_autoload_register()` i filen `app/init.php`?
@@ -87,7 +88,7 @@ I denna uppgift ska du skapa ditt eget MVC-ramverk. Även om det finns färdiga 
         6. `app/init.php`
     8. Låt oss säga att du vill lägga till en sida `/contact` där du kan ange ditt telefonnummer och e-postadress. För detta behöver du ingen databaskoppling. Var skulle du behöva göra dina förändringar?
     9. Om du istället för HTML vill visa datan som en json-array. Var skulle du behöva göra dina förändringar?
-8. Gitta in svaren på ovanstående frågor till ditt kurs-repository
+9. Gitta in svaren på ovanstående frågor till ditt kurs-repository
 
 ## OpenAI ChatGPT
 
