@@ -1,9 +1,9 @@
-# Projekt - Diagram
+# Extra - Diagram
 
 Det kan vara bra att ha någon att diskutera med när man skall designa en databas så jobba gärna ihop i denna uppgift. Det är lätt att missa något när man jobbar ensam.
 Du ska göra dina designer i <https://app.diagrams.net/>
 
-Det står att ni efter varje uppgift ska skicka in er databas till mig. Det ska ni inte, ni ska skicka in alla 3 när när är klar alternativt skicka in det ni har hunnit på denna lektion. Jag vill ha in designen av databaserna som PDF filer. nr1.pdf, nr2.pdf, nr3.pdf. Lägg dessa filer i mappen wesweb/mysql och comitta sedan.
+Det står att ni efter varje uppgift ska skicka in er databas till mig. Det ska ni inte, ni ska skicka in alla 3 när när är klar alternativt skicka in det ni har hunnit på denna lektion. Jag vill ha in designen av databaserna som PDF filer. `nr1.pdf`, `nr2.pdf`, `nr3.pdf`. Lägg dessa filer i din kursmapp och comitta sedan.
 
 1. Du skall designa en databas för en kursanmälan via web. För att kunna skapa kurser måste man kunna logga in och man skall kunna skapa hur många kurser som helst. Till varje kurs skall man kunna anmäla sig utan att logga in. Fundera ut hur systemet skulle kunna göras och designa sedan en databas. Skicka in din databas till mig. OBS! Jag vill att ni skall lägga till alla fält som ni tycker behövs för att det skall kunna fungera.
 2. Du är med och utvecklar ett system och ansvarar för rättigheterna, kunden har krävt att man skall kunna sätta rättigheter på gruppnivå. En person kan givetvis tillhöra flera grupper. Designa denna den del av databasen som har med användare och rättigheter att göra och skicka in den till mig.
