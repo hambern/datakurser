@@ -27,14 +27,13 @@ Men projektet kan i princip bli hur stort som helst.
 
 Första målet ska inte vara en färdig produkt utan en MVP-release. Ni bör därför i projektplanen vara noga med att beskriva vad ni minst behöver för ett färdigt projekt:
 
-- En förstudie i form av en "brainstorming"
-- En workshop med några av dina klasskamrater
-- Lista alla "use cases". Lämpligt kan vara att lista Java-delen och REST-API:et för sig
-- En design av databas och Java-appen
-- En dokumentation av hur REST-API:et fungerar
-- En tidsplan utifrån det ni gjort ovan. Kolla om det verkar rimligt, om inte - revidera den
-- En färdig godkänd projektplan
-- En redovisning
+1. En förstudie i form av en "brainstorming"
+2. Lista alla "use cases". Lämpligt kan vara att lista Java-delen och REST-API:et för sig
+3. En design av databas och Java-appen
+4. En dokumentation (i markdown) av hur API:et fungerar
+5. En tidsplan utifrån det ni gjort ovan. Kolla om det verkar rimligt, om inte - revidera den
+6. En färdig godkänd projektplan
+7. En redovisning
 
 ## Redovisning
 
