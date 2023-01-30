@@ -65,6 +65,45 @@
             "uri": {
               "query": {
                 "delimiter": "&",
+                "items": [
+                  {
+                    "enabled": true,
+                    "name": "page",
+                    "value": "1"
+                  }
+                ]
+              },
+              "scheme": {
+                "secure": true,
+                "name": "https",
+                "version": "V11"
+              },
+              "host": "lyktgubben.se",
+              "path": "/api/v1/spreads"
+            },
+            "id": "ab1a856d-36f3-493d-be85-5530fc85aac0",
+            "name": "Get all spreads",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
                 "items": []
               },
               "scheme": {
@@ -77,6 +116,39 @@
             },
             "id": "5007a525-79d6-469e-85e8-d7296adb1b6a",
             "name": "Get one card",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "secure": true,
+                "name": "https",
+                "version": "V11"
+              },
+              "host": "lyktgubben.se",
+              "path": "/api/v1/spreads/1"
+            },
+            "id": "15990808-5311-446a-8c3f-91ca1d8dbb2e",
+            "name": "Get one spread",
             "headers": []
           }
         },
