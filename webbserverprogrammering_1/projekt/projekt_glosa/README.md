@@ -70,17 +70,21 @@ För samtliga end-points här nedanför krävs det att du anger en token. Läs u
 #### Index
 
 - Url: `/users`
+- Skicka: `token`
 - Svar: `users`
 
 #### Show
 
 - Url: `/users/show/{id}`
-- Skicka: `id`
+- Skicka:
+    - `token`
+    - `id`
 - Svar: `user`
 
 #### Me
 
 - Url: `/users/me`
+- Skicka: `token`
 - Svar: `user`
 
 ## Arbetsgång
