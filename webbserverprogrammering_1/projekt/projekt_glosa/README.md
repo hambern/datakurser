@@ -76,9 +76,7 @@ För samtliga end-points här nedanför krävs det att du anger en token. Läs u
 #### Show
 
 - Url: `/users/show/{id}`
-- Skicka:
-    - `token`
-    - `id`
+- Skicka: `token`
 - Svar: `user`
 
 #### Me
