@@ -35,6 +35,54 @@ Men projektet kan i princip bli hur stort som helst.
 - Installera Talend API Tester för att kunna skicka och ta emot svar i ditt API: <https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm>. För att lära dig hur Talend fungerar kan du använda dig av json-filerna under denna mapp. Importera dem till Talend och försök lista ut hur de fungerar.
 - När du lägger till nya klasser försök att hålla dig till "regeln" att varje klass bör ha en egen fil med samma namn som klassen.
 
+## Exempel på endpoints
+
+#### Skapa en användare
+
+- Url: `/users/create`
+- Skicka:
+    - `first_name`
+    - `last_name`
+    - `email`
+    - `password`
+    - `password_confirm`
+- Svar: `token`
+
+#### Logga in
+
+- Url: `/users/login`
+- Skicka:
+    - `email`
+    - `password`
+- Svar: `token`
+
+#### Logga ut
+
+- Url: `/users/logout`
+- Skicka: `token`
+
+***
+
+### Users
+
+För samtliga end-points här nedanför krävs det att du anger en token. Läs under Autenticering hur du genererar en giltig token.
+
+#### Index
+
+- Url: `/users`
+- Svar: `users`
+
+#### Show
+
+- Url: `/users/show/{id}`
+- Skicka: `id`
+- Svar: `user`
+
+#### Me
+
+- Url: `/users/me`
+- Svar: `user`
+
 ## Arbetsgång
 
 Första målet ska inte vara en färdig produkt utan en MVP-release. Ni bör därför i projektplanen vara noga med att beskriva vad ni minst behöver för ett färdigt projekt:
