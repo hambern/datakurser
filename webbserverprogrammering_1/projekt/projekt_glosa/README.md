@@ -10,6 +10,18 @@ I detta projekt - som är ett samarbete mellan webbserverprogrammeringen och pro
 
 Men projektet kan i princip bli hur stort som helst.
 
+## Minimikrav på projektet
+
+- [] Godkänd projektplan som ska innehålla design av databas, Java-appen och REST-API:et.
+- [] GUI och logik utvecklat i Java där modell och grafiskt gränssnitt ska separeras enligt MVC-principen.
+- [] Data sparas i MySQL via ett REST-API gjort i PHP.
+- [] REST-API:et har flera olika "endpoints" för att hämta och spara data:
+    - [] Unika användare med inloggning och utloggning
+    - [] Kunna skapa nya glosor.
+    - [] Kunna radera glosa.
+    - [] Kunna hämta glosa.
+    - [] Kunna "svara på" en glosa och få veta om det var rätt. Rättning ska ske via end-point.
+
 ## Tips till Programmering 2
 
 - För att skicka information till servern med POST använder vi den klass som hittas här (som ni också fått ut i exemplet): <http://www.codejava.net/java-se/networking/an-http-utility-class-to-send-getpost-request>
