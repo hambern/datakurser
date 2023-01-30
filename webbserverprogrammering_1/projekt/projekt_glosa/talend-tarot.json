@@ -35,10 +35,11 @@
                 ]
               },
               "scheme": {
-                "name": "http",
+                "secure": true,
+                "name": "https",
                 "version": "V11"
               },
-              "host": "h82.se",
+              "host": "lyktgubben.se",
               "path": "/api/v1/cards"
             },
             "id": "3e89d9a1-74c7-4cbc-9a29-4f4cb294fa19",
@@ -67,10 +68,11 @@
                 "items": []
               },
               "scheme": {
-                "name": "http",
+                "secure": true,
+                "name": "https",
                 "version": "V11"
               },
-              "host": "h82.se",
+              "host": "lyktgubben.se",
               "path": "/api/v1/cards/1"
             },
             "id": "5007a525-79d6-469e-85e8-d7296adb1b6a",
@@ -99,10 +101,11 @@
                 "items": []
               },
               "scheme": {
-                "name": "http",
+                "secure": true,
+                "name": "https",
                 "version": "V11"
               },
-              "host": "h82.se",
+              "host": "lyktgubben.se",
               "path": "/api/v1/cards/random/3"
             },
             "id": "56b84719-3e91-44eb-b956-3920c99850bd",
