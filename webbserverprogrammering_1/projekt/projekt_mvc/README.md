@@ -87,7 +87,8 @@ I denna uppgift ska du skapa ditt eget MVC-ramverk. Även om det finns färdiga 
         5. `app/models/Student.php`
         6. `app/init.php`
     8. Skapa sidan `/contact` där du kan ange ditt telefonnummer och e-postadress. För detta behöver du ingen databaskoppling. Vilka tillägg behöver du göra?
-    9. Om du istället för HTML vill visa datan som en json-array. Var skulle du behöva göra dina förändringar?
+    9. Om du istället för studenter vill lista dina riksdagsledamöter från den tidigare uppgiften. Vilka förändringar behöver du göra?
+    10. Om du istället för HTML vill visa datan som en json-array. Var skulle du göra dina förändringar?
 9. Gitta in svaren på ovanstående frågor till ditt kurs-repository
 
 ## OpenAI ChatGPT
