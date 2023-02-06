@@ -90,6 +90,8 @@ För samtliga end-points här nedanför krävs det att du anger en token. Läs u
 Första målet ska inte vara en färdig produkt utan en MVP-release. Ni bör därför i projektplanen vara noga med att beskriva vad ni minst behöver för ett färdigt projekt:
 
 1. En förstudie i form av en "brainstorming"
+    - Tidigare klassers anteckningar kan ni se här: https://docs.google.com/document/d/17SKZhPdtvxH0Z3RcccZw_6NlKlg5GdzdFEl-Matc_7I/edit?usp=sharing
+    - Brainstorma själva i detta dokument: https://ornskoldsvik-my.sharepoint.com/:w:/g/personal/mattias_hamberg_ornskoldsvik_se/Eab_iWv26R5Fsrp4Ym4fvPcBaVRbLZlPP4-6Jhq8aD_i7A?e=nxwnwD
 2. Lista alla "use cases". Lämpligt kan vara att lista Java-delen och REST-API:et för sig
 3. En design av databas och Java-appen
 4. En dokumentation (i markdown) av hur API:et fungerar
