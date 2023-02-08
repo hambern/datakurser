@@ -12,15 +12,15 @@ Men projektet kan i princip bli hur stort som helst.
 
 ## Minimikrav på projektet
 
-- [ ] Godkänd projektplan som ska innehålla design av databas, Java-appen och REST-API:et.
-- [ ] GUI och logik utvecklat i Java där modell och grafiskt gränssnitt ska separeras enligt MVC-principen.
-- [ ] Data sparas i MySQL via ett REST-API gjort i PHP.
-- [ ] REST-API:et har flera olika "endpoints" för att hämta och spara data:
-    - [ ] Unika användare med inloggning och utloggning
-    - [ ] Kunna skapa nya glosor.
-    - [ ] Kunna radera glosa.
-    - [ ] Kunna hämta glosa.
-    - [ ] Kunna "svara på" en glosa och få veta om det var rätt. Rättning ska ske via end-point.
+- Godkänd projektplan som ska innehålla design av databas, Java-appen och REST-API:et.
+- GUI och logik utvecklat i Java där modell och grafiskt gränssnitt ska separeras enligt MVC-principen.
+- Data sparas i MySQL via ett REST-API gjort i PHP.
+- REST-API:et har flera olika "endpoints" för att hämta och spara data:
+    - Unika användare med inloggning och utloggning
+    - Kunna skapa nya glosor.
+    - Kunna radera glosa.
+    - Kunna hämta glosa.
+    - Kunna "svara på" en glosa och få veta om det var rätt. Rättning ska ske via end-point.
 
 ## Tips till Programmering 2
 
@@ -61,29 +61,11 @@ Men projektet kan i princip bli hur stort som helst.
 - Url: `/users/logout`
 - Skicka: `token`
 
-***
-
-### Users
-
-För samtliga end-points här nedanför krävs det att du anger en token. Läs under Autenticering hur du genererar en giltig token.
-
 #### Index
 
 - Url: `/users`
 - Skicka: `token`
 - Svar: `users`
-
-#### Show
-
-- Url: `/users/show/{id}`
-- Skicka: `token`
-- Svar: `user`
-
-#### Me
-
-- Url: `/users/me`
-- Skicka: `token`
-- Svar: `user`
 
 ## Arbetsgång
 
@@ -93,12 +75,11 @@ Första målet ska inte vara en färdig produkt utan en MVP-release. Ni bör dä
     - Tidigare klassers anteckningar kan ni se här: https://docs.google.com/document/d/17SKZhPdtvxH0Z3RcccZw_6NlKlg5GdzdFEl-Matc_7I/edit?usp=sharing
     - Brainstorma själva i detta dokument: https://ornskoldsvik-my.sharepoint.com/:w:/g/personal/mattias_hamberg_ornskoldsvik_se/Eab_iWv26R5Fsrp4Ym4fvPcBaVRbLZlPP4-6Jhq8aD_i7A?e=nxwnwD
 2. Lista alla "use cases". Lämpligt kan vara att lista Java-delen och REST-API:et för sig
-    - Tidigare klassers lista kan ni se här: https://docs.google.com/spreadsheets/d/1TQsZ5TIBOZ8ZQgAXYlP26oJUgjtWRfGgTel-wElPDrI/edit?usp=sharing
-    - Anteckna dina egna use cases i din projektplan. Tänk att ett use case motsvarar en metod i en controller. `users/login` är alltså ett use case och `users/show/{id}` är ett annat.
+    - Anteckna dina egna use cases i din projektplan. Tänk att ett use case i API-delen ungefär motsvarar en metod i en controller. `users/login` är alltså ett use case och `users/logout` är ett annat.
 3. En design av databas och Java-appen
-    - Var framförallt noga med hur databaserna hänger ihop. Ett sådant exempel är att en glosa kan tillhöra en användare. Då måste glos-tabellen ha en kolumn som heter exempelvis `user_id`.
-4. En dokumentation (i markdown) av hur API:et fungerar där du listar de olika endpoinsen som i sin tur motsvarar use cases. Beskriv också där vilken information som behöver skickas till endpointen samt vilket slags svar du kan förvänta dig.
-5. En realistisk tidsplan utifrån det ni gjort ovan. Kolla om det verkar rimligt, om inte - revidera den
+    - Visa upp de databastabeller du behöver skapa. Det finns sätt att skriva tabeller i markdown. Var också noga med hur databaserna hänger ihop. Ett sådant exempel är att en glosa kan tillhöra en användare. Då måste glos-tabellen ha en kolumn som heter exempelvis `user_id` för att man ska kunna matcha ihop dem.
+4. En dokumentation (i markdown) av hur API:et fungerar där du listar de olika endpointsen som i sin tur motsvarar use cases (se exemplen ovanför). Beskriv också där vilken information som behöver skickas till endpointen, samt vilket slags svar du kan förvänta dig.
+5. En realistisk tidsplan utifrån det ni gjort ovan. Kolla om det verkar rimligt, om inte - revidera den eftersom
 6. Det som återstår sedan är en färdig godkänd projektplan
 7. Och en slutredovisning
 
