@@ -87,7 +87,7 @@ Första målet ska inte vara en färdig produkt utan en MVP-release. Ni bör dä
 
 Ni ska enligt ett givet körschema visa vad ni har gjort (ni får 10 min på er). Ni har inte så mycket tid att redovisa på så se till att ni har kört igenom er redovisning flera gånger innan ni verkligen redovisar. Det är viktigt att ni gör detta så att ni är säkra på att hinna visa allt på den tid ni har fått.
 
-- Ni ska lämna in den slutgiltiga projektplanen som PDF (den som matchar det ni har gjort) via git till Joakim och via inlämning i vklass till Daniel senast den 1/6 kl 23.59.
+- Ni ska lämna in den slutgiltiga projektplanen via git till Mattias. Lämna in länken till projektplanen och din kodbas på GitLab i uppgiften på Vklass.
 - Ni ska lämna in koden till Daniel via inlämning i vklass. Gör en ZIP-fil av de filer som hör till projektet (.java-filer ur src-mappen och om ni använt andra resurser som t.ex. bilder).
 - Ni ska ha gittat in koden till Gitlab.
 
