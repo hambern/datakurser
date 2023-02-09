@@ -27,7 +27,12 @@ I regel är allt du behöver en serverplats att lägga ditt CMS på och en datab
 - Inläggen ska kunna delas upp i kategorier
 - Man måste kunna publicera bilder i anslutning till inläggen
 - Inläggen ska för en besökare sorteras i kronologisk ordning med det senaste inlägget överst
-- Det ska finnas minst tre inlägg på din blogg, med bilder (använd tillåtna bilder från ex https://unsplash.com eller egna bilder):
+- Det ska finnas minst tre inlägg på din blogg, med bilder (använd tillåtna bilder från ex https://unsplash.com eller egna bilder)
 - Ett inlägg ska förklara nackdelarna och fördelarna med att använda ett CMS istället för att koda sidan helt själv
-- Ett inlägg ska förklara vad som skiljer Wordpress från något annat CMS, exempelvis Winter CMS
-- Ett inlägg ska förklara för en besökare hur de kan skapa en egen blogg med hjälp av Wordpress om de har tillgång till en server
+- Ett inlägg ska förklara vad som skiljer Wordpress från något annat CMS, exempelvis Winter CMS, Drupal eller Joomla t.ex.
+- Ett inlägg ska förklara för en besökare hur de kan skapa en egen blogg med hjälp av Wordpress om de har tillgång till en server. Gå igenom:
+    1. Hur man laddar ner koden
+    2. Hur man laddar upp Wordpress till servern och vad man behöver för att göra det
+    3. Hur man installerar Wordpress och vad man behöver för att göra det
+    4. Hur man installerar teman och plugins och hur man justerar dem
+    5. Hur man skriver ett inlägg och bifogar en bild och vad man bör tänka på när man lägger upp en bild på sin sida (upphovsrätt)
