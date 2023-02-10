@@ -12,15 +12,15 @@ Men projektet kan i princip bli hur stort som helst.
 
 ## Minimikrav på projektet
 
-- [ ] Godkänd projektplan som ska innehålla design av databas, Java-appen och REST-API:et.
-- [ ] GUI och logik utvecklat i Java där modell och grafiskt gränssnitt ska separeras enligt MVC-principen.
-- [ ] Data sparas i MySQL via ett REST-API gjort i PHP.
-- [ ] REST-API:et har flera olika "endpoints" för att hämta och spara data:
-    - [ ] Unika användare med inloggning och utloggning
-    - [ ] Kunna skapa nya glosor.
-    - [ ] Kunna radera glosa.
-    - [ ] Kunna hämta glosa.
-    - [ ] Kunna "svara på" en glosa och få veta om det var rätt. Rättning ska ske via end-point.
+- Godkänd projektplan som ska innehålla design av databas, Java-appen och REST-API:et.
+- GUI och logik utvecklat i Java där modell och grafiskt gränssnitt ska separeras enligt MVC-principen.
+- Data sparas i MySQL via ett REST-API gjort i PHP.
+- REST-API:et har flera olika "endpoints" för att hämta och spara data:
+    - Unika användare med inloggning och utloggning
+    - Kunna skapa nya glosor.
+    - Kunna radera glosa.
+    - Kunna hämta glosa.
+    - Kunna "svara på" en glosa och få veta om det var rätt. Rättning ska ske via end-point.
 
 ## Tips till Programmering 2
 
@@ -61,29 +61,11 @@ Men projektet kan i princip bli hur stort som helst.
 - Url: `/users/logout`
 - Skicka: `token`
 
-***
-
-### Users
-
-För samtliga end-points här nedanför krävs det att du anger en token. Läs under Autenticering hur du genererar en giltig token.
-
 #### Index
 
 - Url: `/users`
 - Skicka: `token`
 - Svar: `users`
-
-#### Show
-
-- Url: `/users/show/{id}`
-- Skicka: `token`
-- Svar: `user`
-
-#### Me
-
-- Url: `/users/me`
-- Skicka: `token`
-- Svar: `user`
 
 ## Arbetsgång
 
@@ -93,12 +75,11 @@ Första målet ska inte vara en färdig produkt utan en MVP-release. Ni bör dä
     - Tidigare klassers anteckningar kan ni se här: https://docs.google.com/document/d/17SKZhPdtvxH0Z3RcccZw_6NlKlg5GdzdFEl-Matc_7I/edit?usp=sharing
     - Brainstorma själva i detta dokument: https://ornskoldsvik-my.sharepoint.com/:w:/g/personal/mattias_hamberg_ornskoldsvik_se/Eab_iWv26R5Fsrp4Ym4fvPcBaVRbLZlPP4-6Jhq8aD_i7A?e=nxwnwD
 2. Lista alla "use cases". Lämpligt kan vara att lista Java-delen och REST-API:et för sig
-    - Tidigare klassers lista kan ni se här: https://docs.google.com/spreadsheets/d/1TQsZ5TIBOZ8ZQgAXYlP26oJUgjtWRfGgTel-wElPDrI/edit?usp=sharing
-    - Anteckna dina egna use cases i din projektplan. Tänk att ett use case motsvarar en metod i en controller. `users/login` är alltså ett use case och `users/show/{id}` är ett annat.
+    - Anteckna dina egna use cases i din projektplan. Tänk att ett use case i API-delen ungefär motsvarar en metod i en controller. `users/login` är alltså ett use case och `users/logout` är ett annat.
 3. En design av databas och Java-appen
-    - Var framförallt noga med hur databaserna hänger ihop. Ett sådant exempel är att en glosa kan tillhöra en användare. Då måste glos-tabellen ha en kolumn som heter exempelvis `user_id`.
-4. En dokumentation (i markdown) av hur API:et fungerar där du listar de olika endpoinsen som i sin tur motsvarar use cases. Beskriv också där vilken information som behöver skickas till endpointen samt vilket slags svar du kan förvänta dig.
-5. En realistisk tidsplan utifrån det ni gjort ovan. Kolla om det verkar rimligt, om inte - revidera den
+    - Visa upp de databastabeller du behöver skapa. Det finns sätt att skriva tabeller i markdown. Var också noga med hur databaserna hänger ihop. Ett sådant exempel är att en glosa kan tillhöra en användare. Då måste glos-tabellen ha en kolumn som heter exempelvis `user_id` för att man ska kunna matcha ihop dem.
+4. En dokumentation (i markdown) av hur API:et fungerar där du listar de olika endpointsen som i sin tur motsvarar use cases (se exemplen ovanför). Beskriv också där vilken information som behöver skickas till endpointen, samt vilket slags svar du kan förvänta dig.
+5. En realistisk tidsplan utifrån det ni gjort ovan. Kolla om det verkar rimligt, om inte - revidera den eftersom
 6. Det som återstår sedan är en färdig godkänd projektplan
 7. Och en slutredovisning
 
@@ -106,10 +87,46 @@ Första målet ska inte vara en färdig produkt utan en MVP-release. Ni bör dä
 
 Ni ska enligt ett givet körschema visa vad ni har gjort (ni får 10 min på er). Ni har inte så mycket tid att redovisa på så se till att ni har kört igenom er redovisning flera gånger innan ni verkligen redovisar. Det är viktigt att ni gör detta så att ni är säkra på att hinna visa allt på den tid ni har fått.
 
-- Ni ska lämna in den slutgiltiga projektplanen som PDF (den som matchar det ni har gjort) via git till Joakim och via inlämning i vklass till Daniel senast den 1/6 kl 23.59.
+- Ni ska lämna in den slutgiltiga projektplanen via git till Mattias. Lämna in länken till projektplanen och din kodbas på GitLab i uppgiften på Vklass.
 - Ni ska lämna in koden till Daniel via inlämning i vklass. Gör en ZIP-fil av de filer som hör till projektet (.java-filer ur src-mappen och om ni använt andra resurser som t.ex. bilder).
 - Ni ska ha gittat in koden till Gitlab.
 
 ## OpenAI ChatGPT
 
 Om du kör fast i din kodning, tveka inte att ställa frågor till Open AI:s chattbot ChatGPT som är förvånansvärt skicklig på att skriva kod. Var bara tydlig med vilket slags språk du vill ha hjälp med, exempelvis HTML, CSS, PHP eller Java: <https://chat.openai.com/>. Undvik dock att använda tjänsten för att svara på dina frågor och lösa dina uppgifter eftersom det förhindrar din egen inlärning. Men som assistent som svarar på dina frågor och funderar är det ett bra verktyg.
+
+---
+
+## Kunskapskrav
+
+#### Betyget E
+
+Eleven beskriver **översiktligt** tekniken bakom dynamiska webbplatser och hur de samspelar med olika tekniker på webben.
+
+Eleven gör en **enkel** projektplan för en tänkt webbapplikation. I projektplanen beskriver eleven **översiktligt** applikationens funktion. Utifrån projektplanen utvecklar eleven **i samråd** med handledare applikationen där presentations­logiken **i begränsad utsträckning** är skild från applikationens övriga logik. I arbetet utvecklar eleven kod som **i begränsad utsträckning** är **läsbar** och **översiktligt** kommenterad. Applikationen uppvisar **enkel** funktionalitet med ett språk för webbserver­programmering och tillhandahåller en **enkel** lösning för **datapersistens mellan sidvisningar**. Produkten är av **tillfredsställande** kvalitet och följer etablerad god praxis.
+
+När arbetet är utfört gör eleven en **enkel** dokumentation av de moment som har utförts samt utvärderar med **enkla** omdömen sitt arbete och resultat. Eleven identifierar ett **fåtal** sårbarheter eller hot och vidtar **enkla** åtgärder för att förhindra att produkten utnyttjas. När eleven kommunicerar med andra använder hon eller han **med viss säkerhet enkel** terminologi.
+
+#### Betyget D
+
+Betyget D innebär att kunskapskraven för E och till övervägande del för C är uppfyllda.
+
+#### Betyget C
+
+Eleven beskriver **utförligt** tekniken bakom dynamiska webbplatser och hur de samspelar med olika tekniker på webben.
+
+Eleven gör en **genomarbetad** projektplan för en tänkt webbapplikation. I projektplanen beskriver eleven **utförligt** applikationens funktion **och arkitektur**. Utifrån projektplanen utvecklar eleven **efter samråd** med handledare applikationen där presentations­logiken är skild från applikationens övriga logik. I arbetet utvecklar eleven kod som **följer en given kodningsstandard** och är **översiktligt** kommenterad. Applikationen uppvisar funktionalitet med ett språk för webbserver­programmering och tillhandahåller en **enkel** lösning för **permanent datalagring**. Produkten är av **tillfredsställande** kvalitet och följer etablerad god praxis. **Detta kontrollerar eleven med hjälp av några tester.**
+
+När arbetet är utfört gör eleven en **noggrann** dokumentation av de moment som har utförts samt utvärderar med **nyanserade** omdömen sitt arbete och resultat. Eleven identifierar sårbarheter eller hot och vidtar åtgärder för att förhindra att produkten utnyttjas. När eleven kommunicerar med andra använder hon eller han **med viss säkerhet** terminologi.
+
+#### Betyget B
+
+Betyget B innebär att kunskapskraven för C och till övervägande del för A är uppfyllda.
+
+#### Betyget A
+
+Eleven beskriver **utförligt och nyanserat** tekniken bakom dynamiska webbplatser och hur de samspelar med olika tekniker på webben.
+
+Eleven gör en **genomarbetad** projektplan för en tänkt webbapplikation. **Vid behov reviderar eleven planen.** I projektplanen beskriver eleven **utförligt och nyanserat** applikationens funktion, **arkitektur och mjukvarugränssnitt**. Utifrån projektplanen utvecklar eleven **efter samråd** med handledare applikationen där presentations­logiken är skild från applikationens övriga logik. I arbetet utvecklar eleven kod som **följer en given kodningsstandard** och är **utförligt** kommenterad. Applikationen uppvisar funktionalitet med ett språk för webbserver­programmering **för att driva en helt databaserad webbplats eller en jämförbart avancerad produkt** och tillhandahåller en lösning **med viss komplexitet** för **permanent datalagring**. Produkten är av **god** kvalitet och följer etablerad god praxis. **Detta kontrollerar eleven med hjälp av flera tester, även manuella.**
+
+När arbetet är utfört gör eleven en **noggrann och utförlig** dokumentation av de moment som har utförts samt utvärderar med **nyanserade** omdömen sitt arbete och resultat **samt ger förslag på hur arbetet kan förbättras**. Eleven identifierar **flera** sårbarheter eller hot och vidtar **avancerade** åtgärder för att förhindra att produkten utnyttjas. När eleven kommunicerar med andra använder hon eller han **med säkerhet** terminologi.
