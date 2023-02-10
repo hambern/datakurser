@@ -8,7 +8,7 @@ I denna uppgift ska du tillämpa de kunskaper du skaffat dig hittills under kurs
 
 Du ska skapa en webbplats för ett speciellt syfte som du väljer själv. Det kan vara vad som helst, exempelvis:
 
-1. En hemsida som jobbar emot något offentligt API
+1. En hemsida som jobbar emot något offentligt API ([se denna lista](apier.md))
 2. Ett spel av något slag
 3. Hemsida åt en förening, företag eller liknande
 4. Internwebb för en företag, företag eller liknande
@@ -41,12 +41,15 @@ Ditt arbete ska dokumenteras i en projektrapport som ska innehålla följande de
     5. Tidsplan
 2. Resultat
     1. Konstruktion
-    2. Optimering
-    3. Tester
-    4. Slutresultat
+    2. Beskrivning
+    3. Optimering
+    4. Tester
+    5. Slutresultat
 3. Diskussion
     1. Diskussion
     2. Förbättringsförslag
+
+En projektrapportsmall till Words [hittar du här](webbprojekt.docx).
 
 ### Presentation
 
