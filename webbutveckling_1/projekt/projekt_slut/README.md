@@ -22,8 +22,8 @@ För att ditt webbprojekt ska anses klart måste följande krav uppfyllas:
 
 1. Du ska skriva en utförlig projektrapport
 2. Projektet bör bestå av minst 2 olika sidor.
-3. Du måste i projektet skriva egen CSS och HTML, och det måste framgå tydligt i din projektrapport vilken kod som du skrivit och vilken kod du laddat ner. Det är därmed okej att använda sig av CMS och front-end-bibliotek så länge du också skriver egen kod och det tydligt framgår i din projektrapport vad du skrivit själv och inte. 
-4. Du får använda dig av både PHP och Javascript om du vill. Men även där bör det tydligt framgå i projektrapporten vilken kod som är din och vilken kod du lånat från andra.
+3. Du måste i projektet skriva egen CSS och HTML, och det måste framgå tydligt i din projektrapport vilken kod som du skrivit och vilken kod du laddat ner. Det är därmed okej att använda sig av CMS och front-end-bibliotek så länge du också skriver egen kod och det tydligt framgår i din projektrapport vad du skrivit själv och inte. Ofta är det lättare att skriva allt själv än att anpassa sig kod någon annan skrivit. 
+4. Du får använda dig av både PHP och Javascript om du vill. Men även där bör det tydligt framgå i projektrapporten också där vilken kod som är din egen och vilken kod du lånat från andra.
 5. Någonstans ska det finnas ett formulär, t.ex. ett kontaktformulär. (Du behöver inte nödvändigtvis ta hand om informationen som skickas därifrån)
 6. Bilder ska finnas med på webbplatsen. Tänk på upphovsrätt, filstorlek och format på de bilder du lägger in.
 7. Lägg tonvikt på att göra en snygg och lättläst hemsida. Den ska dessutom fungera och se bra ut i både Firefox, Edge och Google Chrome liksom i såväl dator som mobiltelefon. Det betyder att du ska göra den responsiv.
