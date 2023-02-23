@@ -79,7 +79,7 @@ Första målet ska inte vara en färdig produkt utan en MVP-release. Ni bör dä
     - Anteckna dina egna use cases i din projektplan. Tänk att ett use case i API-delen ungefär motsvarar en metod i en controller. `users/login` är alltså ett use case och `users/logout` är ett annat.
 3. En design av databas och Java-appen
     - Visa upp de databastabeller du behöver skapa. Det finns sätt att skriva tabeller i markdown. Var också noga med hur databaserna hänger ihop. Ett sådant exempel är att en glosa kan tillhöra en användare. Då måste glos-tabellen ha en kolumn som heter exempelvis `user_id` för att man ska kunna matcha ihop dem.
-4. En dokumentation (i markdown) av hur API:et fungerar där du listar de olika endpointsen som i sin tur motsvarar use cases (se exemplen ovanför). Beskriv också där vilken information som behöver skickas till endpointen, samt vilket slags svar du kan förvänta dig.
+4. En dokumentation (i markdown) av hur API:et fungerar där du listar de olika endpointsen som i sin tur motsvarar use cases (se exemplen ovanför). Beskriv också där vilken information som behöver skickas till endpointen (en anslutningspunkt till api:et som genererar något slags svar), samt vilket slags svar du kan förvänta dig.
 5. En realistisk tidsplan utifrån det ni gjort ovan. Kolla om det verkar rimligt, om inte - revidera den eftersom
 6. Det som återstår sedan är en färdig godkänd projektplan
 7. Och en slutredovisning
