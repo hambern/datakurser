@@ -34,6 +34,7 @@ Men projektet kan i princip bli hur stort som helst.
 - Installera JSON Viewer för att kunna ta del av json-svar direkt i webbläsaren: <https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh>
 - Installera Talend API Tester för att kunna skicka och ta emot svar i ditt API: <https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm>. För att lära dig hur Talend fungerar kan du använda dig av json-filerna under denna mapp. Importera dem till Talend och försök lista ut hur de fungerar.
 - När du lägger till nya klasser försök att hålla dig till "regeln" att varje klass bör ha en egen fil med samma namn som klassen.
+- Du bör returnera korrekta koder. `200` betyder exempelvis "allt är okej" och `404` betyder att det inte finns någon sådan sida. En fullständig lista på felkoder hittar du här: <https://sv.wikipedia.org/wiki/Lista_%C3%B6ver_HTTP-statuskoder>. Observera gärna felkod `418`.
 
 ## Exempel på endpoints
 
