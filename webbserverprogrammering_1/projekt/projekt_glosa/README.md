@@ -30,7 +30,7 @@ Men projektet kan i princip bli hur stort som helst.
 
 ## Tips till Webbserverprogrammering 1
 
-- Kika på och utgå ifrån det enkla MVC du kan hitta på följande repository: <https://gitlab.com/Hambern/mvc>. Koden från våra genomgångar kan du hitta i denna branch: <https://gitlab.com/Hambern/mvc/-/tree/sample/app>
+- Kika på och utgå ifrån det enkla MVC du kan hitta på följande repository: <https://gitlab.com/Hambern/mvc>. Koden från våra genomgångar kan du hitta i denna branch: <https://gitlab.com/Hambern/mvc/-/tree/sample>
 - Installera JSON Viewer för att kunna ta del av json-svar direkt i webbläsaren: <https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh>
 - Installera Talend API Tester för att kunna skicka och ta emot svar i ditt API: <https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm>. För att lära dig hur Talend fungerar kan du använda dig av json-filerna under denna mapp. Importera dem till Talend och försök lista ut hur de fungerar.
 - När du lägger till nya klasser försök att hålla dig till "regeln" att varje klass bör ha en egen fil med samma namn som klassen.
