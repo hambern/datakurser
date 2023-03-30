@@ -18,7 +18,7 @@
 - Dataflöde och arkitekturdiagram.
 - Dokumentation av REST-API:et. Ex på dokumentation av en endpoint:
 
-`/users/token` Skickar login och password för att få en token som kan användas för alla endpoints som kräver detta.
+`/users/login` Skickar login och password för att få en token som kan användas för alla endpoints som kräver detta.
 - Skicka
     - `email`
     - `password`
