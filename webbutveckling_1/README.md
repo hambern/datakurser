@@ -85,10 +85,9 @@ Det är också möjligt att i kursen använda Visual Studio Code. Då kan du job
 - Klicka på ikonen till vänster som ser ut som en skärm med en liten ring längst ner till höger
 - Lägg till servern student.oedu.se och ange dina inloggningsuppgifter
    - Klicka på "+" bredvid SSH
-   - Skriv in SSH-kommandot: `ssh -p 3690 ditt_login@student.oedu.se`
-   - Ange ditt lösenord
+   - Skriv in SSH-kommandot: `ssh -p 3690 ditt_login@student.oedu.se` och spara anslutningen.
    - Ladda om dina anslutningar med cirkel-pilen så att du kan se den
-   - Anslut till den
+   - Anslut till den aoch ange ditt lösenord till servern
    - Ange att servern är en Linux-server
 - Därefter kan du klicka på ikonen med två papper längst upp och välja vilken mapp på din server du vill öppna, förslagsvis 'public_html'
 
