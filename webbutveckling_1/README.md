@@ -76,6 +76,18 @@ Du kan också, när du fyllt i korrekt information i PhpStorm, logga in via ssh 
    2. Deplyment path: `/public_html`
    3. Web path: `/`
 
+## Använd Visual Studio Code
+
+Det är också möjligt att i kursen använda Visual Studio Code. Då kan du jobba direkt emot utvecklingsservern och behöver inte tänka på att "deploya". Följ bara nedanstående guide:
+
+- Ladda ner och installera programmet här: <https://code.visualstudio.com/>
+- Installera därefter extension-paketet "Remote - SSH": <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
+- Klicka på ikonen till vänster som ser ut som en skärm med en liten ring längst ner till höger
+- Lägg till servern student.oedu.se och ange dina inloggningsuppgifter
+- Därefter kan du klicka på ikonen med två papper längst upp och välja vilken mapp på din server du vill öppna, förslagsvis 'public_html'
+
+Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator.
+
 ### Kolla så att ni kan:
 
 1. Föra över filer till servern hemifrån
