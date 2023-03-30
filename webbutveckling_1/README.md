@@ -84,6 +84,8 @@ Det är också möjligt att i kursen använda Visual Studio Code. Då kan du job
 - Installera därefter extension-paketet "Remote - SSH": <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
 - Klicka på ikonen till vänster som ser ut som en skärm med en liten ring längst ner till höger
 - Lägg till servern student.oedu.se och ange dina inloggningsuppgifter
+   - Klicka på "+" bredvid SSH
+   - Skriv in SSH-kommandot: `ssh -p 3690 ditt_login@student.oedu.se`
 - Därefter kan du klicka på ikonen med två papper längst upp och välja vilken mapp på din server du vill öppna, förslagsvis 'public_html'
 
 Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator.
