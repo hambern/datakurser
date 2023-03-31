@@ -95,7 +95,7 @@ Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några l
 
 ## Skapa en ssh-inloggning till student-servern
 
-- Öppna Visual Studio Code och välj `Terminal > New Terminal` i topp-menyn. Du bör då få upp ett terminalfält längst ner i gränssnittet.
+- Öppna Visual Studio Code utan att vara ansluten till student-servern och välj `Terminal > New Terminal` i topp-menyn. Du bör då få upp ett terminalfält längst ner i gränssnittet.
 - Kolla om du redan har en ssh-nyckel med kommandot: `cat ~/.ssh/id_rsa.pub`. Om du har en nyckel kommer du nu se en massa tecken som börjar med "ssh-rsa" och slutar med ditt användarnamn och dator-id
 - Om du inte har en ssh-nyckel kan du skapa den med kommandot `ssh-keygen`. När du uppges att ange saker - tryck bara enter tills du är klar. Testa nu återigen kommandot `cat ~/.ssh/id_rsa.pub`.
 - När du ser din ssh-nyckel kopierar du den, från och med ssh-rsa till och med ditt användarnamn och dator-id. Spara denna nyckel så att du kan hitta den senare.
