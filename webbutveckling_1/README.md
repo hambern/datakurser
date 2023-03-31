@@ -81,27 +81,22 @@ Du kan också, när du fyllt i korrekt information i PhpStorm, logga in via ssh 
 Det är också möjligt att i kursen använda Visual Studio Code. Då kan du jobba direkt emot utvecklingsservern och behöver inte tänka på att "deploya". Följ bara nedanstående guide:
 
 - Ladda ner och installera programmet här: <https://code.visualstudio.com/>
-- Installera därefter extension-paketet "Remote - SSH": <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
+- Installera därefter följande extension-paket:
+   - "Remote - SSH": <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
+   - "SSH key generator": <https://marketplace.visualstudio.com/items?itemName=AmadeusITGroup.ssh-key-generator>
 - Klicka på ikonen till vänster som ser ut som en skärm med en liten ring längst ner till höger
-- Lägg till servern student.oedu.se och ange dina inloggningsuppgifter
+- Lägg till servern student.oedu.se och ange dina inloggningsuppgifter:
    - Klicka på "+" bredvid SSH
-   - Skriv in SSH-kommandot: `ssh -p 3690 ditt_login@student.oedu.se` och spara anslutningen.
-   - Ladda om dina anslutningar med cirkel-pilen så att du kan se den
-   - Anslut till den aoch ange ditt lösenord till servern
-   - Ange att servern är en Linux-server
-- Därefter kan du klicka på ikonen med två papper längst upp och välja vilken mapp på din server du vill öppna, förslagsvis 'public_html'
+   - Skriv in SSH-kommandot: `ssh -p 3690 ditt_login@student.oedu.se`
+   - Spara anslutningen till `C:\Users\ditt_login\.ssh\config`
+- Nu är det dags att generera din SSH-nyckel för att kunna ansluta utan lösenord:
+   - Öppna upp kommando-paletten med `Ctrl + Shift + P` och kör kommandot `SSH: Generate SSH key`.
+   - Välj den server du vill koppla ihop dig med: `student.oedu.se`
+   - Ange ditt lösenord till servern
+- Nu bör du kunna ansluta till din server utan att behöva ange ditt lösenord
+- Om du blir ombedd att ange vilken typ av server det är så är det en Linux-server
 
 Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator. Nästa steg är att fixa en ssh-inloggning så att du slipper skriva in lösenordet varje gång.
-
-## Skapa en ssh-inloggning till student-servern
-
-- Öppna Visual Studio Code utan att vara ansluten till student-servern och välj `Terminal > New Terminal` i topp-menyn. Du bör då få upp ett terminalfält längst ner i gränssnittet.
-- Kolla om du redan har en ssh-nyckel med kommandot: `cat ~/.ssh/id_rsa.pub`. Om du har en nyckel kommer du nu se en massa tecken som börjar med "ssh-rsa" och slutar med ditt användarnamn och dator-id
-- Om du inte har en ssh-nyckel kan du skapa den med kommandot `ssh-keygen`. När du uppges att ange saker - tryck bara enter tills du är klar. Testa nu återigen kommandot `cat ~/.ssh/id_rsa.pub`.
-- När du ser din ssh-nyckel kopierar du den, från och med "ssh-rsa" till och med ditt användarnamn och dator-id. Spara denna nyckel så att du kan hitta den senare.
-- Logga nu in på din server i Visual Studio Code med hjälp av SSH-Remote. När du är inne kan du återigen öppna upp terminalen.
-- Skriv där kommandot `vim ~/.ssh/authorized_keys`. Du kommer då skapa en fil som kommer att innehålla de nycklar vars anslutningar du kommer att tillåta även utan lösenord. Tryck på tangenten `i` för att hamna i insert-läge och klistra in din ssh-nyckel. Tryck på tangenten `esc` för att gå ur insert-läget och skriv därefter `:wq` för att spara och stänga av.
-- Grattis! Om allt gått som det ska bör du nu kunna logga in utan lösenord
 
 ### Kolla så att ni kan:
 
