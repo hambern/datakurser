@@ -98,7 +98,7 @@ Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några l
 - Öppna Visual Studio Code utan att vara ansluten till student-servern och välj `Terminal > New Terminal` i topp-menyn. Du bör då få upp ett terminalfält längst ner i gränssnittet.
 - Kolla om du redan har en ssh-nyckel med kommandot: `cat ~/.ssh/id_rsa.pub`. Om du har en nyckel kommer du nu se en massa tecken som börjar med "ssh-rsa" och slutar med ditt användarnamn och dator-id
 - Om du inte har en ssh-nyckel kan du skapa den med kommandot `ssh-keygen`. När du uppges att ange saker - tryck bara enter tills du är klar. Testa nu återigen kommandot `cat ~/.ssh/id_rsa.pub`.
-- När du ser din ssh-nyckel kopierar du den, från och med ssh-rsa till och med ditt användarnamn och dator-id. Spara denna nyckel så att du kan hitta den senare.
+- När du ser din ssh-nyckel kopierar du den, från och med "ssh-rsa" till och med ditt användarnamn och dator-id. Spara denna nyckel så att du kan hitta den senare.
 - Logga nu in på din server i Visual Studio Code med hjälp av SSH-Remote. När du är inne kan du återigen öppna upp terminalen.
 - Skriv där kommandot `vim ~/.ssh/authorized_keys`. Du kommer då skapa en fil som kommer att innehålla de nycklar vars anslutningar du kommer att tillåta även utan lösenord. Tryck på tangenten `i` för att hamna i insert-läge och klistra in din ssh-nyckel. Tryck på tangenten `esc` för att gå ur insert-läget och skriv därefter `:wq` för att spara och stänga av.
 - Grattis! Om allt gått som det ska bör du nu kunna logga in utan lösenord
