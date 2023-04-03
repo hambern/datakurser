@@ -71,6 +71,28 @@ Du kan också, när du fyllt i korrekt information i PhpStorm, logga in via ssh 
    2. Deplyment path: `/public_html`
    3. Web path: `/`
 
+## Använd Visual Studio Code
+
+Det är också möjligt att i kursen använda Visual Studio Code. Då kan du jobba direkt emot utvecklingsservern och behöver inte tänka på att "deploya". Följ bara nedanstående guide:
+
+- Ladda ner och installera programmet här: <https://code.visualstudio.com/>
+- Installera därefter följande extension-paket:
+   - "Remote - SSH": <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
+   - "SSH key generator": <https://marketplace.visualstudio.com/items?itemName=AmadeusITGroup.ssh-key-generator>
+- Klicka på ikonen till vänster som ser ut som en skärm med en liten ring längst ner till höger
+- Lägg till servern student.oedu.se och ange dina inloggningsuppgifter:
+   - Klicka på "+" bredvid SSH
+   - Skriv in SSH-kommandot: `ssh -p 3690 ditt_login@student.oedu.se`
+   - Spara anslutningen till `C:\Users\ditt_login\.ssh\config`
+- Nu är det dags att generera din SSH-nyckel för att kunna ansluta utan lösenord:
+   - Öppna upp kommando-paletten med `Ctrl + Shift + P` och kör kommandot `SSH: Generate SSH key`.
+   - Välj den server du vill koppla ihop dig med: `student.oedu.se`
+   - Ange ditt lösenord till servern
+- Nu bör du kunna ansluta till din server utan att behöva ange ditt lösenord
+- Om du blir ombedd att ange vilken typ av server det är så är det en Linux-server
+
+Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator.
+
 ### Kolla så att ni kan:
 
 1. Föra över filer till servern hemifrån

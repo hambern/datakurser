@@ -96,7 +96,7 @@ Det är också möjligt att i kursen använda Visual Studio Code. Då kan du job
 - Nu bör du kunna ansluta till din server utan att behöva ange ditt lösenord
 - Om du blir ombedd att ange vilken typ av server det är så är det en Linux-server
 
-Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator. Nästa steg är att fixa en ssh-inloggning så att du slipper skriva in lösenordet varje gång.
+Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator.
 
 ### Kolla så att ni kan:
 
