@@ -94,7 +94,7 @@ Ni ska enligt ett givet körschema 26 maj 2023 visa vad ni har gjort (ni får 10
 
 ## Redovisningstider:
 
-### Fredag 25 maj
+### Fredag 26 maj
 
 - 12:00 - Emilia Westerlund
 - 12:15 - Lukas Green
