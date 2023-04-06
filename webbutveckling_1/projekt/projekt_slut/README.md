@@ -58,16 +58,6 @@ En projektrapportsmall till Words [hittar du här](webbprojekt.docx).
 - Tänk på att en dålig presentation kan få en bra produkt att verka dålig och att en bra presentation kan "sälja" en sämre produkt. Därför är det viktigt att lägga ner tid på att förbereda presentationen.
 - Var beredd på frågor om hur du löst olika saker på din webbplats.
 
-## Redovisningstider:
-
-### Fredag 25 maj
-
-- 12:00 - Emilia Westerlund
-- 12:15 - Lukas Green
-- 12:30 - Henrik Hellström
-- 12:45 - Simon Enström
-- 13:00 - Isak Norberg
-
 ## Matris
 
 | E | C | A |
