@@ -53,7 +53,7 @@ En projektrapportsmall till Words [hittar du här](webbprojekt.docx).
 
 ### Presentation
 
-- Du ska redovisa din sida inför klassen fredag den 12 maj 2023.
+- Du ska redovisa din sida inför klassen fredag den 12 maj 2023. Sidan behöver inte vara helt klar. du får ytterligare ett par lektioner att slutföra projektet och rapporten.
 - Presentationen ska vara på 5-10 minuter och beskriva din produkt och hur den är uppbyggd.
 - Tänk på att en dålig presentation kan få en bra produkt att verka dålig och att en bra presentation kan "sälja" en sämre produkt. Därför är det viktigt att lägga ner tid på att förbereda presentationen.
 - Var beredd på frågor om hur du löst olika saker på din webbplats.
