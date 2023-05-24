@@ -96,11 +96,11 @@ Ni ska enligt ett givet körschema 26 maj 2023 visa vad ni har gjort (ni får 10
 
 ### Fredag 26 maj
 
-- 12:00 - Emilia Westerlund
-- 12:15 - Lukas Green
-- 12:30 - Henrik Hellström
-- 12:45 - Simon Enström
-- 13:00 - Isak Norberg
+- 14:00 - Emilia Westerlund
+- 14:15 - Lukas Green
+- 14:30 - Henrik Hellström
+- 14:45 - Simon Enström
+- 15:00 - Isak Norberg
 
 ## OpenAI ChatGPT
 
