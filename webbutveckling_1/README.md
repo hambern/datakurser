@@ -106,7 +106,7 @@ Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några l
 4. Titta på din egen sida via `http://student.oedu.se/~ditt_login` i en webbläsare
 5. Ansluta en mapp i PhpStorm till servern
 
-### Namnge filer och mappar
+## Namnge filer och mappar
 
 1. **Skiftlägeskänslighet:** På en Linux-server är filnamn känsliga för skiftläge. Använd små bokstäver för att undvika förväxling.
 2. **Hantering av svenska tecken:** Det är säkrast att undvika svenska tecken som å, ä och ö i filnamn på en webbserver.
