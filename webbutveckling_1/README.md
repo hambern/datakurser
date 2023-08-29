@@ -98,6 +98,14 @@ Det är också möjligt att i kursen använda Visual Studio Code. Då kan du job
 
 Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator.
 
+### Andra bra extension-paket
+
+Du kan hitta tusentals extensions till Visual Studio Code på <https://marketplace.visualstudio.com> men dessa vill jag särskilt rekommendera:
+
+- HTML CSS Support: <https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css>
+- HTMLHint: <https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint>
+- Live Server: <https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer>
+
 ### Kolla så att ni kan:
 
 1. Föra över filer till servern hemifrån
