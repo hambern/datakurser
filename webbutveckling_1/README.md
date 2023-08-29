@@ -103,7 +103,7 @@ Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några l
 Du kan hitta tusentals extensions till Visual Studio Code på <https://marketplace.visualstudio.com> men dessa vill jag särskilt rekommendera:
 
 - HTML CSS Support: <https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css>
-- HTMLHint: <https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint>
+- HTMLHint: <https://marketplace.visualstudio.com/items?itemName=HTMLHint.vscode-htmlhint>
 - Live Server: <https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer>
 
 ### Kolla så att ni kan:
