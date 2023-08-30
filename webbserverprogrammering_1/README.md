@@ -11,7 +11,6 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogramm
 5. [linux_uppgift_3](linux/linux_uppgift_3)
 6. [git_uppgift_4](git/git_uppgift_4)
 7. [git_uppgift_5](git/git_uppgift_5)
-8. [linux_uppgift_4](linux/linux_uppgift_4)
 9. [markdown_uppgift_1](markdown/markdown_uppgift_1)
 10. [linux_uppgift_5](linux/linux_uppgift_5)
 11. [git_uppgift_6](git/git_uppgift_6)
