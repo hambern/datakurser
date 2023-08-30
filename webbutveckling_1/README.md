@@ -106,14 +106,6 @@ Du kan hitta tusentals extensions till Visual Studio Code på <https://marketpla
 - HTMLHint: <https://marketplace.visualstudio.com/items?itemName=HTMLHint.vscode-htmlhint>
 - Live Server: <https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer>
 
-### Kolla så att ni kan:
-
-1. Föra över filer till servern hemifrån
-2. Logga in på servern hemifrån
-3. Redigera filer som ligger på servern
-4. Titta på din egen sida via `http://student.oedu.se/~ditt_login` i en webbläsare
-5. Ansluta en mapp i PhpStorm till servern
-
 ## Namnge filer och mappar
 
 1. **Skiftlägeskänslighet:** På en Linux-server är filnamn känsliga för skiftläge. Använd små bokstäver för att undvika förväxling.

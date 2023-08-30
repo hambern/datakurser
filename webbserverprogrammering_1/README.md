@@ -44,32 +44,6 @@ Du har tillgång till en databas som ligger på student.oedu.se. Den information
 
 Du kan titta på innehållet i din databas genom att logga in via <https://admin.student.oedu.se>
 
-### Filöverföring
-
-Man kan skicka filer via ssh (sftp), standard port är 22 men på denna server är den satt till 3690. Det finns flera olika sätt föra över filer.
-
-### Logga in via ssh på port 3690
-
-`ssh -p 3690 ditt_login@student.oedu.se`
-
-Du kan också, när du fyllt i korrekt information i PhpStorm, logga in via ssh genom `Tools > Start SSH Session` i menyn.
-
-### Anslut via PhpStorm
-
-1. Gå via menyn in på `File > Settings > Build, Execution, Deployment > Depolyment`
-2. Lägg till en server via `+`-symbolen av typen `SFTP` och ange exempelvis namnet `student.oedu.se`
-3. Ange följande information under "Connection":
-   1. Host: `student.oedu.se`
-   2. Port: `3690`
-   3. Username: Ditt login till servern (börjar i regel med dina initialer följt av en serie siffror)
-   4. Password: Det lösenord du fått till servern
-   5. Root path: `home/students/vt24/ditt_login`
-   6. Web server url: `http://student.oedu.se/~ditt_login`
-4. Ange följande information under "Mappings"
-   1. Local path: Välj den mapp på datorn du vill använda. Skapa exempelvis en mapp som synkas till OneDrive med namnet `Kod`
-   2. Deplyment path: `/public_html`
-   3. Web path: `/`
-
 ## Använd Visual Studio Code
 
 Det är också möjligt att i kursen använda Visual Studio Code. Då kan du jobba direkt emot utvecklingsservern och behöver inte tänka på att "deploya". Följ bara nedanstående guide:
@@ -92,27 +66,28 @@ Det är också möjligt att i kursen använda Visual Studio Code. Då kan du job
 
 Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator.
 
-### Kolla så att ni kan:
+### Andra bra extension-paket
 
-1. Föra över filer till servern hemifrån
-2. Logga in på servern hemifrån
-3. Redigera filer som ligger på servern
-4. Titta på din egen sida via `http://student.oedu.se/~ditt_login` i en webbläsare
-5. Ansluta en mapp i PhpStorm till servern
+Du kan hitta tusentals extensions till Visual Studio Code på <https://marketplace.visualstudio.com> men dessa vill jag särskilt rekommendera:
+
+- HTML CSS Support: <https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css>
+- HTMLHint: <https://marketplace.visualstudio.com/items?itemName=HTMLHint.vscode-htmlhint>
+- Live Server: <https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer>
+
+## Namnge filer och mappar
+
+1. **Skiftlägeskänslighet:** På en Linux-server är filnamn känsliga för skiftläge. Använd små bokstäver för att undvika förväxling.
+2. **Hantering av svenska tecken:** Det är säkrast att undvika svenska tecken som å, ä och ö i filnamn på en webbserver.
+3. **Separering utan mellanslag:** Använd understreck (_) eller bindestreck (-) istället för mellanslag i filnamn.
+4. **Korta och beskrivande namn:** Välj namn som är tillräckligt korta men ändå beskrivande nog att förstå innehållet.
+5. **Specialteckens risker:** Undvik specialtecken i filnamn för att förhindra oväntade problem.
+6. **Standardisering av filändelser:** Använd standardiserade filändelser som .html, .php och .js.
+7. **Startsidan index.html:** Filen `index.html` fungerar som webbplatsens startsida, vilket gör den till en central del i webbplatsens struktur.
+8. **Strukturerad organisation:** Organisera filerna i meningsfulla mappar och undvik överbelastning i enskilda kataloger.
 
 ## Windows Terminal
 
 I denna kurs kan du använda dig av PhpStorm och "Start SSH Session...". Men det är minst lika smidigt och framförallt snabbare och coolare att använda sig av ett terminalprogram. Då kan du logga in med ssh och arbeta direkt på din server med Vim. Du kan ladda ner Windows terminal via följande länk: <https://aka.ms/terminal>
-
-### Koppla din dator till ditt studentkonto
-
-För att kunna logga in utan att behöva skriva in lösenordet måste du använda dig av SSH-nycklar:
-
-1. I terminalen skriver du `ssh-keygen` för att generera en nyckel. Tryck enter på alla frågor.
-2. Kopiera den till din server med `scp -P 3690 C:\Users\ditt_användarnamn\.ssh\id_rsa.pub ditt_login@student.oedu.se:~`
-3. Logga in till din server med lösenordet `ssh -p 3690 ditt_login@student.oedu.se`
-4. Spara innehållet i nyckeln till filen med godkända nycklar med `cat ~/id_rsa.pub >> ~/.ssh/authorized_keys`
-5. Ta bort den skickade nyckelfilen med `rm ~/id_rsa.pub`
 
 ### Autostarta på student-servern
 
@@ -129,17 +104,6 @@ För att autostarta som inloggad på din användare på studentservern måste du
 ### Börja i en speciell mapp på servern (överkurs)
 
 Om du vill börja på en speciell mapp på servern som inte är root-mappen `~/` byter du ut command line-kommandot till: `ssh -t -p 3690 ditt_login@student.oedu.se "cd public_html/din_mapp && bash"`. Notera att cd-kommandot måste vara inom dubbla citationstecken och avslutas med `&& bash`
-
-## Namnge filer och mappar
-
-1. **Skiftlägeskänslighet:** På en Linux-server är filnamn känsliga för skiftläge. Använd små bokstäver för att undvika förväxling.
-2. **Hantering av svenska tecken:** Det är säkrast att undvika svenska tecken som å, ä och ö i filnamn på en webbserver.
-3. **Separering utan mellanslag:** Använd understreck (_) eller bindestreck (-) istället för mellanslag i filnamn.
-4. **Korta och beskrivande namn:** Välj namn som är tillräckligt korta men ändå beskrivande nog att förstå innehållet.
-5. **Specialteckens risker:** Undvik specialtecken i filnamn för att förhindra oväntade problem.
-6. **Standardisering av filändelser:** Använd standardiserade filändelser som .html, .php och .js.
-7. **Startsidan index.html:** Filen `index.html` fungerar som webbplatsens startsida, vilket gör den till en central del i webbplatsens struktur.
-8. **Strukturerad organisation:** Organisera filerna i meningsfulla mappar och undvik överbelastning i enskilda kataloger.
 
 ## OpenAI ChatGPT
 
