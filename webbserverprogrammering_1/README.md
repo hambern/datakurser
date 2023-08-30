@@ -44,7 +44,27 @@ Du har tillgång till en databas som ligger på student.oedu.se. Den information
 
 Du kan titta på innehållet i din databas genom att logga in via <https://admin.student.oedu.se>
 
-## Använd Visual Studio Code
+## Windows Terminal
+
+I denna kurs kan du använda dig av PhpStorm och "Start SSH Session...". Men det är minst lika smidigt och framförallt snabbare och coolare att använda sig av ett terminalprogram. Då kan du logga in med ssh och arbeta direkt på din server med Vim. Du kan ladda ner Windows terminal via följande länk: <https://aka.ms/terminal>
+
+### Autostarta på student-servern
+
+För att autostarta som inloggad på din användare på studentservern måste du genomgå följande steg:
+
+1. Gå in på "Settings" i Windows-terminalen
+2. Skapa en ny profil via "+ Add a new profile"
+3. Duplicera Windows PowerShell
+4. Ge profilen ett namn ex "Student-servern"
+5. Sätt command line till `ssh -p 3690 ditt_login@student.oedu.se` och spara profilen
+6. Gå in på "Startup" via vänstermenyn
+7. Ändra "Default profile" till den profil du precis skapade
+
+### Börja i en speciell mapp på servern (överkurs)
+
+Om du vill börja på en speciell mapp på servern som inte är root-mappen `~/` byter du ut command line-kommandot till: `ssh -t -p 3690 ditt_login@student.oedu.se "cd public_html/din_mapp && bash"`. Notera att cd-kommandot måste vara inom dubbla citationstecken och avslutas med `&& bash`
+
+## Visual Studio Code
 
 Det är också möjligt att i kursen använda Visual Studio Code. Då kan du jobba direkt emot utvecklingsservern och behöver inte tänka på att "deploya". Följ bara nedanstående guide:
 
@@ -84,26 +104,6 @@ Du kan hitta tusentals extensions till Visual Studio Code på <https://marketpla
 6. **Standardisering av filändelser:** Använd standardiserade filändelser som .html, .php och .js.
 7. **Startsidan index.html:** Filen `index.html` fungerar som webbplatsens startsida, vilket gör den till en central del i webbplatsens struktur.
 8. **Strukturerad organisation:** Organisera filerna i meningsfulla mappar och undvik överbelastning i enskilda kataloger.
-
-## Windows Terminal
-
-I denna kurs kan du använda dig av PhpStorm och "Start SSH Session...". Men det är minst lika smidigt och framförallt snabbare och coolare att använda sig av ett terminalprogram. Då kan du logga in med ssh och arbeta direkt på din server med Vim. Du kan ladda ner Windows terminal via följande länk: <https://aka.ms/terminal>
-
-### Autostarta på student-servern
-
-För att autostarta som inloggad på din användare på studentservern måste du genomgå följande steg:
-
-1. Gå in på "Settings" i Windows-terminalen
-2. Skapa en ny profil via "+ Add a new profile"
-3. Duplicera Windows PowerShell
-4. Ge profilen ett namn ex "Student-servern"
-5. Sätt command line till `ssh -p 3690 ditt_login@student.oedu.se` och spara profilen
-6. Gå in på "Startup" via vänstermenyn
-7. Ändra "Default profile" till den profil du precis skapade
-
-### Börja i en speciell mapp på servern (överkurs)
-
-Om du vill börja på en speciell mapp på servern som inte är root-mappen `~/` byter du ut command line-kommandot till: `ssh -t -p 3690 ditt_login@student.oedu.se "cd public_html/din_mapp && bash"`. Notera att cd-kommandot måste vara inom dubbla citationstecken och avslutas med `&& bash`
 
 ## OpenAI ChatGPT
 
