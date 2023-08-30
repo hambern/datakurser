@@ -14,7 +14,7 @@ I denna uppgift ska du skapa ditt första lokala git-repository. Läs följande 
 3. Gå till din mapp `public_html` med kommandot `cd public_html`
 4. Där kan du sedan skapa en mapp som exempelvis kan heta `webbserverprogrammering_1` med kommandot `mkdir webbserverprogrammering_1`
 5. Gå därefter in i den skapade mappen med kommandot `cd webbserverprogrammering_1`
-6. Skapa där ett git-repository med kommandot `git init --initial-branch=main`. Egentligen behövs inte det sista. Anledningen till att vi lägger till "--initial-branch=main" är för att det ska fungera bättre ihop med GitLab i nästa uppgift.
+6. Skapa där ett git-repository med kommandot `git init -b main`. Egentligen behövs inte det sista. Anledningen till att vi lägger till "-b main" är för att det ska fungera bättre ihop med GitLab i nästa uppgift.
 7. Skapa en fil som heter `README.md` (så vi har något att versionshantera) med kommandot `touch README.md`. Skriv `git status` och se vad som händer.
 8. `git add --all` för att versionshantera alla filer i mappen. Skriv `git status` och se vad som hänt.
 9. `git commit -m "Initial commit"` för att skapa din första förändring. Skriv `git status` och se vad som hänt.
