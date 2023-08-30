@@ -47,6 +47,14 @@ Du kan titta på innehållet i din databas genom att logga in via <https://admin
 
 I denna kurs kan du använda dig av PhpStorm och "Start SSH Session...". Men det är minst lika smidigt och framförallt snabbare och coolare att använda sig av ett terminalprogram. Då kan du logga in med ssh och arbeta direkt på din server med Vim. Du kan ladda ner Windows terminal via följande länk: <https://aka.ms/terminal>
 
+### Logga in med SSH-nyckel
+
+1. I terminalen skriver du `ssh-keygen` för att generera en nyckel. Tryck enter på alla frågor.
+2. Kopiera den till din server med `scp -P 3690 C:\Users\ditt_användarnamn\.ssh\id_rsa.pub ditt_login@student.oedu.se:~`
+3. Logga in till din server med lösenordet `ssh -p 3690 ditt_login@student.oedu.se`
+4. Spara innehållet i nyckeln till filen med godkända nycklar med `cat ~/id_rsa.pub >> ~/.ssh/authorized_keys`
+5. Ta bort den skickade nyckelfilen med `rm ~/id_rsa.pub`
+
 ### Autostarta på student-servern
 
 För att autostarta som inloggad på din användare på studentservern måste du genomgå följande steg:
