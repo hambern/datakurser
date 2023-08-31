@@ -9,7 +9,7 @@ I denna uppgift ska du skapa din användare på GitLab och synka det med ditt lo
 ## Instruktioner
 
 1. Fyll i uppgifterna på: <https://gitlab.com/users/sign_up/>. Ange gärna din privata epost-adress. Du kan exempelvis logga in via Google.
-2. Välj "Create project" och döp ditt repository till "Webbserverprogrammering 1" och gör det gärna privat.
+2. Välj "Create project" och döp ditt repository till "Webbserverprogrammering 1" i gruppen "Skola" och gör det gärna privat. Lägg inte till någon README-fil eftersom det skulle göra det mer komplicerat att synka ihop dina repositories senare.
 3. För att kunna synka till ditt GitLab-repository måste du lägga in din SSH-nyckel
    1. Kontrollera om du redan har en ssh-nyckel med kommandot `cat ~/.ssh/id_rsa.pub`. Om du nu får upp en mängd tecken som inleds med "ssh-rsa" kan du hoppa direkt till punkt 4. Annars fortsätter du.
    2. Gå in i terminalen och skapa en ssh-nyckel på din server med kommandot `ssh-keygen`. Du behöver inte göra några förändringar utan tryck bara på enter tills du är tillbaka till prompten igen
@@ -24,6 +24,6 @@ ssh-rsa AAAAB2NzaC1yc2EAAAADAQABAAABgQDFIakax9btEe04fgj0LM3x1Gz/3BNrl1bZ1aZ9rBEJ
    5. Du kan nu krypterat skicka information mellan din server och GitLab
 4. För att synka ditt repository på servern med det på GitLab måste du nu köra följande kommandon i terminalen:
     1. Gå in i mappen `webbserverprogrammering_1`
-    3. `git remote add origin git@gitlab.com:ditt_användarnamn/webbserverprogrammering_1.git` för att koppla ditt lokala repository till det på GitLab
-    6. `git push -u origin main` för att skicka upp din förändring
+    3. För att koppla ditt lokala repository till det på GitLab måste du berätta vilket repository du ska synka med det gör du genom kommandot `git remote add origin` och lägg därefter till adressen till ditt repository. Enklast är det att gå in på ditt repository, klicka på "Clone" och kopiera den övre adressen som börjar med "git@gitlab.com:...".
+    6. Skriv sedan kommandot `git push -u origin --all` för att skicka upp din förändring
     7. Nu bör du kunna gå in på ditt repository på GitLab och hitta filen `README.md`
