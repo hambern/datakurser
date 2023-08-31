@@ -33,8 +33,8 @@ Kursen webbserverprogrammering 1 omfattar punkterna 1--8 under rubriken Ämnets 
 - Grundläggande säkerhet och sätt att identifiera hot och sårbarheter samt hur attacker kan motverkas genom effektiva åtgärder.
 ~~~
 
-3. När du gjort dina ändringar kan du spara dina ändringar genom att klicka på den blå knappen med texten "Create commit..."
-4. Välj "Commit to master branch" och klicka på "Commit"
+3. När du gjort dina ändringar kan du spara dina ändringar genom att klicka på git-symbolen i menyn till vänster
+4. Klicka på "Commit to main"
 5. Gå nu tillbaka och titta på ditt repository. Du har nu en del information om ditt repository på GitLab
 6. För att få ner denna förändring till din server måste vi gå till mappen `webbserverprogrammering_1`
 7. I den mappen skriver vi sedan `git pull`. Då borde vi se något i stil med detta:
