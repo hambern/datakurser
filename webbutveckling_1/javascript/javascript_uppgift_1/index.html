@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inköpslista</title>
+</head>
+<body>
+    <h1>Inköpslista</h1>
+
+    <form name="addThing" class="cols">
+        <div>
+            <label for="thing">Vara</label>
+            <input type="text" name="thing" id="thing">
+        </div>
+        <div>
+            <label for="price">Pris</label>
+            <input type="number" name="price" id="price">
+        </div>
+        <div>
+            <input type="submit" value="Lägg till">
+        </div>
+    </form>
+
+    <ul id="things"></ul>
+
+    <script>
+        const things = [];
+        const addThingForm = document.forms["addThing"];
+
+        addThingForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let thing = addThingForm.elements["thing"].value;
+            let price = addThingForm.elements["price"].value;
+
+            if (thing && price) {
+                // Add the thing and price to things
+                things.push({ thing: thing, price: price });
+
+                // Clear the input fields
+                addThingForm.elements["thing"].value = "";
+                addThingForm.elements["price"].value = "";
+
+                // Focus on the thing field
+                addThingForm.elements["thing"].focus();
+
+                updateList();
+            }            
+        });
+
+        function updateList()
+        {
+            // Update the list on the page
+            let list = document.querySelector("#things");
+            list.innerHTML = "";
+
+            for (let i = 0; i < things.length; i++) {
+                let thing = document.createElement("li");
+                thing.textContent = things[i].thing + ": " + things[i].price + " kr";
+                list.appendChild(thing);
+            }
+        }
+
+        updateList();
+    </script>
+</body>
+</html>
