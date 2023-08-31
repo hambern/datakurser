@@ -2,7 +2,7 @@
 
 Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogrammering 1
 
-## Uppgifter
+## s
 
 1. [git_uppgift_1](git/git_uppgift_1)
 2. [git_uppgift_2](git/git_uppgift_2)
