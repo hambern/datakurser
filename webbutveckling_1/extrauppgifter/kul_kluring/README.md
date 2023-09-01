@@ -1,6 +1,6 @@
 # Gör en kul kluring
 
-I denna uppgift får du helt fria händer att göra en egen "kul kluring"! Mina kula kluringar kan du hitta här. Använd dem gärna som inspiration, men sikta på att göra din egen ännu kulare och ännu klurigare:
+I denna uppgift får du helt fria händer att göra en egen "kul kluring"! Mina kula kluringar kan du hitta här nedan. Använd dem gärna som inspiration, men sikta på att göra din egen ännu kulare och ännu klurigare:
 
 1. [Hambergs kluring 1](https://student.oedu.se/~mh6802/kul/mattias_kul_01/)
 2. [Hambergs kluring 2](https://student.oedu.se/~mh6802/kul/mattias_kul_02/)
