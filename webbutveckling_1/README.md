@@ -30,6 +30,12 @@ På W3Scools finns det små självrättande interaktiva övningar. Gör gärna d
 3. [Hambergs kluring 3](https://student.oedu.se/~mh6802/kul/mattias_kul_03/)
 4. [Notpron](http://notpron.org/notpron/)
 
+## CSS-kluringar
+
+1. CSSBattle: <https://cssbattle.dev>
+2. Grid Garden: <https://cssgridgarden.com/#sv>
+3. Flexbox Froggy: <https://flexboxfroggy.com/#sv>
+
 ## Validering
 
 Ta gärna för vana att alltid validera dina filer innan inlämning. På så vis får du veta om du gjort något fel, och det är dessutom det första jag gör när jag rättar de uppgifter du lämnar in.

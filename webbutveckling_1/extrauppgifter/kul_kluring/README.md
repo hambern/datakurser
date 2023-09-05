@@ -6,6 +6,8 @@ I denna uppgift får du helt fria händer att göra en egen "kul kluring"! Mina 
 2. [Hambergs kluring 2](https://student.oedu.se/~mh6802/kul/mattias_kul_02/)
 3. [Hambergs kluring 3](https://student.oedu.se/~mh6802/kul/mattias_kul_03/)
 
+Du bör givetvis också titta på genrens mästerverk [Notpron](http://notpron.org/notpron/) som framhålls som internets kanske klurigaste "spel".
+
 ## Tips från coachen
 
 - Om du har flera sidor i din mapp, se till att du har en `index.html` som gör att du döljer de andra sidorna
