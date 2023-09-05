@@ -20,6 +20,7 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 Det finns också ett antal [extrauppgifter](projekt/extrauppgifter) för dig som vill göra något annat en stund.
 
 ## Övningar
+
 På W3Scools finns det små självrättande interaktiva övningar. Gör gärna dessa för att testa dig själv:
 
 - HTML-övningar: <https://www.w3schools.com/html/exercise.asp>
