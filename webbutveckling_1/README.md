@@ -17,7 +17,7 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 11. [projekt_blogg](projekt/projekt_blogg)
 12. [projekt_slut](projekt/projekt_slut)
 
-Det finns också ett antal [extrauppgifter](projekt/extrauppgifter) för dig som vill göra något annat en stund.
+Det finns också ett antal [extrauppgifter](extrauppgifter) för dig som vill göra något annat en stund.
 
 ## Övningar
 
