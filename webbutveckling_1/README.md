@@ -17,6 +17,12 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 11. [projekt_blogg](projekt/projekt_blogg)
 12. [projekt_slut](projekt/projekt_slut)
 
+## Övningar
+På W3Scools finns det små självrättande interaktiva övningar. Gör gärna dessa för att testa dig själv:
+
+- HTML-övningar: <https://www.w3schools.com/html/exercise.asp>
+- CSS-övningar: <https://www.w3schools.com/css/exercise.asp>
+
 ## Roliga kluringar
 
 1. [Hambergs kluring 1](https://student.oedu.se/~mh6802/kul/mattias_kul_01/)
