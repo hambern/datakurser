@@ -17,7 +17,7 @@ I denna uppgift ska du lära dig mer om filrättigheter. Läs informationen neda
 ~~~~
 git status
 git add --all
-git commit -m "linux_uppgift_2"
+git commit -m "linux_uppgift_3"
 git pull
 git push
 ~~~~
