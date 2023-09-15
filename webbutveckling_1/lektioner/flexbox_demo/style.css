@@ -1,0 +1,96 @@
+/* Flex-Container */
+.flex-container {
+  display: flex;
+  /* For align-content to take effect, the container must have a height */
+  height: 500px;
+}
+
+/* Flex-Direction */
+/* Uncomment to change direction */
+/* .flex-container {
+  flex-direction: column;
+} */
+
+/* Flex-Wrap */
+/* Uncomment to allow wrapping */
+/* .flex-container {
+  flex-wrap: wrap;
+} */
+
+/* Flex-Flow */
+/* Uncomment to combine flex-direction and flex-wrap */
+/* .flex-container {
+  flex-flow: column wrap;
+} */
+
+/* Justify-Content */
+/* Uncomment to adjust horizontal positioning */
+/* .flex-container {
+  justify-content: space-between;
+} */
+
+/* Align-Items */
+/* Uncomment to adjust vertical positioning */
+/* .flex-container {
+  align-items: center;
+} */
+
+/* Align-Content */
+/* Uncomment to adjust positioning when items have wrapped */
+/* .flex-container {
+  align-content: space-around;
+} */
+
+/* Flex-Item Default Styles */
+.flex-item {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: lightgray;
+  margin: 5px;
+}
+
+/* Order */
+/* Uncomment to change order of a specific item */
+/* #item1 {
+  order: 1;
+} */
+
+/* Flex-Grow */
+/* Uncomment to make a specific item grow */
+/* #item2 {
+  flex-grow: 1;
+} */
+
+/* Flex-Shrink */
+/* Uncomment to make a specific item shrink */
+/* #item3 {
+  flex-shrink: 1;
+} */
+
+/* Flex-Basis */
+/* Uncomment to set an initial size for a specific item */
+/* #item4 {
+  flex-basis: 200px;
+} */
+
+/* Flex */
+/* Uncomment to combine flex-grow, flex-shrink, and flex-basis */
+/* #item5 {
+  flex: 1 1 200px;
+} */
+
+/* Align-Self */
+/* Uncomment to change vertical alignment of a specific item */
+/* #item1 {
+  align-self: flex-end;
+} */
+
+/* Responsive Flex */
+/* Uncomment to change layout based on screen size */
+/* @media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+} */
