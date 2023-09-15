@@ -11,11 +11,12 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 5. [css_uppgift_3](css/css_uppgift_3)
 6. [css_uppgift_4](css/css_uppgift_4)
 7. [css_uppgift_5](css/css_uppgift_5)
-8. [projekt_riksdagen](projekt/projekt_riksdagen)
-9. [projekt_fragesport](projekt/projekt_fragesport)
-10. [projekt_gastbok](projekt/projekt_gastbok)
-11. [projekt_blogg](projekt/projekt_blogg)
-12. [projekt_slut](projekt/projekt_slut)
+8. [css_uppgift_6](css/css_uppgift_6)
+9. [projekt_riksdagen](projekt/projekt_riksdagen)
+10. [projekt_fragesport](projekt/projekt_fragesport)
+11. [projekt_gastbok](projekt/projekt_gastbok)
+12. [projekt_blogg](projekt/projekt_blogg)
+13. [projekt_slut](projekt/projekt_slut)
 
 ## Roliga kluringar
 
