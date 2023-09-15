@@ -1,8 +1,9 @@
 # Linux - Uppgift 3
+I denna uppgift ska du lära dig mer om filrättigheter. Läs informationen nedan under rubriken "Rättigheter" och gör följande saker. Skriv ner svaren på frågorna i en textfil med namnet `linux_uppgift_3.txt` i mappen `linux/` i din webbserverutveckligs-mapp. Gitta därefter in den på ditt repository.
+
+- <https://linuxhandbook.com/linux-file-permissions/>
 
 ## Instruktioner
-
-I denna uppgift ska du lära dig mer om filrättigheter. Läs informationen nedan under rubriken "Rättigheter" och gör följande saker. Skriv ner svaren på frågorna i en textfil med namnet `linux_uppgift_3.txt` i mappen `linux/` i din webbserverutveckligs-mapp. Gitta därefter in den på ditt repository.
 
 1. Vilka rättigheter är det på filen `konto.txt` på din användare och vilka har rätt att göra ändringar i den? Uttryck rättigheterna i form av siffror (ex. 755).
 2. Vilka rättigheter är det på mappen `public_html/` och vilka har rätt att se innehållet i den? Uttryck rättigheterna i form av siffror.
@@ -17,7 +18,7 @@ I denna uppgift ska du lära dig mer om filrättigheter. Läs informationen neda
 ~~~~
 git status
 git add --all
-git commit -m "linux_uppgift_2"
+git commit -m "linux_uppgift_3"
 git pull
 git push
 ~~~~

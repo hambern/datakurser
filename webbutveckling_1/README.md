@@ -18,12 +18,27 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 12. [projekt_blogg](projekt/projekt_blogg)
 13. [projekt_slut](projekt/projekt_slut)
 
+Det finns också ett antal [extrauppgifter](extrauppgifter) för dig som vill göra något annat en stund.
+
+## Övningar
+
+På W3Scools finns det små självrättande interaktiva övningar. Gör gärna dessa för att testa dig själv:
+
+- HTML-övningar: <https://www.w3schools.com/html/exercise.asp>
+- CSS-övningar: <https://www.w3schools.com/css/exercise.asp>
+
 ## Roliga kluringar
 
 1. [Hambergs kluring 1](https://student.oedu.se/~mh6802/kul/mattias_kul_01/)
 2. [Hambergs kluring 2](https://student.oedu.se/~mh6802/kul/mattias_kul_02/)
 3. [Hambergs kluring 3](https://student.oedu.se/~mh6802/kul/mattias_kul_03/)
 4. [Notpron](http://notpron.org/notpron/)
+
+## CSS-spel
+
+1. CSSBattle: <https://cssbattle.dev>
+2. Grid Garden: <https://cssgridgarden.com/#sv>
+3. Flexbox Froggy: <https://flexboxfroggy.com/#sv>
 
 ## Validering
 
