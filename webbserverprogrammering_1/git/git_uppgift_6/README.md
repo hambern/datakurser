@@ -8,6 +8,8 @@ I denna uppgift ska du skapa ett repository du kan dela med med din klass och so
 
 Den första som kommer till denna uppgift får i uppgift att skapa ett "bare" repository direkt under din användare `~/` med hjälp av följande kommando: `cd && git init --bare --shared=group shared_bare.git`. Om någon redan har gjort det kan du gå direkt till följande uppgifter:
 
+> Den första som kom hit var användaren `sd0011`. Hoppa över punkt ett och clona istället det repositoryt genom `cd && git clone ~sd0011/shared_bare.git`
+
 1. Alla, även personen som har skapat `shared_bare.git`, ska nu hämta ner det tomma repot till en mapp på sin egen användare med kommandot: `cd && git clone ~username/shared_bare.git`. "username" är användarnamnet till den som skapade det delade repositoryt. Du bör då få en mapp som heter `shared_bare` direkt under din användare. Gå in i den...
 2. Låt nu alla i tur och ordning genomgå följande steg:
    1. Skapa en fil som heter `members` med vim och skriv ditt namn i den filen på en ny rad
