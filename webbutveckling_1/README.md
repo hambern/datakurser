@@ -6,17 +6,19 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 
 1. [html_uppgift_1](html/html_uppgift_1)
 2. [html_uppgift_2](html/html_uppgift_2)
-3. [css_uppgift_1](css/css_uppgift_1)
-4. [css_uppgift_2](css/css_uppgift_2)
-5. [css_uppgift_3](css/css_uppgift_3)
-6. [css_uppgift_4](css/css_uppgift_4)
-7. [css_uppgift_5](css/css_uppgift_5)
-8. [css_uppgift_6](css/css_uppgift_6)
-9. [projekt_riksdagen](projekt/projekt_riksdagen)
-10. [projekt_fragesport](projekt/projekt_fragesport)
-11. [projekt_gastbok](projekt/projekt_gastbok)
-12. [projekt_blogg](projekt/projekt_blogg)
-13. [projekt_slut](projekt/projekt_slut)
+3. Vänta här in dina kamrater. Gör en extrauppgift eller en kul kluring
+4. [css_uppgift_1](css/css_uppgift_1)
+5. [css_uppgift_2](css/css_uppgift_2)
+6. [css_uppgift_3](css/css_uppgift_3)
+7. Vänta här in dina kamrater. Gör en extrauppgift eller en kul kluring
+8. [css_uppgift_4](css/css_uppgift_4)
+9. [css_uppgift_5](css/css_uppgift_5)
+10. [css_uppgift_6](css/css_uppgift_6)
+11. [projekt_riksdagen](projekt/projekt_riksdagen)
+12. [projekt_fragesport](projekt/projekt_fragesport)
+13. [projekt_gastbok](projekt/projekt_gastbok)
+14. [projekt_blogg](projekt/projekt_blogg)
+15. [projekt_slut](projekt/projekt_slut)
 
 Det finns också ett antal [extrauppgifter](extrauppgifter) för dig som vill göra något annat en stund.
 
