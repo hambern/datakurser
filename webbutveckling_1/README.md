@@ -38,9 +38,10 @@ På W3Scools finns det små självrättande interaktiva övningar. Gör gärna d
 
 ## CSS-spel
 
-1. CSSBattle: <https://cssbattle.dev>
-2. Grid Garden: <https://cssgridgarden.com/#sv>
-3. Flexbox Froggy: <https://flexboxfroggy.com/#sv>
+1. Grid Garden: <https://cssgridgarden.com/#sv> - Lär dig använda CSS-grid
+2. Flexbox Froggy: <https://flexboxfroggy.com/#sv> - Lär dig använda Flexbox
+3. CSSBattle: <https://cssbattle.dev> - Supersvåra dagliga CSS-utmaningar för designers
+
 
 ## Validering
 
