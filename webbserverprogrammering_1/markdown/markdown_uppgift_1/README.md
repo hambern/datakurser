@@ -1,6 +1,6 @@
 # Markdown - Uppgift 1
 
-I denna uppgift ska du, med hjälp av Markdown och [The Markdown Guide](https://www.markdownguide.org/basic-syntax/) och [cheatsheet.md](cheatsheet.md) formatera ett dokument så att det efterliknar facit-bilden. Detta blir mycket lättare om du använder dig av Visual Studio Code. Läs mer om hur du installerar det [här](../../README.md).
+I denna uppgift ska du, med hjälp av Markdown och [The Markdown Guide](https://www.markdownguide.org/basic-syntax/) och [cheatsheet.md](cheatsheet.md) formatera ett dokument så att det efterliknar facit-bilden. Detta blir mycket lättare om du använder dig av Visual Studio Code. Läs mer om hur du installerar det [här](../../README.md). Eller använd exempelvis <https://stackedit.io>.
 
 - Länk till [markdown_uppgift_1](markdown_uppgift_1.md)
 - Länk till [facit](facit.png)
