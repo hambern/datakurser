@@ -36,7 +36,7 @@ Läs följande sidor innan du gör denna uppgift:
 2. Gör en topplista över dina fem roligaste klipp. Skriv gärna en motivering till varför du tycker att videon är rolig också.
 3. Minst ett av klippen i mappen `videos/` måste vara med på listan
 4. Minst ett klipp måste du lägga till ifrån YouTube. Hur du gör det kan du läsa om här: https://support.google.com/youtube/answer/171780?hl=sv
-5. Minst ett klipp måste du lägga till ifrån Vimeo. Hur du gör det kan du läsa om här: https://vimeo.zendesk.com/hc/en-us/articles/224969968-Embedding-videos-overview
+5. Minst ett klipp måste du lägga till ifrån PeerTube eller en liknande konkurrent till YouTube. Kolla själv hur du gör det.
 6. Designa din topplista så att den blir snygg och funkar med såväl bred som smal skärm
 7. Lämna in den på vklass
 8. Lek vidare med din sida
