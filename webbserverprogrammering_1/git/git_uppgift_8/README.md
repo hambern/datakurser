@@ -16,7 +16,7 @@ I denna uppgift ska du skapa ett git-repository i mappen `eclipse-workspace` på
     - `git config --global user.email "din_epost@gmail.com"`
     - `git config --global user.name "Ditt Namn"`
 7. Skapa ett nytt projekt på [Gitlab](https://gitlab.com/) för din Java-kod. Titta gärna på [git_uppgift_2](/webbserverprogrammering_1/git/git_uppgift_2) för tips.
-8. Döp projektet till "Prog 2 - ditt_användarnamn" (Prog 2 - mh6802). Som beskrivning av projektet skriver du ditt fullständiga namn
+8. Döp projektet till "Prog 2 - ditt_användarnamn" (Prog 2 - mh6802). Som beskrivning av projektet skriver du ditt fullständiga namn. Skapa ingen readme-fil.
 9. Gör Daniel Viström [@danieloeduse](https://gitlab.com/danieloeduse) till "reporter" på ditt projekt
 10. Lägg till repositoryt som ett remote repository.
 11. Troligen behöver du också skapa och lägga in en ssh-nyckel. Det gör du med kommandot `ssh-keygen`. Tryck sedan bara på enter tills du är klar.
