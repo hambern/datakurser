@@ -21,6 +21,7 @@ I denna uppgift ska du skapa ett git-repository i mappen `eclipse-workspace` på
 10. Lägg till repositoryt som ett remote repository.
 11. Troligen behöver du också skapa och lägga in en ssh-nyckel. Det gör du med kommandot `ssh-keygen`. Tryck sedan bara på enter tills du är klar.
 12. Kopiera sedan innehållet i nyckeln, som troligen ligger på `~/.ssh/id_rsa.pub`, och klistra in den bland andra SSH-nycklar på din GitLab-användare.
+13. Pusha upp din kod till ditt nya Gitlab-repository
 
 ## Använd Git Bash
 
