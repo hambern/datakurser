@@ -5,6 +5,9 @@ I denna uppgift ska du skapa ett git-repository i mappen `eclipse-workspace` på
 - <https://www.w3schools.com/git/git_remote_getstarted.asp?remote=gitlab>
 - <https://www.w3schools.com/git/git_push_to_remote.asp?remote=gitlab>
 
+## Uppgift
+Uppgiften är att installera Git på din dator, skapa ett nytt repository i Eclipse-mappen, lägga till en gitignorefil, skapa ett fjärrepository på GitLab, skapa eller lägga till en ssh-nyckel från din dator till GitLab och synka ihop ditt lokala repository och fjärrrepositoryt. Nu kör vi...
+
 ## Använd Visual Studio Code
 
 1. Börja med att öppna din eclipse-mapp i Visual Studio Code (VSC). Antagligen ligger den direkt under dina användare `~`
