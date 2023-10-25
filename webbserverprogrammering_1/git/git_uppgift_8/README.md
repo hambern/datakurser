@@ -17,8 +17,9 @@ I denna uppgift ska du skapa ett git-repository i mappen `eclipse-workspace` på
 8. När du ansluter behöver du fylla i uppgifter om dig själv:
     - `git config --global user.email "din_epost@gmail.com"`
     - `git config --global user.name "Ditt Namn"`
-9. Troligen behöver du också skapa och lägga in en ssh-nyckel. Det gör du med kommandot `ssh-keygen`. Tryck sedan bara på enter tills du är klar.
-10. Kopiera sedan innehållet i nyckeln, som troligen ligger på `~/.ssh/id_rsa.pub`, och klistra in den bland andra SSH-nycklar på din GitLab-användare.
+9. Troligen behöver du också skapa och lägga in en ssh-nyckel. Det gör du enklast genom att i terminalen öppna Gits grafiska gränssnitt med kommandot `git-gui`.
+10. Därefter går du in på Help > Show SSH Key. Där kan du sedan prova att generera en SSH-nyckel. Kopiera den sedan och klistra in den bland dina andra SSH-nycklar på din GitLab-användare.
+11. Nu bör du kunna både hämta hem och skicka upp nya versioner till ditt repository.
 
 ## Använd Git Bash
 
