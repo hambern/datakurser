@@ -20,9 +20,10 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogramm
 15. [sql_uppgift_2](sql/sql_uppgift_2)
 16. [sql_uppgift_3](sql/sql_uppgift_3)
 17. [sql_uppgift_4](sql/sql_uppgift_4)
-18. [projekt_riksdagen](projekt/projekt_riksdagen)
-19. [projekt_mvc](projekt/projekt_mvc)
-20. [projekt_glosa](projekt/projekt_glosa)
+18. [projekt_chat](projekt/projekt_chat/)
+19. [projekt_riksdagen](projekt/projekt_riksdagen)
+20. [projekt_mvc](projekt/projekt_mvc)
+21. [projekt_glosa](projekt/projekt_glosa)
 
 ## Information om skolans server
 

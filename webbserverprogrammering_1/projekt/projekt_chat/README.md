@@ -1,0 +1,116 @@
+# Projekt - Chat
+
+Vi ska bygga en gemensam chat. Vi ska använda den gemensamma `student_chat`-databasen och bygga varsitt interface till den. Tanken är att vi alla ska bygga varsin chat, som alla jobbar emot samma databas och som alltså kommer att ha tillgång till samma användare och samma inlägg.
+
+## Tabeller
+
+De tabeller vi har att leka med är följande:
+
+~~~
+mysql> DESC users;
++------------+--------------+------+-----+-------------------+-------------------+
+| Field      | Type         | Null | Key | Default           | Extra             |
++------------+--------------+------+-----+-------------------+-------------------+
+| id         | int unsigned | NO   | PRI | NULL              | auto_increment    |
+| first_name | varchar(100) | NO   |     | NULL              |                   |
+| last_name  | varchar(100) | NO   |     | NULL              |                   |
+| email      | varchar(50)  | NO   |     | NULL              |                   |
+| password   | varchar(255) | NO   |     | NULL              |                   |
+| token      | varchar(255) | YES  |     | NULL              |                   |
+| created_at | datetime     | NO   |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
+| updated_at | datetime     | NO   |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
+| token_at   | datetime     | YES  |     | NULL              |                   |
++------------+--------------+------+-----+-------------------+-------------------+
+9 rows in set (0.00 sec)
+~~~
+
+och
+
+~~~
+mysql> DESC posts;
++------------+----------+------+-----+-------------------+-------------------+
+| Field      | Type     | Null | Key | Default           | Extra             |
++------------+----------+------+-----+-------------------+-------------------+
+| id         | int      | NO   | PRI | NULL              | auto_increment    |
+| user_id    | int      | NO   |     | NULL              |                   |
+| content    | text     | NO   |     | NULL              |                   |
+| created_at | datetime | NO   |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
++------------+----------+------+-----+-------------------+-------------------+
+4 rows in set (0.00 sec)
+~~~
+
+## Användare
+
+### Förbereda PHP-skriptet
+
+För att kunna skapa användare måste du skapa ett PHP-skript som ansluter till din MySQL-databas.
+
+```php
+$servername = "localhost";
+$username = "student";
+$password = "student";
+$dbname = "student_chat";
+
+// Skapa anslutning
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Kontrollera anslutning
+if ($conn->connect_error) {
+    die("Anslutning misslyckades: " . $conn->connect_error);
+}
+```
+
+### Samla användarinformation
+
+Skapa ett formulär där du kan ange användarinformation. Exempelvis `first_name`, `last_name`, `email` och `password`.
+
+### Hasha Lösenordet
+Använd PHP-funktionen `password_hash()` för att säkert hasha lösenordet innan du sparar det i databasen.
+
+```php
+$hashed_pwd = password_hash($_POST['password'], PASSWORD_BCRYPT);
+```
+
+### Lägg till en användare i databasen
+
+Skapa en SQL-fråga för att infoga den nya användaren i `users`-tabellen. Använd PHP-variabler för att hantera användarindata.
+
+```php
+$sql = "INSERT INTO users (first_name, last_name, email, password)
+VALUES ('" . $_POST['first_name'] . "', '" . $_POST['last_name'] . "', '" . $_POST['email'] . "', '" . $hashed_pwd . "')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Ny användare skapad!";
+} else {
+    echo "Fel: " . $sql . "<br>" . $conn->error;
+}
+```
+
+### Jämför Lösenordet med det hashade Lösenordet
+
+När du sedan ska logga in behöver du jämföra det angivna lösenordet med det lösenord som finns i databasen. Använd då `password_verify()`.
+
+```php
+if (password_verify($password, $hashed_pwd)) {
+    echo "Inloggning lyckades!";
+} else {
+    echo "Felaktigt lösenord.";
+}
+```
+
+### Stäng anslutningen
+
+Stäng databasanslutningen när du är klar.
+
+```php
+$conn->close();
+```
+
+## Inlägg
+
+Inlägg skapas på samma sätt som användare. Det enda kluriga du där måste tänka på att på något sätt registrera *vilken* användare som inlägget skapats av. Det gör du genom att ange användarens `id` i `user_id`-fältet.
+
+## Viktigt
+
+- Använd en säker metod för att hantera lösenord, som `password_hash()`. Lagra aldrig lösenord okrypterat i din databas.
+- Kontrollera alltid användarindata för att undvika SQL-injektioner. Detta får du dock lägga till själv med hjälp av W3Schools: <https://www.w3schools.com/php/php_mysql_prepared_statements.asp>
