@@ -1,6 +1,6 @@
 # Användbara onion-adresser
 
-En lättillgänglig sökmotor för onion-länkar är <https://tor.link/>. Du måste dock använda TOR för att följa länkarna vidare.
+En lättillgänglig sökmotor för onion-länkar är <https://tor.link/>. En sida som listar onion-länkar är <https://thehidden2.wiki/>. Du måste dock använda TOR för att följa länkarna vidare. Det finns en hel del skit på dem, så välj med omsorg vilka du går in på.
 
 ## Några exempel
 
