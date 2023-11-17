@@ -1,6 +1,6 @@
 # Projekt - Chat
 
-Vi ska bygga en gemensam chat. Vi ska använda den gemensamma `student_chat`-databasen och bygga varsitt interface till den. Tanken är att vi alla ska bygga varsin chat, som alla jobbar emot samma databas och som alltså kommer att ha tillgång till samma användare och samma inlägg.
+Vi ska bygga en gemensam chat. Vi ska använda den gemensamma `student_chat`-databasen och bygga varsitt interface till den. Interfacet får se ut hur som helst. Rekommendationen är att du använder PHP, HTML och CSS, men vill du lösa uppgiften på annat sätt är det okej. Tanken är att vi alla ska bygga varsin chat, som alla jobbar emot samma databas och som alltså kommer att ha tillgång till samma användare och samma inlägg.
 
 ## Tabeller
 
@@ -64,7 +64,7 @@ if ($conn->connect_error) {
 
 Skapa ett formulär där du kan ange användarinformation. Exempelvis `first_name`, `last_name`, `email` och `password`.
 
-### Hasha Lösenordet
+### Hasha lösenordet
 Använd PHP-funktionen `password_hash()` för att säkert hasha lösenordet innan du sparar det i databasen.
 
 ```php
@@ -86,7 +86,7 @@ if ($conn->query($sql) === TRUE) {
 }
 ```
 
-### Jämför Lösenordet med det hashade Lösenordet
+### Jämför lösenordet med det hashade Lösenordet
 
 När du sedan ska logga in behöver du jämföra det angivna lösenordet med det lösenord som finns i databasen. Använd då `password_verify()`.
 
