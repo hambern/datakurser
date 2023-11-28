@@ -33,12 +33,12 @@ Du får själv välja vilken typ av databas du ska skapa. Det enda jag kräver �
 ### 1. Recipes
 - **recipes** (`id`, `name`, `description`, `cooking_time`)
 - **ingredients** (`id`, `name`, `type`, `storage`)
-- **ingredient_recipe** (`recipe_id`, `ingredient_id`, `quantity`, `remarks`)
+- **ingredient_recipe** (`ingredient_id`, `recipe_id`, `quantity`, `remarks`)
 
 ### 2. Book reviews
 - **members** (`id`, `name`, `email`, `membership_date`)
 - **books** (`id`, `title`, `author`, `genre`)
-- **book_member** (`member_id`, `book_id`, `reading_date`, `rating`)
+- **book_member** (`book_id`, `member_id`, `reading_date`, `rating`)
 
 ### 3. Playlists
 - **playlists** (`id`, `playlist_name`, `creator`, `creation_date`)
@@ -48,15 +48,28 @@ Du får själv välja vilken typ av databas du ska skapa. Det enda jag kräver �
 ### 4. Sport teams
 - **teams** (`id`, `team_name`, `founded_year`, `city`)
 - **players** (`id`, `name`, `position`, `birth_date`)
-- **player_team** (`team_id`, `player_id`, `start_date`, `end_date`)
+- **player_team** (`player_id`, `team_id`, `start_date`, `end_date`)
 
 ### 5. Events
 - **events** (`id`, `name`, `location`, `date`)
-- **people** (`id`, `name`, `email`, `phone_number`)
-- **event_participant** (`event_id`, `person_id`, `registration_date`, `status`)
+- **persons** (`id`, `name`, `email`, `phone_number`)
+- **event_person** (`event_id`, `person_id`, `registration_date`, `status`)
 
 ### 6. Courses
 - **students** (`id`, `name`, `program`, `start_year`)
 - **courses** (`id`, `course_name`, `credits`, `instructor`)
-- **course_student** (`student_id`, `course_id`, `registration_date`, `grade`)
+- **course_student** (`course_id`, `student_id`, `registration_date`, `grade`)
+
+## Laravel Naming Convention
+
+Laravel Naming Convention är en uppsättning riktlinjer för namngivning som används inom Laravel-ramverket för PHP. Dessa konventioner hjälper till att hålla kodbasen konsekvent och gör det enklare att förstå och underhålla koden. Här är några av de centrala principerna:
+
+1. **Tabellnamn i pluralform**: Tabeller i en databas namnges i pluralform för att indikera att de innehåller samlingar av entiteter. Till exempel, en tabell som lagrar användarinformation skulle heta `users` istället för `user`.
+2. **Snake case för kolumnnamn och tabellnamn**: Kolumnnamn och tabellnamn skrivs i snake_case, vilket innebär att ord separeras med understreck och all text är i små bokstäver. Till exempel, `created_at` eller `email_address`.
+3. **Primärnycklar**: Standardnamnet för primärnyckeln är `id`. Laravel förväntar sig att varje tabell har en primärnyckel med detta namn, om inte annat anges.
+4. **Främmande nycklar**: Främmande nycklar namnges enligt mönstret `[singularform_av_relaterad_tabell]_id`. Till exempel, om det finns en relation mellan en `users`-tabell och en `posts`-tabell, skulle den främmande nyckeln i `posts`-tabellen som hänvisar till `users`-tabellen vara `user_id`.
+5. **Pivot-tabeller**: För många-till-många-relationer används en pivot-tabell (eller förenande tabell). Namnet på en pivot-tabell är vanligtvis en kombination av de pluraliserade namnen på de två relaterade tabellerna, sorterade i alfabetisk ordning. Till exempel, för en relation mellan `users` och `roles` skulle pivot-tabellen heta `role_user`.
+6. **Timestamps**: Laravel förväntar sig att varje tabell har två tidsstämplar: `created_at` och `updated_at`. Dessa kolumner används för att automatiskt spara tidpunkter för när en post skapades och senast uppdaterades.
+
+Dessa konventioner är djupt integrerade i Laravels Eloquent ORM (Object-Relational Mapping), vilket underlättar interaktionen med databasen genom att minska mängden nödvändig konfiguration. Genom att följa dessa konventioner kan utvecklare dra nytta av många av Laravels automatiska funktioner och göra kodbasen mer intuitiv och enhetlig.
 
