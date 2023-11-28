@@ -121,41 +121,61 @@ I `student_select` finns tabellerna `users`, `birds` och `observations`. De hör
 2. Vilken fråga behöver du ställa för att få detta svar?
 
 ~~~
-+------------+-----------------+-------------------+---------------------+--------------+
-| first_name | last_name       | latest_bird       | latest_observation  | observations |
-+------------+-----------------+-------------------+---------------------+--------------+
-| Anette     | Andersson       | Järpe             | 2004-02-13 21:09:46 |           52 |
-| jessica    | Andersson       | Orre              | 2004-02-05 19:33:43 |            5 |
-| Leif       | Andersson       | Skäggdopping      | 2004-05-02 21:07:19 |           77 |
-| Peeter     | Boldt-Christmas | Större hackspett  | 2006-01-03 10:40:03 |           45 |
-| Jeanette   | Bäckström       | Gräsand           | 2004-01-25 10:39:00 |          194 |
-| Hasse      | Bäckström       | Sångsvan          | 2004-01-25 13:47:33 |          291 |
-| Anita      | Bäckström       | Större hackspett  | 2004-01-25 10:11:51 |          321 |
-| Gunn       | Collin          | Talltita          | 2004-02-15 10:24:37 |          202 |
-| Åke        | Collin          | Blåmes            | 2004-02-14 17:14:58 |          147 |
-| Martin     | Edman           | Gräsand           | 2005-01-04 20:47:32 |           86 |
-| Helen      | Forsgren        | Skata             | 2004-01-12 18:38:59 |          395 |
-| Edvin      | Forsgren        | Blåmes            | 2005-01-04 19:51:08 |          155 |
-| Oskar      | Forsgren        | Blåmes            | 2005-01-02 11:50:04 |           48 |
-| Jonas      | Forsgren        | Sångsvan          | 2004-12-25 11:20:25 |           33 |
-| Ulla       | Forsgren        | Gräsand           | 2004-01-17 11:38:02 |          253 |
-| Kajsa      | Forsgren        | Talgoxe           | 2004-01-14 16:46:40 |          157 |
-| Fritz      | Forsgren        | Blåmes            | 2004-01-11 19:34:53 |          329 |
-| Joakim     | Forsgren        | Orre              | 2004-01-11 19:11:44 |          397 |
-| Mattis     | Gustavsson      | Skäggdopping      | 2005-04-17 20:41:25 |           42 |
-| Tony       | Hagelqvist      | Blåmes            | 2004-02-03 08:53:53 |          155 |
-| Anna       | Lindgren        | Knölsvan          | 2005-01-04 13:33:14 |          290 |
-| Johanna    | Martin          | Fasan             | 2004-01-13 17:43:04 |          360 |
-| Liam       | Martin          | Duvhök            | 2004-01-12 20:14:39 |          406 |
-| Jan        | Schützer        | Sångsvan          | 2004-02-18 19:07:27 |          489 |
-| Margareta  | Solax           | Sidensvans        | 2006-01-12 15:21:20 |            5 |
-| Åsa        | Wanhainen       | Tofsvipa          | 2005-04-01 20:10:44 |           63 |
-| Kristina   | Wiklund         | Sångsvan          | 2004-03-14 19:32:25 |          166 |
-| Jörgen     | Wiklund         | Gräsand           | 2004-03-14 19:39:19 |          490 |
-| Nina       | Ödmark          | Talgoxe           | 2004-01-12 20:35:18 |          224 |
-| Felix      | Ödmark          | Skäggdopping      | 2005-05-14 09:48:16 |           48 |
-| Julia      | Ödmark          | Större hackspett  | 2005-01-23 15:45:30 |           94 |
-| Mikael     | Ödmark          | Knölsvan          | 2004-04-18 22:15:19 |          184 |
-+------------+-----------------+-------------------+---------------------+--------------+
-32 rows in set (0.09 sec)
++------------+-----------------+--------------+
+| first_name | last_name       | observations |
++------------+-----------------+--------------+
+| Jörgen     | Wiklund         |          490 |
+| Jan        | Schützer        |          489 |
+| Liam       | Martin          |          406 |
+| Joakim     | Forsgren        |          397 |
+| Helen      | Forsgren        |          395 |
+| Johanna    | Martin          |          360 |
+| Fritz      | Forsgren        |          329 |
+| Anita      | Bäckström       |          321 |
+| Hasse      | Bäckström       |          291 |
+| Anna       | Lindgren        |          290 |
+| Ulla       | Forsgren        |          253 |
+| Nina       | Ödmark          |          224 |
+| Gunn       | Collin          |          202 |
+| Jeanette   | Bäckström       |          194 |
+| Mikael     | Ödmark          |          184 |
+| Kristina   | Wiklund         |          166 |
+| Kajsa      | Forsgren        |          157 |
+| Tony       | Hagelqvist      |          155 |
+| Edvin      | Forsgren        |          155 |
+| Åke        | Collin          |          147 |
+| Julia      | Ödmark          |           94 |
+| Martin     | Edman           |           86 |
+| Leif       | Andersson       |           77 |
+| Åsa        | Wanhainen       |           63 |
+| Anette     | Andersson       |           52 |
+| Oskar      | Forsgren        |           48 |
+| Felix      | Ödmark          |           48 |
+| Peeter     | Boldt-Christmas |           45 |
+| Mattis     | Gustavsson      |           42 |
+| Jonas      | Forsgren        |           33 |
+| jessica    | Andersson       |            5 |
+| Margareta  | Solax           |            5 |
++------------+-----------------+--------------+
+32 rows in set (0.06 sec)
+~~~
+
+3. Vilken fråga bör du ställa för att få denna lista över de mest observerade fåglarna?
+
+~~~
++-------------------+--------------+
+| name              | observations |
++-------------------+--------------+
+| Skata             |           79 |
+| Talgoxe           |           78 |
+| Grå kråka         |           76 |
+| Blåmes            |           74 |
+| Pilfink           |           71 |
+| Bofink            |           70 |
+| Björktrast        |           70 |
+| Större hackspett  |           69 |
+| Grönfink          |           69 |
+| Fiskmås           |           69 |
++-------------------+--------------+
+10 rows in set (0.08 sec)
 ~~~
