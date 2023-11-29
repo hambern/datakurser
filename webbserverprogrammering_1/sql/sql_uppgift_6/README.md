@@ -2,7 +2,7 @@
 
 I denna uppgift ska du få skapa dina egna databastabeller och då behöver du veta ett och annat om datatyper. Börja med att läsa följande sidor:
 
-- Oom att skapa och underhålla databaser: [skapa_databaser.md](skapa_databaser.md)
+- Skapa och underhålla databaser: [skapa_databaser.md](skapa_databaser.md)
 - <https://www.w3schools.com/mysql/mysql_create_table.asp>
 - <https://www.w3schools.com/mysql/mysql_drop_table.asp>
 - <https://www.w3schools.com/mysql/mysql_alter.asp>
