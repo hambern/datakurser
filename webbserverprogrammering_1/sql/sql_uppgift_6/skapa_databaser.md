@@ -10,15 +10,15 @@ Innan du börjar programmera, är det avgörande att förstå de grundläggande 
 #### Tabeller
 En databastabell är en samling av relaterade data och representerar en entitet i ditt system. Varje tabell består av rader och kolumner, likt ett kalkylblad. En tabell ska vanligtvis representera en specifik typ av entitet. Till exempel, en tabell som heter `users` kan representera användarna i din applikation.
 
-#### Exempel på Tabell: `users`
+#### Exempel på tabell: `users`
 ```plaintext
-+----+----------+-------------------+
-| id | name     | email             |
-+----+----------+-------------------+
-| 1  | Alice    | alice@example.com |
-| 2  | Bob      | bob@example.com   |
-| 3  | Charlie  | charlie@sample.com|
-+----+----------+-------------------+
++----+----------+--------------------+
+| id | name     | email              |
++----+----------+--------------------+
+| 1  | Alice    | alice@example.com  |
+| 2  | Bob      | bob@example.com    |
+| 3  | Charlie  | charlie@sample.com |
++----+----------+--------------------+
 ```
 I detta exempel har tabellen `users` tre kolumner: `id`, `name` och `email`. Varje rad representerar en unik användare.
 
@@ -38,7 +38,7 @@ Databaser tillåter relationer mellan olika tabeller, vilket speglar hur olika e
 - **Primärnyckel (Primary Key)**: En unik identifierare för varje rad i en tabell. I vårt exempel är `id`-kolumnen i `users`-tabellen en primärnyckel.
 - **Främmande Nyckel (Foreign Key)**: En kolumn i en tabell som länkar till primärnyckeln i en annan tabell, skapar en relation mellan de två tabellerna.
 
-#### Exempel på Relationer
+#### Exempel på relationer
 För att illustrera relationer, låt oss introducera en ny tabell som heter `orders`. En order är relaterad till en användare, så `orders`-tabellen kan ha en främmande nyckel som refererar till `users`-tabellen.
 
 Tabell: `orders`
@@ -59,24 +59,24 @@ Att förstå dessa grundläggande databaskoncept är nödvändigt för att kunna
 
 Databasnormalisering är en process för att strukturera en databas på ett sätt som minskar redundans och förbättrar dataintegritet. Målet med normalisering är att dela upp data i logiska tabeller och etablera relationer mellan dessa tabeller för att främja konsistens och minska upprepning av data. 
 
-#### Exempel på Icke-normaliserad Tabell
+#### Exempel på Icke-normaliserad tabell
 Låt oss börja med en icke-normaliserad tabell som innehåller både användar- och adressuppgifter.
 
 Tabell: `users`
 ```plaintext
-+----+----------+-------------------+-----------------+-----------+
-| id | name     | email             | address         | city      |
-+----+----------+-------------------+-----------------+-----------+
-| 1  | Alice    | alice@example.com | 123 Apple St.   | Townsville|
-| 2  | Bob      | bob@example.com   | 456 Banana Ave. | Villecity |
-+----+----------+-------------------+-----------------+-----------+
++----+----------+-------------------+-----------------+------------+
+| id | name     | email             | address         | city       |
++----+----------+-------------------+-----------------+------------+
+| 1  | Alice    | alice@example.com | 123 Apple St.   | Townsville |
+| 2  | Bob      | bob@example.com   | 456 Banana Ave. | Villecity  |
++----+----------+-------------------+-----------------+------------+
 ```
 I denna tabell, `users`, finns det redundans och en risk för inkonsekventa data, särskilt om en användare har flera adresser eller om adressinformationen uppdateras.
 
 #### Processen för normalisering
 För att normalisera denna tabell, skulle du dela upp informationen i två relaterade tabeller: `users` och `addresses`.
 
-1. **Ändra tabellen `users`**: Tabellen `users` innehåller information specifik för användaren.
+1. **Ändra tabellen `users`**: Tabellen `users` innehåller nu endast information som är specifik för användaren.
 
    Tabell: `users`
    ```plaintext
@@ -89,7 +89,7 @@ För att normalisera denna tabell, skulle du dela upp informationen i två relat
    ```
    Här är `id` en primärnyckel som unikt identifierar varje användare.
 
-2. **Skapa Tabellen `addresses`**: Tabellen `addresses` lagrar adressinformation och relaterar varje adress till en användare i `users`-tabellen.
+2. **Skapa tabellen `addresses`**: Tabellen `addresses` lagrar adressinformation och relaterar varje adress till en användare i `users`-tabellen.
 
    Tabell: `addresses`
    ```plaintext
@@ -140,6 +140,21 @@ I detta exempel är `id` en INTEGER som också fungerar som primärnyckel (PK), 
 
 #### Skapa ER-diagram
 ER-diagrammet (Entity-Relationship) hjälper till att visualisera hur olika tabeller är relaterade till varandra. Detta inkluderar att identifiera relationstyper som "en-till-en", "en-till-många", och "många-till-många". Till exempel, en `user` kan ha många `orders` (en-till-många-relation), men varje `order` är kopplad till en specifik `user`.
+
+```mermaid
+erDiagram
+    USERS ||--o{ ORDERS : places
+    USERS {
+        int id PK
+        string name
+        string email
+    }
+    ORDERS {
+        int id PK
+        int user_id FK
+        string details
+    }
+```
 
 #### Definiera relationer mellan tabeller
 Använd primära och främmande nycklar för att definiera relationer mellan tabeller. En främmande nyckel i en tabell refererar till en primärnyckel i en annan tabell, vilket skapar en relation mellan dem.
