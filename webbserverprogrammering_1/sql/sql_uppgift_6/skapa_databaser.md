@@ -176,11 +176,11 @@ CREATE TABLE users (
 ### Bli bekväm med SQL
 SQL (Structured Query Language) är nyckeln till att interagera med din databas. Grundläggande kommandon inkluderar `SELECT`, `INSERT`, `UPDATE`, och `DELETE`. PHP erbjuder funktioner för att köra dessa SQL-kommandon mot din MySQL-databas.
 
-### Implementera Säkerhetsåtgärder
+### Implementera säkerhetsåtgärder
 
 I databashantering är säkerheten inte bara en eftertanke; det är en fundamental del av design- och utvecklingsprocessen. När du arbetar med databaser, särskilt i webbapplikationer, är det avgörande att skydda mot olika säkerhetshot, där SQL-injektion är bland de mest kritiska. Användningen av PHP:s PDO (PHP Data Objects) och MySQLi för beredda uttalanden är centrala tekniker för att säkra dina databasoperationer.
 
-#### SQL-Injektioner
+#### SQL-injektioner
 SQL-injektion är en attackmetod där en angripare lyckas infoga eller "injicera" skadlig SQL-kod i en databasfråga. Detta kan leda till obehörig åtkomst till databasen, dataläckage, och till och med databasmanipulering. För att skydda mot dessa attacker är det viktigt att använda säkra metoder för att hantera användarinput.
 
 #### Beredda uttalanden (Prepared Statements)
