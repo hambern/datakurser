@@ -60,6 +60,8 @@ if ($conn->connect_error) {
 }
 ```
 
+Utgå gärna ifrån filen [index.php](index.php) du hittar i denna mapp.
+
 ### Samla användarinformation
 
 Skapa ett formulär där du kan ange användarinformation. Exempelvis `first_name`, `last_name`, `email` och `password`.
