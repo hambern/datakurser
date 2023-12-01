@@ -39,6 +39,7 @@ Internetmuseum grundades i december 2014 och blev i juni 2016 invalt i Sveriges 
 - Detta är ett exempel på hur du kan visa bara en fråga i taget och sedan, via en knapp, kan visa nästa fråga: <https://jsfiddle.net/hambern/u1refgqy>
 - Detta är ett lite mer avancerat exempel där jag dessutom lagt till en animation: <https://jsfiddle.net/hambern/1koj2epx/>
 - Detta är ett exempel där knapparna bytts ut emot en eventlistener som bläddrar vid klickning på page-elementet (kan såklart bytas ut emot klick på en knapp): <https://jsfiddle.net/hambern/ykqsLt29/>
+- Detta är ett exempel på hur du kan skapa en tidtagning. Inputfältet kommer att skicka antalet sekunder det tog att genomföra frågesporten: <https://jsfiddle.net/hambern/y0pgnw3e/> 
 - Kika gärna också på CSS-avdelningen på denna praktiska sida: <https://10015.io/>
 
 ### Strålande elevexempel
