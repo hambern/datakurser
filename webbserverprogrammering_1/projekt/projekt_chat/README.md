@@ -1,5 +1,14 @@
 # Projekt - Chat
 
+Följande delar på W3Schools kan vara bra att kolla på i denna uppgift:
+
+- <https://www.w3schools.com/php/php_mysql_connect.asp>
+- <https://www.w3schools.com/php/php_mysql_insert.asp>
+- <https://www.w3schools.com/php/php_mysql_prepared_statements.asp>
+- <https://www.w3schools.com/php/php_mysql_select.asp>
+- <https://www.w3schools.com/php/php_mysql_delete.asp>
+- <https://www.w3schools.com/php/php_mysql_update.asp>
+
 Vi ska bygga en gemensam chat. Vi ska använda den gemensamma `student_chat`-databasen och bygga varsitt interface till den. Interfacet får se ut hur som helst. Rekommendationen är att du använder PHP, HTML och CSS, men vill du lösa uppgiften på annat sätt är det okej. Tanken är att vi alla ska bygga varsin chat, som alla jobbar emot samma databas och som alltså kommer att ha tillgång till samma användare och samma inlägg.
 
 ## Tabeller
@@ -73,6 +82,19 @@ Använd PHP-funktionen `password_hash()` för att säkert hasha lösenordet inna
 $hashed_pwd = password_hash($_POST['password'], PASSWORD_BCRYPT);
 ```
 
+### Kontrollera efter dubletter
+
+Innan du lagrar en ny användare måste du kontrollera så att e-postadressen (som vi använder vid inloggning) inte redan finns i databasen. Det gör du genom en select-fråga och metoden `num_rows`.
+
+~~~php
+$sql = "SELECT * FROM users WHERE email = ' . $_POST['email'] . '";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    echo "Det finns redan en användare med den e-postadressen";
+}
+~~~
+
 ### Lägg till en användare i databasen
 
 Skapa en SQL-fråga för att infoga den nya användaren i `users`-tabellen. Använd PHP-variabler för att hantera användarindata.
@@ -100,6 +122,8 @@ if (password_verify($password, $hashed_pwd)) {
 }
 ```
 
+Själva inloggningen kan du rent tekniskt lösa på lite olika sätt. Jag rekommenderar att du genererar en slumpmässig token, lagrar den i `user.token` och därefter lagrar samma token i `$_SESSION['token]`. Du kan då sedan kontrollera om `$_SESSION['token']` är satt och matcha den emot rätt användare.
+
 ### Stäng anslutningen
 
 Stäng databasanslutningen när du är klar.
@@ -115,4 +139,4 @@ Inlägg skapas på samma sätt som användare. Det enda kluriga du där måste t
 ## Viktigt
 
 - Använd en säker metod för att hantera lösenord, som `password_hash()`. Lagra aldrig lösenord okrypterat i din databas.
-- Kontrollera alltid användarindata för att undvika SQL-injektioner. Detta får du dock lägga till själv med hjälp av W3Schools: <https://www.w3schools.com/php/php_mysql_prepared_statements.asp>
+- Kontrollera alltid användarindata för att undvika SQL-injektioner. Detta får du dock lägga till själv med hjälp av W3Schools: <https://www.w3schools.com/php/php_mysql_prepared_statements.asp> eller [läs igenom denna lektion](../../lektioner/skapa_databaser/README.md)
