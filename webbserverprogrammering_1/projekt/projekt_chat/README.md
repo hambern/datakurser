@@ -122,7 +122,7 @@ if (password_verify($password, $hashed_pwd)) {
 }
 ```
 
-Själva inloggningen kan du rent tekniskt lösa på lite olika sätt. Jag rekommenderar att du genererar en slumpmässig token, lagrar den i `user.token` och därefter lagrar samma token i `$_SESSION['token]`. Du kan då sedan kontrollera om `$_SESSION['token']` är satt och matcha den emot rätt användare.
+Själva inloggningen kan du rent tekniskt lösa på lite olika sätt. Jag rekommenderar att du genererar en slumpmässig token, lagrar den i `users.token` och därefter lagrar samma token i `$_SESSION['token]`. Du kan då sedan kontrollera om `$_SESSION['token']` är satt och matcha den emot rätt användare.
 
 ### Stäng anslutningen
 
