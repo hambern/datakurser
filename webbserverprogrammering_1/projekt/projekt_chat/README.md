@@ -11,6 +11,17 @@ Följande delar på W3Schools kan vara bra att kolla på i denna uppgift:
 
 Vi ska bygga en gemensam chat. Vi ska använda den gemensamma `student_chat`-databasen och bygga varsitt interface till den. Interfacet får se ut hur som helst. Rekommendationen är att du använder PHP, HTML och CSS, men vill du lösa uppgiften på annat sätt är det okej. Tanken är att vi alla ska bygga varsin chat, som alla jobbar emot samma databas och som alltså kommer att ha tillgång till samma användare och samma inlägg.
 
+## Instruktioner
+
+Du ska bygga en fungerande chat som uppfyller följande kriterier:
+
+1. Man ska kunna skapa en användare och logga in
+2. Man ska kunna läsa och skriva meddelanden
+3. Koden ska vara utförligt kommenterad
+4. I koden ska du skilja mellan presentation och logik
+5. Applikationen ska vara säker från SQL-injektioner
+6. Applikationen ska ha en säker användarhantering
+
 ## Tabeller
 
 De tabeller vi har att leka med är följande:
@@ -74,6 +85,18 @@ Utgå gärna ifrån filen [index.php](index.php) du hittar i denna mapp.
 ### Samla användarinformation
 
 Skapa ett formulär där du kan ange användarinformation. Exempelvis `first_name`, `last_name`, `email` och `password`.
+
+### Olika sidor
+
+Tänk på att du kan använda dig av olika sidor. Du kan t.ex. använda följande struktur:
+
+- `index.php` - Välkomnar användare och ber den att antingen logga in eller registrera sig via två olika formulär.
+- `register.php` - Kontrollerar och sparar formulärdatan och vidarebefordar användaren till `chat.php`.
+- `login.php` - Kontrollerar formulärdatan och vidarebefordar användaren till `chat.php`.
+- `chat.php` - Är själva chatten där man kan läsa och skriva meddelanden.
+- `logout.php` - Tar bort satt session och vidarebefordrar användaren till `index.php`
+
+Detta är bara ett förslag och du är fri att själv skapa ditt flöde.
 
 ### Hasha lösenordet
 Använd PHP-funktionen `password_hash()` för att säkert hasha lösenordet innan du sparar det i databasen.
@@ -140,3 +163,12 @@ Inlägg skapas på samma sätt som användare. Det enda kluriga du där måste t
 
 - Använd en säker metod för att hantera lösenord, som `password_hash()`. Lagra aldrig lösenord okrypterat i din databas.
 - Kontrollera alltid användarindata för att undvika SQL-injektioner. Detta får du dock lägga till själv med hjälp av W3Schools: <https://www.w3schools.com/php/php_mysql_prepared_statements.asp> eller [läs igenom denna lektion](../../lektioner/skapa_databaser/README.md)
+
+## Bedömningsmatris
+
+| E | C | A |
+|---|---|---|
+| Presentations­logiken i begränsad utsträckning är skild från applikationens övriga logik | Presentations­logiken är skild från applikationens övriga logik | |
+| Koden är i begränsad utsträckning läsbar och översiktligt kommenterad | Koden följer en given kodningsstandard och är översiktligt kommenterad | Koden följer en given kodningsstandard och är utförligt kommenterad |
+| Produkten är av tillfredsställande kvalitet och följer etablerad god praxis | | Produkten är av god kvalitet och följer etablerad god praxis |
+| Eleven identifierar ett fåtal sårbarheter eller hot och vidtar enkla åtgärder för att förhindra att produkten utnyttja | Eleven identifierar sårbarheter eller hot och vidtar åtgärder för att förhindra att produkten utnyttjas | Eleven identifierar flera sårbarheter eller hot och vidtar avancerade åtgärder för att förhindra att produkten utnyttjas |
