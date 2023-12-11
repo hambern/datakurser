@@ -163,6 +163,7 @@ Inlägg skapas på samma sätt som användare. Det enda kluriga du där måste t
 
 - Använd en säker metod för att hantera lösenord, som `password_hash()`. Lagra aldrig lösenord okrypterat i din databas.
 - Kontrollera alltid användarindata för att undvika SQL-injektioner. Detta får du dock lägga till själv med hjälp av W3Schools: <https://www.w3schools.com/php/php_mysql_prepared_statements.asp> eller [läs igenom denna lektion](../../lektioner/skapa_databaser/README.md)
+- Försök följa kodstandarden [PSR-2](https://www.php-fig.org/psr/psr-2/) när du skriver din PHP. Det är en standardmodell för hur PHP-dokument bör utformas.
 
 ## Bedömningsmatris
 
