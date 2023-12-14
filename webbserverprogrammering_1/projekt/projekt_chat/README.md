@@ -110,7 +110,7 @@ $hashed_pwd = password_hash($_POST['password'], PASSWORD_BCRYPT);
 Innan du lagrar en ny användare måste du kontrollera så att e-postadressen (som vi använder vid inloggning) inte redan finns i databasen. Det gör du genom en select-fråga och metoden `num_rows`.
 
 ~~~php
-$sql = "SELECT * FROM users WHERE email = ' . $_POST['email'] . '";
+$sql = "SELECT * FROM users WHERE email = '" . $_POST['email'] . "'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
