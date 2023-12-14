@@ -26,7 +26,7 @@ Du ska bygga en fungerande chat som uppfyller följande kriterier:
 
 De tabeller vi har att leka med är följande:
 
-~~~
+```
 mysql> DESC users;
 +------------+--------------+------+-----+-------------------+-------------------+
 | Field      | Type         | Null | Key | Default           | Extra             |
@@ -42,11 +42,11 @@ mysql> DESC users;
 | token_at   | datetime     | YES  |     | NULL              |                   |
 +------------+--------------+------+-----+-------------------+-------------------+
 9 rows in set (0.00 sec)
-~~~
+```
 
 och
 
-~~~
+```
 mysql> DESC posts;
 +------------+----------+------+-----+-------------------+-------------------+
 | Field      | Type     | Null | Key | Default           | Extra             |
@@ -57,7 +57,7 @@ mysql> DESC posts;
 | created_at | datetime | NO   |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
 +------------+----------+------+-----+-------------------+-------------------+
 4 rows in set (0.00 sec)
-~~~
+```
 
 ## Användare
 
@@ -109,14 +109,14 @@ $hashed_pwd = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
 Innan du lagrar en ny användare måste du kontrollera så att e-postadressen (som vi använder vid inloggning) inte redan finns i databasen. Det gör du genom en select-fråga och metoden `num_rows`.
 
-~~~php
+```php
 $sql = "SELECT * FROM users WHERE email = '" . $_POST['email'] . "'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     echo "Det finns redan en användare med den e-postadressen";
 }
-~~~
+```
 
 ### Lägg till en användare i databasen
 
@@ -145,7 +145,7 @@ if (password_verify($password, $hashed_pwd)) {
 }
 ```
 
-Själva inloggningen kan du rent tekniskt lösa på lite olika sätt. Jag rekommenderar att du genererar en slumpmässig token, lagrar den i `users.token` och därefter lagrar samma token i `$_SESSION['token]`. Du kan då sedan kontrollera om `$_SESSION['token']` är satt och matcha den emot rätt användare.
+Själva inloggningen kan du rent tekniskt lösa på lite olika sätt. Jag rekommenderar att du genererar en slumpmässig token, skicka exempelvis in nuvarande tid till `password_hash()`, lagrar den i `users.token` och därefter lagrar samma token i `$_SESSION['token]`. Du kan då sedan kontrollera om `$_SESSION['token']` är satt och matcha den emot rätt användare. För en lite lägre säkerhetsnivå kan du rent av lagra användar-id i `$_SESSION['user_id']` eller liknande.
 
 ### Stäng anslutningen
 
