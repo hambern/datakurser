@@ -46,3 +46,15 @@ Internetmuseum grundades i december 2014 och blev i juni 2016 invalt i Sveriges 
 
 - Jacob Berggren (2020) <https://student.oedu.se/~jb0015/Programering/F-Textfiler/U6-Fragesport/fragesport.php>
 - Henrik Hellström (2021) <https://student.oedu.se/~hh0022/Webbutveckling/Fr%c3%a5gesport/>
+
+## Bedömning
+
+| Kriterium              | E | C | A |
+|------------------------|---|---|---|
+| Responsivitet          |   | Sidan ser bra ut även vid större och mindre textstorlekar och är tydlig och lättillgänglig | Sidan ser bra ut även i mobilvy och är tydlig och lättillgänglig |
+| Validering             |   | Sidan validerar till övervägande del CSS och HTML korrekt | Sidan validerar CSS och HTML korrekt utan varningar |
+| Element och selektorer| Koden använder fungerande element och selektorer | Koden använder lämpliga element och selektorer | Koden använder elementen och selektorerna på ett effektivt sätt |
+| Semantik        | | Koden använder sig av semantisk HTML | Koden använder sig av semantisk HTML på ett utmärkt sätt |
+| Formulär                | Sidan har ett fungerande formulär | Formuläret använder lämpliga fält-typer | |
+| Indentering            | Koden är indenterad och lättläst | Koden är väl indenterad och lättläst | |
+| Kommentarer            | Koden innehåller inga kommentarer | Koden innehåller få kommentarer som ger en viss förståelse | Koden innehåller förtydligande kommentarer |
