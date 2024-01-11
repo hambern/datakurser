@@ -158,7 +158,11 @@ $conn->close();
 
 ### Skicka vidare användaren
 
-Ibland kan man behöva skicka vidare användaren till en annan sida. Detta gör du med php genom `header('Location: chat.php');`.
+Ibland kan man behöva skicka vidare användaren till en annan sida. Detta gör du med php genom...
+
+```php
+header('Location: chat.php');
+```
 
 ## Inlägg
 
