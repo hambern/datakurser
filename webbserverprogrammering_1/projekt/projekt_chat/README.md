@@ -95,6 +95,7 @@ Tänk på att du kan använda dig av olika sidor. Du kan t.ex. använda följand
 - `login.php` - Kontrollerar formulärdatan och vidarebefordar användaren till `chat.php`.
 - `chat.php` - Är själva chatten där man kan läsa och skriva meddelanden.
 - `logout.php` - Tar bort satt session och vidarebefordrar användaren till `index.php`
+- `connection.php` - Du kan placera databasanslutningen i ett php-dokument du sedan kan inkludera i dina övriga sidor med `include_once 'connection.php';`
 
 Detta är bara ett förslag och du är fri att själv skapa ditt flöde.
 
@@ -154,6 +155,10 @@ Stäng databasanslutningen när du är klar.
 ```php
 $conn->close();
 ```
+
+### Skicka vidare användaren
+
+Ibland kan man behöva skicka vidare användaren till en annan sida. Detta gör du med php genom `header('Location: chat.php');`.
 
 ## Inlägg
 
