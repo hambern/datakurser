@@ -11,19 +11,23 @@
 - Kommunikation med handledaren samt kontinuerlig dokumentation av arbetets gång sker genom…
 
 ## Teknisk specifikation
+
+### JAVA-delen
 - Lista use cases
 - Hur ska GUI se ut? Gör skisser över utseendet.
 - Databasdiagram (ev behövs vissa förklaringar/förtydliganden).
 - UML Klassdiagram för JAVA-programmet. (Lägger ni in i dokumentet i slutet av projektet)
 - Dataflöde och arkitekturdiagram.
-- Dokumentation av REST-API:et. Ex på dokumentation av en endpoint:
 
-`/users/login` Skickar login och password för att få en token som kan användas för alla endpoints som kräver detta.
-- Skicka
-    - `email`
-    - `password`
-- Svar
-    - `token`
+### API-delen
+Lista och förklara samtliga end-points. Exempelvis:
+
+- `/users/login`: Skickar login och password för att få en token som kan användas för alla endpoints som kräver inloggning.
+    - Skicka
+        - `email`
+        - `password`
+    - Svar
+        - `token`
 
 ## Tidsplan
 - Gör en tidsplan utifrån use cases och annat som måste med i planen.
