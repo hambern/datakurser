@@ -19,21 +19,12 @@ I denna uppgift ska du få skapa, lägga in, radera och hämta ut information ur
 - <https://www.w3schools.com/php/php_mysql_delete.asp>
 - <https://www.w3schools.com/php/php_mysql_select_limit.asp>
 
-## Visual Studio Code
-
-Du får gärna fortsätta jobba i terminalen även här. Men till projekt av den här storleken underlättar det onekligen att använda sig av en IDE (Integrated Development Environment). Du är vid det här laget säkert bekväm att arbeta i PhpStorm, och det kan du göra även med denna uppgift. Men ge gärna Visual Studio Code en chans i denna uppgift:
-
-- Ladda ner programmet här: <https://code.visualstudio.com/>
-- Installera därefter extension-paketet "Remote - SSH": <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
-
-Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator.
-
 ## Instruktioner
 
 Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. Använd följande plugins till Chrome för att underlätta arbetet:
 
 - [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh) för att formattera json-koden på ett läsbart sätt
-- [Talend API Tester](https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm) för att testa ditt API
+- [Talend API Tester](https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm) för att testa ditt API. För att lära dig hur Talend fungerar kan du använda dig av json-filen under denna mapp. Importera den till Talend och försök lista ut hur den fungerar.
 
 1. Skapa en tabell via phpMyAdmin i din egen databas som heter `rik_members`
 2. Den ska förrutom en `id`-kolumn med `auto increment primary key` även lagra följande information:
@@ -62,7 +53,8 @@ Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. An
     - `$_POST['limit'] = 3` - endast visa tre ledamöter
 6. Försök gärna att få ditt skript att - om personen redan finns i databasen - uppdatera informationen istället för att först radera den
 7. Kolla så att din kod följer dessa principer <https://blog.unitybuddy.com/top-10-coding-principles-every-developer-must-know>
-8. Lek gärna vidare med ditt api genom att lägga till ytterligare columner i din databas och ytterligare sätt för användarna av ditt API att påverka hämtningen av data
+8. Skapa gärna en egen tabell för partierna `rik_parties` och använd `party_id` i `rik_members` för att länka rätt ledamot till rätt parti.
+9. Lek gärna vidare med ditt api genom att lägga till ytterligare columner i din databas och ytterligare sätt för användarna av ditt API att påverka hämtningen av data
 
 ## OpenAI ChatGPT
 
