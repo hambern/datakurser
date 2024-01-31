@@ -15,7 +15,7 @@ if (isset($_GET['do']) && $_GET['do'] == 'update')
 
 // Hämta data om ledamöterna från tabellen rik_members. Använd SELECT
 
-// Visa informationen på sidan som HTML
+// Visa informationen på sidan som JSON
 
 header('Content-Type: application/json; charset=utf-8');
 echo json_encode(get_riksdagen_members());

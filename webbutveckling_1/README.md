@@ -18,8 +18,7 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 12. [projekt_fragesport](projekt/projekt_fragesport)
 13. [projekt_gastbok](projekt/projekt_gastbok)
 14. [projekt_blogg](projekt/projekt_blogg)
-15. [projekt_riksdagen](projekt/projekt_riksdagen)
-16. [projekt_slut](projekt/projekt_slut)
+15. [projekt_slut](projekt/projekt_slut)
 
 Det finns också ett antal [extrauppgifter](extrauppgifter) för dig som vill göra något annat en stund.
 
