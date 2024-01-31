@@ -48,7 +48,7 @@ Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. An
 
 ## Extra utmaningar
 
-1. Gör det möjligt för din besökare att via post-anrop (för att skicka post-anrop kan du använda Talend API Tester):
+1. Gör det möjligt för din besökare att via get- eller post-anrop (för att skicka post-anrop kan du använda Talend API Tester):
     - `$_POST['party'] = S` - visa endast S-politiker
     - `$_POST['gender'] = kvinna` - visa endast kvinnor
     - `$_POST['name'] = Åke` - visa endast ledamöter vars för- eller efternamn innehåller "Åke"
