@@ -25,7 +25,7 @@ I detta exempel har tabellen `users` tre kolumner: `id`, `name` och `email`. Var
 #### Kolumner
 Kolumner i en tabell representerar de olika attributen hos entiteten. Varje kolumn har en specifik datatyp som definierar vilken sorts data den kan innehålla, som textsträngar, heltal, datum/tid, etc.
 
-- **`id`**: Vanligtvis en unik identifierare för varje rad i tabellen. Detta är ofta en primärnyckel som unikt identifierar varje post.
+- **`id`**: Vanligtvis en unik identifierare för varje rad i tabellen. Detta är i regel en primärnyckel som unikt identifierar varje post. Detta gör du genom att aktivera `auto_increment` på id-fältet.
 - **`name`**: En textsträng som representerar användarens namn.
 - **`email`**: En textsträng som lagrar användarens e-postadress.
 

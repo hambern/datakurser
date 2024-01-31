@@ -90,11 +90,11 @@ Skapa ett formulär där du kan ange användarinformation. Exempelvis `first_nam
 
 Tänk på att du kan använda dig av olika sidor. Du kan t.ex. använda följande struktur:
 
-- `index.php` - Välkomnar användare och ber den att antingen logga in eller registrera sig via två olika formulär.
-- `register.php` - Kontrollerar och sparar formulärdatan och vidarebefordar användaren till `chat.php`.
-- `login.php` - Kontrollerar formulärdatan och vidarebefordar användaren till `chat.php`.
+- `index.php` - Välkomnar användare och ber den att antingen logga in eller registrera sig. Kontrollerar formulärdatan och vidarebefordar användaren till `chat.php` vid inloggning.
+- `register.php` - Ett registreringsformulär för en ny användare. Kontrollerar och sparar formulärdatan och vidarebefordar användaren till `chat.php`.
 - `chat.php` - Är själva chatten där man kan läsa och skriva meddelanden.
-- `logout.php` - Tar bort satt session och vidarebefordrar användaren till `index.php`
+- `logout.php` - Tar bort satt användarsession och vidarebefordrar användaren till `index.php`
+- `connection.php` - Du kan placera databasanslutningen i ett php-dokument du sedan kan inkludera i dina övriga sidor med `include_once 'connection.php';`
 
 Detta är bara ett förslag och du är fri att själv skapa ditt flöde.
 
@@ -153,6 +153,14 @@ Stäng databasanslutningen när du är klar.
 
 ```php
 $conn->close();
+```
+
+### Skicka vidare användaren
+
+Ibland kan man behöva skicka vidare användaren till en annan sida. Detta gör du med php genom...
+
+```php
+header('Location: chat.php');
 ```
 
 ## Inlägg
