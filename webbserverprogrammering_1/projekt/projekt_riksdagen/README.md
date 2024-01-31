@@ -55,7 +55,7 @@ Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. An
     - `$_POST['sort'] = born` - sortera resultaten utifrån födelseår
     - `$_POST['limit'] = 3` - endast visa tre ledamöter
 1. Försök gärna att få ditt skript att - om personen redan finns i databasen - uppdatera informationen istället för att först radera den
-1. Kolla så att din kod följer dessa principer <https://blog.unitybuddy.com/top-10-coding-principles-every-developer-must-know>
+1. Kolla så att din kod följer dessa principer <https://dev.to/unitybuddy/top-10-coding-principles-every-developer-must-know-2gk4>
 1. Skapa gärna en egen tabell för valkretsarna `rik_states` och använd `state_id` i `rik_members` för att länka rätt ledamot till rätt valkrets. Det är en bättre databaslösning som bättre följer rekommendationerna i [denna lektion](../../lektioner/skapa_databaser/README.md). Gör sedan en `JOIN` i din sql-fråga för att sätta ihop de två tabellerna i ditt svar.
 1. Lek gärna vidare med ditt api genom att lägga till ytterligare columner i din databas och ytterligare sätt för användarna av ditt API att påverka hämtningen av data.
 
