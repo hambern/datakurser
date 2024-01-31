@@ -45,16 +45,19 @@ Din uppgift är att skapa ett eget API som spottar ur sig riksdagsledamöter. An
     - Hämta ut informationen från databasen. Använd `SELECT`
     - Visa den på hemsidan i json-format
 5. Om du inte lägger till `?do=update` ska du _enbart_ visa din information du har i din databas. Inget anrop ska då göras till riksdagens API.
-6. Gör det möjligt för din besökare att via post-anrop (för att skicka post-anrop kan du använda Talend API Tester):
+
+## Extra utmaningar
+
+1. Gör det möjligt för din besökare att via post-anrop (för att skicka post-anrop kan du använda Talend API Tester):
     - `$_POST['party'] = S` - visa endast S-politiker
     - `$_POST['gender'] = kvinna` - visa endast kvinnor
     - `$_POST['name'] = Åke` - visa endast ledamöter vars för- eller efternamn innehåller "Åke"
     - `$_POST['sort'] = born` - sortera resultaten utifrån födelseår
     - `$_POST['limit'] = 3` - endast visa tre ledamöter
-6. Försök gärna att få ditt skript att - om personen redan finns i databasen - uppdatera informationen istället för att först radera den
-7. Kolla så att din kod följer dessa principer <https://blog.unitybuddy.com/top-10-coding-principles-every-developer-must-know>
-8. Skapa gärna en egen tabell för valkretsarna `rik_states` och använd `state_id` i `rik_members` för att länka rätt ledamot till rätt valkrets. Det är en bättre databaslösning som bättre följer rekommendationerna i [denna lektion](../../lektioner/skapa_databaser/README.md). Gör sedan en `JOIN` i din sql-fråga för att sätta ihop de två tabellerna i ditt svar.
-9. Lek gärna vidare med ditt api genom att lägga till ytterligare columner i din databas och ytterligare sätt för användarna av ditt API att påverka hämtningen av data
+1. Försök gärna att få ditt skript att - om personen redan finns i databasen - uppdatera informationen istället för att först radera den
+1. Kolla så att din kod följer dessa principer <https://blog.unitybuddy.com/top-10-coding-principles-every-developer-must-know>
+1. Skapa gärna en egen tabell för valkretsarna `rik_states` och använd `state_id` i `rik_members` för att länka rätt ledamot till rätt valkrets. Det är en bättre databaslösning som bättre följer rekommendationerna i [denna lektion](../../lektioner/skapa_databaser/README.md). Gör sedan en `JOIN` i din sql-fråga för att sätta ihop de två tabellerna i ditt svar.
+1. Lek gärna vidare med ditt api genom att lägga till ytterligare columner i din databas och ytterligare sätt för användarna av ditt API att påverka hämtningen av data.
 
 ## OpenAI ChatGPT
 
