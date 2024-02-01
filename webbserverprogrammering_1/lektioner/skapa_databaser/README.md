@@ -1,30 +1,30 @@
-# Databastabeller: En Grundläggande Guide
+# Databastabeller: En grundläggande guide
 
 Databastabeller är fundamentala för att strukturera och lagra data i relationella databaser. De består av rader och kolumner och används för att representera och organisera information effektivt. I detta material utforskar vi grunderna i databastabeller och deras komponenter.
 
-## Grundläggande Komponenter i en Databastabell
+## Grundläggande komponenter i en databastabell
 
 ### Tabeller
 
 - **Definition:** En tabell är ett tvådimensionellt rutnät bestående av rader och kolumner.
 - **Användning:** Varje tabell representerar vanligtvis en sorts entitet, såsom användare, kommentarer, filmer, eller highscores.
 
-### Rader och Poster
+### Rader och poster
 
 - **Rad/Post:** Varje rad i tabellen motsvarar en unik entitet eller ett objekt (t.ex. en person, en kommentar). Dessa rader kallas ofta för "poster".
 - **Attribut:** Varje post innehåller information i form av attribut, vilka är dataelement i de olika kolumnerna.
 
-### Kolumner och Attribut
+### Kolumner och attribut
 
 - **Kolumn/Attribut:** Varje kolumn i en databastabell representerar en specifik egenskap eller ett attribut hos entiteten (t.ex. "username", "password").
 - **Celler/Värden:** Där en rad och en kolumn möts ligger en cell, som innehåller det specifika värdet för ett attribut hos en entitet.
 
-### Nycklar i Databastabeller
+### Nycklar i databastabeller
 
 - **Primärnyckel:** En kolumn eller en kombination av kolumner som unikt identifierar varje post i tabellen. Inga två rader får ha samma primärnyckel och den får inte vara tom.
 - **Kandidatnyckel:** En potentiell primärnyckel. I ditt exempel med användare kan kandidatnycklar vara "id", "username", "id+username", etc.
-- **Alternativ Nyckel:** Alla kandidatnycklar som inte är primärnyckeln.
-- **Främmande Nyckel:** Används för att skapa relationer mellan tabeller. Det är en kolumn som refererar till primärnyckeln i en annan tabell.
+- **Alternativ nyckel:** Alla kandidatnycklar som inte är primärnyckeln.
+- **Främmande nyckel:** Används för att skapa relationer mellan tabeller. Det är en kolumn som refererar till primärnyckeln i en annan tabell.
 
 För att förbättra sektionen om datatyper kan vi lägga till mer detaljer och exempel för att göra informationen mer omfattande och tydlig. Här är en förbättrad version av avsnittet:
 
@@ -54,14 +54,18 @@ Vid definiering av kolumner i en databastabell är det viktigt att noggrant väl
 
 Utöver dessa finns det flera andra datatyper som **DECIMAL** för finansiella beräkningar, **BLOB** för att lagra binär data som bilder eller dokument, och **ENUM** för att definiera en uppsättning fördefinierade värden. Valet av rätt datatyp är kritiskt för databasens prestanda och integritet.
 
-## Relationer Mellan Tabeller
+## Relationer mellan tabeller
 
-- **1:N-Relationer:** Enklare relationer där en entitet i en tabell kan relatera till flera entiteter i en annan tabell. Exempel: en användare som skriver flera kommentarer.
-- **N:M-Relationer:** Komplexa relationer där entiteter i en tabell kan ha relationer till flera entiteter i en annan tabell och vice versa. Detta kräver en mellantabell för att hantera relationerna.
+Det finns i huvudsak två olika former av relationer i en relationsdatabas.
 
-## Exempel på Tabellstruktur
+- **1:N-relationer (en till många):** Enkel relationer där en entitet i en tabell kan relatera till flera entiteter i en annan tabell. Exempel: en användare som skriver flera kommentarer.
+- **N:M-relationer (många till många):** Komplexa relationer där entiteter i en tabell kan ha relationer till flera entiteter i en annan tabell och vice versa. Detta kräver en mellantabell för att hantera relationerna.
 
-### Användartabell
+## Exempel på tabellstrukturer
+
+### 1:N-relationer
+
+#### Användartabell
 
 | id🔑 | username | password |
 |------|----------|----------|
@@ -69,7 +73,7 @@ Utöver dessa finns det flera andra datatyper som **DECIMAL** för finansiella b
 | 2    | karim    | hello1   |
 | 3    | liv      | PenguinHotdogBonanza |
 
-### Kommentartabell (med främmande nyckel)
+#### Kommentartabell (med främmande nyckel)
 
 | id🔑 | comment      | user_id |
 |------|--------------|---------|
@@ -92,7 +96,15 @@ erDiagram
     }
 ~~~
 
-### Mellantabell för N:M-Relationer (Användare och Klubbar)
+### N:M-relationer
+
+#### Användartabell
+
+| id🔑 | username |
+|------|----------|
+| 1    | micke    |
+| 2    | karim    |
+| 3    | liv      |
 
 #### Klubbtabell
 
