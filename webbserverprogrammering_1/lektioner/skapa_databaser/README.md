@@ -171,22 +171,31 @@ erDiagram
     }
 ~~~
 
-## Fördelar med relationella databaser
+## Indexering
 
-Det finns flera skäl till att man konstruerar databaser på detta sätt, i tabeller, rader, kolumner, och nycklar:
+- **Vad är indexering?** Indexering i en databas är processen att skapa en sekundär datastruktur (index) som hjälper till att snabba upp datatillgången. Det är jämförbart med indexet i en bok som leder dig snabbt till den sida du söker.
+- **Hur fungerar det?** När ett index skapas på en kolumn eller flera kolumner, kan databasen använda detta index för att snabbt hitta rader med specifika värden istället för att söka igenom varje rad i tabellen.
 
-1. **Strukturerad organisation:** Ger en tydlig och systematisk struktur för data, vilket gör det enklare att hantera och förstå.
-2. **Effektiv datahantering:** Möjliggör enklare lagring, återhämtning och bearbetning av data.
-3. **Minimerad duplicering:** Hjälper till att undvika redundant data genom att använda referenser istället för att duplicera information.
-4. **Dataintegritet:** Säkerställer att varje post är unik och att relationer mellan data är korrekta och konsekventa.
-5. **Flexibilitet och skalbarhet:** Underlättar anpassningar och skalning för att hantera ökade datamängder och mer komplexa datastrukturer.
-6. **Förbättrad query-effektivitet:** Gör det möjligt att utföra komplexa queries över flera tabeller effektivt.
-7. **Normalisering:** Minskar redundans och förbättrar integritet genom att dela upp data i separata tabeller.
-8. **Enklare underhåll och uppdateringar:** Förenklar processen att uppdatera och underhålla databasen.
-9. **Ökad säkerhet:** Gör det möjligt att tillämpa specifika säkerhetsprotokoll och åtkomstkontroller på olika delar av databasen.
-10. **Hantering av komplexa relationer:** Effektivt hanterar komplexa relationer mellan olika entiteter, särskilt i N:M-relationer.
+### Typer av Index
 
-Denna strukturerade och metodiska approach till databaskonstruktion är avgörande för att skapa effektiva, säkra och skalbara databaslösningar som kan stödja en mängd olika applikationer och affärsbehov.
+1. **Primärnyckelindex:** Skapas automatiskt när en primärnyckel definieras. Den säkerställer att varje rad kan identifieras unikt och förbättrar sökhastigheten.
+2. **Sekundärt index:** Skapas på kolumner som inte är primärnycklar för att optimera sökningar som baseras på dessa kolumner.
+
+### Användning och Prestandapåverkan
+
+- **När ska index användas?** Indexering är mest effektiv för stora tabeller och för kolumner som ofta används i sökningar (WHERE-klasuler), JOINs, och sorteringar (ORDER BY).
+- **Förbättrad läshastighet:** Ett välstrukturerat index kan dramatiskt minska tiden för att hitta data.
+- **Påverkan på skrivoperationer:** Indexering kan påverka skrivoperationer negativt eftersom varje gång en rad läggs till, uppdateras eller tas bort, måste indexet uppdateras.
+
+### Bästa Praxis för Indexering
+
+- **Analysera och välj rätt kolumner:** Använd verktyg som EXPLAIN för att identifiera vilka kolumner som bäst bör indexeras.
+- **Undvik överindexering:** Skapa inte för många index, eftersom det kan minska skrivprestanda.
+- **Kontinuerlig översyn:** Databasmönster kan förändras över tid, så det är viktigt att regelbundet utvärdera och justera indexeringen.
+
+### Sammanfattning
+
+Indexering är en kritisk komponent för effektiv databashantering. Rätt användning av index kan leda till betydande förbättringar i databasens sökprestanda, särskilt i stora databaser, men det är viktigt att balansera detta med den potentiella påverkan på skrivoperationer.
 
 # Normalisering i relationsdatabaser
 
