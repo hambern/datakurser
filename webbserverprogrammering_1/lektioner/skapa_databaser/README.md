@@ -144,28 +144,28 @@ erDiagram
 
 Det finns flera skäl till att man konstruerar databaser på detta sätt, i tabeller, rader, kolumner, och nycklar:
 
-1. **Strukturerad Organisation:** Ger en tydlig och systematisk struktur för data, vilket gör det enklare att hantera och förstå.
-2. **Effektiv Datahantering:** Möjliggör enklare lagring, återhämtning och bearbetning av data.
-3. **Minimerad Duplicering:** Hjälper till att undvika redundant data genom att använda referenser istället för att duplicera information.
+1. **Strukturerad organisation:** Ger en tydlig och systematisk struktur för data, vilket gör det enklare att hantera och förstå.
+2. **Effektiv datahantering:** Möjliggör enklare lagring, återhämtning och bearbetning av data.
+3. **Minimerad duplicering:** Hjälper till att undvika redundant data genom att använda referenser istället för att duplicera information.
 4. **Dataintegritet:** Säkerställer att varje post är unik och att relationer mellan data är korrekta och konsekventa.
-5. **Flexibilitet och Skalbarhet:** Underlättar anpassningar och skalning för att hantera ökade datamängder och mer komplexa datastrukturer.
-6. **Förbättrad Query-Effektivitet:** Gör det möjligt att utföra komplexa queries över flera tabeller effektivt.
+5. **Flexibilitet och skalbarhet:** Underlättar anpassningar och skalning för att hantera ökade datamängder och mer komplexa datastrukturer.
+6. **Förbättrad query-effektivitet:** Gör det möjligt att utföra komplexa queries över flera tabeller effektivt.
 7. **Normalisering:** Minskar redundans och förbättrar integritet genom att dela upp data i separata tabeller.
-8. **Enklare Underhåll och Uppdateringar:** Förenklar processen att uppdatera och underhålla databasen.
-9. **Ökad Säkerhet:** Gör det möjligt att tillämpa specifika säkerhetsprotokoll och åtkomstkontroller på olika delar av databasen.
-10. **Hantering av Komplexa Relationer:** Effektivt hanterar komplexa relationer mellan olika entiteter, särskilt i N:M-relationer.
+8. **Enklare underhåll och uppdateringar:** Förenklar processen att uppdatera och underhålla databasen.
+9. **Ökad säkerhet:** Gör det möjligt att tillämpa specifika säkerhetsprotokoll och åtkomstkontroller på olika delar av databasen.
+10. **Hantering av komplexa relationer:** Effektivt hanterar komplexa relationer mellan olika entiteter, särskilt i N:M-relationer.
 
 Denna strukturerade och metodiska approach till databaskonstruktion är avgörande för att skapa effektiva, säkra och skalbara databaslösningar som kan stödja en mängd olika applikationer och affärsbehov.
 
-# Normalisering i Relationsdatabaser
+# Normalisering i relationsdatabaser
 
 Normalisering är en kritisk process i designen av relationsdatabaser. Detta undervisningsmaterial syftar till att förklara normaliseringens koncept och dess viktiga regler, kända som normalformer. Genom att följa dessa principer, kan vi effektivisera databaser, undvika redundant data och underlätta framtida utbyggnationer.
 
-## Vad är Normalisering?
+## Vad är normalisering?
 
 Normalisering innebär att justera en databasstruktur så att den följer specifika regler för att öka dess effektivitet och minska redundant data. Dessa regler delas upp i så kallade *normalformer*.
 
-## Varför Normalisera?
+## Varför normalisera?
 
 Syftet med normalisering är att:
 
@@ -173,7 +173,7 @@ Syftet med normalisering är att:
 - Göra databasutvidgningar enklare och mer hanterbara.
 - Säkerställa databasens integritet och konsistens.
 
-## Första Normalformen (1NF)
+## Första normalformen (1NF)
 
 1NF fokuserar på att varje tabell ska ha en unik identitet och att data ska vara atomisk.
 
@@ -196,11 +196,11 @@ För att uppfylla 1NF, omstruktureras tabellen så att varje hobby lagras i en s
 | 2    | bob      | Löpning |
 | 2    | bob      | Cykling |
 
-## Andra Normalformen (2NF)
+## Andra normalformen (2NF)
 
 2NF bygger på 1NF och kräver att alla icke-nyckelattribut är fullständigt beroende av hela primärnyckeln.
 
-- **Fullständigt Beroende:** Alla attribut måste vara beroende av hela primärnyckeln i tabeller med sammansatta primärnycklar.
+- **Fullständigt beroende:** Alla attribut måste vara beroende av hela primärnyckeln i tabeller med sammansatta primärnycklar.
 
 **Exempel på 2NF:**
 
@@ -235,11 +235,11 @@ erDiagram
     }
 ~~~
 
-## Tredje Normalformen (3NF)
+## Tredje normalformen (3NF)
 
 3NF bygger vidare på 2NF och kräver att inga icke-nyckelattribut är beroende av andra icke-nyckelattribut.
 
-- **Transitivt Beroende:** Inga icke-nyckelattribut ska vara beroende av andra icke-nyckelattribut.
+- **Transitivt beroende:** Inga icke-nyckelattribut ska vara beroende av andra icke-nyckelattribut.
 
 **Exempel på 3NF:**
 
