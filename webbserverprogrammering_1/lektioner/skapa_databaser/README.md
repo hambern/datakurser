@@ -155,15 +155,15 @@ erDiagram
 
 ~~~mermaid
 erDiagram
-    USERS ||--o{ USER_CLUBS : member_of
     CLUBS ||--o{ USER_CLUBS : includes
-    USERS {
-        int id PK "Primary Key"
-        string username
-    }
+    USERS ||--o{ USER_CLUBS : member_of
     CLUBS {
         int id PK "Primary Key"
         string club_name
+    }
+    USERS {
+        int id PK "Primary Key"
+        string username
     }
     CLUB_USER {
         int club_id FK "Foreign Key to CLUBS"
