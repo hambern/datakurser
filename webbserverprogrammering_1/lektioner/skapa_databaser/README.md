@@ -50,6 +50,8 @@ Vid definiering av kolumner i en databastabell är det viktigt att noggrant väl
 
 Utöver dessa finns det flera andra datatyper som **DECIMAL** för finansiella beräkningar, **BLOB** för att lagra binär data som bilder eller dokument, och **ENUM** för att definiera en uppsättning fördefinierade värden. Valet av rätt datatyp är kritiskt för databasens prestanda och integritet.
 
+## Namngivning
+
 Att namnge tabeller, kolumner och andra komponenter i en databas är en viktig del av databasdesign och det finns flera etablerade bästa praxis för detta. Här är en detaljerad genomgång av några grundläggande principer för namngivning:
 
 ### Namngivning av tabeller
