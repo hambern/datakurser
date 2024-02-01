@@ -165,7 +165,7 @@ erDiagram
         int id PK "Primary Key"
         string club_name
     }
-    USER_CLUBS {
+    CLUB_USER {
         int user_id FK "Foreign Key to USERS"
         int club_id FK "Foreign Key to CLUBS"
     }
@@ -176,18 +176,18 @@ erDiagram
 - **Vad är indexering?** Indexering i en databas är processen att skapa en sekundär datastruktur (index) som hjälper till att snabba upp datatillgången. Det är jämförbart med indexet i en bok som leder dig snabbt till den sida du söker.
 - **Hur fungerar det?** När ett index skapas på en kolumn eller flera kolumner, kan databasen använda detta index för att snabbt hitta rader med specifika värden istället för att söka igenom varje rad i tabellen.
 
-### Typer av Index
+### Typer av index
 
 1. **Primärnyckelindex:** Skapas automatiskt när en primärnyckel definieras. Den säkerställer att varje rad kan identifieras unikt och förbättrar sökhastigheten.
 2. **Sekundärt index:** Skapas på kolumner som inte är primärnycklar för att optimera sökningar som baseras på dessa kolumner.
 
-### Användning och Prestandapåverkan
+### Användning och prestandapåverkan
 
 - **När ska index användas?** Indexering är mest effektiv för stora tabeller och för kolumner som ofta används i sökningar (WHERE-klasuler), JOINs, och sorteringar (ORDER BY).
 - **Förbättrad läshastighet:** Ett välstrukturerat index kan dramatiskt minska tiden för att hitta data.
 - **Påverkan på skrivoperationer:** Indexering kan påverka skrivoperationer negativt eftersom varje gång en rad läggs till, uppdateras eller tas bort, måste indexet uppdateras.
 
-### Bästa Praxis för Indexering
+### Bästa praxis för indexering
 
 - **Analysera och välj rätt kolumner:** Använd verktyg som EXPLAIN för att identifiera vilka kolumner som bäst bör indexeras.
 - **Undvik överindexering:** Skapa inte för många index, eftersom det kan minska skrivprestanda.
