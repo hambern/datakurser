@@ -155,8 +155,8 @@ erDiagram
 
 ~~~mermaid
 erDiagram
-    CLUBS ||--o{ USER_CLUBS : includes
-    USERS ||--o{ USER_CLUBS : member_of
+    CLUBS ||--o{ CLUB_USER : includes
+    USERS ||--o{ CLUB_USER : member_of
     CLUBS {
         int id PK "Primary Key"
         string club_name
