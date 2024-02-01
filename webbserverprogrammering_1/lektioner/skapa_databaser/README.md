@@ -26,10 +26,6 @@ Databastabeller är fundamentala för att strukturera och lagra data i relatione
 - **Alternativ nyckel:** Alla kandidatnycklar som inte är primärnyckeln.
 - **Främmande nyckel:** Används för att skapa relationer mellan tabeller. Det är en kolumn som refererar till primärnyckeln i en annan tabell.
 
-För att förbättra sektionen om datatyper kan vi lägga till mer detaljer och exempel för att göra informationen mer omfattande och tydlig. Här är en förbättrad version av avsnittet:
-
----
-
 ### Datatyper
 
 Vid definiering av kolumner i en databastabell är det viktigt att noggrant välja lämpliga datatyper som matchar den typ av data som kommer att lagras. Rätt datatyp säkerställer inte bara korrekt datarepresentation men också effektivitet i datalagring och bearbetning. Här är några av de vanligaste datatyperna:
@@ -53,6 +49,37 @@ Vid definiering av kolumner i en databastabell är det viktigt att noggrant väl
   - Exempel: `price DOUBLE`
 
 Utöver dessa finns det flera andra datatyper som **DECIMAL** för finansiella beräkningar, **BLOB** för att lagra binär data som bilder eller dokument, och **ENUM** för att definiera en uppsättning fördefinierade värden. Valet av rätt datatyp är kritiskt för databasens prestanda och integritet.
+
+Att namnge tabeller, kolumner och andra komponenter i en databas är en viktig del av databasdesign och det finns flera etablerade bästa praxis för detta. Här är en detaljerad genomgång av några grundläggande principer för namngivning:
+
+### Namngivning av tabeller
+
+- **Pluralform:** Tabellnamn bör vanligtvis vara i pluralform för att indikera att de innehåller samlingar av entiteter. Till exempel: `users`, `orders`, `products`.
+  
+### Namngivning av kolumner
+
+- **Singularform:** Kolumnnamn bör vanligtvis vara i singularform och tydligt beskriva innehållet i kolumnen. Till exempel: `user`, `order_date`, `product_name`.
+- **Undvik prefix:** Undvik att använda tabellnamnet som prefix i kolumnnamnet, såvida det inte är för att undvika kollisioner mellan kolumnnamn i JOIN-operationer.
+- **Tydliga namn:** Namnge kolumner så tydligt som möjligt. Till exempel, istället för `date`, använd `created_at` eller `updated_at` för att beskriva när en post skapades eller senast uppdaterades.
+  
+### Primära och främmande nycklar
+
+- **Primärnycklar:** Använd ofta `id` som primärnyckel för enkelhet. Om du använder sammansatta nycklar, inkludera tabellnamnet, till exempel `user_id`.
+- **Främmande nycklar:** Namnge främmande nycklar genom att kombinera måltabellens singularform och dess primärnyckel, till exempel `user_id` för en nyckel som refererar till `id` i `users`-tabellen.
+
+### Tidsangivelser
+
+- **Suffix `_at` för datum och tid:** För kolumner som innehåller tidsstämplar, använd suffixet `_at` för att indikera detta. Till exempel: `created_at`, `updated_at`.
+- **Suffix `_on` för datum utan tid:** Om kolumnen bara representerar ett datum utan en specifik tid, kan suffixet `_on` vara lämpligt, till exempel `born_on`.
+
+### Booleska kolumner
+
+- **Predikatnamn:** För booleska kolumner, använd namn som kan besvaras med ja eller nej. Till exempel: `is_active`, `has_completed`.
+
+### Konsistens och konventioner
+
+- **Konsekvent Stil:** Välj en stil för namngivning (till exempel snake_case, camelCase, PascalCase) och håll dig konsekvent till den i hela databasen.
+- **Specifika konventioner:** Följ specifika konventioner som är etablerade i din utvecklingsmiljö eller ramverk. Till exempel använder Laravel ofta snake_case för databasnamn.
 
 ## Relationer mellan tabeller
 
