@@ -166,8 +166,8 @@ erDiagram
         string club_name
     }
     CLUB_USER {
-        int user_id FK "Foreign Key to USERS"
         int club_id FK "Foreign Key to CLUBS"
+        int user_id FK "Foreign Key to USERS"
     }
 ~~~
 
