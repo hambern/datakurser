@@ -58,7 +58,7 @@ Utöver dessa finns det flera andra datatyper som **DECIMAL** för finansiella b
 
 Det finns i huvudsak två olika former av relationer i en relationsdatabas.
 
-- **1:N-relationer (en till många):** Enkel relationer där en entitet i en tabell kan relatera till flera entiteter i en annan tabell. Exempel: en användare som skriver flera kommentarer.
+- **1:N-relationer (en till många):** Enkla relationer där en entitet i en tabell kan relatera till flera entiteter i en annan tabell. Exempel: en användare som skriver flera kommentarer.
 - **N:M-relationer (många till många):** Komplexa relationer där entiteter i en tabell kan ha relationer till flera entiteter i en annan tabell och vice versa. Detta kräver en mellantabell för att hantera relationerna.
 
 ## Exempel på tabellstrukturer
