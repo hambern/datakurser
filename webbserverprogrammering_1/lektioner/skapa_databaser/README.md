@@ -1,5 +1,7 @@
 # Databastabeller: En grundläggande guide
 
+[toc]
+
 Databastabeller är fundamentala för att strukturera och lagra data i relationella databaser. De består av rader och kolumner och används för att representera och organisera information effektivt. I detta material utforskar vi grunderna i databastabeller och deras komponenter.
 
 ## Grundläggande komponenter i en databastabell
