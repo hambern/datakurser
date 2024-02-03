@@ -2,13 +2,13 @@
 
 MVC (Model-View-Controller) är ett välbeprövat arkitekturmönster inom systemutveckling som först introducerades av Trygve Reenskaug under hans tid som gästforskare vid Xerox Palo Alto Research Center (PARC) i slutet av 1970-talet. Ursprungligen utvecklat för Smalltalk-programmering, syftade Reenskaug till att skapa en metod för att effektivisera hanteringen och presentationen av komplexa datamängder i mjukvaruapplikationer. Hans initiala koncept omfattade fyra komponenter: Model, View, Thing och Editor, men efter samråd med andra Smalltalk-utvecklare, konsoliderades detta till de tre komponenterna Model, View och Controller som vi känner till idag.
 
-### Komponenternas Roller
+### Komponenternas roller
 
 - **Model**: Denna komponent representerar applikationens datastruktur, ofta genom att interagera med en databas. Den hanterar data, logik och regler av applikationen. Modellen ansvarar för att hämta, lagra och uppdatera data i databasen samt utföra bearbetningar av datan.
 - **View**: View-komponenten är ansvarig för att presentera data för användaren. I webbapplikationer utgörs detta av den HTML som genereras och skickas till klientens webbläsare. View är skiktet som användaren interagerar med visuellt, där datan presenteras på ett lättförståeligt och estetiskt tilltalande sätt.
 - **Controller**: Controllern fungerar som en mellanhand mellan Model och View. Den bearbetar användarinput (t.ex., klick och tangenttryckningar), gör anrop till modellen för datamanipulation eller hämtning, och bestämmer sedan vilken vy som ska presenteras baserat på den aktuella applikationsstatusen. Controllern är alltså central för hanteringen av användarinteraktioner och applikationsflödet.
 
-### Liknelsen med ett Företag
+### Liknelse med ett företag
 
 Att förstå MVC kan underlättas genom en analogi med ett företag där arbetsuppgifterna är uppdelade mellan tre nyckelpersoner:
 
