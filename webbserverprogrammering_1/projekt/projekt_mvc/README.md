@@ -49,47 +49,15 @@ Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några l
 
 ## Instruktioner
 
-I denna uppgift ska du skapa ditt eget MVC-ramverk. Även om det finns färdiga ramverk du kan använda är det nyttigt att sätta sig in i vad dessa ramverk faktiskt gör, och då finns det inget bättre sätt än att själv bygga ett.
+I denna uppgift ska du skapa ett eget litet projekt utifrån ett färdigt, enkelt MVC-ramverk. Utgå ifrån repositoryt <https://gitlab.com/Hambern/mvc> som är ett exempel på hur man, med MVC-ramverket kan bygga en enkel studentchat. Din uppgift är att göra om koden så att den gör något helt annat och använder tabeller i din egen databas.
 
-1. Ta del av materialet ovan och bilda dig en bild av vad det är du ska bygga
-2. Skapa en mapp direkt under din `public_html`-mapp som heter `mvc`. Använd exempelvis kommandot `mkdir ~/public_html/mvc`
-3. I den mappen ska du skapa följande mappstruktur:
-
-~~~bash
-.
-├── app
-│   ├── controllers
-│   ├── core
-│   ├── models
-│   └── views
-│       ├── home
-│       └── students
-├── assets
-└── partials
-~~~
-
-4. Nu är det dags att skapa ett nytt projekt på GitLab och gitta in ditt eget MVC-ramverk dit. Detta kan du sedan återanvända som startpunkt i dina framtida projekt.
-5. Titta sedan i repositoryt <https://gitlab.com/Hambern/mvc> vilka filer som ska ligga i dessa mappar. Titta gärna i filerna men undvik att kopiera innehållet rakt av. Genom att faktiskt skriva koden själv får man en bättre hum om vad man gör
-6. Glöm inte att hela tiden testa din kod i webbläsaren, så att allt fungerar.
-7. Skapa de filer du behöver. Börja med `index.php` (tänk på vilka filrättigheter filen behöver ha) och skapa sedan de filer som behövs för att undvika de felmeddelanden du får. Testa din kod hela tiden via webbläsaren.
-8. När du fått allt att fungera ska du gitta in din kod och svara på följande frågor i filen `projekt_mvc.md` i `projekt`-mappen i ditt kursrepository:
-    1. Vad gör `.htaccess` i root-mappen?
-    2. Vad gör `.htaccess` i `app`-mappen?
-    3. Vilken funktion har funktionen `spl_autoload_register()` i filen `app/init.php`?
-    4. Vilken funktion har funktionen `call_user_func_array()` i filen `app/core/App.php`?
-    5. Både `app/core/App.php` och `app/core/Model.php` innehåller metoden `__construct()`. Vad gör den?
-    6. Vad är poängen med att metoden `view()` ligger i `app/core/Controller.php` istället för i ex `app/controllers/home.php`?
-    7. När du besöker url:en `/students` kommer applikationen läsa in följande filer. Men vi vilken ordning?
-        1. `app/views/students/index.php`
-        2. `app/core/App.php`
-        3. `app/controllers/students.php`
-        4. `index.php`
-        5. `app/models/Student.php`
-        6. `app/init.php`
-    8. Skapa sidan `/contact` där du kan ange ditt telefonnummer och e-postadress. För detta behöver du ingen databaskoppling. Vilka tillägg behöver du göra?
-    9. Om du istället för studenter vill lista dina riksdagsledamöter från den tidigare uppgiften. Vilka förändringar behöver du göra?
-    10. Om du istället för HTML vill visa datan som en json-array. Var skulle du göra dina förändringar?
-9. Gitta in svaren på ovanstående frågor till ditt kurs-repository
+1. Klona repo: git clone https://gitlab.com/hambern/mvc.git
+2. Navigera till projektets rotkatalog.
+3. Konfigurera app/config.php med din databasinformation.
+4. Besök index.php via din webbläsare för att starta applikationen.
+5. Ta sedan bort .git-mappen och initiera ett nytt repository
+6. Nu är det dags att skapa ett nytt projekt på GitLab och gitta in ditt projekt
+7. Skapa ett helt eget projekt som använder tabeller i din egen databas
 
 ## OpenAI ChatGPT
 
