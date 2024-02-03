@@ -1,20 +1,24 @@
 # Projekt - MVC
 
-MVC är ett arkitekturmönster för systemutveckling. Trygve Reenskaug skapade MVC när han arbetade på Smalltalk 1979 som gästforskare vid Xerox Palo Alto Research Center (PARC) i slutet av 1970-talet. Han ville ha ett mönster som kunde användas för att strukturera alla program där användare interagerar med en stor datamängd. Hans design hade från början fyra delar: Model, View, Thing och Editor. Efter att ha diskuterat det med de andra Smalltalk-utvecklarna bestämde han sig och resten av gruppen för Model, View och Controller istället.
+MVC (Model-View-Controller) är ett välbeprövat arkitekturmönster inom systemutveckling som först introducerades av Trygve Reenskaug under hans tid som gästforskare vid Xerox Palo Alto Research Center (PARC) i slutet av 1970-talet. Ursprungligen utvecklat för Smalltalk-programmering, syftade Reenskaug till att skapa en metod för att effektivisera hanteringen och presentationen av komplexa datamängder i mjukvaruapplikationer. Hans initiala koncept omfattade fyra komponenter: Model, View, Thing och Editor, men efter samråd med andra Smalltalk-utvecklare, konsoliderades detta till de tre komponenterna Model, View och Controller som vi känner till idag.
 
-- _Controller_ bearbetar och svarar på händelser, som användarinteraktion, och kan framkalla ändringar i model och view.
-- _Model_ utgör den information som applikationen bearbetar och arbetar i regel emot en databas.
-- _View_ renderar en lämplig vy för användaren. I webbapplikationer är det här vi hittar själva HTML-koden.
+### Komponenternas Roller
 
-### En liknelse
+- **Model**: Denna komponent representerar applikationens datastruktur, ofta genom att interagera med en databas. Den hanterar data, logik och regler av applikationen. Modellen ansvarar för att hämta, lagra och uppdatera data i databasen samt utföra bearbetningar av datan.
+- **View**: View-komponenten är ansvarig för att presentera data för användaren. I webbapplikationer utgörs detta av den HTML som genereras och skickas till klientens webbläsare. View är skiktet som användaren interagerar med visuellt, där datan presenteras på ett lättförståeligt och estetiskt tilltalande sätt.
+- **Controller**: Controllern fungerar som en mellanhand mellan Model och View. Den bearbetar användarinput (t.ex., klick och tangenttryckningar), gör anrop till modellen för datamanipulation eller hämtning, och bestämmer sedan vilken vy som ska presenteras baserat på den aktuella applikationsstatusen. Controllern är alltså central för hanteringen av användarinteraktioner och applikationsflödet.
 
-Man kan likna applikationen - din kod - med ett företag som har tre anställda:
+### Liknelsen med ett Företag
 
-- _En receptionist_ (controller) som tar emot kundens förfrågningar
-- _En lagerarbetare_ (model) som tar emot och lämnar ut varor
-- _En leverantör_ (view) som paketerar varan på dett sätt kunden vill ha den
+Att förstå MVC kan underlättas genom en analogi med ett företag där arbetsuppgifterna är uppdelade mellan tre nyckelpersoner:
 
-Då man ibland kan måsta byta ut en receptionist, lagerarbetare eller leverantör kan det vara klokt att separera dessa arbetsuppgifter ifrån varandra så att en nyanställd får en begränsad mängd arbetsuppgifter att sätta sig in i. Att dela upp ansvarsområden på olika anställda är också ett bra sätt att undvika onödiga konflikter om hur saker ska göras, så länge var och an av dem sköter sina respektive uppgifter.
+- **Receptionisten (Controller)**: Tar emot kundens förfrågningar och dirigerar dem till rätt avdelning eller person. Receptionisten bestämmer vad som behöver göras baserat på kundens behov och vilka resurser som är tillgängliga.
+- **Lagerarbetaren (Model)**: Hanterar företagets varor (datan) genom att ta emot, uppdatera och leverera dem enligt receptionistens (controllerns) anvisningar.
+- **Leverantören (View)**: Förpackar och presenterar varan (datan) på ett sätt som är tilltalande och begripligt för kunden, baserat på de specifikationer som angetts av receptionisten.
+
+Denna uppdelning av ansvarsområden underlättar introduktionen av nya anställda (komponenter) eftersom varje roll har en klart definierad uppgift. Det ökar även systemets flexibilitet och underhållbarhet, eftersom ändringar i en komponent kan genomföras med minimal påverkan på de övriga. Dessutom bidrar det till att minska komplexiteten och förbättra samarbete inom teamet, vilket gör det lättare att hantera och utveckla applikationen över tid.
+
+Genom att använda MVC-mönstret kan utvecklare skapa applikationer som är lättare att underhålla, utöka och testa, vilket resulterar i snabbare utvecklingscykler och mer robusta system.
 
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20210629165722/mvc.png)
 
