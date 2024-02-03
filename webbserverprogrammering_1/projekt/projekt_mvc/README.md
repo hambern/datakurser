@@ -51,13 +51,14 @@ Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några l
 
 I denna uppgift ska du skapa ett eget litet projekt utifrån ett färdigt, enkelt MVC-ramverk. Utgå ifrån repositoryt <https://gitlab.com/Hambern/mvc> som är ett exempel på hur man, med MVC-ramverket kan bygga en enkel studentchat. Din uppgift är att göra om koden så att den gör något helt annat och använder tabeller i din egen databas.
 
-1. Klona repo: git clone https://gitlab.com/hambern/mvc.git
-2. Navigera till projektets rotkatalog.
-3. Konfigurera app/config.php med din databasinformation.
-4. Besök index.php via din webbläsare för att starta applikationen.
-5. Ta sedan bort .git-mappen och initiera ett nytt repository
-6. Nu är det dags att skapa ett nytt projekt på GitLab och gitta in ditt projekt
-7. Skapa ett helt eget projekt som använder tabeller i din egen databas
+1. Klona repo: `git clone https://gitlab.com/hambern/mvc.git``
+2. Navigera till projektets rotkatalog
+3. Konfigurera `app/config.php`` med din databasinformation
+4. Besök `index.php`` via din webbläsare för att starta applikationen
+5. Studera och läs nogrannt igenom alla filer i MVC-ramverket tills du förstår vad varje fil gör. Fråga om det är något som känns oklart.
+6. Ta sedan bort `.git`-mappen och initiera ett nytt repository
+7. Nu är det dags att skapa ett nytt projekt på GitLab och gitta in ditt projekt
+8. Skapa ett helt eget projekt som använder tabeller i din egen databas
 
 ## OpenAI ChatGPT
 
