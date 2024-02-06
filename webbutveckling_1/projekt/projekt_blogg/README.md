@@ -37,3 +37,4 @@ I regel är allt du behöver en serverplats att lägga ditt CMS på och en datab
 3. Skapa din blogg och dina inlägg
 4. Skapa en användare till mig (mattias.hamberg@ornskoldsvik.se) och ge mig lösenordet rXNrM674hH. Gör att jag kan logga in, men jag behöver inte kunna ändra dina inlägg eller bloggens utseende.
 5. Lämna in url:en som inlämningsuppgift till uppgiften projekt_blogg på Vklass
+6. Testa, i mån av tid, något annat CMS. Antingen något i listan ovan eller något helt annat. Winter CMS är en personlig favorit du gärna får spana in.
