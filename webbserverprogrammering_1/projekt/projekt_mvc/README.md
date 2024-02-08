@@ -61,8 +61,25 @@ I denna uppgift ska du skapa ett eget litet projekt utifrån ett färdigt, enkel
 4. Besök `index.php` via din webbläsare för att starta applikationen
 5. Studera och läs nogrannt igenom alla filer i MVC-ramverket tills du förstår vad varje fil gör. Fråga om det är något som känns oklart.
 6. Ta sedan bort `.git`-mappen och initiera ett nytt repository
-7. Nu är det dags att skapa ett nytt projekt på GitLab och gitta in ditt projekt
-8. Skapa ett helt eget projekt som använder tabeller i din egen databas
+7. Försök nu svara på dessa frågor:
+    - Vad gör `.htaccess` i root-mappen?
+    - Vad gör `.htaccess` i app-mappen?
+    - Vilken funktion har funktionen `spl_autoload_register()` i filen `app/init.php`?
+    - Vilken funktion har funktionen `call_user_func_array()` i filen `app/core/App.php`?
+    - Både `app/core/App.php` och `app/core/Model.php` innehåller metoden `__construct()`. Vad gör den?
+    - Vad är poängen med att metoden `view()` ligger i `app/core/Controller.php` istället för i ex `app/controllers/home.php`?
+    - När du besöker url:en `/posts` kommer applikationen läsa in följande filer. Men vi vilken ordning?
+        - `app/views/posts/index.php`
+        - `app/core/App.php`
+        - `app/controllers/posts.php`
+        - `index.php`
+        - `app/models/Post.php`
+        - `app/init.php`
+    - Skapa sidan `/links` där du kan lista några favoritlänkar. För detta behöver du ingen databaskoppling. Vilka tillägg behöver du göra?
+    - Om du istället för inlägg vill lista dina riksdagsledamöter från den tidigare uppgiften. Vilka förändringar behöver du göra?
+    - Om du istället för HTML vill visa datan som en json-array. Var skulle du göra dina förändringar?
+8. Nu är det dags att skapa ett nytt projekt på GitLab och gitta in ditt projekt
+9. Skapa ett helt eget projekt som använder tabeller i din egen databas
 
 ## OpenAI ChatGPT
 
