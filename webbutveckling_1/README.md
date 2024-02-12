@@ -4,21 +4,79 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 
 ## Uppgifter
 
-1. [html_uppgift_1](html/html_uppgift_1)
-2. [html_uppgift_2](html/html_uppgift_2)
-3. Vänta här in dina kamrater. Gör en extrauppgift eller en kul kluring
-4. [css_uppgift_1](css/css_uppgift_1)
-5. [css_uppgift_2](css/css_uppgift_2)
-6. [css_uppgift_3](css/css_uppgift_3)
-7. Vänta här in dina kamrater. Gör en extrauppgift eller en kul kluring
-8. [css_uppgift_4](css/css_uppgift_4)
-9. [css_uppgift_5](css/css_uppgift_5)
-10. [css_uppgift_6](css/css_uppgift_6)
-11. Vänta här in dina kamrater. Gör en extrauppgift eller en kul kluring
-12. [projekt_fragesport](projekt/projekt_fragesport)
-13. [projekt_gastbok](projekt/projekt_gastbok)
-14. [projekt_blogg](projekt/projekt_blogg)
-15. [projekt_slut](projekt/projekt_slut)
+### 1. Portalsida
+
+- **Syfte:** Skapa din digitala portal och introducera dig själv i webbutvecklingsvärlden. I denna uppgift ska du öva på att:
+   - Sätta upp ett HTML5-dokument
+   - Länka till ett externt CSS-dokument
+   - Använda grundläggande taggar som: `p`, `a`, `img`, `div`, `ul`, `li`, `header`, `footer`, `section` etc...
+- **Beskrivning:** Designa en personlig portalsida med HTML och CSS, inkludera ett porträttfoto och en QR-kod som länkar till sidan. Sidan ska fungera som en central hub för alla dina framtida projekt.
+- **Ramverk:** Implementera normalize.css för enhetlig stilning över olika webbläsare, använd semantisk HTML för strukturen, och se till att designen är responsiv. Inkludera ett professionellt porträttfoto och en QR-kod för direkt åtkomst till din portalsida.
+
+### 2. Kul kluring
+
+- **Syfte:** Utmana dig själv och andra med interaktiva gåtor i stil med Notpron. Utveckla din förmåga att tänka logiskt och kreativt samtidigt som du fördjupar dina kunskaper i grundläggande webbteknologier. I denna uppgift ska du öva på att:
+   - Länka mellan dokument
+   - Skapa både dator- och mobilanpassade responsiv design
+   - Lägga till enkla javascript
+- **Beskrivning:** Skapa en serie sidor, var och en med en unik gåta som besökarna måste lösa för att gå vidare. Använd din kreativitet för att göra gåtorna både underhållande och kluriga.
+- **Ramverk:** Implementera en enkel men elegant design med HTML och CSS. Använd gärna JavaScript för att lägga till interaktivitet, så som att avslöja ledtrådar eller validera svar.
+
+### 3. Frågesport
+
+- **Syfte:** Använd PHP för att skapa en dynamisk och interaktiv frågesport som testar användarnas kunskaper inom ett specifikt område. Lär dig att hantera server-side logik för att processa användarinput och generera responsiv feedback. I denna uppgift ska du öva på att:
+   - Skapa dynamiska webbsidor
+   - Skapa formulär, skicka och ta emot formulärdata
+   - Använda PHP i samband med HTML och CSS
+- **Beskrivning:** Utforma en webbaserad frågesport som ställer en serie frågor till användaren. Varje fråga ska skickas till servern där PHP-skript validerar svaren och returnerar resultatet. Denna process ger en djupare förståelse för hur man hanterar data på servern och hur man dynamiskt kan uppdatera webbsidans innehåll baserat på användarinteraktion.
+- **Ramverk:** Använd PHP för att skapa logiken bakom frågesporten, inklusive frågehantering, poängräkning och feedback till användaren. Implementera väl genomtänkt typografi och använd färgteori för att skapa en engagerande och visuellt tilltalande användarupplevelse. Säkerställ att din frågesport är responsiv och tillgänglig på olika enheter genom att använda CSS och eventuellt Flexbox för layoutdesign.
+
+### 4. Chatbot
+
+- **Syfte:** Steg in i AI-världen genom att skapa en chatbot som kan assistera besökare på din webbplats. Träna din bot för att ge användbara svar på vanliga frågor. I denna uppgift ska du öva på att:
+   - Designa ett gränsnitt med hjälp av Flexbox
+   - Implementera AJAX-anrop
+   - Redigera träningsdata
+- **Beskrivning:** Designa ett användargränssnitt för din chatbot och implementera grundläggande interaktioner. Lägg till personlighet och funktionalitet genom att utöka botens träningsdata.
+- **Ramverk:** Använd semantisk HTML för att strukturera chattgränssnittet och Flexbox för att hantera layouten av chattmeddelanden. Botens design ska vara intuitiv och inbjudande.
+
+### 5. API-projekt
+
+- **Syfte:** Utforska kraften i externa datakällor genom att integrera ett publikt API i din webbutvecklingsprojekt. Skapa en applikation som hämtar och presenterar data på ett användarvänligt sätt. I denna uppgift ska du öva på att:
+   - Hämta data ifrån ett externt API
+   - Designa ett gränsnitt med hjälp av Bootstrap
+   - Presentera projektet muntligt
+- **Beskrivning:** Välj ett API som intresserar dig – det kan vara allt från sociala medier till offentliga data eller väderinformation. Använd Bootstrap för att bygga ett gränssnitt som effektivt visar datan.
+- **Ramverk:** Projektet ska uteslutande använda Bootstrap för design och layout. Fokusera på att skapa en responsiv sida som presenterar API-datan på ett klart och tilltalande sätt.
+
+### 6. Blogg
+
+- **Syfte:** Dyk in i innehållshanteringssystemens värld genom att skapa en egen blogg. Lär dig att anpassa WordPress för att matcha din unika stil och dela dina tankar eller kunskaper med världen. I denna uppgift ska du öva på att:
+   - Ansluta till en databas
+   - Installera och använda WordPress
+   - Lära dig för- och nackdelarna med att använda CMS
+- **Beskrivning:** Använd WordPress för att sätta upp en blogg. Utforska olika teman och plugins för att hitta de som bäst passar ditt ämne. Anpassa designen och skriv inlägg som reflekterar ditt intresseområde.
+- **Ramverk:** Anpassa ditt valda tema med CSS och använd semantisk HTML för blogginlägg. Implementera en layout som använder Flexbox för att arrangera innehållet på ett estetiskt sätt.
+
+### 7. Webbutik
+
+- **Syfte:** Ta dina webbutvecklingsfärdigheter till nästa nivå genom att bygga en onlinebutik. Lär dig att hantera produkter, kundvagnar och betalningsprocesser med WooCommerce. I denna uppgift ska du öva på att:
+   - Installera WooCommerce
+   - Designa en e-handelsplattform
+   - Implementera någon typ av betallösning
+- **Beskrivning:** Designa och utveckla en fullt fungerande e-handelsplattform där användare kan bläddra i produkter, lägga till dem i sin kundvagn och genomföra köp.
+- **Ramverk:** Använd WooCommerce tillsammans med WordPress för att sätta upp butiken. Fokusera på användbarhet och design, och se till att butiken är responsiv och tillgänglig.
+
+### 8. Fritt projekt
+
+- **Syfte:** Visa upp din kreativitet och de kunskaper du förvärvat genom att planera, utveckla och presentera ett helt eget projekt. Detta är din chans att glänsa och utforska nya idéer. I denna uppgift ska du öva på att:
+   - Planera ett projekt
+   - Presentera ett projekt
+   - Skriva en projektrapport
+- **Beskrivning:** Välj ett projekt som passionerar dig, oavsett om det är en webbapplikation, ett spel, en tjänst eller något helt annat. Använd alla de tekniker och verktyg du lärt dig under kursen för att göra din vision till verklighet.
+- **Ramverk:** Projektet ska ha en detaljerad plan, omfattande dokumentation och en genomtänkt design. Använd tekniker som normalisering, semantisk HTML, typografi, färgteori
+
+## Extra-uppgifter
 
 Det finns också ett antal [extrauppgifter](extrauppgifter) för dig som vill göra något annat en stund.
 
