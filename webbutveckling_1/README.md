@@ -80,12 +80,9 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 
 Det finns också ett antal [extrauppgifter](extrauppgifter) för dig som vill göra något annat en stund.
 
-## Övningar
+## Läromedel
 
-På W3Scools finns det små självrättande interaktiva övningar. Gör gärna dessa för att testa dig själv:
-
-- HTML-övningar: <https://www.w3schools.com/html/exercise.asp>
-- CSS-övningar: <https://www.w3schools.com/css/exercise.asp>
+I denna kursen använder vi oss av W3Schools Pathfinder. Du kan skapa en egen inloggning på: https://pathfinder.w3schools.com/. De delar vi ska fokusera på är HTML och CSS. Om du vill får du gärna också göra den del som handlar om Javascript. Blir du ombedd att ange hur många timmar i veckan du vill ägna åt dina studier får du gärna ange 6 timmar. Tanken är att du ska använda dig av W3Schools för att klara av dina uppgifter i kursen. Ta för vana att alltid kolla i W3Schools om du kör fast.
 
 ## Roliga kluringar
 
@@ -96,11 +93,11 @@ På W3Scools finns det små självrättande interaktiva övningar. Gör gärna d
 
 ## CSS-spel
 
-1. Grid Garden: <https://cssgridgarden.com/#sv> - Lär dig använda CSS-grid
+1. Flexbox Adventure: <https://codingfantasy.com/games/flexboxadventure> - Lär dig använda Flexbox
 2. Flexbox Froggy: <https://flexboxfroggy.com/#sv> - Lär dig använda Flexbox
-3. Flexbox Defense: <http://www.flexboxdefense.com/>
+3. Flexbox Defense: <http://www.flexboxdefense.com/> - Lär dig använda Flexbox
 4. Unfolding the Box: <https://rupl.github.io/unfold/> - Lär dig 3D-grafik med CSS
-4. CSSBattle: <https://cssbattle.dev> - Supersvåra dagliga CSS-utmaningar för designers
+5. CSSBattle: <https://cssbattle.dev> - Supersvåra dagliga CSS-utmaningar för designers
 
 
 ## Validering
@@ -183,7 +180,6 @@ Du kan hitta tusentals extensions till Visual Studio Code på <https://marketpla
 
 - HTML CSS Support: <https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css>
 - HTMLHint: <https://marketplace.visualstudio.com/items?itemName=HTMLHint.vscode-htmlhint>
-- Live Server: <https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer>
 
 ## Namnge filer och mappar
 
