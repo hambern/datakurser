@@ -20,7 +20,7 @@ Du ska skapa en webbplats för ett speciellt syfte som du väljer själv. Det ka
 
 För att ditt webbprojekt ska anses klart måste följande krav uppfyllas:
 
-1. Du ska skriva en utförlig projektrapport som ska lämnas in senast 25 maj 2023.
+1. Du ska skriva en utförlig projektrapport som ska lämnas in senast 28 maj.
 2. Projektet bör bestå av minst 2 olika sidor.
 3. Du måste i projektet skriva egen CSS och HTML, och det måste framgå tydligt i din projektrapport vilken kod som du skrivit och vilken kod du laddat ner. Det är därmed okej att använda sig av CMS och front-end-bibliotek så länge du också skriver egen kod och det tydligt framgår i din projektrapport vad du skrivit själv och inte. Ofta är det lättare att skriva allt själv än att anpassa sig kod någon annan skrivit. 
 4. Du får använda dig av både PHP och Javascript om du vill. Men även där bör det tydligt framgå i projektrapporten också där vilken kod som är din egen och vilken kod du lånat från andra.
@@ -53,7 +53,7 @@ En projektrapportsmall till Words [hittar du här](webbprojekt.docx).
 
 ### Presentation
 
-- Du ska redovisa din sida inför klassen fredag den 12 maj 2023. Sidan behöver inte vara helt klar. du får ytterligare ett par lektioner att slutföra projektet och rapporten.
+- Du ska redovisa din sida inför klassen fredag den 17 maj. Sidan behöver inte vara helt klar. du får ytterligare ett par lektioner att slutföra projektet och rapporten.
 - Presentationen ska vara på 5-10 minuter och beskriva din produkt och hur den är uppbyggd.
 - Tänk på att en dålig presentation kan få en bra produkt att verka dålig och att en bra presentation kan "sälja" en sämre produkt. Därför är det viktigt att lägga ner tid på att förbereda presentationen.
 - Var beredd på frågor om hur du löst olika saker på din webbplats.
