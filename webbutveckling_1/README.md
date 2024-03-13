@@ -7,72 +7,77 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 ### 1. Portalsida
 
 - **Syfte:** Skapa din digitala portal och introducera dig själv i webbutvecklingsvärlden. I denna uppgift ska du öva på att:
-   - Sätta upp ett HTML5-dokument
-   - Länka till ett externt CSS-dokument
-   - Använda grundläggande taggar som: `p`, `a`, `img`, `div`, `ul`, `li`, `header`, `footer`, `section` etc...
+  - Sätta upp ett HTML5-dokument
+  - Länka till ett externt CSS-dokument
+  - Använda grundläggande taggar som: `p`, `a`, `img`, `div`, `ul`, `li`, `header`, `footer`, `section` etc...
 - **Beskrivning:** Designa en personlig portalsida med HTML och CSS, inkludera ett porträttfoto och en QR-kod som länkar till sidan. Sidan ska fungera som en central hub för alla dina framtida projekt.
 - **Ramverk:** Implementera normalize.css för enhetlig stilning över olika webbläsare, använd semantisk HTML för strukturen, och se till att designen är responsiv. Inkludera ett professionellt porträttfoto och en QR-kod för direkt åtkomst till din portalsida.
+- **Läs på:** Läs gärna på följande delar lite extra i W3Schools:
+  - <https://www.w3schools.com/html/html_basic.asp>
+  - <https://www.w3schools.com/html/html_elements.asp>
+  - <https://www.w3schools.com/html/html_attributes.asp>
+  - <https://www.w3schools.com/html/html_headings.asp>
 
 ### 2. Kul kluring
 
 - **Syfte:** Utmana dig själv och andra med interaktiva gåtor i stil med Notpron. Utveckla din förmåga att tänka logiskt och kreativt samtidigt som du fördjupar dina kunskaper i grundläggande webbteknologier. I denna uppgift ska du öva på att:
-   - Länka mellan dokument
-   - Skapa både dator- och mobilanpassade responsiv design
-   - Lägga till enkla javascript
+  - Länka mellan dokument
+  - Skapa både dator- och mobilanpassade responsiv design
+  - Lägga till enkla javascript
 - **Beskrivning:** Skapa en serie sidor, var och en med en unik gåta som besökarna måste lösa för att gå vidare. Använd din kreativitet för att göra gåtorna både underhållande och kluriga.
 - **Ramverk:** Implementera en enkel men elegant design med HTML och CSS. Använd gärna JavaScript för att lägga till interaktivitet, så som att avslöja ledtrådar eller validera svar.
 
 ### 3. Frågesport
 
 - **Syfte:** Använd PHP för att skapa en dynamisk och interaktiv frågesport som testar användarnas kunskaper inom ett specifikt område. Lär dig att hantera server-side logik för att processa användarinput och generera responsiv feedback. I denna uppgift ska du öva på att:
-   - Skapa dynamiska webbsidor
-   - Skapa formulär, skicka och ta emot formulärdata
-   - Använda PHP i samband med HTML och CSS
+  - Skapa dynamiska webbsidor
+  - Skapa formulär, skicka och ta emot formulärdata
+  - Använda PHP i samband med HTML och CSS
 - **Beskrivning:** Utforma en webbaserad frågesport som ställer en serie frågor till användaren. Varje fråga ska skickas till servern där PHP-skript validerar svaren och returnerar resultatet. Denna process ger en djupare förståelse för hur man hanterar data på servern och hur man dynamiskt kan uppdatera webbsidans innehåll baserat på användarinteraktion.
 - **Ramverk:** Använd PHP för att skapa logiken bakom frågesporten, inklusive frågehantering, poängräkning och feedback till användaren. Implementera väl genomtänkt typografi och använd färgteori för att skapa en engagerande och visuellt tilltalande användarupplevelse. Säkerställ att din frågesport är responsiv och tillgänglig på olika enheter genom att använda CSS och eventuellt Flexbox för layoutdesign.
 
 ### 4. Chatbot
 
 - **Syfte:** Steg in i AI-världen genom att skapa en chatbot som kan assistera besökare på din webbplats. Träna din bot för att ge användbara svar på vanliga frågor. I denna uppgift ska du öva på att:
-   - Designa ett gränsnitt med hjälp av Flexbox
-   - Implementera AJAX-anrop
-   - Redigera träningsdata
+  - Designa ett gränsnitt med hjälp av Flexbox
+  - Implementera AJAX-anrop
+  - Redigera träningsdata
 - **Beskrivning:** Designa ett användargränssnitt för din chatbot och implementera grundläggande interaktioner. Lägg till personlighet och funktionalitet genom att utöka botens träningsdata.
 - **Ramverk:** Använd semantisk HTML för att strukturera chattgränssnittet och Flexbox för att hantera layouten av chattmeddelanden. Botens design ska vara intuitiv och inbjudande.
 
 ### 5. API-projekt
 
 - **Syfte:** Utforska kraften i externa datakällor genom att integrera ett publikt API i din webbutvecklingsprojekt. Skapa en applikation som hämtar och presenterar data på ett användarvänligt sätt. I denna uppgift ska du öva på att:
-   - Hämta data ifrån ett externt API
-   - Designa ett gränsnitt med hjälp av Bootstrap
-   - Presentera projektet muntligt
+  - Hämta data ifrån ett externt API
+  - Designa ett gränsnitt med hjälp av Bootstrap
+  - Presentera projektet muntligt
 - **Beskrivning:** Välj ett API som intresserar dig – det kan vara allt från sociala medier till offentliga data eller väderinformation. Använd Bootstrap för att bygga ett gränssnitt som effektivt visar datan.
 - **Ramverk:** Projektet ska uteslutande använda Bootstrap för design och layout. Fokusera på att skapa en responsiv sida som presenterar API-datan på ett klart och tilltalande sätt.
 
 ### 6. Blogg
 
 - **Syfte:** Dyk in i innehållshanteringssystemens värld genom att skapa en egen blogg. Lär dig att anpassa WordPress för att matcha din unika stil och dela dina tankar eller kunskaper med världen. I denna uppgift ska du öva på att:
-   - Ansluta till en databas
-   - Installera och använda WordPress
-   - Lära dig för- och nackdelarna med att använda CMS
+  - Ansluta till en databas
+  - Installera och använda WordPress
+  - Lära dig för- och nackdelarna med att använda CMS
 - **Beskrivning:** Använd WordPress för att sätta upp en blogg. Utforska olika teman och plugins för att hitta de som bäst passar ditt ämne. Anpassa designen och skriv inlägg som reflekterar ditt intresseområde.
 - **Ramverk:** Anpassa ditt valda tema med CSS och använd semantisk HTML för blogginlägg. Implementera en layout som använder Flexbox för att arrangera innehållet på ett estetiskt sätt.
 
 ### 7. Webbutik
 
 - **Syfte:** Ta dina webbutvecklingsfärdigheter till nästa nivå genom att bygga en onlinebutik. Lär dig att hantera produkter, kundvagnar och betalningsprocesser med WooCommerce. I denna uppgift ska du öva på att:
-   - Installera WooCommerce
-   - Designa en e-handelsplattform
-   - Implementera någon typ av betallösning
+  - Installera WooCommerce
+  - Designa en e-handelsplattform
+  - Implementera någon typ av betallösning
 - **Beskrivning:** Designa och utveckla en fullt fungerande e-handelsplattform där användare kan bläddra i produkter, lägga till dem i sin kundvagn och genomföra köp.
 - **Ramverk:** Använd WooCommerce tillsammans med WordPress för att sätta upp butiken. Fokusera på användbarhet och design, och se till att butiken är responsiv och tillgänglig.
 
 ### 8. Fritt projekt
 
 - **Syfte:** Visa upp din kreativitet och de kunskaper du förvärvat genom att planera, utveckla och presentera ett helt eget projekt. Detta är din chans att glänsa och utforska nya idéer. I denna uppgift ska du öva på att:
-   - Planera ett projekt
-   - Presentera ett projekt
-   - Skriva en projektrapport
+  - Planera ett projekt
+  - Presentera ett projekt
+  - Skriva en projektrapport
 - **Beskrivning:** Välj ett projekt som passionerar dig, oavsett om det är en webbapplikation, ett spel, en tjänst eller något helt annat. Använd alla de tekniker och verktyg du lärt dig under kursen för att göra din vision till verklighet.
 - **Ramverk:** Projektet ska ha en detaljerad plan, omfattande dokumentation och en genomtänkt design. Använd tekniker som normalisering, semantisk HTML, typografi, färgteori
 
@@ -82,7 +87,7 @@ Det finns också ett antal [extrauppgifter](extrauppgifter) för dig som vill g�
 
 ## Läromedel
 
-I denna kursen använder vi oss av W3Schools Pathfinder. Du kan skapa en egen inloggning på: https://pathfinder.w3schools.com/. De delar vi ska fokusera på är HTML och CSS. Om du vill får du gärna också göra den del som handlar om Javascript. Blir du ombedd att ange hur många timmar i veckan du vill ägna åt dina studier får du gärna ange 6 timmar. Tanken är att du ska använda dig av W3Schools för att klara av dina uppgifter i kursen. Ta för vana att alltid kolla i W3Schools om du kör fast.
+I denna kursen använder vi oss av W3Schools Pathfinder. Du kan skapa en egen inloggning på: <https://pathfinder.w3schools.com/>. De delar vi ska fokusera på är HTML och CSS. Om du vill får du gärna också göra den del som handlar om Javascript. Blir du ombedd att ange hur många timmar i veckan du vill ägna åt dina studier får du gärna ange 6 timmar. Tanken är att du ska använda dig av W3Schools för att klara av dina uppgifter i kursen. Ta för vana att alltid kolla i W3Schools om du kör fast.
 
 ## Roliga kluringar
 
@@ -99,13 +104,12 @@ I denna kursen använder vi oss av W3Schools Pathfinder. Du kan skapa en egen in
 4. Unfolding the Box: <https://rupl.github.io/unfold/> - Lär dig 3D-grafik med CSS
 5. CSSBattle: <https://cssbattle.dev> - Supersvåra dagliga CSS-utmaningar för designers
 
-
 ## Validering
 
 Ta gärna för vana att alltid validera dina filer innan inlämning. På så vis får du veta om du gjort något fel, och det är dessutom det första jag gör när jag rättar de uppgifter du lämnar in.
 
-- Validering av HTML5: http://html5.validator.nu
-- Validering av CSS: http://jigsaw.w3.org/css-validator (Ange CSS nivå 3 under "Fler val" och ställ in "Alla" under "Varningar")
+- Validering av HTML5: <http://html5.validator.nu>
+- Validering av CSS: <http://jigsaw.w3.org/css-validator> (Ange CSS nivå 3 under "Fler val" och ställ in "Alla" under "Varningar")
 
 ## Information om skolans server
 
@@ -158,17 +162,17 @@ Det är också möjligt att i kursen använda Visual Studio Code. Då kan du job
 
 - Ladda ner och installera programmet här: <https://code.visualstudio.com/>
 - Installera därefter följande extension-paket:
-   - "Remote - SSH": <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
-   - "SSH key generator": <https://marketplace.visualstudio.com/items?itemName=AmadeusITGroup.ssh-key-generator>
+  - "Remote - SSH": <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
+  - "SSH key generator": <https://marketplace.visualstudio.com/items?itemName=AmadeusITGroup.ssh-key-generator>
 - Klicka på ikonen till vänster som ser ut som en skärm med en liten ring längst ner till höger
 - Lägg till servern student.oedu.se och ange dina inloggningsuppgifter:
-   - Klicka på "+" bredvid SSH
-   - Skriv in SSH-kommandot: `ssh -p 3690 ditt_login@student.oedu.se`
-   - Spara anslutningen till `C:\Users\ditt_login\.ssh\config`
+  - Klicka på "+" bredvid SSH
+  - Skriv in SSH-kommandot: `ssh -p 3690 ditt_login@student.oedu.se`
+  - Spara anslutningen till `C:\Users\ditt_login\.ssh\config`
 - Nu är det dags att generera din SSH-nyckel för att kunna ansluta utan lösenord:
-   - Öppna upp kommando-paletten med `Ctrl + Shift + P` och kör kommandot `SSH: Generate SSH key`.
-   - Välj den server du vill koppla ihop dig med: `student.oedu.se`
-   - Ange ditt lösenord till servern
+  - Öppna upp kommando-paletten med `Ctrl + Shift + P` och kör kommandot `SSH: Generate SSH key`.
+  - Välj den server du vill koppla ihop dig med: `student.oedu.se`
+  - Ange ditt lösenord till servern
 - Nu bör du kunna ansluta till din server utan att behöva ange ditt lösenord
 - Om du blir ombedd att ange vilken typ av server det är så är det en Linux-server
 
