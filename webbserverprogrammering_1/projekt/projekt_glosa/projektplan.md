@@ -1,5 +1,5 @@
 # Projektnamn
-
+kebab
 ## Bakgrund
 - Här beskriver du vad projektet handlar om och vad som ska byggas.
 - Hämta gärna lite inspiration från Kursplanen ex. Projekt Glosa är ett projekt som sträcker sig över två kurser, Programmering 2 och Webbserverprogrammering…
@@ -13,15 +13,33 @@
 ## Teknisk specifikation
 
 ### JAVA-delen
-- Lista use cases
+
+#### Use-cases
+
+I mitt glosprogram ska man kunna göra följande saker:
+
+- Skapa en användare
+- Logga in en användare
+- Skapa en glosa
+- Besvara en glosa
+- Ta bort en glosa
+
 - Hur ska GUI se ut? Gör skisser över utseendet.
 - Databasdiagram (ev behövs vissa förklaringar/förtydliganden).
 - UML Klassdiagram för JAVA-programmet. (Lägger ni in i dokumentet i slutet av projektet)
 - Dataflöde och arkitekturdiagram.
 
 ### API-delen
+
+#### End-points
+
 Lista och förklara samtliga end-points. Exempelvis:
 
+- `/users/register`: Registrera en ny användare.
+    - Skicka
+        - `email`
+        - `password`
+        - `name`
 - `/users/login`: Skickar login och password för att få en token som kan användas för alla endpoints som kräver inloggning.
     - Skicka
         - `email`
