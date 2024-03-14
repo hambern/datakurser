@@ -13,14 +13,14 @@
 ## Teknisk specifikation
 
 ### JAVA-delen
-- Lista use cases
+- Lista dina use cases, alltså vad man ska kunna göra i programmet
 - Hur ska GUI se ut? Gör skisser över utseendet.
 - Databasdiagram (ev behövs vissa förklaringar/förtydliganden).
 - UML Klassdiagram för JAVA-programmet. (Lägger ni in i dokumentet i slutet av projektet)
 - Dataflöde och arkitekturdiagram.
 
 ### API-delen
-Lista och förklara samtliga end-points. Exempelvis:
+Lista och förklara samtliga end-points. Dessa hör i regel ihop med en av dina use-cases. Beskriv vad som ska skickas och vad man kan få i svar. Exempelvis:
 
 - `/users/login`: Skickar login och password för att få en token som kan användas för alla endpoints som kräver inloggning.
     - Skicka
