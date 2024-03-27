@@ -1,5 +1,5 @@
 # Projektnamn
-kebab
+
 ## Bakgrund
 - Här beskriver du vad projektet handlar om och vad som ska byggas.
 - Hämta gärna lite inspiration från Kursplanen ex. Projekt Glosa är ett projekt som sträcker sig över två kurser, Programmering 2 och Webbserverprogrammering…
