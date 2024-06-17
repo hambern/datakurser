@@ -10,8 +10,8 @@ Det första vi måste göra i denna kurs är att lära oss HTML och CSS. HTML an
 - Skapa en användare. Använd gärna ditt privata e-postkonto för att kunna fortsätta ditt lärande även efter utbildningen
 - Lägg till följande "målsättningar":
   - "Frontend Developer"
-    - HTML - Beginner
-    - CSS - Beginner
+    - HTML - Intermediate
+    - CSS - Intermediate
     - JavaScript - Beginner (överkurs)
 - Välj en studiehastighet på 7 timmar i veckan
 - Därefter ska vi gå lära oss de olika språken i den ordningen. Först HTML, därefter CSS och sist (och minst viktigt) JavaScript.
