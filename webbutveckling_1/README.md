@@ -8,7 +8,7 @@ Det första vi måste göra i denna kurs är att lära oss HTML och CSS. HTML an
 
 - Gå in på <https://pathfinder.w3schools.com/> och spara det som ett bokmärke
 - Skapa en användare. Använd gärna ditt privata e-postkonto för att kunna fortsätta ditt lärande även efter utbildningen
-- Lägg till följande "målsättningar":
+- Lägg till följande "målsättningar". Se hur du gör här: <https://www.youtube.com/watch?v=Urahol7qsLc>
   - "Frontend Developer"
     - HTML - Intermediate
     - CSS - Intermediate
