@@ -1,47 +1,115 @@
-# Projekt - Gästbok
+# Skapa en gästbok
 
-## CSS-ramverk
+### Syfte
+Denna uppgift syftar till att ge dig praktisk erfarenhet av att designa och lagra information på en webbsida genom att skapa en gästbok där besökare kan lämna meddelanden. Genom denna uppgift får du möjlighet att öva på viktiga webbteknologier och färdigheter, inklusive:
 
-Ute i verkligheten blir det allt mer sällsynt att man skriver all css själv idag. Det är idag vanligare att man använder sig av något css-ramverk. De vanligaste idag är nog:
+- Länkning mellan olika dokument på din webbplats.
+- Utveckling av en responsiv design som fungerar på både datorer och mobila enheter.
+- Skapande av formulär för att samla in data från användare.
+- Hantering av data genom POST-anrop.
+- Lagring och hämtning av data för att visa meddelanden.
 
-- **Bootstrap** - https://getbootstrap.com/
-- **Materialize CSS** - https://materializecss.com/
-- **Foundation** - https://get.foundation/
-- **Semantic UI** - https://semantic-ui.com/
-- **Bulma** - https://bulma.io/
+### Mål
+Efter att ha slutfört denna uppgift ska du kunna:
+- Bygga ett formulär med HTML för att samla in data från användare.
+- Skicka data från formuläret till en server med hjälp av POST-anrop.
+- Lagra data på servern, exempelvis i en textfil.
+- Hämta och visa lagrad data på din webbplats.
+- Skapa en enkel, responsiv design med HTML och CSS som fungerar både på datorer och mobila enheter.
 
-Av dessa är Bootstrap det överlägset största.
+### Beskrivning
+Du ska designa och bygga en gästbok där användare kan lämna kommentarer. Gästboken ska kunna lagra följande information:
 
-## Lägg till Bootstrap
+- **Namn** på den som skriver meddelandet.
+- **Tidpunkt** då meddelandet lämnades.
+- **Meddelande** som besökaren vill lämna.
 
-I denna uppgift ska du få testa att använda dig av Bootstrap. För att kunna göra detta måste du i head-sektionen lägga till följande kod. Det är helt enkelt länkar till Bootstraps css respektive javascript-filer:
+Den insamlade informationen ska sparas på servern (till exempel i en textfil) och visas för andra besökare på sidan. Gästboken ska ha en enkel och elegant design som är responsiv, vilket innebär att den fungerar och ser bra ut på både datorer och mobila enheter.
 
-~~~html
-<!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet">
+### Exempel på PHP och HTML-kod
 
-<!-- Latest compiled Bootstrap icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css" rel="stylesheet">
+Nedan följer ett komplett exempel på hur du kan implementera en gästbok med PHP och HTML.
 
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js"></script>
+#### PHP-kod för att lagra data
+
+~~~php
+<?php
+// Hantera formulärinmatning och lagring av data
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Hämta och säkra inmatad data
+    $name = htmlspecialchars($_POST['name']);
+    $message = htmlspecialchars($_POST['message']);
+    $date = date('Y-m-d H:i:s');
+
+    // Skapa en array av inmatningen
+    $entryData = [$date, $name, $message];
+
+    // Slå ihop arrayen till en sträng för lagring i textfil
+    $entry = implode('|', $entryData) . PHP_EOL;
+
+    // Spara meddelandet i en textfil
+    file_put_contents('guestbook.txt', $entry, FILE_APPEND);
+
+    // Omdirigera tillbaka till gästboken
+    header('Location: index.php');
+    exit();
+}
+?>
 ~~~
 
-## Läs på
+#### PHP-kod för att hämta data
 
-Nästa steg är att försöka förstå hur du använder dig av Bootstraps funktioner. Detta kan du göra entingen via Bootstraps egen dokumentation eller via W3Schools sidor om Bootstrap:
+~~~php
+<?php
+// Läs och bearbeta lagrade meddelanden
+$entries = [];
+if (file_exists('guestbook.txt')) {
+    $fileEntries = file('guestbook.txt');
+    foreach ($fileEntries as $entry) {
+        $entries[] = explode('|', trim($entry));
+    }
+}
+?>
+~~~
 
-- <https://getbootstrap.com/docs/5.2/getting-started/introduction/>
-- <https://www.w3schools.com/bootstrap5/index.php>
-- Detta är en väldigt informativ och bra video om Bootstrap 5 på YouTube: <https://www.youtube.com/watch?v=Jyvffr3aCp0>
-- Har du enkla frågor kring din kod kan du testa att fråga ChatGPT: <https://chat.openai.com/chat>
+#### HTML-kod för att visa lagrade meddelanden
 
-## Instruktioner
+~~~html
+<!-- Visa lagrade meddelanden -->
+<div class="guestbook-entries">
+    <h2>Tidigare meddelanden</h2>
+    <?php if (!empty($entries)): ?>
+        <?php foreach ($entries as $entryParts): ?>
+            <div class="entry">
+                <p><strong>Namn:</strong> <?= htmlspecialchars($entryParts[1]); ?></p>
+                <p><strong>Tid:</strong> <?= htmlspecialchars($entryParts[0]); ?></p>
+                <p><strong>Meddelande:</strong> <?= nl2br(htmlspecialchars($entryParts[2])); ?></p>
+            </div>
+        <?php endforeach; ?>
+    <?php else: ?>
+        <p>Inga meddelanden ännu.</p>
+    <?php endif; ?>
+</div>
+~~~
 
+### Ramverk och tekniker
+- **HTML och CSS:** Använd HTML för att skapa formuläret och strukturen på sidan. Använd CSS för att skapa en stilren och responsiv design.
+- **PHP:** Använd PHP för att hantera POST-anropet, spara data i en textfil och hämta samt visa den sparade datan.
+- **JavaScript (valfritt):** Lägg till enkel JavaScript för att förbättra användarupplevelsen, som till exempel att validera formuläret innan det skickas.
 
-1. Utgå ifrån filen `index.php`. Läs kommentarerna i koden. Där får du mycket hjälpsamma tips på hur du ska gå till väga.
-2. Ditt slutresultat ska se ut som facitbilderna:
-    - [Facit för iPhone 12 Pro](facit_iphone_12_pro.png)
-    - [Facit för iPad mini (stående)](facit_ipad_mini_vertical.png)
-    - [Facit för iPad mini (liggande)](facit_ipad_mini_horizontal.png)
-3. Du får inte skriva någon *egen* css-kod. Du får endast använda dig av Bootstraps klasser.
+### Resurser att studera
+För att förbereda dig inför denna uppgift, rekommenderar jag att du läser igenom följande:
+
+- [HTML Formulär](https://www.w3schools.com/html/html_forms.asp)
+- [CSS Grundläggande](https://www.w3schools.com/css/css_intro.asp)
+- [PHP Grundläggande](https://www.w3schools.com/php/php_intro.asp)
+
+---
+
+# Bedömning
+
+| **Kvalitetsaspekt**         | **Betyg E**                                      | **Betyg C**                                      | **Betyg A**                                      |
+|-----------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
+| **Formulär och datahantering** | Enkel data samlas in och lagras med HTML och PHP. | Formuläret är genomtänkt, och data lagras på ett strukturerat sätt. | Formuläret är väl utformat, och data lagras effektivt och strukturerat. |
+| **Design och CSS**          | Enkel CSS används för att styla gästboken.      | CSS används för att skapa en responsiv och tilltalande design. | CSS används för att skapa en professionell och fullt responsiv design. |
+| **Responsivitet**           | Gästboken fungerar på både datorer och mobila enheter. | Gästboken är responsiv och anpassar sig väl till olika skärmstorlekar. | Gästboken är fullt responsiv och optimerad för användning på alla enheter. |

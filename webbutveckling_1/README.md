@@ -9,12 +9,12 @@ Det första vi måste göra i denna kurs är att lära oss HTML och CSS. HTML an
 - Gå in på <https://pathfinder.w3schools.com/> och spara det som ett bokmärke
 - Skapa en användare. Använd gärna ditt privata e-postkonto för att kunna fortsätta ditt lärande även efter utbildningen
 - Lägg till följande "målsättningar". Se hur du gör här: <https://www.youtube.com/watch?v=Urahol7qsLc>
-  - "Frontend Developer"
-    - HTML - Intermediate
-    - CSS - Intermediate
-    - JavaScript - Beginner (överkurs)
-- Välj en studiehastighet på 7 timmar i veckan
-- Därefter ska vi gå lära oss de olika språken i den ordningen. Först HTML, därefter CSS och sist (och minst viktigt) JavaScript.
+  - HTML - Intermediate
+  - CSS - Intermediate
+  - Bootstrap - Beginner
+  - JavaScript - Beginner
+- Välj en studiehastighet på 8 timmar i veckan (spelar egentligen ingen roll)
+- Därefter ska vi gå lära oss de olika punkterna i ovanstående ordning.
 - Tänk på att det viktiga inte är att bli klar utan att lära sig. Se därför till att du förstår en del innan du går vidare till nästa.
 - Är du en sådan som gillar att lära dig via video är dessa spellistor bra resurser:
   - HTML - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s>
@@ -45,7 +45,18 @@ Det första vi måste göra i denna kurs är att lära oss HTML och CSS. HTML an
 - **Beskrivning:** Skapa en serie sidor, var och en med en unik gåta som besökarna måste lösa för att gå vidare. Använd din kreativitet för att göra gåtorna både underhållande och kluriga.
 - **Ramverk:** Implementera en enkel men elegant design med HTML och CSS. Använd gärna JavaScript för att lägga till interaktivitet, så som att avslöja ledtrådar eller validera svar.
 
-### 3. Frågesport
+### 3. Gästbok
+
+- **Syfte:** I denna uppgift ska du designa och lagra information i form av en gästbok som besökare ska kunna skriva i. Du kan om du vill koppla den till din portalsida så att besökare kan lämna ett litet meddelande till dig. I denna uppgift ska du öva på att:
+  - Länka mellan dokument
+  - Skapa både dator- och mobilanpassade responsiv design
+  - Skapa formulär
+  - Skicka data i form av POST-anrop
+  - Lagra och hämta data
+- **Beskrivning:** Skapa en gästbok där användare kan lämna en kommentar till dig. Du måste som minst lagra namn, tidpunkt och meddelande, men du får gärna lagra mer information än så.
+- **Ramverk:** Implementera en enkel men elegant design med HTML och CSS. 
+
+### 4. Frågesport
 
 - **Syfte:** Använd PHP för att skapa en dynamisk och interaktiv frågesport som testar användarnas kunskaper inom ett specifikt område. Lär dig att hantera server-side logik för att processa användarinput och generera responsiv feedback. I denna uppgift ska du öva på att:
   - Skapa dynamiska webbsidor
@@ -53,15 +64,6 @@ Det första vi måste göra i denna kurs är att lära oss HTML och CSS. HTML an
   - Använda PHP i samband med HTML och CSS
 - **Beskrivning:** Utforma en webbaserad frågesport som ställer en serie frågor till användaren. Varje fråga ska skickas till servern där PHP-skript validerar svaren och returnerar resultatet. Denna process ger en djupare förståelse för hur man hanterar data på servern och hur man dynamiskt kan uppdatera webbsidans innehåll baserat på användarinteraktion.
 - **Ramverk:** Använd PHP för att skapa logiken bakom frågesporten, inklusive frågehantering, poängräkning och feedback till användaren. Implementera väl genomtänkt typografi och använd färgteori för att skapa en engagerande och visuellt tilltalande användarupplevelse. Säkerställ att din frågesport är responsiv och tillgänglig på olika enheter genom att använda CSS och eventuellt Flexbox för layoutdesign.
-
-### 4. Chatbot
-
-- **Syfte:** Steg in i AI-världen genom att skapa en chatbot som kan assistera besökare på din webbplats. Träna din bot för att ge användbara svar på vanliga frågor. I denna uppgift ska du öva på att:
-  - Designa ett gränsnitt med hjälp av Flexbox
-  - Implementera AJAX-anrop
-  - Redigera träningsdata
-- **Beskrivning:** Designa ett användargränssnitt för din chatbot och implementera grundläggande interaktioner. Lägg till personlighet och funktionalitet genom att utöka botens träningsdata.
-- **Ramverk:** Använd semantisk HTML för att strukturera chattgränssnittet och Flexbox för att hantera layouten av chattmeddelanden. Botens design ska vara intuitiv och inbjudande.
 
 ### 5. API-projekt
 
@@ -81,16 +83,7 @@ Det första vi måste göra i denna kurs är att lära oss HTML och CSS. HTML an
 - **Beskrivning:** Använd WordPress för att sätta upp en blogg. Utforska olika teman och plugins för att hitta de som bäst passar ditt ämne. Anpassa designen och skriv inlägg som reflekterar ditt intresseområde.
 - **Ramverk:** Anpassa ditt valda tema med CSS och använd semantisk HTML för blogginlägg. Implementera en layout som använder Flexbox för att arrangera innehållet på ett estetiskt sätt.
 
-### 7. Webbutik
-
-- **Syfte:** Ta dina webbutvecklingsfärdigheter till nästa nivå genom att bygga en onlinebutik. Lär dig att hantera produkter, kundvagnar och betalningsprocesser med WooCommerce. I denna uppgift ska du öva på att:
-  - Installera WooCommerce
-  - Designa en e-handelsplattform
-  - Implementera någon typ av betallösning
-- **Beskrivning:** Designa och utveckla en fullt fungerande e-handelsplattform där användare kan bläddra i produkter, lägga till dem i sin kundvagn och genomföra köp.
-- **Ramverk:** Använd WooCommerce tillsammans med WordPress för att sätta upp butiken. Fokusera på användbarhet och design, och se till att butiken är responsiv och tillgänglig.
-
-### 8. Fritt projekt
+### 7. Fritt projekt
 
 - **Syfte:** Visa upp din kreativitet och de kunskaper du förvärvat genom att planera, utveckla och presentera ett helt eget projekt. Detta är din chans att glänsa och utforska nya idéer. I denna uppgift ska du öva på att:
   - Planera ett projekt
@@ -102,10 +95,6 @@ Det första vi måste göra i denna kurs är att lära oss HTML och CSS. HTML an
 ## Extra-uppgifter
 
 Det finns också ett antal [extrauppgifter](extrauppgifter) för dig som vill göra något annat en stund.
-
-## Läromedel
-
-I denna kursen använder vi oss av W3Schools Pathfinder. Du kan skapa en egen inloggning på: <https://pathfinder.w3schools.com/>. De delar vi ska fokusera på är HTML och CSS. Om du vill får du gärna också göra den del som handlar om Javascript. Blir du ombedd att ange hur många timmar i veckan du vill ägna åt dina studier får du gärna ange 6 timmar. Tanken är att du ska använda dig av W3Schools för att klara av dina uppgifter i kursen. Ta för vana att alltid kolla i W3Schools om du kör fast.
 
 ## Roliga kluringar
 
@@ -158,25 +147,9 @@ Man kan skicka filer via ssh (sftp), standard port är 22 men på denna server �
 
 Du kan också, när du fyllt i korrekt information i PhpStorm, logga in via ssh genom `Tools > Start SSH Session` i menyn.
 
-### Anslut via PhpStorm
-
-1. Gå via menyn in på `File > Settings > Build, Execution, Deployment > Depolyment`
-2. Lägg till en server via `+`-symbolen av typen `SFTP` och ange exempelvis namnet `student.oedu.se`
-3. Ange följande information under "Connection":
-   1. Host: `student.oedu.se`
-   2. Port: `3690`
-   3. Username: Ditt login till servern (börjar i regel med dina initialer följt av en serie siffror)
-   4. Password: Det lösenord du fått till servern
-   5. Root path: `home/students/vt24/ditt_login`
-   6. Web server url: `http://student.oedu.se/~ditt_login`
-4. Ange följande information under "Mappings"
-   1. Local path: Välj den mapp på datorn du vill använda. Skapa exempelvis en mapp som synkas till OneDrive med namnet `Kod`
-   2. Deplyment path: `/public_html`
-   3. Web path: `/`
-
 ## Använd Visual Studio Code
 
-Det är också möjligt att i kursen använda Visual Studio Code. Då kan du jobba direkt emot utvecklingsservern och behöver inte tänka på att "deploya". Följ bara nedanstående guide:
+Jag rekommenderar att du i kursen använder programmet Visual Studio Code. Då kan du jobba direkt emot utvecklingsservern och behöver inte tänka på att "deploya". Följ nedanstående guide:
 
 - Ladda ner och installera programmet här: <https://code.visualstudio.com/>
 - Installera därefter följande extension-paket:
@@ -196,13 +169,6 @@ Det är också möjligt att i kursen använda Visual Studio Code. Då kan du job
 
 Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator.
 
-### Andra bra extension-paket
-
-Du kan hitta tusentals extensions till Visual Studio Code på <https://marketplace.visualstudio.com> men dessa vill jag särskilt rekommendera:
-
-- HTML CSS Support: <https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css>
-- HTMLHint: <https://marketplace.visualstudio.com/items?itemName=HTMLHint.vscode-htmlhint>
-
 ## Namnge filer och mappar
 
 1. **Skiftlägeskänslighet:** På en Linux-server är filnamn känsliga för skiftläge. Använd små bokstäver för att undvika förväxling.
@@ -216,4 +182,4 @@ Du kan hitta tusentals extensions till Visual Studio Code på <https://marketpla
 
 ## OpenAI ChatGPT
 
-Om du kör fast i din kodning, tveka inte att ställa frågor till Open AI:s chattbot ChatGPT som är förvånansvärt skicklig på att skriva kod. Var bara tydlig med vilket slags språk du vill ha hjälp med, exempelvis HTML, CSS, PHP eller Java: <https://chat.openai.com/>. Undvik dock att använda tjänsten för att svara på dina frågor och lösa dina uppgifter eftersom det förhindrar din egen inlärning. Men som assistent som svarar på dina frågor och funderar är det ett bra verktyg.
+Om du kör fast i din kodning, tveka inte att ställa frågor till Open AI:s chattbot ChatGPT som är förvånansvärt skicklig på att skriva kod. Var bara tydlig med vilket slags språk du vill ha hjälp med, exempelvis HTML, CSS, PHP eller JavaScript: <https://chat.openai.com/>. Men undvik att använda AI-teknik för att generera redan färdig kod. En bättre strategi är att använda tekniken för att felsöka och för att förklara i detalj vad funktioner etc gör.
