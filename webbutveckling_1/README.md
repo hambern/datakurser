@@ -2,6 +2,24 @@
 
 Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 
+## Färdighetsträning
+
+Det första vi måste göra i denna kurs är att lära oss HTML och CSS. HTML används för att skapa ett dokument som kan visas i en webbläsare och CSS används för att bestämma och justera utseendet av dokumentets delar. För att göra detta kommer vi använda oss av W3Schools plattform "Pathfinder": <https://pathfinder.w3schools.com/>. Pathfinder håller reda på var du är i ditt lärande så att det är lätt att fortsätta där du slutade senast.
+
+- Gå in på <https://pathfinder.w3schools.com/> och spara det som ett bokmärke
+- Skapa en användare. Använd gärna ditt privata e-postkonto för att kunna fortsätta ditt lärande även efter utbildningen
+- Lägg till följande "målsättningar". Se hur du gör här: <https://www.youtube.com/watch?v=Urahol7qsLc>
+  - "Frontend Developer"
+    - HTML - Intermediate
+    - CSS - Intermediate
+    - JavaScript - Beginner (överkurs)
+- Välj en studiehastighet på 7 timmar i veckan
+- Därefter ska vi gå lära oss de olika språken i den ordningen. Först HTML, därefter CSS och sist (och minst viktigt) JavaScript.
+- Tänk på att det viktiga inte är att bli klar utan att lära sig. Se därför till att du förstår en del innan du går vidare till nästa.
+- Är du en sådan som gillar att lära dig via video är dessa spellistor bra resurser:
+  - HTML - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s>
+  - CSS - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UCaUSF3XNZ1U9f01E5h5PM>
+
 ## Uppgifter
 
 ### 1. Portalsida
