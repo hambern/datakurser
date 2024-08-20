@@ -1,8 +1,4 @@
-Här är en uppdaterad och detaljerad uppgiftsbeskrivning för ett API-projekt där studenterna själva får utforska och implementera ett API av eget val:
-
----
-
-# Uppgift 5: API-projekt
+# Skapa en sida utifrån ett API
 
 ### Syfte
 Denna uppgift syftar till att ge dig praktisk erfarenhet av att använda och integrera ett publikt API i en webbapplikation. Du kommer att utforska hur externa datakällor kan användas för att skapa dynamiska och interaktiva webbapplikationer. Genom att använda PHP för att hämta och bearbeta data, och Bootstrap för att designa gränssnittet, kommer du att få en djupare förståelse för både backend- och frontend-utveckling.
