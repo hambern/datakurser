@@ -1,7 +1,7 @@
 # Skapa en personlig portalsida
 
 ### Syfte
-Denna uppgift har som mål att introducera dig till grunderna i webbutveckling genom att skapa en personlig portalsida. Här får du möjlighet att öva på att sätta upp en grundläggande webbplatsstruktur med HTML och CSS. Du kommer också att introduceras till semantisk HTML, vilket hjälper dig att skapa välstrukturerade och lättlästa webbsidor.
+Denna uppgift har som mål att introducera dig till grunderna i webbutveckling genom att skapa en personlig portalsida eller digitalt CV. Här får du möjlighet att öva på att sätta upp en grundläggande webbplatsstruktur med HTML och CSS. Du kommer också att introduceras till semantisk HTML, vilket hjälper dig att skapa välstrukturerade och lättlästa webbsidor.
 
 ### Mål
 Efter att ha slutfört denna uppgift ska du kunna:
