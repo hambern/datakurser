@@ -37,20 +37,30 @@ Här är en översikt av kursens examinerande uppgifter. De är utade för att d
 
 Varje uppgift bygger på tidigare lärdomar och introducerar nya verktyg och tekniker för att fördjupa dina kunskaper i webbutveckling. Uppgifterna är utformade för att hjälpa dig att bli bekväm med olika aspekter av webbutveckling, från grundläggande HTML och CSS till mer avancerad användning av PHP, JavaScript och API-integration.
 
-## Roliga kluringar
+## Roliga kluringar och CSS-spel
 
-1. [Hambergs kluring 1](https://student.oedu.se/~mh6802/kul/mattias_kul_01/)
-2. [Hambergs kluring 2](https://student.oedu.se/~mh6802/kul/mattias_kul_02/)
-3. [Hambergs kluring 3](https://student.oedu.se/~mh6802/kul/mattias_kul_03/)
-4. [Notpron](http://notpron.org/notpron/)
+När du känner dig trött eller behöver en paus från ditt huvudsakliga arbete, kan du ändå fortsätta att utveckla dina webbutvecklingsfärdigheter på ett underhållande sätt. Här är några roliga kluringar och CSS-spel som hjälper dig att skärpa dina färdigheter samtidigt som du har kul.
 
-## CSS-spel
+### Roliga kluringar
 
-1. Flexbox Adventure: <https://codingfantasy.com/games/flexboxadventure> - Lär dig använda Flexbox
-2. Flexbox Froggy: <https://flexboxfroggy.com/#sv> - Lär dig använda Flexbox
-3. Flexbox Defense: <http://www.flexboxdefense.com/> - Lär dig använda Flexbox
-4. Unfolding the Box: <https://rupl.github.io/unfold/> - Lär dig 3D-grafik med CSS
-5. CSSBattle: <https://cssbattle.dev> - Supersvåra dagliga CSS-utmaningar för designers
+Dessa kluringar är utformade för att utmana ditt logiska tänkande och din förmåga att lösa problem. De är särskilt användbara för att förbättra din förståelse av webbinspektören i din webbläsare, där du kan se och modifiera HTML- och CSS-kod direkt på en webbsida. Genom att lösa dessa kluringar får du öva på att använda verktyg som inspektören, och du lär dig också att tänka kreativt kring hur webbsidor är uppbyggda.
+
+1. **[Hambergs kluring 1](https://student.oedu.se/~mh6802/kul/mattias_kul_01/)** - Börja med en enkel men klurig gåta där du måste undersöka sidan noggrant för att hitta ledtrådar.
+2. **[Hambergs kluring 2](https://student.oedu.se/~mh6802/kul/mattias_kul_02/)** - Fortsätt med en mer utmanande gåta som kräver ännu mer utforskande av webbsidans struktur.
+3. **[Hambergs kluring 3](https://student.oedu.se/~mh6802/kul/mattias_kul_03/)** - Den svåraste av Hambergs kluringar, där du verkligen måste tänka utanför boxen.
+4. **[Notpron](http://notpron.org/notpron/)** - En legendarisk onlinegåta som har blivit känd som "världens svåraste spel". Notpron består av flera nivåer där varje lösning kräver att du använder dina webbutvecklingsfärdigheter och logik.
+
+### CSS-spel
+
+Om du vill förbättra dina CSS-färdigheter, särskilt när det gäller layout och positionering med Flexbox och 3D-grafik, är dessa spel både lärorika och roliga. Genom att spela dessa spel lär du dig att använda CSS på nya sätt, samtidigt som du tävlar eller löser problem.
+
+1. **[Flexbox Adventure](https://codingfantasy.com/games/flexboxadventure)** - Ett äventyrsspel där du använder Flexbox för att navigera genom utmaningar.
+2. **[Flexbox Froggy](https://flexboxfroggy.com/#sv)** - Hjälp en groda att hitta sin näckros genom att använda Flexbox för att styra layouten.
+3. **[Flexbox Defense](http://www.flexboxdefense.com/)** - Försvara dig mot inkommande attacker genom att använda Flexbox för att placera dina försvar.
+4. **[Unfolding the Box](https://rupl.github.io/unfold/)** - Ett spel där du lär dig att skapa och manipulera 3D-grafik med CSS.
+5. **[CSSBattle](https://cssbattle.dev)** - En tävlingsinriktad plattform där du löser dagliga CSS-utmaningar och tävlar mot andra designers för att skapa de mest effektiva CSS-lösningarna.
+
+Dessa verktyg och spel är utformade för att hjälpa dig att lära dig på ett roligt och interaktivt sätt, och de ger dig möjlighet att praktiskt tillämpa och utöka dina webbutvecklingsfärdigheter.
 
 ## Validering
 
