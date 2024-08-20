@@ -20,6 +20,23 @@ Det första vi måste göra i denna kurs är att lära oss HTML och CSS. HTML an
   - HTML - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s>
   - CSS - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UCaUSF3XNZ1U9f01E5h5PM>
 
+## Uppgifter
+
+Här är en översikt av kursens examinerande uppgifter. De är utade för att du ska kunna tillämpa de kunskaper du förvärvar genom kursen och visa upp dem på ett kreativt sätt. Den föreslagna ordningen är följande:
+
+| **Uppgift**                                                                 | **Beskrivning**                                                                                             | **Vad du lär dig**                                                                                       |
+|------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| [**Portalsida**](projekt/projekt_portalsida/)                                | Skapa en personlig portalsida som fungerar som en central hub för alla dina framtida projekt.                  | Grunder i HTML5 och CSS, sätta upp en webbplatsstruktur, responsiv design.                                |
+| [**Kluring**](projekt/projekt_kluring/)                                      | Skapa en serie sidor med gåtor som användaren måste lösa för att komma vidare.                                  | Länkning mellan sidor, grundläggande JavaScript, interaktiv design.                                       |
+| [**Komprimering**](projekt/projekt_komprimering/)                            | Hämta bilder och filmer från Pexels, komprimera dem och skapa en optimerad och ooptimerad version av en webbplats. | Bild- och videokomprimering med GIMP och HandBrake, jämförelse av filformat, HTML5-mediaspelare.          |
+| [**Gästbok**](projekt/projekt_gastbok/)                                      | Skapa en gästbok där användare kan lämna kommentarer som lagras och visas på sidan.                             | Skapa formulär, hantera och lagra data med PHP, skapa dynamiskt innehåll.                                 |
+| [**Frågesport**](projekt/projekt_fragesport/)                                | Utveckla en frågesport som testar användarnas kunskaper och lagrar resultat.                                   | Använda PHP för databehandling, dynamiskt innehåll, flerstegsformulär.                                    |
+| [**Blogg**](projekt/projekt_blogg/)                                          | Skapa en egen blogg med WordPress, anpassa ett tema och skriv inlägg om olika ämnen.                           | CMS-hantering, anpassning av WordPress-teman med CSS, skrivande av blogginlägg och kategorisering.         |
+| [**API**](projekt/projekt_api/)                                              | Integrera ett publikt API i en webbapplikation och visa upp data på ett användarvänligt sätt.                  | Hämta och visa data från externa API:er med PHP, design av responsivt gränssnitt med Bootstrap.           |
+| [**Slutprojektet**](projekt/projekt_slut/)                                   | Planera, utveckla och presentera ett eget projekt som sammanfattar allt du lärt dig under kursen.              | Projektplanering, fullständig webbplatsutveckling, användning av flera tekniker och verktyg.              |
+
+Varje uppgift bygger på tidigare lärdomar och introducerar nya verktyg och tekniker för att fördjupa dina kunskaper i webbutveckling. Uppgifterna är utformade för att hjälpa dig att bli bekväm med olika aspekter av webbutveckling, från grundläggande HTML och CSS till mer avancerad användning av PHP, JavaScript och API-integration.
+
 ## Roliga kluringar
 
 1. [Hambergs kluring 1](https://student.oedu.se/~mh6802/kul/mattias_kul_01/)
