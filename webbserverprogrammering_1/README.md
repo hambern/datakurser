@@ -19,9 +19,9 @@ Det första vi måste göra i denna kurs är att lära oss PHP, MySQL och Git. M
 - Är du en sådan som gillar att lära dig via video är denna spellista en bra resurs:
   - SQL - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI>
 
-  Här är en strukturerad översikt av uppgifterna för kursen i Webbserverprogrammering 1, som fokuserar på utvecklingen av en ToDo-applikation och en Recensions-sida. Varje uppgift bygger på den tidigare, vilket ger en gradvis mer avancerad förståelse av webbprogrammering, databasoperationer, och relationshantering.
-
 ## Uppgifter
+
+Här är en strukturerad översikt av uppgifterna för kursen i Webbserverprogrammering 1, som fokuserar på utvecklingen av en ToDo-applikation och en Recensions-sida. Varje uppgift bygger på den tidigare, vilket ger en gradvis mer avancerad förståelse av webbprogrammering, databasoperationer, och relationshantering.
 
 ### ToDo-applikation
 
