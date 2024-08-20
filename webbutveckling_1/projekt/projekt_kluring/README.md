@@ -59,7 +59,7 @@ För att förbereda dig inför denna uppgift, rekommenderar jag att du läser:
 
 ---
 
-# Bedömning
+## Bedömning
 
 | **Kvalitetsaspekt**         | **Betyg E**                                      | **Betyg C**                                      | **Betyg A**                                      |
 |-----------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|

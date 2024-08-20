@@ -106,7 +106,7 @@ För att förbereda dig inför denna uppgift, rekommenderar jag att du läser ig
 
 ---
 
-# Bedömning
+## Bedömning
 
 | **Kvalitetsaspekt**         | **Betyg E**                                      | **Betyg C**                                      | **Betyg A**                                      |
 |-----------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
