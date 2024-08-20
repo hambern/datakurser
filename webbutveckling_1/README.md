@@ -22,7 +22,7 @@ Det första vi måste göra i denna kurs är att lära oss HTML och CSS. HTML an
 
 ## Uppgifter
 
-Här är en översikt av kursens examinerande uppgifter. De är utade för att du ska kunna tillämpa de kunskaper du förvärvar genom kursen och visa upp dem på ett kreativt sätt. Den föreslagna ordningen är följande:
+Här är en översikt av kursens examinerande uppgifter. De är utformade för att du ska kunna tillämpa de kunskaper du förvärvar genom kursen och visa upp dem på ett kreativt sätt. Den föreslagna ordningen är följande:
 
 | **Uppgift**                                                                 | **Beskrivning**                                                                                             | **Vad du lär dig**                                                                                       |
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
