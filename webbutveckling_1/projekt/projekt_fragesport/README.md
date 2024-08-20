@@ -1,60 +1,64 @@
-# Projekt - Frågesport
+# Skapa en frågesport om Internets Historia
 
-Webben - som vi känner den idag - uppfanns av Tim Berners-Lee, helt själv i på Cern-institutet i Schweiz 1989. I den här uppgiften ska du, utifrån sveriges internetmuseum, skapa en frågesport som testar din besökares kunskaper om webbens historia från 1989 fram till idag. Denna uppgift ska utveckla och testa såväl dina kunskaper i HTML och CSS som i PHP. Det är alltså ett samarbetsprojekt mellan Webbutvecklings-kursen och Programmering 1 där de olika kurserna kommer att titta på olika aspekter av din kod.
+### Syfte
+Denna uppgift syftar till att ge dig praktisk erfarenhet av att skapa en interaktiv och dynamisk frågesport med hjälp av PHP. Frågesporten ska testa användarnas kunskaper om internets historia, med frågor baserade på fakta från Internetmuseum. Du kommer att få öva på att strukturera och bygga en komplett webbapplikation, samt att hantera och bearbeta data på servern.
 
-### Internetmuseum
+### Mål
+Efter att ha slutfört denna uppgift ska du kunna:
+- Utforma ett formulär som tar emot och bearbetar användarinmatning.
+- Använda PHP för att hantera server-side logik, räkna poäng och ge användaren feedback.
+- Implementera en highscore-lista baserad på användarnas resultat.
+- Designa en tilltalande och användarvänlig webbapplikation med hjälp av HTML och CSS.
+- Testa och validera din kod för att säkerställa korrekt funktionalitet på olika enheter och i olika webbläsare.
 
-Internetmuseum grundades i december 2014 och blev i juni 2016 invalt i Sveriges museum, som första utpräglat digitala museet i Sverige. Syftet med museet är att spara det svenska digitala kulturarvet, samt att sprida fördjupad kunskap om nätets historia i Sverige.
+### Beskrivning
+Din uppgift är att skapa en frågesport om internets historia med minst 15 frågor baserade på information från [Internetmuseum](https://www.internetmuseum.se/). Frågesporten ska vara interaktiv, dynamisk och innefatta en poängräkning samt en highscore-lista som visar de bästa resultaten.
 
-- [Tidslinjen](https://www.internetmuseum.se/tidslinjen/www/)
-- [Viktiga milstolpar](https://www.internetmuseum.se/museumtagg/milstolpar/)
+#### Krav för frågesporten:
+1. **Frågesportens struktur:**
+   - **`index.php`**: Startsidan med ett formulär där användaren fyller i sitt namn och startar frågesporten.
+   - **`quiz.php`**: Huvudsidan där frågorna ställs och användarens svar samlas in.
+   - **`result.php`**: Sidan där svaren rättas, poängen räknas och resultatet visas.
+   - **`highscore.php`**: En sida som visar highscore-listan med de bästa resultaten.
 
-## Instruktioner
+2. **Frågetyper:**
+   - Använd olika typer av inmatningsfält, som radioknappar, checkboxar, och select-menyer.
+   - Minst en fråga ska ha en tillhörande bild och minst en fråga ska ha en tillhörande video.
 
-1. Läs på om internets historia på https://www.internetmuseum.se/
-2. Utifrån informationen ska du skapa en frågesport med minst 15 centrala fakta.
-3. Svarsalternativen ska vara märkta med antingen flervalsfält (select), radioknappar (radio), range eller checkboxar. Undvik gärna text-fält då de är mer svår-rättade. Läs mer om HTML5-formulär via följande sida https://www.w3schools.com/html/html_forms.asp
-4. Flödet kan exempelvis se ut såhär:
-   - `index.php` Innehåller _ett_ formulär för namn och svarsalternativ som skickas till...
-   - `answer.php` som rättar svaren och sparar resultatet i `results.txt` varpå den visar upp både besökarens resultat och den aktuella high-score-topplistan.
-5. Man ska skriva in sitt namn (används till high-score-listan)
-6. Minst en fråga ska ha en tillhörande bild och minst en fråga ska ha en tillhörande video.
-7. Det ska finnas en “tack för att du genomförde min frågesport”-sida där du visar resultatet
-8. Det ska finnas en highscore-lista där du listar de som fått flest poäng
-9. Formge din frågesport med hjälp av CSS. Denna gång är utformningen väldigt fri. Men en god formgivning ska bland annat ha följande kvaliteter:
-   - **Vacker**. Sidan bör givetvis se vacker ut för dina besökare
-   - **Tydlig**. Man bör enkelt se vad som ska göras och hur man ska göra det
-   - **Tillgänglig**. Även synskadade bör kunna läsa dina frågor. Välj ett lättläst typsnitt och tänk på kontrasten mellan bakgrunden och texten
-   - **Responsiv**. Det blir allt vanligare att surfa med mobilen. Kontrollera så att sidan också ser bra ut på mobiltelefonen
-   - **Kodkvalitet**. Tänk på att koden ska vara lättläst (indenterad), effektiv (kort), och ha logiskt namngivna element, id:n och klasser
-10. Testa din frågesport via mobilen, samt minst två webbläsare och kontrollera så att allt fungerar och ser ut som det ska.
-11. Glöm inte bort att validera din kod. Varningar kan vara okej, men direkta fel får inte förekomma.
-12. Lämna in din färdiga frågesport på vklass.
+3. **Poängräkning och highscore-lista:**
+   - Spara användarens resultat och namn i en textfil (`results.txt`) för att skapa en highscore-lista.
+
+4. **Design och användarvänlighet:**
+   - Formge frågesporten med CSS. Designen ska vara vacker, tydlig och responsiv.
+   - Sidan ska vara tillgänglig och enkel att använda både på datorer och mobila enheter.
+
+5. **Testning och validering:**
+   - Testa frågesporten på olika enheter och webbläsare.
+   - Validera HTML och CSS för att säkerställa att koden är korrekt och effektiv.
+
+### Ramverk och tekniker
+- **HTML och CSS:** Använd HTML för att skapa strukturen och formulären på sidan. Använd CSS för att skapa en stilren och responsiv design.
+- **PHP:** Använd PHP för att hantera logik, bearbeta svar, räkna poäng och spara resultat.
+- **JavaScript (valfritt):** Använd JavaScript för att förbättra användarupplevelsen genom exempelvis formulärvalidering eller dynamiska effekter.
 
 ### Tips och tricks
 
-- På denna sida kan du välja bland tusentals vackra färgscheman till din sida: <https://coolors.co/>
-- Detta är ett exempel på hur du kan göra radio-knappar till vanliga knappar:
-<https://jsfiddle.net/hambern/er6Lypbk>
-- Detta är ett exempel på hur du kan visa bara en fråga i taget och sedan, via en knapp, kan visa nästa fråga: <https://jsfiddle.net/hambern/u1refgqy>
-- Detta är ett lite mer avancerat exempel där jag dessutom lagt till en animation: <https://jsfiddle.net/hambern/1koj2epx/>
-- Detta är ett exempel där knapparna bytts ut emot en eventlistener som bläddrar vid klickning på page-elementet (kan såklart bytas ut emot klick på en knapp): <https://jsfiddle.net/hambern/ykqsLt29/>
-- Detta är ett exempel på hur du kan skapa en tidtagning. Inputfältet kommer att skicka antalet sekunder det tog att genomföra frågesporten: <https://jsfiddle.net/hambern/y0pgnw3e/> 
-- Kika gärna också på CSS-avdelningen på denna praktiska sida: <https://10015.io/>
+- **Färgscheman:** Använd verktyg som [Coolors](https://coolors.co/) för att hitta snygga färgscheman.
+- **Formulärdesign:** Kolla in exempel på formulärdesign på [W3Schools](https://www.w3schools.com/html/html_forms.asp).
+- **CSS-animationer:** Se exempel på CSS-animationer och interaktiv design på [JSFiddle](https://jsfiddle.net/).
 
-### Strålande elevexempel
+### Resurser att studera
+För att förbereda dig inför denna uppgift rekommenderas att du studerar följande resurser:
+- [Internetmuseum](https://www.internetmuseum.se/) för att samla fakta om internets historia.
+- [HTML och CSS](https://www.w3schools.com/html/html_forms.asp) för att skapa formulär och designa sidorna.
+- [PHP](https://www.w3schools.com/php/php_intro.asp) för att lära dig grunderna i hur du hanterar server-side logik.
 
-- Jacob Berggren (2020) <https://student.oedu.se/~jb0015/Programering/F-Textfiler/U6-Fragesport/fragesport.php>
-- Henrik Hellström (2021) <https://student.oedu.se/~hh0022/Webbutveckling/Fr%c3%a5gesport/>
+---
 
 ## Bedömning
 
-| Kriterium              | E | C | A |
-|------------------------|---|---|---|
-| Responsivitet          |   | Sidan ser bra ut även vid större och mindre textstorlekar och är tydlig och lättillgänglig | Sidan ser bra ut även i mobilvy och är tydlig och lättillgänglig |
-| Validering             |   | Sidan validerar till övervägande del CSS och HTML korrekt | Sidan validerar CSS och HTML korrekt utan varningar |
-| Element och selektorer| Koden använder fungerande element och selektorer | Koden använder lämpliga element och selektorer | Koden använder elementen och selektorerna på ett effektivt sätt |
-| Semantik        | | Koden använder sig av semantisk HTML | Koden använder sig av semantisk HTML på ett utmärkt sätt |
-| Formulär                | Sidan har ett fungerande formulär | Formuläret använder lämpliga fält-typer | |
-| Indentering            | Koden är indenterad och lättläst | Koden är väl indenterad och lättläst | |
-| Kommentarer            | Koden innehåller inga kommentarer | Koden innehåller få kommentarer som ger en viss förståelse | Koden innehåller förtydligande kommentarer |
+| **Kvalitetsaspekt**         | **Betyg E**                                      | **Betyg C**                                      | **Betyg A**                                      |
+|-----------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
+| **Frågesportens logik och validering** | PHP används för enkel validering och poängräkning. | PHP används för noggrann validering och strukturerad poängräkning. | PHP används för avancerad validering och feedback baserat på användarens svar. |
+| **Design och användarupplevelse** | Enkel CSS används för att styla frågesporten.      | CSS används för att skapa en responsiv och användarvänlig design. | CSS används för att skapa en professionell och engagerande design, som fungerar på alla enheter. |
+| **Responsivitet**           | Frågesporten fungerar på både datorer och mobila enheter. | Frågesporten är responsiv och anpassar sig väl till olika skärmstorlekar. | Frågesporten är fullt responsiv och optimerad för alla enheter, med särskild hänsyn till användarupplevelse. |

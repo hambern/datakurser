@@ -2,55 +2,72 @@
 
 Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 
+## Färdighetsträning
+
+Det första vi måste göra i denna kurs är att lära oss HTML och CSS. HTML används för att skapa ett dokument som kan visas i en webbläsare och CSS används för att bestämma och justera utseendet av dokumentets delar. För att göra detta kommer vi använda oss av W3Schools plattform "Pathfinder": <https://pathfinder.w3schools.com/>. Pathfinder håller reda på var du är i ditt lärande så att det är lätt att fortsätta där du slutade senast.
+
+- Gå in på <https://pathfinder.w3schools.com/> och spara det som ett bokmärke
+- Skapa en användare. Använd gärna ditt privata e-postkonto för att kunna fortsätta ditt lärande även efter utbildningen
+- Lägg till följande "målsättningar". Se hur du gör här: <https://www.youtube.com/watch?v=Urahol7qsLc>
+  - HTML - Intermediate
+  - CSS - Intermediate
+  - Bootstrap - Beginner
+  - JavaScript - Beginner
+- Välj en studiehastighet på 8 timmar i veckan (spelar egentligen ingen roll)
+- Därefter ska vi gå lära oss de olika punkterna i ovanstående ordning.
+- Tänk på att det viktiga inte är att bli klar utan att lära sig. Se därför till att du förstår en del innan du går vidare till nästa.
+- Är du en sådan som gillar att lära dig via video är dessa spellistor bra resurser:
+  - HTML - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s>
+  - CSS - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UCaUSF3XNZ1U9f01E5h5PM>
+
 ## Uppgifter
 
-1. [html_uppgift_1](html/html_uppgift_1)
-2. [html_uppgift_2](html/html_uppgift_2)
-3. Vänta här in dina kamrater. Gör en extrauppgift eller en kul kluring
-4. [css_uppgift_1](css/css_uppgift_1)
-5. [css_uppgift_2](css/css_uppgift_2)
-6. [css_uppgift_3](css/css_uppgift_3)
-7. Vänta här in dina kamrater. Gör en extrauppgift eller en kul kluring
-8. [css_uppgift_4](css/css_uppgift_4)
-9. [css_uppgift_5](css/css_uppgift_5)
-10. [css_uppgift_6](css/css_uppgift_6)
-11. Vänta här in dina kamrater. Gör en extrauppgift eller en kul kluring
-12. [projekt_fragesport](projekt/projekt_fragesport)
-13. [projekt_gastbok](projekt/projekt_gastbok)
-14. [projekt_blogg](projekt/projekt_blogg)
-15. [projekt_slut](projekt/projekt_slut)
+Här är en översikt av kursens examinerande uppgifter. De är utformade för att du ska kunna tillämpa de kunskaper du förvärvar genom kursen och visa upp dem på ett kreativt sätt. Den föreslagna ordningen är följande:
 
-Det finns också ett antal [extrauppgifter](extrauppgifter) för dig som vill göra något annat en stund.
+| **Uppgift**                                                                 | **Beskrivning**                                                                                             | **Vad du lär dig**                                                                                       |
+|------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| [**Portalsida**](projekt/projekt_portalsida/)                                | Skapa en personlig portalsida som fungerar som en central hub för alla dina framtida projekt.                  | Grunder i HTML5 och CSS, sätta upp en webbplatsstruktur, responsiv design.                                |
+| [**Kluring**](projekt/projekt_kluring/)                                      | Skapa en serie sidor med gåtor som användaren måste lösa för att komma vidare.                                  | Länkning mellan sidor, grundläggande JavaScript, interaktiv design.                                       |
+| [**Komprimering**](projekt/projekt_komprimering/)                            | Hämta bilder och filmer från Pexels, komprimera dem och skapa en optimerad och ooptimerad version av en webbplats. | Bild- och videokomprimering med GIMP och HandBrake, jämförelse av filformat, HTML5-mediaspelare.          |
+| [**Gästbok**](projekt/projekt_gastbok/)                                      | Skapa en gästbok där användare kan lämna kommentarer som lagras och visas på sidan.                             | Skapa formulär, hantera och lagra data med PHP, skapa dynamiskt innehåll.                                 |
+| [**Frågesport**](projekt/projekt_fragesport/)                                | Utveckla en frågesport som testar användarnas kunskaper och lagrar resultat.                                   | Använda PHP för databehandling, dynamiskt innehåll, flerstegsformulär.                                    |
+| [**Blogg**](projekt/projekt_blogg/)                                          | Skapa en egen blogg med WordPress, anpassa ett tema och skriv inlägg om olika ämnen.                           | CMS-hantering, anpassning av WordPress-teman med CSS, skrivande av blogginlägg och kategorisering.         |
+| [**API**](projekt/projekt_api/)                                              | Integrera ett publikt API i en webbapplikation och visa upp data på ett användarvänligt sätt.                  | Hämta och visa data från externa API:er med PHP, design av responsivt gränssnitt med Bootstrap.           |
+| [**Slutprojektet**](projekt/projekt_slut/)                                   | Planera, utveckla och presentera ett eget projekt som sammanfattar allt du lärt dig under kursen.              | Projektplanering, fullständig webbplatsutveckling, användning av flera tekniker och verktyg.              |
 
-## Övningar
+Varje uppgift bygger på tidigare lärdomar och introducerar nya verktyg och tekniker för att fördjupa dina kunskaper i webbutveckling. Uppgifterna är utformade för att hjälpa dig att bli bekväm med olika aspekter av webbutveckling, från grundläggande HTML och CSS till mer avancerad användning av PHP, JavaScript och API-integration.
 
-På W3Scools finns det små självrättande interaktiva övningar. Gör gärna dessa för att testa dig själv:
+## Roliga kluringar och CSS-spel
 
-- HTML-övningar: <https://www.w3schools.com/html/exercise.asp>
-- CSS-övningar: <https://www.w3schools.com/css/exercise.asp>
+När du känner dig trött eller behöver en paus från ditt huvudsakliga arbete, kan du ändå fortsätta att utveckla dina webbutvecklingsfärdigheter på ett underhållande sätt. Här är några roliga kluringar och CSS-spel som hjälper dig att skärpa dina färdigheter samtidigt som du har kul.
 
-## Roliga kluringar
+### Roliga kluringar
 
-1. [Hambergs kluring 1](https://student.oedu.se/~mh6802/kul/mattias_kul_01/)
-2. [Hambergs kluring 2](https://student.oedu.se/~mh6802/kul/mattias_kul_02/)
-3. [Hambergs kluring 3](https://student.oedu.se/~mh6802/kul/mattias_kul_03/)
-4. [Notpron](http://notpron.org/notpron/)
+Dessa kluringar är utformade för att utmana ditt logiska tänkande och din förmåga att lösa problem. De är särskilt användbara för att förbättra din förståelse av webbinspektören i din webbläsare, där du kan se och modifiera HTML- och CSS-kod direkt på en webbsida. Genom att lösa dessa kluringar får du öva på att använda verktyg som inspektören, och du lär dig också att tänka kreativt kring hur webbsidor är uppbyggda.
 
-## CSS-spel
+1. **[Hambergs kluring 1](https://student.oedu.se/~mh6802/kul/mattias_kul_01/)** - Börja med en enkel men klurig gåta där du måste undersöka sidan noggrant för att hitta ledtrådar.
+2. **[Hambergs kluring 2](https://student.oedu.se/~mh6802/kul/mattias_kul_02/)** - Fortsätt med en mer utmanande gåta som kräver ännu mer utforskande av webbsidans struktur.
+3. **[Hambergs kluring 3](https://student.oedu.se/~mh6802/kul/mattias_kul_03/)** - Den svåraste av Hambergs kluringar, där du verkligen måste tänka utanför boxen.
+4. **[Notpron](http://notpron.org/notpron/)** - En legendarisk onlinegåta som har blivit känd som "världens svåraste spel". Notpron består av flera nivåer där varje lösning kräver att du använder dina webbutvecklingsfärdigheter och logik.
 
-1. Grid Garden: <https://cssgridgarden.com/#sv> - Lär dig använda CSS-grid
-2. Flexbox Froggy: <https://flexboxfroggy.com/#sv> - Lär dig använda Flexbox
-3. Flexbox Defense: <http://www.flexboxdefense.com/>
-4. Unfolding the Box: <https://rupl.github.io/unfold/> - Lär dig 3D-grafik med CSS
-4. CSSBattle: <https://cssbattle.dev> - Supersvåra dagliga CSS-utmaningar för designers
+### CSS-spel
 
+Om du vill förbättra dina CSS-färdigheter, särskilt när det gäller layout och positionering med Flexbox och 3D-grafik, är dessa spel både lärorika och roliga. Genom att spela dessa spel lär du dig att använda CSS på nya sätt, samtidigt som du tävlar eller löser problem.
+
+1. **[Flexbox Adventure](https://codingfantasy.com/games/flexboxadventure)** - Ett äventyrsspel där du använder Flexbox för att navigera genom utmaningar.
+2. **[Flexbox Froggy](https://flexboxfroggy.com/#sv)** - Hjälp en groda att hitta sin näckros genom att använda Flexbox för att styra layouten.
+3. **[Flexbox Defense](http://www.flexboxdefense.com/)** - Försvara dig mot inkommande attacker genom att använda Flexbox för att placera dina försvar.
+4. **[Unfolding the Box](https://rupl.github.io/unfold/)** - Ett spel där du lär dig att skapa och manipulera 3D-grafik med CSS.
+5. **[CSSBattle](https://cssbattle.dev)** - En tävlingsinriktad plattform där du löser dagliga CSS-utmaningar och tävlar mot andra designers för att skapa de mest effektiva CSS-lösningarna.
+
+Dessa verktyg och spel är utformade för att hjälpa dig att lära dig på ett roligt och interaktivt sätt, och de ger dig möjlighet att praktiskt tillämpa och utöka dina webbutvecklingsfärdigheter.
 
 ## Validering
 
 Ta gärna för vana att alltid validera dina filer innan inlämning. På så vis får du veta om du gjort något fel, och det är dessutom det första jag gör när jag rättar de uppgifter du lämnar in.
 
-- Validering av HTML5: http://html5.validator.nu
-- Validering av CSS: http://jigsaw.w3.org/css-validator (Ange CSS nivå 3 under "Fler val" och ställ in "Alla" under "Varningar")
+- Validering av HTML5: <http://html5.validator.nu>
+- Validering av CSS: <http://jigsaw.w3.org/css-validator> (Ange CSS nivå 3 under "Fler val" och ställ in "Alla" under "Varningar")
 
 ## Information om skolans server
 
@@ -81,51 +98,27 @@ Man kan skicka filer via ssh (sftp), standard port är 22 men på denna server �
 
 Du kan också, när du fyllt i korrekt information i PhpStorm, logga in via ssh genom `Tools > Start SSH Session` i menyn.
 
-### Anslut via PhpStorm
-
-1. Gå via menyn in på `File > Settings > Build, Execution, Deployment > Depolyment`
-2. Lägg till en server via `+`-symbolen av typen `SFTP` och ange exempelvis namnet `student.oedu.se`
-3. Ange följande information under "Connection":
-   1. Host: `student.oedu.se`
-   2. Port: `3690`
-   3. Username: Ditt login till servern (börjar i regel med dina initialer följt av en serie siffror)
-   4. Password: Det lösenord du fått till servern
-   5. Root path: `home/students/vt24/ditt_login`
-   6. Web server url: `http://student.oedu.se/~ditt_login`
-4. Ange följande information under "Mappings"
-   1. Local path: Välj den mapp på datorn du vill använda. Skapa exempelvis en mapp som synkas till OneDrive med namnet `Kod`
-   2. Deplyment path: `/public_html`
-   3. Web path: `/`
-
 ## Använd Visual Studio Code
 
-Det är också möjligt att i kursen använda Visual Studio Code. Då kan du jobba direkt emot utvecklingsservern och behöver inte tänka på att "deploya". Följ bara nedanstående guide:
+Jag rekommenderar att du i kursen använder programmet Visual Studio Code. Då kan du jobba direkt emot utvecklingsservern och behöver inte tänka på att "deploya". Följ nedanstående guide:
 
 - Ladda ner och installera programmet här: <https://code.visualstudio.com/>
 - Installera därefter följande extension-paket:
-   - "Remote - SSH": <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
-   - "SSH key generator": <https://marketplace.visualstudio.com/items?itemName=AmadeusITGroup.ssh-key-generator>
+  - "Remote - SSH": <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
+  - "SSH key generator": <https://marketplace.visualstudio.com/items?itemName=AmadeusITGroup.ssh-key-generator>
 - Klicka på ikonen till vänster som ser ut som en skärm med en liten ring längst ner till höger
 - Lägg till servern student.oedu.se och ange dina inloggningsuppgifter:
-   - Klicka på "+" bredvid SSH
-   - Skriv in SSH-kommandot: `ssh -p 3690 ditt_login@student.oedu.se`
-   - Spara anslutningen till `C:\Users\ditt_login\.ssh\config`
+  - Klicka på "+" bredvid SSH
+  - Skriv in SSH-kommandot: `ssh -p 3690 ditt_login@student.oedu.se`
+  - Spara anslutningen till `C:\Users\ditt_login\.ssh\config`
 - Nu är det dags att generera din SSH-nyckel för att kunna ansluta utan lösenord:
-   - Öppna upp kommando-paletten med `Ctrl + Shift + P` och kör kommandot `SSH: Generate SSH key`.
-   - Välj den server du vill koppla ihop dig med: `student.oedu.se`
-   - Ange ditt lösenord till servern
+  - Öppna upp kommando-paletten med `Ctrl + Shift + P` och kör kommandot `SSH: Generate SSH key`.
+  - Välj den server du vill koppla ihop dig med: `student.oedu.se`
+  - Ange ditt lösenord till servern
 - Nu bör du kunna ansluta till din server utan att behöva ange ditt lösenord
 - Om du blir ombedd att ange vilken typ av server det är så är det en Linux-server
 
 Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator.
-
-### Andra bra extension-paket
-
-Du kan hitta tusentals extensions till Visual Studio Code på <https://marketplace.visualstudio.com> men dessa vill jag särskilt rekommendera:
-
-- HTML CSS Support: <https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css>
-- HTMLHint: <https://marketplace.visualstudio.com/items?itemName=HTMLHint.vscode-htmlhint>
-- Live Server: <https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer>
 
 ## Namnge filer och mappar
 
@@ -140,4 +133,4 @@ Du kan hitta tusentals extensions till Visual Studio Code på <https://marketpla
 
 ## OpenAI ChatGPT
 
-Om du kör fast i din kodning, tveka inte att ställa frågor till Open AI:s chattbot ChatGPT som är förvånansvärt skicklig på att skriva kod. Var bara tydlig med vilket slags språk du vill ha hjälp med, exempelvis HTML, CSS, PHP eller Java: <https://chat.openai.com/>. Undvik dock att använda tjänsten för att svara på dina frågor och lösa dina uppgifter eftersom det förhindrar din egen inlärning. Men som assistent som svarar på dina frågor och funderar är det ett bra verktyg.
+Om du kör fast i din kodning, tveka inte att ställa frågor till Open AI:s chattbot ChatGPT som är förvånansvärt skicklig på att skriva kod. Var bara tydlig med vilket slags språk du vill ha hjälp med, exempelvis HTML, CSS, PHP eller JavaScript: <https://chat.openai.com/>. Men undvik att använda AI-teknik för att generera redan färdig kod. En bättre strategi är att använda tekniken för att felsöka och för att förklara i detalj vad funktioner etc gör.

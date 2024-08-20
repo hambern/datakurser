@@ -1,40 +1,70 @@
-# CMS
+# Skapa en blogg med WordPress
 
-I detta kursmoment ska vi installera och redigera en hemsida med CMS-verktyget Wordpress. Ett CMS (Content Management System) är en (enormt) stor mängd redan färdig kod (i detta fall PHP) som ger dig funktioner som att logga in, skapa, redigera och ta bort innehåll samt visa detta innehåll för en besökare.
+### Syfte
+Denna uppgift syftar till att ge dig en djupare förståelse för innehållshanteringssystem (CMS) genom att skapa en egen blogg med hjälp av WordPress. Du kommer att få praktisk erfarenhet av att installera, konfigurera och anpassa ett CMS för att matcha din stil och ditt innehåll. Genom att utforska fördelar och nackdelar med CMS, jämföra WordPress med andra plattformar, och skriva informativa inlägg, kommer du att utveckla dina färdigheter inom både webbutveckling och digital publicering.
 
-Några av de mest populära CMS:en som både är gratis och skrivna i PHP är:
+### Mål
+Efter att ha slutfört denna uppgift ska du kunna:
+- Installera och konfigurera WordPress på en server.
+- Ansluta WordPress till en databas och hantera ditt innehåll effektivt.
+- Anpassa ett WordPress-tema med hjälp av CSS och semantisk HTML.
+- Publicera blogginlägg och organisera dem i kategorier.
+- Reflektera över för- och nackdelarna med att använda ett CMS jämfört med att koda en webbplats från grunden.
 
-- Wordpress - https://sv.wordpress.org/
-- Drupal - https://www.drupal.org/
-- Joomla - https://www.joomla.org/
-- Grav - https://getgrav.org/
-- TYPO3 - https://typo3.org/
-- Winter CMS - https://wintercms.com/
+### Beskrivning
+Du ska skapa en blogg med WordPress där du publicerar minst tre inlägg. Dessa inlägg ska behandla olika aspekter av CMS och WordPress:
 
-I regel är allt du behöver en serverplats att lägga ditt CMS på och en databas du kan lagra information i. Sedan bör det bara vara att sätta igång. Respektive hemsida bör vara tillräckligt med hjälp för att komma igång.
+1. **Fördelar och nackdelar med CMS:** Ett inlägg där du förklarar för- och nackdelarna med att använda ett CMS jämfört med att koda en webbplats helt från grunden.
+   
+2. **Jämförelse med andra CMS:** Ett inlägg där du jämför WordPress med ett annat CMS, som t.ex. Winter CMS, Drupal eller Joomla. Beskriv skillnader och likheter samt vilka typer av projekt som lämpar sig för respektive CMS.
+   
+3. **Guide för att skapa en blogg:** Ett steg-för-steg-inlägg där du förklarar hur en besökare kan skapa en egen blogg med WordPress om de har tillgång till en server. Ta upp nedladdning, installation, anpassning av teman och plugins, samt hur man skriver och publicerar inlägg med bilder.
 
-## Kravspecifikationer 
+#### Krav för projektet:
+1. **Installation och uppsättning:**
+   - Installera WordPress på en lokal server eller webbserver.
+   - Anslut WordPress till en MySQL-databas och konfigurera grundläggande inställningar.
+   - Utforska WordPress-backenden och förstå hur man hanterar innehåll, teman och plugins.
 
-- Du måste kunna logga in
-- Inloggad användare måste kunna lägga in och redigera inlägg
-- Inläggen ska kunna delas upp i kategorier
-- Man måste kunna publicera bilder i anslutning till inläggen
-- Inläggen ska för en besökare sorteras i kronologisk ordning med det senaste inlägget överst
-- Det ska finnas minst tre inlägg på din blogg, med bilder (använd tillåtna bilder från ex https://unsplash.com eller egna bilder)
-- Ett inlägg ska förklara nackdelarna och fördelarna med att använda ett CMS istället för att koda sidan helt själv
-- Ett inlägg ska förklara vad som skiljer Wordpress från något annat CMS, exempelvis Winter CMS, Drupal eller Joomla t.ex.
-- Ett inlägg ska förklara för en besökare hur de kan skapa en egen blogg med hjälp av Wordpress om de har tillgång till en server. Gå igenom:
-    1. Hur man laddar ner koden
-    2. Hur man laddar upp Wordpress till servern och vad man behöver för att göra det
-    3. Hur man installerar Wordpress och vad man behöver för att göra det
-    4. Hur man installerar teman och plugins och hur man justerar dem
-    5. Hur man skriver ett inlägg och bifogar en bild och vad man bör tänka på när man lägger upp en bild på sin sida (upphovsrätt)
+2. **Tema och design:**
+   - Välj och installera ett tema som passar din bloggs syfte och ämnesområde.
+   - Anpassa temat med CSS och HTML för att ge din blogg ett unikt utseende.
+   - Se till att bloggen är responsiv och fungerar bra på alla typer av enheter.
 
-## Instruktioner
+3. **Innehåll och funktionalitet:**
+   - Skriv och publicera minst tre blogginlägg med bilder (använd egna bilder eller tillåtna bilder från [Unsplash](https://unsplash.com)).
+   - Dela in inläggen i kategorier och se till att de är sorterade i kronologisk ordning.
+   - Installera och konfigurera plugins för att förbättra användarupplevelsen, såsom SEO-plugins, kontaktformulär, eller sociala medieintegrationer.
 
-1. Besök sidan: https://sv.wordpress.org/ och läs på hur verktyget fungerar och vad det gör
-2. Installera Wordpress på din server. Använd installationsinstruktionerna du hittar på: https://wordpress.org/support/article/how-to-install-wordpress/
-3. Skapa din blogg och dina inlägg
-4. Skapa en användare till mig (mattias.hamberg@ornskoldsvik.se) och ge mig lösenordet rXNrM674hH. Gör att jag kan logga in, men jag behöver inte kunna ändra dina inlägg eller bloggens utseende.
-5. Lämna in url:en som inlämningsuppgift till uppgiften projekt_blogg på Vklass
-6. Testa, i mån av tid, något annat CMS. Antingen något i listan ovan eller något helt annat. Winter CMS är en personlig favorit du gärna får spana in.
+4. **Utforskning av andra CMS:**
+   - Om du har tid, installera och testa ett annat CMS från listan nedan, som Winter CMS eller Drupal, och jämför det med WordPress.
+   - Reflektera över skillnaderna i användarupplevelse och funktionalitet mellan CMS:en.
+
+### Ramverk och tekniker
+- **WordPress:** Använd WordPress som CMS för att bygga och hantera din blogg.
+- **CSS och HTML:** Anpassa temat med CSS och använd semantisk HTML för att strukturera innehållet.
+- **MySQL:** Anslut WordPress till en MySQL-databas för att lagra och hantera ditt innehåll.
+- **Plugins och teman:** Utforska och implementera olika WordPress-plugins och teman för att utöka funktionaliteten och anpassa designen.
+
+### Tips och tricks
+
+- **WordPress-dokumentation:** Utforska [WordPress Codex](https://codex.wordpress.org/) för detaljerade instruktioner om installation och konfiguration.
+- **Teman och plugins:** Kolla in [WordPress Theme Directory](https://wordpress.org/themes/) och [Plugin Directory](https://wordpress.org/plugins/) för att hitta teman och plugins som passar dina behov.
+- **Andra CMS:** Utforska andra CMS som [Winter CMS](https://wintercms.com/), [Drupal](https://www.drupal.org/), eller [Joomla](https://www.joomla.org/) för att se vilka som bäst passar dina behov.
+
+### Resurser att studera
+För att förbereda dig inför denna uppgift rekommenderas att du studerar följande resurser:
+- [WordPress Installation](https://wordpress.org/support/article/how-to-install-wordpress/) för att lära dig hur du installerar och konfigurerar WordPress.
+- [WordPress-teman](https://developer.wordpress.org/themes/) för att förstå hur teman fungerar och hur du kan anpassa dem.
+- [MySQL och WordPress](https://www.mysql.com/why-mysql/wordpress/) för att lära dig mer om hur WordPress interagerar med MySQL-databaser.
+
+---
+
+## Bedömning
+
+| **Kvalitetsaspekt**         | **Betyg E**                                      | **Betyg C**                                      | **Betyg A**                                      |
+|-----------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
+| **Installation och uppsättning** | WordPress är korrekt installerat och anslutet till en databas. | WordPress är installerat, konfigurerat och anpassat enligt projektets behov. | WordPress är installerat, anpassat och optimerat för prestanda och säkerhet. |
+| **Tema och design**         | Ett tema har valts och applicerats på bloggen. | Temat är anpassat med CSS och HTML för att passa bloggens ämne. | Temat är kraftigt anpassat med avancerad CSS, Flexbox/Grid och eventuella anpassade funktioner. |
+| **Innehåll och funktionalitet** | Tre blogginlägg har publicerats och några plugins har installerats. | Blogginläggen är välstrukturerade och plugins används effektivt. | Innehållet är engagerande, och plugins används för att skapa en rik användarupplevelse. |
+| **Reflektion och utvärdering** | En enkel reflektion över användningen av WordPress har genomförts. | En genomtänkt reflektion över för- och nackdelar med WordPress har genomförts. | En djupgående reflektion över CMS-användning och WordPress-anpassning har genomförts. |

@@ -1,2 +1,0 @@
-# Javascript - Uppgift 1
-

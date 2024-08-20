@@ -1,133 +1,79 @@
-# Projekt - Glosa
+# Skapa ett API för ditt glos-projekt
 
-I detta projekt - som är ett samarbete mellan webbserverprogrammeringen och programmering 2 - ska du skapa ett glosprogram med grundläggande funktioner som att lägga in och förhöra glosor. I programmet ska man kunna:
+### Syfte
+Detta projekt syftar till att lära dig hur man utvecklar ett REST-API med Laravel. Projektet är ett samarbete mellan kurserna Webbserverprogrammering 1 och Programmering 2, där vi i denna kurs fokuserar på att bygga backend-API:et. Frontend och all användarinteraktion hanteras i Programmering 2.
 
-- Logga in
-- Logga ut
-- Lägga in glosor
-- Ta bort glosor
-- Svara på glosor
+### Mål
+Efter att ha slutfört detta projekt ska du kunna:
+- Utveckla ett REST-API med Laravel för att hantera CRUD-operationer (Create, Read, Update, Delete).
+- Implementera användarautentisering och säker hantering av lösenord.
+- Strukturera en Laravel-applikation med rätt databasdesign och relationshantering.
+- Använda Eloquent ORM för att hantera databaskommunikationen i ditt API.
 
-Men projektet kan i princip bli hur stort som helst.
+### Beskrivning
+Du ska utveckla ett API som möjliggör grundläggande gloshantering för ett glosprogram. Detta API kommer att användas av frontend-applikationen som utvecklas i Programmering 2. Funktionerna inkluderar att skapa, uppdatera, radera och läsa glosor, samt användarhantering med inloggning och utloggning.
 
-## Minimikrav på projektet
+#### Krav för API:et:
+1. **Användarhantering:**
+   - Skapa en användare och hantera inloggning med autentisering.
+   - Hantera användarsessioner och autentisering med token-baserad säkerhet.
 
-- Godkänd projektplan som ska innehålla design av databas, Java-appen och REST-API:et.
-- GUI och logik utvecklat i Java där modell och grafiskt gränssnitt ska separeras enligt MVC-principen.
-- Data sparas i MySQL via ett REST-API gjort i PHP.
-- REST-API:et har flera olika "endpoints" för att hämta och spara data:
-    - Unika användare med inloggning och utloggning
-    - Kunna skapa nya glosor.
-    - Kunna radera glosa.
-    - Kunna hämta glosa.
-    - Kunna "svara på" en glosa och få veta om det var rätt. Rättning ska ske via end-point.
+2. **Gloshantering:**
+   - Skapa, uppdatera, och radera glosor.
+   - Hämta glosor, både individuellt och i listform.
 
-## Tips till Programmering 2
+3. **Databasdesign:**
+   - Designa en MySQL-databas för att hantera användare och deras glosor.
+   - Använd Eloquent ORM för att hantera databaskommunikationen.
 
-- För att skicka information till servern med POST använder vi den klass som hittas här (som ni också fått ut i exemplet): <http://www.codejava.net/java-se/networking/an-http-utility-class-to-send-getpost-request>
-- För att tolka datan vi får från servern (Json) använder vi oss av Gson som kan laddas hem här: <http://www.java2s.com/Code/Jar/g/Downloadgson224jar.htm>
-- För att få iordning klasser för tolkning av Gson kan detta vara till hjälp: <http://www.jsonschema2pojo.org/>
+4. **API-struktur:**
+   - Använd Laravel’s resurshantering och controllers för att strukturera API:et.
+   - Implementera korrekt hantering av HTTP-statuskoder och validering.
 
-## Tips till Webbserverprogrammering 1
+### Exempel på API-endpoints
 
-- Kika på och utgå ifrån det enkla MVC du kan hitta på följande repository: <https://gitlab.com/Hambern/mvc>. Koden från våra genomgångar kan du hitta i denna branch: <https://gitlab.com/Hambern/mvc/-/tree/sample>
-- Installera JSON Viewer för att kunna ta del av json-svar direkt i webbläsaren: <https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh>
-- Installera Talend API Tester för att kunna skicka och ta emot svar i ditt API: <https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm>. För att lära dig hur Talend fungerar kan du använda dig av json-filerna under denna mapp. Importera dem till Talend och försök lista ut hur de fungerar.
-- När du lägger till nya klasser försök att hålla dig till "regeln" att varje klass bör ha en egen fil med samma namn som klassen.
-- Du bör returnera korrekta koder. `200` betyder exempelvis "allt är okej" och `404` betyder att det inte finns någon sådan sida. En fullständig lista på felkoder hittar du här: <https://sv.wikipedia.org/wiki/Lista_%C3%B6ver_HTTP-statuskoder>. Observera gärna felkod `418`.
+- **Skapa användare:**  
+  `POST /api/users/register`  
+  Skickar: `first_name`, `last_name`, `email`, `password`  
+  Returnerar: `token`
 
-## Exempel på endpoints
+- **Logga in:**  
+  `POST /api/users/login`  
+  Skickar: `email`, `password`  
+  Returnerar: `token`
 
-#### Skapa en användare
+- **Skapa glosa:**  
+  `POST /api/glossary`  
+  Skickar: `token`, `word`, `translation`  
+  Returnerar: `success`
 
-- Url: `/users/create`
-- Skicka:
-    - `first_name`
-    - `last_name`
-    - `email`
-    - `password`
-    - `password_confirm`
-- Svar: `token`
+- **Hämta glosor:**  
+  `GET /api/glossary`  
+  Skickar: `token`  
+  Returnerar: `glossary`
 
-#### Logga in
+### Arbetsgång
 
-- Url: `/users/login`
-- Skicka:
-    - `email`
-    - `password`
-- Svar: `token`
+1. **Förstudie:**  
+   Utför en förstudie där ni identifierar alla API-endpoints och användarflöden som behövs.
 
-#### Logga ut
+2. **Databasschema:**  
+   Designa ett detaljerat databasschema och implementera det med migrations i Laravel. Säkerställ att databasen kan hantera relationerna mellan användare och glosor.
 
-- Url: `/users/logout`
-- Skicka: `token`
+3. **Implementering:**  
+   Börja med att implementera användarautentisering och därefter CRUD-funktionalitet för glosor.
 
-#### Index
+4. **Testning:**  
+   Använd Postman eller Talend API Tester för att testa alla endpoints och säkerställa att de fungerar korrekt.
 
-- Url: `/users`
-- Skicka: `token`
-- Svar: `users`
+5. **Dokumentation:**  
+   Dokumentera API:et i en README.md-fil där du beskriver alla endpoints, vilka parametrar som behövs, och exempel på svar.
 
-## Arbetsgång
+### Redovisning och Inlämning
 
-Första målet ska inte vara en färdig produkt utan en MVP-release. Ni bör därför i projektplanen vara noga med att beskriva vad ni minst behöver för ett färdigt projekt:
+- Redovisa ditt API genom att demonstrera funktionaliteten och förklara din design och struktur.
+- Lämna in projektet på GitLab och säkerställ att all kod är väl dokumenterad i din README.md.
 
-1. En förstudie i form av en "brainstorming"
-    - Tidigare klassers anteckningar kan ni se här: https://docs.google.com/document/d/17SKZhPdtvxH0Z3RcccZw_6NlKlg5GdzdFEl-Matc_7I/edit?usp=sharing
-    - Brainstorma själva i detta dokument: https://ornskoldsvik-my.sharepoint.com/:w:/g/personal/mattias_hamberg_ornskoldsvik_se/Eab_iWv26R5Fsrp4Ym4fvPcBaVRbLZlPP4-6Jhq8aD_i7A?e=nxwnwD
-2. Lista alla "use cases". Lämpligt kan vara att lista Java-delen och REST-API:et för sig
-    - Anteckna dina egna use cases i din projektplan. Tänk att ett use case i API-delen ungefär motsvarar en metod i en controller. `users/login` är alltså ett use case och `users/logout` är ett annat.
-3. En design av databas och Java-appen
-    - Visa upp de databastabeller du behöver skapa. Det finns sätt att skriva tabeller i markdown. Var också noga med hur databaserna hänger ihop. Ett sådant exempel är att en glosa kan tillhöra en användare. Då måste glos-tabellen ha en kolumn som heter exempelvis `user_id` för att man ska kunna matcha ihop dem.
-4. En dokumentation (i markdown) av hur API:et fungerar där du listar de olika endpointsen som i sin tur motsvarar use cases (se exemplen ovanför). Beskriv också där vilken information som behöver skickas till endpointen (en anslutningspunkt till api:et som genererar något slags svar), samt vilket slags svar du kan förvänta dig.
-5. En realistisk tidsplan utifrån det ni gjort ovan. Kolla om det verkar rimligt, om inte - revidera den eftersom
-6. Det som återstår sedan är en färdig godkänd projektplan
-7. Och en slutredovisning
+### Kunskapskrav
 
-## Redovisning
-
-Ni ska enligt ett givet körschema 26 maj 2023 visa vad ni har gjort (ni får 10 min på er). Ni har inte så mycket tid att redovisa på så se till att ni har kört igenom er redovisning flera gånger innan ni verkligen redovisar. Det är viktigt att ni gör detta så att ni är säkra på att hinna visa allt på den tid ni har fått.
-
-- Ni ska lämna in den slutgiltiga projektplanen via git till Mattias. Lämna in länken till projektplanen och din kodbas på GitLab i uppgiften på Vklass.
-- Ni ska lämna in koden till Daniel via inlämning i vklass. Gör en ZIP-fil av de filer som hör till projektet (.java-filer ur src-mappen och om ni använt andra resurser som t.ex. bilder).
-- Ni ska ha gittat in koden till Gitlab.
-
-## OpenAI ChatGPT
-
-Om du kör fast i din kodning, tveka inte att ställa frågor till Open AI:s chattbot ChatGPT som är förvånansvärt skicklig på att skriva kod. Var bara tydlig med vilket slags språk du vill ha hjälp med, exempelvis HTML, CSS, PHP eller Java: <https://chat.openai.com/>. Undvik dock att använda tjänsten för att svara på dina frågor och lösa dina uppgifter eftersom det förhindrar din egen inlärning. Men som assistent som svarar på dina frågor och funderar är det ett bra verktyg.
-
----
-
-## Kunskapskrav
-
-#### Betyget E
-
-Eleven beskriver **översiktligt** tekniken bakom dynamiska webbplatser och hur de samspelar med olika tekniker på webben.
-
-Eleven gör en **enkel** projektplan för en tänkt webbapplikation. I projektplanen beskriver eleven **översiktligt** applikationens funktion. Utifrån projektplanen utvecklar eleven **i samråd** med handledare applikationen där presentations­logiken **i begränsad utsträckning** är skild från applikationens övriga logik. I arbetet utvecklar eleven kod som **i begränsad utsträckning** är **läsbar** och **översiktligt** kommenterad. Applikationen uppvisar **enkel** funktionalitet med ett språk för webbserver­programmering och tillhandahåller en **enkel** lösning för **datapersistens mellan sidvisningar**. Produkten är av **tillfredsställande** kvalitet och följer etablerad god praxis.
-
-När arbetet är utfört gör eleven en **enkel** dokumentation av de moment som har utförts samt utvärderar med **enkla** omdömen sitt arbete och resultat. Eleven identifierar ett **fåtal** sårbarheter eller hot och vidtar **enkla** åtgärder för att förhindra att produkten utnyttjas. När eleven kommunicerar med andra använder hon eller han **med viss säkerhet enkel** terminologi.
-
-#### Betyget D
-
-Betyget D innebär att kunskapskraven för E och till övervägande del för C är uppfyllda.
-
-#### Betyget C
-
-Eleven beskriver **utförligt** tekniken bakom dynamiska webbplatser och hur de samspelar med olika tekniker på webben.
-
-Eleven gör en **genomarbetad** projektplan för en tänkt webbapplikation. I projektplanen beskriver eleven **utförligt** applikationens funktion **och arkitektur**. Utifrån projektplanen utvecklar eleven **efter samråd** med handledare applikationen där presentations­logiken är skild från applikationens övriga logik. I arbetet utvecklar eleven kod som **följer en given kodningsstandard** och är **översiktligt** kommenterad. Applikationen uppvisar funktionalitet med ett språk för webbserver­programmering och tillhandahåller en **enkel** lösning för **permanent datalagring**. Produkten är av **tillfredsställande** kvalitet och följer etablerad god praxis. **Detta kontrollerar eleven med hjälp av några tester.**
-
-När arbetet är utfört gör eleven en **noggrann** dokumentation av de moment som har utförts samt utvärderar med **nyanserade** omdömen sitt arbete och resultat. Eleven identifierar sårbarheter eller hot och vidtar åtgärder för att förhindra att produkten utnyttjas. När eleven kommunicerar med andra använder hon eller han **med viss säkerhet** terminologi.
-
-#### Betyget B
-
-Betyget B innebär att kunskapskraven för C och till övervägande del för A är uppfyllda.
-
-#### Betyget A
-
-Eleven beskriver **utförligt och nyanserat** tekniken bakom dynamiska webbplatser och hur de samspelar med olika tekniker på webben.
-
-Eleven gör en **genomarbetad** projektplan för en tänkt webbapplikation. **Vid behov reviderar eleven planen.** I projektplanen beskriver eleven **utförligt och nyanserat** applikationens funktion, **arkitektur och mjukvarugränssnitt**. Utifrån projektplanen utvecklar eleven **efter samråd** med handledare applikationen där presentations­logiken är skild från applikationens övriga logik. I arbetet utvecklar eleven kod som **följer en given kodningsstandard** och är **utförligt** kommenterad. Applikationen uppvisar funktionalitet med ett språk för webbserver­programmering **för att driva en helt databaserad webbplats eller en jämförbart avancerad produkt** och tillhandahåller en lösning **med viss komplexitet** för **permanent datalagring**. Produkten är av **god** kvalitet och följer etablerad god praxis. **Detta kontrollerar eleven med hjälp av flera tester, även manuella.**
-
-När arbetet är utfört gör eleven en **noggrann och utförlig** dokumentation av de moment som har utförts samt utvärderar med **nyanserade** omdömen sitt arbete och resultat **samt ger förslag på hur arbetet kan förbättras**. Eleven identifierar **flera** sårbarheter eller hot och vidtar **avancerade** åtgärder för att förhindra att produkten utnyttjas. När eleven kommunicerar med andra använder hon eller han **med säkerhet** terminologi.
+Projektet kommer att bedömas baserat på din förmåga att utveckla, dokumentera och testa ett API enligt de krav som ställts upp. Du ska också visa att du förstår och kan implementera säkerhet och autentisering korrekt i Laravel.
