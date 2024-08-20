@@ -17,10 +17,11 @@ Du ska skapa en webbapplikation som hämtar data från ett externt API som du v�
 1. **API-val och integration:**
    - Välj ett API som du tycker är intressant och som tillhandahåller den typ av data du vill arbeta med.
    - Använd PHP för att hämta och bearbeta data från API:et.
+   - Läs noggrant igenom dokumentationen för det API du valt för att förstå dess möjligheter och begränsningar.
    - Tänk på att vissa API:er kräver en API-nyckel för åtkomst. Se till att hantera API-nycklar på ett säkert sätt.
 
 2. **Gränssnittsdesign:**
-   - Använd Bootstrap för att skapa en stilren och responsiv design.
+   - Använd Bootstrap, Normalize.io eller ett annat front-end-ramverk för att skapa en stilren och responsiv design. Det är dock inget krav att använda dessa ramverk.
    - Presentera data på ett tydligt och strukturerat sätt. Använd t.ex. tabeller, kort, listor eller andra Bootstrap-komponenter.
    - Inkludera användarinteraktioner, som att filtrera eller söka i datan, om API:et tillåter det.
 
