@@ -57,7 +57,6 @@ För att förbereda dig inför denna uppgift rekommenderas att du studerar följ
 - [WordPress Installation](https://wordpress.org/support/article/how-to-install-wordpress/) för att lära dig hur du installerar och konfigurerar WordPress.
 - [WordPress-teman](https://developer.wordpress.org/themes/) för att förstå hur teman fungerar och hur du kan anpassa dem.
 - [MySQL och WordPress](https://www.mysql.com/why-mysql/wordpress/) för att lära dig mer om hur WordPress interagerar med MySQL-databaser.
-- [Public CMS-alternativ](https://www.getgrav.org/) för att utforska olika CMS-plattformar och deras fördelar och nackdelar.
 
 ---
 
