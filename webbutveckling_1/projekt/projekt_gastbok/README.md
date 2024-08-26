@@ -18,13 +18,13 @@ Efter att ha slutfört denna uppgift ska du kunna:
 - Skapa en enkel, responsiv design med HTML och CSS som fungerar både på datorer och mobila enheter.
 
 ### Beskrivning
-Du ska designa och bygga en gästbok där användare kan lämna kommentarer. Gästboken ska kunna lagra följande information:
+Du ska designa och bygga en gästbok där användare kan lämna kommentarer. Gästboken ska minst kunna lagra följande information. Du får dock gärna göra gästboken mer komplex än så:
 
 - **Namn** på den som skriver meddelandet.
 - **Tidpunkt** då meddelandet lämnades.
 - **Meddelande** som besökaren vill lämna.
 
-Den insamlade informationen ska sparas på servern (till exempel i en textfil) och visas för andra besökare på sidan. Gästboken ska ha en enkel och elegant design som är responsiv, vilket innebär att den fungerar och ser bra ut på både datorer och mobila enheter.
+Den insamlade informationen ska sparas på servern i en textfil och visas för andra besökare på sidan. Gästboken ska ha en enkel och elegant design som är responsiv, vilket innebär att den fungerar och ser bra ut på både datorer och mobila enheter.
 
 ### Exempel på HTML-kod
 

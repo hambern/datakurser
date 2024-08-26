@@ -1,7 +1,7 @@
 # Skapa en kul kluring
 
 ### Syfte
-Denna uppgift syftar till att utmana ditt logiska tänkande och din kreativitet genom att skapa en serie webbsidor med gåtor. Du kommer samtidigt att öva på grundläggande webbteknologier som HTML, CSS och enkel JavaScript-interaktivitet.
+Denna uppgift syftar till att utmana ditt logiska tänkande och din kreativitet genom att skapa en serie webbsidor med gåtor. Du kommer samtidigt att öva på grundläggande webbteknologier som HTML, CSS och enkel JavaScript-interaktivitet. Kreativa lösningar och designer uppskattas och uppmuntas.
 
 ### Mål
 Efter att ha slutfört denna uppgift ska du kunna:
@@ -21,9 +21,9 @@ Du ska skapa en serie webbsidor där varje sida innehåller en unik gåta som be
 - **Sida 2:** `mystisk.html` – Denna sida innehåller en bildgåta som avslöjar nästa sidas namn när den är löst.
 
 ### Ramverk och tekniker
-- **HTML och CSS:** Använd HTML för att strukturera dina sidor och CSS för att styla dem enkelt men effektivt.
+- **HTML och CSS:** Använd HTML för att strukturera dina sidor och CSS för att styla dem på ett kreativt sätt.
 - **JavaScript (frivilligt):** Lägg till enkel JavaScript-interaktivitet för att t.ex. ge ledtrådar eller göra gåtorna mer dynamiska.
-- **Responsiv design:** Se till att dina sidor fungerar både på datorer och mobila enheter.
+- **Responsiv design:** Se till att dina sidor fungerar både på datorer och mobila enheter, ett bra råd är att använda dig av normalize.io för att "nollställa" webb-browserns påverkan.
 
 ### Inspiration och idéer
 För att få inspiration till dina gåtor, besök gärna dessa sidor:
