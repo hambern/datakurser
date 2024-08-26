@@ -13,17 +13,20 @@ Efter att ha slutfört denna uppgift ska du kunna:
 - Infoga ett porträttfoto och en QR-kod som länkar till din portalsida.
 
 ### Beskrivning
-Du ska designa och bygga en personlig portalsida som fungerar som en central hub för alla dina framtida webbutvecklingsprojekt. Sidan ska innehålla följande:
+Du ska designa och bygga en personlig portalsida som fungerar som en central hub för alla dina framtida webbutvecklingsprojekt. Filen ska heta `index.html` och ligga direkt under din `public_html`-mapp: <https://student.oedu.se/~ditt_användarnamn>. Sidan ska innehålla följande:
 - **Introduktion:** En kort introduktion om dig själv.
-- **Porträttfoto:** Inkludera ett professionellt porträttfoto som representerar dig.
-- **QR-kod:** Generera och inkludera en QR-kod som länkar direkt till din portalsida.
-- **Navigation:** Skapa en enkel navigationsmeny som kan användas för att länka till dina framtida projekt.
-- **Kontaktinformation:** Inkludera en sektion där besökare kan hitta din kontaktinformation.
+- **Porträttfoto:** Inkludera ett professionellt porträttfoto som representerar dig. Ta det själv med mobilen och hitta ett sätt att föra över filen till servern.
+- **QR-kod:** Generera och inkludera en QR-kod som länkar direkt till din portalsida. Googla på hur du åstadkommer detta.
+- **Navigation:** Skapa en enkel navigationsmeny som kan användas för att länka till dina framtida projekt. Detta kan se ut hur som helst, det kan exempelvis vara en enkel lista.
+- **Kontaktinformation:** Inkludera en sektion där besökare kan hitta din kontaktinformation, exempelvis din e-postadress.
 
 ### Ramverk och tekniker
 - **Normalize.css:** Implementera normalize.css för att säkerställa att din design ser konsekvent ut i olika webbläsare.
 - **Semantisk HTML:** Använd semantiska HTML-taggar (`header`, `footer`, `section`, `nav`, etc.) för att skapa en tydlig och meningsfull struktur på din sida.
-- **Responsiv design:** Se till att sidan fungerar och ser bra ut både på datorer och mobila enheter genom att använda responsiv design med hjälp av CSS.
+- **Responsiv design:** Se till att sidan fungerar och ser bra ut både på datorer och mobila enheter. Första steget är att inkludera denna rad i head-sektionen på din hemsida:
+    ~~~html
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    ~~~
 
 ### Resurser att studera
 För att förbereda dig inför denna uppgift, rekommenderar jag att du läser igenom följande:

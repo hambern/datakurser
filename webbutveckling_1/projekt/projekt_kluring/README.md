@@ -23,7 +23,7 @@ Du ska skapa en serie webbsidor där varje sida innehåller en unik gåta som be
 ### Ramverk och tekniker
 - **HTML och CSS:** Använd HTML för att strukturera dina sidor och CSS för att styla dem på ett kreativt sätt.
 - **JavaScript (frivilligt):** Lägg till enkel JavaScript-interaktivitet för att t.ex. ge ledtrådar eller göra gåtorna mer dynamiska.
-- **Responsiv design:** Se till att dina sidor fungerar både på datorer och mobila enheter, ett bra råd är att använda dig av normalize.io för att "nollställa" webb-browserns påverkan.
+- **Responsiv design:** Se till att dina sidor fungerar både på datorer och mobila enheter, ett bra råd är att använda dig av normalize.css för att "nollställa" webb-browserns påverkan.
 
 ### Inspiration och idéer
 För att få inspiration till dina gåtor, besök gärna dessa sidor:
