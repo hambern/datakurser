@@ -97,7 +97,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
 
 ### Bedömning
 
-| **Kriterium**              | **Godkänt**                                        | **Väl godkänt**                                  | **Mycket väl godkänt**                            |
+| **Kriterium**              | **Betyg E**                                        | **Betyg C**                                  | **Betyg A**                            |
 |----------------------------|---------------------------------------------------|--------------------------------------------------|---------------------------------------------------|
 | **Databasanvändning**       | Skapa och hantera tabeller i MySQL.               | Effektiv användning av MySQL med parametrar.      | Användning av avancerade SQL-operationer.          |
 | **Versionshantering**       | Grundläggande användning av Git för versionshantering. | Regelbundna commits med tydliga meddelanden.      | Avancerad användning av Git, inklusive branching.  |
