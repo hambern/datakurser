@@ -23,13 +23,13 @@ Det första vi måste göra i denna kurs är att lära oss PHP, MySQL och Git. M
 
 Här är en översikt av uppgifterna för kursen i Webbserverprogrammering 1, med fokus på att gradvis bygga upp dina färdigheter i databasprogrammering och webbutveckling. Varje uppgift bygger vidare på den tidigare och hjälper dig att stegvis lära dig tekniker som PHP, MySQL, Git, och Laravel.
 
-### Gästbok med databas
+### [Gästbok med databas](projekt/projekt_gastbok/)
 
 | **Uppgift**                                                               | **Beskrivning**                                                                                         | **Vad du lär dig**                                                                                 |
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | **Gästbok med databas**                                | Omvandla din befintliga gästbok till att använda en MySQL-databas för att spara inlägg.                    | Introduktion till MySQL och SQL. Grunder i att skapa tabeller, infoga och hämta data med `INSERT` och `SELECT`. Introduktion till Git och versionshantering. |
 
-### ToDo-applikation
+### [ToDo-applikation](projekt/projekt_todo/)
 
 | **Uppgift**                                                               | **Beskrivning**                                                                                         | **Vad du lär dig**                                                                                 |
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -39,7 +39,7 @@ Här är en översikt av uppgifterna för kursen i Webbserverprogrammering 1, me
 | **Filtrera och sortera uppgifter**                                | Lägg till funktioner för att filtrera och sortera uppgifter baserat på status och kategori.                | Avancerade SQL-förfrågningar med `WHERE` och `ORDER BY`. Lär dig att skapa dynamiska webbsidor.                 |
 | **Användarhantering**                                             | Implementera användarhantering för att varje användare ska kunna hantera sina egna uppgifter.              | Skapa en-till-många-relationer mellan användare och uppgifter. Hantera användarsäkerhet med `password_hash`.     |
 
-### Recensions-sida
+### [Recensions-sida](projekt/projekt_recension/)
 
 | **Uppgift**                                                               | **Beskrivning**                                                                                         | **Vad du lär dig**                                                                                 |
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -49,7 +49,7 @@ Här är en översikt av uppgifterna för kursen i Webbserverprogrammering 1, me
 | **Användarhantering och personliga recensioner**                  | Implementera användarhantering där användare kan logga in och se sina egna recensioner.                    | Bygg en-till-många-relationer mellan användare och recensioner. Hantera användarinloggning och sessions.        |
 | **Följare och personliga flöden**                                 | Lägg till funktionalitet för att användare ska kunna följa andra och se deras senaste recensioner i ett flöde. | Implementera många-till-många-relationer i databasen och hantera mer komplexa databasoperationer.               |
 
-### Skapa ett API för ditt Glos-projekt
+### [Skapa ett API för ditt Glos-projekt](projekt/projekt_glosa/)
 
 | **Uppgift**                                                               | **Beskrivning**                                                                                         | **Vad du lär dig**                                                                                 |
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
