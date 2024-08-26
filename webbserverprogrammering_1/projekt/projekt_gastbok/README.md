@@ -12,11 +12,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
 
 ### Beskrivning
 
-#### 1. Skapa ett GitLab-konto och initiera ditt Git-repository
-1. **Registrera dig på GitLab:**
-   - Skapa ett konto på [GitLab](https://gitlab.com/). Detta ger dig möjlighet att hantera dina projekt och versioner.
-  
-2. **Initiera ditt Git-repository:**
+#### 1. Skapa ett Git-repository
    - Skapa en lokal kopia av din befintliga gästbok om du inte redan har det.
    - Gå till din projektmapp och initiera ett Git-repository:
      ```sh
@@ -27,14 +23,9 @@ Efter att ha slutfört denna uppgift ska du kunna:
      git add .
      git commit -m "Initial commit of guestbook project"
      ```
-   - Skapa ett nytt projekt på GitLab och följ instruktionerna för att koppla ditt lokala repository till GitLab:
-     ```sh
-     git remote add origin https://gitlab.com/ditt_gitlab_användarnamn/guestbook.git
-     git push -u origin main
-     ```
 
 #### 2. Skapa en tabell i din MySQL-databas:
-   - Logga in på din MySQL-databas via phpMyAdmin eller kommandoraden.
+   - Logga in på din MySQL-databas via phpMyAdmin <admin.student.oedu.se> eller kommandoraden.
    - Skapa en tabell för att lagra gästboksinlägg:
      ```sql
      CREATE TABLE guestbook_posts (
@@ -114,7 +105,6 @@ Efter att ha slutfört denna uppgift ska du kunna:
 
 #### Tips och resurser
 - [W3Schools - MySQL Tutorial](https://www.w3schools.com/php/php_mysql_intro.asp)
-- [GitLab - Getting Started](https://about.gitlab.com/get-started/)
 - [PHP Official Documentation](https://www.php.net/manual/en/)
 
 Denna uppgift hjälper dig att snabbt komma in i MySQL och Git samt att skapa en fungerande databasdriven gästbok, vilket ger dig en solid grund för kommande projekt i Webbserverprogrammering 1.
