@@ -119,3 +119,62 @@ Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några l
 ## OpenAI ChatGPT
 
 Om du kör fast i din kodning, tveka inte att ställa frågor till Open AI:s chattbot ChatGPT som är förvånansvärt skicklig på att skriva kod. Var bara tydlig med vilket slags språk du vill ha hjälp med, exempelvis HTML, CSS, PHP eller JavaScript: <https://chat.openai.com/>. Men undvik att använda AI-teknik för att generera redan färdig kod. En bättre strategi är att använda tekniken för att felsöka och för att förklara i detalj vad funktioner etc gör.
+
+---
+
+## Webbserverprogrammering 1
+
+Kurskod: WESWEB01
+
+Kursen webbserverprogrammering 1 omfattar punkterna 1--8 under rubriken Ämnets syfte, med särskild betoning på punkt 1.
+
+#### Centralt innehåll
+
+#### Undervisningen i kursen ska behandla följande centrala innehåll:
+
+-   Webbserverns och dynamiska webbplatsers funktionalitet.
+-   Utvecklingsprocessen för ett webbtekniskt projekt med målsättningar, krav, begränsningar, planering och uppföljning. Specifikation av struktur och design, kodning, testning samt driftsättning.
+-   Dokumentation av utvecklingsprocess och färdig produkt.
+-   En översikt över olika lösningar eller språk som finns för att skapa dynamiska webbplatser.
+-   Grundfunktionen i ett programspråk för dynamiska webbplatser.
+-   Teknisk orientering om webbens protokoll, adresser, säkerhet samt samspelet mellan klient och server.
+-   Datalagring i relationsdatabas eller med annan teknik.
+-   Teckenkodning. Begrepp, standarder och handhavande.
+-   Kodning och dokumentation enligt vedertagen praxis för vald teknik.
+-   Applikationsarkitektur och separation av olika slags logik.
+-   Kvalitetssäkring av dynamiska webbapplikationers funktionalitet, säkerhet och kodkvalitet.
+-   Grundläggande säkerhet och sätt att identifiera hot och sårbarheter samt hur attacker kan motverkas genom effektiva åtgärder.
+
+### Betygskriterier
+
+#### Betyget E
+
+Eleven beskriver **översiktligt** tekniken bakom dynamiska webbplatser och hur de samspelar med olika tekniker på webben.
+
+Eleven gör en **enkel** projektplan för en tänkt webbapplikation. I projektplanen beskriver eleven **översiktligt **applikationens funktion. Utifrån projektplanen utvecklar eleven **i samråd **med handledare applikationen där presentations­logiken **i begränsad utsträckning **är skild från applikationens övriga logik. I arbetet utvecklar eleven kod som **i begränsad utsträckning **är** läsbar **och** översiktligt **kommenterad. Applikationen uppvisar **enkel** funktionalitet med ett språk för webbserver­programmering och tillhandahåller en** enkel** lösning för** datapersistens mellan sidvisningar**. Produkten är av **tillfredsställande** kvalitet och följer etablerad god praxis.
+
+När arbetet är utfört gör eleven en **enkel **dokumentation av de moment som har utförts samt utvärderar med **enkla **omdömen sitt arbete och resultat. Eleven identifierar ett** fåtal** sårbarheter eller hot och vidtar **enkla **åtgärder för att förhindra att produkten utnyttjas. När eleven kommunicerar med andra använder hon eller han **med viss säkerhet enkel** terminologi.
+
+#### Betyget D
+
+Elevens kunskaper bedöms sammantaget vara mellan C och E.
+
+#### Betyget C
+
+Eleven beskriver **utförligt** tekniken bakom dynamiska webbplatser och hur de samspelar med olika tekniker på webben.
+
+Eleven gör en **genomarbetad** projektplan för en tänkt webbapplikation. I projektplanen beskriver eleven **utförligt **applikationens funktion **och arkitektur**. Utifrån projektplanen utvecklar eleven **efter samråd **med handledare applikationen där presentations­logiken är skild från applikationens övriga logik. I arbetet utvecklar eleven kod som **följer en given kodningsstandard** och är** översiktligt **kommenterad. Applikationen uppvisar funktionalitet med ett språk för webbserver­programmering och tillhandahåller en **enkel** lösning för** permanent datalagring**. Produkten är av **tillfredsställande** kvalitet och följer etablerad god praxis. **Detta kontrollerar eleven med hjälp av** **några tester.**
+
+När arbetet är utfört gör eleven en **noggrann **dokumentation av de moment som har utförts samt utvärderar med **nyanserade **omdömen sitt arbete och resultat. Eleven identifierar sårbarheter eller hot och vidtar åtgärder för att förhindra att produkten utnyttjas. När eleven kommunicerar med andra använder hon eller han **med viss säkerhet** terminologi.
+
+#### Betyget B
+
+Elevens kunskaper bedöms sammantaget vara mellan A och C.
+
+#### Betyget A
+
+Eleven beskriver **utförligt och nyanserat** tekniken bakom dynamiska webbplatser och hur de samspelar med olika tekniker på webben.
+
+Eleven gör en **genomarbetad** projektplan för en tänkt webbapplikation. **Vid behov reviderar eleven planen.** I projektplanen beskriver eleven **utförligt och nyanserat **applikationens funktion, **arkitektur och mjukvarugränssnitt**. Utifrån projektplanen utvecklar eleven **efter samråd **med handledare applikationen där presentations­logiken är skild från applikationens övriga logik. I arbetet utvecklar eleven kod som **följer en given kodningsstandard** och är** utförligt **kommenterad. Applikationen uppvisar funktionalitet med ett språk för webbserver­programmering **för att driva en helt databaserad webbplats eller en jämförbart avancerad produkt** och tillhandahåller en lösning** med viss komplexitet **för** permanent datalagring**. Produkten är av **god** kvalitet och följer etablerad god praxis. **Detta kontrollerar eleven med hjälp av** **flera ****tester,** **även manuella.**
+
+När arbetet är utfört gör eleven en **noggrann och utförlig **dokumentation av de moment som har utförts samt utvärderar med **nyanserade **omdömen sitt arbete och resultat **samt ger förslag på hur arbetet kan förbättras**. Eleven identifierar **flera** sårbarheter eller hot och vidtar **avancerade** åtgärder för att förhindra att produkten utnyttjas. När eleven kommunicerar med andra använder hon eller han **med säkerhet** terminologi.

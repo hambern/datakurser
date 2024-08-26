@@ -134,3 +134,70 @@ Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några l
 ## OpenAI ChatGPT
 
 Om du kör fast i din kodning, tveka inte att ställa frågor till Open AI:s chattbot ChatGPT som är förvånansvärt skicklig på att skriva kod. Var bara tydlig med vilket slags språk du vill ha hjälp med, exempelvis HTML, CSS, PHP eller JavaScript: <https://chat.openai.com/>. Men undvik att använda AI-teknik för att generera redan färdig kod. En bättre strategi är att använda tekniken för att felsöka och för att förklara i detalj vad funktioner etc gör.
+
+---
+
+## Webbutveckling 1
+
+Kurskod: WEUWEB01
+
+Kursen webbutveckling 1 omfattar punkterna 1--3 och 6--9 under rubriken Ämnets syfte.
+
+#### Centralt innehåll
+
+#### Undervisningen i kursen ska behandla följande centrala innehåll:
+
+-   Webben som plattform, dess historia och samhällspåverkan.
+-   Teknisk orientering om webbens protokoll, adresser, säkerhet och samspelet mellan klient och server.
+-   Publikation av webbplatser med och utan webbpubliceringssystem.
+-   Processen för ett webbutvecklingsprojekt med målsättningar, planering, specifikation av struktur och design, kodning, optimering, testning, dokumentation och uppföljning.
+-   Märkspråk och deras inbördes roller, syntax och semantik -- där det huvudsakliga innehållet är standarderna för HTML och CSS samt orientering om Ecmaskript och dokumentobjektsmodellen (DOM).
+-   Teckenkodning, begrepp, standarder och handhavande.
+-   Bilder och media med alternativa format, optimering och tillgänglighet.
+-   Riktlinjer för god praxis inom webbutveckling.
+-   Interoperabilitet genom att följa standarder och testa på olika användaragenter.
+-   Applikationer som fungerar oberoende av val av användaragent, operativsystem eller hårdvaruplattform och hur tillgänglighet uppnås även för användare med funktionsnedsättning.
+-   Kvalitetssäkring av applikationens funktion och validering av kodens kvalitet.
+-   Säkerhet och sätt att identifiera hot och sårbarheter samt hur attacker kan motverkas genom effektiva åtgärder.
+-   Lagar och andra bestämmelser som styr digital information, till exempel personuppgiftslagen och lagen om elektronisk kommunikation.
+-   Terminologi inom området webbutveckling.
+
+### Betygskriterier
+
+#### Betyget E
+
+Eleven beskriver **översiktligt** webbens historia och dess påverkan på samhället och de grundläggande tekniker som webben bygger på. Eleven använder med **visst** handlag webbpubliceringssystem och redogör **översiktligt** för dess funktionalitet.
+
+Eleven upprättar en **enkel** projektplan för en tänkt produkt. Eleven utvecklar utifrån planen en produkt **i samråd** med handledare. I arbetet utvecklar eleven kod som med **tillfredsställande **resultat följer standarder och omfattar **någon** av de grundläggande teknikerna för märkspråk och stilmallar. Eleven bearbetar också **med viss säkerhet enkel** text, bild och eventuell annan media så att de anpassas till produkten.
+
+Produkten är av **tillfredsställande** kvalitet och följer etablerad god praxis vilket eleven kontrollerar med **begränsade** tester. Eleven testar produkten i **någon** webbläsare. Eleven testar också produkten på **någon** plattform och vidtar **begränsade** åtgärder för att åstadkomma snabb överföring av bilder eller andra mediafiler. Dessutom bygger eleven en webbplats som med **tillfredsställande **resultat följer grundläggande principer för tillgänglighet.
+
+När arbetet är utfört gör eleven en **enkel **dokumentation av de moment som har utförts och utvärderar med **enkla **omdömen sitt arbete och resultat. Eleven redogör **översiktligt **för innehållet i lagar och andra bestämmelser som rör publicering på webben samt följer dem i sitt arbete. Eleven redogör **översiktligt** för relevanta säkerhetslösningar samt hanterar lösenord och annan känslig data på ett etiskt riktigt sätt. Eleven för dessutom** enkla **resonemang om webbrelaterade frågor om etik och integritet. Eleven använder **med** **viss säkerhet **terminologi inom området.
+
+#### Betyget D
+
+Elevens kunskaper bedöms sammantaget vara mellan C och E.
+
+#### Betyget C
+
+Eleven beskriver **utförligt **webbens historia och dess påverkan på samhället och de grundläggande tekniker som webben bygger på. Eleven använder med **gott **handlag webbpubliceringssystem och redogör **utförligt **för dess funktionalitet.
+
+Eleven upprättar en **genomarbetad** projektplan för en tänkt produkt. Eleven utvecklar utifrån planen en produkt **efter samråd **med handledare. I arbetet utvecklar eleven kod som med **tillfredsställande **resultat följer standarder och som omfattar **några** av de grundläggande teknikerna för märkspråk och stilmallar. **I produkten** **infogar eleven enkla skript****.** Eleven bearbetar **med viss säkerhet och via flera moment **text, bild och eventuell annan media, så att de anpassas till produkten.
+
+Produkten är av **tillfredsställande** kvalitet och följer etablerad god praxis vilket eleven kontrollerar med **automatiserade** tester. Eleven testar produkten i **några** webbläsare. Eleven testar också produkten på **några** plattformar **inklusive traditionella datorer eller mobila enheter **och vidtar åtgärder för att åstadkomma snabb överföring av bilder och andra mediafiler. Dessutom bygger eleven en webbplats som med **tillfredsställande **resultat följer grundläggande principer för tillgänglighet **och** **kontrollerar detta med några automatiserade tester**.
+
+När arbetet är utfört gör eleven en **noggrann **dokumentation av de moment som har utförts och utvärderar med **nyanserade **omdömen sitt arbete och resultat. Eleven redogör **utförligt **för innehållet i lagar och andra bestämmelser som rör publicering på webben samt följer dem i sitt arbete. Eleven redogör **utförligt** för relevanta säkerhetslösningar samt hanterar lösenord och annan känslig data på ett etiskt riktigt sätt. Eleven för dessutom** välgrundade** resonemang om webbrelaterade frågor om etik och integritet. **Eleven beskriver även** **hur tredjepartskod kan innebära problem för produktens säkerhet. **Eleven använder **med viss säkerhet **terminologi inom området.
+
+#### Betyget B
+
+Elevens kunskaper bedöms sammantaget vara mellan A och C.
+
+#### Betyget A
+
+Eleven beskriver **utförligt och nyanserat **webbens historia och dess påverkan på samhället och de grundläggande tekniker som webben bygger på. Eleven använder med **mycket gott **handlag webbpubliceringssystem och redogör **utförligt och nyanserat **för dess funktionalitet.
+
+Eleven upprättar en **genomarbetad** projektplan för en tänkt produkt och **reviderar den** **vid behov**. Eleven utvecklar utifrån planen en produkt **efter samråd **med handledare. I arbetet utvecklar eleven kod som med **gott **resultat följer standarder och som omfattar **flera** av de grundläggande teknikerna för märkspråk och stilmallar. **I produkten infogar eleven**** diskreta domskript****.** Eleven bearbetar **med säkerhet och via flera moment **text, bild och eventuell annan media så att de anpassas till produkten.
+
+Produkten är av **god** kvalitet och följer etablerad god praxis vilket eleven kontrollerar med **omfattande automatiserade och manuella** tester. Eleven testar produkten i **flera** webbläsare. Eleven testar också produkten på **flera** plattformar** inklusive traditionella datorer och mobila enheter**, vidtar **omfattande **åtgärder** samt optimerar **bilder eller andra mediafiler för att åstadkomma snabb överföring av dessa **och** **för att reducera antalet överföringar per sida**. Dessutom bygger eleven en webbplats som med **gott **resultat följer grundläggande principer för tillgänglighet **och kontrollerar detta med automatiserade tester** **och simuleringar**.
+
+När arbetet är utfört gör eleven en **noggrann och utförlig **dokumentation av de moment som har utförts **med koppling till generella principer och testresultat **och utvärderar med **nyanserade **omdömen sitt arbete och resultat **samt ger förslag på hur arbetet kan förbättras**. Eleven redogör **utförligt och nyanserat **för innehållet i lagar och andra bestämmelser som rör publicering på webben samt följer dem i sitt arbete. Eleven redogör **utförligt** **och nyanserat** för relevanta säkerhetslösningar samt hanterar lösenord och annan känslig data på ett etiskt riktigt sätt. Eleven för dessutom** välgrundade och nyanserade **resonemang om webbrelaterade frågor om etik och integritet. **Eleven beskriver även hur** **tredjepartskod kan innebära problem för produktens säkerhet samt beskriver grundläggande säkerhetskriterier vid val av webbhotell. **Eleven använder** med säkerhet **terminologi inom området.
