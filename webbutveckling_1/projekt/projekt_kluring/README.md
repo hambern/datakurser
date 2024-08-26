@@ -38,6 +38,7 @@ För att förbereda dig inför denna uppgift, rekommenderar jag att du läser:
 - [HTML Grundläggande](https://www.w3schools.com/html/html_basic.asp)
 - [CSS Grundläggande](https://www.w3schools.com/css/css_intro.asp)
 - [JavaScript Grundläggande](https://www.w3schools.com/js/js_intro.asp) (om du vill använda JavaScript)
+- [Normalize.css](https://necolas.github.io/normalize.css/)
 
 ### Exempel på enkelt JavaScript
 

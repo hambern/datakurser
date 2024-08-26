@@ -56,6 +56,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
 - [GIMP User Manual](https://docs.gimp.org/2.10/en/) för bildredigering och komprimering.
 - [HandBrake Documentation](https://handbrake.fr/docs/en/latest/) för videokomprimering.
 - [Pexels](https://www.pexels.com/) för att hämta bilder och videor i hög kvalitet.
+- [Normalize.css](https://necolas.github.io/normalize.css/)
 
 ---
 

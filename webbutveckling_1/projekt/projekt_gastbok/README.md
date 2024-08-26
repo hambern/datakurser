@@ -56,6 +56,7 @@ För att förbereda dig inför denna uppgift, rekommenderar jag att du läser ig
 - [HTML Formulär](https://www.w3schools.com/html/html_forms.asp)
 - [CSS Grundläggande](https://www.w3schools.com/css/css_intro.asp)
 - [PHP Grundläggande](https://www.w3schools.com/php/php_intro.asp)
+- [Normalize.css](https://necolas.github.io/normalize.css/)
 
 ---
 
