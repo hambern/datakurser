@@ -25,7 +25,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
      ```
 
 #### 2. Skapa en tabell i din MySQL-databas:
-   - Logga in på din MySQL-databas via phpMyAdmin <admin.student.oedu.se> eller kommandoraden.
+   - Logga in på din MySQL-databas via phpMyAdmin <https://admin.student.oedu.se> eller kommandoraden.
    - Skapa en tabell för att lagra gästboksinlägg:
      ```sql
      CREATE TABLE guestbook_posts (
