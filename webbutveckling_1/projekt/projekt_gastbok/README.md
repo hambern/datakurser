@@ -26,53 +26,7 @@ Du ska designa och bygga en gästbok där användare kan lämna kommentarer. Gä
 
 Den insamlade informationen ska sparas på servern (till exempel i en textfil) och visas för andra besökare på sidan. Gästboken ska ha en enkel och elegant design som är responsiv, vilket innebär att den fungerar och ser bra ut på både datorer och mobila enheter.
 
-### Exempel på PHP och HTML-kod
-
-Nedan följer ett komplett exempel på hur du kan implementera en gästbok med PHP och HTML.
-
-#### PHP-kod för att lagra data
-
-~~~php
-<?php
-// Hantera formulärinmatning och lagring av data
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Hämta och säkra inmatad data
-    $name = htmlspecialchars($_POST['name']);
-    $message = htmlspecialchars($_POST['message']);
-    $date = date('Y-m-d H:i:s');
-
-    // Skapa en array av inmatningen
-    $entryData = [$date, $name, $message];
-
-    // Slå ihop arrayen till en sträng för lagring i textfil
-    $entry = implode('|', $entryData) . PHP_EOL;
-
-    // Spara meddelandet i en textfil
-    file_put_contents('guestbook.txt', $entry, FILE_APPEND);
-
-    // Omdirigera tillbaka till gästboken
-    header('Location: index.php');
-    exit();
-}
-?>
-~~~
-
-#### PHP-kod för att hämta data
-
-~~~php
-<?php
-// Läs och bearbeta lagrade meddelanden
-$entries = [];
-if (file_exists('guestbook.txt')) {
-    $fileEntries = file('guestbook.txt');
-    foreach ($fileEntries as $entry) {
-        $entries[] = explode('|', trim($entry));
-    }
-}
-?>
-~~~
-
-#### HTML-kod för att visa lagrade meddelanden
+### Exempel på HTML-kod
 
 ~~~html
 <!-- Visa lagrade meddelanden -->
@@ -95,7 +49,6 @@ if (file_exists('guestbook.txt')) {
 ### Ramverk och tekniker
 - **HTML och CSS:** Använd HTML för att skapa formuläret och strukturen på sidan. Använd CSS för att skapa en stilren och responsiv design.
 - **PHP:** Använd PHP för att hantera POST-anropet, spara data i en textfil och hämta samt visa den sparade datan.
-- **JavaScript (valfritt):** Lägg till enkel JavaScript för att förbättra användarupplevelsen, som till exempel att validera formuläret innan det skickas.
 
 ### Resurser att studera
 För att förbereda dig inför denna uppgift, rekommenderar jag att du läser igenom följande:

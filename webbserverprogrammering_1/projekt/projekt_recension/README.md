@@ -12,14 +12,14 @@ Efter att ha slutfört projektet ska du kunna:
 
 ### Stegvis Utveckling
 
-#### Steg 1: Grundläggande Recensionsapplikation
+#### Steg 1: Grundläggande recensionsapplikation
 - **Beskrivning:** Skapa en enkel applikation där användare kan lägga till en sak och ge den ett betyg (1-5).
 - **Tekniska aspekter:**
   - **Laravel:** Installera och konfigurera ett Laravel-projekt. Använd Blade för att skapa vyer.
   - **Databasoperationer:** Använd Eloquent för att utföra `INSERT` och `SELECT` operationer.
   - **Databasstruktur:** Skapa en enkel tabell för att lagra saker och deras betyg.
 
-#### Steg 2: Kategorisering av Grejer
+#### Steg 2: Kategorisering av grejer
 - **Beskrivning:** Lägg till kategorier så att varje sak kan tillhöra en kategori som filmer, böcker eller spel.
 - **Tekniska aspekter:**
   - **Databasrelationer:** Skapa en en-till-många-relation mellan tabellerna för saker och kategorier.
@@ -51,7 +51,7 @@ Efter att ha slutfört projektet ska du kunna:
 - **Eloquent:** Hantera databasen och relationer med Eloquent ORM.
 - **Git:** Använd Git för versionshantering och skapa branches för varje steg i utvecklingen.
 
-### Projektstruktur och Arbetsflöde
+### Projektstruktur och arbetsflöde
 Varje steg i utvecklingen motsvarar en ny branch i Git. När ett steg är färdigutvecklat och testat, mergas det in i main-branchen. Detta ger dig praktisk erfarenhet av versionshantering och möjliggör en tydlig progression i ditt projekt.
 
 ### Sammanfattning
