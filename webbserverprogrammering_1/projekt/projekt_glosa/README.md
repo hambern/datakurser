@@ -52,6 +52,9 @@ Du ska utveckla ett API som möjliggör grundläggande gloshantering för ett gl
   Skickar: `token`  
   Returnerar: `glossary`
 
+### Verktyg
+- För att kunna testa ditt api rekommenderas du att installera [Talend API Tester](https://chromewebstore.google.com/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm) som är ett plugin till din webbläsare. Med hjälp av det pluginet kan du skicka och ta emot API-anrop.
+
 ### Arbetsgång
 
 1. **Förstudie:**  
