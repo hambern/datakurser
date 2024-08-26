@@ -1,18 +1,18 @@
-### Databasdriven gästbok
+# Skapa en databasdriven gästbok
 
-#### Syfte
+### Syfte
 Denna uppgift syftar till att introducera dig till MySQL och Git, två grundläggande verktyg inom webbserverprogrammering. Genom att omvandla din tidigare skapade gästbok till en databasdriven applikation får du praktisk erfarenhet av att skapa och hantera databaser samt använda versionshantering för att följa utvecklingen av ditt projekt.
 
-#### Mål
+### Mål
 Efter att ha slutfört denna uppgift ska du kunna:
 - Använda MySQL för att skapa och hantera databastabeller.
 - Använda PHP för att kommunicera med en MySQL-databas.
 - Använda Git för att hantera versionshantering i ditt projekt.
 - Skapa, läsa och visa data från en databas i en webbapplikation.
 
-#### Beskrivning
+### Beskrivning
 
-##### 1. Skapa ett GitLab-konto och initiera ditt Git-repository
+#### 1. Skapa ett GitLab-konto och initiera ditt Git-repository
 1. **Registrera dig på GitLab:**
    - Skapa ett konto på [GitLab](https://gitlab.com/). Detta ger dig möjlighet att hantera dina projekt och versioner.
   
@@ -33,7 +33,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
      git push -u origin main
      ```
 
-##### 2. Skapa en tabell i din MySQL-databas:
+#### 2. Skapa en tabell i din MySQL-databas:
    - Logga in på din MySQL-databas via phpMyAdmin eller kommandoraden.
    - Skapa en tabell för att lagra gästboksinlägg:
      ```sql
@@ -45,7 +45,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
      );
      ```
 
-##### 3. Anslut PHP till din MySQL-databas:
+#### 3. Anslut PHP till din MySQL-databas:
    - Skapa ett PHP-skript som ansluter till databasen:
      ```php
      <?php
@@ -64,7 +64,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
      ?>
      ```
 
-##### 4. Lagra gästboksinlägg i databasen:
+#### 4. Lagra gästboksinlägg i databasen:
    - Ändra ditt formulär så att det skickar data till databasen:
      ```php
      if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -81,7 +81,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
      }
      ```
 
-##### 5. Visa gästboksinlägg från databasen:
+#### 5. Visa gästboksinlägg från databasen:
    - Hämta och visa alla gästboksinlägg på din sida:
      ```php
      $sql = "SELECT id, name, message, created_at FROM guestbook_posts ORDER BY created_at DESC";
@@ -96,7 +96,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
      }
      ```
 
-##### 6. Versionshantering med Git:
+#### 6. Versionshantering med Git:
    - Gör en commit varje gång du gör en betydande ändring i koden. Fortsätt att använda Git för att hantera alla framtida ändringar av ditt projekt:
      ```sh
      git add .
@@ -104,7 +104,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
      git push
      ```
 
-#### Bedömning
+### Bedömning
 
 | **Kriterium**              | **Godkänt**                                        | **Väl godkänt**                                  | **Mycket väl godkänt**                            |
 |----------------------------|---------------------------------------------------|--------------------------------------------------|---------------------------------------------------|
