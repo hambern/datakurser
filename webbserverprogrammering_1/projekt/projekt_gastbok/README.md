@@ -92,7 +92,6 @@ Efter att ha slutfört denna uppgift ska du kunna:
      ```sh
      git add .
      git commit -m "Added database integration to guestbook"
-     git push
      ```
 
 ### Bedömning
