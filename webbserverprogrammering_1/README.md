@@ -19,6 +19,14 @@ Det första vi måste göra i denna kurs är att lära oss PHP, MySQL och Git. M
 - Är du en sådan som gillar att lära dig via video är denna spellista en bra resurs:
   - SQL - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI>
 
+### Laravel
+
+Laravel är ett mycket populärt PHP-ramverk som - när man kan det - underlättar väldigt mycket för webbutvecklare. W3Schools har ingen kurs i Laravel, däremot är Laravel extremt väl dokumenterat och det finns också väldigt många förklarande filmer. Här är två bra länkar för dig som vill lära dig:
+
+- [Laravels hemsida](https://laravel.com/)
+- [Laravels dokumentation](https://laravel.com/docs/)
+- [Laracasts](https://laracasts.com/)
+
 ## Uppgifter
 
 Här är en översikt av uppgifterna för kursen i Webbserverprogrammering 1, med fokus på att gradvis bygga upp dina färdigheter i databasprogrammering och webbutveckling. Varje uppgift bygger vidare på den tidigare och hjälper dig att stegvis lära dig tekniker som PHP, MySQL, Git, och Laravel.
