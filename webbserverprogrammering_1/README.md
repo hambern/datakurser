@@ -68,6 +68,7 @@ Här är en översikt av uppgifterna för kursen i Webbserverprogrammering 1, me
 
 - Servernamn: `student.oedu.se`
 - För phpmyadmin: <https://admin.student.oedu.se>
+  - För att logga in i övningsdatabaserna använder du login `student` och lösenordet `student`. När du ska göra egna tabeller använder du ditt eget login tillsammans med ditt lösenord.
 - Din hemsida: <https://student.oedu.se/~ditt_login>
 
 ### Din databas
