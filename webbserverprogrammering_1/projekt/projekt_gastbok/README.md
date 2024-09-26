@@ -134,8 +134,6 @@ Efter att ha slutfört denna uppgift ska du kunna:
    git push -u origin master
    ``` 
 
-Det här formatet gör det lite enklare och tydligare att följa stegen i din process.
-
 ### Bedömning
 
 | **Kriterium**              | **Betyg E**                                        | **Betyg C**                                  | **Betyg A**                            |
