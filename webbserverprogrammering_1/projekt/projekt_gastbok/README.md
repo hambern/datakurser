@@ -64,22 +64,22 @@ Efter att ha slutfört denna uppgift ska du kunna:
 #### 4. Visa gästboksinlägg från databasen:
    - Hämta och visa alla gästboksinlägg på din sida:
      ```php
-    <?php
-    $sql = "SELECT id, name, message, created_at FROM guestbook_posts ORDER BY created_at DESC";
-    $result = $conn->query($sql);
-    ?>
+      <?php
+      $sql = "SELECT id, name, message, created_at FROM guestbook_posts ORDER BY created_at DESC";
+      $result = $conn->query($sql);
+      ?>
 
-    <?php if ($result->num_rows > 0) : ?>
-        <?php while($row = $result->fetch_assoc()) : ?>
-            <div>
-                <h3><?= $row['name'] ?></h3>
-                <p><?= $row['message'] ?></p>
-                <p><?= $row['created_at'] ?></p>
-            </div>
-        <?php endwhile; ?>
-    <?php else : ?>
-        <p>No post found</p>
-    <?php endif; ?>
+      <?php if ($result->num_rows > 0) : ?>
+          <?php while($row = $result->fetch_assoc()) : ?>
+              <div>
+                  <h3><?= $row['name'] ?></h3>
+                  <p><?= $row['message'] ?></p>
+                  <p><?= $row['created_at'] ?></p>
+              </div>
+          <?php endwhile; ?>
+      <?php else : ?>
+          <p>No post found</p>
+      <?php endif; ?>
      ```
 
 #### 5. Skapa ett Git-repository
