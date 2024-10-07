@@ -1,7 +1,7 @@
 # Skapa en recensionsapplikation i Laravel
 
 ### Syfte
-Detta projekt syftar till att ge dig en grundlig förståelse för modern webbutveckling genom att gradvis bygga en recensionsapplikation med hjälp av Laravel. Projektet kommer att utvecklas över flera steg, där du lär dig att hantera databasoperationer, implementera användarhantering och skapa en dynamisk och användarvänlig applikation.
+Detta projekt syftar till att ge dig en grundlig förståelse för modern webbutveckling genom att gradvis bygga en recensionsapplikation med hjälp av Laravel. Projektet kommer att utvecklas över flera steg, där du lär dig att hantera databasoperationer, implementera användarhantering och skapa en dynamisk och användarvänlig applikation. [https://laracasts.com/](Laracasts) är en fantastisk resurs när du ska lära dig Laravel. Så lägg gärna några timmar där.
 
 ### Mål
 Efter att ha slutfört projektet ska du kunna:
