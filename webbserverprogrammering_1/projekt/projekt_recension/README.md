@@ -9,12 +9,14 @@ Efter att ha slutfört projektet ska du kunna:
 - Arbeta med Blade för att skapa dynamiska vyer och Eloquent för att hantera databasrelationer.
 - Implementera användarhantering med säker datalagring och autentisering.
 - Strukturera din kod enligt MVC-principen och använda Git för versionshantering.
+- Kunna jobba i grupp och använda Git för versionshantering.
 
 ### Stegvis Utveckling
 
 #### Steg 1: Grundläggande recensionsapplikation
 - **Beskrivning:** Skapa en enkel applikation där användare kan lägga till en sak och ge den ett betyg (1-5).
 - **Tekniska aspekter:**
+  - **GitLab:** Skapa ett gemensamt Git-repository genom att en av er delar repositoryt med den andre.
   - **Laravel:** Installera och konfigurera ett Laravel-projekt. Använd Blade för att skapa vyer.
   - **Databasoperationer:** Använd Eloquent för att utföra `INSERT` och `SELECT` operationer.
   - **Databasstruktur:** Skapa en enkel tabell för att lagra saker och deras betyg.
@@ -49,10 +51,10 @@ Efter att ha slutfört projektet ska du kunna:
 - **Laravel:** Bygg hela applikationen i Laravel, från databasinteraktion till användargränssnitt.
 - **Blade:** Använd Blade för att skapa dynamiska och återanvändbara vyer.
 - **Eloquent:** Hantera databasen och relationer med Eloquent ORM.
-- **Git:** Använd Git för versionshantering och skapa branches för varje steg i utvecklingen.
+- **Git:** Använd Git för versionshantering och skapa gärna branches för varje steg i utvecklingen.
 
 ### Projektstruktur och arbetsflöde
-Varje steg i utvecklingen motsvarar en ny branch i Git. När ett steg är färdigutvecklat och testat, mergas det in i main-branchen. Detta ger dig praktisk erfarenhet av versionshantering och möjliggör en tydlig progression i ditt projekt.
+Varje steg i utvecklingen bör motsvara en ny branch i Git. När ett steg är färdigutvecklat och testat, mergas det in i main-branchen. Detta ger dig praktisk erfarenhet av versionshantering och möjliggör en tydlig progression i ditt projekt.
 
 ### Sammanfattning
 Genom att följa denna progression kommer du att utveckla en omfattande recensionsapplikation, från enkel till komplex. Projektet ger dig möjlighet att stegvis fördjupa dina kunskaper i Laravel, databashantering och systemdesign, vilket ger en stark grund i webbutveckling.
