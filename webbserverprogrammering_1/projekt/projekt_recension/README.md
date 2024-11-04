@@ -2,9 +2,9 @@
 
 ## Syfte
 
-Detta projekt syftar till att ge dig en grundlig förståelse för modern webbutveckling genom att gradvis bygga en recensionsapplikation. Projektet kommer att utvecklas i flera steg, där du lär dig att hantera databasoperationer, implementera användarhantering och skapa en dynamisk och användarvänlig applikation. Genom att arbeta praktiskt och strukturerat kommer du att få insikt i hela utvecklingsprocessen, från planering och arkitektur till implementering och lansering. Du kommer att lära dig hur du skapar stabil och säker kod, och hur du integrerar olika delar av en applikation till en välfungerande helhet.
+Detta projekt syftar till att ge dig en grundlig förståelse för modern webbutveckling genom att gradvis bygga en recensionsapplikation. Projektet kommer att utvecklas i flera steg, där du lär dig att hantera databasoperationer, implementera användarhantering och skapa en dynamisk och användarvänlig applikation. Genom att arbeta praktiskt och strukturerat får du insikt i hela utvecklingsprocessen, från planering och arkitektur till implementering och lansering. Du kommer att lära dig hur man skapar stabil och säker kod, samt hur man integrerar olika delar av en applikation till en välfungerande helhet.
 
-Projektet kommer att hjälpa dig att förstå olika aspekter av webbteknologi, inklusive back-end, front-end, databasrelationer och autentisering. Genom att arbeta tillsammans med en partner får du även värdefull erfarenhet av samarbete, vilket är en viktig del av moderna arbetsflöden. Att bygga en recensionsapplikation ger dig möjlighet att se hur en fullständig produkt utvecklas från grunden, med alla dess olika komponenter som tillsammans skapar en användarupplevelse som är både intuitiv och kraftfull.
+Projektet hjälper dig att förstå olika aspekter av webbteknologi, inklusive back-end, front-end, databasrelationer och autentisering. Genom att arbeta tillsammans med en partner får du även värdefull erfarenhet av samarbete, vilket är en viktig del av moderna arbetsflöden. Att bygga en recensionsapplikation ger dig möjlighet att se hur en fullständig produkt utvecklas från grunden, med alla dess komponenter som tillsammans skapar en intuitiv och kraftfull användarupplevelse.
 
 ## Mål
 
@@ -27,7 +27,7 @@ Ni ska arbeta i par och använda samma kodbas, men på varsitt eget system. Det 
 
 Detta upplägg ställer krav på noggrann versionshantering och att ni kommunicerar tydligt om era förändringar. Det är viktigt att ni använder Git på ett strukturerat sätt för att säkerställa att era kodändringar enkelt kan integreras utan att orsaka konflikter. Ni bör också dokumentera era ändringar löpande, både för att underlätta för varandra och för att ge er själva en tydlig översikt över projektets framsteg.
 
-Genom att arbeta på detta sätt kommer ni att få erfarenhet av att planera och genomföra ett projekt tillsammans, vilket innefattar att lösa problem, dela upp arbetsuppgifter och till slut integrera era individuella bidrag till en sammanhängande produkt.
+Genom att arbeta på detta sätt får ni erfarenhet av att planera och genomföra ett projekt tillsammans, vilket innefattar att lösa problem, dela upp arbetsuppgifter och till slut integrera era individuella bidrag till en sammanhängande produkt.
 
 ## Stegvis utveckling
 
@@ -38,6 +38,7 @@ Genom att arbeta på detta sätt kommer ni att få erfarenhet av att planera och
   - **Arbetsuppgifter:** Fördela uppgifterna sinsemellan så att båda bidrar till alla delar av projektet. Detta kan inkludera specifika områden som front-end, back-end, databas eller testning.
   - **Tidsplanering:** Skapa en tidsplanering som bryter ner varje steg i projektet till mindre delmoment och sätter upp milstolpar. Detta ger er en tydlig struktur och hjälper till att hålla projektet på rätt spår.
   - **Dokumentation:** Dokumentera uppgiftsfördelningen och tidsplaneringen i en README.md-fil i projektets rotkatalog. Detta gör det till en del av projektets repository, vilket gör det enkelt att referera till och justera vid behov under projektets gång.
+  - **GitLab:** Skapa ett gemensamt Git-repository, där en av er delar repositoryt med den andra. Detta repository ska innehålla README.md-filen ni skapat. Att dela ett repository är en bra övning i hur man hanterar gemensam kod på ett effektivt sätt.
 
 ### Steg 2: Användarhantering
 
@@ -51,7 +52,6 @@ Genom att arbeta på detta sätt kommer ni att få erfarenhet av att planera och
 
 - **Beskrivning:** Skapa en enkel applikation där användare kan lägga till en sak och ge den ett betyg (1-5). Detta är kärnan i recensionssystemet och tillåter användare att bidra med sin åsikt.
 - **Tekniska aspekter:**
-  - **GitLab:** Skapa ett gemensamt Git-repository, där en av er delar repositoryt med den andra. Att dela ett repository är en bra övning i hur man hanterar gemensam kod på ett effektivt sätt.
   - **Kodstruktur:** Bygg en enkel grundstruktur för applikationen. Denna struktur kommer att inkludera grundläggande komponenter som vyer, modeller och kontrollfunktioner, som alla bidrar till en överskådlig och välorganiserad kodbas.
   - **Databasoperationer:** Implementera grundläggande databasoperationer för att lagra och hämta recensioner. Användaren ska kunna lägga till nya recensioner och se en lista över alla recensioner som tidigare har lagts till.
 
@@ -89,7 +89,7 @@ Genom att arbeta på detta sätt kommer ni att få erfarenhet av att planera och
 
 ## Projektstruktur och arbetsflöde
 
-Det kan vara enklare att arbeta med varje steg i utvecklingen som en ny branch i Git. När ett steg är klart, kan det testas och mergas in i main-branchen. Detta ger er praktisk erfarenhet av att arbeta i brancher och möjliggör en tydlig progression i projektet. Att arbeta i brancher gör det också möjligt att parallellt arbeta med olika funktioner utan att påverka huvudkodbasen tills det är dags att integrera och testa förändringarna. Detta arbetsflöde är vanligt i professionella utvecklingsmiljöer och kommer att hjälpa er att få bättre förståelse för samarbets- och versionshantering.
+Det kan vara enklare att arbeta med varje steg i utvecklingen som en ny branch i Git. När ett steg är klart kan det testas och mergas in i main-branchen. Detta ger er praktisk erfarenhet av att arbeta i brancher och möjliggör en tydlig progression i projektet. Att arbeta i brancher gör det också möjligt att parallellt arbeta med olika funktioner utan att påverka huvudkodbasen tills det är dags att integrera och testa förändringarna. Detta arbetsflöde är vanligt i professionella utvecklingsmiljöer och kommer att hjälpa er att få bättre förståelse för samarbets- och versionshantering.
 
 Ni bör också diskutera och dokumentera era arbetsuppgifter noga. Använd till exempel GitLabs issues och merge requests för att hantera arbetsfördelning och kodgranskning. Detta hjälper till att identifiera problem i tid och säkerställer att alla kodändringar är granskade innan de slås samman med huvudkodbasen.
 
