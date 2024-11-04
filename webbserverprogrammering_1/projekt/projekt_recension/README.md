@@ -79,6 +79,14 @@ Genom att arbeta på detta sätt kommer ni att få erfarenhet av att planera och
   - **Feed:** Skapa en feed som visar aktivitet från användarens följare. Detta kan inkludera nya recensioner eller betyg som användarens följare har lagt till, vilket hjälper till att hålla användarna engagerade och informerade om vad som händer.
   - **Notifikationer:** Implementera ett enkelt notifikationssystem så att användare får meddelanden när någon de följer har publicerat en ny recension eller betygsatt en sak.
 
+### Steg 7: Internt meddelandesystem (Valfritt)
+
+- **Beskrivning:** Lägg till ett internt meddelandesystem där användare kan skicka privata meddelanden till varandra. Detta ger en ytterligare social dimension till applikationen och möjliggör direkt kommunikation mellan vänner.
+- **Tekniska aspekter:**
+  - **Databasrelationer:** Skapa en ny tabell för att hantera meddelanden mellan användare. Varje meddelande ska vara kopplat till en avsändare och en mottagare, vilket kräver en tydlig databasstruktur.
+  - **Meddelandefunktion:** Implementera funktioner för att skicka, läsa och svara på meddelanden. Användarna ska kunna se sina konversationer på ett användarvänligt sätt.
+  - **UI:** Bygg ett enkelt och intuitivt gränssnitt för meddelandesystemet. Använd Bootstrap eller liknande ramverk för att skapa en tydlig layout som gör det enkelt för användare att interagera med sina vänner.
+
 ## Projektstruktur och arbetsflöde
 
 Det kan vara enklare att arbeta med varje steg i utvecklingen som en ny branch i Git. När ett steg är klart, kan det testas och mergas in i main-branchen. Detta ger er praktisk erfarenhet av att arbeta i brancher och möjliggör en tydlig progression i projektet. Att arbeta i brancher gör det också möjligt att parallellt arbeta med olika funktioner utan att påverka huvudkodbasen tills det är dags att integrera och testa förändringarna. Detta arbetsflöde är vanligt i professionella utvecklingsmiljöer och kommer att hjälpa er att få bättre förståelse för samarbets- och versionshantering.
