@@ -27,7 +27,7 @@ Du ska designa en gästbok där användare kan lämna kommentarer. Gästboken sk
 
 Den insamlade informationen ska sparas på servern i en textfil och visas för andra besökare på sidan. Gästboken ska ha en enkel och elegant design som är responsiv, vilket innebär att den fungerar och ser bra ut på både datorer och mobila enheter.
 
-### Exempel på HTML-kod
+### Exempel på PHP-kod
 
 Nedanför följer en mycket enkel men fullt funktionell gästbokskod att utgå ifrån. Du behöver inte nödvändigtvis förstå vad varje rad i PHP-delen gör. Det skadar dock på inget sätt att kolla upp det. Vad den gör är att skapa två funktioner - save() och read() - som sparar till, respektive läser ifrån en textfil.
 
