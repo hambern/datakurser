@@ -36,22 +36,24 @@ Nedanför följer en mycket enkel men fullt funktionell gästbokskod att utgå i
 function save($data, $file = 'guestbook.txt') {
     $data['timestamp'] = date('Y-m-d H:i:s'); // Lägg till tidsstämpel
     $clean = array_map('htmlspecialchars', $data); // Sanera all data
-    $json = json_encode($clean); // Gör om arrayen till en json-sträng
-    file_put_contents($file, $json . PHP_EOL, FILE_APPEND | LOCK_EX);
+    $json = json_encode($clean);
+    file_put_contents($file, $json . PHP_EOL, FILE_APPEND | LOCK_EX); // Spara som en ny rad i filen
+    header('Location: #posts'); // Skickar tillbaka användaren till sidan
+    exit; // Avbryter scriptet
 }
 
 // Läs alla inlägg från JSON-filen
 function read($file = 'guestbook.txt') {
     if (!file_exists($file)) return []; // Returnera tom array om filen inte finns
-    $lines = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES); // Hämta ut alla rader i filen till en array
+    $lines = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     return array_map(function($line) {
-        return json_decode($line, true); // Avkoda varje rad från en json-sträng till en array
+        return json_decode($line, true); // Dekoda varje rad som assoc array
     }, $lines);
 }
 
 // Spara inlägget om POST-data finns
 if (!empty($_POST)) {
-    save($_POST); // Spara hela $_POST till filen
+    save($_POST); // Spara hela $_POST direkt
 }
 
 // Läs och vänd inläggen så att det senaste kommmer först
@@ -68,21 +70,24 @@ $posts = array_reverse(read());
     <h1>Gästbok</h1>
     
     <form method="post">
+        <!-- Namnfält -->
         <label for="name">Vad heter du?</label><br>
         <input id="name" type="text" name="firstname" required><br>
 
+        <!-- Meddelande-fält -->
         <label for="message">Meddelande</label><br>
         <textarea name="message" id="message" cols="30" rows="10" required></textarea><br>
         
+        <!-- Skicka-knappen -->
         <button type="submit">Skicka</button>
     </form>
 
-    <h2>Inlägg</h2>
+    <h2 id="posts">Inlägg</h2>
     <ul>
         <?php foreach ($posts as $post) : ?>
             <li>
                 <em>(<?= $post['timestamp'] ?>)</em>
-                <strong><?= $post['firstname'] ?></strong>
+                <strong><?= $post['firstname'] ?></strong>: 
                 <?= $post['message'] ?>
             </li>
         <?php endforeach ?>
