@@ -12,19 +12,8 @@ Efter att ha slutfört denna uppgift ska du kunna:
 
 ### Beskrivning
 
-#### 1. Skapa ett Git-repository
-   - Skapa en lokal kopia av din befintliga gästbok om du inte redan har det.
-   - Gå till din projektmapp och initiera ett Git-repository:
-     ```sh
-     git init
-     ```
-   - Lägg till alla filer från din ursprungliga gästbok och gör din första commit:
-     ```sh
-     git add .
-     git commit -m "Initial commit of guestbook project"
-     ```
 
-#### 2. Skapa en tabell i din MySQL-databas:
+#### 1. Skapa en tabell i din MySQL-databas:
    - Logga in på din MySQL-databas via phpMyAdmin <https://admin.student.oedu.se> eller kommandoraden.
    - Skapa en tabell för att lagra gästboksinlägg:
      ```sql
@@ -36,7 +25,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
      );
      ```
 
-#### 3. Anslut PHP till din MySQL-databas:
+#### 2. Anslut PHP till din MySQL-databas:
    - Skapa ett PHP-skript som ansluter till databasen:
      ```php
      <?php
@@ -55,7 +44,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
      ?>
      ```
 
-#### 4. Lagra gästboksinlägg i databasen:
+#### 3. Lagra gästboksinlägg i databasen:
    - Ändra ditt formulär så att det skickar data till databasen:
      ```php
      if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -65,26 +54,44 @@ Efter att ha slutfört denna uppgift ska du kunna:
          $sql = "INSERT INTO guestbook_posts (name, message) VALUES ('$name', '$message')";
 
          if ($conn->query($sql) === TRUE) {
-             echo "New record created successfully";
+             $message = "New record created successfully";
          } else {
-             echo "Error: " . $sql . "<br>" . $conn->error;
+             $message = "Error: " . $sql . "<br>" . $conn->error;
          }
      }
      ```
 
-#### 5. Visa gästboksinlägg från databasen:
+#### 4. Visa gästboksinlägg från databasen:
    - Hämta och visa alla gästboksinlägg på din sida:
      ```php
-     $sql = "SELECT id, name, message, created_at FROM guestbook_posts ORDER BY created_at DESC";
-     $result = $conn->query($sql);
+      <?php
+      $sql = "SELECT id, name, message, created_at FROM guestbook_posts ORDER BY created_at DESC";
+      $result = $conn->query($sql);
+      ?>
 
-     if ($result->num_rows > 0) {
-         while($row = $result->fetch_assoc()) {
-             echo "<p><strong>" . $row["name"]. "</strong>: " . $row["message"]. "<br><em>" . $row["created_at"]. "</em></p>";
-         }
-     } else {
-         echo "No entries found.";
-     }
+      <?php if ($result->num_rows > 0) : ?>
+          <?php while($row = $result->fetch_assoc()) : ?>
+              <div>
+                  <h3><?= $row['name'] ?></h3>
+                  <p><?= $row['message'] ?></p>
+                  <p><?= $row['created_at'] ?></p>
+              </div>
+          <?php endwhile; ?>
+      <?php else : ?>
+          <p>No post found</p>
+      <?php endif; ?>
+     ```
+
+#### 5. Skapa ett Git-repository
+   - Skapa en lokal kopia av din befintliga gästbok om du inte redan har det.
+   - Gå till din projektmapp och initiera ett Git-repository:
+     ```sh
+     git init
+     ```
+   - Lägg till alla filer från din ursprungliga gästbok och gör din första commit:
+     ```sh
+     git add .
+     git commit -m "Initial commit of guestbook project"
      ```
 
 #### 6. Versionshantering med Git:
@@ -93,6 +100,39 @@ Efter att ha slutfört denna uppgift ska du kunna:
      git add .
      git commit -m "Added database integration to guestbook"
      ```
+
+#### 7. Skapa SSH-nyckel
+- Generera en SSH-nyckel:
+   ```sh
+   ssh-keygen
+   ```
+- Tryck **Enter** tills du är tillbaka i prompten (ingen passphrase behövs om du inte vill ha en).
+- Kopiera nyckeln:
+   ```sh
+   cat ~/.ssh/id_rsa.pub
+   ```
+
+#### 8. Lägg till SSH-nyckeln i GitLab
+- Gå till [GitLab](https://gitlab.com) och logga in.
+- Gå till **Profile settings** → **SSH Keys**.
+- Klistra in nyckeln och klicka på **Add key**.
+
+#### 9. Skapa ett tomt GitLab-repository (utan README)
+- Gå till **New Project** på GitLab.
+- Välj **Create blank project**.
+- Namnge ditt projekt, exempelvis `guestbook`.
+- Avmarkera alternativet för att skapa en README (lämna det tomt för att undvika merge-konflikter).
+- Klicka på **Create project**.
+
+#### 10. Länka och synka ditt lokala repository med GitLab
+- Länka ditt lokala repository med SSH:
+   ```sh
+   git remote add origin git@gitlab.com:ditt_användarnamn/guestbook.git
+   ```
+- Pusha din kod till GitLab:
+   ```sh
+   git push -u origin master
+   ``` 
 
 ### Bedömning
 
