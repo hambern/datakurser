@@ -13,12 +13,12 @@ Denna uppgift syftar till att ge dig praktisk erfarenhet av att designa och lagr
 Efter att ha slutfört denna uppgift ska du kunna:
 - Bygga ett formulär med HTML för att samla in data från användare.
 - Skicka data från formuläret till en server med hjälp av POST-anrop.
-- Lagra data på servern, exempelvis i en textfil.
+- Lagra data på servern i en textfil.
 - Hämta och visa lagrad data på din webbplats.
-- Skapa en enkel, responsiv design med HTML och CSS som fungerar både på datorer och mobila enheter.
+- Skapa en responsiv design med HTML och CSS som fungerar både på datorer och mobila enheter.
 
 ### Beskrivning
-Du ska designa och bygga en gästbok där användare kan lämna kommentarer. Gästboken ska minst kunna lagra följande information. Du får dock gärna göra gästboken mer komplex än så:
+Du ska designa en gästbok där användare kan lämna kommentarer. Gästboken ska minst kunna lagra följande information. Du får dock helst göra gästboken mer komplex än så genom att modifiera koden:
 
 - **Namn** på den som skriver meddelandet.
 - **Tidpunkt** då meddelandet lämnades.
@@ -28,22 +28,67 @@ Den insamlade informationen ska sparas på servern i en textfil och visas för a
 
 ### Exempel på HTML-kod
 
-~~~html
-<!-- Visa lagrade meddelanden -->
-<div class="guestbook-entries">
-    <h2>Tidigare meddelanden</h2>
-    <?php if (!empty($entries)): ?>
-        <?php foreach ($entries as $entryParts): ?>
-            <div class="entry">
-                <p><strong>Namn:</strong> <?= htmlspecialchars($entryParts[1]); ?></p>
-                <p><strong>Tid:</strong> <?= htmlspecialchars($entryParts[0]); ?></p>
-                <p><strong>Meddelande:</strong> <?= nl2br(htmlspecialchars($entryParts[2])); ?></p>
-            </div>
-        <?php endforeach; ?>
-    <?php else: ?>
-        <p>Inga meddelanden ännu.</p>
-    <?php endif; ?>
-</div>
+Nedanför följer en mycket enkel men fullt funktionell gästbokskod att utgå ifrån. Du behöver inte nödvändigtvis förstå vad varje rad i PHP-delen gör. Det skadar dock på inget sätt att kolla upp det. Vad den gör är att skapa två funktioner - save() och read() - som sparar till, respektive läser ifrån en textfil.
+
+~~~php
+<?php
+// Spara ett inlägg i en JSON-fil
+function save($data, $file = 'guestbook.txt') {
+    $data['timestamp'] = date('Y-m-d H:i:s'); // Lägg till tidsstämpel
+    $clean = array_map('htmlspecialchars', $data); // Sanera all data
+    $json = json_encode($clean); // Gör om arrayen till en json-sträng
+    file_put_contents($file, $json . PHP_EOL, FILE_APPEND | LOCK_EX);
+}
+
+// Läs alla inlägg från JSON-filen
+function read($file = 'guestbook.txt') {
+    if (!file_exists($file)) return []; // Returnera tom array om filen inte finns
+    $lines = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES); // Hämta ut alla rader i filen till en array
+    return array_map(function($line) {
+        return json_decode($line, true); // Avkoda varje rad från en json-sträng till en array
+    }, $lines);
+}
+
+// Spara inlägget om POST-data finns
+if (!empty($_POST)) {
+    save($_POST); // Spara hela $_POST till filen
+}
+
+// Läs och vänd inläggen så att det senaste kommmer först
+$posts = array_reverse(read());
+?>
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gästbok</title>
+</head>
+<body>
+    <h1>Gästbok</h1>
+    
+    <form method="post">
+        <label for="name">Vad heter du?</label><br>
+        <input id="name" type="text" name="firstname" required><br>
+
+        <label for="message">Meddelande</label><br>
+        <textarea name="message" id="message" cols="30" rows="10" required></textarea><br>
+        
+        <button type="submit">Skicka</button>
+    </form>
+
+    <h2>Inlägg</h2>
+    <ul>
+        <?php foreach ($posts as $post) : ?>
+            <li>
+                <em>(<?= $post['timestamp'] ?>)</em>
+                <strong><?= $post['firstname'] ?></strong>
+                <?= $post['message'] ?>
+            </li>
+        <?php endforeach ?>
+    </ul>
+</body>
+</html>
 ~~~
 
 ### Ramverk och tekniker
