@@ -115,8 +115,16 @@ För att förbereda dig inför denna uppgift, rekommenderar jag att du läser ig
 
 ## Bedömning
 
-| **Kvalitetsaspekt**         | **Betyg E**                                      | **Betyg C**                                      | **Betyg A**                                      |
-|-----------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-| **Formulär och datahantering** | Enkel data samlas in och lagras med HTML och PHP. | Formuläret är genomtänkt, och data lagras på ett strukturerat sätt. | Formuläret är väl utformat, och data lagras effektivt och strukturerat. |
-| **Design och CSS**          | Enkel CSS används för att styla gästboken.      | CSS används för att skapa en responsiv och tilltalande design. | CSS används för att skapa en professionell och fullt responsiv design, exempelvis via klokt användande av Bootstrap. |
-| **Responsivitet**           | Gästboken fungerar på både datorer och mobila enheter. | Gästboken är responsiv och anpassar sig väl till olika skärmstorlekar. | Gästboken är fullt responsiv och optimerad för användning på alla enheter. |
+Här är en anpassad version av bedömningsmatrisen där jag har tagit bort de rader som inte är relevanta för uppgiften att skapa en gästbok med HTML, PHP och CSS:
+
+---
+
+## Bedömning
+
+| **Kvalitetsaspekt**          | **Betyg E**                                              | **Betyg C**                                              | **Betyg A**                                              |
+|------------------------------|---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|
+| **Formulär och datahantering** | Enkel data samlas in och lagras med grundläggande HTML och PHP. | Formuläret är genomtänkt och datalagringen är strukturerad och effektiv. | Formuläret är väl utformat, och data hanteras med effektiv och säker kod som följer god praxis. |
+| **Design och användarupplevelse** | Enkel CSS används för att styla sidan och skapa en grundläggande layout. | CSS används för en tilltalande, responsiv design som fungerar på olika skärmar. | Sidan har en professionell, fullt responsiv design med genomtänkt användarupplevelse, exempelvis genom användning av moderna ramverk. |
+| **Kodkvalitet och tekniker** | Koden följer standarder och använder någon grundläggande teknik för märkspråk och stilmallar. | Koden följer standarder och använder flera grundläggande tekniker för märkspråk och stilmallar. | Koden följer standarder med mycket gott resultat och använder flera grundläggande tekniker på ett säkert och effektivt sätt. |
+| **Testning och optimering**   | Produkten testas i någon webbläsare och på någon plattform. | Produkten testas i flera webbläsare och på några plattformar. |  |
+| **Utvärdering** | Eleven ger enkla omdömen om sitt arbete. | Eleven ger nyanserade omdömen om sitt arbete och resultat. | Eleven ger nyanserade omdömen och förslag på förbättringar. |
