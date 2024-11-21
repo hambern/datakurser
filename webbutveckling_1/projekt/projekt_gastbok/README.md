@@ -16,6 +16,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
 - Lagra data på servern i en textfil.
 - Hämta och visa lagrad data på din webbplats.
 - Skapa en responsiv design med HTML och CSS som fungerar både på datorer och mobila enheter.
+- Känna till hur CSS-ramverk som Bootstrap kan användas för att underlätta designen av webbplatser.
 
 ### Beskrivning
 Du ska designa en gästbok där användare kan lämna kommentarer. Gästboken ska minst kunna lagra följande information. Du får dock helst göra gästboken mer komplex än så genom att modifiera koden:
@@ -99,6 +100,7 @@ $posts = array_reverse(read());
 ### Ramverk och tekniker
 - **HTML och CSS:** Använd HTML för att skapa formuläret och strukturen på sidan. Använd CSS för att skapa en stilren och responsiv design.
 - **PHP:** Använd PHP för att hantera POST-anropet, spara data i en textfil och hämta samt visa den sparade datan.
+- **Bootstrap:** Använd gärna CSS-ramverket Bootstrap för att designa din hemsida. Bootstrap hittar du här: <https://getbootstrap.com/> och du kan läsa mer om hur du använder det på: <https://www.w3schools.com/bootstrap5/>. Det är dock inget krav.
 
 ### Resurser att studera
 För att förbereda dig inför denna uppgift, rekommenderar jag att du läser igenom följande:
@@ -115,5 +117,5 @@ För att förbereda dig inför denna uppgift, rekommenderar jag att du läser ig
 | **Kvalitetsaspekt**         | **Betyg E**                                      | **Betyg C**                                      | **Betyg A**                                      |
 |-----------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | **Formulär och datahantering** | Enkel data samlas in och lagras med HTML och PHP. | Formuläret är genomtänkt, och data lagras på ett strukturerat sätt. | Formuläret är väl utformat, och data lagras effektivt och strukturerat. |
-| **Design och CSS**          | Enkel CSS används för att styla gästboken.      | CSS används för att skapa en responsiv och tilltalande design. | CSS används för att skapa en professionell och fullt responsiv design. |
+| **Design och CSS**          | Enkel CSS används för att styla gästboken.      | CSS används för att skapa en responsiv och tilltalande design. | CSS används för att skapa en professionell och fullt responsiv design, exempelvis via klokt användande av Bootstrap. |
 | **Responsivitet**           | Gästboken fungerar på både datorer och mobila enheter. | Gästboken är responsiv och anpassar sig väl till olika skärmstorlekar. | Gästboken är fullt responsiv och optimerad för användning på alla enheter. |
