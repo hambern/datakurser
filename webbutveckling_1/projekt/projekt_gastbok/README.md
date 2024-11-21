@@ -32,7 +32,7 @@ Nedanför följer en mycket enkel men fullt funktionell gästbokskod att utgå i
 
 ~~~php
 <?php
-// Spara ett inlägg i en JSON-fil
+// Spara ett inlägg i en textfil
 function save($data, $file = 'guestbook.txt') {
     $data['timestamp'] = date('Y-m-d H:i:s'); // Lägg till tidsstämpel
     $clean = array_map('htmlspecialchars', $data); // Sanera all data
@@ -42,7 +42,7 @@ function save($data, $file = 'guestbook.txt') {
     exit; // Avbryter scriptet
 }
 
-// Läs alla inlägg från JSON-filen
+// Läs alla inlägg från textfilen
 function read($file = 'guestbook.txt') {
     if (!file_exists($file)) return []; // Returnera tom array om filen inte finns
     $lines = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
