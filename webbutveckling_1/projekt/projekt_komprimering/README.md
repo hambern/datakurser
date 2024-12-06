@@ -1,4 +1,4 @@
-# Komprimera av bilder och filmer med GIMP och HandBrake
+# Komprimera av bilder och filmer med GIMP och VLC
 
 ### Syfte
 Denna uppgift syftar till att ge dig praktisk erfarenhet av att optimera bilder och videor för webben genom att komprimera dem med gratis programvara. Du kommer att lära dig att skapa och jämföra två versioner av en webbplats: en med optimerade filer och en med ooptimerade filer. Dessutom kommer du att använda HTML5-mediaspelaren för att visa upp en komprimerad video på din webbplats. Uppgiften ger dig insikt i hur komprimering påverkar laddningstider, användarupplevelse och prestanda.
@@ -6,7 +6,7 @@ Denna uppgift syftar till att ge dig praktisk erfarenhet av att optimera bilder 
 ### Mål
 Efter att ha slutfört denna uppgift ska du kunna:
 - Hämta och använda bilder och videor från Pexels.
-- Komprimera bilder och videor med GIMP och HandBrake.
+- Komprimera bilder och videor med GIMP och VLC.
 - Förstå skillnaderna mellan vanliga filformat för bilder och videor.
 - Använda HTML5-mediaspelaren för att visa en video.
 - Skapa och jämföra två versioner av en webbplats: en optimerad och en ooptimerad.
@@ -21,7 +21,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
    - **Bilder:** 
      - Använd [GIMP](https://www.gimp.org/) för att komprimera bilderna. Spara bilderna i olika format (JPEG, PNG, WebP) och experimentera med olika komprimeringsnivåer.
    - **Filmer:**
-     - Använd [HandBrake](https://handbrake.fr/) för att komprimera videon. Testa olika inställningar och format (MP4, WebM) för att optimera videon för webben.
+     - Använd [VLC](https://www.videolan.org/vlc/) för att komprimera videon. Testa olika inställningar och format (MP4, WebM) för att optimera videon för webben.
 
 3. **Skapa två webbplatser:**
    - **Ooptimerad sida:** Skapa en enkel webbplats med HTML och CSS som visar de ooptimerade bilderna och videon i deras ursprungliga format och storlek.
@@ -43,7 +43,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
 ### Ramverk och tekniker
 - **Pexels:** Använd Pexels för att hämta bilder och videor i hög kvalitet.
 - **GIMP:** Komprimera bilder med GIMP och spara dem i olika format.
-- **HandBrake:** Komprimera videor med HandBrake och optimera dem för webben.
+- **VLC:** Komprimera videor med VLC och optimera dem för webben.
 - **HTML5:** Använd HTML5-mediaspelaren för att visa videon på din webbplats.
 - **HTML och CSS:** Skapa två versioner av en enkel webbplats, en optimerad och en ooptimerad.
 
@@ -54,7 +54,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
 
 ### Resurser att studera
 - [GIMP User Manual](https://docs.gimp.org/2.10/en/) för bildredigering och komprimering.
-- [HandBrake Documentation](https://handbrake.fr/docs/en/latest/) för videokomprimering.
+- [VLC Documentation](https://www.winxdvd.com/resize-video/how-to-compress-video-with-vlc.htm) för videokomprimering.
 - [Pexels](https://www.pexels.com/) för att hämta bilder och videor i hög kvalitet.
 - [Normalize.css](https://necolas.github.io/normalize.css/)
 
