@@ -19,9 +19,9 @@ Efter att ha slutfört denna uppgift ska du kunna:
 
 2. **Komprimering av bilder och filmer:**
    - **Bilder:** 
-     - Använd [GIMP](https://www.gimp.org/) för att komprimera bilderna. Spara bilderna i olika format (JPEG, PNG, WebP) och experimentera med olika komprimeringsnivåer.
+     - Använd [GIMP](https://www.gimp.org/) för att komprimera bilderna. Spara bilderna i olika format (JPEG, PNG, WebP) och experimentera med olika komprimeringsnivåer. Ladda gärna ner programmet via Software Center om du inte redan har det på datorn.
    - **Filmer:**
-     - Använd [VLC](https://www.videolan.org/vlc/) för att komprimera videon. Testa olika inställningar och format (MP4, WebM) för att optimera videon för webben.
+     - Använd [VLC](https://www.videolan.org/vlc/) för att komprimera videon. Testa olika inställningar och format (MP4, WebM) för att optimera videon för webben. Ladda gärna ner programmet via Software Center om du inte redan har det på datorn.
 
 3. **Skapa två webbplatser:**
    - **Ooptimerad sida:** Skapa en enkel webbplats med HTML och CSS som visar de ooptimerade bilderna och videon i deras ursprungliga format och storlek.
