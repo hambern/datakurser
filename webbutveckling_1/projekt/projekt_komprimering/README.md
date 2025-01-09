@@ -41,10 +41,10 @@ Efter att ha slutfört denna uppgift ska du kunna:
    - Skriv en reflektion där du diskuterar skillnaderna mellan den optimerade och ooptimerade sidan. Reflektera över hur olika filformat och komprimeringsnivåer påverkar prestandan.
 
 ### Ramverk och tekniker
-- **Pexels:** Använd Pexels för att hämta bilder och videor i hög kvalitet.
-- **GIMP:** Komprimera bilder med GIMP och spara dem i olika format.
-- **VLC:** Komprimera videor med VLC och optimera dem för webben.
-- **HTML5:** Använd HTML5-mediaspelaren för att visa videon på din webbplats.
+- **Pexels:** Använd Pexels för att hämta bilder och videor i hög kvalitet. <https://www.pexels.com/>
+- **GIMP:** Komprimera bilder med GIMP och spara dem i olika format. <https://www.gimp.org/>
+- **VLC:** Komprimera videor med VLC och optimera dem för webben. <https://www.videolan.org/>
+- **HTML5:** Använd HTML5-mediaspelaren för att visa videon på din webbplats. <https://www.w3schools.com/html/html_media.asp>
 - **HTML och CSS:** Skapa två versioner av en enkel webbplats, en optimerad och en ooptimerad.
 
 ### Tips och tricks
