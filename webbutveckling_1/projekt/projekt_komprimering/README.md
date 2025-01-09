@@ -51,6 +51,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
 - **Val av format:** Läs på om skillnaderna mellan bildformaten JPEG, PNG, och WebP samt videoformaten MP4 och WebM för att välja rätt format för ditt projekt.
 - **Komprimeringens inverkan:** Experimentera med olika komprimeringsnivåer för att se hur de påverkar bild- och videokvaliteten samt filstorleken.
 - **Testverktyg:** Använd verktyg som [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) för att mäta laddningstider och prestanda för dina sidor.
+- **Video som bakgrund:** Något som kan vara förvånansvärt impaktfullt är en video som bakgrund på din hemsida. Läs mer om hur du åstadkommer det här: <https://www.w3schools.com/howto/howto_css_fullscreen_video.asp>
 
 ### Resurser att studera
 - [GIMP User Manual](https://docs.gimp.org/2.10/en/) för bildredigering och komprimering.
