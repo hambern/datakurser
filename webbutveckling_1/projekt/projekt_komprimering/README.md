@@ -22,12 +22,12 @@ Efter att ha slutfört denna uppgift ska du kunna:
      - Använd [GIMP](https://www.gimp.org/) för att komprimera bilderna. Spara bilderna i olika format (JPEG, PNG, WebP) och experimentera med olika komprimeringsnivåer. Målet är en liten fil som fortfarande ger intrycket av hög kvalitet. Ladda gärna ner programmet via Software Center om du inte redan har det på datorn.
    - **Filmer:**
      - Använd [VLC](https://www.videolan.org/vlc/) för att komprimera videon. Testa olika inställningar och format (MP4, WebM) för att optimera videon för webben. Målet är en liten fil som fortfarande upplevs ha hög kvalitet. Ladda gärna ner programmet via Software Center om du inte redan har det på datorn. Där gör sedan följande:
-      1. Välj "Media > Konvertera / Spara"
-      2. Lägg till filen du laddat ner via knappen "+ Lägg till"
-      3. Klicka på "Konvertera / Spara"
-      4. Välj därefter en av profilerna, ex. WebM, MP4 eller OGG
-      5. Klicka gärna på skiftnyckeln för att tweeka parametrar
-      6. Välj därefter målfil och starta konverteringen
+        1. Välj "Media > Konvertera / Spara"
+        2. Lägg till filen du laddat ner via knappen "+ Lägg till"
+        3. Klicka på "Konvertera / Spara"
+        4. Välj därefter en av profilerna, ex. WebM, MP4 eller OGG
+        5. Klicka gärna på skiftnyckeln för att tweeka parametrar
+        6. Välj därefter målfil och starta konverteringen
 
 3. **Skapa två webbplatser:**
    - **Ooptimerad sida:** Skapa en enkel webbplats med HTML och CSS som visar de ooptimerade bilderna och videon i deras ursprungliga format och storlek.
