@@ -37,8 +37,8 @@ Efter att ha slutfört denna uppgift ska du kunna:
    ```
 
 4. **Jämförelse och reflektion:**
-   - Analysera laddningstider, filstorlekar och användarupplevelse för båda versionerna av webbplatsen.
-   - Skriv en reflektion där du diskuterar skillnaderna mellan den optimerade och ooptimerade sidan. Reflektera över hur olika filformat och komprimeringsnivåer påverkar prestandan.
+   - Analysera laddningstiderna med en kamrat. Titta på filstorlekar och användarupplevelse för båda versionerna av webbplatserna. Vilka slutsatser drar ni?
+   - Skriv en kort reflektion där ni diskuterar skillnaderna mellan den optimerade och ooptimerade sidan. Reflektera över hur olika filformat och komprimeringsnivåer påverkar prestandan. 
 
 ### Ramverk och tekniker
 - **Pexels:** Använd Pexels för att hämta bilder och videor i hög kvalitet. <https://www.pexels.com/>
