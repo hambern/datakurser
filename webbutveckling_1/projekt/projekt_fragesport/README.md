@@ -12,7 +12,7 @@ Efter att ha slutfört denna uppgift ska du kunna:
 - Testa och validera din kod för att säkerställa korrekt funktionalitet på olika enheter och i olika webbläsare.
 
 ### Beskrivning
-Din uppgift är att skapa en frågesport om internets historia med minst 15 frågor baserade på information från [Internetmuseum](https://www.internetmuseum.se/). Frågesporten ska vara interaktiv, dynamisk och innefatta en poängräkning samt en highscore-lista som visar de bästa resultaten.
+Din uppgift är att skapa en frågesport om internets historia med minst 10 frågor baserade på information från [Internetmuseum](https://www.internetmuseum.se/). Frågesporten ska vara interaktiv, dynamisk och innefatta en poängräkning samt en highscore-lista som visar de bästa resultaten.
 
 #### Krav för frågesporten:
 1. **Frågesportens struktur:**
@@ -48,8 +48,8 @@ Din uppgift är att skapa en frågesport om internets historia med minst 15 frå
 - **CSS-animationer och interaktiv design:**
   - [Radio-knappar som vanliga knappar](https://jsfiddle.net/hambern/er6Lypbk)
   - [Visa nästa fråga med en knapp](https://jsfiddle.net/hambern/u1refgqy)
-  - [Animation med frågor](https://jsfiddle.net/hambern/1koj2epx)
-  - [Eventlistener för att bläddra utan knappar](https://jsfiddle.net/hambern/ykqsLt29)
+  - [Knapp med animation](https://jsfiddle.net/hambern/1koj2epx)
+  - [Bläddra med att klicka](https://jsfiddle.net/hambern/ykqsLt29)
 - **Tidsmätning:** [Tidtagning för frågesport](https://jsfiddle.net/hambern/y0pgnw3e)
 - **CSS-resurser:** Utforska [10015.io](https://10015.io/)
 
