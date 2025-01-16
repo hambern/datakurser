@@ -45,7 +45,8 @@ Din uppgift är att skapa en frågesport om internets historia med minst 10 frå
 ### Tips och tricks
 
 - **Färgscheman:** Använd [Coolors](https://coolors.co/) för att hitta snygga färgscheman.
-- **Formulärdesign:** Kolla in exempel på [W3Schools](https://www.w3schools.com/html/html_forms.asp).
+- **Favicon:** Läs på [W3Schools](https://www.w3schools.com/howto/howto_html_favicon.asp) om hur du skapar och lägger till en egen menyikon.
+- **Formulärdesign:** Kolla in exempel på [W3Schools](https://www.w3schools.com/html/html_forms.asp) för att lära dig bygga formulär.
 - **CSS-animationer och interaktiv design:**
   - [Radio-knappar som vanliga knappar](https://jsfiddle.net/hambern/er6Lypbk)
   - [Visa nästa fråga med en knapp](https://jsfiddle.net/hambern/u1refgqy)
