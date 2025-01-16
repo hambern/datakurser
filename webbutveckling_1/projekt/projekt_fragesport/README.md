@@ -16,7 +16,8 @@ Din uppgift är att skapa en frågesport om internets historia med minst 10 frå
 
 #### Krav för frågesporten:
 1. **Frågesportens struktur:**
-   - **`index.php`**: Startsidan med ett formulär där användaren fyller i sitt namn och startar frågesporten.
+   Detta är ett förslag på hur du kan strukturera din sida. Du kan välja att göra på andra sätt om du föredrar det.
+   - **`index.php`**: Startsidan med ett formulär där användaren fyller i sitt namn och startar frågesporten. Det kan här också finnas en länk till highscore-sidan.
    - **`quiz.php`**: Huvudsidan där frågorna ställs och användarens svar samlas in.
    - **`result.php`**: Sidan där svaren rättas, poängen räknas och resultatet visas.
    - **`highscore.php`**: En sida som visar highscore-listan med de bästa resultaten.
