@@ -55,6 +55,20 @@ Din uppgift är att skapa en frågesport om internets historia med minst 10 frå
 - **Tidsmätning:** [Tidtagning för frågesport](https://jsfiddle.net/hambern/y0pgnw3e)
 - **CSS-resurser:** Utforska [10015.io](https://10015.io/)
 
+### Sortera resultaten
+
+En bra funktion för att sortera resultaten till din topplista är PHP-funktionen `usort`. I exemplet nedan sorteras resultaten först med poäng, och därefter utifrån tid:
+
+~~~php
+usort($entries, function ($a, $b) {
+    if ($a['score'] == $b['score']) {
+        return $a['time'] <=> $b['time'];
+    }
+
+    return $b['score'] <=> $a['score'];
+});
+~~~
+
 ### Resurser att studera
 För att förbereda dig inför denna uppgift rekommenderas att du studerar följande resurser:
 - [Internetmuseum](https://www.internetmuseum.se/) för att samla fakta om internets historia.
