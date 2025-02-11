@@ -26,7 +26,7 @@ Du ska utveckla ett API som möjliggör grundläggande gloshantering för ett gl
    - Använd Eloquent ORM för att hantera databaskommunikationen.
 
 4. **API-struktur:**
-   - Använd Laravel’s resurshantering och controllers för att strukturera API:et.
+   - Använd [Kvark Frameworks](https://gitlab.com/hambern/kvark) resurshantering och controllers för att strukturera API:et.
    - Implementera korrekt hantering av HTTP-statuskoder och validering.
 
 ### Exempel på API-endpoints
@@ -60,7 +60,7 @@ Du ska utveckla ett API som möjliggör grundläggande gloshantering för ett gl
    Utför en förstudie där ni identifierar alla API-endpoints och användarflöden som behövs.
 
 2. **Databasschema:**  
-   Designa ett detaljerat databasschema och implementera det med migrations i Laravel. Säkerställ att databasen kan hantera relationerna mellan användare och glosor.
+   Designa ett detaljerat databasschema och säkerställ att databasen kan hantera relationerna mellan användare och glosor.
 
 3. **Implementering:**  
    Börja med att implementera användarautentisering och därefter CRUD-funktionalitet för glosor.
