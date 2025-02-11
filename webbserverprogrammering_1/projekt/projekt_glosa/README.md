@@ -5,7 +5,7 @@ Detta projekt syftar till att lära dig hur man utvecklar ett REST-API med [Kvar
 
 ### Mål
 Efter att ha slutfört detta projekt ska du kunna:
-- Utveckla ett REST-API med Kvark [Framework](https://gitlab.com/hambern/kvark) för att hantera CRUD-operationer (Create, Read, Update, Delete).
+- Utveckla ett REST-API med [Kvark Framework](https://gitlab.com/hambern/kvark) för att hantera CRUD-operationer (Create, Read, Update, Delete).
 - Implementera användarautentisering och säker hantering av lösenord.
 - Strukturera en MVC-applikation med rätt databasdesign och relationshantering.
 
