@@ -1,14 +1,13 @@
 # Skapa ett API för ditt glos-projekt
 
 ### Syfte
-Detta projekt syftar till att lära dig hur man utvecklar ett REST-API med Laravel. Projektet är ett samarbete mellan kurserna Webbserverprogrammering 1 och Programmering 2, där vi i denna kurs fokuserar på att bygga backend-API:et. Frontend och all användarinteraktion hanteras i Programmering 2.
+Detta projekt syftar till att lära dig hur man utvecklar ett REST-API med [Kvark Framework](https://gitlab.com/hambern/kvark). Projektet är ett samarbete mellan kurserna Webbserverprogrammering 1 och Programmering 2, där vi i denna kurs fokuserar på att bygga backend-API:et. Frontend och all användarinteraktion hanteras i Programmering 2.
 
 ### Mål
 Efter att ha slutfört detta projekt ska du kunna:
-- Utveckla ett REST-API med Laravel för att hantera CRUD-operationer (Create, Read, Update, Delete).
+- Utveckla ett REST-API med Kvark [Framework](https://gitlab.com/hambern/kvark) för att hantera CRUD-operationer (Create, Read, Update, Delete).
 - Implementera användarautentisering och säker hantering av lösenord.
-- Strukturera en Laravel-applikation med rätt databasdesign och relationshantering.
-- Använda Eloquent ORM för att hantera databaskommunikationen i ditt API.
+- Strukturera en MVC-applikation med rätt databasdesign och relationshantering.
 
 ### Beskrivning
 Du ska utveckla ett API som möjliggör grundläggande gloshantering för ett glosprogram. Detta API kommer att användas av frontend-applikationen som utvecklas i Programmering 2. Funktionerna inkluderar att skapa, uppdatera, radera och läsa glosor, samt användarhantering med inloggning och utloggning.
@@ -79,4 +78,4 @@ Du ska utveckla ett API som möjliggör grundläggande gloshantering för ett gl
 
 ### Kunskapskrav
 
-Projektet kommer att bedömas baserat på din förmåga att utveckla, dokumentera och testa ett API enligt de krav som ställts upp. Du ska också visa att du förstår och kan implementera säkerhet och autentisering korrekt i Laravel.
+Projektet kommer att bedömas baserat på din förmåga att utveckla, dokumentera och testa ett API enligt de krav som ställts upp. Du ska också visa att du förstår och kan implementera säkerhet och autentisering korrekt.
