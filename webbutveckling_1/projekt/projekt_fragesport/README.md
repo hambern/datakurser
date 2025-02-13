@@ -54,7 +54,7 @@ Din uppgift är att skapa en frågesport om internets historia med minst 10 frå
   - [Bläddra med att klicka](https://jsfiddle.net/hambern/ykqsLt29)
 - **Tidsmätning:** [Tidtagning för frågesport](https://jsfiddle.net/hambern/y0pgnw3e)
 - **CSS-resurser:** Utforska [10015.io](https://10015.io/)
-- **Ett exempel:** Ett exempel på hur koden kan struktureras kan du titta på här: [AI-quizet](https://gitlab.com/ornskoldsviks-gymnasium/ai-quizet)
+- **Ett exempel:** I repositoryt [AI-quizet](https://gitlab.com/ornskoldsviks-gymnasium/ai-quizet) kan du se hur du kan strukturera din kod
 
 ### Sortera resultaten
 
