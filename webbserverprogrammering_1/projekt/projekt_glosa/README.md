@@ -23,7 +23,7 @@ Du ska utveckla ett API som möjliggör grundläggande gloshantering för ett gl
 
 3. **Databasdesign:**
    - Designa en MySQL-databas för att hantera användare och deras glosor.
-   - Använd Eloquent ORM för att hantera databaskommunikationen.
+   - Fundera igenom hur du ska skapa de relationer din applikation behöver
 
 4. **API-struktur:**
    - Använd [Kvark Frameworks](https://gitlab.com/hambern/kvark) resurshantering och controllers för att strukturera API:et.
@@ -60,7 +60,7 @@ Du ska utveckla ett API som möjliggör grundläggande gloshantering för ett gl
    Utför en förstudie där ni identifierar alla API-endpoints och användarflöden som behövs.
 
 2. **Databasschema:**  
-   Designa ett detaljerat databasschema och säkerställ att databasen kan hantera relationerna mellan användare och glosor.
+   Designa dina tabeller och säkerställ att databasen kan hantera relationerna mellan användare och glosor.
 
 3. **Implementering:**  
    Börja med att implementera användarautentisering och därefter CRUD-funktionalitet för glosor.
@@ -79,3 +79,18 @@ Du ska utveckla ett API som möjliggör grundläggande gloshantering för ett gl
 ### Kunskapskrav
 
 Projektet kommer att bedömas baserat på din förmåga att utveckla, dokumentera och testa ett API enligt de krav som ställts upp. Du ska också visa att du förstår och kan implementera säkerhet och autentisering korrekt.
+
+# Betygsmatris för API-projektet – Webbserverprogrammering 1 (WESWEB01)
+
+| Område | Betyg E | Betyg C | Betyg A |
+|--------|---------|---------|---------|
+| **Teknisk förståelse** | Beskriver översiktligt hur ett REST-API fungerar och hur API:et samverkar med frontend. | Beskriver utförligt hur API:et fungerar, inklusive dess uppbyggnad och samspel med frontend. | Beskriver utförligt och nyanserat API:ets funktion, dess arkitektur och interaktion med frontend. |
+| **Projektplan & API-design** | Gör en enkel projektplan där API-endpoints och flöden identifieras. | Gör en genomarbetad projektplan med detaljerade API-endpoints och en tydlig arkitektur. | Gör en genomarbetad och iterativ projektplan med detaljerade API-endpoints och säkerhetsaspekter. Reviderar vid behov. |
+| **Databasdesign & relationshantering** | Designar en grundläggande databasstruktur med relationer mellan användare och glosor. | Skapar en välstrukturerad databas med tydliga relationer och säkerställer korrekt relationshantering. | Skapar en optimerad databasmodell med genomtänkt relationshantering och säkerhetsåtgärder. |
+| **Autentisering & säkerhet** | Implementerar en grundläggande användarautentisering och enkel token-hantering. | Implementerar en säker autentisering med hashade lösenord och token-baserad autentisering. | Implementerar avancerad autentisering, såsom refresh tokens, och vidtar extra säkerhetsåtgärder mot hot. |
+| **CRUD-funktionalitet & API-struktur** | Implementerar grundläggande CRUD-operationer för gloshantering. | Implementerar fullständig CRUD-funktionalitet enligt REST-principer och hanterar fel och validering. | Implementerar fullständig CRUD-funktionalitet med avancerad felhantering, validering och effektiva API-designprinciper. |
+| **Kodkvalitet & MVC-struktur** | Skriver kod där API-logik och databashantering är delvis separerade. | Skriver kod enligt MVC-principer och enhetliga kodningsstandarder. | Skriver modulär och skalbar kod enligt MVC med tydlig separation av logik, datalager och presentation. |
+| **Kvalitetssäkring & testning** | Genomför enklare tester med Postman eller Talend API Tester. | Genomför tester av alla endpoints och inkluderar felhantering och validering. | Implementerar automatiserade tester och säkerställer API:ets stabilitet och säkerhet. |
+| **Dokumentation** | Skapar en enkel README.md med grundläggande information om API:et. | Skapar en tydlig och detaljerad README.md med endpoints, parametrar och exempel på anrop. | Skapar en professionell dokumentation inklusive detaljerade API-specifikationer och användningsexempel. |
+| **Redovisning & reflektion** | Redovisar API:et och beskriver funktionaliteten på en grundläggande nivå. | Redovisar API:et och beskriver dess uppbyggnad, funktioner och eventuella förbättringsmöjligheter. | Redovisar API:et, reflekterar nyanserat över designval och ger förbättringsförslag för framtida utveckling. |
+
