@@ -12,11 +12,12 @@ Efter att ha slutfört denna uppgift ska du kunna:
 - Testa och validera din kod för att säkerställa korrekt funktionalitet på olika enheter och i olika webbläsare.
 
 ### Beskrivning
-Din uppgift är att skapa en frågesport om internets historia med minst 15 frågor baserade på information från [Internetmuseum](https://www.internetmuseum.se/). Frågesporten ska vara interaktiv, dynamisk och innefatta en poängräkning samt en highscore-lista som visar de bästa resultaten.
+Din uppgift är att skapa en frågesport om internets historia med minst 10 frågor baserade på information från [Internetmuseum](https://www.internetmuseum.se/). Frågesporten ska vara interaktiv, dynamisk och innefatta en poängräkning samt en highscore-lista som visar de bästa resultaten.
 
 #### Krav för frågesporten:
 1. **Frågesportens struktur:**
-   - **`index.php`**: Startsidan med ett formulär där användaren fyller i sitt namn och startar frågesporten.
+   Detta är ett förslag på hur du kan strukturera din sida. Du kan välja att göra på andra sätt om du föredrar det.
+   - **`index.php`**: Startsidan med ett formulär där användaren fyller i sitt namn och startar frågesporten. Det kan här också finnas en länk till highscore-sidan.
    - **`quiz.php`**: Huvudsidan där frågorna ställs och användarens svar samlas in.
    - **`result.php`**: Sidan där svaren rättas, poängen räknas och resultatet visas.
    - **`highscore.php`**: En sida som visar highscore-listan med de bästa resultaten.
@@ -43,9 +44,31 @@ Din uppgift är att skapa en frågesport om internets historia med minst 15 frå
 
 ### Tips och tricks
 
-- **Färgscheman:** Använd verktyg som [Coolors](https://coolors.co/) för att hitta snygga färgscheman.
-- **Formulärdesign:** Kolla in exempel på formulärdesign på [W3Schools](https://www.w3schools.com/html/html_forms.asp).
-- **CSS-animationer:** Se exempel på CSS-animationer och interaktiv design på [JSFiddle](https://jsfiddle.net/).
+- **Färgscheman:** Använd [Coolors](https://coolors.co/) för att hitta snygga färgscheman.
+- **Favicon:** Läs på [W3Schools](https://www.w3schools.com/howto/howto_html_favicon.asp) om hur du skapar och lägger till en egen menyikon.
+- **Formulärdesign:** Kolla in exempel på [W3Schools](https://www.w3schools.com/html/html_forms.asp) för att lära dig bygga formulär.
+- **CSS-animationer och interaktiv design:**
+  - [Radio-knappar som vanliga knappar](https://jsfiddle.net/hambern/er6Lypbk)
+  - [Visa nästa fråga med en knapp](https://jsfiddle.net/hambern/u1refgqy)
+  - [Knapp med animation](https://jsfiddle.net/hambern/1koj2epx)
+  - [Bläddra med att klicka](https://jsfiddle.net/hambern/ykqsLt29)
+- **Tidsmätning:** [Tidtagning för frågesport](https://jsfiddle.net/hambern/y0pgnw3e)
+- **CSS-resurser:** Utforska [10015.io](https://10015.io/)
+- **Ett exempel:** I repositoryt [AI-quizet](https://gitlab.com/ornskoldsviks-gymnasium/ai-quizet) kan du se hur du kan strukturera din kod
+
+### Sortera resultaten
+
+En bra funktion för att sortera resultaten till din topplista är PHP-funktionen `usort`. I exemplet nedan sorteras resultaten först med poäng, och därefter utifrån tid:
+
+~~~php
+usort($entries, function ($a, $b) {
+    if ($a['score'] == $b['score']) {
+        return $a['time'] <=> $b['time'];
+    }
+
+    return $b['score'] <=> $a['score'];
+});
+~~~
 
 ### Resurser att studera
 För att förbereda dig inför denna uppgift rekommenderas att du studerar följande resurser:
