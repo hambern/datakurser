@@ -19,9 +19,15 @@ Efter att ha slutfört denna uppgift ska du kunna:
 
 2. **Komprimering av bilder och filmer:**
    - **Bilder:** 
-     - Använd [GIMP](https://www.gimp.org/) för att komprimera bilderna. Spara bilderna i olika format (JPEG, PNG, WebP) och experimentera med olika komprimeringsnivåer.
+     - Använd [GIMP](https://www.gimp.org/) för att komprimera bilderna. Spara bilderna i olika format (JPEG, PNG, WebP) och experimentera med olika komprimeringsnivåer. Målet är en liten fil som fortfarande ger intrycket av hög kvalitet. Ladda gärna ner programmet via Software Center om du inte redan har det på datorn.
    - **Filmer:**
-     - Använd [VLC](https://www.videolan.org/vlc/) för att komprimera videon. Testa olika inställningar och format (MP4, WebM) för att optimera videon för webben.
+     - Använd [VLC](https://www.videolan.org/vlc/) för att komprimera videon. Testa olika inställningar och format (MP4, WebM) för att optimera videon för webben. Målet är en liten fil som fortfarande upplevs ha hög kvalitet. Ladda gärna ner programmet via Software Center om du inte redan har det på datorn. Där gör sedan följande:
+        1. Välj "Media > Konvertera / Spara"
+        2. Lägg till filen du laddat ner via knappen "+ Lägg till"
+        3. Klicka på "Konvertera / Spara"
+        4. Välj därefter en av profilerna, ex. WebM, MP4 eller OGG
+        5. Klicka gärna på skiftnyckeln för att tweeka parametrar
+        6. Välj därefter målfil och starta konverteringen
 
 3. **Skapa två webbplatser:**
    - **Ooptimerad sida:** Skapa en enkel webbplats med HTML och CSS som visar de ooptimerade bilderna och videon i deras ursprungliga format och storlek.
@@ -37,20 +43,21 @@ Efter att ha slutfört denna uppgift ska du kunna:
    ```
 
 4. **Jämförelse och reflektion:**
-   - Analysera laddningstider, filstorlekar och användarupplevelse för båda versionerna av webbplatsen.
-   - Skriv en reflektion där du diskuterar skillnaderna mellan den optimerade och ooptimerade sidan. Reflektera över hur olika filformat och komprimeringsnivåer påverkar prestandan.
+   - Analysera laddningstiderna med en kamrat. Titta på filstorlekar och användarupplevelse för båda versionerna av webbplatserna. Vilka slutsatser drar ni?
+   - Skriv en kort reflektion där ni diskuterar skillnaderna mellan den optimerade och ooptimerade sidan. Reflektera över hur olika filformat och komprimeringsnivåer påverkar prestandan. 
 
 ### Ramverk och tekniker
-- **Pexels:** Använd Pexels för att hämta bilder och videor i hög kvalitet.
-- **GIMP:** Komprimera bilder med GIMP och spara dem i olika format.
-- **VLC:** Komprimera videor med VLC och optimera dem för webben.
-- **HTML5:** Använd HTML5-mediaspelaren för att visa videon på din webbplats.
+- **Pexels:** Använd Pexels för att hämta bilder och videor i hög kvalitet. <https://www.pexels.com/>
+- **GIMP:** Komprimera bilder med GIMP och spara dem i olika format. <https://www.gimp.org/>
+- **VLC:** Komprimera videor med VLC och optimera dem för webben. <https://www.videolan.org/>
+- **HTML5:** Använd HTML5-mediaspelaren för att visa videon på din webbplats. <https://www.w3schools.com/html/html_media.asp>
 - **HTML och CSS:** Skapa två versioner av en enkel webbplats, en optimerad och en ooptimerad.
 
 ### Tips och tricks
 - **Val av format:** Läs på om skillnaderna mellan bildformaten JPEG, PNG, och WebP samt videoformaten MP4 och WebM för att välja rätt format för ditt projekt.
 - **Komprimeringens inverkan:** Experimentera med olika komprimeringsnivåer för att se hur de påverkar bild- och videokvaliteten samt filstorleken.
 - **Testverktyg:** Använd verktyg som [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) för att mäta laddningstider och prestanda för dina sidor.
+- **Video som bakgrund:** Något som kan vara förvånansvärt impaktfullt är en video som bakgrund på din hemsida. Läs mer om hur du åstadkommer det här: <https://www.w3schools.com/howto/howto_css_fullscreen_video.asp>
 
 ### Resurser att studera
 - [GIMP User Manual](https://docs.gimp.org/2.10/en/) för bildredigering och komprimering.
