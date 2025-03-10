@@ -15,7 +15,7 @@ Du ska utveckla ett API som möjliggör grundläggande gloshantering för ett gl
 #### Krav för API:et:
 1. **Användarhantering:**
    - Skapa en användare och hantera inloggning med autentisering.
-   - Hantera användarsessioner och autentisering med token-baserad säkerhet.
+   - Hantera autentisering med token-baserad säkerhet.
 
 2. **Gloshantering:**
    - Skapa, uppdatera, och radera glosor.
@@ -32,24 +32,24 @@ Du ska utveckla ett API som möjliggör grundläggande gloshantering för ett gl
 ### Exempel på API-endpoints
 
 - **Skapa användare:**  
-  `POST /api/users/register`  
+  `users/register`  
   Skickar: `first_name`, `last_name`, `email`, `password`  
-  Returnerar: `token`
+  Returnerar: `token`, `status`
 
 - **Logga in:**  
-  `POST /api/users/login`  
+  `users/login`  
   Skickar: `email`, `password`  
-  Returnerar: `token`
+  Returnerar: `token`, `status`
 
 - **Skapa glosa:**  
-  `POST /api/glossary`  
-  Skickar: `token`, `word`, `translation`  
-  Returnerar: `success`
+  `words/create`  
+  Skickar: `token`, `english`, `swedish`  
+  Returnerar: `status`
 
 - **Hämta glosor:**  
-  `GET /api/glossary`  
+  `words/`  
   Skickar: `token`  
-  Returnerar: `glossary`
+  Returnerar: `words`, `status`
 
 ### Verktyg
 - För att kunna testa ditt api rekommenderas du att installera [Talend API Tester](https://chromewebstore.google.com/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm) som är ett plugin till din webbläsare. Med hjälp av det pluginet kan du skicka och ta emot API-anrop.
@@ -63,10 +63,10 @@ Du ska utveckla ett API som möjliggör grundläggande gloshantering för ett gl
    Designa dina tabeller och säkerställ att databasen kan hantera relationerna mellan användare och glosor.
 
 3. **Implementering:**  
-   Börja med att implementera användarautentisering och därefter CRUD-funktionalitet för glosor.
+   Börja med att implementera användarautentisering och därefter övrig funktionalitet för glosor.
 
 4. **Testning:**  
-   Använd Postman eller Talend API Tester för att testa alla endpoints och säkerställa att de fungerar korrekt.
+   Använd Talend API Tester för att testa alla endpoints och säkerställa att de fungerar korrekt.
 
 5. **Dokumentation:**  
    Dokumentera API:et i en README.md-fil där du beskriver alla endpoints, vilka parametrar som behövs, och exempel på svar.
