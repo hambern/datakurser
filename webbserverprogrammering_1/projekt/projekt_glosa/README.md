@@ -1,11 +1,11 @@
 # Skapa ett API för ditt glos-projekt
 
 ### Syfte
-Detta projekt syftar till att lära dig hur man utvecklar ett REST-API med [Kvark Framework](https://gitlab.com/hambern/kvark). Projektet är ett samarbete mellan kurserna Webbserverprogrammering 1 och Programmering 2, där vi i denna kurs fokuserar på att bygga backend-API:et. Frontend och all användarinteraktion hanteras i Programmering 2.
+Detta projekt syftar till att lära dig hur man utvecklar ett API med [Kvark Framework](https://gitlab.com/hambern/kvark). Projektet är ett samarbete mellan kurserna Webbserverprogrammering 1 och Programmering 2, där vi i denna kurs fokuserar på att bygga backend-API:et. Frontend och all användarinteraktion hanteras i Programmering 2.
 
 ### Mål
 Efter att ha slutfört detta projekt ska du kunna:
-- Utveckla ett REST-API med [Kvark Framework](https://gitlab.com/hambern/kvark) för att hantera CRUD-operationer (Create, Read, Update, Delete).
+- Utveckla ett API med [Kvark Framework](https://gitlab.com/hambern/kvark) för att hantera CRUD-operationer (Create, Read, Update, Delete).
 - Implementera användarautentisering och säker hantering av lösenord.
 - Strukturera en MVC-applikation med rätt databasdesign och relationshantering.
 
