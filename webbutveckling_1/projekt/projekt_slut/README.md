@@ -1,7 +1,7 @@
 # Fritt projekt - Visa dina kunskaper
 
 ### Syfte
-Denna uppgift syftar till att låta dig visa upp din kreativitet och de färdigheter du har utvecklat under kursen genom att planera, utveckla och presentera ett eget webbprojekt. Du får möjlighet att utforska egna idéer och tillämpa tekniker du har lärt dig, som normalisering, semantisk HTML, typografi och färgteori. Detta är ditt tillfälle att glänsa genom att skapa något unikt.
+Denna uppgift syftar till att låta dig visa upp din kreativitet och de färdigheter du har utvecklat under kursen genom att planera, utveckla och presentera ett eget webbprojekt. Du får möjlighet att utforska egna idéer och tillämpa tekniker du har lärt dig. Detta är ditt tillfälle att glänsa genom att skapa något unikt. Och en stor del av ditt slutbetyg kommer hänga på detta projekt.
 
 ### Mål
 Efter denna uppgift ska du kunna:
