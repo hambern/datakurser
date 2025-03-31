@@ -58,23 +58,35 @@ Du ska utveckla ett API som möjliggör grundläggande gloshantering för ett gl
 
 1. **Förstudie:**  
    Utför en förstudie där ni identifierar alla API-endpoints och användarflöden som behövs.
-
 2. **Databasschema:**  
    Designa dina tabeller och säkerställ att databasen kan hantera relationerna mellan användare och glosor.
-
 3. **Implementering:**  
    Börja med att implementera användarautentisering och därefter övrig funktionalitet för glosor.
-
 4. **Testning:**  
    Använd Talend API Tester för att testa alla endpoints och säkerställa att de fungerar korrekt.
-
 5. **Dokumentation:**  
    Dokumentera API:et i en README.md-fil där du beskriver alla endpoints, vilka parametrar som behövs, och exempel på svar.
+
+### Dokumentation
+
+I slutet av projektet ska du lämna in en dokumentation i form av en projektrapport. Den ska innehålla följande delar:
+
+1. **Inledning:**  
+   - Bakgrund, syfte och mål.  
+   - Kravspecifikationer.
+   - Metod och teknik.
+   - Tidsplan för varje vecka.
+2. **Resultat:**
+   - API-endpoints
+   - Konstruktion, beskrivning och optimering.  
+   - Säkerhet och tester.
+3. **Diskussion:**  
+   - Diskussion och förbättringsförslag.
 
 ### Redovisning och Inlämning
 
 - Redovisa ditt API genom att demonstrera funktionaliteten och förklara din design och struktur.
-- Lämna in projektet på GitLab och säkerställ att all kod är väl dokumenterad i din README.md.
+- Gitta in projektet på GitLab där rapporten ingår som en README-fil.
 
 ### Kunskapskrav
 
