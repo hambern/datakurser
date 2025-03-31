@@ -75,9 +75,11 @@ I slutet av projektet ska du lämna in en dokumentation i form av en projektrapp
    - Bakgrund, syfte och mål.  
    - Kravspecifikationer.
    - Metod och teknik.
+   - Skisser på UX
    - Tidsplan för varje vecka.
 2. **Resultat:**
    - API-endpoints
+   - UML-diagram
    - Konstruktion, beskrivning och optimering.  
    - Säkerhet och tester.
 3. **Diskussion:**  
