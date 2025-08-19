@@ -12,20 +12,18 @@ Det första vi måste göra i denna kurs är att lära oss PHP, MySQL och Git. M
    - PHP - Intermediate
    - MySQL - Intermediate
    - Git - Beginner
-   - Laravel - Beginner 
 - Välj en studiehastighet på 8 timmar i veckan (spelar egentligen ingen roll)
 - Därefter ska vi gå lära oss de olika punkterna i ovanstående ordning.
 - Tänk på att det viktiga inte är att bli klar utan att lära sig. Se därför till att du förstår en del innan du går vidare till nästa.
 - Är du en sådan som gillar att lära dig via video är denna spellista en bra resurs:
   - SQL - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI>
 
-### Laravel
+### Fat-Free Framework
 
-Laravel är ett mycket populärt PHP-ramverk som - när man kan det - underlättar väldigt mycket för webbutvecklare. W3Schools har ingen kurs i Laravel, däremot är Laravel extremt väl dokumenterat och det finns också väldigt många förklarande filmer. Här är två bra länkar för dig som vill lära dig:
+Fat-Free Framework är ett mycket populärt PHP-ramverk som - när man kan det - underlättar väldigt mycket för webbutvecklare. W3Schools har ingen kurs i Fat-Free Framework, däremot är det väl dokumenterat och det finns också väldigt många förklarande filmer. Här är två bra länkar för dig som vill lära dig:
 
-- [Laravels hemsida](https://laravel.com/)
-- [Laravels dokumentation](https://laravel.com/docs/)
-- [Laracasts](https://laracasts.com/)
+- [Fat-Free Frameworks hemsida](https://www.fatfreeframework.com/)
+- [Fat-Free Frameworks användarguide](https://www.fatfreeframework.com/3.9/user-guide)
 
 ## Uppgifter
 
