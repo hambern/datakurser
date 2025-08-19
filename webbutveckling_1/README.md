@@ -2,17 +2,6 @@
 
 Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 
-## Årets elevsidor:
-
-- Anton: <https://student.oedu.se/~an0097>
-- Elton: <https://student.oedu.se/~es0105>
-- Tomas: <https://student.oedu.se/~ta0028>
-- Signe: <https://student.oedu.se/~sf0016>
-- Wasuton: <https://student.oedu.se/~ws0066>
-- Celia: <https://student.oedu.se/~cb50011>
-- Erik: <https://student.oedu.se/~ev50050>
-- Armin: <https://student.oedu.se/~at50016>
-
 ## Färdighetsträning
 
 Det första vi måste göra i denna kurs är att lära oss HTML och CSS. HTML används för att skapa ett dokument som kan visas i en webbläsare och CSS används för att bestämma och justera utseendet av dokumentets delar. För att göra detta kommer vi använda oss av W3Schools plattform "Pathfinder": <https://pathfinder.w3schools.com/>. Pathfinder håller reda på var du är i ditt lärande så att det är lätt att fortsätta där du slutade senast.
