@@ -3,8 +3,8 @@
 ### Syfte
 Denna uppgift syftar till att ge dig praktisk erfarenhet av att designa och lagra information på en webbsida genom att skapa en gästbok där besökare kan lämna meddelanden. Genom denna uppgift får du möjlighet att öva på viktiga webbteknologier och färdigheter, inklusive:
 
-- Länkning mellan olika dokument på din webbplats.
 - Utveckling av en responsiv design som fungerar på både datorer och mobila enheter.
+- Jobba ur mobile-first-principen
 - Skapande av formulär för att samla in data från användare.
 - Hantering av data genom POST-anrop.
 - Lagring och hämtning av data för att visa meddelanden.
@@ -123,7 +123,6 @@ Här är en anpassad version av bedömningsmatrisen där jag har tagit bort de r
 
 | **Kvalitetsaspekt**          | **Betyg E**                                              | **Betyg C**                                              | **Betyg A**                                              |
 |------------------------------|---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|
-| **Formulär och datahantering** | Enkel data samlas in och lagras med grundläggande HTML och PHP. | Formuläret är genomtänkt och datalagringen är strukturerad och effektiv. | Formuläret är väl utformat, och data hanteras med effektiv och säker kod som följer god praxis. |
 | **Design och användarupplevelse** | Enkel CSS används för att styla sidan och skapa en grundläggande layout. | CSS används för en tilltalande, responsiv design som fungerar på olika skärmar. | Sidan har en professionell, fullt responsiv design med genomtänkt användarupplevelse, exempelvis genom användning av moderna ramverk. |
 | **Kodkvalitet och tekniker** | Koden följer standarder och använder någon grundläggande teknik för märkspråk och stilmallar. | Koden följer standarder och använder flera grundläggande tekniker för märkspråk och stilmallar. | Koden följer standarder med mycket gott resultat och använder flera grundläggande tekniker på ett säkert och effektivt sätt. |
 | **Testning och optimering**   | Produkten testas i någon webbläsare och på någon plattform. | Produkten testas i flera webbläsare och på några plattformar. |  |
