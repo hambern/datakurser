@@ -71,25 +71,14 @@ $posts = array_reverse(read());
     <h1>Gästbok</h1>
     
     <form method="post">
-        <!-- Namnfält -->
-        <label for="name">Vad heter du?</label><br>
-        <input id="name" type="text" name="firstname" required><br>
-
-        <!-- Meddelande-fält -->
-        <label for="message">Meddelande</label><br>
-        <textarea name="message" id="message" cols="30" rows="10" required></textarea><br>
-        
-        <!-- Skicka-knappen -->
-        <button type="submit">Skicka</button>
+        <!-- Gästboksformuläret -->
     </form>
 
     <h2 id="posts">Inlägg</h2>
     <ul>
         <?php foreach ($posts as $post) : ?>
             <li>
-                <em>(<?= $post['timestamp'] ?>)</em>
-                <strong><?= $post['firstname'] ?></strong>: 
-                <?= $post['message'] ?>
+                <!-- Varje enskilt inlägg -->
             </li>
         <?php endforeach ?>
     </ul>
