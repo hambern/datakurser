@@ -66,7 +66,7 @@ Dessa verktyg och spel är utformade för att hjälpa dig att lära dig på ett 
 
 ## AI Game day
 
-Har du tråkigt och vill skapa ett eget spel går det utmärkt. Gå bara in på följande länk och följ instruktionerna: [AI Game Day](https://student.oedu.se/~mh6802/ai_game_day/)
+Har du tråkigt och vill skapa ett eget spel går det utmärkt. Gå bara in på följande länk och följ instruktionerna: [AI Game Day](https://student.oedu.se/~mh6802/ai_game_day/). Länka till dina färdiga spel på din portfoliosida.
 
 ## Validering
 
