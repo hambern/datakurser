@@ -64,6 +64,10 @@ Om du vill förbättra dina CSS-färdigheter, särskilt när det gäller layout 
 
 Dessa verktyg och spel är utformade för att hjälpa dig att lära dig på ett roligt och interaktivt sätt, och de ger dig möjlighet att praktiskt tillämpa och utöka dina webbutvecklingsfärdigheter.
 
+## AI Game day
+
+Har du tråkigt och vill skapa ett eget spel går det utmärkt. Gå bara in på följande länk och följ instruktionerna: [AI Game Day](https://student.oedu.se/~mh6802/ai_game_day/)
+
 ## Validering
 
 Ta gärna för vana att alltid validera dina filer innan inlämning. På så vis får du veta om du gjort något fel, och det är dessutom det första jag gör när jag rättar de uppgifter du lämnar in.
