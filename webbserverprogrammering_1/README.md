@@ -120,9 +120,9 @@ Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några l
 Medan du utvecklar din PHP-kod kan det vara en god idé att slå på PHP:s felrapportering. Detta gör du enklast genom att skapa en fil som heter `.htaccess` i din projektmapp. Den bör innehålla följande kod:
 
 ~~~
-display_errors = On
-display_startup_errors = On
-error_reporting = -1
+php_flag display_errors on
+php_flag display_startup_errors on
+php_value error_reporting -1
 ~~~
 
 ## Namnge filer och mappar
