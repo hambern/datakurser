@@ -126,6 +126,16 @@ Jag rekommenderar att du i kursen använder programmet Visual Studio Code. Då k
 
 Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator.
 
+## Slå på PHP:s felrapportering
+
+Medan du utvecklar din PHP-kod kan det vara en god idé att slå på PHP:s felrapportering. Detta gör du enklast genom att skapa en fil som heter `.htaccess` i din projektmapp. Den bör innehålla följande kod:
+
+~~~
+display_errors = On
+display_startup_errors = On
+error_reporting = -1
+~~~
+
 ## Namnge filer och mappar
 
 1. **Skiftlägeskänslighet:** På en Linux-server är filnamn känsliga för skiftläge. Använd små bokstäver för att undvika förväxling.
