@@ -91,6 +91,11 @@ $posts = array_reverse(read());
 - **PHP:** Använd PHP för att hantera POST-anropet, spara data i en textfil och hämta samt visa den sparade datan.
 - **Bootstrap:** Använd gärna CSS-ramverket Bootstrap för att designa din hemsida. Bootstrap hittar du här: <https://getbootstrap.com/> och du kan läsa mer om hur du använder det på: <https://www.w3schools.com/bootstrap5/>. Det är dock inget krav.
 
+### Förklaring till PHP-delen
+- [Grundläggande syntax](https://www.w3schools.com/php/php_syntax.asp)
+- [Formulär-hantering](https://www.w3schools.com/php/php_forms.asp)
+- [Foreach-loopar](https://www.w3schools.com/php/php_looping_foreach.asp)
+
 ### Resurser att studera
 För att förbereda dig inför denna uppgift, rekommenderar jag att du läser igenom följande:
 
