@@ -15,9 +15,9 @@ Ditt uppdrag består av två delar: en **låst grund** (det obligatoriska) och e
 1.  **Den låsta grunden:** Du *måste* bygga ett robust användarsystem.
 2.  **Det fria temat:** När en användare är inloggad, vad kan den göra? Det bestämmer du.
 
-De tekniska ramarna är **PHP**, **Fat-Free Framework (F3)** och **MySQL**.
+De tekniska ramarna är **PHP**, **Fat-Free Framework (F3)**, **Composer** och **MySQL**.
 
-### 1. Den låsta grunden (det obligatoriska)
+### 1\. Den låsta grunden (det obligatoriska)
 
 Alla moderna applikationer har ett sätt att hantera användare. Detta är den tekniska kärnan som *alla* måste implementera. Du måste bygga ett komplett system för användarhantering.
 
@@ -57,7 +57,7 @@ Du ska organisera dina vyer i mappar som speglar dina controllers (se Sektion 8)
 
 -----
 
-### 2. Det fria temat (ditt kreativa val)
+### 2\. Det fria temat (ditt kreativa val)
 
 När grunden är på plats är det dags för dig att vara kreativ. Frågan du ska besvara är:
 
@@ -101,7 +101,8 @@ Om du har SQL-kod i din Controller eller PHP-logik i din view, har du brutit mot
 
 Du ska lämna in en `.zip`-fil som innehåller:
 
-1.  **All källkod:** Hela din projektmapp (inklusive `app/`, `config.ini`, `.htaccess`, `index.php` etc.).
+1.  **All källkod:** Hela din projektmapp (inklusive `app/`, `config.ini`, `.htaccess`, `index.php`, **`composer.json`**, **`composer.lock`**).
+      * **VIKTIGT:** Du ska **INTE** inkludera `vendor/`-mappen i din inlämning. Den återskapas med kommandot `composer install`.
 2.  **Databasschema:** En `.sql`-fil som exporterats från din databas (innehåller `CREATE TABLE`-satser).
 3.  **Dokumentation (README.md):** En fil där du kort beskriver:
       * Ditt valda tema och hur applikationen fungerar.
@@ -110,20 +111,18 @@ Du ska lämna in en `.zip`-fil som innehåller:
 
 ### Tips för att lyckas
 
-1.  **Börja rätt:** Bygg inte det fria temat först. **Börja med den obligatoriska användargrunden.**
-2.  **Databasen.** Skapa dina tabeller (`users` och t.ex. `posts`) i MySQL först. Se till att dina relationer (`posts.user_id`) är korrekta.
-3.  **Användarsystemet.** Få `register`, `login` och `logout` att fungera. Detta är det svåraste.
-4.  **Skydda sidor.** Implementera `beforeroute()` så att bara inloggade kan se vissa sidor.
-5.  **Det Fria Temat.** Börja nu bygga CRUD för ditt valda tema (t.ex. blogg). Detta kommer gå fort när grunden väl sitter.
-6.  **Testa hela tiden:** Testa en funktion i taget.
+1.  **Steg 1: Sätt upp projektet.** Skapa din projektmapp. Kör `composer init` och `composer require bcosca/fatfree-core`. Sätt upp din `composer.json` för PSR-4 autoloading (se nedan).
+2.  **Steg 2: Databasen.** Skapa dina tabeller (`users` och t.ex. `posts`) i MySQL först. Se till att dina relationer (`posts.user_id`) är korrekta.
+3.  **Steg 3: Användarsystemet.** Få `register`, `login` och `logout` att fungera. Detta är det svåraste.
+4.  **Steg 4: Skydda sidor.** Implementera `beforeroute()` så att bara inloggade kan se vissa sidor.
+5.  **Steg 5: Det Fria Temat.** Börja nu bygga CRUD för ditt valda tema (t.ex. blogg). Detta kommer gå fort när grunden väl sitter.
+6.  **Steg 6: Testa hela tiden:** Testa en funktion i taget.
 
 -----
 
 ### Rekommenderad projektstruktur (filträd)
 
-För att lyckas med denna uppgift rekommenderas starkt att du följer denna katalogstruktur. Den bygger på att `index.php` är din "front-controller" och att din `.htaccess`-fil skyddar känsliga filer från direktåtkomst.
-
-Denna struktur använder mappar i `views/` som speglar namnen på dina controllers, vilket är en utmärkt "god praxis".
+För att lyckas med denna uppgift rekommenderas starkt att du följer denna katalogstruktur. Den bygger på att **Composer** hanterar dina beroenden (F3) och din autoloading (PSR-4).
 
 ```text
 /mitt_projekt/
@@ -131,49 +130,84 @@ Denna struktur använder mappar i `views/` som speglar namnen på dina controlle
 ├── .htaccess               <-- KRITISK. Innehåller dina säkerhetsregler.
 ├── index.php               <-- Din Front-Controller. Allt börjar här.
 ├── config.ini              <-- Databaslösenord, etc. (Skyddas av .htaccess)
+├── composer.json           <-- NY: Hanterar dina beroenden (F3) och PSR-4.
+├── composer.lock           <-- NY: Låser dina versioner.
 │
-└── app/                    <-- All din applikationslogik (Skyddas av .htaccess)
-    │
-    ├── controllers/
-    │   ├── UserController.php  (Klassnamn: UserController)
-    │   ├── PostController.php  (Klassnamn: PostController, ditt tema)
-    │   └── HomeController.php  (Klassnamn: HomeController, för startsida)
-    │
-    ├── models/
-    │   ├── UserMapper.php      (Klassnamn: UserMapper)
-    │   └── PostMapper.php      (Klassnamn: PostMapper, ditt tema)
-    │
-    └── views/                <-- Alla dina HTML-mallar
-        │
-        ├── head.html    (Gemensam <head>, <nav>, etc.)
-        ├── foot.html    (Gemensam <footer> och avslutning)
-        │
-        ├── home/               <-- Vyer för HomeController
-        │   └── index.html
-        │
-        ├── users/              <-- Vyer för UserController
-        │   ├── register.html
-        │   ├── login.html
-        │   ├── profile.html
-        │   └── edit.html
-        │
-        └── posts/              <-- Vyer för PostController (ditt tema)
-            ├── list.html
-            ├── create.html
-            └── edit.html
+├── app/                    <-- All din applikationslogik (Skyddas av .htaccess)
+│   │
+│   ├── controllers/
+│   │   ├── UserController.php  (Klassnamn: Controllers\UserController)
+│   │   ├── PostController.php  (Klassnamn: Controllers\PostController)
+│   │   └── HomeController.php  (Klassnamn: Controllers\HomeController)
+│   │
+│   ├── models/
+│   │   ├── UserMapper.php      (Klassnamn: Models\UserMapper)
+│   │   └── PostMapper.php      (Klassnamn: Models\PostMapper)
+│   │
+│   └── views/                <-- Alla dina HTML-mallar
+│       │
+│       ├── head.html     (Gemensam <head>, <nav>, etc.)
+│       ├── foot.html     (Gemensam <footer> och avslutning)
+│       │
+│       ├── home/               <-- Vyer för HomeController
+│       │   └── index.html
+│       │
+│       ├── users/              <-- Vyer för UserController
+│       │   ├── register.html
+│       │   ├── login.html
+│       │   ├── profile.html
+│       │   └── edit.html
+│       │
+│       └── posts/              <-- Vyer för PostController (ditt tema)
+│           ├── list.html
+│           ├── create.html
+│           └── edit.html
+│
+└── vendor/                 <-- NY: Hanteras av Composer. INLÄMNAS EJ.
+    └── autoload.php          <-- Den enda fil du behöver inkludera.
 ```
 
-För att F3 automatiskt ska hitta dina klasser (som `UserController` i filen `UserController.php`), ställer du in `AUTOLOAD` i din `index.php`:
+#### Starta ditt projekt (`index.php`)
+
+Din `index.php`-fil blir mycket renare med Composer. Du behöver **inte** längre använda `$f3->set('AUTOLOAD', ...)`:
 
 ```php
 // I din index.php
-$f3 = require('lib/base.php'); // (Eller via composer)
 
-// Tala om för F3 var den ska leta efter klasser
-$f3->set('AUTOLOAD', 'app/models/;app/controllers/');
+// 1. Ladda Composers autoloader
+// Denna fil laddar F3 OCH dina egna klasser (om du konfigurerat composer.json)
+require('vendor/autoload.php');
+
+// 2. Skapa en instans av F3-bas-klassen
+$f3 = \Base::instance();
+
+// 3. Läs in routes, config, och kör appen...
+// ...
+// $f3->run();
 ```
 
-**Att rendera de nya vyerna:**
+#### Hur Composer hittar dina klasser (PSR-4 Autoloading)
+
+För att detta ska fungera, tala om för Composer var dina klasser finns. Lägg till en `autoload`-sektion i din **`composer.json`**-fil:
+
+```json
+{
+    "require": {
+        "bcosca/fatfree-core": "^3.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "app/controllers/",
+            "Models\\": "app/models/"
+        }
+    }
+}
+```
+
+**Glöm inte** att köra `composer dump-autoload` i din terminal varje gång du ändrar denna fil. Nu kommer `require('vendor/autoload.php');` automatiskt att ladda alla dina controllers och modeller när de behövs. Du måste också använda `namespace` överst i dina klasser (t.ex. `namespace Controllers;`).
+
+#### Att rendera de nya vyerna
+
 När du nu renderar en vy från din `UserController` måste du ange hela sökvägen från `views/`-roten:
 `echo \Template::instance()->render('users/login.html');`
 
@@ -188,7 +222,7 @@ Eftersom F3 är nytt för dig är den officiella dokumentationen din absolut bä
       * Här finns all information du behöver.
   * **Användarguide (User Guide) - VIKTIGAST**
       * [fatfreeframework.com/3.9/user-guide](https://fatfreeframework.com/3.9/user-guide)
-      * **Börja här** Läs specifikt avsnitten:
+      * **Börja här\!** Läs specifikt avsnitten:
         1.  `Getting Started` (Hur du sätter upp `index.php`)
         2.  `Routing Engine` (Hur routing fungerar, antingen i `index.php` eller `routes.ini`)
         3.  `Views and Templates` (Hur du använder `{{ @var }}` och `<repeat>`)
@@ -203,9 +237,9 @@ Din prestation bedöms utifrån kvaliteten på din kod, din efterlevnad av MVC-p
 
 | Kunskapskrav | Betyg E | Betyg C | Betyg A |
 | :--- | :--- | :--- | :--- |
-| **Följer etablerad god praxis** | Applikationen har en mappstruktur för M, V och C. CRUD-funktionalitet för användare och tema är implementerad. Logik kan vara fellokalicerad (läckage mellan lager). | Applikationen uppvisar en **strikt MVC-separation**. Controllers är tunna, Models är "feta", Views är "dumma". Datavalidering sker i modellen. 1-M-relationer (användare -\> tema) hanteras korrekt. | Som C, plus: Koden är mycket välorganiserad (t.ex. användning av basklasser, helper-funktioner). Komplex affärslogik (t.ex. avancerad validering, M2M-relationer) är implementerad på ett robust, korrekt och skalbart sätt i Modell-lagret. |
+| **Följer etablerad god praxis** | Applikationen har en mappstruktur för M, V och C. CRUD-funktionalitet för användare och tema är implementerad. Logik kan vara fellokalicerad (läckage mellan lager). | Applikationen uppvisar en **strikt MVC-separation**. Controllers är tunna, Models är "feta", Views är "dumma". Datavalidering sker i modellen. 1-M-relationer (användare -\> tema) hanteras korrekt. **Använder Composer för beroendehantering.** | Som C, plus: Koden är mycket välorganiserad (t.ex. användning av basklasser, helper-funktioner). Komplex affärslogik (t.ex. avancerad validering, M2M-relationer) är implementerad på ett robust, korrekt och skalbart sätt i Modell-lagret. **Använder Composers PSR-4 autoloading korrekt.** |
 | **Produktens kvalitet** | Applikationen fungerar, men kan ha uppenbara buggar eller sakna grundläggande felhantering (t.ex. kraschar vid felaktig inmatning). Inloggningen fungerar. | Applikationen är stabil och hanterar normal användning och vanliga fel (t.ex. "404 not found", "felaktig inmatning", "fel lösenord") på ett "tillfredsställande" sätt. | Applikationen är "utförlig", robust, och hanterar edge-cases. Koden är optimerad och följer professionella standarder för kodformatering. |
 | **Identifierar hot och sårbarheter** | Eleven kan påvisa att grundläggande skydd (F3:s mapper-sanitering) används mot SQL-injektion. `password_hash()` används. | Eleven har implementerat skydd mot vanliga attacker (SQL-injektion, XSS) och kan förklara hur skydden fungerar. All användar-genererad HTML-output saneras (t.ex. via F3:s `esc()`-funktion i vyn). `.htaccess` skyddar `config.ini`. | Eleven kan reflektera "nyanserat" över säkerhet, t.ex. lösenordshantering (korrekt hashing/verify), sessionssäkerhet (session hijacking) och CSRF, och har implementerat flera sådana skydd. |
-| **Utvärderar sitt arbete och resultat** | Eleven lämnar in en enkel dokumentation som beskriver vad som har gjorts. | Eleven utvärderar sitt arbete med "några... omdömen" och kan förklara sina val av struktur och varför MVC-mönstret har följts. | Eleven utvärderar med "nyanserade omdömen" och gör "välgrundade reflektioner" över sina designval, diskuterar alternativa lösningar (t.ex. `public/` vs `.htaccess`), reflekterar över säkerhetsaspekter och föreslår framtida förbättringar. |
+| **Utvärderar sitt arbete och resultat** | Eleven lämnar in en enkel dokumentation som beskriver vad som har gjorts. | Eleven utvärderar sitt arbete med "några... omdömen" och kan förklara sina val av struktur och varför MVC-mönstret har följts. | Eleven utvärderar med "nyanserat" omdömen" och gör "välgrundade reflektioner" över sina designval, diskuterar alternativa lösningar (t.ex. `public/` vs `.htaccess`), reflekterar över säkerhetsaspekter och föreslår framtida förbättringar. |
 
-Lycka till!
+Lycka till\!
