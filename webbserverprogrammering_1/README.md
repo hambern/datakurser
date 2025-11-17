@@ -29,41 +29,39 @@ Fat-Free Framework är ett mycket populärt PHP-ramverk som - när man kan det -
 
 Här är en översikt av uppgifterna för kursen i Webbserverprogrammering 1, med fokus på att gradvis bygga upp dina färdigheter i databasprogrammering och webbutveckling. Varje uppgift bygger vidare på den tidigare och hjälper dig att stegvis lära dig tekniker som PHP, MySQL, Git, och Laravel.
 
-### [Gästbok med databas](projekt/projekt_gastbok/)
+### [Gästbok med databas](https://www.google.com/search?q=projekt/projekt_gastbok/)
 
-| **Uppgift**                                                               | **Beskrivning**                                                                                         | **Vad du lär dig**                                                                                 |
-|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| **Gästbok med databas**                                | Omvandla din befintliga gästbok till att använda en MySQL-databas för att spara inlägg.                    | Introduktion till MySQL och SQL. Grunder i att skapa tabeller, infoga och hämta data med `INSERT` och `SELECT`. Introduktion till Git och versionshantering. |
+| **Uppgift** | **Beskrivning** | **Vad du lär dig** |
+| :--- | :--- | :--- |
+| **Gästbok med databas** | Omvandla din befintliga gästbok till att använda en MySQL-databas för att spara inlägg. | Introduktion till MySQL och SQL. Grunder i att skapa tabeller, infoga och hämta data med `INSERT` och `SELECT`. Introduktion till Git och versionshantering. |
 
-### [ToDo-applikation](projekt/projekt_todo/)
+### [ToDo-applikation](https://www.google.com/search?q=projekt/projekt_todo/)
 
-| **Uppgift**                                                               | **Beskrivning**                                                                                         | **Vad du lär dig**                                                                                 |
-|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| **Grundläggande ToDo-applikation**                                | Skapa en enkel applikation där användare kan lägga till och visa uppgifter.                               | Grunder i PHP, HTML, och CSS. Skapa och hantera en MySQL-databas. Använd `SELECT` och `INSERT` SQL-operationer. |
-| **Markera uppgifter som klara**                                   | Lägg till funktionalitet för att markera uppgifter som klara.                                             | Lär dig använda `UPDATE`-operationen i SQL och hantera formulärinmatningar med PHP.                          |
-| **Kategorisera uppgifter**                                        | Introducera kategorier för att sortera uppgifter.                                                         | Skapa relationer mellan tabeller (en-till-många) och använd `JOIN` för att hämta relaterad data.               |
-| **Filtrera och sortera uppgifter**                                | Lägg till funktioner för att filtrera och sortera uppgifter baserat på status och kategori.                | Avancerade SQL-förfrågningar med `WHERE` och `ORDER BY`. Lär dig att skapa dynamiska webbsidor.                 |
-| **Användarhantering**                                             | Implementera användarhantering för att varje användare ska kunna hantera sina egna uppgifter.              | Skapa en-till-många-relationer mellan användare och uppgifter. Hantera användarsäkerhet med `password_hash`.     |
+| **Uppgift** | **Beskrivning** | **Vad du lär dig** |
+| :--- | :--- | :--- |
+| **Grundläggande ToDo-applikation** | Skapa en enkel applikation där användare kan lägga till och visa uppgifter. | Grunder i PHP, HTML, och CSS. Skapa och hantera en MySQL-databas. Använd `SELECT` och `INSERT` SQL-operationer. |
+| **Markera uppgifter som klara** | Lägg till funktionalitet för att markera uppgifter som klara. | Lär dig använda `UPDATE`-operationen i SQL och hantera formulärinmatningar med PHP. |
+| **Kategorisera uppgifter** | Introducera kategorier för att sortera uppgifter. | Skapa relationer mellan tabeller (en-till-många) och använd `JOIN` för att hämta relaterad data. |
+| **Filtrera och sortera uppgifter** | Lägg till funktioner för att filtrera och sortera uppgifter baserat på status och kategori. | Avancerade SQL-förfrågningar med `WHERE` och `ORDER BY`. Lär dig att skapa dynamiska webbsidor. |
+| **Användarhantering** | Implementera användarhantering för att varje användare ska kunna hantera sina egna uppgifter. | Skapa en-till-många-relationer mellan användare och uppgifter. Hantera användarsäkerhet med `password_hash`. |
 
-### [Recensions-sida](projekt/projekt_recension/)
+### [Recensions-sida](https://www.google.com/search?q=projekt/projekt_recension/)
 
-| **Uppgift**                                                               | **Beskrivning**                                                                                         | **Vad du lär dig**                                                                                 |
-|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| **Skapa en projektplan**                                                  | Planera och fördela uppgifter, skapa en tidsplan och dokumentera arbetsfördelningen.                      | Projektplanering, tidsuppskattning, samarbete och dokumentation.                                   |
-| **Användarhantering och personliga recensioner**                          | Implementera användarhantering där användare kan logga in och se sina egna recensioner.                    | Bygg en-till-många-relationer mellan användare och recensioner. Hantera användarinloggning och sessions.        |
-| **Grundläggande recensions-sida**                                         | Skapa en applikation där användare kan lägga till och visa recensioner av olika objekt.                   | Grunder i PHP, HTML, och CSS. Använd `INSERT` och `SELECT` för att hantera data i MySQL-databasen.             |
-| **Kategorisera recensioner**                                              | Lägg till funktionalitet för att sortera recensioner i olika kategorier, såsom böcker, filmer, etc.        | Skapa relationer mellan recensioner och kategorier (en-till-många). Använd `JOIN`-operationer.                   |
-| **Topplistor för kategorier**                                             | Lägg till topplistor för de bäst rankade objekten inom varje kategori.                                     | Använd aggregeringsfunktioner i SQL som `AVG` och `GROUP BY` för att skapa topplistor.                         |
-| **Följare och personliga flöden**                                         | Lägg till funktionalitet för att användare ska kunna följa andra och se deras senaste recensioner i ett flöde. | Implementera många-till-många-relationer i databasen och hantera mer komplexa databasoperationer.               |
-| **Internt meddelandesystem (Valfritt)**                                   | Lägg till ett meddelandesystem där användare kan skicka privata meddelanden till varandra.                    | Bygg en-till-en-relationer för meddelanden och skapa ett användarvänligt gränssnitt för kommunikation.          |
+| **Uppgift** | **Beskrivning** | **Vad du lär dig** |
+| :--- | :--- | :--- |
+| **Skapa en projektplan** | Planera och fördela uppgifter, skapa en tidsplan och dokumentera arbetsfördelningen. | Projektplanering, tidsuppskattning, samarbete och dokumentation. |
+| **Användarhantering och personliga recensioner** | Implementera användarhantering där användare kan logga in och se sina egna recensioner. | Bygg en-till-många-relationer mellan användare och recensioner. Hantera användarinloggning och sessions. |
+| **Grundläggande recensions-sida** | Skapa en applikation där användare kan lägga till och visa recensioner av olika objekt. | Grunder i PHP, HTML, och CSS. Använd `INSERT` och `SELECT` för att hantera data i MySQL-databasen. |
+| **Kategorisera recensioner** | Lägg till funktionalitet för att sortera recensioner i olika kategorier, såsom böcker, filmer, etc. | Skapa relationer mellan recensioner och kategorier (en-till-många). Använd `JOIN`-operationer. |
+| **Topplistor för kategorier** | Lägg till topplistor för de bäst rankade objekten inom varje kategori. | Använd aggregeringsfunktioner i SQL som `AVG` och `GROUP BY` för att skapa topplistor. |
+| **Följare och personliga flöden** | Lägg till funktionalitet för att användare ska kunna följa andra och se deras senaste recensioner i ett flöde. | Implementera många-till-många-relationer i databasen och hantera mer komplexa databasoperationer. |
+| **Internt meddelandesystem (Valfritt)** | Lägg till ett meddelandesystem där användare kan skicka privata meddelanden till varandra. | Bygg en-till-en-relationer för meddelanden och skapa ett användarvänligt gränssnitt för kommunikation. |
 
+### [MVC-Projekt](https://www.google.com/search?q=projekt/projekt_mvc/)
 
-### [Skapa ett API för ditt Glos-projekt](projekt/projekt_glosa/)
-
-| **Uppgift**                                                               | **Beskrivning**                                                                                         | **Vad du lär dig**                                                                                 |
-|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| **API för Glos-projekt**                                          | Utveckla ett REST-API med Laravel för att hantera glosor och användarhantering, som används i ett glosprogram.  | Använd Laravel för att skapa ett API, hantera CRUD-operationer och implementera säker användarautentisering med Eloquent ORM. |
-## Information om skolans server
+| **Uppgift** | **Beskrivning** | **Vad du lär dig** |
+| :--- | :--- | :--- |
+| **Examinerande MVC-Projekt** | Bygg en komplett applikation med **Model-View-Controller (MVC)**-arkitektur och ramverket Fat-Free Framework. Uppgiften inkluderar obligatorisk användarhantering (login, register, profil) och ett fritt valt tema (blogg, recept, etc.) med full CRUD-funktionalitet. | Strikt **Model-View-Controller (MVC)**-arkitektur. Använda ett PHP-mikroramverk (Fat-Free Framework), routing och en Front-Controller. Hantera **sessions**, säker användarautentisering (`password_hash`) och skydda routes. Bygga skalbar kod enligt "God Praxis" och DRY-principen. |
 
 ### Information om utvecklingsservern som vi jobbar på
 
