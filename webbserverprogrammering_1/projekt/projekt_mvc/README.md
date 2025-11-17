@@ -63,16 +63,16 @@ När grunden är på plats är det dags för dig att vara kreativ. Frågan du sk
 
 **"Vad ska en inloggad användare kunna göra på din webbplats?"**
 
-Här har du total frihet. Det enda kravet är att det innehåll som skapas ska **ägas av användaren**. Detta tvingar dig att använda 1-till-Många-relationer i din databas (t.ex. en `posts`-tabell måste ha en `user_id`-kolumn).
+Här har du total frihet. Det enda kravet är att det innehåll som skapas ska **ägas av användaren**. Detta tvingar dig att använda en-till-många-relationer i din databas (t.ex. en `posts`-tabell måste ha en `user_id`-kolumn).
 
 **Exempel på fria teman:**
 
   * **En blogg:** Användare kan skriva och hantera sina egna blogginlägg.
   * **En träningsdagbok:** Användare kan logga sina egna träningspass.
   * **En receptsamling:** Användare kan spara och kategorisera sina favoritrecept.
-  * **En "Bucket List":** Användare kan skapa och bocka av saker de vill göra.
-  * **En "Speedrun"-tracker:** Användare kan logga sina bästa tider i olika spel.
-  * **En "Dåliga Skämt"-databas:** Användare kan posta och rösta på dåliga skämt.
+  * **En "bucket list":** Användare kan skapa och bocka av saker de vill göra.
+  * **En "speedrun"-tracker:** Användare kan logga sina bästa tider i olika spel.
+  * **En "dåliga skämt"-databas:** Användare kan posta och rösta på dåliga skämt.
 
 Oavsett vad du väljer måste du implementera full **CRUD**-funktionalitet för detta tema (t.ex. skapa, läsa, uppdatera och radera ett blogginlägg).
 
@@ -82,20 +82,20 @@ Oavsett vad du väljer måste du implementera full **CRUD**-funktionalitet för 
 
 Den viktigaste delen av bedömningen är din förmåga att hålla lagren separerade. Följande är **icke-förhandlingsbara regler**:
 
-  * **MODELS (Hjärnan):**
+  * **Models (Hjärnan):**
       * All databaslogik (SQL) finns HÄR.
       * Innehåller **ALDRIG** HTML-kod.
       * Innehåller **ALDRIG** `echo`-anrop eller `reroute()`-anrop.
-  * **VIEWS (Ansiktet):**
+  * **Views (Ansiktet):**
       * All presentation (HTML) finns HÄR.
       * Innehåller **ALDRIG** SQL-kod.
       * Innehåller **ALDRIG** komplex PHP-logik (`<?php ... ?>`-taggar för loopar eller logik är strängt förbjudet – använd F3:s mallmotor `<repeat>` och `{{ @var }}`).
-  * **CONTROLLERS (Trafikpolisen):**
+  * **Controllers (Trafikpolisen):**
       * Ska vara "tunna". De tar emot en förfrågan, ber en Modell om data och skickar datan till en View.
       * Innehåller **ALDRIG** SQL-kod.
       * Innehåller **ALDRIG** HTML-kod.
 
-Om du har SQL-kod i din Controller eller PHP-logik i din View, har du brutit mot MVC-principen och därmed missat kärnmålet med uppgiften.
+Om du har SQL-kod i din Controller eller PHP-logik i din view, har du brutit mot MVC-principen och därmed missat kärnmålet med uppgiften.
 
 ### Inlämning
 
@@ -111,19 +111,19 @@ Du ska lämna in en `.zip`-fil som innehåller:
 ### Tips för att lyckas
 
 1.  **Börja rätt:** Bygg inte det fria temat först. **Börja med den obligatoriska användargrunden.**
-2.  **Steg 1: Databasen.** Skapa dina tabeller (`users` och t.ex. `posts`) i MySQL först. Se till att dina relationer (`posts.user_id`) är korrekta.
-3.  **Steg 2: Användarsystemet.** Få `register`, `login` och `logout` att fungera. Detta är det svåraste.
-4.  **Steg 3: Skydda sidor.** Implementera `beforeroute()` så att bara inloggade kan se vissa sidor.
-5.  **Steg 4: Det Fria Temat.** Börja nu bygga CRUD för ditt valda tema (t.ex. blogg). Detta kommer gå fort när grunden väl sitter.
+2.  **Databasen.** Skapa dina tabeller (`users` och t.ex. `posts`) i MySQL först. Se till att dina relationer (`posts.user_id`) är korrekta.
+3.  **Användarsystemet.** Få `register`, `login` och `logout` att fungera. Detta är det svåraste.
+4.  **Skydda sidor.** Implementera `beforeroute()` så att bara inloggade kan se vissa sidor.
+5.  **Det Fria Temat.** Börja nu bygga CRUD för ditt valda tema (t.ex. blogg). Detta kommer gå fort när grunden väl sitter.
 6.  **Testa hela tiden:** Testa en funktion i taget.
 
 -----
 
 ### Rekommenderad projektstruktur (filträd)
 
-För att lyckas med denna uppgift rekommenderas starkt att du följer denna katalogstruktur. Den bygger på att `index.php` är din "Front-Controller" och att din `.htaccess`-fil skyddar känsliga filer från direktåtkomst.
+För att lyckas med denna uppgift rekommenderas starkt att du följer denna katalogstruktur. Den bygger på att `index.php` är din "front-controller" och att din `.htaccess`-fil skyddar känsliga filer från direktåtkomst.
 
-Denna struktur använder mappar i `views/` som speglar namnen på dina controllers, vilket är en utmärkt "God Praxis".
+Denna struktur använder mappar i `views/` som speglar namnen på dina controllers, vilket är en utmärkt "god praxis".
 
 ```text
 /mitt_projekt/
@@ -188,7 +188,7 @@ Eftersom F3 är nytt för dig är den officiella dokumentationen din absolut bä
       * Här finns all information du behöver.
   * **Användarguide (User Guide) - VIKTIGAST**
       * [fatfreeframework.com/3.9/user-guide](https://fatfreeframework.com/3.9/user-guide)
-      * **Börja här\!** Läs specifikt avsnitten:
+      * **Börja här** Läs specifikt avsnitten:
         1.  `Getting Started` (Hur du sätter upp `index.php`)
         2.  `Routing Engine` (Hur routing fungerar, antingen i `index.php` eller `routes.ini`)
         3.  `Views and Templates` (Hur du använder `{{ @var }}` och `<repeat>`)
