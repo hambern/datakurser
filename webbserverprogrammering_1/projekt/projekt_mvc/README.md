@@ -91,6 +91,110 @@ För att autoloading ska fungera:
 
 ---
 
+## Kom igång med projektet
+
+Här är en steg-för-steg guide för att sätta upp grunden:
+
+1.  **Skapa projektmapp och installera Composer:**
+    ```bash
+    mkdir mitt_projekt
+    cd mitt_projekt
+    composer init
+    # Följ guiden, eller skapa composer.json manuellt enligt ovan
+    composer require bcosca/fatfree-core
+    ```
+
+2.  **Skapa mappstruktur:**
+    ```bash
+    mkdir -p app/Controllers app/Models app/Views config
+    ```
+
+3.  **Skapa din konfiguration (`config.ini`):**
+    ```ini
+    [globals]
+    DEBUG=3
+    UI=app/Views/
+    AUTOLOAD=app/Controllers/;app/Models/
+    
+    # Databasinställningar
+    db_dns=mysql:host=localhost;dbname=ditt_db_namn;port=3306
+    db_user=din_anvandare
+    db_pass=ditt_losenord
+    ```
+
+4.  **Skapa din startpunkt (`index.php`):**
+    ```php
+    <?php
+    require 'vendor/autoload.php';
+
+    $f3 = Base::instance();
+    $f3->config('config.ini');
+
+    // Databaskoppling
+    $f3->set('DB', new DB\SQL(
+        $f3->get('db_dns'),
+        $f3->get('db_user'),
+        $f3->get('db_pass')
+    ));
+
+    // Exempel-route
+    $f3->route('GET /', 'Controllers\HomeController->index');
+
+    $f3->run();
+    ```
+
+---
+
+## Tips & Råd för utveckling
+
+### Lägga till en ny Controller
+En Controller hanterar logiken. Skapa en fil i `app/Controllers`, t.ex. `HomeController.php`.
+
+```php
+namespace Controllers;
+
+class HomeController {
+    public function index($f3) {
+        // Skicka data till vyn
+        $f3->set('message', 'Välkommen till min MVC-app!');
+        // Renda vyn
+        echo \Template::instance()->render('home.htm');
+    }
+}
+```
+
+### Lägga till en ny Model
+En Model representerar en tabell i databasen. Skapa t.ex. `User.php` i `app/Models`.
+
+```php
+namespace Models;
+
+class User extends \DB\SQL\Mapper {
+    public function __construct(\DB\SQL $db) {
+        // Koppla till tabellen 'users'
+        parent::__construct($db, 'users');
+    }
+
+    public function all() {
+        return $this->find();
+    }
+}
+```
+
+### Använda modellen i Controllern
+```php
+public function index($f3) {
+    $db = $f3->get('DB');
+    $userModel = new \Models\User($db);
+    $users = $userModel->all();
+    
+    $f3->set('users', $users);
+    echo \Template::instance()->render('user_list.htm');
+}
+```
+
+---
+
 ## Inlämning
 Vi använder GitLab för inlämning, precis som i branschen.
 
