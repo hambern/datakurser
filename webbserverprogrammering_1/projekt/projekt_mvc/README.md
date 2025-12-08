@@ -46,6 +46,7 @@ Separation av ansvar är kärnan i uppgiften.
 ### Verktyg
 -   **Språk:** PHP 8+
 -   **Ramverk:** Fat-Free Framework (F3)
+    -   *Tips: Vill du utmana dig själv? Kika på **Laravel**, ett större industristandard-ramverk.*
 -   **Pakethanterare:** Composer
 -   **Databas:** MySQL/MariaDB
 
@@ -115,4 +116,5 @@ Vi använder GitLab för inlämning, precis som i branschen.
 
 ## Resurser
 - [Fat-Free Framework User Guide](https://fatfreeframework.com/3.9/user-guide) (Bibel för detta projekt!)
+- [Laravel](https://laravel.com/) (Överkurs)
 - [Kom igång med Composer](https://getcomposer.org/doc/00-intro.md)

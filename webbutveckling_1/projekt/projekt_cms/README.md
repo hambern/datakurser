@@ -15,7 +15,7 @@ Efter avslutat projekt ska du kunna:
 ## Välj ditt CMS
 Du har frihet att välja system, men här är några vanliga alternativ:
 1.  **WordPress:** Världens mest populära CMS. Enkelt att komma igång med, enormt utbud av plugins. *Bra för nybörjare.*
-2.  **Winter CMS:** Byggt på Laravel. Mer tekniskt och flexibelt för utvecklare. *Rekommenderas för dig som vill ha en utmaning (Betyg C/A).*
+2.  **Statamic:** Byggt på Laravel. Kan köras utan databas ("flat-file"). *Rekommenderas för dig som vill ha en utmaning (Betyg C/A).*
 3.  **Grav / Kirby:** Flat-file CMS (kräver ingen databas). Snabbt och modernt.
 
 ---
@@ -58,5 +58,5 @@ Skriv en kort reflektion i din `markdown`-fil (eller en PDF-rapport):
 
 ## Resurser
 - [WordPress.org](https://wordpress.org/download/)
-- [WinterCMS.com](https://wintercms.com/)
+- [Statamic.com](https://statamic.com/)
 - [GetGrav.org](https://getgrav.org/)

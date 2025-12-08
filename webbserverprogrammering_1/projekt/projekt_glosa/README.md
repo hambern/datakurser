@@ -1,9 +1,9 @@
-# Projektuppgift: Glos-API med Kvark Framework
+# Projektuppgift: Glos-API med Fat-Free Framework
 
 ## Syfte
 Detta projekt utförs i samarbete med kursen *Programmering 2*. Ditt fokus i denna kurs (*Webbserverprogrammering 1*) är att bygga **backend-systemet** – ett API som hanterar data och logik. Frontend-applikationen (klienten) utvecklas ofta i den andra kursen eller av en annan utvecklare.
 
-Du kommer att använda [Kvark Framework](https://gitlab.com/hambern/kvark) för att skapa en strukturerad och säker applikation.
+Du kommer att använda [Fat-Free Framework](https://fatfreeframework.com/) (eller valfritt annat ramverk, t.ex. Laravel) för att skapa en strukturerad och säker applikation.
 
 ## Mål
 Efter avslutat projekt ska du kunna:
@@ -31,7 +31,7 @@ Din uppgift är att skapa "motorn" bakom en glos-app. API:et ska kunna ta emot a
     - Tydlig koppling: En glosa tillhör en specifik användare (`user_id`).
 
 ### Förslag på API-endpoints
-Här är en struktur du kan utgå ifrån. Exakta URL:er beror på din routing i Kvark.
+Här är en struktur du kan utgå ifrån. Exakta URL:er beror på din routing.
 
 | Metod | Endpoint | Beskrivning | Data in | Data ut |
 | :--- | :--- | :--- | :--- | :--- |
@@ -55,7 +55,7 @@ Här är en struktur du kan utgå ifrån. Exakta URL:er beror på din routing i 
     - Skapa databasen och tabellerna i MySQL/phpMyAdmin.
 
 3.  **Backend-utveckling:**
-    - Klona/installera Kvark Framework.
+    - Installera ditt ramverk via Composer (t.ex. `composer require bcosca/fatfree-core`).
     - Bygg `User`-modellen och inloggningslogik.
     - Bygg `Word`-modellen och CRUD-funktionalitet.
     - Testa löpande.
