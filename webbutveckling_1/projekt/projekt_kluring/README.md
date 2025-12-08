@@ -1,68 +1,57 @@
-# Skapa en kul kluring
+# Projektuppgift: Kluringen (Webbgåtor)
 
-### Syfte
-Denna uppgift syftar till att utmana ditt logiska tänkande och din kreativitet genom att skapa en serie webbsidor med gåtor. Du kommer samtidigt att öva på grundläggande webbteknologier som HTML, CSS och enkel JavaScript-interaktivitet. Kreativa lösningar och designer uppskattas och uppmuntas.
+## Syfte
+Du ska skapa en serie webbsidor som fungerar som ett spel. Varje sida innehåller en gåta. Lösningen på gåtan är namnet på nästa HTML-fil. Detta tränar din förståelse för hur webbadresser (URL:er) och filstrukturer fungerar, samt din kreativitet med HTML/CSS.
 
-### Mål
-Efter att ha slutfört denna uppgift ska du kunna:
-- Skapa länkar mellan olika HTML-sidor.
-- Använda HTML och CSS för att designa enkla, responsiva webbsidor.
-- Implementera grundläggande JavaScript för att skapa interaktivitet på dina sidor.
+Exempel: Om svaret på gåtan på `index.html` är "katt", så måste besökaren manuellt ändra adressen i webbläsaren till `katt.html` för att komma vidare.
 
-### Beskrivning
-Du ska skapa en serie webbsidor där varje sida innehåller en unik gåta som besökaren måste lösa för att komma vidare till nästa sida.
+## Mål
+Efter avslutat projekt ska du kunna:
+-   **Länkar & URL:er:** Förstå hur filer hänger ihop på en server.
+-   **Kreativ HTML:** Använda dolda texter (vit text på vit bakgrund), kommentarer (`<!-- hemligt -->`) och bilder för att skapa ledtrådar.
+-   **JavaScript (Valfritt):** Skapa knappar för att visa ledtrådar.
 
-1. **Första sidan:** Den första sidan heter `index.html` och innehåller en enkel gåta.
-2. **Nästa sida:** När besökaren har löst gåtan, kommer de att veta vilket konstigt namn nästa sida har. De skriver in detta namn direkt i webbläsarens URL-fält, följt av `.html` (t.ex., `lösning.html`).
-3. **Fortsättning:** Varje ny sida innehåller en ny gåta som leder vidare till nästa sida i serien.
+---
 
-#### Exempel:
-- **Sida 1:** `index.html` – Gåtan kan vara en textgåta, där svaret är nästa sidas namn.
-- **Sida 2:** `mystisk.html` – Denna sida innehåller en bildgåta som avslöjar nästa sidas namn när den är löst.
+## Uppgiftsbeskrivning
 
-### Ramverk och tekniker
-- **HTML och CSS:** Använd HTML för att strukturera dina sidor och CSS för att styla dem på ett kreativt sätt.
-- **JavaScript (frivilligt):** Lägg till enkel JavaScript-interaktivitet för att t.ex. ge ledtrådar eller göra gåtorna mer dynamiska.
-- **Responsiv design:** Se till att dina sidor fungerar både på datorer och mobila enheter, ett bra råd är att använda dig av normalize.css för att "nollställa" webb-browserns påverkan.
+### 1. Skapa din struktur
+Du behöver minst **3 nivåer** (sidor) + en **Slutsida** (Seger!).
+1.  **Nivå 1 (`index.html`):** En enkel startgåta.
+2.  **Nivå 2 (`[svar1].html`):** Lite svårare.
+3.  **Nivå 3 (`[svar2].html`):** Riktigt klurig!
+4.  **Målet (`[svar3].html`):** En sida som säger "Grattis, du klarade det!".
 
-### Inspiration och idéer
-För att få inspiration till dina gåtor, besök gärna dessa sidor:
-- [Hambergs kluring 1](https://student.oedu.se/~mh6802/kul/mattias_kul_01/)
-- [Hambergs kluring 2](https://student.oedu.se/~mh6802/kul/mattias_kul_02/)
-- [Hambergs kluring 3](https://student.oedu.se/~mh6802/kul/mattias_kul_03/)
-- [Notpron](http://notpron.org/notpron/)
+### 2. Idéer för gåtor
+-   **Källkod:** Göm ledtråden i en HTML-kommentar. Användaren måste högerklicka och välja "Visa källkod" för att hitta den.
+-   **Namngivning:** En bild heter `gurka.jpg`, men föreställer en tomat. Svaret kanske är "gurka"?
+-   **CSS:** Text som är samma färg som bakgrunden, så man måste markera den för att se.
+-   **JavaScript:** En knapp som säger "Tryck inte här", som visar texten när man klickar.
 
-### Resurser att studera
-För att förbereda dig inför denna uppgift, rekommenderar jag att du läser:
+### 3. Exempel på JavaScript-ledtråd
+Här är en enkel funktion för att visa en ledtråd när man klickar på en knapp.
 
-- [HTML Grundläggande](https://www.w3schools.com/html/html_basic.asp)
-- [CSS Grundläggande](https://www.w3schools.com/css/css_intro.asp)
-- [JavaScript Grundläggande](https://www.w3schools.com/js/js_intro.asp) (om du vill använda JavaScript)
-- [Normalize.css](https://necolas.github.io/normalize.css/)
-
-### Exempel på enkelt JavaScript
-
-~~~html
-<button onclick="toggleElement('myElement')">Visa/Göm</button>
-<div id="myElement" style="display:none;">Här är innehållet som kan visas eller döljas.</div>
+```html
+<button onclick="visaLedtrad()">klicka för ledtråd</button>
+<p id="hemlis" style="display:none;">Svaret är en färg...</p>
 
 <script>
-    function toggleElement(elementId) {
-        var element = document.getElementById(elementId);
-        if (element.style.display === 'none') {
-            element.style.display = 'block';
-        } else {
-            element.style.display = 'none';
-        }
-    }
+function visaLedtrad() {
+    document.getElementById('hemlis').style.display = 'block';
+}
 </script>
-~~~
+```
 
 ---
 
 ## Bedömning
 
-| **Kvalitetsaspekt**         | **Betyg E**                                      | **Betyg C**                                      | **Betyg A**                                      |
-|-----------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-| **HTML-struktur**           | Sidorna är byggda med grundläggande HTML-taggar. | Sidorna har en tydlig och korrekt struktur. | Sidorna är välstrukturerade och följer webbstandarder. |
-| **Design och CSS**          | Enkel CSS används för att styla sidorna.        | CSS används för att skapa en snygg och responsiv design. | CSS används för att skapa en professionell och fullt responsiv design. |
+| Nivå | Kriterier |
+| :--- | :--- |
+| **E** | Du har skapat 3 hängande sidor. Gåtorna går att lösa. Enkel design. |
+| **C** | Du använder kreativa metoder (källkod, dolda element). Sidorna är snygga och responsiva. |
+| **A** | Ett riktigt "Notpron"-liknande spel! Du använder ljud, bildmanipulation eller JavaScript på ett smart sätt. Designen bygger en stämning (t.ex. skräcktema eller hacker-tema). |
+
+## Inspiration
+-   [Notpron](http://notpron.org/notpron/) - Världens svåraste webbgåta.
+-   [Cicada 3301](https://en.wikipedia.org/wiki/Cicada_3301) - Legendariskt internetmysterium.
