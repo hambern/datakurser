@@ -1,76 +1,77 @@
-# Komprimera av bilder och filmer med GIMP och VLC
+# Projektuppgift: Medieoptimering (Bilder & Video)
 
-### Syfte
-Denna uppgift syftar till att ge dig praktisk erfarenhet av att optimera bilder och videor för webben genom att komprimera dem med gratis programvara. Du kommer att lära dig att skapa och jämföra två versioner av en webbplats: en med optimerade filer och en med ooptimerade filer. Dessutom kommer du att använda HTML5-mediaspelaren för att visa upp en komprimerad video på din webbplats. Uppgiften ger dig insikt i hur komprimering påverkar laddningstider, användarupplevelse och prestanda.
+## Syfte
+Webbprestanda är avgörande för användarupplevelsen. Stora bilder och tunga videor gör sidor långsamma, vilket driver bort besökare. I denna uppgift ska du lära dig optimera media för webben. Du ska skapa två versioner av samma sida: en "Långsam" (okomprimerad) och en "Snabb" (optimerad), och jämföra resultatet.
 
-### Mål
-Efter att ha slutfört denna uppgift ska du kunna:
-- Hämta och använda bilder och videor från Pexels.
-- Komprimera bilder och videor med GIMP och VLC.
-- Förstå skillnaderna mellan vanliga filformat för bilder och videor.
-- Använda HTML5-mediaspelaren för att visa en video.
-- Skapa och jämföra två versioner av en webbplats: en optimerad och en ooptimerad.
-- Reflektera över skillnaderna i prestanda och användarupplevelse mellan de två versionerna.
-
-### Beskrivning
-
-1. **Hämta bilder och filmer:**
-   - Gå till [Pexels](https://www.pexels.com/) och ladda ner bilder och videor i maximalt stort format. Välj minst tre bilder och en video.
-
-2. **Komprimering av bilder och filmer:**
-   - **Bilder:** 
-     - Använd [GIMP](https://www.gimp.org/) för att komprimera bilderna. Spara bilderna i olika format (JPEG, PNG, WebP) och experimentera med olika komprimeringsnivåer. Målet är en liten fil som fortfarande ger intrycket av hög kvalitet. Ladda gärna ner programmet via Software Center om du inte redan har det på datorn.
-   - **Filmer:**
-     - Använd [VLC](https://www.videolan.org/vlc/) för att komprimera videon. Testa olika inställningar och format (MP4, WebM) för att optimera videon för webben. Målet är en liten fil som fortfarande upplevs ha hög kvalitet. Ladda gärna ner programmet via Software Center om du inte redan har det på datorn. Där gör sedan följande:
-        1. Välj "Media > Konvertera / Spara"
-        2. Lägg till filen du laddat ner via knappen "+ Lägg till"
-        3. Klicka på "Konvertera / Spara"
-        4. Välj därefter en av profilerna, ex. WebM, MP4 eller OGG
-        5. Klicka gärna på skiftnyckeln för att tweeka parametrar
-        6. Välj därefter målfil och starta konverteringen
-
-3. **Skapa två webbplatser:**
-   - **Ooptimerad sida:** Skapa en enkel webbplats med HTML och CSS som visar de ooptimerade bilderna och videon i deras ursprungliga format och storlek.
-   - **Optimerad sida:** Skapa en parallell webbplats med samma struktur, men använd de komprimerade versionerna av bilderna och videon.
-   - **HTML5-mediaspelare:** Använd HTML5-mediaspelaren för att visa upp din video på båda versionerna av webbplatsen. Exempel på hur du kan använda mediaspelaren:
-
-   ```html
-   <video controls>
-       <source src="video.mp4" type="video/mp4">
-       <source src="video.webm" type="video/webm">
-       Din webbläsare stöder inte HTML5-videoformatet.
-   </video>
-   ```
-
-4. **Jämförelse och reflektion:**
-   - Analysera laddningstiderna med en kamrat. Titta på filstorlekar och användarupplevelse för båda versionerna av webbplatserna. Vilka slutsatser drar ni?
-   - Skriv en kort reflektion där ni diskuterar skillnaderna mellan den optimerade och ooptimerade sidan. Reflektera över hur olika filformat och komprimeringsnivåer påverkar prestandan. 
-
-### Ramverk och tekniker
-- **Pexels:** Använd Pexels för att hämta bilder och videor i hög kvalitet. <https://www.pexels.com/>
-- **GIMP:** Komprimera bilder med GIMP och spara dem i olika format. <https://www.gimp.org/>
-- **VLC:** Komprimera videor med VLC och optimera dem för webben. <https://www.videolan.org/>
-- **HTML5:** Använd HTML5-mediaspelaren för att visa videon på din webbplats. <https://www.w3schools.com/html/html_media.asp>
-- **HTML och CSS:** Skapa två versioner av en enkel webbplats, en optimerad och en ooptimerad.
-
-### Tips och tricks
-- **Val av format:** Läs på om skillnaderna mellan bildformaten JPEG, PNG, och WebP samt videoformaten MP4 och WebM för att välja rätt format för ditt projekt.
-- **Komprimeringens inverkan:** Experimentera med olika komprimeringsnivåer för att se hur de påverkar bild- och videokvaliteten samt filstorleken.
-- **Testverktyg:** Använd verktyg som [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) för att mäta laddningstider och prestanda för dina sidor.
-- **Video som bakgrund:** Något som kan vara förvånansvärt impaktfullt är en video som bakgrund på din hemsida. Läs mer om hur du åstadkommer det här: <https://www.w3schools.com/howto/howto_css_fullscreen_video.asp>
-
-### Resurser att studera
-- [GIMP User Manual](https://docs.gimp.org/2.10/en/) för bildredigering och komprimering.
-- [VLC Documentation](https://www.winxdvd.com/resize-video/how-to-compress-video-with-vlc.htm) för videokomprimering.
-- [Pexels](https://www.pexels.com/) för att hämta bilder och videor i hög kvalitet.
-- [Normalize.css](https://necolas.github.io/normalize.css/)
+## Mål
+Efter avslutat projekt ska du kunna:
+- **Bildformat:** Förstå skillnaden mellan JPEG, PNG och WebP.
+- **Komprimering:** Använda verktyg (GIMP, VLC) för att minska filstorlek utan att tappa för mycket kvalitet.
+- **Video:** Bädda in video med HTML5 (`<video>`) och använda formaten MP4 och WebM.
+- **Analys:** Mäta och reflektera över laddningstider.
 
 ---
 
-## Bedömning
+## Arbetsgång
 
-| **Kvalitetsaspekt**          | **Betyg E**                                         | **Betyg C**                                         | **Betyg A**                                         |
-|------------------------------|----------------------------------------------------|----------------------------------------------------|----------------------------------------------------|
-| **Komprimering och optimering** | Bilder och videor är komprimerade och visas på två versioner av en webbplats. | Komprimering och optimering är väl genomförd, med tydlig skillnad mellan sidorna. | Komprimering och optimering är utförd med hög kvalitet, och skillnaderna mellan sidorna är noggrant analyserade. |
-| **Webbplatsens utformning**   | Webbplatserna är enkla men fungerar för att visa bilder och videor. | Webbplatserna är väl utformade, responsiva och inkluderar detaljerad information om komprimering. | Webbplatserna är estetiskt tilltalande, fullt responsiva och inkluderar en djupgående analys av optimeringsprocessen. |
-| **Reflektion och analys**     | En enkel reflektion över skillnaderna mellan sidorna har genomförts. | En genomtänkt reflektion över hur komprimering påverkar prestanda har genomförts. | En djupgående analys av optimeringsprocessen, inklusive tekniska detaljer och förbättringsförslag, har genomförts. |
+### 1. Hämta material
+Gå till [Pexels](https://www.pexels.com/) och ladda ner:
+-   **3 högupplösta bilder** (Välj "Original Size", gärna 5MB+ styck).
+-   **1 högupplöst video** (1080p eller 4K).
+
+### 2. Skapa "Den Långsamma Sidan"
+Bygg en enkel HTML-sida (`slow.html`) där du lägger in orginalfilerna direkt.
+-   Använd `<img>` för bilderna.
+-   Använd `<video>` för videon.
+-   *Notera hur lång tid det tar att ladda sidan.*
+
+### 3. Optimera medierna
+Nu ska du skapa komprimerade kopior av filerna. Spara dem i en separat mapp (t.ex. `/optimized`).
+
+**Bilder (Använd GIMP):**
+1.  Öppna bilden.
+2.  Skala om den (`Image -> Scale Image`) till en rimlig webbstorlek (t.ex. max 1920px bredd, inte 6000px!).
+3.  Exportera som **WebP** eller **JPG** (med kvalitet ca 80%).
+4.  Jämför filstorleken mot originalet (Målet: <200KB per bild).
+
+**Video (Använd VLC eller Handbrake):**
+1.  Öppna VLC -> `Media` -> `Convert / Save`.
+2.  Lägg till din video.
+3.  Välj profil: **Video - H.264 + MP3 (MP4)** eller **Video - VP8 + Vorbis (WebM)**.
+4.  Klicka på skiftnyckeln för att justera bitrate (lägre bitrate = mindre fil).
+5.  Spara filen.
+
+### 4. Skapa "Den Snabba Sidan"
+Kopiera din HTML-sida till `fast.html`.
+-   Byt ut länkarna så de pekar på dina *optimerade* filer.
+-   Använd `width` och `height` attribut på bilderna för att undvika "layout shift".
+
+Ställ in videon så här för bästa kompatibilitet:
+```html
+<video controls width="100%">
+    <source src="video-optimized.mp4" type="video/mp4">
+    <source src="video-optimized.webm" type="video/webm">
+    Din webbläsare stöder inte videon.
+</video>
+```
+
+### 5. Analys
+Jämför sidorna.
+-   Hur mycket plats sparade du totalt? (MB)
+-   Ser man någon skillnad i kvalitet?
+-   Använd webbläsarens utvecklarverktyg (Network Tab) för att se laddningstiderna.
+
+---
+
+## Inlämning & Bedömning
+Lämna in mappen med båda HTML-filerna och alla medier. Skriv en kort `README.md` (eller reflektion) med dina mätresultat.
+
+| Nivå | Kriterier |
+| :--- | :--- |
+| **E** | Du har skapat två sidor. Bilderna och videon på "Snabb" sidan är mindre än originalen. Media visas korrekt. |
+| **C** | Optimeringen är "lagom" (bra balans kvalitet/storlek). Du har skalat om bilderna till rätt upplösning, inte bara sänkt kvaliteten. HTML-koden är korrekt. |
+| **A** | Du använder moderna format (WebP). Du har analyserat resultatet djupt (nämner bitrate, upplösning). Sidorna är responsiva och har snygg design. |
+
+## Tips
+-   [Squoosh.app](https://squoosh.app/) - Grymt webbverktyg från Google för att komprimera bilder visuellt.
+-   **Handbrake** - Ofta bättre/enklare än VLC för videokomprimering om du får installera det.

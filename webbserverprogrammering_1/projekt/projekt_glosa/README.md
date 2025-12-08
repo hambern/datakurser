@@ -1,105 +1,88 @@
-# Skapa ett API för ditt glos-projekt
+# Projektuppgift: Glos-API med Fat-Free Framework
 
-### Syfte
-Detta projekt syftar till att lära dig hur man utvecklar ett API med [Kvark Framework](https://gitlab.com/hambern/kvark). Projektet är ett samarbete mellan kurserna Webbserverprogrammering 1 och Programmering 2, där vi i denna kurs fokuserar på att bygga backend-API:et. Frontend och all användarinteraktion hanteras i Programmering 2.
+## Syfte
+Detta projekt utförs i samarbete med kursen *Programmering 2*. Ditt fokus i denna kurs (*Webbserverprogrammering 1*) är att bygga **backend-systemet** – ett API som hanterar data och logik. Frontend-applikationen (klienten) utvecklas ofta i den andra kursen eller av en annan utvecklare.
 
-### Mål
-Efter att ha slutfört detta projekt ska du kunna:
-- Utveckla ett API med [Kvark Framework](https://gitlab.com/hambern/kvark) för att hantera CRUD-operationer (Create, Read, Update, Delete).
-- Implementera användarautentisering och säker hantering av lösenord.
-- Strukturera en MVC-applikation med rätt databasdesign och relationshantering.
+Du kommer att använda [Fat-Free Framework](https://fatfreeframework.com/) (eller valfritt annat ramverk, t.ex. Laravel) för att skapa en strukturerad och säker applikation.
 
-### Beskrivning
-Du ska utveckla ett API som möjliggör grundläggande gloshantering för ett glosprogram. Detta API kommer att användas av frontend-applikationen som utvecklas i Programmering 2. Funktionerna inkluderar att skapa, uppdatera, radera och läsa glosor, samt användarhantering med inloggning och utloggning.
+## Mål
+Efter avslutat projekt ska du kunna:
+- **API-utveckling:** Bygga ett REST-liknande API som hanterar CRUD (Create, Read, Update, Delete).
+- **Säkerhet:** Implementera användarregistrering och inloggning med token-baserad autentisering.
+- **Databasdesign:** Strukturera en MySQL-databas med relationer (One-to-Many).
+- **Ramverk:** Arbeta enligt MVC-mönstret (Model-View-Controller) i ett PHP-ramverk.
 
-#### Krav för API:et:
-1. **Användarhantering:**
-   - Skapa en användare och hantera inloggning med autentisering.
-   - Hantera autentisering med token-baserad säkerhet.
+## Projektbeskrivning
+Din uppgift är att skapa "motorn" bakom en glos-app. API:et ska kunna ta emot anrop för att skapa konton, logga in och hantera ordlistor.
 
-2. **Gloshantering:**
-   - Skapa, uppdatera, och radera glosor.
-   - Hämta glosor, både individuellt och i listform.
+### Kravspecifikation
+1.  **Användarkonton**
+    - Registrering av nya användare (namn, e-post, lösenord).
+    - Inloggning (validera uppgifter och returnera en access-token).
+    - Lösenord ska hash:as säkert (t.ex. `password_hash`).
 
-3. **Databasdesign:**
-   - Designa en MySQL-databas för att hantera användare och deras glosor.
-   - Fundera igenom hur du ska skapa de relationer din applikation behöver
+2.  **Gloshantering**
+    - Användare ska kunna lägga till nya glosor (t.ex. engelska <-> svenska).
+    - Användare ska kunna se *sina egna* glosor.
+    - Användare ska kunna redigera och ta bort sina glosor.
 
-4. **API-struktur:**
-   - Använd [Kvark Frameworks](https://gitlab.com/hambern/kvark) resurshantering och controllers för att strukturera API:et.
-   - Implementera korrekt hantering av HTTP-statuskoder och validering.
+3.  **Databas**
+    - Minst två tabeller: `users` och `words` (eller liknande).
+    - Tydlig koppling: En glosa tillhör en specifik användare (`user_id`).
 
-### Exempel på API-endpoints
+### Förslag på API-endpoints
+Här är en struktur du kan utgå ifrån. Exakta URL:er beror på din routing.
 
-- **Skapa användare:**  
-  `users/register`  
-  Skickar: `first_name`, `last_name`, `email`, `password`  
-  Returnerar: `token`, `status`
+| Metod | Endpoint | Beskrivning | Data in | Data ut |
+| :--- | :--- | :--- | :--- | :--- |
+| **POST** | `/users/register` | Skapa konto | `name`, `email`, `password` | Status, ev. token |
+| **POST** | `/users/login` | Logga in | `email`, `password` | `token` |
+| **POST** | `/words/create` | Skapa glosa | `token`, `english`, `swedish` | Status, ID på glosa |
+| **GET** | `/words` | Hämta alla | `token` | Lista med glosor |
+| **POST** | `/words/delete` | Ta bort | `token`, `id` | Status |
 
-- **Logga in:**  
-  `users/login`  
-  Skickar: `email`, `password`  
-  Returnerar: `token`, `status`
+*Notera: I ett strikt REST-API används ofta HTTP-headers för tokens och metoder som DELETE/PUT, men i detta projekt kan ni skicka token och ID i body (POST) om det förenklar.*
 
-- **Skapa glosa:**  
-  `words/create`  
-  Skickar: `token`, `english`, `swedish`  
-  Returnerar: `status`
+---
 
-- **Hämta glosor:**  
-  `words/`  
-  Skickar: `token`  
-  Returnerar: `words`, `status`
+## Arbetsgång
 
-### Verktyg
-- För att kunna testa ditt api rekommenderas du att installera [Talend API Tester](https://chromewebstore.google.com/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm) som är ett plugin till din webbläsare. Med hjälp av det pluginet kan du skicka och ta emot API-anrop.
+1.  **Planering & Design:**
+    - Skissa upp din databasmodell (ER-diagram). Vilka tabeller och kolumner behövs?
+    - Definiera dina endpoints.
 
-### Arbetsgång
+2.  **Databas:**
+    - Skapa databasen och tabellerna i MySQL/phpMyAdmin.
 
-1. **Förstudie:**  
-   Utför en förstudie där ni identifierar alla API-endpoints och användarflöden som behövs.
-2. **Databasschema:**  
-   Designa dina tabeller och säkerställ att databasen kan hantera relationerna mellan användare och glosor.
-3. **Implementering:**  
-   Börja med att implementera användarautentisering och därefter övrig funktionalitet för glosor.
-4. **Testning:**  
-   Använd Talend API Tester för att testa alla endpoints och säkerställa att de fungerar korrekt.
-5. **Dokumentation:**  
-   Dokumentera API:et i en README.md-fil där du beskriver alla endpoints, vilka parametrar som behövs, och exempel på svar.
+3.  **Backend-utveckling:**
+    - Installera ditt ramverk via Composer (t.ex. `composer require bcosca/fatfree-core`).
+    - Bygg `User`-modellen och inloggningslogik.
+    - Bygg `Word`-modellen och CRUD-funktionalitet.
+    - Testa löpande.
 
-### Dokumentation
+4.  **Testning:**
+    - Eftersom du inte har ett färdigt frontend måste du testa API:et med verktyg.
+    - Rekommenderade verktyg: **Thunder Client** (VS Code-tillägg), **Postman**, eller **Talend API Tester**.
 
-I slutet av projektet ska du lämna in en dokumentation i form av en projektrapport. Den ska innehålla följande delar:
+---
 
-1. **Inledning:**  
-   - Bakgrund, syfte och mål.  
-   - Kravspecifikationer.
-   - Metod och teknik.
-   - Skisser på UX
-   - Tidsplan för varje vecka.
-2. **Resultat:**
-   - API-endpoints
-   - UML-diagram
-   - Konstruktion, beskrivning och optimering.  
-   - Säkerhet och tester.
-3. **Diskussion:**  
-   - Diskussion och förbättringsförslag.
+## Redovisning & Dokumentation
+Projektet redovisas genom inlämning på GitLab. I ditt repository ska det finnas en `README.md` (din rapport) som innehåller:
 
-### Redovisning och Inlämning
+1.  **Inledning:** Projektets syfte och dina mål.
+2.  **Teknisk Beskrivning:**
+    - **ER-diagram:** Bild på din databasstruktur.
+    - **API-dokumentation:** Lista på endpoints, vad de tar emot och vad de svarar.
+3.  **Genomförande:** Hur du löste uppgiften, utmaningar du stötte på.
+4.  **Säkerhet:** Hur du har tänkt kring lösenordshantering och tokens.
+5.  **Reflektion:** Vad gick bra? Vad hade kunnat göras bättre?
 
-- Redovisa ditt API genom att demonstrera funktionaliteten och förklara din design och struktur.
-- Gitta in projektet på GitLab där rapporten ingår som en README-fil.
+---
 
-### Kunskapskrav
-
-Projektet kommer att bedömas baserat på din förmåga att utveckla, dokumentera och testa ett API enligt de krav som ställts upp. Du ska också visa att du förstår och kan implementera säkerhet och autentisering korrekt.
-
-# Betygsmatris för API-projektet – Webbserverprogrammering 1 (WESWEB01)
+## Betygsmatris
 
 | Område | Betyg E | Betyg C | Betyg A |
-|--------|---------|---------|---------|
-| **Flöde & API-användning** | Beskriver **översiktligt** hur API:et fungerar och kommunicerar med frontend. | Förklarar **utförligt** API:ets struktur och hur data flödar mellan frontend och backend. | **Analyserar och optimerar** API:ets flöde, identifierar förbättringar och skapar en **effektiv** kommunikation mellan frontend och backend. |
-| **Kodkvalitet & designprinciper** | Skriver fungerande kod där presentationslogik och övrig logik är **delvis separerade**. | Följer **designprinciper** och MVC-struktur, skapar en **välstrukturerad** kodbas. | Skriver **modulär och skalbar kod**, tillämpar etablerade designmönster och skapar en **applikation med viss komplexitet**. |
-| **Säkerhet & förståelse av säkerhetslösningar** | Beskriver **översiktligt** hur applikationens säkerhet fungerar och använder Kvarks säkerhetsfunktioner enligt instruktion. | **Förklarar utförligt** hur de inbyggda säkerhetsfunktionerna fungerar, identifierar potentiella sårbarheter och motiverar val av säkerhetsåtgärder. | **Analyserar och utvärderar** säkerheten i applikationen, identifierar risker och föreslår förbättringar. Kan jämföra Kvarks säkerhetslösningar med andra tekniker. |
-| **Dokumentation & kodkommentarer** | Dokumenterar arbetet **enkelt** och kommenterar kod **i begränsad utsträckning**. | Skapar en **noggrann** dokumentation och kommenterar koden **översiktligt**. | Skapar en **utförlig och professionell dokumentation**, inkluderar API-specifikationer och kommenterar koden **tydligt och genomgående**. |
-| **Redovisning & reflektion** | Beskriver API:et och visar grundläggande förståelse. | **Analyserar** och reflekterar kring valda lösningar och eventuella problem. | **Reflekterar nyanserat**, föreslår förbättringar och utvärderar projektet med förslag på framtida utveckling. |
+| :--- | :--- | :--- | :--- |
+| **Funktionalitet** | API:et fungerar för grundläggande inloggning och gloshantering. | Felhantering är inbyggd (t.ex. vid fel lösenord). Data valideras. | API:et är robust, har god felhantering och ren struktur. |
+| **Kodkvalitet** | Koden är fungerande men kan vara blandad. | MVC-mönstret följs. Kod är uppdelad i logiska funktioner/klasser. | Koden är modulär, välkommenterad och följer "Clean Code". |
+| **Säkerhet** | Lösenord hash:as. Token används. | Förstår och motiverar säkerhetsval. | Analyserar säkerhetsrisker (SQL-injection, XSS) och förebygger dem aktivt. |

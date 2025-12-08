@@ -1,49 +1,60 @@
-# Skapa en personlig portalsida
+# Projektuppgift: Din Portalsida
 
-### Syfte
-Denna uppgift har som mål att introducera dig till grunderna i webbutveckling genom att skapa en personlig portalsida eller digitalt CV. Här får du möjlighet att öva på att sätta upp en grundläggande webbplatsstruktur med HTML och CSS. Du kommer också att introduceras till semantisk HTML, vilket hjälper dig att skapa välstrukturerade och lättlästa webbsidor.
+## Syfte
+Detta är kursens första och viktigaste "hem". Du ska skapa en **Portalsida** (index.html) som fungerar som din startsida. Härifrån ska man kunna klicka sig vidare till alla andra uppgifter du gör i kursen. Det ska också fungera som ett digitalt visitkort.
 
-### Mål
-Efter att ha slutfört denna uppgift ska du kunna:
-- Sätta upp ett HTML5-dokument från grunden.
-- Länka ett externt CSS-dokument till din HTML-sida för att styra designen.
-- Använda grundläggande HTML-taggar som `p`, `a`, `img`, `div`, `ul`, `li`, `header`, `footer`, `section` med flera för att bygga en strukturerad och semantisk webbplats.
-- Implementera normalize.css för att säkerställa en enhetlig stil över olika webbläsare.
-- Designa en responsiv och visuellt tilltalande webbsida.
-- Infoga ett porträttfoto och en QR-kod som länkar till din portalsida.
+## Mål
+Efter avslutat projekt ska du kunna:
+- **HTML-struktur:** Skapa ett korrekt HTML5-dokument med `<head>` och `<body>`.
+- **CSS:** Koppla en extern CSS-fil (`style.css`) för att styra utseendet.
+- **Semantik:** Använda rätt taggar för rätt sak (`<nav>`, `<header>`, `<footer>`).
+- **Responsivitet:** Få sidan att fungera i mobilen (`viewport`-taggen).
 
-### Beskrivning
-Du ska designa och bygga en personlig portalsida som fungerar som en central hub för alla dina framtida webbutvecklingsprojekt. Filen ska heta `index.html` och ligga direkt under din `public_html`-mapp: <https://student.oedu.se/~ditt_användarnamn>. Sidan ska innehålla följande:
-- **Introduktion:** En kort introduktion om dig själv.
-- **Porträttfoto:** Inkludera ett professionellt porträttfoto som representerar dig. Ta det själv med mobilen och hitta ett sätt att föra över filen till servern.
-- **QR-kod:** Generera och inkludera en QR-kod som länkar direkt till din portalsida. Googla på hur du åstadkommer detta.
-- **Navigation:** Skapa en enkel navigationsmeny som kan användas för att länka till dina framtida projekt. Detta kan se ut hur som helst, det kan exempelvis vara en enkel lista.
-- **Kontaktinformation:** Inkludera en sektion där besökare kan hitta din kontaktinformation, exempelvis din e-postadress.
+---
 
-### Ramverk och tekniker
-- **Normalize.css:** Implementera normalize.css för att säkerställa att din design ser konsekvent ut i olika webbläsare.
-- **Semantisk HTML:** Använd semantiska HTML-taggar (`header`, `footer`, `section`, `nav`, etc.) för att skapa en tydlig och meningsfull struktur på din sida.
-- **Responsiv design:** Se till att sidan fungerar och ser bra ut både på datorer och mobila enheter. Första steget är att inkludera denna rad i head-sektionen på din hemsida:
-    ~~~html
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    ~~~
+## Uppgiftsbeskrivning
 
-### Resurser att studera
-För att förbereda dig inför denna uppgift, rekommenderar jag att du läser igenom följande:
+### 1. Filstruktur
+Skapa filen `index.html` direkt i din `public_html`-mapp.
+*URL:en till din sida kommer att bli: `https://student.oedu.se/~ditt_anvnamn/`*
 
-- [HTML Grundläggande](https://www.w3schools.com/html/html_basic.asp)
-- [HTML Element](https://www.w3schools.com/html/html_elements.asp)
-- [HTML Attribut](https://www.w3schools.com/html/html_attributes.asp)
-- [HTML Rubriker](https://www.w3schools.com/html/html_headings.asp)
-- [Normalize.css](https://necolas.github.io/normalize.css/)
+### 2. Innehåll
+Sidan ska innehålla:
+1.  **Presentation:** Vem är du? (Bild + Text).
+2.  **Navigation:** En lista med länkar till kursens andra uppgifter (t.ex. "Gästbok", "Kluringen"). Denna lista kommer du fylla på allt eftersom.
+3.  **Kontakt:** Din e-postadress.
+4.  **QR-Kod:** En QR-kod som pekar på din egen URL, så att man lätt kan öppna sidan i mobilen.
+
+### 3. Tekniska Krav
+-   **Normalize.css:** Använd `normalize.css` för att nollställa webbläsarens standardstilar. [Ladda ner här](https://necolas.github.io/normalize.css/).
+-   **Semantisk HTML:** Använd inte bara `<div>`. Använd `<main>`, `<section>`, `<article>` där det passar.
+-   **Responsiv:** Sidan ska se bra ut både på dator och mobil.
+
+---
+
+## Arbetsgång
+1.  Skapa `index.html` och `style.css`.
+2.  Lägg till grundkoden ("boilerplate") i HTML-filen.
+3.  Leta upp en bild på dig själv (eller en avatar) och ladda upp till servern.
+4.  Generera en QR-kod (sök på "QR Code Generator") för din URL och spara som bild.
+5.  Bygg layouten och styla med CSS.
+
+**Glöm inte Viewport-taggen!**
+Utan denna blir sidan pytteliten i mobilen.
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
 
 ---
 
 ## Bedömning
 
-| **Kvalitetsaspekt**         | **Betyg E**                                      | **Betyg C**                                      | **Betyg A**                                      |
-|-----------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-| **Planering och genomförande** | Eleven följer en enkel plan och skapar en fungerande portalsida. | Eleven följer en tydlig plan och skapar en genomtänkt portalsida. | Eleven följer en genomarbetad plan, gör justeringar och skapar en välutvecklad portalsida. |
-| **HTML-struktur**           | Sidan är byggd med grundläggande HTML-taggar.   | Sidan har en tydlig struktur med semantisk HTML. | Sidan är välstrukturerad med semantisk HTML och optimerad för underhåll. |
-| **Design och CSS**          | Enkel CSS används för att styla sidan.          | CSS används för att skapa en attraktiv och responsiv design. | CSS används för att skapa en professionell och fullt responsiv design. |
-| **Media och QR-kod**        | Ett porträttfoto och en QR-kod finns med.       | Fotot och QR-koden är inkluderade och optimerade för snabb laddning. | Fotot och QR-koden är inkluderade, optimerade och laddar effektivt. |
+| Nivå | Kriterier |
+| :--- | :--- |
+| **E** | Sidan finns på rätt plats (index.html). Bild, QR-kod och länkar finns. Enkel CSS. |
+| **C** | Layouten är genomtänkt och responsiv (ser bra ut i mobilen). Koden är semantiskt korrekt. |
+| **A** | Professionell design "Visitkort-känsla". Du använder kanske Flexbox eller Grid för layouten. Typografin är välarbetad. |
+
+## Resurser
+- [W3Schools: HTML Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
+- [CSS Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)

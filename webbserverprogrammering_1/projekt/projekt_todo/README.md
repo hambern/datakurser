@@ -1,73 +1,80 @@
-# Skapa en ToDo-applikation
+# Projektuppgift: Att-göra-lista (ToDo)
 
-### Syfte
-Detta projekt syftar till att lära dig grunderna i databashantering och relationsdatabaser genom att bygga en stegvis mer avancerad ToDo-applikation. Du kommer att öva på att hantera enkla och komplexa databasoperationer, skapa och hantera relationer mellan tabeller samt förstå vikten av strukturerad databasdesign. Genom att bygga en ToDo-applikation får du praktisk erfarenhet av PHP, MySQL och Git, samtidigt som du lär dig att designa och hantera en databas för en verklig applikation.
+## Syfte
+Du ska bygga en klassisk ToDo-applikation. Detta projekt fokuserar på att fördjupa din förståelse för **relationsdatabaser** (en-till-många) och strukturerad SQL. Du kommer också att träna på att använda **Git branches** för att hålla isär olika funktioner under utvecklingen.
 
-### Mål
-Efter att ha slutfört projektet ska du kunna:
-- Skapa och hantera enkla databastabeller.
-- Använda SQL för att utföra grundläggande operationer som `SELECT`, `INSERT`, `UPDATE`, och `DELETE`.
-- Skapa relationer mellan databastabeller och förstå deras syfte.
-- Använda mer avancerade SQL-funktioner som `JOIN` och aggregeringsfunktioner.
-- Versionshantera ditt arbete med Git, där varje steg i utvecklingen helst hanteras i en egen branch.
+## Mål
+Efter avslutat projekt ska du kunna:
+- **CRUD:** Skapa, läsa, uppdatera och radera data via PHP.
+- **Relationer:** Koppla ihop tabeller (t.ex. Uppgifter och Kategorier) med `JOIN`.
+- **Git:** Använda "Feature Branching" (en branch per funktion).
+- **Filtrering/Sortering:** Skriva SQL-frågor med `WHERE` och `ORDER BY` baserat på användarens val.
 
-### Stegvis utveckling
+---
 
-#### Steg 1: Skapa ett repository och synka upp det till GitLab
-- **Beskrivning:** Innan du börjar utveckla applikationen, behöver du sätta upp versionshantering med Git. Logga in på eller skapa ett konto på GitLab och initiera ett Git-repository för ditt projekt.
-- **Instruktioner:**
-  - Gå till [GitLab](https://gitlab.com/) och skapa ett konto om du inte redan har ett.
-  - Sätt upp ett nytt projekt och initiera ett Git-repository lokalt på din dator.
-  - Lägg till den initiala versionen av ditt projekt genom att använda `git add .`, `git commit -m "Initial commit"` och `git push origin master`.
-  - Synkronisera ditt lokala repository med GitLab så att all kod är versionshanterad från början.
+## Arbetsgång (Feature Branching)
+I detta projekt ska du inte jobba direkt i `main`-branchen. För varje steg nedan ska du:
+1.  Skapa en ny branch: `git checkout -b feature/kategorier`
+2.  Lösa uppgiften.
+3.  Merg:a in branchen till main: `git checkout main` -> `git merge feature/kategorier`.
 
-#### Steg 2: Grundläggande ToDo-applikation
-- **Beskrivning:** Skapa en enkel ToDo-applikation där användare kan lägga till och visa uppgifter.
-- **Tekniska aspekter:**
-  - **Databas:** Skapa en tabell `tasks` med kolumnerna `id`, `title`, och `description`. Tänk på att `id` ska vara `auto_increment`
-  - **SQL-operationer:** Använd `INSERT` för att lägga till nya uppgifter och `SELECT` för att visa dem. Om du vill kunna ta bort uppgiter kan du göra det med `DELETE`.
-  - **Frontend:** Skapa enkla HTML-formulär för att lägga till uppgifter och en lista för att visa dem.
+---
 
-#### Steg 3: Markera uppgifter som klara
-- **Beskrivning:** Lägg till funktionalitet för att markera uppgifter som klara.
-- **Tekniska aspekter:**
-  - **Branch:** Skapa en ny branch, exempelvis `feature/mark-tasks-complete`, och mergas in i main när det är klart.
-  - **Databas:** Lägg till en tidskolumn `completed_at` i `tasks`-tabellen för att hålla reda på om en uppgift är klar och när den avslutades.
-  - **SQL-operationer:** Använd `UPDATE` för att uppdatera statusen på en uppgift.
-  - **Frontend:** Lägg till en checkbox eller knapp för att markera uppgifter som klara.
+## Steg för Steg
 
-#### Steg 4: Kategorisera uppgifter
-- **Beskrivning:** Lägg till möjlighet att kategorisera uppgifter.
-- **Tekniska aspekter:**
-  - **Branch:** Skapa en branch för detta steg, exempelvis `feature/categorize-tasks`.
-  - **Databasrelationer:** Skapa en tabell `categories` och lägg till en `category_id`-kolumn i `tasks`-tabellen för att skapa en en-till-många-relation.
-  - **SQL-operationer:** Använd `JOIN` för att hämta och visa uppgifter tillsammans med deras kategorier.
-  - **Frontend:** Lägg till en dropdown-meny i formuläret för att välja en kategori när en uppgift skapas.
+### Steg 1: Grundläggande ToDo
+*Branch: `feature/basic-todo`*
+-   [ ] Skapa tabellen `tasks` (`id`, `title`, `description`).
+-   [ ] Skapa ett formulär för att lägga till uppgifter (`INSERT`).
+-   [ ] Lista alla uppgifter på sidan (`SELECT`).
+-   [ ] Lägg till en knapp för att ta bort en uppgift (`DELETE`).
 
-#### Steg 5: Filtrera och sortera uppgifter
-- **Beskrivning:** Lägg till funktionalitet för att filtrera och sortera uppgifter baserat på status och kategori.
-- **Tekniska aspekter:**
-  - **Branch:** Skapa en branch för detta steg, exempelvis `feature/filter-sort-tasks`.
-  - **SQL-operationer:** Använd `WHERE`-klasuler för att filtrera uppgifter och `ORDER BY` för att sortera dem.
-  - **Frontend:** Lägg till filter- och sorteringsfunktioner på sidan så att användaren kan visa uppgifter utifrån status och kategori.
+### Steg 2: Status (Klar/Ej klar)
+*Branch: `feature/mark-complete`*
+-   [ ] Lägg till kolumnen `completed_at` (DATETIME) i `tasks`.
+-   [ ] Lägg till en checkbox vid varje uppgift.
+-   [ ] När checkboxen klickas: Uppdatera `completed_at` till `NOW()` (eller `NULL` om man avmarkerar).
+-   [ ] Visa "klara" uppgifter som överstrukna eller gråade.
 
-#### Steg 6: Användarhantering (frivilligt)
-- **Beskrivning:** Implementera användarhantering så att varje användare kan logga in och hantera sina egna uppgifter. Detta är klurigt och kommer att ta tid, så det är högst frivilligt.
-- **Tekniska aspekter:**
-  - **Branch:** Skapa en branch för användarhantering, exempelvis `feature/user-authentication`.
-  - **Databasrelationer:** Skapa en `users`-tabell och koppla uppgifter till användare med en `user_id`-kolumn i `tasks`-tabellen (en-till-många-relation).
-  - **SQL-operationer:** Använd `JOIN` för att hämta och visa uppgifter som tillhör den inloggade användaren.
-  - **Säkerhet:** Använd `password_hash` för att lagra lösenord säkert och skapa inloggnings- och registreringsformulär.
-  - **Frontend:** Skapa inloggnings- och registreringssidor och se till att endast inloggade användare kan se och hantera sina uppgifter.
+### Steg 3: Kategorier (Relationer)
+*Branch: `feature/categories`*
+-   [ ] Skapa tabellen `categories` (`id`, `name`). Lägg in några testkategorier (Jobb, Skola, Fritid).
+-   [ ] Lägg till `category_id` i `tasks`-tabellen.
+-   [ ] Uppdatera formuläret: Låt användaren välja kategori via en `<select>`-lista.
+-   [ ] Uppdatera listan: Visa vilken kategori varje uppgift tillhör (använd `JOIN` i SQL-frågan).
 
-### Ramverk och tekniker
-- **PHP:** Använd PHP för att hantera server-side logik, databasanrop och rendera dynamiskt innehåll.
-- **MySQL:** Använd MySQL för att lagra och hämta data och hantera relationer mellan tabeller.
-- **HTML och CSS:** Använd HTML för att skapa gränssnittet och CSS för att styla applikationen.
-- **Git:** Använd Git för att hantera versionshantering och skapa branches för varje steg i projektet.
+### Steg 4: Filtrering & Sortering
+*Branch: `feature/filters`*
+-   [ ] Lägg till länkar/knappar för att sortera listan:
+    -   Sortera på Datum (Nyast/Äldst).
+    -   Sortera på Kategori.
+-   [ ] Lägg till filter: "Visa bara uppgifter i kategorin 'Skola'". (Använd `WHERE` i SQL).
 
-### Projektstruktur och arbetsflöde
-Varje steg i utvecklingen motsvarar en ny branch i Git. När ett steg är färdigutvecklat och testat, mergas det in i main-branchen. Detta ger praktisk erfarenhet av versionshantering och möjliggör en tydlig progression i projektet.
+### Steg 5: Användare (Valfritt / A-nivå)
+*Branch: `feature/users`*
+-   [ ] Koppla uppgifter till användare.
+-   [ ] Kräver inloggning för att se och redigera *sina* uppgifter.
+-   [ ] Se till att man inte kan se andras uppgifter via URL-manipulation.
 
-### Sammanfattning
-Genom att följa denna progression kommer du att bygga en fullt fungerande ToDo-applikation, samtidigt som du utvecklar dina färdigheter i databashantering, SQL, och systemdesign. Projektet ger en stegvis introduktion till viktiga koncept inom webbutveckling och relationsdatabaser, och lägger en stark grund för mer avancerade projekt i framtiden.
+---
+
+## Inlämning
+Lämna in länken till ditt GitLab-repository.
+Repot ska innehålla:
+1.  Källkod.
+2.  SQL-fil för databasen.
+3.  En kort `README.md` om hur man kör projektet.
+
+---
+
+## Bedömning
+
+| Nivå | Kriterier |
+| :--- | :--- |
+| **E** | Applikationen fungerar (Lägga till, ta bort, visa). Koden är enkel men fungerande. Git används (minst en commit). |
+| **C** | Kategorier fungerar (Relationer). Du har använt `JOIN` i SQL. Du har använt branches för minst en funktion. Filtrering fungerar. |
+| **A** | Koden är ren och säker (Prepared Statements). Användarhantering eller mycket avancerad filtrering finns. Git-historiken är snygg och strukturerad med flera branches. |
+
+## Tips
+-   **Join:** `SELECT tasks.title, categories.name FROM tasks JOIN categories ON tasks.category_id = categories.id`
+-   **Sortering:** `SELECT * FROM tasks ORDER BY created_at DESC`

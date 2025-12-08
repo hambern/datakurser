@@ -1,65 +1,58 @@
-# Fritt projekt - Visa dina kunskaper
+# Slutprojekt: Visa dina kunskaper
 
-### Syfte
-Denna uppgift syftar till att låta dig visa upp din kreativitet och de färdigheter du har utvecklat under kursen genom att planera, utveckla och presentera ett eget webbprojekt. Du får möjlighet att utforska egna idéer och tillämpa tekniker du har lärt dig. Detta är ditt tillfälle att glänsa genom att skapa något unikt. Och en stor del av ditt slutbetyg kommer hänga på detta projekt.
+## Syfte
+Detta är din chans att skina! Du ska planera, designa och bygga en webbplats från grunden. Här får du visa upp allt du lärt dig under kursen: HTML, CSS, Layout, Responsivitet, och kanske lite PHP/JS.
 
-### Mål
-Efter denna uppgift ska du kunna:
-- Planera och genomföra ett webbprojekt från start till slut.
-- Utveckla en webbplats med minst två sidor, som är responsiv och estetiskt tilltalande.
-- Använda HTML, CSS och eventuellt PHP och JavaScript för att skapa en funktionell och optimerad webbplats.
-- Dokumentera och presentera ditt projekt samt reflektera över resultatet i en projektrapport.
+Detta projekt väger tungt för slutbetyget.
 
-### Beskrivning
+## Mål
+Efter avslutat projekt ska du kunna:
+- **Projektledning:** Planera och genomföra ett större projekt.
+- **Fullständig Webbplats:** Bygga en sajt med flera undersidor.
+- **Kodkvalitet:** Skriva ren, validerad och semantisk kod.
+- **Dokumentation:** Beskriva dina val och reflektera över arbetet.
 
-**Projektets val:**  
-Välj ett projekt som du brinner för. Några exempel på projektidéer:
-- En webbplats som jobbar mot ett API.
-- Ett spel eller en interaktiv applikation.
-- En webbplats för en förening eller ett företag.
-- En personlig hemsida, som ett CV eller en blogg.
+---
 
-**Kravspecifikationer:**
-1. **Projektrapport:** 
-   - En detaljerad rapport ska lämnas in senast 28 maj. 
-   - Rapporten ska beskriva bakgrund, syfte, metod, konstruktion, testning och resultat.
-2. **Minst två sidor:** 
-   - Webbplatsen ska bestå av minst två sidor.
-3. **Egen kod:** 
-   - Du ska skriva egen HTML och CSS. Om du använder CMS eller bibliotek ska det tydligt framgå vilken kod du har skrivit själv.
-4. **Formulär:** 
-   - Inkludera ett formulär på webbplatsen (t.ex. ett kontaktformulär).
-5. **Bilder:** 
-   - Använd bilder på webbplatsen och tänk på upphovsrätt, filstorlek och format.
-6. **Responsiv design:** 
-   - Webbplatsen ska fungera och se bra ut i olika webbläsare (Firefox, Edge, Chrome) och på olika enheter (dator, mobil).
-7. **Validerad kod:** 
-   - Koden ska vara välskriven, indenterad och validerad. Eventuella fel eller varningar ska förklaras i rapporten.
+## Projektidéer
+Du har stor frihet. Här är någa förslag:
+-   **Portfolio:** En snygg sida som visar upp dina arbeten.
+-   **Företagssida:** Webbplats åt ett (riktigt eller påhittat) företag.
+-   **Webbshop (Frontend):** Produktsidor, varukorg (visuell), kassa.
+-   **Spel:** Ett webbaserat spel eller quiz.
+-   **Föreningssida:** För din sportklubb eller hobbyförening.
+-   **API-tjänst:** En "Dashboard" (se API-uppgiften) men mycket mer avancerad.
 
-### Projektrapport
+---
 
-Ditt arbete ska dokumenteras i en projektrapport som innehåller:
+## Kravspecifikation
 
-1. **Inledning:**  
-   - Bakgrund, syfte och mål.  
-   - Kravspecifikationer, metod och teknik.  
-   - Tidsplan.
-2. **Resultat:**  
-   - Konstruktion, beskrivning och optimering.  
-   - Tester och resultat.
-3. **Diskussion:**  
-   - Diskussion och förbättringsförslag.
+### Teknisk Krav
+1.  **Omfång:** Minst 3 undersidor (t.ex. Start, Om oss, Kontakt).
+2.  **Responsivitet:** Måste fungera felfritt i mobilen (Hamburgermeny rekommenderas om du har många länkar).
+3.  **Formulär:** Minst ett fungerande formulär (t.ex. Kontaktformulär eller Boka-knapp).
+4.  **Media:** Bilder och/eller video ska finnas och vara optimerade (rätt format/storlek).
+5.  **Kod:** Du ska skriva HTML och CSS själv.
+    -   *Ramverk:* Du får använda Bootstrap eller Tailwind, men du måste visa att du kan skriva egen CSS också (t.ex. genom "Custom overrides").
 
-### Presentation
+### Dokumentation (Projektrapport)
+Du ska lämna in en rapport (PDF eller Markdown) som innehåller:
+1.  **Inledning:** Vad har du byggt och för vem?
+2.  **Skisser:** Visa dina "Wireframes" eller skisser från planeringen.
+3.  **Teknik:** Vilka verktyg har du använt? (VS Code, GIMP, ramverk...).
+4.  **Reflektion:** Vad var svårt? Vad är du mest nöjd med? Hur har du tänkt kring tillgänglighet?
 
-- **Datum:** Datum kommer närmare sommaren.
-- **Tid:** Presentationen ska vara 5-10 minuter lång.  
-- **Innehåll:** Beskriv din produkt, hur den är uppbyggd, och var beredd på att svara på frågor om lösningar på webbplatsen.
+---
 
-### Bedömningsmatris
+## Bedömning
 
-| **E** | **C** | **A** |
-| --- | --- | --- |
-| Eleven upprättar en enkel projektplan. Utvecklar en produkt med tillfredsställande resultat, följer standarder och anpassar media till produkten. | Eleven upprättar en genomarbetad projektplan. Utvecklar kod som följer standarder och bearbetar media på ett genomtänkt sätt. | Eleven upprättar en genomarbetad projektplan och utvecklar kod som följer standarder med gott resultat. Media bearbetas med säkerhet. |
-| Produkten är av tillfredsställande kvalitet. Eleven testar i några webbläsare och plattformar och vidtar begränsade åtgärder för optimering. | Produkten är testad i flera webbläsare och plattformar. Följer tillgänglighetsprinciper med tillfredsställande resultat. | Produkten är av god kvalitet, testad och optimerad på flera plattformar. Följer tillgänglighetsprinciper med gott resultat. |
-| Enkel dokumentation och utvärdering. Eleven använder viss säkerhet i terminologin. | Noggrann dokumentation och nyanserad utvärdering. Eleven använder säker terminologi. | Utförlig dokumentation kopplad till principer och testresultat, med nyanserad utvärdering och förbättringsförslag. Eleven använder säker terminologi. |
+| Nivå | Kriterier |
+| :--- | :--- |
+| **E** | Webbplatsen fungerar och uppfyller grundkraven (3 sidor, formulär, responsiv). Koden är läsbar. Enkel rapport. |
+| **C** | Designen är genomtänkt och användarvänlig. Koden är välstrukturerad och validerad (inga fel i W3C-validatorn). Rapporten innehåller goda reflektioner. |
+| **A** | "Wow-inverkan". Designen är professionell och unik. Du använder avancerad CSS (Grid/Flexbox/Animationer) eller JavaScript. Rapporten är mycket utförlig och analyserar valen djupt. |
+
+## Tips
+-   **Börja enkelt:** Få grunden på plats först. Lägg till "lull-lull" (animationer etc.) sist.
+-   **Planera:** Rita upp sidan på papper innan du börjar koda. Det sparar timmar!
+-   **Validera:** Kör din kod genom [W3C Validator](https://validator.w3.org/) ofta.
