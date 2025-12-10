@@ -4,7 +4,7 @@
 
 Att skriva CSS handlar inte om att "måla" en webbplats. Det handlar om att bygga ett system. Om du bygger utan ritning får du spaghetti-kod som går sönder så fort du ändrar en detalj.
 
-Denna guide går igenom **hur** du tänker som en professionell frontend-utvecklare år 2025.
+Denna guide är den **ultimata resursen** för hur du tänker och kodar som en professionell frontend-utvecklare år 2025.
 
 ## 1. Grundfilosofin: Mobile First
 
@@ -57,13 +57,13 @@ Om du börjar stort (Desktop) och försöker skala ner, måste du skriva kod som
 
 ## 2. Box Model: Kontrollera dina element
 
-Som standard i CSS (det kallas `content-box`) läggs `padding` och `border` *utanpå* den bredd du anger. Om du sätter `width: 100%` och sedan lägger till `padding: 20px`, blir elementet **bredare** än 100%, vilket skapar en horisontell scrollbar och förstör din layout.
+Som standard i CSS (det kallas `content-box`) läggs `padding` och `border` *utanpå* den bredd du anger. Om du sätter `width: 100%` och sedan lägger till `padding: 20px`, blir elementet **bredare** än 100%, vilket skapar en horisontell scrollbar och förstör layouten.
 
 ### Lösningen: Border Box
 
 Vi vill att `padding` och `border` ska räknas *inuti* bredden. Detta gör att matematiken stämmer: 50% bredd är alltid 50%, oavsett padding.
 
-Lägg alltid till denna "reset" överst i din CSS-fil:
+**Lägg alltid till denna "reset" överst i din CSS-fil:**
 
 ```css
 *, *::before, *::after {
@@ -71,56 +71,75 @@ Lägg alltid till denna "reset" överst i din CSS-fil:
 }
 ```
 
-Nu inkluderar elementens totala storlek både padding och border, vilket gör layoutarbetet mycket mer förutsägbart.
-
 ## 3. Enheter: Sluta använda Pixlar (px)
 
 Pixlar (`px`) är statiska och dumma. De anpassar sig inte om användaren har ställt in större text i sin webbläsare för att se bättre.
 
--   **Använd `rem` för layout & font:** `rem` relaterar till roten (html). Om användaren ändrar sin standardstorlek, skalar hela din sida snyggt.
-    -   *Tumregel:* `1rem` är oftast 16px.
+-   **Använd `rem` för layout & font:** `rem` relaterar till roten (html).
+    -   *Tumregel:* `1rem` ≈ 16px (men skalbart).
 -   **Använd `em` för lokala relationer:** Om paddingen i en knapp ska vara proportionerlig till knappens textstorlek.
 -   **Använd `%` eller `vw/vh` för containers:** Låt layouten vara flytande.
 
-**Exempel:**
+## 4. Layout: Grid vs Flexbox
+
+Många blandar ihop dessa. Här är den definitiva guiden till när du ska använda vad.
+
+### Flexbox: För en dimension (Rader ELLER Kolumner)
+
+Använd Flexbox när du ska **linjera upp saker** eller **fördela utrymme** inuti en komponent. Tänk: "Möblera rummet".
+
+**Det klassiska exemplet: En Navbar**
+Vi vill ha loggan till vänster, och länkarna till höger. Detta är svårt med gammal CSS, men trivialt med Flexbox.
 
 ```css
-body {
-  font-size: 1rem; /* Respekterar användarens inställning */
-}
+/* HTML: <nav class="navbar"> <div class="logo">...</div> <ul class="links">...</ul> </nav> */
 
-.card {
-  padding: 1.5rem; /* Luftigt och skalbart */
-  width: 100%;     /* Flytande bredd */
-  max-width: 60ch; /* Bli aldrig bredare än ca 60 tecken (bra för läsbarhet) */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Skjuter isär barnen till varsin kant */
+  align-items: center;            /* Centrerar dem vertikalt */
+  padding: 1rem;
 }
 ```
 
-## 4. Layout: Grid vs Flexbox
+*   `justify-content`: Styr ledden (horisontellt som standard).
+*   `align-items`: Styr tvärs över ledden (vertikalt som standard).
 
-Sluta gissa. Det finns en tydlig arbetsfördelning.
+### CSS Grid: För två dimensioner (Layout)
 
-### CSS Grid
+Använd Grid när du ska definiera hela sidans struktur eller bygga komplexa gallerier. Tänk: "Rita ritningen till huset".
 
-Används för **Makro-layout** (Ritningen av huset).
+**Det klassiska exemplet: Responsiva Kort**
+Vi vill ha ett galleri med kort som automatiskt anpassar sig. Inga media queries behövs!
 
--   När du ska definiera sidans struktur: Header, Sidebar, Main, Footer.
--   När du behöver rader OCH kolumner samtidigt (2D).
+```css
+/* HTML: <div class="grid"> <article class="card">...</article> ... </div> */
 
-### Flexbox
+.grid {
+  display: grid;
+  gap: 2rem; /* Mellanrum mellan korten */
+  
+  /* MAGIN: Skapa så många kolumner som får plats, men gör dem aldrig mindre än 250px */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+```
 
-Används för **Mikro-layout** (Möbleringen av rummet).
+*   `repeat(auto-fit, ...)`: Fyll raden med så många som får plats.
+*   `minmax(250px, 1fr)`: Varje kolumn måste vara minst 250px bred. Om det finns plats över, låt dem växa (`1fr`) och dela lika på utrymmet.
 
--   När du ska rada upp saker i en komponent (t.ex. en navbar eller en ikon bredvid text).
--   När du jobbar i en riktning: En rad ELLER en kolumn (1D).
+### Sammanfattning: Vem vinner?
 
-## 5. Modern Syntax & Framtidssäkring
+| Egenskap | Flexbox | CSS Grid |
+| :--- | :--- | :--- |
+| **Dimensioner** | 1D (Rad **eller** Kolumn) | 2D (Rader **och** Kolumner) |
+| **Användning** | Komponenter, Navbars, Centrera text | Sidlayouter, Fotogallerier, Dashboard |
+| **Kontroll** | Innehållet styr layouten | Layouten styr innehållet |
 
-Webben är global. Sluta tänk i "Vänster" och "Höger". Tänk i "Start" och "Slut".
+## 5. Modern Syntax & Logiska Egenskaper
 
-### Logiska Egenskaper (Logical Properties)
+Webben är global. Sluta tänk i "Vänster" och "Höger". Om vi byter språk till arabiska (höger-till-vänster) går `margin-left` sönder.
 
-Om vi byter språk till arabiska (som läses höger-till-vänster) går `margin-left` sönder. Använd moderna motsvarigheter:
+Använd moderna, logiska egenskaper:
 
 -   `width` ➝ **`inline-size`**
 -   `margin-top` ➝ **`margin-block-start`**
@@ -129,40 +148,40 @@ Om vi byter språk till arabiska (som läses höger-till-vänster) går `margin-
 
 ### Flytande Typografi med `clamp()`
 
-Slipp ändra font-storlek med media queries. Låt matematiken göra jobbet.
+Sluta skriv 5 olika media queries för font-size. Låt matematiken göra jobbet.
 
 ```css
-/* Texten är minst 1rem, max 2rem, och skalar däremellan baserat på skärmbredd */
+/* Minst 1rem, helst 5vw + 1rem, max 2rem */
 h1 {
   font-size: clamp(1rem, 5vw + 1rem, 2rem);
 }
 ```
 
-## 6. Variabler (CSS Custom Properties)
+## 6. Variabler (Custom Properties)
 
-Vi hårdkodar aldrig färger eller "magiska nummer" djupt nere i koden. Vi samlar allt i toppen. Detta gör det enkelt att byta tema eller justera designen senare.
+Hårdkoda aldrig färger. Samla din "config" i toppen.
 
 ```css
 :root {
-  /* Konfiguration */
   --clr-primary: #3b82f6;
   --clr-text: #1f2937;
-  --gap-standard: 1rem;
+  --font-heading: 'Inter', sans-serif;
 }
 
-.btn {
-  background-color: var(--clr-primary); /* Använd variablen */
-  margin-block: var(--gap-standard);
+h1 {
+  color: var(--clr-primary);
+  font-family: var(--font-heading);
 }
 ```
 
 ## CHECKLISTA: Starta ett nytt projekt
 
-Följ denna ordning för att undvika kaos.
+Bocka av dessa steg varje gång du startar ett nytt projekt för att garantera en robust struktur.
 
-1.  **Variabler först:** Öppna din CSS-fil. Definiera dina färger och typsnitt i `:root`.
-2.  **Reset:** Lägg till `box-sizing: border-box` på alla element!
-3.  **HTML-skelett:** Bygg HTML-strukturen med semantiska taggar (`header`, `main`, `article`). Skriv ingen CSS än.
-4.  **Mobilvy (Bas):** Styla sidan uppifrån och ner för mobilen. Allt ska ligga i en kolumn (block).
-5.  **Layout (Desktop):** Nu lägger du till `@media (min-width: ...)` för att skapa kolumner med Grid där det behövs.
-6.  **Detaljer:** Sist lägger du till hover-effekter, skuggor och animationer.
+- [ ] **Variabler först:** Öppna din CSS-fil. Definiera färger, fonter och spacing i `:root`.
+- [ ] **Global Reset:** Lägg in `box-sizing: border-box` på `*, *::before, *::after`.
+- [ ] **HTML-skelett:** Bygg semantisk HTML (`<header>`, `<main>`, `<article>`, `<footer>`) innan du stylar.
+- [ ] **Mobilvy (Bas):** Börja styla för mobilen. Allt ligger i en kolumn. Inga media queries än!
+- [ ] **Flexbox & Grid:** Använd Flexbox för navbars och små komponenter. Använd Grid för stora layouter.
+- [ ] **Desktop-anpassning:** Lägg till `@media (min-width: ...)` för att "låsa upp" fler kolumner på stora skärmar.
+- [ ] **Polish:** Sist lägger du till hover-effekter, skuggor och `cursor: pointer`.
