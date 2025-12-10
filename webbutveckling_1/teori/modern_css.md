@@ -1,4 +1,4 @@
-# Modern CSS: Arkitektur och Strategi
+# Modern CSS: Arkitektur och strategi
 
 [toc]
 
@@ -6,7 +6,7 @@ Att skriva CSS handlar inte om att "måla" en webbplats. Det handlar om att bygg
 
 Denna guide är den **ultimata resursen** för hur du tänker och kodar som en professionell frontend-utvecklare år 2025.
 
-## 1. Grundfilosofin: Mobile First
+## 1. Grundfilosofin: Mobile first
 
 Vi designar aldrig för desktop först. Vi designar för den minsta skärmen och *lägger till* komplexitet när skärmytan tillåter det. Detta kallas **Additiv Design**.
 
@@ -71,7 +71,7 @@ Vi vill att `padding` och `border` ska räknas *inuti* bredden. Detta gör att m
 }
 ```
 
-## 3. Enheter: Sluta använda Pixlar (px)
+## 3. Enheter: Sluta använda pixlar (px)
 
 Pixlar (`px`) är statiska och dumma. De anpassar sig inte om användaren har ställt in större text i sin webbläsare för att se bättre.
 
@@ -84,7 +84,7 @@ Pixlar (`px`) är statiska och dumma. De anpassar sig inte om användaren har st
 
 Många blandar ihop dessa. Här är den definitiva guiden till när du ska använda vad.
 
-### Flexbox: För en dimension (Rader ELLER Kolumner)
+### Flexbox: För en dimension (rader ELLER kolumner)
 
 Använd Flexbox när du ska **linjera upp saker** eller **fördela utrymme** inuti en komponent. Tänk: "Möblera rummet".
 
@@ -135,7 +135,7 @@ Vi vill ha ett galleri med kort som automatiskt anpassar sig. Inga media queries
 | **Användning** | Komponenter, Navbars, Centrera text | Sidlayouter, Fotogallerier, Dashboard |
 | **Kontroll** | Innehållet styr layouten | Layouten styr innehållet |
 
-## 5. Modern Syntax & Logiska Egenskaper
+## 5. Modern syntax & Logiska egenskaper
 
 Webben är global. Sluta tänk i "Vänster" och "Höger". Om vi byter språk till arabiska (höger-till-vänster) går `margin-left` sönder.
 
