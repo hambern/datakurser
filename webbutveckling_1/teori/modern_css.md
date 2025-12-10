@@ -26,6 +26,7 @@ Om du börjar stort (Desktop) och försöker skala ner, måste du skriva kod som
 .container {
   display: flex;
   width: 50%;
+  padding: 1rem;
 }
 
 /* Sen måste du "döda" koden för mobil */
@@ -42,8 +43,7 @@ Om du börjar stort (Desktop) och försöker skala ner, måste du skriva kod som
 ```css
 /* Mobil är standard (default) */
 .container {
-  display: block;
-  width: 100%;
+  padding: 1rem;
 }
 
 /* Vi lägger till komplexitet om skärmen är stor nog */
