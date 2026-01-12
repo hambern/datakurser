@@ -66,7 +66,20 @@ Du bestämmer vad applikationen gör. Kravet är att data ska kopplas till anvä
 
 ---
 
-## Tekniska Krav & Regler
+- _Receptbok:_ Spara favoritrecept.
+
+---
+
+## Projektplan & Dokumentation
+
+Ett professionellt projekt börjar inte med kod, utan med en plan.
+hJagar tagit fram en mall som du **ska** använda genom hela arbetet: [rapportmall.md](rapportmall.md).
+
+1.  **Starta:** Kopiera mallen till ditt repo (döp den gärna till `RAPPORT.md` eller behåll namnet).
+2.  **Planera:** Fyll i **DEL 1** (Projektplan) och visa för lärare _innan_ du börjar koda.
+3.  **Utvärdera:** I slutet av projektet fyller du i **DEL 2** (Slutrapport).
+
+---
 
 ### Det strikta MVC-mönstret
 
@@ -247,10 +260,7 @@ Vi använder GitLab för inlämning, precis som i branschen.
 1.  **Repository:** Skapa ett privat repo på GitLab.
 2.  **Källkod:** Pusha din kod (exklusive `vendor/`-mappen! Skapa en `.gitignore`).
 3.  **Databas:** Exportera din databasstruktur till en `.sql`-fil och lägg i roten av repot.
-4.  **Rapport:** Skriv din dokumentation i `README.md`:
-    - Hur fungerar appen?
-    - Hur tänkte du kring MVC?
-    - Säkerhetsåtgärder?
+4.  **Rapport:** Se till att din ifyllda rapportfil (baserad på mallen) ligger i repot. Den ska innehålla både planen och slutrapporten.
 
 _OBS: Lägg till din lärare som "Reporter" eller "Maintainer" i projektet för att de ska kunna rätta._
 
