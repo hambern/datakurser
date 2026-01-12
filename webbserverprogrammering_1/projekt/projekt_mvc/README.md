@@ -73,7 +73,7 @@ Du bestämmer vad applikationen gör. Kravet är att data ska kopplas till anvä
 ## Projektplan & Dokumentation
 
 Ett professionellt projekt börjar inte med kod, utan med en plan.
-hJagar tagit fram en mall som du **ska** använda genom hela arbetet: [rapportmall.md](rapportmall.md).
+Jag har tagit fram en mall som du **ska** använda genom hela arbetet: [rapportmall.md](rapportmall.md).
 
 1.  **Starta:** Kopiera mallen till ditt repo (döp den gärna till `RAPPORT.md` eller behåll namnet).
 2.  **Planera:** Fyll i **DEL 1** (Projektplan) och visa för lärare _innan_ du börjar koda.
