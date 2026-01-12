@@ -1,58 +1,93 @@
 # Projektuppgift: MVC-Arkitektur med Fat-Free Framework
 
 ## Syfte
+
 Hittills har vi skrivit skript och enklare program. Nu tar vi steget fullt ut till att bli webbarkitekter. Du ska bygga en professionell, skalbar webbapplikation enligt designmönstret **Model-View-Controller (MVC)**.
 
 ## Mål
+
 Efter avslutat projekt ska du kunna:
+
 - **Arkitektur:** Implementera strikt MVC-separation.
-- **Ramverk:** Använda *Fat-Free Framework (F3)* för routing, vyer och databas.
-- **Beroendehantering:** Använda *Composer* för att installera och hantera bibliotek.
+- **Ramverk:** Använda _Fat-Free Framework (F3)_ för routing, vyer och databas.
+- **Beroendehantering:** Använda _Composer_ för att installera och hantera bibliotek.
 - **Säkerhet:** Skydda applikationen mot vanliga hot (SQL-injection, XSS) och hantera inloggning säkert.
+
+---
+
+## Nya begrepp
+
+Eftersom detta är första gången vi arbetar med ramverk och pakethanterare, här är en kort introduktion:
+
+### Vad är Fat-Free Framework (F3)?
+
+**Fat-Free Framework** är ett "micro-framework" för PHP. Till skillnad från att skriva all kod från grunden (som vi gjort tidigare), ger ramverket oss färdiga byggstenar.
+
+- **Routing:** Kopplar snygga URL:er (t.ex. `/profil`) till rätt PHP-funktioner.
+- **Separation:** Hjälper oss dela upp koden i Modell, Vy och Kontroller (MVC).
+- **Säkerhet:** Inbyggda skydd mot vanliga attacker.
+
+Vi har valt F3 för att det är extremt lättviktigt och enklare att lära sig än större ramverk, men ändå kraftfullt nog för riktiga applikationer.
+
+### Vad är Composer?
+
+**Composer** är en "pakethanterare" för PHP. Det liknar hur du installerar appar på din telefon, fast för kodbibliotek.
+
+- **Hanterar beroenden:** Istället för att ladda ner F3 manuellt och lägga i en mapp, säger vi till Composer: _"Jag vill ha Fat-Free Framework"_, så laddar Composer ner det och håller det uppdaterat.
+- **Autoloading:** Composer sköter inkluderingen av alla filer. Du slipper skriva `require 'min_fil.php'` i varje fil.
 
 ---
 
 ## Uppdraget
 
 Ditt uppdrag består av två delar:
+
 1.  **Den låsta grunden (Obligatorisk):** Ett robust användarsystem.
 2.  **Det fria temat (Kreativt):** Vad användaren kan göra när hen är inloggad.
 
 ### 1. Den låsta grunden
+
 Alla applikationer behöver användarhantering. Du ska bygga:
--   **Registrering:** Spara användare i databasen (lösenord *måste* hash:as med `password_hash`).
--   **Inloggning:** Validera användare och skapa en session (`password_verify`).
--   **Profilsida:** En sida där användaren kan se och redigera sin info.
--   **Åtkomstskydd:** Sidor som kräver inloggning ska inte gå att nås av gäster (omdirigera till inloggning).
+
+- **Registrering:** Spara användare i databasen (lösenord _måste_ hash:as med `password_hash`).
+- **Inloggning:** Validera användare och skapa en session (`password_verify`).
+- **Profilsida:** En sida där användaren kan se och redigera sin info.
+- **Åtkomstskydd:** Sidor som kräver inloggning ska inte gå att nås av gäster (omdirigera till inloggning).
 
 ### 2. Det fria temat
+
 Du bestämmer vad applikationen gör. Kravet är att data ska kopplas till användaren (En-till-Många relation).
 
 **Exempel:**
--   *Blogg:* Användare skriver inlägg.
--   *Träningsdagbok:* Logga träningspass.
--   *Receptbok:* Spara favoritrecept.
+
+- _Blogg:_ Användare skriver inlägg.
+- _Träningsdagbok:_ Logga träningspass.
+- _Receptbok:_ Spara favoritrecept.
 
 ---
 
 ## Tekniska Krav & Regler
 
 ### Det strikta MVC-mönstret
+
 Separation av ansvar är kärnan i uppgiften.
--   **Models (Hjärnan):** Hanterar databasen. *Ingen HTML eller echo här.*
--   **Views (Ansiktet):** Visar HTML. *Ingen SQL eller komplex PHP-logik här.*
--   **Controllers (Trafikpolisen):** Binder ihop allt. Tar emot request -> Hämtar data från Model -> Skickar till View.
+
+- **Models (Hjärnan):** Hanterar databasen. _Ingen HTML eller echo här._
+- **Views (Ansiktet):** Visar HTML. _Ingen SQL eller komplex PHP-logik här._
+- **Controllers (Trafikpolisen):** Binder ihop allt. Tar emot request -> Hämtar data från Model -> Skickar till View.
 
 ### Verktyg
--   **Språk:** PHP 8+
--   **Ramverk:** Fat-Free Framework (F3)
-    -   *Tips: Vill du utmana dig själv? Kika på **Laravel**, ett större industristandard-ramverk.*
--   **Pakethanterare:** Composer
--   **Databas:** MySQL/MariaDB
+
+- **Språk:** PHP 8+
+- **Ramverk:** Fat-Free Framework (F3)
+  - _Tips: Vill du utmana dig själv? Kika på **Laravel**, ett större industristandard-ramverk._
+- **Pakethanterare:** Composer
+- **Databas:** MySQL/MariaDB
 
 ---
 
 ## Projektstruktur (Best Practice)
+
 Vi använder Composer för att ladda klasser automatiskt (Autoloading PSR-4).
 
 ```text
@@ -73,21 +108,24 @@ Vi använder Composer för att ladda klasser automatiskt (Autoloading PSR-4).
 ```
 
 ### Konfigurera Composer (`composer.json`)
+
 För att autoloading ska fungera:
+
 ```json
 {
-    "require": {
-        "bcosca/fatfree-core": "^3.7"
-    },
-    "autoload": {
-        "psr-4": {
-            "Controllers\\": "app/Controllers/",
-            "Models\\": "app/Models/"
-        }
+  "require": {
+    "bcosca/fatfree-core": "^3.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Controllers\\": "app/Controllers/",
+      "Models\\": "app/Models/"
     }
+  }
 }
 ```
-*Kom ihåg att köra `composer dump-autoload` om du ändrar i `autoload`-sektionen.*
+
+_Kom ihåg att köra `composer dump-autoload` om du ändrar i `autoload`-sektionen._
 
 ---
 
@@ -96,6 +134,7 @@ För att autoloading ska fungera:
 Här är en steg-för-steg guide för att sätta upp grunden:
 
 1.  **Skapa projektmapp och installera Composer:**
+
     ```bash
     mkdir mitt_projekt
     cd mitt_projekt
@@ -105,17 +144,19 @@ Här är en steg-för-steg guide för att sätta upp grunden:
     ```
 
 2.  **Skapa mappstruktur:**
+
     ```bash
     mkdir -p app/Controllers app/Models app/Views config
     ```
 
 3.  **Skapa din konfiguration (`config.ini`):**
+
     ```ini
     [globals]
     DEBUG=3
     UI=app/Views/
     AUTOLOAD=app/Controllers/;app/Models/
-    
+
     # Databasinställningar
     db_dns=mysql:host=localhost;dbname=ditt_db_namn;port=3306
     db_user=din_anvandare
@@ -123,6 +164,7 @@ Här är en steg-för-steg guide för att sätta upp grunden:
     ```
 
 4.  **Skapa din startpunkt (`index.php`):**
+
     ```php
     <?php
     require 'vendor/autoload.php';
@@ -148,6 +190,7 @@ Här är en steg-för-steg guide för att sätta upp grunden:
 ## Tips & Råd för utveckling
 
 ### Lägga till en ny Controller
+
 En Controller hanterar logiken. Skapa en fil i `app/Controllers`, t.ex. `HomeController.php`.
 
 ```php
@@ -164,6 +207,7 @@ class HomeController {
 ```
 
 ### Lägga till en ny Model
+
 En Model representerar en tabell i databasen. Skapa t.ex. `User.php` i `app/Models`.
 
 ```php
@@ -182,12 +226,13 @@ class User extends \DB\SQL\Mapper {
 ```
 
 ### Använda modellen i Controllern
+
 ```php
 public function index($f3) {
     $db = $f3->get('DB');
     $userModel = new \Models\User($db);
     $users = $userModel->all();
-    
+
     $f3->set('users', $users);
     echo \Template::instance()->render('user_list.htm');
 }
@@ -196,29 +241,33 @@ public function index($f3) {
 ---
 
 ## Inlämning
+
 Vi använder GitLab för inlämning, precis som i branschen.
 
 1.  **Repository:** Skapa ett privat repo på GitLab.
 2.  **Källkod:** Pusha din kod (exklusive `vendor/`-mappen! Skapa en `.gitignore`).
 3.  **Databas:** Exportera din databasstruktur till en `.sql`-fil och lägg i roten av repot.
 4.  **Rapport:** Skriv din dokumentation i `README.md`:
-    -   Hur fungerar appen?
-    -   Hur tänkte du kring MVC?
-    -   Säkerhetsåtgärder?
+    - Hur fungerar appen?
+    - Hur tänkte du kring MVC?
+    - Säkerhetsåtgärder?
 
-*OBS: Lägg till din lärare som "Reporter" eller "Maintainer" i projektet för att de ska kunna rätta.*
+_OBS: Lägg till din lärare som "Reporter" eller "Maintainer" i projektet för att de ska kunna rätta._
 
 ---
 
 ## Bedömning
 
-| Betyg | Krav |
-| :--- | :--- |
-| **E** | Fungerande inloggning och CRUD för temat. Mappstruktur för MVC finns, men viss logik kan ha hamnat fel. Grundläggande säkerhet. |
-| **C** | **Strikt MVC-separation**. Controllern är "tunn", Modellen hanterar data. Validering sker i modellen. Composer används korrekt. |
-| **A** | Koden är exemplariskt strukturerad (Namespaces, DRY). Hanterar edge-cases och avancerad validering. Reflektionen visar djup förståelse för arkitektur och säkerhet. |
+| Kriterium                       | E                                                                                                                                                              | C                                                                                                                                                   | A                                                                                                                                            |
+| :------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Teori & Begrepp**             | Beskriver översiktligt tekniken bakom dynamiska webbplatser och samspel. Använder enkel terminologi med viss säkerhet.                                         | Beskriver utförligt tekniken bakom dynamiska webbplatser och samspel. Använder terminologi med viss säkerhet.                                       | Beskriver utförligt och nyanserat teknik och samspel. Använder terminologi med säkerhet.                                                     |
+| **Projektplanering**            | Enkel projektplan med översiktlig beskrivning av funktion. Enkel dokumentation och utvärdering.                                                                | Genomarbetad projektplan med utförlig beskrivning av funktion och arkitektur. Noggrann dokumentation med nyanserade omdömen.                        | Genomarbetad projektplan (revideras vid behov) med utförlig/nyanserad beskrivning. Noggrann dokumentation med förbättringsförslag.           |
+| **Implementation & Arkitektur** | Presentationslogik är i begränsad utsträckning skild från övrig logik. Koden är i begränsad utsträckning läsbar/kommenterad. Enkel lösning för datapersistens. | Presentationslogik är skild från övrig logik (MVC). Koden följer standard och är översiktligt kommenterad. Enkel lösning för permanent datalagring. | Presentationslogik är skild från övrig logik. Koden följer standard och är utförligt kommenterad. Avancerad produkt med komplex datalagring. |
+| **Kvalitet & Säkerhet**         | Produkten är av tillfredsställande kvalitet. Identifierar ett fåtal sårbarheter och vidtar enkla åtgärder.                                                     | Produkten är av tillfredsställande kvalitet och testad. Identifierar sårbarheter och vidtar åtgärder.                                               | Produkten är av god kvalitet och testad (även manuellt). Identifierar flera sårbarheter och vidtar avancerade åtgärder.                      |
 
 ## Resurser
+
 - [Fat-Free Framework User Guide](https://fatfreeframework.com/3.9/user-guide) (Bibel för detta projekt!)
 - [Laravel](https://laravel.com/) (Överkurs)
-- [Kom igång med Composer](https://getcomposer.org/doc/00-intro.md)
+- [Kom igång med Composer](https://getcomposer.org/doc/00-intro.md) (Guide)
+- [Composer](https://getcomposer.org/) (Officiell webbplats)
