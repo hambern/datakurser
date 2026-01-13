@@ -49,11 +49,11 @@ Skriv en kort reflektion i din `markdown`-fil (eller en PDF-rapport):
 
 ## Bedömning
 
-| Nivå | Kriterier |
-| :--- | :--- |
-| **E** | Webbplatsen fungerar och har innehåll. Ett tema är valt. Grundläggande projektplan finns. |
-| **C** | Webbplatsen är anpassad med CSS (inte bara default-utseende). Du har installerat vettiga plugins. Strukturen är logisk. |
-| **A** | Webbplatsen har en professionell design och UX. Du har kanske gjort djupare ingrepp i koden (PHP/HTML) eller använt ett mer avancerat CMS (som Winter). Prestanda och tillgänglighet (SEO) är optimerad. |
+| Bedömningsområde | E | C | A |
+| :--- | :--- | :--- | :--- |
+| **Produkt & Kod** | Webbplatsen är publicerad och har relevant innehåll. Du har installerat systemet och gjort grundläggande anpassningar i HTML och CSS. Koden följer standarder tillräckligt väl för att sidan ska fungera. | Webbplatsen är responsiv och fungerar väl på mobila enheter. Designen är anpassad med egen CSS bortom standardmallen och innehåller enklare skript/plugins. Koden är validerad och följer god praxis. | Webbplatsen har en professionell design med hög användarvänlighet och tillgänglighet. Du har optimerat prestandan (laddtider) och gjort mer avancerade ingrepp i koden/temat för att styra utseendet exakt. |
+| **Process & Testning** | Du har följt en enkel projektplan och testat att sidan fungerar i en webbläsare. Dokumentationen beskriver översiktligt vilka moment du har genomfört. | Du har följt en genomarbetad plan och använt verktyg för att testa koden. Säkerhetsaspekter (som uppdateringar) har hanterats. Dokumentationen redogör för arbetsprocessen. | Du har reviderat planeringen vid behov och testat produkten omfattande på olika plattformar och enheter. Dokumentationen analyserar tekniska val och ger förslag på förbättringar. |
+| **Lagar & Upphovsrätt** | Du redogör översiktligt för upphovsrätten och följer den i ditt arbete (använder lagligt material). | Du redogör utförligt för upphovsrättsliga bestämmelser och tillämpar dem korrekt på allt innehåll på webbplatsen. | Du för välgrundade och nyanserade resonemang kring upphovsrätt, licensiering (t.ex. Creative Commons) och hur det påverkar publicering på webben. |
 
 ## Resurser
 - [WordPress.org](https://wordpress.org/download/)
