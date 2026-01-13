@@ -36,14 +36,18 @@ Skapa en kort projektplan (markdown-fil) där du besvarar:
 ### Fas 3: Bygg & Anpassa
 -   **Tema:** Välj ett tema som passar syftet.
 -   **Modifiera:** Använd CSS för att ändra färger, typsnitt och layout så det blir personligt. *Att bara använda ett färdigt tema rakt av ger lågt betyg.*
--   **Innehåll:** Skapa minst 3 undersidor/inlägg (t.ex. "Om oss", "Kontakt", "Tjänster").
--   **Funktion:** Installera minst ett plugin (t.ex. Kontaktformulär, SEO-verktyg, Bildgalleri).
+-   **Innehåll:** Skapa minst 3 undersidor/inlägg (t.ex. "Blogg", "Om oss", "Kontakt", "Tjänster").
+-   **Funktion:** Installera gärna ett plugin (t.ex. Kontaktformulär, SEO-verktyg, Bildgalleri).
 
 ### Fas 4: Slutrapport
-Skriv en kort reflektion i din `markdown`-fil (eller en PDF-rapport):
+Skriv en kort reflektion i din `markdown`-fil eller i ett inlägg på sidan:
+-   Vad är det för sida? (Blogg, Portfolio, Företagssida?)
+-   Vilket system valde du och varför?
+-   Vem vänder du dig till?
 -   Hur var installationen? (Problem/Lösningar)
 -   Vilka plugins valde du och varför?
 -   Hur har du jobbat med tillgänglighet/användarvänlighet?
+-   Har du gjort några förändringar till CMS:ets grundfunktioner?
 
 ---
 
