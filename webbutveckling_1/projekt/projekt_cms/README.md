@@ -42,6 +42,7 @@ Skriv en kort reflektion i din `markdown`-fil (eller direkt på sidan):
 -   Hur fungerade installationen? (Problem/Lösningar)
 -   Vilka plugins/tillägg valde du och varför?
 -   Hur har du jobbat med tillgänglighet/användarvänlighet?
+-   Vilka regler angående upphovsrätt har du följt under arbetets gång?
 -   Har du gjort några specifika förändringar i koden (CSS/HTML/PHP)?
 
 ---
