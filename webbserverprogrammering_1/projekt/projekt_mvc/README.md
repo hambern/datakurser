@@ -12,6 +12,7 @@ Efter avslutat projekt ska du kunna:
 - **Ramverk:** Använda _Fat-Free Framework (F3)_ för routing, vyer och databas.
 - **Beroendehantering:** Använda _Composer_ för att installera och hantera bibliotek.
 - **Säkerhet:** Skydda applikationen mot vanliga hot (SQL-injection, XSS) och hantera inloggning säkert.
+- **Integration:** Kommunicera med en extern klient via ett API
 
 ---
 
@@ -52,7 +53,7 @@ Alla applikationer behöver användarhantering. Du ska bygga:
 - **Registrering:** Spara användare i databasen (lösenord _måste_ hash:as med `password_hash`).
 - **Inloggning:** Validera användare och skapa en session (`password_verify`).
 - **Profilsida:** En sida där användaren kan se och redigera sin info.
-- **Åtkomstskydd:** Sidor som kräver inloggning ska inte gå att nås av gäster (omdirigera till inloggning).
+- **Åtkomstskydd:** Sidor som kräver inloggning ska inte gå att nås av gäster (omdirigera till inloggning). Detta inkluderar token-inloggning för API:et.
 
 ### 2. Det fria temat
 
@@ -62,10 +63,6 @@ Du bestämmer vad applikationen gör. Kravet är att data ska kopplas till anvä
 
 - _Blogg:_ Användare skriver inlägg.
 - _Träningsdagbok:_ Logga träningspass.
-- _Receptbok:_ Spara favoritrecept.
-
----
-
 - _Receptbok:_ Spara favoritrecept.
 
 ---
@@ -200,7 +197,7 @@ Här är en steg-för-steg guide för att sätta upp grunden:
 
 ---
 
-## Tips & Råd för utveckling
+## Tips & råd för utveckling
 
 ### Lägga till en ny Controller
 
