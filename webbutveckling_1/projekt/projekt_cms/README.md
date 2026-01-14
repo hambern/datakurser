@@ -12,10 +12,19 @@ Efter avslutat projekt ska du kunna:
 
 ---
 
+[![](https://img.youtube.com/vi/WyNnDhywU5w/maxresdefault.jpg)](https://www.youtube.com/watch?v=WyNnDhywU5w)
+
 ## Välj ditt CMS
 Du har frihet att välja system, men här är några vanliga alternativ:
-1.  **WordPress:** Världens mest populära CMS. Enkelt att komma igång med, enormt utbud av plugins. *Bra för nybörjare.*
-2.  **Grav eller Kirby:** Flat-file CMS (kräver ingen databas). Snabbt, modernt och kodnära.
+1. **WordPress:** Världens mest populära CMS. Extremt enkelt att komma igång med, enormt utbud av plugins. *Bra för nybörjare.*
+2. **Grav:** Flat-file CMS (kräver ingen databas). Snabbt, modernt och kodnära.
+3. **Winter CMS**: Byggt på ramverket Laravel. Ett kraftfullt open-source-alternativ för dig som vill ha struktur och flexibilitet bortom färdiga mallar. *Bra för dig som vill utvecklas som programmerare*.
+
+Oavsett vilket CMS du väljer bör du ta dig tid och kolla igenom dokumentationen på deras hemsida.
+
+[![](https://img.youtube.com/vi/ZFGRB8KV_oA/maxresdefault.jpg)](https://www.youtube.com/watch?v=ZFGRB8KV_oA)
+
+[![](https://img.youtube.com/vi/Qj9GKSkH21k/maxresdefault.jpg)](https://www.youtube.com/watch?v=Qj9GKSkH21k)
 
 ## Arbetsgång
 
@@ -38,7 +47,7 @@ Skapa en kort projektplan (markdown-fil) där du besvarar:
 -   **Funktion:** Installera minst ett plugin/tillägg (t.ex. Kontaktformulär, SEO-verktyg, Bildgalleri).
 
 ### Fas 4: Slutrapport
-Skriv en kort reflektion i din `markdown`-fil (eller direkt på sidan):
+Skriv en kort reflektion i din `markdown`-fil (eller direkt på sidan i någon form):
 -   Hur fungerade installationen? (Problem/Lösningar)
 -   Vilka plugins/tillägg valde du och varför?
 -   Hur har du jobbat med tillgänglighet/användarvänlighet?
