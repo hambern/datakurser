@@ -12,25 +12,25 @@ Efter avslutat projekt ska du kunna:
 
 ---
 
-[![](https://img.youtube.com/vi/WyNnDhywU5w/maxresdefault.jpg)](https://www.youtube.com/watch?v=WyNnDhywU5w)
+
 
 ## Välj ditt CMS
-Du har frihet att välja system, men här är några vanliga alternativ:
+Du har frihet att välja system, men här är några vanliga open-source-alternativ (öppen källkod):
 1. **WordPress:** Världens mest populära CMS. Extremt enkelt att komma igång med, enormt utbud av plugins. *Bra för nybörjare.*
 2. **Grav:** Flat-file CMS (kräver ingen databas). Snabbt, modernt och kodnära.
 3. **Winter CMS**: Byggt på ramverket Laravel. Ett kraftfullt open-source-alternativ för dig som vill ha struktur och flexibilitet bortom färdiga mallar. *Bra för dig som vill utvecklas som programmerare*.
 
 Oavsett vilket CMS du väljer bör du ta dig tid och kolla igenom dokumentationen på deras hemsida.
 
+[![](https://img.youtube.com/vi/WyNnDhywU5w/maxresdefault.jpg)](https://www.youtube.com/watch?v=WyNnDhywU5w)
 [![](https://img.youtube.com/vi/ZFGRB8KV_oA/maxresdefault.jpg)](https://www.youtube.com/watch?v=ZFGRB8KV_oA)
-
 [![](https://img.youtube.com/vi/Qj9GKSkH21k/maxresdefault.jpg)](https://www.youtube.com/watch?v=Qj9GKSkH21k)
 
 ## Arbetsgång
 
 ### Fas 1: Planering
 Skapa en kort projektplan (markdown-fil) där du besvarar:
--   **Syfte:** Vad är det för sida? (Blogg, Portfolio, Företagssida?)
+-   **Syfte:** Vad är det för sida? (Blogg, CV, Portfolio, Företagssida?)
 -   **CMS-val:** Vilket system väljer du och varför?
 -   **Målgrupp:** Vem vänder du dig till?
 
