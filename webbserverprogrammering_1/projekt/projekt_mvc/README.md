@@ -165,7 +165,7 @@ Här är en steg-för-steg guide för att sätta upp grunden:
     AUTOLOAD=app/Controllers/;app/Models/
 
     # Databasinställningar
-    db_dns=mysql:host=localhost;dbname=ditt_db_namn;port=3306
+    db_dns=mysql:host=localhost;dbname=ditt_db_namn;port=3690
     db_user=din_anvandare
     db_pass=ditt_losenord
     ```
