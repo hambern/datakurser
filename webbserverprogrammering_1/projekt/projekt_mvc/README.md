@@ -286,6 +286,7 @@ _OBS: Lägg till din lärare som "Reporter" eller "Maintainer" i projektet för 
 ## Resurser
 
 - [Fat-Free Framework User Guide](https://fatfreeframework.com/3.9/user-guide) (Bibel för detta projekt!)
+- [F3-chat](https://gitlab.com/ornskoldsviks-gymnasium/f3-chat) (Exempel-projekt)
 - [Laravel](https://laravel.com/) (Överkurs)
 - [Kom igång med Composer](https://getcomposer.org/doc/00-intro.md) (Guide)
 - [Composer](https://getcomposer.org/) (Officiell webbplats)
