@@ -124,12 +124,11 @@ För att autoloading ska fungera:
 ```json
 {
   "require": {
-    "bcosca/fatfree": "^3.7"
+    "bcosca/fatfree": "^3.9"
   },
   "autoload": {
     "psr-4": {
-      "Controllers\\": "app/Controllers/",
-      "Models\\": "app/Models/"
+      "App\\": "app/"
     }
   }
 }
@@ -156,7 +155,7 @@ Här är en steg-för-steg guide för att sätta upp grunden:
 2.  **Skapa mappstruktur:**
 
     ```bash
-    mkdir -p app/Controllers app/Models app/Views config
+    mkdir -p app/Controllers app/Models app/Views
     ```
 
 3.  **Skapa din konfiguration (`config.ini`):**
@@ -190,7 +189,7 @@ Här är en steg-för-steg guide för att sätta upp grunden:
     ));
 
     // Exempel-route
-    $f3->route('GET /', 'Controllers\HomeController->index');
+    $f3->route('GET /', 'HomeController->index');
 
     $f3->run();
     ```
@@ -199,12 +198,27 @@ Här är en steg-för-steg guide för att sätta upp grunden:
 
 ## Tips & råd för utveckling
 
+### Skapa htaccess-filen
+
+Det är i htaccess du styr ur url:en interagerar med din applikation. Vi vill skicka all trafik till `index.php`.
+
+~~~
+RewriteEngine On
+
+RewriteRule ^(app|dict|ns|tmp)\/|\.ini$ - [R=404]
+
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php [L,QSA]
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
+~~~
+
 ### Lägga till en ny Controller
 
 En Controller hanterar logiken. Skapa en fil i `app/Controllers`, t.ex. `HomeController.php`.
 
 ```php
-namespace Controllers;
 
 class HomeController {
     public function index($f3) {
@@ -221,7 +235,6 @@ class HomeController {
 En Model representerar en tabell i databasen. Skapa t.ex. `User.php` i `app/Models`.
 
 ```php
-namespace Models;
 
 class User extends \DB\SQL\Mapper {
     public function __construct(\DB\SQL $db) {
@@ -240,7 +253,7 @@ class User extends \DB\SQL\Mapper {
 ```php
 public function index($f3) {
     $db = $f3->get('DB');
-    $userModel = new \Models\User($db);
+    $userModel = new User($db);
     $users = $userModel->all();
 
     $f3->set('users', $users);
