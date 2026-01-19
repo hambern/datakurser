@@ -147,8 +147,6 @@ Här är en steg-för-steg guide för att sätta upp grunden:
     ```bash
     mkdir mitt_projekt
     cd mitt_projekt
-    composer init
-    # Följ guiden, eller skapa composer.json manuellt enligt ovan
     composer require bcosca/fatfree
     ```
 
