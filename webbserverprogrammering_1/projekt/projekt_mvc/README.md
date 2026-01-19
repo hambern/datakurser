@@ -124,7 +124,7 @@ För att autoloading ska fungera:
 ```json
 {
   "require": {
-    "bcosca/fatfree-core": "^3.7"
+    "bcosca/fatfree": "^3.7"
   },
   "autoload": {
     "psr-4": {
@@ -150,7 +150,7 @@ Här är en steg-för-steg guide för att sätta upp grunden:
     cd mitt_projekt
     composer init
     # Följ guiden, eller skapa composer.json manuellt enligt ovan
-    composer require bcosca/fatfree-core
+    composer require bcosca/fatfree
     ```
 
 2.  **Skapa mappstruktur:**
