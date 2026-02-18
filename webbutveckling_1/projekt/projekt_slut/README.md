@@ -23,7 +23,7 @@ Handboken nämner **Flexbox** och **Grid**. För en modern webbplats är detta s
 
 Detta är ett direkt krav för betyg C och A.
 
-- **Optimering:** Följ handbokens råd om **WebP**. Om du använder stora JPG-bilder utan att ha skalat ner dem kommer din "Lighthouse-score" (se kapitel 4) att sjunka, vilket påverkar betyget på testningsmomentet.
+- **Optimering:** Följ handbokens råd om **WebP**. Om du använder stora JPG-bilder utan att ha skalat ner dem kommer din "Lighthouse-score" att sjunka, vilket påverkar betyget på testningsmomentet.
 
 ### 4. Säkerhet och juridik
 
@@ -44,7 +44,6 @@ Innan kodningen påbörjas ska projektet struktureras.
 - **Struktur och design:** Skapa en enkel skiss eller plan över sidans struktur och layout.
 - **Tidsplan:** Sätt upp realistiska delmål för arbetet.
 
-> [!IMPORTANT]
 > **Planeringen ska stämmas av och godkännas innan du går vidare till fas 2.**
 > Du får inte börja koda förrän din lärare gett tummen upp på din **projektidé och struktur**.
 
