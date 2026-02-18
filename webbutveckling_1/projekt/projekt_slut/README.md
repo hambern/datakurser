@@ -54,7 +54,7 @@ Webbplatsen ska byggas med korrekta tekniker och följa god praxis.
 - **Omfång:** Minst tre sammanlänkade undersidor kodade i semantisk HTML.
 - **Design och layout:** Sidan ska vara responsiv och fungera lika bra på mobila enheter som på stationära datorer. Du ska använda CSS Grid eller Flexbox. Om du använder ett CSS-ramverk måste du även visa att du kan skriva och anpassa egen CSS.
 - **Interaktivitet:** Minst ett fungerande formulär ska finnas med. Du ska även använda grundläggande JavaScript (DOM-skript) för att skapa dynamik på sidan. Koden ska struktureras i separata filer.
-  - _Notera:_ Denna kurs fokuserar på klientbaserad teknik. PHP kan användas som "bonus" eller orientering, men det är **JavaScript** som krävs för de högre betygen vad gäller interaktivitet.
+  - _Notera:_ Denna kurs fokuserar på klientbaserad teknik. **PHP** kan givetvis användas som "bonus" eller orientering, men det är **JavaScript** som krävs för de högre betygen vad gäller interaktivitet.
 - **Media:** Bilder ska vara anpassade i storlek, optimerade för snabb laddningstid och ha korrekta alternativtexter för att uppfylla tillgänglighetskrav.
 
 ## Fas 3: Testning
@@ -94,7 +94,7 @@ När du lämnar in ditt projekt, se till att din mappstruktur speglar handbokens
     slutrapport.pdf (Med testresultat från Lighthouse/W3C)
 ```
 
-## Bedömningsmatrix
+## Bedömningsmatris
 
 | Bedömningsområde                                | Nivå E                                                                                                                                                                                              | Nivå C                                                                                                                                                                                      | Nivå A                                                                                                                                                                                                                                                                       |
 | :---------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
