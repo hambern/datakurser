@@ -1,58 +1,51 @@
-# Slutprojekt: Visa dina kunskaper
+# Slutprojekt: Utveckling av webbplats
 
-## Syfte
-Detta är din chans att skina! Du ska planera, designa och bygga en webbplats från grunden. Här får du visa upp allt du lärt dig under kursen: HTML, CSS, Layout, Responsivitet, och kanske lite PHP/JS.
+Detta projekt knyter ihop kursens praktiska och teoretiska delar. Du ska planera, bygga, testa och utvärdera en webbplats. Syftet är att visa din helhetsförståelse för modern webbutveckling, från första skiss till en säker och tillgänglig slutprodukt.
 
-Detta projekt väger tungt för slutbetyget.
+Arbetet är indelat i fyra faser.
 
-## Mål
-Efter avslutat projekt ska du kunna:
-- **Projektledning:** Planera och genomföra ett större projekt.
-- **Fullständig Webbplats:** Bygga en sajt med flera undersidor.
-- **Kodkvalitet:** Skriva ren, validerad och semantisk kod.
-- **Dokumentation:** Beskriva dina val och reflektera över arbetet.
+## Fas 1: Planering
 
----
+Innan kodningen påbörjas ska projektet struktureras.
 
-## Projektidéer
-Du har stor frihet. Här är någa förslag:
--   **Portfolio:** En snygg sida som visar upp dina arbeten.
--   **Företagssida:** Webbplats åt ett (riktigt eller påhittat) företag.
--   **Webbshop (Frontend):** Produktsidor, varukorg (visuell), kassa.
--   **Spel:** Ett webbaserat spel eller quiz.
--   **Föreningssida:** För din sportklubb eller hobbyförening.
--   **API-tjänst:** En "Dashboard" (se API-uppgiften) men mycket mer avancerad.
+- **Målgrupp och syfte:** Vem bygger du för och vad är målet med webbplatsen?
+- **Struktur och design:** Skapa en övergripande webbplatskarta (sitemap) samt skisser (wireframes) som visar layouten för både mobil och dator.
+- **Tidsplan:** Sätt upp realistiska delmål för arbetet.
 
----
+_Planeringen ska stämmas av och godkännas innan du går vidare till fas 2._
 
-## Kravspecifikation
+## Fas 2: Produktion och kod
 
-### Teknisk Krav
-1.  **Omfång:** Minst 3 undersidor (t.ex. Start, Om oss, Kontakt).
-2.  **Responsivitet:** Måste fungera felfritt i mobilen (Hamburgermeny rekommenderas om du har många länkar).
-3.  **Formulär:** Minst ett fungerande formulär (t.ex. Kontaktformulär eller Boka-knapp).
-4.  **Media:** Bilder och/eller video ska finnas och vara optimerade (rätt format/storlek).
-5.  **Kod:** Du ska skriva HTML och CSS själv.
-    -   *Ramverk:* Du får använda Bootstrap eller Tailwind, men du måste visa att du kan skriva egen CSS också (t.ex. genom "Custom overrides").
+Webbplatsen ska byggas med korrekta tekniker och följa god praxis.
 
-### Dokumentation (Projektrapport)
-Du ska lämna in en rapport (PDF eller Markdown) som innehåller:
-1.  **Inledning:** Vad har du byggt och för vem?
-2.  **Skisser:** Visa dina "Wireframes" eller skisser från planeringen.
-3.  **Teknik:** Vilka verktyg har du använt? (VS Code, GIMP, ramverk...).
-4.  **Reflektion:** Vad var svårt? Vad är du mest nöjd med? Hur har du tänkt kring tillgänglighet?
+- **Omfång:** Minst tre sammanlänkade undersidor kodade i semantisk HTML.
+- **Design och layout:** Sidan ska vara responsiv och fungera lika bra på mobila enheter som på stationära datorer. Du ska använda CSS Grid eller Flexbox. Om du använder ett CSS-ramverk måste du även visa att du kan skriva och anpassa egen CSS.
+- **Interaktivitet:** Minst ett fungerande formulär ska finnas med. Du ska även använda grundläggande JavaScript (DOM-skript) för att skapa dynamik på sidan. Koden ska struktureras i separata filer.
+- **Media:** Bilder ska vara anpassade i storlek, optimerade för snabb laddningstid och ha korrekta alternativtexter för att uppfylla tillgänglighetskrav.
 
----
+## Fas 3: Testning
 
-## Bedömning
+En professionell webbplats måste kvalitetssäkras inför publicering.
 
-| Nivå | Kriterier |
-| :--- | :--- |
-| **E** | Webbplatsen fungerar och uppfyller grundkraven (3 sidor, formulär, responsiv). Koden är läsbar. Enkel rapport. |
-| **C** | Designen är genomtänkt och användarvänlig. Koden är välstrukturerad och validerad (inga fel i W3C-validatorn). Rapporten innehåller goda reflektioner. |
-| **A** | "Wow-inverkan". Designen är professionell och unik. Du använder avancerad CSS (Grid/Flexbox/Animationer) eller JavaScript. Rapporten är mycket utförlig och analyserar valen djupt. |
+- **Validering:** HTML och CSS ska valideras via W3C Validator för att säkerställa att inga syntaxfel finns.
+- **Tillgänglighet och prestanda:** Använd automatiserade testverktyg, till exempel Google Lighthouse, för att granska sidans laddningstid och tillgänglighet.
+- **Funktionstest:** Sidan ska testas manuellt i olika webbläsare och på olika skärmstorlekar.
 
-## Tips
--   **Börja enkelt:** Få grunden på plats först. Lägg till "lull-lull" (animationer etc.) sist.
--   **Planera:** Rita upp sidan på papper innan du börjar koda. Det sparar timmar!
--   **Validera:** Kör din kod genom [W3C Validator](https://validator.w3.org/) ofta.
+## Fas 4: Dokumentation och rapport
+
+Slutrapporten är central för bedömningen och krävs för att nå de högre betygsstegen. Den ska innehålla:
+
+- **Processutvärdering:** Hur fungerade planeringen? Vad stötte du på för tekniska problem och hur löste du dem?
+- **Testresultat:** Redovisa resultaten från dina manuella och automatiserade tester. Vilka åtgärder tvingades du göra för att förbättra prestanda och tillgänglighet?
+- **Säkerhet:** Vilka säkerhetsrisker finns, exempelvis i samband med inmatning i formulär? Hur kan tredjepartskod påverka säkerheten? Vilka säkerhetskrav bör ställas vid val av webbhotell?
+- **Juridik och etik:** Hur förhåller sig din webbplats till relevanta lagar, exempelvis GDPR? Vilka etiska överväganden krävs vid insamling av användardata?
+
+## Bedömningsmatrix
+
+| Bedömningsområde                                | Nivå E                                                                                                                                                                                              | Nivå C                                                                                                                                                                                      | Nivå A                                                                                                                                                                                                                                                                       |
+| :---------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Projektmetodik och planering**                | Upprättar en enkel projektplan (sitemap, wireframes). Utvecklar webbplatsen i samråd med handledare.                                                                                                | Upprättar en genomarbetad projektplan. Utvecklar webbplatsen efter samråd med handledare.                                                                                                   | Upprättar en genomarbetad projektplan och reviderar den vid behov. Utvecklar webbplatsen efter samråd med handledare.                                                                                                                                                        |
+| **Kodkvalitet och teknisk tillämpning**         | Koden följer standarder med tillfredsställande resultat. Omfattar någon av de grundläggande teknikerna för HTML och CSS. Bearbetar media för webben.                                                | Koden följer standarder med tillfredsställande resultat. Omfattar några grundläggande tekniker. Infogar enkla skript. Bearbetar media med viss säkerhet via flera moment.                   | Koden följer standarder med gott resultat. Omfattar flera tekniker för HTML/CSS. Infogar diskreta domskript. Bearbetar media med säkerhet via flera moment.                                                                                                                  |
+| **Testning, prestanda och tillgänglighet**      | Genomför begränsade tester. Testar i någon webbläsare och på någon plattform. Gör begränsade åtgärder för snabb medieladdning. Följer grundläggande tillgänglighet med tillfredsställande resultat. | Genomför automatiserade tester. Testar i några webbläsare och plattformar (dator/mobil). Vidtar åtgärder för snabb överföring. Kontrollerar tillgänglighet med några automatiserade tester. | Genomför omfattande automatiserade och manuella tester. Testar i flera webbläsare och plattformar. Optimerar för att reducera antal överföringar. Kontrollerar tillgänglighet via automatiserade tester och simuleringar. Följer tillgänglighetsprinciper med gott resultat. |
+| **Säkerhet, juridik och etik**                  | Redogör översiktligt för relevanta lagar och säkerhetslösningar, samt följer dem. För enkla resonemang om webbrelaterad etik och integritet.                                                        | Redogör utförligt för lagar och säkerhet. För välgrundade resonemang om etik/integritet. Beskriver hur tredjepartskod kan innebära säkerhetsproblem.                                        | Redogör utförligt och nyanserat för lagar och säkerhet. För välgrundade och nyanserade resonemang. Beskriver problem med tredjepartskod samt grundläggande säkerhetskriterier vid val av webbhotell.                                                                         |
+| **Dokumentation, utvärdering och webbens roll** | Gör en enkel dokumentation. Utvärderar arbetet med enkla omdömen. Använder terminologi med viss säkerhet.                                                                                           | Gör en noggrann dokumentation. Utvärderar resultatet med nyanserade omdömen. Använder terminologi med viss säkerhet.                                                                        | Gör en noggrann och utförlig dokumentation kopplad till generella principer och testresultat. Utvärderar med nyanserade omdömen och ger förslag på förbättringar. Använder terminologi med säkerhet.                                                                         |
