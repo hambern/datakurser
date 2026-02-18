@@ -23,7 +23,7 @@ Handboken nämner **Flexbox** och **Grid**. För en modern webbplats är detta s
 
 Detta är ett direkt krav för betyg C och A.
 
-- **Optimering:** Följ handbokens råd om **WebP**. Om du använder stora JPG-bilder utan att ha skalat ner dem kommer din "Lighthouse-score" att sjunka, vilket påverkar betyget på testningsmomentet.
+- **Optimering:** Följ handbokens råd om bildkomprimering. Om du använder stora bilder utan att ha skalat ner dem kommer din "Lighthouse-score" att sjunka, vilket påverkar betyget på testningsmomentet.
 
 ### 4. Säkerhet och juridik
 
