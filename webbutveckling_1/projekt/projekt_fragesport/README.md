@@ -66,11 +66,11 @@ Gör sidan snygg och användarvänlig!
 
 ## Bedömning
 
-| Nivå | Kriterier |
-| :--- | :--- |
-| **E** | Quizet fungerar med 10 frågor. Poäng räknas ut korrekt. Designen är enkel men funktionell. |
-| **C** | Du verifierar att användaren angett ett namn. Resultaten sparas och visas på en Highscore-lista. Sidan är responsiv. |
-| **A** | Avancerad funktionalitet: T.ex. visa en fråga i taget (JS/CSS), tidsbegränsning, eller att man inte kan göra om quizet direkt. Designen är mycket tilltalande. Koden är välstrukturerad. |
+| Kvalitet / Betygsnivå | **Betyget E** | **Betyget C** | **Betyget A** |
+|---|---|---|---|
+| **Funktionalitet & Kravuppfyllnad** | Quizet fungerar och har minst 10 frågor. Poängen beräknas korrekt. Enkel inmatning (t.ex. bara radio-buttons). | Validerar att namn angetts. Resultat sparas (fil/databas) och presenteras i en sorterad Highscore-lista. Sidan är responsiv och fungerar på mobila enheter. | Innehåller extra features som tidsbegränsning, "en fråga i taget"-flöde, eller spärrar. Hanterar blandade inputs (checkbox/radio) och ger användaren feedback på felaktiga svar. |
+| **Teknisk Implementation** | Koden följer standarder med "tillfredsställande resultat". Använder HTML/CSS för struktur och PHP för enkel beräkning. | Koden innehåller "enkla skript" (t.ex. JS-validering eller enkel CSS-interaktivitet). Strukturen är god och följer "etablerad god praxis". | Koden innehåller "diskreta domskript" (avancerad JS-interaktivitet). Koden är mycket välstrukturerad, säkerhetstänket är tydligt (t.ex. input-sanering), och lösningen är optimerad. |
+| **Design & Användarupplevelse** | Designen är enkel men fungerar. Bilder/media hanteras "enkelt". | Sidan anpassar sig efter skärmstorlek. Designen är enhetlig och "tillfredsställande". Bilder och media är anpassade. | Designen är "mycket tilltalande" och användarvänlig. Media integreras sömlöst och förhöjer upplevelsen. Gränssnittet känns professionellt / "App-likt". |
 
 ## Resurser
 - [Internetmuseum](https://www.internetmuseum.se/)

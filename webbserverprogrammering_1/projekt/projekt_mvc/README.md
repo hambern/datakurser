@@ -12,6 +12,7 @@ Efter avslutat projekt ska du kunna:
 - **Ramverk:** Använda _Fat-Free Framework (F3)_ för routing, vyer och databas.
 - **Beroendehantering:** Använda _Composer_ för att installera och hantera bibliotek.
 - **Säkerhet:** Skydda applikationen mot vanliga hot (SQL-injection, XSS) och hantera inloggning säkert.
+- **Integration:** Kommunicera med en extern klient via ett API
 
 ---
 
@@ -52,7 +53,7 @@ Alla applikationer behöver användarhantering. Du ska bygga:
 - **Registrering:** Spara användare i databasen (lösenord _måste_ hash:as med `password_hash`).
 - **Inloggning:** Validera användare och skapa en session (`password_verify`).
 - **Profilsida:** En sida där användaren kan se och redigera sin info.
-- **Åtkomstskydd:** Sidor som kräver inloggning ska inte gå att nås av gäster (omdirigera till inloggning).
+- **Åtkomstskydd:** Sidor som kräver inloggning ska inte gå att nås av gäster (omdirigera till inloggning). Detta inkluderar token-inloggning för API:et.
 
 ### 2. Det fria temat
 
@@ -62,10 +63,6 @@ Du bestämmer vad applikationen gör. Kravet är att data ska kopplas till anvä
 
 - _Blogg:_ Användare skriver inlägg.
 - _Träningsdagbok:_ Logga träningspass.
-- _Receptbok:_ Spara favoritrecept.
-
----
-
 - _Receptbok:_ Spara favoritrecept.
 
 ---
@@ -127,12 +124,11 @@ För att autoloading ska fungera:
 ```json
 {
   "require": {
-    "bcosca/fatfree-core": "^3.7"
+    "bcosca/fatfree": "^3.9"
   },
   "autoload": {
     "psr-4": {
-      "Controllers\\": "app/Controllers/",
-      "Models\\": "app/Models/"
+      "App\\": "app/"
     }
   }
 }
@@ -151,15 +147,13 @@ Här är en steg-för-steg guide för att sätta upp grunden:
     ```bash
     mkdir mitt_projekt
     cd mitt_projekt
-    composer init
-    # Följ guiden, eller skapa composer.json manuellt enligt ovan
-    composer require bcosca/fatfree-core
+    composer require bcosca/fatfree
     ```
 
 2.  **Skapa mappstruktur:**
 
     ```bash
-    mkdir -p app/Controllers app/Models app/Views config
+    mkdir -p app/Controllers app/Models app/Views
     ```
 
 3.  **Skapa din konfiguration (`config.ini`):**
@@ -171,7 +165,7 @@ Här är en steg-för-steg guide för att sätta upp grunden:
     AUTOLOAD=app/Controllers/;app/Models/
 
     # Databasinställningar
-    db_dns=mysql:host=localhost;dbname=ditt_db_namn;port=3306
+    db_dns=mysql:host=localhost;dbname=ditt_db_namn;port=3690
     db_user=din_anvandare
     db_pass=ditt_losenord
     ```
@@ -193,21 +187,36 @@ Här är en steg-för-steg guide för att sätta upp grunden:
     ));
 
     // Exempel-route
-    $f3->route('GET /', 'Controllers\HomeController->index');
+    $f3->route('GET /', 'HomeController->index');
 
     $f3->run();
     ```
 
 ---
 
-## Tips & Råd för utveckling
+## Tips & råd för utveckling
+
+### Skapa htaccess-filen
+
+Det är i htaccess du styr ur url:en interagerar med din applikation. Vi vill skicka all trafik till `index.php`.
+
+~~~
+RewriteEngine On
+
+RewriteRule ^(app|dict|ns|tmp)\/|\.ini$ - [R=404]
+
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php [L,QSA]
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
+~~~
 
 ### Lägga till en ny Controller
 
 En Controller hanterar logiken. Skapa en fil i `app/Controllers`, t.ex. `HomeController.php`.
 
 ```php
-namespace Controllers;
 
 class HomeController {
     public function index($f3) {
@@ -224,7 +233,6 @@ class HomeController {
 En Model representerar en tabell i databasen. Skapa t.ex. `User.php` i `app/Models`.
 
 ```php
-namespace Models;
 
 class User extends \DB\SQL\Mapper {
     public function __construct(\DB\SQL $db) {
@@ -243,7 +251,7 @@ class User extends \DB\SQL\Mapper {
 ```php
 public function index($f3) {
     $db = $f3->get('DB');
-    $userModel = new \Models\User($db);
+    $userModel = new User($db);
     $users = $userModel->all();
 
     $f3->set('users', $users);
@@ -278,6 +286,7 @@ _OBS: Lägg till din lärare som "Reporter" eller "Maintainer" i projektet för 
 ## Resurser
 
 - [Fat-Free Framework User Guide](https://fatfreeframework.com/3.9/user-guide) (Bibel för detta projekt!)
+- [F3-chat](https://gitlab.com/ornskoldsviks-gymnasium/f3-chat) (Exempel-projekt)
 - [Laravel](https://laravel.com/) (Överkurs)
 - [Kom igång med Composer](https://getcomposer.org/doc/00-intro.md) (Guide)
 - [Composer](https://getcomposer.org/) (Officiell webbplats)
