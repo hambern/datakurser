@@ -4,28 +4,28 @@ Detta projekt knyter ihop kursens praktiska och teoretiska delar. Du ska planera
 
 ## Bra tips på vägen
 
-För att lyckas med ditt slutprojekt, använd handbokens kapitel enligt följande plan:
+För att lyckas med ditt slutprojekt, använd [Handboken](../../teori/README.md) och dess kapitel enligt följande plan:
 
-### 1. Strukturera som ett proffs (Kapitel 2 & 3)
+### 1. Strukturera din kod
 
 Använd handbokens avsnitt om **Semantik**. En sida som bara består av `<div>` kommer inte att nå de högre betygsstegen.
 
 - **Check:** Har du använt `<header>`, `<nav>`, `<main>`, `<article>` och `<footer>`?
 - **Box-modellen:** Kom ihåg handbokens tips – använd `padding` för luft inuti element (t.ex. knappar) och `margin` för avstånd mellan element.
 
-### 2. Responsivitet och Layout (Kapitel 3)
+### 2. Responsivitet och layout
 
 Handboken nämner **Flexbox** och **Grid**. För en modern webbplats är detta standard.
 
 - **Mobil-först:** Börja koda för den lilla skärmen. Använd sedan `media queries` för att styra hur Grid-layouten expanderar på en dator.
 
-### 3. Media och Prestanda (Kapitel 4)
+### 3. Media och prestanda
 
 Detta är ett direkt krav för betyg C och A.
 
 - **Optimering:** Följ handbokens råd om **WebP**. Om du använder stora JPG-bilder utan att ha skalat ner dem kommer din "Lighthouse-score" (se kapitel 4) att sjunka, vilket påverkar betyget på testningsmomentet.
 
-### 4. Säkerhet och Juridik (Kapitel 1)
+### 4. Säkerhet och juridik
 
 I rapporten ska du reflektera över **GDPR** och **Upphovsrätt**.
 
