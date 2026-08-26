@@ -128,60 +128,78 @@ Genom att arbeta med AI-agenter i egna projekt lär du dig prompt-engineering, a
 
 ---
 
-## Webbutveckling 1 (Kursplan & Betygskriterier)
+## Webbutveckling — GY25 Ämnesplan
 
-**Kurskod:** WEUWEB01  
+**Kurskod:** WEBB1000X (Nivå 1)  
 **Omfattning:** 100 poäng
 
-### Centralt innehåll
+### Ämnets syfte
+Undervisningen i ämnet webbutveckling ska syfta till att eleverna utvecklar färdigheter i att skapa produkter med hjälp av olika webbtekniker. Undervisningen ska bidra till att eleverna utvecklar förståelse av hur webbteknik har utvecklats och används i samhället.
 
-Undervisningen i kursen ska behandla följande centrala innehåll:
-- Webben som plattform, dess historia och samhällspåverkan.
-- Teknisk orientering om webbens protokoll, adresser, säkerhet och samspelet mellan klient och server.
-- Publikation av webbplatser med och utan webbpubliceringssystem.
-- Processen för ett webbutvecklingsprojekt med målsättningar, planering, specifikation av struktur och design, kodning, optimering, testning, dokumentation och uppföljning.
-- Märkspråk och deras inbördes roller, syntax och semantik – där det huvudsakliga innehållet är standarderna för HTML och CSS samt orientering om ECMAScript och dokumentobjektsmodellen (DOM).
+Eleverna ska ges möjlighet att utveckla kunskaper om olika webbteknikers konstruktion och funktionalitet samt om samspelet mellan beställare, användare, formgivare och utvecklare. Genom undervisningen ska eleverna ges möjlighet att utveckla produkter som följer standarder och riktlinjer för god praxis, användbarhet och tillgänglighet. Undervisningen ska även leda till att eleverna utvecklar kunskaper om lagar och andra bestämmelser inom området samt förmåga att göra webbrelaterade etiska överväganden.
+
+I undervisningen ska eleverna ges möjlighet att utveckla kunskaper om och färdigheter i att använda verktyg för att producera och kontrollera den kod som hanteras av webbklienten. Eleverna ska även ges möjlighet att utveckla förmåga att använda relevant terminologi.
+
+Undervisningen ska ge eleverna möjlighet att arbeta praktiskt med utveckling av delar till en webbplats. Undervisningen ska också ge eleverna tillfälle till arbete i projektform. På så vis ska eleverna ges möjlighet att omsätta sina kunskaper i webbutveckling till omdömesgilla handlingar.
+
+---
+
+### Centralt innehåll (Nivå 1)
+
+Undervisningen i ämnet webbutveckling på nivå 1 ska behandla följande centrala innehåll:
+
+#### Webbens betydelse och funktion
+- Webben som plattform och dess samhällspåverkan.
+- Teknisk orientering om webbens protokoll, adresser och samspelet mellan klient och server.
+- Grundläggande terminologi inom området webbutveckling.
+
+#### Webbsidor
+- Märkspråk och deras inbördes roller, syntax och semantik med fokus på standarderna för HTML (hypertext markup language) och CSS (cascading style sheets).
+- Skapande av webbsidor med HTML och CSS.
+- Introduktion till responsiv design.
+- Översikt av alternativa metoder för att skapa och redigera webbsidor.
+- Användning av bilder och media i lämpliga format för webben.
+- Kvalitetssäkring av webblösningars funktion och validering av koders kvalitet.
 - Teckenkodning, begrepp, standarder och handhavande.
-- Bilder och media med alternativa format, optimering och tillgänglighet.
-- Riktlinjer för god praxis inom webbutveckling.
-- Interoperabilitet genom att följa standarder och testa på olika användaragenter.
-- Applikationer som fungerar oberoende av val av användaragent, operativsystem eller hårdvaruplattform och hur tillgänglighet uppnås även för användare med funktionsnedsättning.
-- Kvalitetssäkring av applikationens funktion och validering av kodens kvalitet.
-- Säkerhet och sätt att identifiera hot och sårbarheter samt hur attacker kan motverkas genom effektiva åtgärder.
-- Lagar och andra bestämmelser som styr digital information, till exempel personuppgiftslagen (GDPR) och upphovsrätt.
-- Terminologi inom området webbutveckling.
+- Introduktion till typsnitt, färgscheman och principer för layout av gränssnitt.
+- Orientering om javascript och DOM (dokumentobjektsmodellen).
 
-### Betygskriterier
+#### Tillgänglighet
+- Riktlinjer för god praxis och tillgänglighet inom webbutveckling.
+- Introduktion till hantering och anpassning av kod, bilder och media för att uppnå tillgänglighet.
+- Interoperabilitet genom standarder och testning på olika användaragenter.
+
+#### Webbutvecklingsprocessen
+- Utvecklingsprocessen för ett mindre webbprojekt med målsättning, planering och specifikation av struktur och design. Kodning och verifiering av funktion och dokumentation.
+
+#### Lagar och andra bestämmelser
+- Riktlinjer, lagar och andra bestämmelser som styr hantering av digital information, till exempel upphovsrätt och bestämmelser som gäller hantering av personuppgifter.
+- Etiska överväganden i samband med webbutveckling.
+
+---
+
+### Betygskriterier (GY25)
 
 #### Betyget E
-Eleven beskriver **översiktligt** webbens historia och dess påverkan på samhället och de grundläggande tekniker som webben bygger på. Eleven använder med **visst** handlag webbpubliceringssystem och redogör **översiktligt** för dess funktionalitet.
-
-Eleven upprättar en **enkel** projektplan för en tänkt produkt. Eleven utvecklar utifrån planen en produkt **i samråd** med handledare. I arbetet utvecklar eleven kod som med **tillfredsställande** resultat följer standarder och omfattar **någon** av de grundläggande teknikerna för märkspråk och stilmallar. Eleven bearbetar också **med viss säkerhet enkel** text, bild och eventuell annan media så att de anpassas till produkten.
-
-Produkten är av **tillfredsställande** kvalitet och följer etablerad god praxis vilket eleven kontrollerar med **begränsade** tester. Eleven testar produkten i **någon** webbläsare. Eleven testar också produkten på **någon** plattform och vidtar **begränsade** åtgärder för att åstadkomma snabb överföring av bilder eller andra mediafiler. Dessutom bygger eleven en webbplats som med **tillfredsställande** resultat följer grundläggande principer för tillgänglighet.
-
-När arbetet är utfört gör eleven en **enkel** dokumentation av de moment som har utförts och utvärderar med **enkla** omdömen sitt arbete och resultat. Eleven redogör **översiktligt** för innehållet i lagar och andra bestämmelser som rör publicering på webben samt följer dem i sitt arbete. Eleven redogör **översiktligt** för relevanta säkerhetslösningar samt hanterar lösenord och annan känslig data på ett etiskt riktigt sätt. Eleven för dessutom **enkla** resonemang om webbrelaterade frågor om etik och integritet. Eleven använder **med viss säkerhet** terminologi inom området.
+- Eleven visar **godtagbara** kunskaper om webbens betydelse och funktion.
+- Eleven skapar webblösningar med **viss** anpassning till syfte, användare och tillgänglighet.
+- Eleven planerar och genomför webbutvecklingsprojekt med **viss säkerhet**. Eleven utvärderar process och resultat med **enkla** omdömen.
+- Eleven gör med **viss säkerhet** etiska överväganden samt arbetar i enlighet med lagar och andra bestämmelser inom webbutveckling.
 
 #### Betyget D
 Elevens kunskaper bedöms sammantaget vara mellan C och E.
 
 #### Betyget C
-Eleven beskriver **utförligt** webbens historia och dess påverkan på samhället och de grundläggande tekniker som webben bygger på. Eleven använder med **gott** handlag webbpubliceringssystem och redogör **utförligt** för dess funktionalitet.
-
-Eleven upprättar en **genomarbetad** projektplan för en tänkt produkt. Eleven utvecklar utifrån planen en produkt **efter samråd** med handledare. I arbetet utvecklar eleven kod som med **tillfredsställande** resultat följer standarder och som omfattar **några** av de grundläggande teknikerna för märkspråk och stilmallar. **I produkten infogar eleven enkla skript**. Eleven bearbetar **med viss säkerhet och via flera moment** text, bild och eventuell annan media, så att de anpassas till produkten.
-
-Produkten är av **tillfredsställande** kvalitet och följer etablerad god praxis vilket eleven kontrollerar med **automatiserade** tester. Eleven testar produkten i **några** webbläsare. Eleven testar också produkten på **några** plattformar **inklusive traditionella datorer eller mobila enheter** och vidtar åtgärder för att åstadkomma snabb överföring av bilder och andra mediafiler. Dessutom bygger eleven en webbplats som med **tillfredsställande** resultat följer grundläggande principer för tillgänglighet **och kontrollerar detta med några automatiserade tester**.
-
-När arbetet är utfört gör eleven en **noggrann** dokumentation av de moment som har utförts och utvärderar med **nyanserade** omdömen sitt arbete och resultat. Eleven redogör **utförligt** för innehållet i lagar och andra bestämmelser som rör publicering på webben samt följer dem i sitt arbete. Eleven redogör **utförligt** för relevanta säkerhetslösningar samt hanterar lösenord och annan känslig data på ett etiskt riktigt sätt. Eleven för dessutom **välgrundade** resonemang om webbrelaterade frågor om etik och integritet. **Eleven beskriver även hur tredjepartskod kan innebära problem för produktens säkerhet**. Eleven använder **med viss säkerhet** terminologi inom området.
+- Eleven visar **goda** kunskaper om webbens betydelse och funktion.
+- Eleven skapar webblösningar med **god** anpassning till syfte, användare och tillgänglighet.
+- Eleven planerar och genomför webbutvecklingsprojekt med **säkerhet**. Eleven utvärderar process och resultat med **utvecklade** omdömen.
+- Eleven gör med **säkerhet** etiska överväganden samt arbetar i enlighet med lagar och andra bestämmelser inom webbutveckling.
 
 #### Betyget B
 Elevens kunskaper bedöms sammantaget vara mellan A och C.
 
 #### Betyget A
-Eleven beskriver **utförligt och nyanserat** webbens historia och dess påverkan på samhället och de grundläggande tekniker som webben bygger på. Eleven använder med **mycket gott** handlag webbpubliceringssystem och redogör **utförligt och nyanserat** för dess funktionalitet.
-
-Eleven upprättar en **genomarbetad** projektplan för en tänkt produkt och **reviderar den vid behov**. Eleven utvecklar utifrån planen en produkt **efter samråd** med handledare. I arbetet utvecklar eleven kod som med **gott** resultat följer standarder och som omfattar **flera** av de grundläggande teknikerna för märkspråk och stilmallar. **I produkten infogar eleven diskreta domskript**. Eleven bearbetar **med säkerhet och via flera moment** text, bild och eventuell annan media så att de anpassas till produkten.
-
-Produkten är av **god** kvalitet och följer etablerad god praxis vilket eleven kontrollerar med **omfattande automatiserade och manuella** tester. Eleven testar produkten i **flera** webbläsare. Eleven testar också produkten på **flera** plattformar **inklusive traditionella datorer och mobila enheter**, vidtar **omfattande** åtgärder **samt optimerar** bilder eller andra mediafiler för att åstadkomma snabb överföring av dessa **och för att reducera antalet överföringar per sida**. Dessutom bygger eleven en webbplats som med **gott** resultat följer grundläggande principer för tillgänglighet **och kontrollerar detta med automatiserade tester och simuleringar**.
-
-När arbetet är utfört gör eleven en **noggrann och utförlig** dokumentation av de moment som har utförts **med koppling till generella principer och testresultat** och utvärderar med **nyanserade** omdömen sitt arbete och resultat **samt ger förslag på hur arbetet kan förbättras**. Eleven redogör **utförligt och nyanserat** för innehållet i lagar och andra bestämmelser som rör publicering på webben samt följer dem i sitt arbete. Eleven redogör **utförligt och nyanserat** för relevanta säkerhetslösningar samt hanterar lösenord och annan känslig data på ett etiskt riktigt sätt. Eleven för dessutom **välgrundade och nyanserade** resonemang om webbrelaterade frågor om etik och integritet.
+- Eleven visar **mycket goda** kunskaper om webbens betydelse och funktion.
+- Eleven skapar webblösningar med **mycket god** anpassning till syfte, användare och tillgänglighet.
+- Eleven planerar och genomför webbutvecklingsprojekt med **god säkerhet**. Eleven utvärderar process och resultat med **välutvecklade** omdömen.
+- Eleven gör med **god säkerhet** etiska överväganden samt arbetar i enlighet med lagar och andra bestämmelser inom webbutveckling.
