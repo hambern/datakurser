@@ -41,32 +41,18 @@ Undervisningen i kursen ska behandla följande centrala innehåll:
 
 ---
 
-## Projektuppgifter
-Här är kursens praktiska moment. Du bör göra dem i denna ordning då kunskaperna bygger på varandra.
+## 🧭 Kursens Projektuppgifter
 
-1.  **[Drömdatorn](projekt/projekt_datorbygge)** (Hårdvara)
-    *   *Uppdrag:* Bygg en skräddarsydd dator åt en kund.
-    *   *Lär dig:* Komponenter, kompatibilitet och prestanda.
+Här är kursens praktiska moment. Du bör göra dem i denna ordning då kunskaperna bygger på varandra:
 
-2.  **[Linux-Utmaningen](projekt/projekt_linux)** (Operativsystem)
-    *   *Uppdrag:* Installera Linux och bemästra terminalen.
-    *   *Lär dig:* OS-installation, filhantering och Open Source.
-
-3.  **[Tech-Podden](projekt/projekt_podd)** (Samhälle & Historia)
-    *   *Uppdrag:* Spela in en podd om teknikens historia eller etik.
-    *   *Lär dig:* Teknikens påverkan på samhället och källkritik.
-
-4.  **[Arkitekten](projekt/projekt_natverk)** (Nätverk)
-    *   *Uppdrag:* Designa infrastrukturen för ett kontor eller LAN.
-    *   *Lär dig:* IP-adresser, routrar, switchar och Wi-Fi.
-
-5.  **[White Hat Hacker](projekt/projekt_sakerhet)** (Säkerhet)
-    *   *Uppdrag:* Genomför en säkerhetsgranskning (Audit).
-    *   *Lär dig:* Riskanalys, hotbilder och förebyggande åtgärder.
-
-6.  **[Uppfinnaren](projekt/projekt_iot)** (Innovation & Programmering)
-    *   *Uppdrag:* Designa en smart IoT-pryl för framtiden.
-    *   *Lär dig:* Enkel programmeringslogik, sensorer och privacy.
+| Projekt | Beskrivning | Vad du lär dig |
+| :--- | :--- | :--- |
+| **1. [Drömdatorn](projekt/projekt_datorbygge/)** | Bygg en skräddarsydd dator åt en kund utifrån dennes behov och budget. | Hårdvarukomponenter, kompatibilitet, processortyper och prestandaoptimering. |
+| **2. [Linux-Utmaningen](projekt/projekt_linux/)** | Installera Linux och bemästra terminalen och systemadministration. | OS-installation, filhantering, filrättigheter, bash och Open Source. |
+| **3. [Tech-Podden](projekt/projekt_podd/)** | Spela in ett poddavsnitt om teknikens historia, digitalisering eller etik. | Teknikens samhällspåverkan, etiska överväganden och källkritik. |
+| **4. [Arkitekten](projekt/projekt_natverk/)** | Designa nätverksinfrastrukturen för ett modernt kontor eller LAN. | IP-adresser, subnät, routrar, switchar, Wi-Fi och datakommunikation. |
+| **5. [White Hat Hacker](projekt/projekt_sakerhet/)** | Genomför en säkerhetsgranskning (Audit) och riskanalys. | Säkerhetsrisker, hotbilder, lösenordshantering och förebyggande skyddsåtgärder. |
+| **6. [Uppfinnaren](projekt/projekt_iot/)** | Designa en smart IoT-pryl för framtiden med sensorer och mikrokontroller. | Grundläggande programmeringslogik, sensorer, hårdvaruanpassning och integritet/privacy. |
 
 ---
 
