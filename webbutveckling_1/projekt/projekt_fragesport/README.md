@@ -7,20 +7,14 @@ Du ska skapa ett modernt och interaktivt webbquiz (frågesport) om **internets h
 
 ## 📚 Kunskapskrav & Vad du behöver läsa på om
 
-Innan du börjar skriva JavaScript-koden behöver du förstå hur variabler, funktioner och DOM samverkar:
-
-### 1. Teori i kursens handbok
-- **[Handboken: Kapitel 5 — JavaScript & Interaktivitet](../../teori/README.md#5-introduktion-till-javascript--interaktivitet)** (Hur man länkar in `script.js`, hittar element med `document.querySelector` och reagerar på klick med `addEventListener`).
-
-### 2. Rekommenderad läsning i The Odin Project (Foundations)
-Läs och gör exemplen i följande lektioner innan du bygger quiz-logiken:
+Innan du börjar bygga quizet läser du och genomför följande lektioner i **The Odin Project (Foundations)**:
 - 📖 **[Fundamentals Part 1: Variables & Numbers](https://www.theodinproject.com/lessons/foundations-javascript-basics)** — Variabler (`let`, `const`), datatyper och grundläggande aritmetik.
 - 📖 **[Fundamentals Part 2: Conditionals & Logic](https://www.theodinproject.com/lessons/foundations-fundamentals-part-2)** — `if / else`-satser, jämförelser (`===`) och logiska villkor.
 - 📖 **[Fundamentals Part 3: Functions](https://www.theodinproject.com/lessons/foundations-fundamentals-part-3)** — Hur man skapar och anropar funktioner.
-- 📖 **[Problem Solving](https://www.theodinproject.com/lessons/foundations-problem-solving)** — Hur man bryter ner ett stort programmeringsproblem i små, hanterbara delsteg ("pseudokod").
-- 📖 **[DOM Manipulation and Events](https://www.theodinproject.com/lessons/foundations-dom-manipulation-and-events)** — Hur JavaScript ändrar text, lägger till knappar och lyssnar på klickhändelser.
+- 📖 **[Problem Solving](https://www.theodinproject.com/lessons/foundations-problem-solving)** — Hur man bryter ner ett programmeringsproblem i små delsteg ("pseudokod").
+- 📖 **[DOM Manipulation and Events](https://www.theodinproject.com/lessons/foundations-dom-manipulation-and-events)** — Hur JavaScript hämtar element (`querySelector`), ändrar text och lyssnar på klick (`addEventListener`).
 
-### 3. Fakta & Innehåll
+### Fakta & Källor för dina frågor
 - 🌐 **[Internetmuseum.se](https://www.internetmuseum.se/)** — Här hämtar du fakta, årtal, bilder och kuriosa till dina quizfrågor (t.ex. webbens födelse, BBS:er, första e-postmeddelandet i Sverige m.m.).
 
 ---

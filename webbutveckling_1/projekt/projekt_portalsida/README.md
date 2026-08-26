@@ -7,20 +7,14 @@ Detta är kursens första och viktigaste "hem". Du ska skapa en **Portalsida** (
 
 ## 📚 Kunskapskrav & Vad du behöver läsa på om
 
-Innan och under tiden du bygger din portalsida behöver du förstå och använda följande koncept:
-
-### 1. Teori i kursens handbok
-- **[Handboken: Kapitel 1 — HTML5 & Semantik](../../teori/README.md#1-html5-och-semantik)** (Skillnaden mellan `<div>` och semantiska taggar som `<header>`, `<nav>`, `<main>`, `<footer>`).
-- **[Handboken: Kapitel 2 — CSS & Design](../../teori/README.md#2-css-och-design)** (Hur man kopplar in en CSS-fil och stylar färger, typsnitt och marginaler).
-
-### 2. Rekommenderad läsning i The Odin Project (Foundations)
-Läs och gör övningarna i följande lektioner innan du börjar koda:
+Innan och under tiden du bygger din portalsida läser du och genomför övningarna i följande lektioner i **The Odin Project (Foundations)**:
 - 📖 **[Introduction to HTML and CSS](https://www.theodinproject.com/lessons/foundations-introduction-to-html-and-css)** — Grunderna i hur webbläsaren tolkar kod.
 - 📖 **[HTML Boilerplate](https://www.theodinproject.com/lessons/foundations-html-boilerplate)** — Den obligatoriska grundstrukturen (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`).
+- 📖 **[Elements and Tags](https://www.theodinproject.com/lessons/foundations-elements-and-tags)** — Hur HTML-taggar fungerar.
 - 📖 **[Working with Text](https://www.theodinproject.com/lessons/foundations-working-with-text)** — Rubriker (`<h1>`–`<h6>`), stycken (`<p>`) och fetstil/kursiv.
 - 📖 **[Lists](https://www.theodinproject.com/lessons/foundations-lists)** — Ordnade (`<ol>`) och oordnade (`<ul>`) punktlistor för din navigationsmeny.
 - 📖 **[Links and Images](https://www.theodinproject.com/lessons/foundations-links-and-images)** — Hur man skapar hyperlänkar (`<a href="...">`) och lägger in bilder (`<img src="..." alt="...">`).
-- 📖 **[Intro to CSS & The Cascade](https://www.theodinproject.com/lessons/foundations-intro-to-css)** — CSS-syntax, selektorer och externa formatmallar.
+- 📖 **[Intro to CSS & The Cascade](https://www.theodinproject.com/lessons/foundations-intro-to-css)** — CSS-syntax, selektorer och externa formatmallar (`style.css`).
 
 ---
 

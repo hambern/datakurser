@@ -11,21 +11,13 @@ Projektet fokuserar på två av webbutvecklingens viktigaste hörnstenar:
 
 ## 📚 Kunskapskrav & Vad du behöver läsa på om
 
-Innan och under tiden du skapar sidan behöver du förstå och tillämpa följande koncept:
-
-### 1. Teori i kursens handbok
-- **[Handboken: Kapitel 2 — CSS & Design](../../teori/README.md#2-css-och-design)** (Box-modellen: skillnaden mellan `padding` för inre luft och `margin` för yttre avstånd).
-- **[Handboken: Kapitel 3 — Responsivitet & Layout](../../teori/README.md#3-responsivitet-och-layout)** (Mobil-först, Flexbox för 1D-layouter och CSS Grid för 2D-rutnät).
-- **[Handboken: Kapitel 4 — Media & Prestanda](../../teori/README.md#4-bilder-video-och-prestanda)** (Varför WebP är överlägset, hur man komprimerar video och testar med Lighthouse).
-
-### 2. Rekommenderad läsning i The Odin Project (Foundations)
-Läs och genomför följande lektioner innan du bygger layouten:
-- 📖 **[The Box Model](https://www.theodinproject.com/lessons/foundations-the-box-model)** — Förstå hur element beräknar sin bredd, marginaler och ramar.
+Läs och genomför följande lektioner i **The Odin Project (Foundations)** innan och under tiden du bygger layouten:
+- 📖 **[The Box Model](https://www.theodinproject.com/lessons/foundations-the-box-model)** — Förstå hur element beräknar sin bredd, marginaler (`margin`), inre luft (`padding`) och ramar (`border`).
 - 📖 **[Block and Inline](https://www.theodinproject.com/lessons/foundations-block-and-inline)** — Skillnaden på block-element (`<div>`, `<section>`) och inline-element (`<span>`, `<a>`).
-- 📖 **[Introduction to Flexbox](https://www.theodinproject.com/lessons/foundations-introduction-to-flexbox)** — Hur `display: flex` fungerar.
+- 📖 **[Introduction to Flexbox](https://www.theodinproject.com/lessons/foundations-introduction-to-flexbox)** — Hur `display: flex` fungerar för moderna layouter.
 - 📖 **[Growing and Shrinking](https://www.theodinproject.com/lessons/foundations-growing-and-shrinking)** — `flex-grow`, `flex-shrink` och `flex-basis`.
 - 📖 **[Axes and Alignment](https://www.theodinproject.com/lessons/foundations-axes)** — `justify-content` och `align-items`.
-- 📖 **[Flexbox Alignment Practice](https://www.theodinproject.com/lessons/foundations-alignment)** — Praktiska layout-övningar.
+- 📖 **[Flexbox Alignment Practice](https://www.theodinproject.com/lessons/foundations-alignment)** — Praktiska övningar i Flexbox.
 
 ---
 

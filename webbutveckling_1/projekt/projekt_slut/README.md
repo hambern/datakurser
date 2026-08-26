@@ -4,45 +4,22 @@ Detta är kursens stora examensprojekt där du får **fullständig kreativ frihe
 
 Syftet är att knyta ihop alla dina kunskaper inom modern frontend-utveckling: från första skiss och planering, till en responsiv, tillgänglig och väloptimerad slutprodukt som du kan vara stolt över att visa upp!
 
-## Bra tips på vägen
+## 📚 Kunskapskrav & Fördjupning (The Odin Project)
 
-För att lyckas med ditt slutprojekt, använd [Handboken](../../teori/README.md) och dess kapitel enligt följande plan:
-
-### 1. Strukturera din kod
-
-Använd handbokens avsnitt om **Semantik**. En sida som bara består av `<div>` kommer inte att nå de högre betygsstegen.
-
-- **Check:** Har du använt `<header>`, `<nav>`, `<main>`, `<article>` och `<footer>`?
-- **Box-modellen:** Kom ihåg handbokens tips – använd `padding` för luft inuti element (t.ex. knappar) och `margin` för avstånd mellan element.
-
-### 2. Responsivitet och layout
-
-Handboken nämner **Flexbox** och **Grid**. För en modern webbplats är detta standard.
-
-- **Mobil-först:** Börja koda för den lilla skärmen. Använd sedan `media queries` för att styra hur Grid-layouten expanderar på en dator.
-
-### 3. Media och prestanda
-
-Detta är ett direkt krav för betyg C och A.
-
-- **Optimering:** Följ handbokens råd om bildkomprimering. Om du använder stora bilder utan att ha skalat ner dem kommer din "Lighthouse-score" att sjunka, vilket påverkar betyget på testningsmomentet.
-
-### 4. Säkerhet och juridik
-
-I rapporten ska du reflektera över **GDPR** och **Upphovsrätt**.
-
-- **Etik:** Om du har ett formulär (Fas 2), förklara i rapporten hur du hanterar datan enligt GDPR.
-- **Bilder:** Ange källor för dina bilder eller intyga att de är **Creative Commons**-licensierade.
+Slutprojektet sätter alla dina färdigheter på prov. Innan du sätter igång rekommenderas att repetera relevanta delar och projekt i vårt läromedel **The Odin Project (Foundations)**:
+- 📖 **[Project: Landing Page](https://www.theodinproject.com/lessons/foundations-landing-page)** — Inspiration och struktur för att bygga en komplett startsida med modern CSS Flexbox.
+- 📖 **[Project: Rock Paper Scissors](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)** — Praktisk logik, villkor och funktioner i JavaScript.
+- 📖 **[Project: Etch-a-Sketch](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)** — Avancerad DOM-manipulation, händelselyssnare och dynamisk rendering.
+- 📖 **[The Odin Project: Foundations Curriculum](https://www.theodinproject.com/paths/foundations/courses/foundations)** — Hela kursöversikten för HTML5, CSS och JavaScript.
 
 ---
 
-## 📚 Kunskapskrav & Fördjupning (The Odin Project)
+## 💡 Viktiga riktlinjer för en lyckad webbplats
 
-Slutprojektet sätter alla dina färdigheter på prov. Innan du sätter igång rekommenderas att repetera relevanta delar i vårt läromedel **The Odin Project (Foundations)**:
-- 📖 **[Project: Landing Page](https://www.theodinproject.com/lessons/foundations-landing-page)** — Inspiration och struktur för att bygga en komplett, modern startsida med CSS Flexbox.
-- 📖 **[Project: Rock Paper Scissors](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)** — Praktisk logik och problemnedbrytning i JavaScript.
-- 📖 **[Project: Etch-a-Sketch](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)** — Avancerad DOM-manipulation, händelselyssnare och dynamisk rendering.
-- 📖 **[Course Handbook](../../teori/README.md)** — Komplett uppslagsverk för HTML5-semantik, CSS-layout, mediaoptimering och DOM-skript.
+1. **Semantisk struktur:** Använd meningsfulla HTML5-element (`<header>`, `<nav>`, `<main>`, `<article>`, `<footer>`). En sida som bara består av ostrukturerade `<div>`-taggar når inte de högre betygen.
+2. **Responsivitet (Mobil-först):** Börja styla för mobila skärmar och använd `media queries` och CSS Grid/Flexbox för att expandera layouten på dator.
+3. **Media & Prestanda:** Skala och komprimera alla bilder (WebP/JPG) och videoklipp (MP4) så att sidan laddar blixtsnabbt och får höga poäng i **Lighthouse**.
+4. **Juridik & Etik:** Reflektera i rapporten över **GDPR** (om du har formulär) och ange källor eller **Creative Commons**-licenser för all media.
 
 ---
 

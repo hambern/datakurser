@@ -1,6 +1,6 @@
 # 📚 Datakurser — Örnsköldsviks Gymnasium
 
-Välkommen till samlingsplatsen för kursmaterial, övningsuppgifter, teorigenomgångar och projektinstruktioner inom IT- och webbutvecklingskurserna på **Örnsköldsviks Gymnasium**.
+Välkommen till samlingsplatsen för kursmaterial, övningsuppgifter och projektinstruktioner inom webbutveckling och programmering på **Örnsköldsviks Gymnasium**. Som huvudsakligt interaktivt läromedel använder vi **[The Odin Project](https://www.theodinproject.com/)**.
 
 ---
 

@@ -41,15 +41,10 @@ Vi använder skolans officiella startmall: **[Startmall med Flight PHP på GitHu
 
 ## 📚 Kunskapskrav & Vad du behöver läsa på om
 
-Innan och under tiden du bygger din MVC-applikation behöver du förstå följande arkitektoniska koncept:
-
-### 1. Startmallens genomgång & Teori
-- **[Startmallens dokumentation (README.md)](https://github.com/hambern/boilerplate-flight)** — Läs igenom startmallens kompletta teoretiska genomgång om Front Controller, `.htaccess`, routing, MVC och databaskoppling via `PdoWrapper`.
-- **[Handboken: MVC & Arkitektur](../../teori/README.md)** — Varför vi separerar presentationslogik (Views) från affärslogik (Controllers) och databaslogik (Models).
-
-### 2. Rekommenderad läsning & dokumentation
+Läs och genomför följande dokumentation och guider innan och under tiden du bygger din MVC-applikation:
+- 📖 **[Startmallens kompletta README](https://github.com/hambern/boilerplate-flight)** — Startmallens genomgång om Front Controller, `.htaccess`, routing, MVC-arkitektur och `PdoWrapper`.
 - 📖 **[The Odin Project: What is a Framework and MVC?](https://www.theodinproject.com/lessons/ruby-on-rails-introduction-to-frameworks)** — Konceptuell förklaring av hur ett webbramverk strukturerar kod enligt Model-View-Controller.
-- 📖 **[Flight PHP: Routing & Views](https://docs.flightphp.com/)** — Officiella guiden för Flight PHP v3 (`Flight::route`, `Flight::render`, `Flight::redirect`).
+- 📖 **[Flight PHP: Officiell dokumentation](https://docs.flightphp.com/)** — Läs om hur `Flight::route()`, `Flight::render()` och `Flight::redirect()` fungerar.
 - 📖 **[Composer: Getting Started](https://getcomposer.org/doc/00-intro.md)** — Hur `composer.json` och PSR-4 autoloading fungerar.
 - 📖 **[PHP: The Right Way — Säkerhet & Password Hashing](https://phptherightway.com/#password_hashing)** — Korrekt användning av `password_hash()` och `password_verify()`.
 

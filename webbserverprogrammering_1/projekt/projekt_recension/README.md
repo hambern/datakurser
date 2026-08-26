@@ -14,16 +14,11 @@ Efter avslutat projekt ska ni kunna:
 
 ## 📚 Kunskapskrav & Vad ni behöver läsa på om
 
-Innan ni börjar bygga er gemensamma applikation behöver ni förstå hur man samarbetar i Git och designar mer komplexa databaser:
-
-### 1. Teori i kursens handbok
-- **[Handboken: Databashantering (Många-till-Många relationer)](../../teori/README.md#databashantering-mysql--pdo)** — Hur kopplingstabeller (pivot tables) som `user_followers` binder samman data mellan två användare.
-- **[Handboken: Säkerhet & Sessions](../../teori/README.md#säkerhet)** — Hur man hanterar inloggning säkert med `password_hash`, `password_verify` och `$_SESSION`.
-
-### 2. Rekommenderad läsning & guider
+Läs och genomför följande guider innan ni börjar bygga er gemensamma applikation:
 - 📖 **[The Odin Project: Git in the Real World](https://www.theodinproject.com/lessons/foundations-git-basics)** — Arbetsflödet med branches, Pull Requests och kodgranskning i team.
 - 📖 **[GitHub Docs: Collaborating with Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests)** — Steg-för-steg hur man skapar och granskar en PR på GitHub.
-- 📖 **[The Odin Project: Database Relationships](https://www.theodinproject.com/lessons/nodejs-databases)** — En-till-Många och Många-till-Många relationer.
+- 📖 **[The Odin Project: Database Relationships](https://www.theodinproject.com/lessons/nodejs-databases)** — Förstå kopplingstabeller (pivot tables) för Många-till-Många (N:M) relationer (t.ex. `user_followers`).
+- 📖 **[PHP: The Right Way — Säkerhet & Sessions](https://phptherightway.com/#security)** — Säker användarautentisering med `password_hash()`, `password_verify()` och `$_SESSION`.
 
 ---
 
