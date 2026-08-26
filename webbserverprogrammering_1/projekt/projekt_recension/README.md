@@ -27,51 +27,33 @@ Ni arbetar två och två mot **samma GitHub-repository**, men kör koden på **v
 En central del i detta parprojekt är att uppleva och hantera ett vanligt problem inom systemutveckling: **Koden och databasen måste hållas synkroniserade mellan utvecklarna.**
 
 #### Problemet
-Om Person A bygger en funktion på branchen `feature/betyg` och lägger till en kolumn `rating` i sin databas och i sin PHP-kod:
+Om Person A bygger en funktion på branchen `feature/betyg` och lägger till en kolumn `rating` i sin lokala MySQL-databas och i sin PHP-kod:
 - När Person B hämtar koden via `git pull` kraschar applikationen med felmeddelandet: `Column 'rating' not found`.
 - Orsaken är att PHP-koden uppdaterades i Git, men Person B:s databas saknar den nya kolumnen.
 
-#### Kan man inte bara checka in database.sqlite direkt i Git?
-Det är tekniskt möjligt att checka in en `.sqlite`-fil i Git, men det leder snabbt till problem:
-1. **Binära merge-konflikter:** SQLite är en binär fil. Om båda personerna lägger till testdata lokalt och försöker slå ihop sina grenar uppstår en konflikt som Git inte kan lösa automatiskt. Man tvingas då kasta bort den ena personens ändringar.
-2. **Repots storlek:** Git sparar en ny kopia av hela databasfilen vid varje commit, vilket gör versionshistoriken tung och ineffektiv.
+#### Lösningen: Versionshantera databasens struktur (Schema och Migreringar)
+I professionella projekt versionshanterar man databasens **struktur (SQL-kod)** i Git i samma Pull Request som PHP-koden:
 
-Därför versionshanterar man i professionella projekt **databasens struktur (SQL-kod)** snarare än själva datafilen.
+1. **Lösenord och konfiguration:**
+   - Era personliga databasuppgifter till `student.oedu.se` (eller lokal server) ska **aldrig** checkas in i Git.
+   - Skapa en fil `config.sample.php` i repot som mall.
+   - Lägg den riktiga `config.php` i er `.gitignore`.
 
-#### Lösningen: Versionshantera strukturen (Schema och Migreringar)
-1. **Struktur (DDL):** `CREATE TABLE` och `ALTER TABLE` ska alltid checkas in i Git.
-2. **Lösenord och konfiguration:** `config.php` ska alltid läggas i `.gitignore`.
-3. **Aktiva databasfiler:** `database.sqlite` ska läggas i `.gitignore`.
+2. **Struktur (DDL) checkas in i Git:**
+   - Varje gång en tabell eller kolumn skapas eller ändras sparas SQL-kommandot i repot.
 
-**Två metoder att hantera SQL i repot:**
+**Två metoder att hantera SQL-filerna:**
 - **Metod 1: Migreringsmapp (`migrations/`)**
   Skapa en mapp med numrerade SQL-filer som körs i tur och ordning:
   - `01_create_users.sql` (Skapar tabellen users)
   - `02_create_reviews.sql` (Skapar tabellen reviews)
   - `03_add_followers.sql` (Skapar tabellen user_followers)
-  När en utvecklare gör `git pull` syns det direkt vilka nya SQL-filer som behöver köras.
+  När en utvecklare gör `git pull` syns det direkt vilka nya SQL-filer som behöver köras i phpMyAdmin.
 - **Metod 2: Samlad strukturfil (`database.sql`)**
   Håll en uppdaterad `database.sql` i repots rot som innehåller hela den aktuella tabellstrukturen.
 
 **Testdata (`seed.sql`):**
-Skapa gärna en fil `seed.sql` med några testanvändare och testrecensioner så att ni båda enkelt kan nollställa och testa applikationen under samma förutsättningar.
-
----
-
-#### Val av databasteknik för projektet
-
-- **Alternativ A: SQLite (Filbaserad utan extern server)**
-  SQLite sparar databasen i en lokal fil (`database.sqlite`).
-  ```php
-  $pdo = new PDO("sqlite:" . __DIR__ . "/database.sqlite");
-  ```
-  *Kom ihåg att lägga `database.sqlite` i `.gitignore` och istället checka in SQL-skripten.*
-
-- **Alternativ B: MySQL med config.php (Klassisk klient/server)**
-  Ni har varsin databas på `student.oedu.se` (eller lokalt).
-  - Skapa en mallfil `config.sample.php` i repot.
-  - Lägg `config.php` i `.gitignore` så personliga inloggningsuppgifter inte sprids.
-  - Synkronisera tabelländringar via era SQL-filer.
+Skapa gärna en fil `seed.sql` med några testanvändare och testrecensioner så att ni båda enkelt kan nollställa och testa applikationen under samma förutsättningar i phpMyAdmin.
 
 ---
 
