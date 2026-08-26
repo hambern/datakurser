@@ -1,6 +1,8 @@
 # Slutprojekt: Utveckling av webbplats
 
-Detta projekt knyter ihop kursens praktiska och teoretiska delar. Du ska planera, bygga, testa och utvärdera en webbplats. Syftet är att visa din helhetsförståelse för modern webbutveckling (klientbaserad), från första skiss till en säker och tillgänglig slutprodukt.
+Detta är kursens stora examensprojekt där du får **fullständig kreativ frihet** att välja idé, tema och utformning! Det kan vara en personlig portfolio, en webbplats för ett UF-företag eller en förening, ett interaktivt webbspel, en kampanjsida eller något helt annat du brinner för.
+
+Syftet är att knyta ihop alla dina kunskaper inom modern frontend-utveckling: från första skiss och planering, till en responsiv, tillgänglig och väloptimerad slutprodukt som du kan vara stolt över att visa upp!
 
 ## Bra tips på vägen
 

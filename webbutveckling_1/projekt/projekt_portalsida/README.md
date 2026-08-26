@@ -21,7 +21,7 @@ Skapa filen `index.html` direkt i din `public_html`-mapp.
 ### 2. Innehåll
 Sidan ska innehålla:
 1.  **Presentation:** Vem är du? (Bild + Text).
-2.  **Navigation:** En lista med länkar till kursens andra uppgifter (t.ex. "Gästbok", "Kluringen"). Denna lista kommer du fylla på allt eftersom.
+2.  **Navigation:** En lista med länkar till kursens uppgifter (t.ex. "Informationssida", "Webbquiz", "Slutprojekt"). Denna lista fyller du på allt eftersom du gör klart uppgifterna.
 3.  **Kontakt:** Din e-postadress.
 4.  **QR-Kod:** En QR-kod som pekar på din egen URL, så att man lätt kan öppna sidan i mobilen.
 

@@ -1,7 +1,9 @@
-# Projektuppgift: Kluringen (Webbgåtor)
+# Extrauppgift: Kluringen (Webbgåtor)
+
+> **💡 Frivillig extrauppgift:** Denna uppgift är en rolig utmaning för dig som blir klar tidigt med din portalsida eller vill testa din kreativitet och förståelse för webben!
 
 ## Syfte
-Du ska skapa en serie webbsidor som fungerar som ett spel. Varje sida innehåller en gåta. Lösningen på gåtan är namnet på nästa HTML-fil. Detta tränar din förståelse för hur webbadresser (URL:er) och filstrukturer fungerar, samt din kreativitet med HTML/CSS.
+Du ska skapa en serie webbsidor som fungerar som ett gåtspel. Varje sida innehåller en gåta. Lösningen på gåtan är namnet på nästa HTML-fil. Detta tränar din förståelse för hur webbadresser (URL:er) och filstrukturer fungerar, samt din kreativitet med HTML/CSS.
 
 Exempel: Om svaret på gåtan på `index.html` är "katt", så måste besökaren manuellt ändra adressen i webbläsaren till `katt.html` för att komma vidare.
 

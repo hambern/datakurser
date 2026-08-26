@@ -1,26 +1,23 @@
-# Projektuppgift: Interaktivt Webbquiz med JavaScript
+# Projektuppgift: Webbquiz om Internets Historia (JavaScript)
 
 ## Syfte
-Du ska skapa ett modernt och interaktivt webbquiz (frågesport) som körs helt i webbläsaren med hjälp av **HTML, CSS och JavaScript**. Syftet är att lära sig grundläggande programmeringslogik och **DOM-manipulation** – hur man gör en webbsida levande, reaktiv och rolig att använda utan att behöva ladda om sidan!
+Du ska skapa ett modernt och interaktivt webbquiz (frågesport) om **internets historia** som körs helt i webbläsaren med hjälp av **HTML, CSS och JavaScript**. Syftet är att lära sig grundläggande programmeringslogik och **DOM-manipulation** – hur man gör en webbsida levande, reaktiv och rolig att använda utan att behöva ladda om sidan!
 
 ## Mål
 Efter avslutat projekt ska du kunna:
 - **DOM-manipulation:** Hämta element med `document.querySelector()` och uppdatera text, HTML och CSS-klasser i realtid.
 - **Händelsehantering:** Lyssna på klickhändelser med `addEventListener`.
 - **Datastrukturer:** Organisera frågor, svarsalternativ och rätta svar i en JavaScript-array med objekt.
-- **Logik & Tillstånd:** Hålla koll på aktuell frågans index och användarens poäng med variabler och `if`-satser.
+- **Logik & Tillstånd:** Hålla koll på aktuell frågas index och användarens poäng med variabler och `if`-satser.
 - **Web Storage (Bonus):** Spara och hämta användarens bästa poäng med `localStorage`.
 
 ---
 
 ## Projektbeskrivning
 
-### 1. Välj tema för ditt quiz
-Du väljer själv vilket ämne ditt quiz ska handla om! Några förslag:
-- **Internets & Datorns Historia** (bra fakta finns på [Internetmuseum.se](https://www.internetmuseum.se/))
-- **Gaming & E-sport** (t.ex. känna igen spelfigurer eller spelcitat)
-- **Musik, Film & Serier**
-- **Klurigheter & Allmänbildning**
+### 1. Tema: Internets & Datorns Historia
+Frågorna i ditt quiz ska handla om internets framväxt, pionjärer (t.ex. Ada Lovelace och Tim Berners-Lee), webbläsarkrigen, sociala mediers intåg och hur internet kom till Sverige.
+- **Inspirationskälla:** [Internetmuseum.se](https://www.internetmuseum.se/) är en guldgruva av spännande utställningar och fakta att hämta frågor och bilder från!
 
 ### 2. Kravspecifikation
 Applikationen ska byggas som en modern single-page-upplevelse i tre vyer/faser (som visas och döljs dynamiskt med JavaScript eller CSS):

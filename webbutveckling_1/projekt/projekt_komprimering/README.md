@@ -1,77 +1,75 @@
-# Projektuppgift: Medieoptimering (Bilder & Video)
+# Projektuppgift: Informationssida om ditt intresse
 
 ## Syfte
-Webbprestanda är avgörande för användarupplevelsen. Stora bilder och tunga videor gör sidor långsamma, vilket driver bort besökare. I denna uppgift ska du lära dig optimera media för webben. Du ska skapa två versioner av samma sida: en "Långsam" (okomprimerad) och en "Snabb" (optimerad), och jämföra resultatet.
+Du ska bygga en modern, visuell och responsiv **informationssida om ett ämne du själv brinner för** (t.ex. din favoritartist, ett datorspel, motorsport, film/serier, en idrottsförening eller ett UF-företag). 
+
+Projektet fokuserar på två av webbutvecklingens viktigaste hörnstenar:
+1. **Modern layout & Responsivitet:** Använda **Flexbox** och **CSS Grid** så att sidan ser fantastisk ut på både mobil, surfplatta och dator.
+2. **Medieoptimering & Prestanda:** Bädda in film och bildgalleri med optimerade filstorlekar och moderna format (WebP och MP4) för blixtsnabb laddtid.
+
+---
 
 ## Mål
 Efter avslutat projekt ska du kunna:
-- **Bildformat:** Förstå skillnaden mellan JPEG, PNG och WebP.
-- **Komprimering:** Använda verktyg (GIMP, VLC) för att minska filstorlek utan att tappa för mycket kvalitet.
-- **Video:** Bädda in video med HTML5 (`<video>`) och använda formaten MP4 och WebM.
-- **Analys:** Mäta och reflektera över laddningstider.
+- **Flexbox & Grid:** Skapa flexibla och snygga layouter utan gamla tabeller eller floats.
+- **Responsiv design:** Använda *Media Queries* och `viewport` för att anpassa layouten sömlöst mellan mobil och desktop.
+- **Medieoptimering:** Skala om och komprimera bilder (WebP/JPG) och video (MP4/Handbrake) för webben.
+- **HTML5 Media:** Bädda in responsiva bilder och video med `<video>` och `<img>`.
+- **Tillgänglighet & Upphovsrätt:** Skriva meningsfulla `alt`-texter, säkerställa god färgkontrast och använda upphovsrättsskyddat material på ett lagligt sätt (t.ex. Creative Commons eller Pexels/Unsplash).
 
 ---
 
-## Arbetsgång
+## Kravspecifikation
 
-### 1. Hämta material
-Gå till [Pexels](https://www.pexels.com/) och ladda ner:
--   **3 högupplösta bilder** (Välj "Original Size", gärna 5MB+ styck).
--   **1 högupplöst video** (1080p eller 4K).
+### 1. Innehåll & Struktur
+- **Tema:** Fritt valt intresseområde.
+- **Hero-sektion:** En pampig toppsektion med en rubrik, kort ingress och en inbäddad videobakgrund eller presentationsvideo (`<video>`).
+- **Informationssektioner:** Text och layout uppbyggd med semantiska taggar (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`).
+- **Bildgalleri / Kort (Cards):** Ett bildgalleri eller en rutnätssektion byggd med **CSS Flexbox** eller **CSS Grid**.
 
-### 2. Skapa "Den Långsamma Sidan"
-Bygg en enkel HTML-sida (`slow.html`) där du lägger in originalfilerna direkt.
--   Använd `<img>` för bilderna.
--   Använd `<video>` för videon.
--   *Notera hur lång tid det tar att ladda sidan.*
+### 2. Medieoptimering (Viktigt!)
+Inga råfiler direkt från kameran får laddas upp!
+- **Bilder:** Ska skalas ner till rimlig webbupplösning (max 1920px bredd för hero, mindre för galleribilder) och sparas som **WebP** eller **JPG** (rekommenderad filstorlek: under 200 KB per bild). Använd verktyg som [Squoosh.app](https://squoosh.app/) eller GIMP.
+- **Video:** Komprimera din video med **Handbrake** eller **VLC** till MP4 (H.264) med rimlig bitrate så att den laddar snabbt utan lagg.
+- **Tillgänglighet:** Alla bilder ska ha beskrivande `alt`-texter och sidans färger ska ha tillräcklig kontrast för god läsbarhet.
 
-### 3. Optimera medierna
-Nu ska du skapa komprimerade kopior av filerna. Spara dem i en separat mapp (t.ex. `/optimized`).
-
-**Bilder (Använd GIMP):**
-1.  Öppna bilden.
-2.  Skala om den (`Image -> Scale Image`) till en rimlig webbstorlek (t.ex. max 1920px bredd, inte 6000px!).
-3.  Exportera som **WebP** eller **JPG** (med kvalitet ca 80%).
-4.  Jämför filstorleken mot originalet (Målet: <200KB per bild).
-
-**Video (Använd VLC eller Handbrake):**
-1.  Öppna VLC -> `Media` -> `Convert / Save`.
-2.  Lägg till din video.
-3.  Välj profil: **Video - H.264 + MP3 (MP4)** eller **Video - VP8 + Vorbis (WebM)**.
-4.  Klicka på skiftnyckeln för att justera bitrate (lägre bitrate = mindre fil).
-5.  Spara filen.
-
-### 4. Skapa "Den Snabba Sidan"
-Kopiera din HTML-sida till `fast.html`.
--   Byt ut länkarna så de pekar på dina *optimerade* filer.
--   Använd `width` och `height` attribut på bilderna för att undvika "layout shift".
-
-Ställ in videon så här för bästa kompatibilitet:
-```html
-<video controls width="100%">
-    <source src="video-optimized.mp4" type="video/mp4">
-    <source src="video-optimized.webm" type="video/webm">
-    Din webbläsare stöder inte videon.
-</video>
-```
-
-### 5. Analys
-Jämför sidorna.
--   Hur mycket plats sparade du totalt? (MB)
--   Ser man någon skillnad i kvalitet?
--   Använd webbläsarens utvecklarverktyg (Network Tab) för att se laddningstiderna.
+### 3. Responsivitet (Mobil-först)
+- Sidan ska fungera och se lika snygg och genomtänkt ut på en smal mobilskärm som på en bred datorskärm.
+- Använd minst en `@media (min-width: ...)` query för att bryta om layouten (t.ex. från 1 kolumn på mobil till 2-3 kolumner på dator).
 
 ---
 
-## Inlämning & Bedömning
-Lämna in mappen med båda HTML-filerna och alla medier. Skriv en kort `README.md` (eller reflektion) med dina mätresultat.
+## Arbetsgång steg för steg
 
-| Nivå | Kriterier |
-| :--- | :--- |
-| **E** | Du har skapat två sidor. Bilderna och videon på "Snabb" sidan är mindre än originalen. Media visas korrekt. |
-| **C** | Optimeringen är "lagom" (bra balans kvalitet/storlek). Du har skalat om bilderna till rätt upplösning, inte bara sänkt kvaliteten. HTML-koden är korrekt. |
-| **A** | Du använder moderna format (WebP). Du har analyserat resultatet djupt (nämner bitrate, upplösning). Sidorna är responsiva och har snygg design. |
+1. **Välj ämne & samla material:**
+   - Samla 3–6 fina bilder och 1 kort videoklipp (egna eller gratis från t.ex. [Pexels](https://www.pexels.com/) eller [Unsplash](https://unsplash.com/)).
+2. **Optimera medierna:**
+   - Skala och komprimera bilderna via [Squoosh.app](https://squoosh.app/) eller GIMP till WebP.
+   - Komprimera videon med Handbrake eller VLC.
+   - *Notera gärna filstorlekarna före och efter optimeringen!*
+3. **Bygg HTML-strukturen:**
+   - Skriv semantisk HTML5 i `index.html`.
+4. **Styla med CSS:**
+   - Bygg mobilvyn först, lägg till Flexbox för menyer och kort, och Grid för galleriet.
+   - Lägg till Media Queries för surfplatta och dator.
+5. **Kvalitetssäkra med Lighthouse:**
+   - Öppna webbläsarens utvecklarverktyg (F12) -> fliken **Lighthouse** -> kör en analys för att kontrollera din prestanda (*Performance*) och tillgänglighet (*Accessibility*).
 
-## Tips
--   [Squoosh.app](https://squoosh.app/) - Grymt webbverktyg från Google för att komprimera bilder visuellt.
--   **Handbrake** - Ofta bättre/enklare än VLC för videokomprimering om du får installera det.
+---
+
+## Bedömning
+
+| Kvalitet / Betygsnivå | **Betyget E** | **Betyget C** | **Betyget A** |
+| :--- | :--- | :--- | :--- |
+| **Layout & Responsivitet** | Sidan har en fungerande HTML- och CSS-struktur. Layouten anpassar sig i viss mån till mobila skärmar. | Layouten är välstrukturerad med Flexbox eller Grid. Sidan är helt responsiv med genomtänkta Media Queries för både mobil och desktop. | Mycket tilltalande och professionell layout med modern typografi, balanserad luft (padding/margin) och avancerad Flexbox/Grid-användning. |
+| **Medieoptimering & Prestanda** | Bilder och video visas och är komprimerade under originalstorlek. `alt`-texter finns. | Medierna är optimalt skalade och komprimerade till moderna format (WebP/MP4). Sidan laddar snabbt och uppnår bra resultat i Lighthouse. | Omfattande optimering (under 100-200 KB per bild) med minimal layout shift (`width`/`height` angivet). Mycket höga poäng i Lighthouse (Performance & Accessibility). |
+| **Källor & Tillgänglighet** | Materialet är lagligt använt. Grundläggande kontraster. | Källor/licenser redovisas tydligt (t.ex. Creative Commons/Pexels). Tillgängligheten är god med korrekta kontrastvärden och semantik. | Exemplarisk hantering av upphovsrätt och tillgänglighet med fullt semantisk HTML och genomtänkta alternativtexter. |
+
+---
+
+## Resurser & Verktyg
+- [Squoosh.app](https://squoosh.app/) (Blixtsnabb och visuell bildkomprimering direkt i webbläsaren)
+- [Handbrake](https://handbrake.fr/) (Bästa gratisprogrammet för videokomprimering)
+- [CSS Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [CSS Tricks: A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Pexels](https://www.pexels.com/) & [Unsplash](https://unsplash.com/) (Gratis royalty-fria bilder och videoklipp)

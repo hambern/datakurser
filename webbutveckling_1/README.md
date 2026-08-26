@@ -40,22 +40,23 @@ Kursen är uppbyggd kring ett fåtal kreativa och engagerande projekt där du f�
 
 | Projekt | Beskrivning | Vad du lär dig |
 | :--- | :--- | :--- |
-| **1. [Portalsida](projekt/projekt_portalsida/) & [Kluringen](projekt/projekt_kluring/)** | Skapa din personliga startsida på webbservern och bygg ett interaktivt escape-room/gåtspel (Notpron-stil). | HTML5-struktur, semantik, CSS, länkning, serverns filstruktur och webbläsarens inspektör. |
-| **2. [Medieoptimering & Webbmagasin](projekt/projekt_komprimering/)** | Välj ett eget intresseområde och bygg ett responsivt onlinemagasin med hero-video och bildgalleri. | CSS Flexbox/Grid, responsiv design, bild-/videokomprimering (WebP/MP4), prestandamätning (Lighthouse) och tillgänglighet (`alt`-texter). |
-| **3. [Interaktivt Webbquiz](projekt/projekt_fragesport/)** | Bygg ett interaktivt frågesportspel eller webbapp i webbläsaren. *(Valbart alternativ: [CMS-webbplats](projekt/projekt_cms/))*. | JavaScript, DOM-manipulation (`querySelector`, `addEventListener`), villkorsstyrd logik, poängräkning och `localStorage`. |
-| **4. [Slutprojektet](projekt/projekt_slut/)** | Planera, producera, testa och lansera ett komplett eget webbprojekt från grunden med full frihet. | Hela utvecklingsprocessen: Projektplanering, responsiv frontend, JavaScript-interaktivitet, Lighthouse-optimering och slutrapport. |
+| **1. [Portalsida](projekt/projekt_portalsida/)** | Skapa din personliga startsida och presentationshub på webbservern. | HTML5-struktur, semantik, CSS, länkning, filer på servern och responsiv viewport. |
+| **2. [Informationssida om ditt intresse](projekt/projekt_komprimering/)** | Välj ett eget favoritämne och bygg en responsiv sajt med hero-video och bildgalleri. | CSS Flexbox/Grid, responsiv design (Media Queries), bild-/videokomprimering (WebP/MP4), tillgänglighet (`alt`-texter) och upphovsrätt. |
+| **3. [Webbquiz om Internets Historia](projekt/projekt_fragesport/)** | Bygg ett interaktivt frågesportspel i webbläsaren med fakta från Internetmuseum. *(Valbart alternativ: [CMS-webbplats](projekt/projekt_cms/))*. | JavaScript, DOM-manipulation (`querySelector`, `addEventListener`), villkorsstyrd logik, poängräkning och `localStorage`. |
+| **4. [Slutprojektet](projekt/projekt_slut/)** | Planera, producera, testa och lansera ett komplett webbprojekt med **fullständig kreativ frihet** kring idé och tema. | Hela utvecklingsprocessen: Projektplanering, responsiv layout (Grid/Flexbox), JavaScript-interaktivitet, Lighthouse-optimering och slutrapport. |
 
 ---
 
-## Roliga kluringar och CSS-spel
+## 🧩 Roliga kluringar & CSS-spel (Frivillig träning & bonus)
 
-När du vill ta en paus från ditt huvudsakliga kodande kan du träna dina färdigheter på ett lekfullt sätt:
+När du blir klar tidigt med en uppgift eller vill ta en paus från ditt huvudsakliga kodande kan du träna dina färdigheter på ett lekfullt sätt:
 
 ### Roliga kluringar (Webbinspektören)
-1. **[Hambergs kluring 1](https://student.oedu.se/~mh6802/kul/mattias_kul_01/)** - Enkel men klurig gåta där du måste undersöka sidan noggrant.
-2. **[Hambergs kluring 2](https://student.oedu.se/~mh6802/kul/mattias_kul_02/)** - Mer utmanande gåta som kräver utforskande av sidans struktur.
-3. **[Hambergs kluring 3](https://student.oedu.se/~mh6802/kul/mattias_kul_03/)** - Klurig gåta där du verkligen måste tänka utanför boxen.
-4. **[Notpron](http://notpron.org/notpron/)** - Legendarisk onlinegåta känd som "världens svåraste webbspel".
+1. **[Kluringen (Webbgåtor)](projekt/projekt_kluring/)** - Skapa (eller lös) ett eget Notpron-liknande gåtspel med dolda ledtrådar i källkoden.
+2. **[Hambergs kluring 1](https://student.oedu.se/~mh6802/kul/mattias_kul_01/)** - Enkel men klurig gåta där du måste undersöka sidan noggrant.
+3. **[Hambergs kluring 2](https://student.oedu.se/~mh6802/kul/mattias_kul_02/)** - Mer utmanande gåta som kräver utforskande av sidans struktur.
+4. **[Hambergs kluring 3](https://student.oedu.se/~mh6802/kul/mattias_kul_03/)** - Klurig gåta där du verkligen måste tänka utanför boxen.
+5. **[Notpron](http://notpron.org/notpron/)** - Legendarisk onlinegåta känd som "världens svåraste webbspel".
 
 ### CSS-spel (Flexbox & Layout)
 1. **[Flexbox Froggy](https://flexboxfroggy.com/#sv)** - Hjälp en groda till sin näckros med Flexbox.
