@@ -144,29 +144,37 @@ _Kom ihåg att köra `composer dump-autoload` i terminalen om du lägger till ny
 
 ## Kom igång med projektet
 
-Här är en steg-för-steg guide för att sätta upp grunden utifrån startmallen:
+Eftersom startmallen är en **GitHub Template** skapar du ditt eget projekt med några klick:
 
-1.  **Klona startmallen från GitHub:**
+1.  **Skapa ditt eget repository från mallen:**
+    - Gå till **[github.com/hambern/boilerplate-flight](https://github.com/hambern/boilerplate-flight)**.
+    - Klicka på den gröna knappen **"Use this template"** uppe till höger och välj **"Create a new repository"**.
+    - Döp ditt nya repository till vad ditt projekt ska heta (t.ex. `mitt_projekt`).
+    - Klicka på **"Create repository"**.
+
+2.  **Klona DITT nya repository till din webbservermapp:**
 
     ```bash
-    git clone https://github.com/hambern/boilerplate-flight.git mitt_projekt
+    git clone git@github.com:ditt_användarnamn/mitt_projekt.git
     cd mitt_projekt
     ```
+    *(Ersätt `ditt_användarnamn` med ditt eget GitHub-användarnamn).*
 
-2.  **Installera beroenden med Composer:**
+3.  **Installera beroenden med Composer:**
 
     ```bash
     composer install
     ```
 
-3.  **Skapa din personliga databaskonfiguration:**
+4.  **Skapa din personliga databaskonfiguration:**
 
     ```bash
     cp config.sample.php config.php
     ```
     Öppna `config.php` och fyll i dina MySQL-uppgifter (`host`, `name`, `user`, `pass`).
 
-4.  **Testa att projektet fungerar i webbläsaren!**
+5.  **Testa att projektet fungerar i webbläsaren!**
+    Öppna `https://student.oedu.se/~ditt_login/mitt_projekt/` (eller din lokala adress). Startsidan ska nu visas.
 
 ---
 
