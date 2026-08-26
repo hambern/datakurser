@@ -28,7 +28,7 @@ Eftersom detta är första gången vi arbetar med ett modernt ramverk och paketh
 - **Separation:** Hjälper oss dela upp koden i Modell, Vy och Kontroller (MVC).
 - **Enkelhet & Kontroll:** Inget magiskt eller onödigt tungt i bakgrunden – du förstår hela kedjan.
 
-Vi använder skolans officiella startmall: **[boilerplate-flight på GitHub](https://github.com/hambern/boilerplate-flight)**.
+Vi använder skolans officiella startmall: **[Startmall med Flight PHP på GitHub](https://github.com/hambern/boilerplate-flight)**.
 
 ### Vad är Composer?
 
@@ -91,7 +91,7 @@ Separation av ansvar är kärnan i uppgiften:
 
 - **Språk:** PHP 8+
 - **Ramverk:** Flight PHP (v3)
-- **Startmall:** [github.com/hambern/boilerplate-flight](https://github.com/hambern/boilerplate-flight)
+- **Startmall:** [Startmall med Flight PHP på GitHub](https://github.com/hambern/boilerplate-flight)
 - **Pakethanterare:** Composer
 - **Databas:** MySQL / MariaDB (via `PdoWrapper`)
 
@@ -271,7 +271,7 @@ _OBS: Lägg till din lärare som "Collaborator" (under Settings -> Collaborators
 
 ## Resurser
 
-- [Startmall för Flight PHP på GitHub (boilerplate-flight)](https://github.com/hambern/boilerplate-flight) (Skolans officiella grundmall!)
+- [Startmall med Flight PHP på GitHub](https://github.com/hambern/boilerplate-flight) (Skolans officiella grundmall!)
 - [Flight PHP dokumentation](https://docs.flightphp.com/)
 - [Kom igång med Composer](https://getcomposer.org/doc/00-intro.md) (Guide)
 - [Laravel](https://laravel.com/) (Överkurs)
