@@ -27,7 +27,7 @@ Eftersom The Odin Project fokuserar på generella backend-koncept använder vi f
 
 Flight PHP är ett modernt och lättviktigt PHP-mikroramverk som gör det enkelt att bygga professionella och snabba webbapplikationer med routing och MVC. Vi använder skolans officiella startmall för Flight PHP:
 
-- [Startmall på GitLab](https://gitlab.com/ornskoldsviks-gymnasium/flight)
+- [Startmall på GitHub](https://github.com/hambern/boilerplate-flight)
 - [Flight PHP:s officiella dokumentation](https://docs.flightphp.com/)
 
 ## Uppgifter
@@ -66,7 +66,7 @@ Här är en översikt av uppgifterna för kursen i Webbserverprogrammering 1, me
 
 | **Uppgift** | **Beskrivning** | **Vad du lär dig** |
 | :--- | :--- | :--- |
-| **Examinerande MVC-Projekt** | Bygg en komplett applikation med **Model-View-Controller (MVC)**-arkitektur och mikroramverket **Flight PHP** (utifrån [startmallen på GitLab](https://gitlab.com/ornskoldsviks-gymnasium/flight)). Uppgiften inkluderar obligatorisk användarhantering (login, register, profil) och ett fritt valt tema (blogg, recept, etc.) med full CRUD-funktionalitet. | Strikt **Model-View-Controller (MVC)**-arkitektur. Använda ett PHP-mikroramverk (Flight PHP), routing och en Front-Controller. Hantera **sessions**, säker användarautentisering (`password_hash`) och skydda routes. Bygga skalbar kod enligt "God Praxis" och DRY-principen. |
+| **Examinerande MVC-Projekt** | Bygg en komplett applikation med **Model-View-Controller (MVC)**-arkitektur och mikroramverket **Flight PHP** (utifrån [startmallen på GitHub](https://github.com/hambern/boilerplate-flight)). Uppgiften inkluderar obligatorisk användarhantering (login, register, profil) och ett fritt valt tema (blogg, recept, etc.) med full CRUD-funktionalitet. | Strikt **Model-View-Controller (MVC)**-arkitektur. Använda ett PHP-mikroramverk (Flight PHP), routing och en Front-Controller. Hantera **sessions**, säker användarautentisering (`password_hash`) och skydda routes. Bygga skalbar kod enligt "God Praxis" och DRY-principen. |
 
 ### Information om utvecklingsservern som vi jobbar på
 
@@ -158,7 +158,7 @@ I dina **egna sidoprojekt** är det helt fritt fram att utforska och experimente
 
 Genom att arbeta med AI-agenter i egna projekt lär du dig prompt-engineering, att läsa och granska AI-genererad kod, och hur man snabbt tar en idé från skiss till fungerande applikation.
 
-> **💡 Tips:** Startmallen för Flight PHP ([gitlab.com/ornskoldsviks-gymnasium/flight](https://gitlab.com/ornskoldsviks-gymnasium/flight)) innehåller filen `AGENTS.md`, vilket gör att AI-agenter automatiskt förstår projektets arkitektur och hjälper dig bygga rätt!
+> **💡 Tips:** Startmallen för Flight PHP ([github.com/hambern/boilerplate-flight](https://github.com/hambern/boilerplate-flight)) innehåller filen `AGENTS.md`, vilket gör att AI-agenter automatiskt förstår projektets arkitektur och hjälper dig bygga rätt!
 
 > **⚠️ Tänk på vid kursens obligatoriska inlämningar:**
 > Vid kursens bedömningsuppgifter är det dina egna kunskaper och din egen förståelse som mäts. Använd gärna AI som en personlig lärare/tutor för att förklara felmeddelanden eller diskutera idéer, men se till att du själv förstår och kan förklara varje rad kod du lämnar in.

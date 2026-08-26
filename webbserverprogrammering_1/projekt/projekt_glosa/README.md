@@ -3,7 +3,7 @@
 ## Syfte
 Detta projekt utförs i samarbete med kursen *Programmering 2*. Ditt fokus i denna kurs (*Webbserverprogrammering 1*) är att bygga **backend-systemet** – ett API som hanterar data och logik. Frontend-applikationen (klienten) utvecklas ofta i den andra kursen eller av en annan utvecklare.
 
-Du kommer att använda [Flight PHP](https://gitlab.com/ornskoldsviks-gymnasium/flight) (eller valfritt annat ramverk, t.ex. Laravel) för att skapa en strukturerad och säker applikation.
+Du kommer att använda [Flight PHP](https://github.com/hambern/boilerplate-flight) (eller valfritt annat ramverk, t.ex. Laravel) för att skapa en strukturerad och säker applikation.
 
 ## Mål
 Efter avslutat projekt ska du kunna:
@@ -55,7 +55,7 @@ Här är en struktur du kan utgå ifrån. Exakta URL:er beror på din routing.
     - Skapa databasen och tabellerna i MySQL/phpMyAdmin.
 
 3.  **Backend-utveckling:**
-    - Utgå från startmallen [Flight på GitLab](https://gitlab.com/ornskoldsviks-gymnasium/flight) (eller installera via `composer require mikecao/flight`).
+    - Utgå från startmallen [boilerplate-flight på GitHub](https://github.com/hambern/boilerplate-flight) (eller installera via `composer require mikecao/flight`).
     - Bygg `User`-modellen och inloggningslogik.
     - Bygg `Word`-modellen och CRUD-funktionalitet.
     - Testa löpande.

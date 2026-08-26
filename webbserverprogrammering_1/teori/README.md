@@ -162,7 +162,7 @@ Riktiga proffs använder verktyg för att jobba snabbare och säkrare.
 Varför uppfinna hjulet? **Composer** är ett program som laddar ner färdiga bibliotek (paket) som andra skrivit. Vill du ha en funktion för att skicka mail? `composer require phpmailer/phpmailer`. Klart!
 
 ### Ramverk (Flight PHP)
-Ett ramverk ger dig en färdig grundstruktur (MVC, Routing, Databaskoppling) så du slipper bygga allt från noll varje gång. I denna kurs använder vi mikroramverket **Flight PHP** tillsammans med [skolans startmall på GitLab](https://gitlab.com/ornskoldsviks-gymnasium/flight) för att det är snabbt, enkelt och ger full förståelse för hur koden hänger ihop.
+Ett ramverk ger dig en färdig grundstruktur (MVC, Routing, Databaskoppling) så du slipper bygga allt från noll varje gång. I denna kurs använder vi mikroramverket **Flight PHP** tillsammans med [startmallen boilerplate-flight på GitHub](https://github.com/hambern/boilerplate-flight) för att det är snabbt, enkelt och ger full förståelse för hur koden hänger ihop.
 
 > **Tips:** I branschen är även **Laravel** mycket vanligt för större PHP-applikationer. Det är större och mer komplext än Flight PHP, men bygger på samma grundläggande principer (MVC, Routing, Composer).
 

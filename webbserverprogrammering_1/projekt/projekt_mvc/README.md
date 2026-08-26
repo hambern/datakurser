@@ -28,7 +28,7 @@ Eftersom detta är första gången vi arbetar med ett modernt ramverk och paketh
 - **Separation:** Hjälper oss dela upp koden i Modell, Vy och Kontroller (MVC).
 - **Enkelhet & Kontroll:** Inget magiskt eller onödigt tungt i bakgrunden – du förstår hela kedjan.
 
-Vi använder skolans officiella startmall: **[Flight på GitLab](https://gitlab.com/ornskoldsviks-gymnasium/flight)**.
+Vi använder skolans officiella startmall: **[boilerplate-flight på GitHub](https://github.com/hambern/boilerplate-flight)**.
 
 ### Vad är Composer?
 
@@ -91,7 +91,7 @@ Separation av ansvar är kärnan i uppgiften:
 
 - **Språk:** PHP 8+
 - **Ramverk:** Flight PHP (v3)
-- **Startmall:** [gitlab.com/ornskoldsviks-gymnasium/flight](https://gitlab.com/ornskoldsviks-gymnasium/flight)
+- **Startmall:** [github.com/hambern/boilerplate-flight](https://github.com/hambern/boilerplate-flight)
 - **Pakethanterare:** Composer
 - **Databas:** MySQL / MariaDB (via `PdoWrapper`)
 
@@ -146,10 +146,10 @@ _Kom ihåg att köra `composer dump-autoload` i terminalen om du lägger till ny
 
 Här är en steg-för-steg guide för att sätta upp grunden utifrån startmallen:
 
-1.  **Klona startmallen från GitLab:**
+1.  **Klona startmallen från GitHub:**
 
     ```bash
-    git clone https://gitlab.com/ornskoldsviks-gymnasium/flight.git mitt_projekt
+    git clone https://github.com/hambern/boilerplate-flight.git mitt_projekt
     cd mitt_projekt
     ```
 
@@ -263,7 +263,7 @@ _OBS: Lägg till din lärare som "Collaborator" (under Settings -> Collaborators
 
 ## Resurser
 
-- [Startmall för Flight PHP på GitLab](https://gitlab.com/ornskoldsviks-gymnasium/flight) (Skolans officiella grundmall!)
+- [Startmall för Flight PHP på GitHub (boilerplate-flight)](https://github.com/hambern/boilerplate-flight) (Skolans officiella grundmall!)
 - [Flight PHP dokumentation](https://docs.flightphp.com/)
 - [Kom igång med Composer](https://getcomposer.org/doc/00-intro.md) (Guide)
 - [Laravel](https://laravel.com/) (Överkurs)
