@@ -38,21 +38,24 @@ Skapa en separat fil, t.ex. `db.php`, för att hantera anslutningen. Detta gör 
 
 ```php
 <?php
-$servername = "localhost";
-$username = "ditt_användarnamn"; // Ersätt med ditt användarnamn
-$password = "ditt_lösenord";     // Ersätt med ditt lösenord
-$dbname   = "ditt_databasnamn";  // Ofta samma som användarnamnet
+$host   = "localhost";
+$dbname = "ditt_databasnamn";  // Ofta samma som ditt användarnamn
+$user   = "ditt_användarnamn";
+$pass   = "ditt_lösenord";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Anslutningen misslyckades: " . $conn->connect_error);
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $pass, [
+        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+    ]);
+} catch (PDOException $e) {
+    die("Anslutningen misslyckades: " . $e->getMessage());
 }
 ?>
 ```
 
 ### Steg 3: Spara inlägg (Säkert med Prepared Statements)
-Uppdatera din gästbokssida så att formuläret skickar data data till en PHP-fil (eller samma fil). **Viktigt:** Använd *Prepared Statements* för att skydda mot SQL-injections.
+Uppdatera din gästbokssida så att formuläret skickar data till en PHP-fil (eller samma fil). **Viktigt:** Använd *Prepared Statements* med platshållare (`?`) för att skydda mot SQL-injections.
 
 ```php
 <?php
@@ -60,20 +63,17 @@ require 'db.php'; // Inkludera databasanslutningen
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Hämta data från formuläret
-    $name = $_POST['name'];
-    $message = $_POST['message'];
+    $name    = $_POST['name'] ?? '';
+    $message = $_POST['message'] ?? '';
 
-    // Förbered SQL-frågan med platshållare (?)
-    $stmt = $conn->prepare("INSERT INTO guestbook_posts (name, message) VALUES (?, ?)");
-    $stmt->bind_param("ss", $name, $message); // "ss" betyder två strängar
-
-    if ($stmt->execute()) {
+    // Förbered SQL-frågan med platshållare (?) och kör säkert med execute()
+    $stmt = $pdo->prepare("INSERT INTO guestbook_posts (name, message) VALUES (?, ?)");
+    
+    if ($stmt->execute([$name, $message])) {
         echo "Inlägget har sparats!";
     } else {
-        echo "Fel vid sparning: " . $stmt->error;
+        echo "Fel vid sparning.";
     }
-
-    $stmt->close();
 }
 ?>
 ```
@@ -85,19 +85,19 @@ Hämta alla inlägg från databasen och loopa igenom dem för att visa dem på s
 <?php
 require 'db.php';
 
-$sql = "SELECT name, message, created_at FROM guestbook_posts ORDER BY created_at DESC";
-$result = $conn->query($sql);
+$stmt = $pdo->query("SELECT name, message, created_at FROM guestbook_posts ORDER BY created_at DESC");
+$posts = $stmt->fetchAll();
 ?>
 
 <div class="guestbook-posts">
-    <?php if ($result->num_rows > 0): ?>
-        <?php while($row = $result->fetch_assoc()): ?>
+    <?php if (!empty($posts)): ?>
+        <?php foreach ($posts as $post): ?>
             <div class="post">
-                <h3><?= htmlspecialchars($row['name']) ?></h3>
-                <p><?= htmlspecialchars($row['message']) ?></p>
-                <small><?= $row['created_at'] ?></small>
+                <h3><?= htmlspecialchars($post['name']) ?></h3>
+                <p><?= htmlspecialchars($post['message']) ?></p>
+                <small><?= $post['created_at'] ?></small>
             </div>
-        <?php endwhile; ?>
+        <?php endforeach; ?>
     <?php else: ?>
         <p>Inga inlägg ännu.</p>
     <?php endif; ?>

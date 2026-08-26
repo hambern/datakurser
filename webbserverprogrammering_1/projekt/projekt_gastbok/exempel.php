@@ -1,67 +1,75 @@
 <?php
-$servername     = "localhost";
-$username       = "mh6802";
-$password       = "hemligt lösenord!";
-$dbname         = "mh6802";
+$host   = "localhost";
+$dbname = "ditt_användarnamn";
+$user   = "ditt_användarnamn";
+$pass   = "ditt_lösenord";
 
-// Skapa anslutning
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Kontrollera anslutning
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+// Skapa PDO-anslutning
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $pass, [
+        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+    ]);
+} catch (PDOException $e) {
+    die("Anslutningsfel: " . $e->getMessage());
 }
 
-// Skapa ett nytt inlägg
-$firstname  = 'Robert';
-$lastname   = 'Bengtsson';
-$email      = 'mats@nilsson.se';
-$homepage   = 'mats.nilsson.se';
-$title      = 'hej';
-$message    = 'hej';
+// Hantera formulärinmatning (spara nytt inlägg säkert)
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $name    = trim($_POST['name'] ?? '');
+    $message = trim($_POST['message'] ?? '');
 
-// Skapar SQL-frågan som skapar ett inlägg
-$sql = "INSERT INTO guestbook_posts
-    (id, firstname, lastname, email, homepage, title, message, created_at)
-    VALUES
-    (NULL, '$firstname', '$lastname', '$email', '$homepage', '$title', '$message', CURRENT_TIMESTAMP);";
+    if (!empty($name) && !empty($message)) {
+        // Säkert med Prepared Statements och platshållare (?)
+        $stmt = $pdo->prepare("INSERT INTO guestbook_posts (name, message) VALUES (?, ?)");
+        $stmt->execute([$name, $message]);
+        
+        // Ladda om sidan för att förhindra att samma inlägg skickas igen vid F5
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit;
+    }
+}
 
-// Kör SQL-frågan
-$conn->query($sql);
-
-// Skapar en ny SQL-fråga som hämtar ut alla inlägg
-$sql = "SELECT * FROM guestbook_posts ORDER BY created_at ASC;";
-
-// Kör SQL-frågan
-$result = $conn->query($sql);
-
+// Hämta alla inlägg från databasen
+$stmt = $pdo->query("SELECT name, message, created_at FROM guestbook_posts ORDER BY created_at DESC");
+$posts = $stmt->fetchAll();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min nya gästbok</title>
+    <title>Min Databasgästbok</title>
 </head>
 <body>
-    <h1>Min nya gästbok</h1>
+    <h1>Min Gästbok (med MySQL & PDO)</h1>
 
-    <?php if ($result->num_rows > 0) : // Kontrollerar om det finns inlägg ?>
+    <form method="POST" action="">
+        <p>
+            <label for="name">Namn:</label><br>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label for="message">Meddelande:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </p>
+        <button type="submit">Skicka inlägg</button>
+    </form>
 
-        <h2>Det finns inlägg i gästboken!</h2>
+    <hr>
 
-        <?php while($row = $result->fetch_assoc()) : // Loopar igenom alla inlägg ?>
-
-            <p>
-                <h3><?= $row['title'] ?></h3>
-                <h4><?= $row['firstname']. ' ' .$row['lastname'] ?></h4>
-                <strong>Meddelande:</strong> <?= $row['message'] ?>
-            </p>
-            <hr>
-
-        <?php endwhile; ?>
-
+    <h2>Tidigare inlägg</h2>
+    <?php if (!empty($posts)): ?>
+        <?php foreach ($posts as $post): ?>
+            <div style="border-bottom: 1px solid #ccc; margin-bottom: 15px; padding-bottom: 10px;">
+                <h3><?= htmlspecialchars($post['name']) ?></h3>
+                <p><?= nl2br(htmlspecialchars($post['message'])) ?></p>
+                <small><em>Skrivet: <?= htmlspecialchars($post['created_at']) ?></em></small>
+            </div>
+        <?php endforeach; ?>
+    <?php else: ?>
+        <p>Inga inlägg ännu. Bli den första att skriva!</p>
     <?php endif; ?>
-    
+
 </body>
 </html>

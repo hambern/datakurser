@@ -79,8 +79,8 @@ SQL är språket vi använder för att prata med databasen. De fyra viktigaste k
 **Normalisering** betyder att man städar upp datan så den inte dubbleras.
 Istället för att spara "Stockholm" på varje användare, sparar vi `city_id` som pekar på en rad i stads-tabellen.
 
-### Koppla PHP till MySQL (PDO/MySQLi)
-Vi använder **PDO** (PHP Data Objects) för att koppla upp oss. Det är säkrare och modernare än gamla `mysql_connect`.
+### Koppla PHP till MySQL (PDO)
+Vi använder **PDO** (PHP Data Objects) för att koppla upp oss. Det är standarden i modern PHP-utveckling och säkrare än gamla metoder.
 
 ```php
 $pdo = new PDO("mysql:host=localhost;dbname=test", "user", "pass");
