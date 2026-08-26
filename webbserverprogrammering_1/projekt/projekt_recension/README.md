@@ -22,24 +22,52 @@ Ni arbetar två och två mot **samma GitHub-repository**, men kör koden på **v
 3.  **Pull Requests:** När en funktion är klar, skapa en Pull Request (PR) på GitHub. Den andra personen ska granska koden innan den slås ihop (mergas) med huvudkoden.
 4.  **Issues:** Använd "Issues" i GitHub för att fördela uppgifter ("Vem gör vad?").
 
-### 🗄️ Utmaningen: Hur hanterar ni databasen vid samarbete?
+### 🗄️ Den stora utmaningen: Versionshantera databasen i ett team
 
-När ni delar kod via GitHub vill ni **inte** ladda upp era personliga databaslösenord till repot, och ni har varsitt konto på servern. Ni har två kloka strategier att välja mellan:
+En av de viktigaste anledningarna till att vi gör detta projekt i par är att ni ska få uppleva och lösa ett av de vanligaste problemen inom systemutveckling: **Koden och databasen måste hållas synkroniserade mellan utvecklarna.**
 
-#### Strategi A: SQLite (Enkelt & noll konfiguration)
-SQLite är en fullvärdig SQL-databas som lagras som **en enda fil** (t.ex. `database.sqlite`).
-- **Fördel:** Inga lösenord, användarnamn eller MySQL-servrar behövs.
-- **PDO-koppling:**
+#### Problemet ni kommer att stöta på:
+Om Person A bygger en ny funktion på branchen `feature/betyg` och lägger till en kolumn `rating` i sin databas och i sin PHP-kod:
+- När Person B laddar ner koden via `git pull` kommer sidan att krascha med felmeddelandet: *`Column 'rating' not found`*.
+- Varför? För att PHP-koden uppdaterades i Git, men Person B:s databas saknar den nya kolumnen!
+
+#### Lösningen: "Gitta" databasens struktur (Schema & Migreringar)
+I professionella team checkar man **alltid** in förändringarna i databasstrukturen i Git i samma commit och Pull Request som PHP-koden:
+
+1. **Skilj på struktur och data:**
+   - **Struktur (DDL):** `CREATE TABLE`, `ALTER TABLE` ska **ALLTID** checkas in i Git.
+   - **Personliga lösenord:** `config.php` ska **ALDRIG** checkas in i Git (läggs i `.gitignore`).
+   - **Aktiv databas med rader:** `database.sqlite` eller MySQL-datafiler ska **INTE** checkas in (läggs i `.gitignore`).
+
+2. **Två sätt att versionshantera strukturen i ert repo:**
+   - **Metod 1: Migreringsmapp (`migrations/`) — *Proffsmetoden* ⭐**
+     Skapa en mapp som heter `migrations/` eller `sql/` i repot med numrerade SQL-filer:
+     - `01_create_users.sql` (Skapar tabellen users)
+     - `02_create_reviews.sql` (Skapar tabellen reviews)
+     - `03_add_followers.sql` (Skapar tabellen user_followers)
+     *När din kompis gör `git pull` ser hen direkt vilken SQL-fil som är ny och kör bara den i sin databas!*
+   - **Metod 2: Samlad `database.sql`**
+     Håll en uppdaterad `database.sql` i repots rot som alltid innehåller hela den aktuella tabellstrukturen.
+
+3. **Testdata (`seed.sql`):**
+   Skapa gärna en fil `seed.sql` med några fejkade testanvändare och testrecensioner så att ni båda snabbt kan nollställa och testa appen med samma förutsättningar.
+
+---
+
+#### Välj databaslösning för ert team:
+
+- **Alternativ A: SQLite (Noll konfiguration & filbaserat)**
+  SQLite sparar databasen i en lokal fil (`database.sqlite`).
   ```php
   $pdo = new PDO("sqlite:" . __DIR__ . "/database.sqlite");
   ```
-- **Att tänka på med Git:** Lägg `database.sqlite` i er `.gitignore` så ni inte får filkonflikter när båda sparar testdata. Skapa en `database.sql` med era `CREATE TABLE`-satser så att båda har samma tabellstruktur.
+  *Glöm inte att lägga `database.sqlite` i `.gitignore` och istället checka in era SQL-skript så ni inte får filkrockar!*
 
-#### Strategi B: MySQL med `config.php` (Branschstandard)
-Ni använder varsin MySQL-databas på `student.oedu.se` (eller lokalt):
-- Lägg `config.php` i er `.gitignore` så era personliga lösenord hålls hemliga och inte krockar.
-- Checka in en mallfil `config.sample.php` i repot som visar vilka variabler som behövs.
-- När någon skapar en ny tabell eller kolumn, uppdaterar ni filen `database.sql` i repot så att den andra personen kan importera den i sin phpMyAdmin.
+- **Alternativ B: MySQL med `config.php` (Klassiskt & branschstandard)**
+  Ni har varsin databas på `student.oedu.se` (eller lokalt).
+  - Skapa en mallfil `config.sample.php` i repot.
+  - Lägg `config.php` i `.gitignore` så era personliga lösenord hålls hemliga.
+  - Synka tabelländringar via era SQL-filer i Git.
 
 ---
 
@@ -82,8 +110,8 @@ Se till att repot innehåller:
 2.  En `README.md` med:
     -   Beskrivning av projektet.
     -   Instruktioner för hur man installerar/kör det (t.ex. databasinställningar).
-    -   Er reflektion kring samarbetet (Hur fungerade Git? Hur delade ni upp arbetet?).
-3.  En SQL-fil (`database.sql`) för att återskapa databasen.
+    -   Er reflektion kring samarbetet (Hur fungerade Git? Hur delade ni upp arbetet? Hur hanterade ni databassynkroniseringen?).
+3.  Databasfiler: En samlad SQL-fil (`database.sql`) eller en mapp med SQL-migreringar (`migrations/`), samt gärna `seed.sql` för testdata.
 
 ---
 
@@ -91,6 +119,6 @@ Se till att repot innehåller:
 
 | Nivå | Kriterier |
 | :--- | :--- |
-| **E** | Ni har en fungerande applikation med inloggning och möjlighet att skriva recensioner. Koden är versionshanterad men commits kan vara ostrukturerade. |
-| **C** | Applikationen har kategorier och sortering. Koden är uppdelad och strukturerad. Ni använder Git med branches och Issues. God databasdesign. |
-| **A** | Applikationen har sociala funktioner (Följa, Flöden). Koden är "Clean" och säker (skydd mot SQL-injection/XSS). Ni har ett tydligt Git-flöde med Code Reviews (Pull Requests). |
+| **E** | Ni har en fungerande applikation med inloggning och möjlighet att skriva recensioner. Koden och databasstrukturen är versionshanterade. |
+| **C** | Applikationen har kategorier och sortering. Koden är uppdelad och strukturerad. Ni använder Git med branches och Issues. Databasstrukturen är tydligt versionshanterad via SQL-filer (`database.sql` eller `migrations/`). God databasdesign. |
+| **A** | Applikationen har sociala funktioner (Följa, Flöden). Koden är "Clean" och säker (skydd mot SQL-injection/XSS). Ni har ett professionellt Git-flöde med Code Reviews (Pull Requests) där databasförändringar har checkats in i samma PR som motsvarande kodändringar. |
