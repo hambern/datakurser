@@ -1,20 +1,23 @@
 # Projektuppgift: Databasdriven Gästbok
 
 ## Syfte
-Denna uppgift syftar till att introducera dig för MySQL och Git – två grundläggande verktyg inom modern backend-utveckling. Du kommer att vidareutveckla din tidigare gästbok till att bli en databasdriven applikation där inlägg sparas permanent i en MySQL-databas. Du kommer också att använda versionshantering med Git för att strukturerat spara och logga dina kodändringar.
+I kursen *Webbutveckling 1* skapade du din personliga portalsida med HTML och CSS. Nu tar vi det stora steget in i servervärlden! 
+
+Denna uppgift syftar till att introducera dig för **PHP**, **MySQL** och **Git** – tre av webbens viktigaste backend-verktyg. Du ska bygga en **databasdriven gästbok** där besökare kan skriva in sitt namn och ett meddelande, som sparas permanent i din MySQL-databas och visas upp på sidan. Gästboken länkas självklart in från din befintliga portalsida på webbservern.
 
 ## Mål
 Efter att ha slutfört denna uppgift ska du kunna:
-- **MySQL:** Skapa databastabeller och strukturera data.
-- **PHP & SQL:** Använda PHP för att ansluta, spara och hämta data från en MySQL-databas på ett säkert sätt.
-- **Git:** Initiera repositories, skapa commits och synkronisera kod med GitHub.
-- **Fullstack-flöde:** Förstå hela flödet från formulärinmatning till databaslagring och presentation.
+- **MySQL & PDO:** Skapa tabeller och ansluta till en databas säkert med PDO i PHP.
+- **SQL (CRUD-grunder):** Spara data med `INSERT` och hämta data med `SELECT`.
+- **Säkerhet:** Förstå och implementera skydd mot SQL-injection (Prepared Statements med `?`) och XSS (`htmlspecialchars()`).
+- **Git & GitHub:** Skapa ett lokalt repo, göra tydliga commits och pusha koden till GitHub.
+- **Fullstack-flödet:** Förstå hela kedjan: *Formulär (HTML/CSS)* ➡️ *Serverbehandling (PHP)* ➡️ *Lagring (MySQL)* ➡️ *Presentation (HTML)*.
 
 ## Förberedelser
 Innan du börjar:
-1.  Se till att du har tillgång till din MySQL-databas (via phpMyAdmin eller terminalen).
-2.  Ha din tidigare gästbokskod (HTML/CSS) redo.
-3.  Ha ett konto på [GitHub](https://github.com).
+1. Se till att du har din personliga portalsida igång i `public_html/`.
+2. Ha dina inloggningsuppgifter till din MySQL-databas på `student.oedu.se` till hands.
+3. Ha ett konto på [GitHub](https://github.com).
 
 ---
 
@@ -116,7 +119,7 @@ Om du inte redan gjort det, öppna terminalen i din projektmapp:
 ```bash
 git init
 git add .
-git commit -m "Initial commit: Grundläggande gästbok utan databas"
+git commit -m "Initial commit: Grundläggande gästbok med HTML, PHP och MySQL"
 ```
 
 ### 2. Versionshantera ändringar

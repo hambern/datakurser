@@ -38,7 +38,7 @@ Här är en översikt av uppgifterna för kursen i Webbserverprogrammering 1, me
 
 | **Uppgift** | **Beskrivning** | **Vad du lär dig** |
 | :--- | :--- | :--- |
-| **Gästbok med databas** | Omvandla din befintliga gästbok till att använda en MySQL-databas för att spara inlägg. | Introduktion till MySQL och SQL. Grunder i att skapa tabeller, infoga och hämta data med `INSERT` och `SELECT`. Introduktion till Git och versionshantering. |
+| **Gästbok med databas** | Bygg en databasdriven gästbok med PHP, PDO och MySQL (som du länkar till från din portalsida). | Introduktion till PHP, PDO, MySQL och SQL (`CREATE TABLE`, `INSERT`, `SELECT`). Skydd mot SQLi/XSS. Första introduktionen till versionshantering med Git och GitHub. |
 
 ### [ToDo-applikation](projekt/projekt_todo/)
 
