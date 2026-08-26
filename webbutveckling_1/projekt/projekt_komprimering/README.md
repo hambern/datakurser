@@ -20,7 +20,7 @@ Gå till [Pexels](https://www.pexels.com/) och ladda ner:
 -   **1 högupplöst video** (1080p eller 4K).
 
 ### 2. Skapa "Den Långsamma Sidan"
-Bygg en enkel HTML-sida (`slow.html`) där du lägger in orginalfilerna direkt.
+Bygg en enkel HTML-sida (`slow.html`) där du lägger in originalfilerna direkt.
 -   Använd `<img>` för bilderna.
 -   Använd `<video>` för videon.
 -   *Notera hur lång tid det tar att ladda sidan.*

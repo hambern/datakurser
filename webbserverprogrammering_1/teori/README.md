@@ -62,7 +62,7 @@ Detta är speciella arrayer som PHP fyller åt dig automatiskt:
 
 ## 3. Databaser & SQL
 
-Tänka dig databasen som ett super-avancerat Excel-ark. Vi använder **MySQL**.
+Tänk dig databasen som ett superavancerat Excel-ark. Vi använder **MySQL**.
 
 ### Relationsdatabaser
 Vi sparar data i **Tabeller** (t.ex. `users`, `posts`). Tabellerna har **Relationer**:

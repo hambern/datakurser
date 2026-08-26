@@ -16,7 +16,7 @@ Hitta minst 5 säkerhetsrisker. Leta efter:
 2.  **Uppdateringar:** Kör de Windows 7? Är mobilen uppdaterad?
 3.  **Backups:** Finns det kopior på bilderna?
 4.  **Fysisk säkerhet:** Är dörren till serverrummet låst? Ligger laptopen framme i bilen?
-5.  **Pishing-koll:** Klickar de på länkar i konstiga mail?
+5.  **Phishing-koll:** Klickar de på länkar i konstiga mail?
 
 ### Steg 2: Rapporten
 Skriv en rapport till "kunden".

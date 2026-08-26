@@ -42,7 +42,7 @@ Undervisningen i kursen ska behandla följande centrala innehåll:
 ---
 
 ## Projektuppgifter
-Här är kursens praktiska moment. Du bör gör dem i denna ordning då kunskaperna bygger på varandra.
+Här är kursens praktiska moment. Du bör göra dem i denna ordning då kunskaperna bygger på varandra.
 
 1.  **[Drömdatorn](projekt/projekt_datorbygge)** (Hårdvara)
     *   *Uppdrag:* Bygg en skräddarsydd dator åt en kund.

@@ -32,7 +32,7 @@ Flight PHP är ett modernt och lättviktigt PHP-mikroramverk som gör det enkelt
 
 ## Uppgifter
 
-Här är en översikt av uppgifterna för kursen i Webbserverprogrammering 1, med fokus på att gradvis bygga upp dina färdigheter i databasprogrammering och webbutveckling. Varje uppgift bygger vidare på den tidigare och hjälper dig att stegvis lära dig tekniker som PHP, MySQL, Git, och Laravel.
+Här är en översikt av uppgifterna för kursen i Webbserverprogrammering 1, med fokus på att gradvis bygga upp dina färdigheter i databasprogrammering och webbutveckling. Varje uppgift bygger vidare på den tidigare och hjälper dig att stegvis lära dig tekniker som PHP, MySQL, Git och Flight PHP.
 
 ### [Gästbok med databas](projekt/projekt_gastbok/)
 

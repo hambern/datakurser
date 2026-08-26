@@ -10,7 +10,7 @@ Du har precis startat ditt eget IT-konsultbolag, *Custom Builds AB*. Du har fåt
 
 ## Uppdraget
 1.  **Research:** Använd sidor som [Komponentkoll](https://komponentkoll.se), [Prisjakt](https://www.prisjakt.nu) eller [Inet](https://www.inet.se/datorbyggare) för att plocka ihop delar.
-2.  **Kompabilitet:** Se till att delarna passar ihop! (Passar CPUn i sockeln? Räcker nätaggregatet (PSU) till grafikkortet?)
+2.  **Kompatibilitet:** Se till att delarna passar ihop! (Passar CPUn i sockeln? Räcker nätaggregatet (PSU) till grafikkortet?)
 3.  **Rapportera:** Skapa en offert (PDF eller snygg webbsida) som innehåller:
     *   Lista på alla komponenter med pris.
     *   En motivering till varför du valde just dessa delar.

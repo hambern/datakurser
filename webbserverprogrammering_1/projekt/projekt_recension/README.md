@@ -63,7 +63,7 @@ Se till att repot innehåller:
 2.  En `README.md` med:
     -   Beskrivning av projektet.
     -   Instruktioner för hur man installerar/kör det (t.ex. databasinställningar).
-    -   Erreflektion kring samarbetet (Hur fungerade Git? Hur delade ni upp arbetet?).
+    -   Er reflektion kring samarbetet (Hur fungerade Git? Hur delade ni upp arbetet?).
 3.  En SQL-fil (`database.sql`) för att återskapa databasen.
 
 ---
@@ -74,4 +74,4 @@ Se till att repot innehåller:
 | :--- | :--- |
 | **E** | Ni har en fungerande applikation med inloggning och möjlighet att skriva recensioner. Koden är versionshanterad men commits kan vara ostrukturerade. |
 | **C** | Applikationen har kategorier och sortering. Koden är uppdelad och strukturerad. Ni använder Git med branches och Issues. God databasdesign. |
-| **A** | Applikationen har sociala funktioner (Följa, Flöden). Koden är "Clean" och säker (skydd mot SQL-injection/XSS). Ni har ett tydligt Git-flöde med Code Reviews (Merge Requests). |
+| **A** | Applikationen har sociala funktioner (Följa, Flöden). Koden är "Clean" och säker (skydd mot SQL-injection/XSS). Ni har ett tydligt Git-flöde med Code Reviews (Pull Requests). |
