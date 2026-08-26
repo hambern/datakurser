@@ -161,10 +161,10 @@ Riktiga proffs använder verktyg för att jobba snabbare och säkrare.
 ### Beroendehantering (Composer)
 Varför uppfinna hjulet? **Composer** är ett program som laddar ner färdiga bibliotek (paket) som andra skrivit. Vill du ha en funktion för att skicka mail? `composer require phpmailer/phpmailer`. Klart!
 
-### Ramverk (Fat-Free Framework)
-Ett ramverk ger dig en färdig grundstruktur (MVC, Routing, Databaskoppling) så du slipper bygga allt från noll varje gång. I denna kurs använder vi **Fat-Free Framework (F3)** för att det är litet, snabbt och enkelt att lära sig.
+### Ramverk (Flight PHP)
+Ett ramverk ger dig en färdig grundstruktur (MVC, Routing, Databaskoppling) så du slipper bygga allt från noll varje gång. I denna kurs använder vi mikroramverket **Flight PHP** tillsammans med [skolans startmall på GitLab](https://gitlab.com/ornskoldsviks-gymnasium/flight) för att det är snabbt, enkelt och ger full förståelse för hur koden hänger ihop.
 
-> **Tips:** I branschen är **Laravel** standarden för PHP-utveckling. Det är mycket större och mer komplext än F3, men bygger på samma principer. Vill du ha en utmaning? Kika på det!
+> **Tips:** I branschen är även **Laravel** mycket vanligt för större PHP-applikationer. Det är större och mer komplext än Flight PHP, men bygger på samma grundläggande principer (MVC, Routing, Composer).
 
 ---
 

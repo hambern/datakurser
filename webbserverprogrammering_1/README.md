@@ -18,12 +18,12 @@ Det första vi måste göra i denna kurs är att lära oss PHP, MySQL och Git. M
 - Är du en sådan som gillar att lära dig via video är denna spellista en bra resurs:
   - SQL - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI>
 
-### Fat-Free Framework
+### Flight PHP
 
-Fat-Free Framework är ett mycket populärt PHP-ramverk som - när man kan det - underlättar väldigt mycket för webbutvecklare. W3Schools har ingen kurs i Fat-Free Framework, däremot är det väl dokumenterat och det finns också väldigt många förklarande filmer. Här är två bra länkar för dig som vill lära dig:
+Flight PHP är ett modernt och lättviktigt PHP-mikroramverk som gör det enkelt att bygga professionella och snabba webbapplikationer med routing och MVC. Vi använder skolans officiella startmall för Flight PHP:
 
-- [Fat-Free Frameworks hemsida](https://www.fatfreeframework.com/)
-- [Fat-Free Frameworks användarguide](https://www.fatfreeframework.com/3.9/user-guide)
+- [Startmall på GitLab](https://gitlab.com/ornskoldsviks-gymnasium/flight)
+- [Flight PHP:s officiella dokumentation](https://docs.flightphp.com/)
 
 ## Uppgifter
 
@@ -61,7 +61,7 @@ Här är en översikt av uppgifterna för kursen i Webbserverprogrammering 1, me
 
 | **Uppgift** | **Beskrivning** | **Vad du lär dig** |
 | :--- | :--- | :--- |
-| **Examinerande MVC-Projekt** | Bygg en komplett applikation med **Model-View-Controller (MVC)**-arkitektur och ramverket Fat-Free Framework. Uppgiften inkluderar obligatorisk användarhantering (login, register, profil) och ett fritt valt tema (blogg, recept, etc.) med full CRUD-funktionalitet. | Strikt **Model-View-Controller (MVC)**-arkitektur. Använda ett PHP-mikroramverk (Fat-Free Framework), routing och en Front-Controller. Hantera **sessions**, säker användarautentisering (`password_hash`) och skydda routes. Bygga skalbar kod enligt "God Praxis" och DRY-principen. |
+| **Examinerande MVC-Projekt** | Bygg en komplett applikation med **Model-View-Controller (MVC)**-arkitektur och mikroramverket **Flight PHP** (utifrån [startmallen på GitLab](https://gitlab.com/ornskoldsviks-gymnasium/flight)). Uppgiften inkluderar obligatorisk användarhantering (login, register, profil) och ett fritt valt tema (blogg, recept, etc.) med full CRUD-funktionalitet. | Strikt **Model-View-Controller (MVC)**-arkitektur. Använda ett PHP-mikroramverk (Flight PHP), routing och en Front-Controller. Hantera **sessions**, säker användarautentisering (`password_hash`) och skydda routes. Bygga skalbar kod enligt "God Praxis" och DRY-principen. |
 
 ### Information om utvecklingsservern som vi jobbar på
 

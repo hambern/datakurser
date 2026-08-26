@@ -1,41 +1,41 @@
-# Projektuppgift: MVC-Arkitektur med Fat-Free Framework
+# Projektuppgift: MVC-Arkitektur med Flight PHP
 
 ## Syfte
 
-Hittills har vi skrivit skript och enklare program. Nu tar vi steget fullt ut till att bli webbarkitekter. Du ska bygga en professionell, skalbar webbapplikation enligt designmönstret **Model-View-Controller (MVC)**.
+Hittills har vi skrivit skript och enklare program. Nu tar vi steget fullt ut till att bli webbarkitekter. Du ska bygga en professionell, skalbar webbapplikation enligt designmönstret **Model-View-Controller (MVC)** med hjälp av mikroramverket **Flight PHP**.
 
 ## Mål
 
 Efter avslutat projekt ska du kunna:
 
 - **Arkitektur:** Implementera strikt MVC-separation.
-- **Ramverk:** Använda _Fat-Free Framework (F3)_ för routing, vyer och databas.
-- **Beroendehantering:** Använda _Composer_ för att installera och hantera bibliotek.
-- **Säkerhet:** Skydda applikationen mot vanliga hot (SQL-injection, XSS) och hantera inloggning säkert.
-- **Integration:** Kommunicera med en extern klient via ett API
+- **Ramverk:** Använda mikroramverket _Flight PHP_ för routing, vyer och databaskoppling.
+- **Beroendehantering:** Använda _Composer_ för att installera bibliotek och autoloading (PSR-4).
+- **Säkerhet:** Skydda applikationen mot vanliga hot (SQL-injection via prepared statements, XSS via `htmlspecialchars`) och hantera inloggning/sessioner säkert.
+- **Integration:** Skapa och kommunicera med mjukvarugränssnitt/API:er.
 
 ---
 
 ## Nya begrepp
 
-Eftersom detta är första gången vi arbetar med ramverk och pakethanterare, här är en kort introduktion:
+Eftersom detta är första gången vi arbetar med ett modernt ramverk och pakethanterare, här är en kort introduktion:
 
-### Vad är Fat-Free Framework (F3)?
+### Vad är Flight PHP?
 
-**Fat-Free Framework** är ett "micro-framework" för PHP. Till skillnad från att skriva all kod från grunden (som vi gjort tidigare), ger ramverket oss färdiga byggstenar.
+**Flight PHP** är ett modernt, lättviktigt "micro-framework" för PHP. Till skillnad från att skriva all kod från grunden (som vi gjort tidigare), ger ramverket oss färdiga, rena byggstenar:
 
-- **Routing:** Kopplar snygga URL:er (t.ex. `/profil`) till rätt PHP-funktioner.
+- **Routing:** Kopplar snygga URL:er (t.ex. `/profil` eller `/produkter/@id`) direkt till rätt Controller och funktion.
 - **Separation:** Hjälper oss dela upp koden i Modell, Vy och Kontroller (MVC).
-- **Säkerhet:** Inbyggda skydd mot vanliga attacker.
+- **Enkelhet & Kontroll:** Inget magiskt eller onödigt tungt i bakgrunden – du förstår hela kedjan.
 
-Vi har valt F3 för att det är extremt lättviktigt och enklare att lära sig än större ramverk, men ändå kraftfullt nog för riktiga applikationer.
+Vi använder skolans officiella startmall: **[Flight på GitLab](https://gitlab.com/ornskoldsviks-gymnasium/flight)**.
 
 ### Vad är Composer?
 
-**Composer** är en "pakethanterare" för PHP. Det liknar hur du installerar appar på din telefon, fast för kodbibliotek.
+**Composer** är en "pakethanterare" för PHP. Det liknar hur du installerar appar på din telefon, fast för kodbibliotek:
 
-- **Hanterar beroenden:** Istället för att ladda ner F3 manuellt och lägga i en mapp, säger vi till Composer: _"Jag vill ha Fat-Free Framework"_, så laddar Composer ner det och håller det uppdaterat.
-- **Autoloading:** Composer sköter inkluderingen av alla filer. Du slipper skriva `require 'min_fil.php'` i varje fil.
+- **Hanterar beroenden:** Istället för att ladda ner Flight manuellt och lägga i en mapp, säger vi till Composer: _"Jag vill ha Flight PHP"_, så laddar Composer ner det och håller det uppdaterat.
+- **Autoloading:** Composer sköter automatisk inkludering av alla dina klasser via PSR-4 standarden. Du slipper skriva `require 'min_fil.php'` i varje fil.
 
 ---
 
@@ -48,12 +48,12 @@ Ditt uppdrag består av två delar:
 
 ### 1. Den låsta grunden
 
-Alla applikationer behöver användarhantering. Du ska bygga:
+Alla webbapplikationer behöver en trygg grund. Du ska bygga:
 
 - **Registrering:** Spara användare i databasen (lösenord _måste_ hash:as med `password_hash`).
-- **Inloggning:** Validera användare och skapa en session (`password_verify`).
-- **Profilsida:** En sida där användaren kan se och redigera sin info.
-- **Åtkomstskydd:** Sidor som kräver inloggning ska inte gå att nås av gäster (omdirigera till inloggning). Detta inkluderar token-inloggning för API:et.
+- **Inloggning:** Validera användare och skapa en session (`password_verify` och `$_SESSION`).
+- **Profilsida:** En sida där användaren kan se och redigera sin information.
+- **Åtkomstskydd:** Sidor som kräver inloggning ska inte kunna nås av gäster (omdirigera till inloggning med `Flight::redirect('/login')`). Detta inkluderar även API-endpoints.
 
 ### 2. Det fria temat
 
@@ -61,9 +61,10 @@ Du bestämmer vad applikationen gör. Kravet är att data ska kopplas till anvä
 
 **Exempel:**
 
-- _Blogg:_ Användare skriver inlägg.
-- _Träningsdagbok:_ Logga träningspass.
-- _Receptbok:_ Spara favoritrecept.
+- _Blogg:_ Användare skriver och hanterar inlägg.
+- _Träningsdagbok:_ Logga och analysera träningspass.
+- _Receptbok:_ Spara, kategorisera och betygsätt favoritrecept.
+- _Webbshop/Katalog:_ Produkter, kategorier och kundkorg.
 
 ---
 
@@ -80,197 +81,174 @@ Jag har tagit fram en mall som du **ska** använda genom hela arbetet: [rapportm
 
 ### Det strikta MVC-mönstret
 
-Separation av ansvar är kärnan i uppgiften.
+Separation av ansvar är kärnan i uppgiften:
 
-- **Models (Hjärnan):** Hanterar databasen. _Ingen HTML eller echo här._
-- **Views (Ansiktet):** Visar HTML. _Ingen SQL eller komplex PHP-logik här._
-- **Controllers (Trafikpolisen):** Binder ihop allt. Tar emot request -> Hämtar data från Model -> Skickar till View.
+- **Models (`models/` - Hjärnan):** Hanterar databasen och SQL-frågor. _Ingen HTML eller echo här._
+- **Views (`views/` - Ansiktet):** Visar HTML. _Ingen SQL eller databaskoppling här. All utskrift säkras med `htmlspecialchars()`._
+- **Controllers (`controllers/` - Trafikpolisen):** Binder ihop allt. Tar emot request -> Hämtar data från Model -> Skickar till View via `Flight::render()`.
 
 ### Verktyg
 
 - **Språk:** PHP 8+
-- **Ramverk:** Fat-Free Framework (F3)
-  - _Tips: Vill du utmana dig själv? Kika på **Laravel**, ett större industristandard-ramverk._
+- **Ramverk:** Flight PHP (v3)
+- **Startmall:** [gitlab.com/ornskoldsviks-gymnasium/flight](https://gitlab.com/ornskoldsviks-gymnasium/flight)
 - **Pakethanterare:** Composer
-- **Databas:** MySQL/MariaDB
+- **Databas:** MySQL / MariaDB (via `PdoWrapper`)
 
 ---
 
 ## Projektstruktur (Best Practice)
 
-Vi använder Composer för att ladda klasser automatiskt (Autoloading PSR-4).
+Startmallen är uppbyggd med ren MVC och PSR-4 autoloading via Composer:
 
 ```text
-/mitt_projekt/
-│
+mitt_projekt/
+├── config.sample.php       <-- Mall för databasinställningar (i Git)
+├── config.php              <-- Dina privata databasuppgifter (i .gitignore)
 ├── composer.json           <-- Hanterar beroenden och autoloading
-├── composer.lock           <-- Låser versioner (skapas av composer install)
-├── config.ini              <-- Inställningar (db-lösenord etc.)
-├── index.php               <-- Startpunkt (Front Controller)
-├── .htaccess               <-- Omdirigerar trafik till index.php
+├── composer.lock           <-- Låser versioner
+├── index.php               <-- Startpunkt & Router (Front Controller)
+├── .htaccess               <-- Omdirigerar trafik & blockerar känsliga filer
+├── .gitignore              <-- Ignorerar vendor/ och config.php
+├── README.md               <-- Dokumentation & instruktioner
+├── AGENTS.md               <-- Instruktioner för AI-assistenter
 │
-├── app/                    <-- Din kod
-│   ├── Controllers/        <-- Dina controllers (t.ex. UserController.php)
-│   ├── Models/             <-- Dina modeller (t.ex. User.php)
-│   └── Views/              <-- Dina HTML-mallar
-│
-└── vendor/                 <-- Bibliotek från Composer (F3). RÖR EJ.
+├── controllers/            <-- Dina controllers (t.ex. HomeController.php, UserController.php)
+├── models/                 <-- Dina modeller med SQL (t.ex. User.php, Post.php)
+└── views/                  <-- Dina HTML-mallar
+    ├── layout.php          <-- Grundlayout med header/footer ($content)
+    └── home.php            <-- Sidspecifik vy
 ```
 
 ### Konfigurera Composer (`composer.json`)
 
-För att autoloading ska fungera:
+Autoloading är färdigkonfigurerat i startmallen för `App\Controllers\` och `App\Models\`:
 
 ```json
 {
-  "require": {
-    "bcosca/fatfree": "^3.9"
-  },
-  "autoload": {
-    "psr-4": {
-      "App\\": "app/"
+    "require": {
+        "mikecao/flight": "^3.19"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Controllers\\": "controllers/",
+            "App\\Models\\": "models/"
+        }
     }
-  }
 }
 ```
 
-_Kom ihåg att köra `composer dump-autoload` om du ändrar i `autoload`-sektionen._
+_Kom ihåg att köra `composer dump-autoload` i terminalen om du lägger till nya namnrymder eller klasser._
 
 ---
 
 ## Kom igång med projektet
 
-Här är en steg-för-steg guide för att sätta upp grunden:
+Här är en steg-för-steg guide för att sätta upp grunden utifrån startmallen:
 
-1.  **Skapa projektmapp och installera Composer:**
+1.  **Klona startmallen från GitLab:**
 
     ```bash
-    mkdir mitt_projekt
+    git clone https://gitlab.com/ornskoldsviks-gymnasium/flight.git mitt_projekt
     cd mitt_projekt
-    composer require bcosca/fatfree
     ```
 
-2.  **Skapa mappstruktur:**
+2.  **Installera beroenden med Composer:**
 
     ```bash
-    mkdir -p app/Controllers app/Models app/Views
+    composer install
     ```
 
-3.  **Skapa din konfiguration (`config.ini`):**
+3.  **Skapa din personliga databaskonfiguration:**
 
-    ```ini
-    [globals]
-    DEBUG=3
-    UI=app/Views/
-    AUTOLOAD=app/Controllers/;app/Models/
-
-    # Databasinställningar
-    db_dns=mysql:host=localhost;dbname=ditt_db_namn;port=3690
-    db_user=din_anvandare
-    db_pass=ditt_losenord
+    ```bash
+    cp config.sample.php config.php
     ```
+    Öppna `config.php` och fyll i dina MySQL-uppgifter (`host`, `name`, `user`, `pass`).
 
-4.  **Skapa din startpunkt (`index.php`):**
-
-    ```php
-    <?php
-    require 'vendor/autoload.php';
-
-    $f3 = Base::instance();
-    $f3->config('config.ini');
-
-    // Databaskoppling
-    $f3->set('DB', new DB\SQL(
-        $f3->get('db_dns'),
-        $f3->get('db_user'),
-        $f3->get('db_pass')
-    ));
-
-    // Exempel-route
-    $f3->route('GET /', 'HomeController->index');
-
-    $f3->run();
-    ```
+4.  **Testa att projektet fungerar i webbläsaren!**
 
 ---
 
 ## Tips & råd för utveckling
 
-### Skapa htaccess-filen
-
-Det är i htaccess du styr ur url:en interagerar med din applikation. Vi vill skicka all trafik till `index.php`.
-
-~~~
-RewriteEngine On
-
-RewriteRule ^(app|dict|ns|tmp)\/|\.ini$ - [R=404]
-
-RewriteCond %{REQUEST_FILENAME} !-l
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule .* index.php [L,QSA]
-RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
-~~~
-
-### Lägga till en ny Controller
-
-En Controller hanterar logiken. Skapa en fil i `app/Controllers`, t.ex. `HomeController.php`.
+### 1. Lägga till en ny Controller
+Skapa en fil i `controllers/`, t.ex. `controllers/UserController.php`:
 
 ```php
+<?php
+namespace App\Controllers;
 
-class HomeController {
-    public function index($f3) {
-        // Skicka data till vyn
-        $f3->set('message', 'Välkommen till min MVC-app!');
-        // Renda vyn
-        echo \Template::instance()->render('home.htm');
+use Flight;
+use App\Models\User;
+
+class UserController
+{
+    public static function index()
+    {
+        // 1. Hämta data från Model
+        $users = User::all();
+
+        // 2. Rendera vyn 'users' inuti 'layout'
+        Flight::render('users', ['users' => $users], 'content');
+        Flight::render('layout', ['title' => 'Användarlista']);
     }
 }
 ```
 
-### Lägga till en ny Model
-
-En Model representerar en tabell i databasen. Skapa t.ex. `User.php` i `app/Models`.
+### 2. Lägga till en ny Model
+Skapa en fil i `models/`, t.ex. `models/User.php`:
 
 ```php
+<?php
+namespace App\Models;
 
-class User extends \DB\SQL\Mapper {
-    public function __construct(\DB\SQL $db) {
-        // Koppla till tabellen 'users'
-        parent::__construct($db, 'users');
+use Flight;
+
+class User
+{
+    public static function all(): array
+    {
+        return Flight::db()->fetchAll("SELECT id, username, email FROM users ORDER BY username ASC");
     }
 
-    public function all() {
-        return $this->find();
+    public static function find(int $id): ?array
+    {
+        $row = Flight::db()->fetchRow("SELECT * FROM users WHERE id = ?", [$id]);
+        return $row ?: null;
+    }
+
+    public static function create(string $username, string $password): bool
+    {
+        $hash = password_hash($password, PASSWORD_DEFAULT);
+        $stmt = Flight::db()->runQuery("INSERT INTO users (username, password) VALUES (?, ?)", [$username, $hash]);
+        return $stmt->rowCount() > 0;
     }
 }
 ```
 
-### Använda modellen i Controllern
+### 3. Koppla rutten i `index.php`
+
+I `index.php` mappar du URL:en till controllern:
 
 ```php
-public function index($f3) {
-    $db = $f3->get('DB');
-    $userModel = new User($db);
-    $users = $userModel->all();
+use App\Controllers\UserController;
 
-    $f3->set('users', $users);
-    echo \Template::instance()->render('user_list.htm');
-}
+Flight::route('GET /anvandare', [UserController::class, 'index']);
 ```
 
 ---
 
 ## Inlämning
 
-Vi använder GitLab för inlämning, precis som i branschen.
+Vi använder GitLab för inlämning, precis som i branschen:
 
 1.  **Repository:** Skapa ett privat repo på GitLab.
-2.  **Källkod:** Pusha din kod (exklusive `vendor/`-mappen! Skapa en `.gitignore`).
+2.  **Källkod:** Pusha din kod (exklusive `vendor/`-mappen och `config.php`! Se till att `.gitignore` används).
 3.  **Databas:** Exportera din databasstruktur till en `.sql`-fil och lägg i roten av repot.
-4.  **Rapport:** Se till att din ifyllda rapportfil (baserad på mallen) ligger i repot. Den ska innehålla både planen och slutrapporten.
+4.  **Rapport:** Se till att din ifyllda rapportfil ([rapportmall.md](rapportmall.md)) ligger i repot. Den ska innehålla både projektplanen och slutrapporten.
 
-_OBS: Lägg till din lärare som "Reporter" eller "Maintainer" i projektet för att de ska kunna rätta._
+_OBS: Lägg till din lärare som "Reporter" eller "Maintainer" i GitLab-projektet för att de ska kunna rätta._
 
 ---
 
@@ -285,8 +263,7 @@ _OBS: Lägg till din lärare som "Reporter" eller "Maintainer" i projektet för 
 
 ## Resurser
 
-- [Fat-Free Framework User Guide](https://fatfreeframework.com/3.9/user-guide) (Bibel för detta projekt!)
-- [F3-chat](https://gitlab.com/ornskoldsviks-gymnasium/f3-chat) (Exempel-projekt)
-- [Laravel](https://laravel.com/) (Överkurs)
+- [Startmall för Flight PHP på GitLab](https://gitlab.com/ornskoldsviks-gymnasium/flight) (Skolans officiella grundmall!)
+- [Flight PHP dokumentation](https://docs.flightphp.com/)
 - [Kom igång med Composer](https://getcomposer.org/doc/00-intro.md) (Guide)
-- [Composer](https://getcomposer.org/) (Officiell webbplats)
+- [Laravel](https://laravel.com/) (Överkurs)
