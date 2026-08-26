@@ -22,52 +22,56 @@ Ni arbetar två och två mot **samma GitHub-repository**, men kör koden på **v
 3.  **Pull Requests:** När en funktion är klar, skapa en Pull Request (PR) på GitHub. Den andra personen ska granska koden innan den slås ihop (mergas) med huvudkoden.
 4.  **Issues:** Använd "Issues" i GitHub för att fördela uppgifter ("Vem gör vad?").
 
-### 🗄️ Den stora utmaningen: Versionshantera databasen i ett team
+### Versionshantering av databasen i ett team
 
-En av de viktigaste anledningarna till att vi gör detta projekt i par är att ni ska få uppleva och lösa ett av de vanligaste problemen inom systemutveckling: **Koden och databasen måste hållas synkroniserade mellan utvecklarna.**
+En central del i detta parprojekt är att uppleva och hantera ett vanligt problem inom systemutveckling: **Koden och databasen måste hållas synkroniserade mellan utvecklarna.**
 
-#### Problemet ni kommer att stöta på:
-Om Person A bygger en ny funktion på branchen `feature/betyg` och lägger till en kolumn `rating` i sin databas och i sin PHP-kod:
-- När Person B laddar ner koden via `git pull` kommer sidan att krascha med felmeddelandet: *`Column 'rating' not found`*.
-- Varför? För att PHP-koden uppdaterades i Git, men Person B:s databas saknar den nya kolumnen!
+#### Problemet
+Om Person A bygger en funktion på branchen `feature/betyg` och lägger till en kolumn `rating` i sin databas och i sin PHP-kod:
+- När Person B hämtar koden via `git pull` kraschar applikationen med felmeddelandet: `Column 'rating' not found`.
+- Orsaken är att PHP-koden uppdaterades i Git, men Person B:s databas saknar den nya kolumnen.
 
-#### Lösningen: "Gitta" databasens struktur (Schema & Migreringar)
-I professionella team checkar man **alltid** in förändringarna i databasstrukturen i Git i samma commit och Pull Request som PHP-koden:
+#### Kan man inte bara checka in database.sqlite direkt i Git?
+Det är tekniskt möjligt att checka in en `.sqlite`-fil i Git, men det leder snabbt till problem:
+1. **Binära merge-konflikter:** SQLite är en binär fil. Om båda personerna lägger till testdata lokalt och försöker slå ihop sina grenar uppstår en konflikt som Git inte kan lösa automatiskt. Man tvingas då kasta bort den ena personens ändringar.
+2. **Repots storlek:** Git sparar en ny kopia av hela databasfilen vid varje commit, vilket gör versionshistoriken tung och ineffektiv.
 
-1. **Skilj på struktur och data:**
-   - **Struktur (DDL):** `CREATE TABLE`, `ALTER TABLE` ska **ALLTID** checkas in i Git.
-   - **Personliga lösenord:** `config.php` ska **ALDRIG** checkas in i Git (läggs i `.gitignore`).
-   - **Aktiv databas med rader:** `database.sqlite` eller MySQL-datafiler ska **INTE** checkas in (läggs i `.gitignore`).
+Därför versionshanterar man i professionella projekt **databasens struktur (SQL-kod)** snarare än själva datafilen.
 
-2. **Två sätt att versionshantera strukturen i ert repo:**
-   - **Metod 1: Migreringsmapp (`migrations/`) — *Proffsmetoden* ⭐**
-     Skapa en mapp som heter `migrations/` eller `sql/` i repot med numrerade SQL-filer:
-     - `01_create_users.sql` (Skapar tabellen users)
-     - `02_create_reviews.sql` (Skapar tabellen reviews)
-     - `03_add_followers.sql` (Skapar tabellen user_followers)
-     *När din kompis gör `git pull` ser hen direkt vilken SQL-fil som är ny och kör bara den i sin databas!*
-   - **Metod 2: Samlad `database.sql`**
-     Håll en uppdaterad `database.sql` i repots rot som alltid innehåller hela den aktuella tabellstrukturen.
+#### Lösningen: Versionshantera strukturen (Schema och Migreringar)
+1. **Struktur (DDL):** `CREATE TABLE` och `ALTER TABLE` ska alltid checkas in i Git.
+2. **Lösenord och konfiguration:** `config.php` ska alltid läggas i `.gitignore`.
+3. **Aktiva databasfiler:** `database.sqlite` ska läggas i `.gitignore`.
 
-3. **Testdata (`seed.sql`):**
-   Skapa gärna en fil `seed.sql` med några fejkade testanvändare och testrecensioner så att ni båda snabbt kan nollställa och testa appen med samma förutsättningar.
+**Två metoder att hantera SQL i repot:**
+- **Metod 1: Migreringsmapp (`migrations/`)**
+  Skapa en mapp med numrerade SQL-filer som körs i tur och ordning:
+  - `01_create_users.sql` (Skapar tabellen users)
+  - `02_create_reviews.sql` (Skapar tabellen reviews)
+  - `03_add_followers.sql` (Skapar tabellen user_followers)
+  När en utvecklare gör `git pull` syns det direkt vilka nya SQL-filer som behöver köras.
+- **Metod 2: Samlad strukturfil (`database.sql`)**
+  Håll en uppdaterad `database.sql` i repots rot som innehåller hela den aktuella tabellstrukturen.
+
+**Testdata (`seed.sql`):**
+Skapa gärna en fil `seed.sql` med några testanvändare och testrecensioner så att ni båda enkelt kan nollställa och testa applikationen under samma förutsättningar.
 
 ---
 
-#### Välj databaslösning för ert team:
+#### Val av databasteknik för projektet
 
-- **Alternativ A: SQLite (Noll konfiguration & filbaserat)**
+- **Alternativ A: SQLite (Filbaserad utan extern server)**
   SQLite sparar databasen i en lokal fil (`database.sqlite`).
   ```php
   $pdo = new PDO("sqlite:" . __DIR__ . "/database.sqlite");
   ```
-  *Glöm inte att lägga `database.sqlite` i `.gitignore` och istället checka in era SQL-skript så ni inte får filkrockar!*
+  *Kom ihåg att lägga `database.sqlite` i `.gitignore` och istället checka in SQL-skripten.*
 
-- **Alternativ B: MySQL med `config.php` (Klassiskt & branschstandard)**
+- **Alternativ B: MySQL med config.php (Klassisk klient/server)**
   Ni har varsin databas på `student.oedu.se` (eller lokalt).
   - Skapa en mallfil `config.sample.php` i repot.
-  - Lägg `config.php` i `.gitignore` så era personliga lösenord hålls hemliga.
-  - Synka tabelländringar via era SQL-filer i Git.
+  - Lägg `config.php` i `.gitignore` så personliga inloggningsuppgifter inte sprids.
+  - Synkronisera tabelländringar via era SQL-filer.
 
 ---
 
