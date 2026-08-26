@@ -198,20 +198,7 @@ function addScore() {
 
 ---
 
-## 6. CMS - Content Management Systems
 
-### Vad är ett CMS?
-Ett CMS (som WordPress) är ett program som gör att du kan redigera din hemsida utan att koda HTML. Du loggar in i en panel och skriver text som i Word.
-
-### WordPress & Andra alternativ
-*   **WordPress:** Driver ca 40% av hela internet. Enormt ekosystem.
-*   **Statamic:** Ett modernt, "flat-file" CMS byggt på Laravel. Perfekt för utvecklare som gillar ordning och reda.
-*   **Joomla / Drupal:** Gamla godingar, men inte lika vanliga längre.
-
-### Teman och Anpassning
-I ett CMS använder man **Teman** för att styra utseendet. Men som webbutvecklare nöjer vi oss inte med standardtemat – vi skapar egna "Child Themes" och skriver egen CSS för att få det precis som vi vill!
-
----
 
 > **Fastnat?**
 > 1. Fråga Microsoft Copilot, Google Gemini eller något annat AI.
