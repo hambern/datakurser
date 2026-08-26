@@ -52,7 +52,7 @@ Skriv en kort reflektion i din `markdown`-fil (eller direkt på sidan i någon f
 -   Vilka plugins/tillägg valde du och varför?
 -   Hur har du jobbat med tillgänglighet/användarvänlighet?
 -   Vilka regler angående upphovsrätt har du följt under arbetets gång?
--   Har du gjort några specifika förändringar i koden (CSS/HTML/PHP)?
+-   Har du gjort några specifika förändringar i koden (CSS/HTML)?
 
 ---
 

@@ -159,25 +159,42 @@ Ingen gillar en seg webbsida.
 
 ---
 
-## 5. Introduktion till Serverhantering (PHP)
+## 5. Introduktion till JavaScript & Interaktivitet
 
-### Vad är PHP?
-HTML är *statiskt* (samma för alla). PHP är *dynamiskt* (ändras beroende på vem som tittar). PHP körs på servern, inte i din webbläsare.
+Om HTML är skelettet och CSS är kläderna, så är **JavaScript** musklerna och hjärnan. Med JavaScript gör vi webbsidan levande och interaktiv direkt i användarens webbläsare utan att ladda om sidan!
 
-### Koppling mellan HTML och PHP
-PHP-kod skrivs inuti `<?php ... ?>`.
-```php
-<h1>Välkommen!</h1>
-<p>Klockan är just nu: <?php echo date('H:i'); ?></p>
+### Hur kopplar man JavaScript till HTML?
+Skapa filen `script.js` och länka in den längst ner i din `<body>`:
+```html
+<script src="script.js"></script>
 ```
-Här kommer klockslaget att genereras av servern precis innan sidan skickas till dig.
 
-### Inkludera filer
-Istället för att kopiera menyn till alla 10 sidor, lägg den i `menu.php` och inkludera den:
-```php
-<?php include 'menu.php'; ?>
+### Hitta element i HTML (DOM - Document Object Model)
+För att ändra något på sidan måste JavaScript först "hitta" elementet:
+```javascript
+// Hämta element med ID eller CSS-selektor
+const button = document.querySelector("#min-knapp");
+const heading = document.querySelector("h1");
 ```
-Ändrar du i `menu.php` ändras det på alla sidor! Smart va?
+
+### Lyssna på händelser (Event Listeners)
+Gör så att något händer när användaren klickar, skriver eller scrollar:
+```javascript
+button.addEventListener("click", () => {
+    heading.textContent = "Du klickade på knappen!";
+    heading.classList.toggle("highlight");
+});
+```
+
+### Variabler och enkla villkor
+```javascript
+let score = 0;
+
+function addScore() {
+    score += 1;
+    document.querySelector("#score").textContent = score;
+}
+```
 
 ---
 
