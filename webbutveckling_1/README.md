@@ -22,6 +22,15 @@ The Odin Project är en världsledande, öppen och modern utbildningsplattform s
 
 Tänk på att det viktiga inte är att bli klar snabbt utan att förstå på djupet. Bygg gärna de övningar och mini-projekt som The Odin Project föreslår längs vägen!
 
+### 🧪 Snabbstart & Lekstuga: CodePen (Första lektionen)
+
+Innan vi installerar program och sätter upp filer och mappar i Visual Studio Code börjar vi med att experimentera direkt i webbläsaren på **[CodePen.io](https://codepen.io/)**:
+- **Noll krångel:** Ingen installation eller server behövs – klicka bara på *Start Coding* och skriv din första HTML och CSS direkt.
+- **Direkt visuell feedback (Live Preview):** Så fort du ändrar en färg, text eller marginal ser du resultatet omedelbart.
+- **Digitalt kladdpapper:** Perfekt under hela kursen för att snabbt testa en ny idé, en knappanimation eller en flexbox-layout innan du bygger in det i ditt riktiga projekt.
+- **Enkelt att dela felsökning:** Har du kört fast? Klistra in din kod i en Pen och skicka länken i chatten (t.ex. via **Microsoft Teams**) till din lärare eller en klasskompis. De kan direkt se koden, testa ändringar och hjälpa dig hitta buggen!
+- **Skapa ett gratiskonto:** Logga gärna in med din privata e-post eller GitHub så att dina experiment ("Pens") sparas och kan visas upp.
+
 - Är du en sådan som gillar att lära dig via video är dessa spellistor bra komplement:
   - HTML - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s>
   - CSS - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UCaUSF3XNZ1U9f01E5h5PM>
