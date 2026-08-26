@@ -12,6 +12,22 @@ Efter avslutat projekt ska du kunna:
 
 ---
 
+## 📚 Kunskapskrav & Vad du behöver läsa på om
+
+Innan du börjar bygga applikationen behöver du förstå hur databasrelationer och Git-branching fungerar i praktiken:
+
+### 1. Teori i kursens handbok
+- **[Handboken: Databashantering (MySQL & PDO)](../../teori/README.md#databashantering-mysql--pdo)** — Hur du utför fullständig CRUD (`INSERT`, `SELECT`, `UPDATE`, `DELETE`) med PDO.
+- **[Handboken: Databasrelationer](../../teori/README.md#databashantering-mysql--pdo)** — Hur primärnycklar (`PRIMARY KEY`) och främmande nycklar (`FOREIGN KEY`) kopplar ihop tabeller via `JOIN`.
+
+### 2. Rekommenderad läsning & övningar
+- 📖 **[The Odin Project: Git Basics & Branching](https://www.theodinproject.com/lessons/foundations-git-basics)** — Varför och hur man arbetar i *Feature Branches* (`git checkout -b feature/min-funktion`).
+- 📖 **[The Odin Project: Relational Databases](https://www.theodinproject.com/lessons/nodejs-databases)** — En-till-många (1:N) relationer.
+- 🎯 **[SQLBolt: Queries with JOINs (Lektion 6–7)](https://sqlbolt.com/lesson/select_queries_with_joins)** — Öva på att hämta data från två tabeller samtidigt.
+- 🕵️‍♂️ **[SQL Murder Mystery](https://mystery.knightlab.com/)** — Ett spännande detektivspel där du löser ett mord genom att skriva SQL-queries med `WHERE`, `JOIN` och filter!
+
+---
+
 ## Arbetsgång (Feature Branching)
 I detta projekt ska du inte jobba direkt i `main`-branchen. För varje steg nedan ska du:
 1.  Skapa en ny branch: `git checkout -b feature/kategorier`

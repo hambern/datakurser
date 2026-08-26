@@ -36,6 +36,16 @@ I rapporten ska du reflektera över **GDPR** och **Upphovsrätt**.
 
 ---
 
+## 📚 Kunskapskrav & Fördjupning (The Odin Project)
+
+Slutprojektet sätter alla dina färdigheter på prov. Innan du sätter igång rekommenderas att repetera relevanta delar i vårt läromedel **The Odin Project (Foundations)**:
+- 📖 **[Project: Landing Page](https://www.theodinproject.com/lessons/foundations-landing-page)** — Inspiration och struktur för att bygga en komplett, modern startsida med CSS Flexbox.
+- 📖 **[Project: Rock Paper Scissors](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)** — Praktisk logik och problemnedbrytning i JavaScript.
+- 📖 **[Project: Etch-a-Sketch](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)** — Avancerad DOM-manipulation, händelselyssnare och dynamisk rendering.
+- 📖 **[Course Handbook](../../teori/README.md)** — Komplett uppslagsverk för HTML5-semantik, CSS-layout, mediaoptimering och DOM-skript.
+
+---
+
 Arbetet är indelat i fyra faser.
 
 ## Fas 1: Planering

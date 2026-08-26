@@ -3,6 +3,28 @@
 ## Syfte
 Du ska skapa ett modernt och interaktivt webbquiz (frågesport) om **internets historia** som körs helt i webbläsaren med hjälp av **HTML, CSS och JavaScript**. Syftet är att lära sig grundläggande programmeringslogik och **DOM-manipulation** – hur man gör en webbsida levande, reaktiv och rolig att använda utan att behöva ladda om sidan!
 
+---
+
+## 📚 Kunskapskrav & Vad du behöver läsa på om
+
+Innan du börjar skriva JavaScript-koden behöver du förstå hur variabler, funktioner och DOM samverkar:
+
+### 1. Teori i kursens handbok
+- **[Handboken: Kapitel 5 — JavaScript & Interaktivitet](../../teori/README.md#5-introduktion-till-javascript--interaktivitet)** (Hur man länkar in `script.js`, hittar element med `document.querySelector` och reagerar på klick med `addEventListener`).
+
+### 2. Rekommenderad läsning i The Odin Project (Foundations)
+Läs och gör exemplen i följande lektioner innan du bygger quiz-logiken:
+- 📖 **[Fundamentals Part 1: Variables & Numbers](https://www.theodinproject.com/lessons/foundations-javascript-basics)** — Variabler (`let`, `const`), datatyper och grundläggande aritmetik.
+- 📖 **[Fundamentals Part 2: Conditionals & Logic](https://www.theodinproject.com/lessons/foundations-fundamentals-part-2)** — `if / else`-satser, jämförelser (`===`) och logiska villkor.
+- 📖 **[Fundamentals Part 3: Functions](https://www.theodinproject.com/lessons/foundations-fundamentals-part-3)** — Hur man skapar och anropar funktioner.
+- 📖 **[Problem Solving](https://www.theodinproject.com/lessons/foundations-problem-solving)** — Hur man bryter ner ett stort programmeringsproblem i små, hanterbara delsteg ("pseudokod").
+- 📖 **[DOM Manipulation and Events](https://www.theodinproject.com/lessons/foundations-dom-manipulation-and-events)** — Hur JavaScript ändrar text, lägger till knappar och lyssnar på klickhändelser.
+
+### 3. Fakta & Innehåll
+- 🌐 **[Internetmuseum.se](https://www.internetmuseum.se/)** — Här hämtar du fakta, årtal, bilder och kuriosa till dina quizfrågor (t.ex. webbens födelse, BBS:er, första e-postmeddelandet i Sverige m.m.).
+
+---
+
 ## Mål
 Efter avslutat projekt ska du kunna:
 - **DOM-manipulation:** Hämta element med `document.querySelector()` och uppdatera text, HTML och CSS-klasser i realtid.
@@ -94,6 +116,6 @@ function showQuestion() {
 ---
 
 ## Resurser
-- [The Odin Project: JavaScript Basics](https://www.theodinproject.com/lessons/foundations-javascript-basics)
+- [The Odin Project: Foundations Course](https://www.theodinproject.com/paths/foundations/courses/foundations)
 - [MDN Web Docs: Manipulating documents (DOM)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
 - [Internetmuseum](https://www.internetmuseum.se/)

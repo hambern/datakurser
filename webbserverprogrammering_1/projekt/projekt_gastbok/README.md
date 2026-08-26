@@ -21,6 +21,22 @@ Innan du börjar:
 
 ---
 
+## 📚 Kunskapskrav & Vad du behöver läsa på om
+
+Innan du börjar skriva din backend-kod behöver du förstå grunderna i hur webbservern, databasen och Git samverkar:
+
+### 1. Teori i kursens handbok
+- **[Handboken: Databashantering (MySQL & PDO)](../../teori/README.md#databashantering-mysql--pdo)** — Hur PHP ansluter till MySQL via `PDO`.
+- **[Handboken: Säkerhet](../../teori/README.md#säkerhet)** — Varför du *aldrig* konkatenerar SQL-strängar (`"SELECT * FROM ... WHERE name = '$name'"`) och hur Prepared Statements (`?`) skyddar mot SQL-injections.
+
+### 2. Rekommenderad läsning & övningar
+- 📖 **[The Odin Project: Git Basics](https://www.theodinproject.com/lessons/foundations-git-basics)** — Hur Git fungerar, repositories, commits och staging area (`git add .`, `git commit`).
+- 📖 **[The Odin Project: Databases Overview](https://www.theodinproject.com/lessons/nodejs-databases)** — Vad en relationsdatabas är, tabeller, rader, kolumner och primärnycklar (`PRIMARY KEY`).
+- 📖 **[PHP: The Right Way — Databaser & PDO](https://phptherightway.com/#databases_pdo)** — Bästa praxis för PDO i modern PHP.
+- 🎯 **[SQLBolt: Interactive SQL Tutorial](https://sqlbolt.com/)** — Gör lektion 1–5 för att bli bekväm med `SELECT` och `INSERT`.
+
+---
+
 ## Genomförande
 
 ### Steg 1: Förbered databasen
