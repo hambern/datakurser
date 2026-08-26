@@ -2,21 +2,27 @@
 
 Denna mapp innehåller uppgifter och genomgångar till kursen Webbutveckling 1
 
-## Färdighetsträning
+## Läromedel & Färdighetsträning: The Odin Project
 
-Det första vi måste göra i denna kurs är att lära oss HTML och CSS. HTML används för att skapa ett dokument som kan visas i en webbläsare och CSS används för att bestämma och justera utseendet av dokumentets delar. För att göra detta kommer vi använda oss av W3Schools plattform "Pathfinder": <https://pathfinder.w3schools.com/>. Pathfinder håller reda på var du är i ditt lärande så att det är lätt att fortsätta där du slutade senast.
+I denna kurs använder vi **[The Odin Project (Foundations Course)](https://www.theodinproject.com/paths/foundations/courses/foundations)** som vårt huvudsakliga interaktiva läromedel och digitala lärobok.
 
-- Gå in på <https://pathfinder.w3schools.com/> och spara det som ett bokmärke
-- Skapa en användare. Använd gärna ditt privata e-postkonto för att kunna fortsätta ditt lärande även efter utbildningen
-- Lägg till följande "målsättningar". Se hur du gör här: <https://www.youtube.com/watch?v=Urahol7qsLc>
-  - HTML - Intermediate
-  - CSS - Intermediate
-  - Bootstrap - Beginner
-  - JavaScript - Beginner
-- Välj en studiehastighet på 8 timmar i veckan (spelar egentligen ingen roll)
-- Därefter ska vi gå lära oss de olika punkterna i ovanstående ordning.
-- Tänk på att det viktiga inte är att bli klar utan att lära sig. Se därför till att du förstår en del innan du går vidare till nästa.
-- Är du en sådan som gillar att lära dig via video är dessa spellistor bra resurser:
+The Odin Project är en världsledande, öppen och modern utbildningsplattform som lär dig modern webbutveckling från grunden på samma sätt som professionella utvecklare arbetar.
+
+### Kom igång:
+1. Gå till **<https://www.theodinproject.com/>** och spara sidan som ett bokmärke.
+2. **Skapa ett användarkonto:**
+   > **💡 Tips för registrering:** Registrera dig gärna med din **privata e-postadress**. Då följer din profil, din progression och ditt framtida portfolio med dig även efter avslutad skolgång. Det är dock självklart helt tillåtet att använda din skoladress om du föredrar det.
+3. Klicka på **Foundations** och påbörja kursen:
+   - **Introduction:** Hur utveckling fungerar och hur man löser problem.
+   - **Prerequisites:** Grundläggande verktyg och installationer.
+   - **Git Basics:** Versionshantering med Git.
+   - **HTML Foundations:** Semantisk HTML, struktur, formulär och länkar.
+   - **CSS Foundations:** Box-modellen, Flexbox och modern styling.
+   - **JavaScript Basics:** Grundläggande logik och DOM-manipulation.
+
+Tänk på att det viktiga inte är att bli klar snabbt utan att förstå på djupet. Bygg gärna de övningar och mini-projekt som The Odin Project föreslår längs vägen!
+
+- Är du en sådan som gillar att lära dig via video är dessa spellistor bra komplement:
   - HTML - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s>
   - CSS - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UCaUSF3XNZ1U9f01E5h5PM>
 

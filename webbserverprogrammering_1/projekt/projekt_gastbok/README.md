@@ -152,6 +152,7 @@ git commit -m "Feature: Kopplat gästboken till MySQL-databas"
 | **A** | Du använder **Prepared Statements** för säkerhet (mot SQL-injections) och `htmlspecialchars` (mot XSS). Databasstrukturen är korrekt och koden följer "Best Practices". |
 
 ## Tips & Resurser
-- [W3Schools: PHP MySQL med Prepared Statements](https://www.w3schools.com/php/php_mysql_prepared_statements.asp)
-- [PHP.net: MySQLi Manual](https://www.php.net/manual/en/book.mysqli.php)
+- [PHP: The Right Way - Databaser & PDO](https://phptherightway.com/#databases_pdo)
+- [PHP.net: PDO Prepared Statements](https://www.php.net/manual/en/pdo.prepared-statements.php)
+- [The Odin Project: Databases Overview](https://www.theodinproject.com/lessons/nodejs-databases)
 - [GitLab Docs: SSH-nycklar](https://docs.gitlab.com/ee/user/ssh.html)

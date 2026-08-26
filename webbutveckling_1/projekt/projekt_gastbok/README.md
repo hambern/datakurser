@@ -121,6 +121,7 @@ if (file_exists($filename)) {
 | **A** | Professionell design (UI/UX). Koden är strukturerad (kanske uppdelad i funktioner eller filer). Du hanterar fel (t.ex. om filen inte går att skriva till). |
 
 ## Resurser
-- [W3Schools: PHP Forms](https://www.w3schools.com/php/php_forms.asp)
-- [W3Schools: PHP File Handling](https://www.w3schools.com/php/php_file.asp)
+- [The Odin Project: Form Basics](https://www.theodinproject.com/lessons/foundations-form-basics)
+- [MDN Web Docs: Sending form data](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data)
+- [PHP Manual: Dealing with Forms](https://www.php.net/manual/en/tutorial.forms.php)
 - [GetBootstrap.com](https://getbootstrap.com/)

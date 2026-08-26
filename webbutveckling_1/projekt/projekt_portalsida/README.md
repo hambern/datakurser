@@ -56,5 +56,6 @@ Utan denna blir sidan pytteliten i mobilen.
 | **A** | Professionell design "Visitkort-känsla". Du använder kanske Flexbox eller Grid för layouten. Typografin är välarbetad. |
 
 ## Resurser
-- [W3Schools: HTML Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
+- [The Odin Project: HTML Foundations](https://www.theodinproject.com/lessons/foundations-html-foundations)
+- [MDN Web Docs: HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 - [CSS Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)

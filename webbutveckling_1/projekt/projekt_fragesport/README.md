@@ -74,5 +74,6 @@ Gör sidan snygg och användarvänlig!
 
 ## Resurser
 - [Internetmuseum](https://www.internetmuseum.se/)
-- [W3Schools: PHP Arrays](https://www.w3schools.com/php/php_arrays.asp)
-- [W3Schools: PHP JSON](https://www.w3schools.com/php/php_json.asp)
+- [PHP Manual: Arrays](https://www.php.net/manual/en/language.types.array.php)
+- [PHP Manual: JSON Functions](https://www.php.net/manual/en/ref.json.php)
+- [The Odin Project: JavaScript Basics](https://www.theodinproject.com/lessons/foundations-javascript-basics)

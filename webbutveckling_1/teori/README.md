@@ -83,7 +83,7 @@ När användaren ska skriva in något använder vi formulär.
 </form>
 ```
 
-> **Tips:** Vill du veta alla attribut en `<input>` kan ha? [Kolla W3Schools HTML Forms](https://www.w3schools.com/html/html_forms.asp).
+> **Tips:** Vill du veta alla attribut en `<input>` kan ha? [Kolla MDN Web Docs: HTML forms](https://developer.mozilla.org/en-US/docs/Learn/Forms).
 
 ---
 
@@ -199,7 +199,7 @@ I ett CMS använder man **Teman** för att styra utseendet. Men som webbutveckla
 > **Fastnat?**
 > 1. Fråga Microsoft Copilot, Google Gemini eller något annat AI.
 > 2. Googla problemet (på engelska ger oftast bäst svar).
-> 3. Kolla W3Schools.
+> 3. Kolla MDN Web Docs eller The Odin Project.
 > 4. Fråga en klasskompis.
 > 5. Fråga din lärare!
 > 6. Fråga en annan utvecklare.

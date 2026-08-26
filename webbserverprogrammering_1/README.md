@@ -2,21 +2,26 @@
 
 Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogrammering 1
 
-## Färdighetsträning
+## Läromedel & Färdighetsträning: The Odin Project & Moderna Resurser
 
-Det första vi måste göra i denna kurs är att lära oss PHP, MySQL och Git. MySQL används för att lagra och hämta information från en databas och Git är ett versionshanteringssystem som gör att vi kan följa projektens utveckling över tid och gå tillbaka till tidigare versioner av koden. För att göra detta kommer vi använda oss av W3Schools plattform "Pathfinder": <https://pathfinder.w3schools.com/>. Pathfinder håller reda på var du är i ditt lärande så att det är lätt att fortsätta där du slutade senast.
+I denna kurs använder vi **[The Odin Project](https://www.theodinproject.com/)** som vårt digitala läromedel för webbserverns grunder, Git, databaskoncept och arkitektur, tillsammans med moderna PHP- och SQL-resurser.
 
-- Gå in på <https://pathfinder.w3schools.com/> och spara det som ett bokmärke
-- Skapa en användare. Använd gärna ditt privata e-postkonto för att kunna fortsätta ditt lärande även efter utbildningen
-- Lägg till följande "målsättningar". Se hur du gör här: <https://www.youtube.com/watch?v=Urahol7qsLc>
-   - PHP - Intermediate
-   - MySQL - Intermediate
-   - Git - Beginner
-- Välj en studiehastighet på 8 timmar i veckan (spelar egentligen ingen roll)
-- Därefter ska vi gå lära oss de olika punkterna i ovanstående ordning.
-- Tänk på att det viktiga inte är att bli klar utan att lära sig. Se därför till att du förstår en del innan du går vidare till nästa.
-- Är du en sådan som gillar att lära dig via video är denna spellista en bra resurs:
-  - SQL - <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI>
+### 1. The Odin Project som konceptuell lärobok:
+1. Gå in på **<https://www.theodinproject.com/>** och spara som bokmärke.
+2. **Skapa ett användarkonto:**
+   > **💡 Tips för registrering:** Registrera dig gärna med din **privata e-postadress**. Då följer din profil, dina sparade framsteg och ditt framtida portfolio med dig även efter skoltiden. Det är dock självklart helt tillåtet att använda din skoladress om du föredrar det.
+3. Använd The Odin Project för att lära dig och fördjupa dig i:
+   - **Git & GitHub/GitLab:** Versionshantering på riktigt.
+   - **Hur webben fungerar:** Klient/Server, HTTP-protokollet, Request/Response och statuskoder.
+   - **Databaser & SQL:** Relationsdatabaser, tabeller, datamodellering och CRUD.
+   - **Arkitektur & Säkerhet:** MVC-mönstret, autentisering, sessioner och skydd mot sårbarheter.
+
+### 2. Kompletterande resurser för PHP & SQL:
+Eftersom The Odin Project fokuserar på generella backend-koncept använder vi följande resurser för PHP-specifik träning:
+- **[PHP: The Right Way](https://phptherightway.com/)** – En fantastisk guide till modern god praxis i PHP (PDO, säkerhet, PSR-standarder).
+- **[Exercism PHP Track](https://exercism.org/tracks/php)** – Gratis interaktiv kodträning i modern PHP med automatiserade tester.
+- **[SQL Murder Mystery](https://mystery.knightlab.com/)** & **[SQLBolt](https://sqlbolt.com/)** – Interaktiva och roliga sätt att öva SQL-frågor.
+- **SQL-videospellista:** <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI>
 
 ### Flight PHP
 
