@@ -139,29 +139,25 @@ php_value error_reporting -1
 7. **Startsidan index.html:** Filen `index.html` fungerar som webbplatsens startsida, vilket gör den till en central del i webbplatsens struktur.
 8. **Strukturerad organisation:** Organisera filerna i meningsfulla mappar och undvik överbelastning i enskilda kataloger.
 
-## 🚀 Egna sidoprojekt & AI-verktyg (Antigravity, Cursor m.fl.)
+## 🤖 En viktig notis om AI och kodgenerering (ChatGPT, Copilot m.fl.)
 
-Ett av de absolut bästa och roligaste sätten att bli en riktigt vass utvecklare är att **bygga egna projekt vid sidan av kursens obligatoriska uppgifter**. 
+Moderna AI-verktyg är kraftfulla, men **för dig som lär dig backend-programmering och databaser är de ett tveeggat svärd**.
 
-Att förverkliga egna idéer ger massor av praktisk erfarenhet. Det kan vara vad som helst du tycker är intressant:
-- En personlig portfolio eller blogg
-- En poängräknare, statistik-app eller matchlogg för ditt favoritspel
-- Ett quiz, en träningsdagbok eller ett film-/bokningssystem
-- En webbapp för din förening, ditt UF-företag eller din hobby
+Som vårt läromedel **The Odin Project** betonar i [A note on AI code generation](https://www.theodinproject.com/lessons/foundations-motivation-and-mindset#a-note-on-ai-code-generation):
+> *"För nybörjare leder användning av AI-kodgenerering ofta till stora kunskapsluckor och en falsk trygghet (The Illusion of Competence). Programmering handlar inte om att generera text snabbt, utan om att träna din hjärna i problemlösning, logiskt tänkande och felsökning. Den kampen kan inte en AI göra åt dig."*
 
-### Frihet att experimentera med AI-agenter i egna projekt!
-I dina **egna sidoprojekt** är det helt fritt fram att utforska och experimentera med moderna **AI-agenter och kodassistenter** som t.ex.:
-- **Google Antigravity**
-- **Cursor**
-- **GitHub Copilot**
-- **Claude Code & ChatGPT**
+Inom backend är detta extra kritiskt: AI-genererad kod innehåller ofta dolda säkerhetsluckor (som bristande validering eller SQL-injections) som en nybörjare inte har förutsättningar att upptäcka.
 
-Genom att arbeta med AI-agenter i egna projekt lär du dig prompt-engineering, att läsa och granska AI-genererad kod, och hur man snabbt tar en idé från skiss till fungerande applikation.
+### 🛑 Kursens regler för AI-användning:
 
-> **💡 Tips:** Startmallen för Flight PHP ([github.com/hambern/boilerplate-flight](https://github.com/hambern/boilerplate-flight)) innehåller filen `AGENTS.md`, vilket gör att AI-agenter automatiskt förstår projektets arkitektur och hjälper dig bygga rätt!
-
-> **⚠️ Tänk på vid kursens obligatoriska inlämningar:**
-> Vid kursens bedömningsuppgifter är det dina egna kunskaper och din egen förståelse som mäts. Använd gärna AI som en personlig lärare/tutor för att förklara felmeddelanden eller diskutera idéer, men se till att du själv förstår och kan förklara varje rad kod du lämnar in.
+1. **Skriv all din backend-kod själv:**  
+   Under kursens obligatoriska uppgifter ska du skriva och förstå varje rad kod själv. Stäng av automatisk kodgenerering (som GitHub Copilot / Tab-autocomplete) så att du bygger en stabil mental modell av hur PHP, SQL-frågor och MVC samverkar.
+2. **AI som tutor – INTE som facit:**  
+   Om du kör fast får du gärna be en AI *förklara ett felmeddelande* eller *hjälpa dig förstå varför en SQL-fråga inte returnerar förväntad data*. Be aldrig en AI att *"lösa uppgiften åt mig"*.
+3. **Muntliga kodavstämningar:**  
+   Vid examination kommer du att få förklara din databasarkitektur och dina säkerhetsåtgärder muntligt, samt göra små live-ändringar i koden. Om du inte kan redogöra för hur din applikation fungerar kan den inte godkännas.
+4. **Egna fria sidoprojekt:**  
+   När du väl behärskar grunderna och vill bygga egna hobbyappar på fritiden är det fritt fram att utforska AI-assistenter som komplement. Startmallen för Flight PHP innehåller då filen `AGENTS.md` som ger AI-verktyg full kontext om projektet.
 
 ---
 

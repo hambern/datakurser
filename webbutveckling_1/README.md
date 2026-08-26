@@ -104,27 +104,23 @@ ssh -p 3690 ditt_login@student.oedu.se
 
 ---
 
-## 🚀 Egna sidoprojekt & AI-verktyg (Antigravity, Cursor m.fl.)
+## 🤖 En viktig notis om AI och kodgenerering (ChatGPT, Copilot m.fl.)
 
-Ett av de absolut bästa och roligaste sätten att bli en riktigt vass webbutvecklare är att **bygga egna projekt vid sidan av kursens obligatoriska uppgifter**. 
+Moderna AI-verktyg är kraftfulla, men **för dig som lär dig webbutveckling från grunden är de ett tveeggat svärd**.
 
-Att förverkliga egna idéer ger massor av praktisk erfarenhet. Det kan vara vad som helst du tycker är intressant:
-- En personlig portfolio eller presentationssida
-- En spelsida, ett interaktivt quiz eller en fan-site för din favoritartist
-- En design-prototyp för en idé eller ett UF-företag
-- Ett interaktivt verktyg eller en hobbyapp
+Som vårt läromedel **The Odin Project** betonar i [A note on AI code generation](https://www.theodinproject.com/lessons/foundations-motivation-and-mindset#a-note-on-ai-code-generation):
+> *"För nybörjare leder användning av AI-kodgenerering ofta till stora kunskapsluckor och en falsk trygghet (The Illusion of Competence). Programmering handlar inte om att generera text snabbt, utan om att träna din hjärna i problemlösning, logiskt tänkande och felsökning. Den kampen kan inte en AI göra åt dig."*
 
-### Frihet att experimentera med AI-agenter i egna projekt!
-I dina **egna sidoprojekt** är det helt fritt fram att utforska och experimentera med moderna **AI-agenter och kodassistenter** som t.ex.:
-- **Google Antigravity**
-- **Cursor**
-- **GitHub Copilot**
-- **Claude Code & ChatGPT**
+### 🛑 Kursens regler för AI-användning:
 
-Genom att arbeta med AI-agenter i egna projekt lär du dig prompt-engineering, att granska kod och hur man snabbt tar en idé från skiss till färdig produkt.
-
-> **⚠️ Tänk på vid kursens obligatoriska inlämningar:**
-> Vid kursens bedömningsuppgifter är det dina egna kunskaper och din egen förståelse som mäts. Använd gärna AI som en personlig lärare/tutor för att förklara koncept och hitta buggar, men se till att du själv förstår och kan förklara varje rad kod du lämnar in.
+1. **Skriv all din kod själv:**  
+   Under kursens examinerande uppgifter ska du skriva och förstå varje rad kod själv. Stäng av automatisk kodgenerering (som GitHub Copilot / Tab-autocomplete) så att du bygger ett gediget muskelminne och syntaxförståelse för HTML, CSS och JavaScript.
+2. **AI som tutor – INTE som facit:**  
+   Om du kör fast får du gärna be en AI *förklara ett koncept eller felmeddelande* eller *ställa ledande frågor för felsökning*. Be aldrig en AI att *"skriva koden åt mig"*.
+3. **Muntliga kodavstämningar:**  
+   Vid bedömning av dina inlämningar kommer du att få förklara din kod och göra små ändringar på plats. Om du inte själv förstår hur koden fungerar kan den inte godkännas.
+4. **Egna fria sidoprojekt:**  
+   När du väl behärskar grunderna och vill experimentera med egna idéer på fritiden (portfolios, hobbyappar, spel) är det fritt fram att utforska AI-assistenter som komplement.
 
 ---
 
