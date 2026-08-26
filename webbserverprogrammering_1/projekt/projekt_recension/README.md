@@ -22,6 +22,25 @@ Ni arbetar två och två mot **samma GitHub-repository**, men kör koden på **v
 3.  **Pull Requests:** När en funktion är klar, skapa en Pull Request (PR) på GitHub. Den andra personen ska granska koden innan den slås ihop (mergas) med huvudkoden.
 4.  **Issues:** Använd "Issues" i GitHub för att fördela uppgifter ("Vem gör vad?").
 
+### 🗄️ Utmaningen: Hur hanterar ni databasen vid samarbete?
+
+När ni delar kod via GitHub vill ni **inte** ladda upp era personliga databaslösenord till repot, och ni har varsitt konto på servern. Ni har två kloka strategier att välja mellan:
+
+#### Strategi A: SQLite (Enkelt & noll konfiguration)
+SQLite är en fullvärdig SQL-databas som lagras som **en enda fil** (t.ex. `database.sqlite`).
+- **Fördel:** Inga lösenord, användarnamn eller MySQL-servrar behövs.
+- **PDO-koppling:**
+  ```php
+  $pdo = new PDO("sqlite:" . __DIR__ . "/database.sqlite");
+  ```
+- **Att tänka på med Git:** Lägg `database.sqlite` i er `.gitignore` så ni inte får filkonflikter när båda sparar testdata. Skapa en `database.sql` med era `CREATE TABLE`-satser så att båda har samma tabellstruktur.
+
+#### Strategi B: MySQL med `config.php` (Branschstandard)
+Ni använder varsin MySQL-databas på `student.oedu.se` (eller lokalt):
+- Lägg `config.php` i er `.gitignore` så era personliga lösenord hålls hemliga och inte krockar.
+- Checka in en mallfil `config.sample.php` i repot som visar vilka variabler som behövs.
+- När någon skapar en ny tabell eller kolumn, uppdaterar ni filen `database.sql` i repot så att den andra personen kan importera den i sin phpMyAdmin.
+
 ---
 
 ## Kravspecifikation (Steg för Steg)
