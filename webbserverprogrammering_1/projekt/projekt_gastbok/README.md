@@ -7,14 +7,14 @@ Denna uppgift syftar till att introducera dig för MySQL och Git – två grundl
 Efter att ha slutfört denna uppgift ska du kunna:
 - **MySQL:** Skapa databastabeller och strukturera data.
 - **PHP & SQL:** Använda PHP för att ansluta, spara och hämta data från en MySQL-databas på ett säkert sätt.
-- **Git:** Initiera repositories, skapa commits och synkronisera kod med GitLab.
+- **Git:** Initiera repositories, skapa commits och synkronisera kod med GitHub.
 - **Fullstack-flöde:** Förstå hela flödet från formulärinmatning till databaslagring och presentation.
 
 ## Förberedelser
 Innan du börjar:
 1.  Se till att du har tillgång till din MySQL-databas (via phpMyAdmin eller terminalen).
 2.  Ha din tidigare gästbokskod (HTML/CSS) redo.
-3.  Ha ett konto på [GitLab](https://gitlab.com).
+3.  Ha ett konto på [GitHub](https://github.com).
 
 ---
 
@@ -126,20 +126,19 @@ git add .
 git commit -m "Feature: Kopplat gästboken till MySQL-databas"
 ```
 
-### 3. Ladda upp till GitLab
-1.  Skapa ett **nytt, tomt projekt** på GitLab (kryssa *inte* i "Initialize with README").
-2.  Följ instruktionerna på GitLab för att pusha ditt befintliga repository, oftast ser det ut så här:
+### 3. Ladda upp till GitHub
+1.  Skapa ett **nytt, tomt repository** på GitHub (kryssa *inte* i "Add a README file").
+2.  Följ instruktionerna på GitHub för att pusha ditt befintliga repository, oftast ser det ut så här:
 
     ```bash
-    # Byt ut URL:en nedan mot din repositories URL
-    git remote add origin git@gitlab.com:ditt_användarnamn/guestbook.git
+    # Byt ut URL:en nedan mot ditt repositorys URL
+    git remote add origin git@github.com:ditt_användarnamn/guestbook.git
     
     # Skicka upp koden
-    git push -u origin master
-    # (Eller 'main' om din default branch heter det)
+    git push -u origin main
     ```
 
-*Behöver du skapa SSH-nycklar? Kör `ssh-keygen`, kopiera innehållet i `~/.ssh/id_rsa.pub` och lägg till under **Settings -> SSH Keys** på GitLab.*
+*Behöver du skapa SSH-nycklar? Kör `ssh-keygen`, kopiera innehållet i `~/.ssh/id_rsa.pub` (eller `id_ed25519.pub`) och lägg till under **Settings -> SSH and GPG keys** på GitHub.*
 
 ---
 
@@ -155,4 +154,4 @@ git commit -m "Feature: Kopplat gästboken till MySQL-databas"
 - [PHP: The Right Way - Databaser & PDO](https://phptherightway.com/#databases_pdo)
 - [PHP.net: PDO Prepared Statements](https://www.php.net/manual/en/pdo.prepared-statements.php)
 - [The Odin Project: Databases Overview](https://www.theodinproject.com/lessons/nodejs-databases)
-- [GitLab Docs: SSH-nycklar](https://docs.gitlab.com/ee/user/ssh.html)
+- [GitHub Docs: SSH-nycklar](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)

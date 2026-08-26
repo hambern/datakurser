@@ -154,9 +154,9 @@ När appar pratar med ditt API kan de inte "logga in" med cookies som en webblä
 
 Riktiga proffs använder verktyg för att jobba snabbare och säkrare.
 
-### Versionshantering (Git & GitLab)
+### Versionshantering (Git & GitHub)
 *   **Git** är en tidsmaskin. Du kan spara "checkpoints" (commits) av din kod.
-*   **GitLab/GitHub** är stället där vi sparar koden online för att kunna samarbeta.
+*   **GitHub** är stället där vi sparar koden online i molnet för att kunna samarbeta och lämna in projekt.
 
 ### Beroendehantering (Composer)
 Varför uppfinna hjulet? **Composer** är ett program som laddar ner färdiga bibliotek (paket) som andra skrivit. Vill du ha en funktion för att skicka mail? `composer require phpmailer/phpmailer`. Klart!

@@ -241,14 +241,14 @@ Flight::route('GET /anvandare', [UserController::class, 'index']);
 
 ## Inlämning
 
-Vi använder GitLab för inlämning, precis som i branschen:
+Vi använder GitHub för inlämning, precis som i branschen:
 
-1.  **Repository:** Skapa ett privat repo på GitLab.
+1.  **Repository:** Skapa ett privat repo på GitHub.
 2.  **Källkod:** Pusha din kod (exklusive `vendor/`-mappen och `config.php`! Se till att `.gitignore` används).
 3.  **Databas:** Exportera din databasstruktur till en `.sql`-fil och lägg i roten av repot.
 4.  **Rapport:** Se till att din ifyllda rapportfil ([rapportmall.md](rapportmall.md)) ligger i repot. Den ska innehålla både projektplanen och slutrapporten.
 
-_OBS: Lägg till din lärare som "Reporter" eller "Maintainer" i GitLab-projektet för att de ska kunna rätta._
+_OBS: Lägg till din lärare som "Collaborator" (under Settings -> Collaborators) i ditt GitHub-repository för att läraren ska kunna se och rätta._
 
 ---
 

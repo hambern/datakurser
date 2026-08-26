@@ -59,7 +59,7 @@ I detta projekt ska du inte jobba direkt i `main`-branchen. För varje steg neda
 ---
 
 ## Inlämning
-Lämna in länken till ditt GitLab-repository.
+Lämna in länken till ditt GitHub-repository.
 Repot ska innehålla:
 1.  Källkod.
 2.  SQL-fil för databasen.

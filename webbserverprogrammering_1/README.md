@@ -11,7 +11,7 @@ I denna kurs använder vi **[The Odin Project](https://www.theodinproject.com/)*
 2. **Skapa ett användarkonto:**
    > **💡 Tips för registrering:** Registrera dig gärna med din **privata e-postadress**. Då följer din profil, dina sparade framsteg och ditt framtida portfolio med dig även efter skoltiden. Det är dock självklart helt tillåtet att använda din skoladress om du föredrar det.
 3. Använd The Odin Project för att lära dig och fördjupa dig i:
-   - **Git & GitHub/GitLab:** Versionshantering på riktigt.
+   - **Git & GitHub:** Versionshantering på riktigt.
    - **Hur webben fungerar:** Klient/Server, HTTP-protokollet, Request/Response och statuskoder.
    - **Databaser & SQL:** Relationsdatabaser, tabeller, datamodellering och CRUD.
    - **Arkitektur & Säkerhet:** MVC-mönstret, autentisering, sessioner och skydd mot sårbarheter.

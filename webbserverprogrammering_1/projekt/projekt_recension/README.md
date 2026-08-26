@@ -14,13 +14,13 @@ Efter avslutat projekt ska ni kunna:
 
 ## Arbetsmetod & Verktyg
 
-Ni arbetar två och två mot **samma GitLab-repository**, men kör koden på **varsin lokal miljö** (eller egen mapp på servern).
+Ni arbetar två och två mot **samma GitHub-repository**, men kör koden på **varsin lokal miljö** (eller egen mapp på servern).
 
 ### Git-flöde
-1.  **Repository:** Skapa ett gemensamt repo på GitLab. Bjud in varandra som "Maintainers".
-2.  **Branches:** Arbeta aldrig direkt i `main` (eller `master`). Skapa en ny branch för varje funktion, t.ex. `feature/login` eller `feature/reviews`.
-3.  **Merge Requests:** När en funktion är klar, skapa en Merge Request (MR) på GitLab. Den andra personen ska granska koden innan den slås ihop (mergas) med huvudkoden.
-4.  **Issues:** Använd "Issues" i GitLab för att fördela uppgifter ("Vem gör vad?").
+1.  **Repository:** Skapa ett gemensamt repo på GitHub. Bjud in varandra som "Collaborators" (under *Settings -> Collaborators*).
+2.  **Branches:** Arbeta aldrig direkt i `main`. Skapa en ny branch för varje funktion, t.ex. `feature/login` eller `feature/reviews`.
+3.  **Pull Requests:** När en funktion är klar, skapa en Pull Request (PR) på GitHub. Den andra personen ska granska koden innan den slås ihop (mergas) med huvudkoden.
+4.  **Issues:** Använd "Issues" i GitHub för att fördela uppgifter ("Vem gör vad?").
 
 ---
 
@@ -57,7 +57,7 @@ Projektet är uppdelat i steg. Se till att varje steg fungerar innan ni går vid
 ---
 
 ## Inlämning
-Lämna in länken till ert **GitLab-repository**.
+Lämna in länken till ert **GitHub-repository**.
 Se till att repot innehåller:
 1.  All källkod.
 2.  En `README.md` med:

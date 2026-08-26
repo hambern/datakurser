@@ -67,7 +67,7 @@ Här är en struktur du kan utgå ifrån. Exakta URL:er beror på din routing.
 ---
 
 ## Redovisning & Dokumentation
-Projektet redovisas genom inlämning på GitLab. I ditt repository ska det finnas en `README.md` (din rapport) som innehåller:
+Projektet redovisas genom inlämning på GitHub. I ditt repository ska det finnas en `README.md` (din rapport) som innehåller:
 
 1.  **Inledning:** Projektets syfte och dina mål.
 2.  **Teknisk Beskrivning:**
