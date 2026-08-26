@@ -134,9 +134,29 @@ php_value error_reporting -1
 7. **Startsidan index.html:** Filen `index.html` fungerar som webbplatsens startsida, vilket gör den till en central del i webbplatsens struktur.
 8. **Strukturerad organisation:** Organisera filerna i meningsfulla mappar och undvik överbelastning i enskilda kataloger.
 
-## OpenAI ChatGPT
+## 🚀 Egna sidoprojekt & AI-verktyg (Antigravity, Cursor m.fl.)
 
-Om du kör fast i din kodning, tveka inte att ställa frågor till Open AI:s chattbot ChatGPT som är förvånansvärt skicklig på att skriva kod. Var bara tydlig med vilket slags språk du vill ha hjälp med, exempelvis HTML, CSS, PHP eller JavaScript: <https://chat.openai.com/>. Men undvik att använda AI-teknik för att generera redan färdig kod. En bättre strategi är att använda tekniken för att felsöka och för att förklara i detalj vad funktioner etc gör.
+Ett av de absolut bästa och roligaste sätten att bli en riktigt vass utvecklare är att **bygga egna projekt vid sidan av kursens obligatoriska uppgifter**. 
+
+Att förverkliga egna idéer ger massor av praktisk erfarenhet. Det kan vara vad som helst du tycker är intressant:
+- En personlig portfolio eller blogg
+- En poängräknare, statistik-app eller matchlogg för ditt favoritspel
+- Ett quiz, en träningsdagbok eller ett film-/bokningssystem
+- En webbapp för din förening, ditt UF-företag eller din hobby
+
+### Frihet att experimentera med AI-agenter i egna projekt!
+I dina **egna sidoprojekt** är det helt fritt fram att utforska och experimentera med moderna **AI-agenter och kodassistenter** som t.ex.:
+- **Google Antigravity**
+- **Cursor**
+- **GitHub Copilot**
+- **Claude Code & ChatGPT**
+
+Genom att arbeta med AI-agenter i egna projekt lär du dig prompt-engineering, att läsa och granska AI-genererad kod, och hur man snabbt tar en idé från skiss till fungerande applikation.
+
+> **💡 Tips:** Startmallen för Flight PHP ([gitlab.com/ornskoldsviks-gymnasium/flight](https://gitlab.com/ornskoldsviks-gymnasium/flight)) innehåller filen `AGENTS.md`, vilket gör att AI-agenter automatiskt förstår projektets arkitektur och hjälper dig bygga rätt!
+
+> **⚠️ Tänk på vid kursens obligatoriska inlämningar:**
+> Vid kursens bedömningsuppgifter är det dina egna kunskaper och din egen förståelse som mäts. Använd gärna AI som en personlig lärare/tutor för att förklara felmeddelanden eller diskutera idéer, men se till att du själv förstår och kan förklara varje rad kod du lämnar in.
 
 ---
 
