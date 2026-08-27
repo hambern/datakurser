@@ -42,7 +42,7 @@ Läs och titta på följande avsnitt i **[Laracasts: PHP For Beginners](https://
   - [3.6 Always Escape Untrusted Input](https://laracasts.com/episodes/2626) *(XSS & `htmlspecialchars`)*
 
 ### 📖 Kompletterande guider:
-- 📖 **[PHP: The Right Way — Databaser & PDO](https://phptherightway.com/#databases_pdo)** — Bästa praxis för PDO och Prepared Statements (`?`).
+- 📖 **[PHP: The Right Way — Databaser & PDO](https://phptherightway.com/#pdo_extension)** — Bästa praxis för PDO och Prepared Statements (`?`).
 - 🎯 **[SQLBolt: Interactive SQL Tutorial](https://sqlbolt.com/)** — Gör lektion 1–5 för att bli bekväm med `SELECT` och `INSERT`.
 - 📖 **[GitHub Docs: Git Basics](https://docs.github.com/en/get-started/getting-started-with-git)** — Hur Git fungerar, repositories, commits och staging area (`git add .`, `git commit`).
 
@@ -182,6 +182,6 @@ git commit -m "Feature: Kopplat gästboken till MySQL-databas"
 
 ## Tips & Resurser
 - [Laracasts: PHP For Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)
-- [PHP: The Right Way - Databaser & PDO](https://phptherightway.com/#databases_pdo)
+- [PHP: The Right Way - Databaser & PDO](https://phptherightway.com/#pdo_extension)
 - [PHP.net: PDO Prepared Statements](https://www.php.net/manual/en/pdo.prepared-statements.php)
 - [GitHub Docs: SSH-nycklar](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
