@@ -18,9 +18,8 @@ I denna kurs använder vi **[Laracasts: PHP For Beginners](https://laracasts.com
 - **Säkerhet & Validering:** Riktlinjer för att förhindra säkerhetshål som XSS, CSRF och SQL-injections.
 - **Kodstandarder:** PSR-standarder och ren, professionell kodstruktur.
 
-### 3. Kompletterande resurser för SQL & kodträning:
+### 3. Kompletterande resurser för SQL-träning:
 - **[SQLBolt](https://sqlbolt.com/)** & **[SQL Murder Mystery](https://mystery.knightlab.com/)** – Interaktiva och roliga sätt att öva SQL-frågor och tabellrelationer.
-- **[Exercism PHP Track](https://exercism.org/tracks/php)** – Gratis interaktiv kodträning i modern PHP med automatiserade tester.
 - **SQL-videospellista:** <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI>
 
 ### 4. Mikroramverket Flight PHP
