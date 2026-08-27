@@ -102,10 +102,11 @@ function showQuestion() {
 
 ## Bedömning
 
-| Kvalitet / Betygsnivå | **Betyget E** | **Betyget C** | **Betyget A** |
+| Aspekt / Betygsnivå | **Betyget E** | **Betyget C** | **Betyget A** |
 | :--- | :--- | :--- | :--- |
-| **Funktionalitet & Kod** | Quizet fungerar i webbläsaren. Minst 8 frågor finns. Poängen räknas ut korrekt och visas i slutet. Koden är uppdelad i HTML, CSS och JS. | Snyggt flöde med en fråga i taget. Svarsknapparna ger direkt visuell feedback (t.ex. grön för rätt, röd för fel). Sidan är helt responsiv och mobilanpassad. | Mycket genomarbetad interaktivitet: tidsbegränsning/timer, animationer, ljud eller sparning av Highscore via `localStorage`. Ren, välstrukturerad och kommenterad JavaScript-kod. |
-| **Design & Upplevelse** | Enkel layout och grundläggande CSS. Media (bilder) visas. | Enhetlig och tilltalande design med Flexbox/Grid. Tydlig typografi och bra kontraster. | Professionell "App-känsla" med smidiga övergångar, mikroanimationer och hög tillgänglighet (`alt`-texter, tangentbordsvänligt). |
+| **1. JavaScript, Logik & DOM-manipulation** | Quizet fungerar i webbläsaren. Minst 8 frågor finns i en datastruktur (array med objekt). Frågor och svarsalternativ renderas ut i DOM:en, poängen räknas ut korrekt och visas när quizet är slut. | Välstrukturerad logik med en fråga i taget och dynamiska knappar. Svarsknapparna ger omedelbar visuell feedback (rätt/fel indikering) och förhindrar att man klickar flera gånger på samma fråga. | Mycket genomarbetad interaktivitet: t.ex. tidsbegränsning/nedräkningstimer per fråga, progress bar, återställningsknapp och sparning av Highscore via `localStorage`. Logiken är effektiv och modulär. |
+| **2. Design, Feedback & Responsivitet** | Enkel och fungerande layout med CSS. Frågor och knappar är läsbara och användbara på skärmen. | Tilltalande och enhetlig design med Flexbox/Grid. Sidan är responsiv och anpassad för både mobil och dator med tydlig färgfeedback vid svar. | Professionell "App-känsla" med smidiga CSS-övergångar, mikroanimationer när frågor byts, modern typografi och hög visuell finish. |
+| **3. Kodstruktur, Semantik & Tillgänglighet** | Koden är separerad i HTML, CSS och JS. Grundläggande HTML-element (`<button>`, `<h1>`, `<p>`) används. | Ren kod med meningsfulla variabel- och funktionsnamn. Semantiska element och god tillgänglighet (bra färgkontraster mellan text och knappar, tydliga fokuslägen). | Exemplarisk kodstruktur med tydliga kommentarer och felhantering. Full tillgänglighet med ARIA/tangentbordsnavigation och fullgod responsivitet utan layout-skiftningar. |
 
 ---
 

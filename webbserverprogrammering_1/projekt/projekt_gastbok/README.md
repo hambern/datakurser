@@ -172,13 +172,13 @@ git commit -m "Feature: Kopplat gästboken till MySQL-databas"
 
 ---
 
-## Bedömningskriterier
+## Bedömning
 
-| Betyg | Krav |
-| :--- | :--- |
-| **E** | Du kan skapa tabeller, ansluta med PHP och spara/visa data. Grundläggande Git-användning. |
-| **C** | Koden är välorganiserad (t.ex. separat fil för db-koppling). Du använder Git regelbundet med tydliga commit-meddelanden. |
-| **A** | Du använder **Prepared Statements** för säkerhet (mot SQL-injections) och `htmlspecialchars` (mot XSS). Databasstrukturen är korrekt och koden följer "Best Practices". |
+| Aspekt / Betygsnivå | **Betyget E** | **Betyget C** | **Betyget A** |
+| :--- | :--- | :--- | :--- |
+| **1. PHP & Databasintegration (MySQL/PDO)** | Korrekt tabell skapad i MySQL. Databasanslutning via PDO fungerar. Inlägg sparas via `INSERT` och visas på sidan via `SELECT` i datumordning. | Databasanslutningen ligger i en separat återanvändbar fil (`db.php`) med korrekt felhantering (`PDOException`). Datatyper (`VARCHAR`, `TEXT`, `TIMESTAMP`) är genomtänkta. | Robust databasstruktur med primärnyckel och auto-increment. PHP-koden hanterar tomma inlägg, formaterar datum snyggt och har optimal PDO-felrapportering (`ERRMODE_EXCEPTION`). |
+| **2. Webbsäkerhet & Validering** | Grundläggande funktion utan uppenbara krascher. Data från formuläret hanteras via `POST`. | **Prepared Statements** med platshållare (`?` eller namngivna parametrar) används konsekvent för att förhindra SQL-injections. | Fullständig tillämpning av god säkerhetspraxis: Prepared Statements mot SQL-injection och `htmlspecialchars()` mot XSS vid presentation. Servervalidering kontrollerar att fält inte skickas tomma. |
+| **3. Versionshantering, Struktur & Kodkvalitet** | Projektet är versionshanterat med Git (minst en initial commit) och uppladdat till ett repository på GitHub. | Regelbundna commits i Git med beskrivande commit-meddelanden. PHP-koden är prydligt uppdelad med indrag och tydlig struktur mellan formulär, logik och presentation. | Professionellt versionshanterat på GitHub med en tydlig `README.md` och eventuell `.gitignore`. Koden är ren, välkommenterad och följer etablerade PHP-konventioner. |
 
 ## Tips & Resurser
 - [Laracasts: PHP For Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)

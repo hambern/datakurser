@@ -90,11 +90,11 @@ Repot ska innehålla:
 
 ## Bedömning
 
-| Nivå | Kriterier |
-| :--- | :--- |
-| **E** | Applikationen fungerar (Lägga till, ta bort, visa). Koden är enkel men fungerande. Git används (minst en commit). |
-| **C** | Kategorier fungerar (Relationer). Du har använt `JOIN` i SQL. Du har använt branches för minst en funktion. Filtrering fungerar. |
-| **A** | Koden är ren och säker (Prepared Statements). Användarhantering eller mycket avancerad filtrering finns. Git-historiken är snygg och strukturerad med flera branches. |
+| Aspekt / Betygsnivå | **Betyget E** | **Betyget C** | **Betyget A** |
+| :--- | :--- | :--- | :--- |
+| **1. CRUD & Databasrelationer (SQL/PDO)** | Applikationen klarar grundläggande CRUD: skapa uppgifter (`INSERT`), visa dem (`SELECT`) och ta bort dem (`DELETE`). Data sparas permanent i MySQL. | Full CRUD inklusive statusändring (`UPDATE`). Flera tabeller används (t.ex. `tasks` och `categories`) med relationer via främmande nycklar och `INNER JOIN` eller `LEFT JOIN`. | Avancerad SQL med dynamisk filtrering och sortering (`WHERE`, `ORDER BY`, `JOIN`) baserat på användarval. Korrekt indexering och kaskadborttagning (`ON DELETE CASCADE`) vid behov. |
+| **2. Säkerhet, Validering & Kodkvalitet** | Fungerande PHP-kod med databasanslutning via PDO. Grundläggande kontroll av inmatning. | **Prepared Statements** används konsekvent vid alla databasfrågor som tar användardata. Validering kontrollerar att uppgifter inte skapas utan titel. | Strukturerad och modulär kod (t.ex. separat valideringsklass/funktioner). Skydd mot XSS via `htmlspecialchars()` och god användarupplevelse vid felaktig inmatning. |
+| **3. Git & Feature Branching** | Projektet är versionshanterat med Git och uppladdat på GitHub med databasens `.sql`-fil. | **Feature Branching** har använts för minst en funktion (`git checkout -b`, merge till `main`). Tydliga commit-meddelanden som beskriver vad som ändrats. | Konsekvent och professionell användning av branches för varje ny feature (`feature/kategorier`, `feature/status` etc.). Ren Git-historik och tydlig `README.md` med installationsanvisningar. |
 
 ## Tips
 -   **Join:** `SELECT tasks.title, categories.name FROM tasks JOIN categories ON tasks.category_id = categories.id`

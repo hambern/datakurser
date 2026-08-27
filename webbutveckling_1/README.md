@@ -22,10 +22,7 @@ The Odin Project är en världsledande, öppen och modern utbildningsplattform s
    - **JavaScript Basics:** Grundläggande logik och DOM-manipulation.
 
 ### 📝 Prov på The Odin Project
-Observera att det kommer att komma prov på innehållet i **The Odin Project**:
-- **Introduction:** Hur webbutveckling fungerar och hur man löser problem.
-- **HTML Foundations:** Semantisk HTML, struktur, formulär och länkar.
-- **CSS Foundations:** Box-modellen, Flexbox och modern styling.
+Observera att det kommer att komma prov på innehållet i **The Odin Project**.
 
 ---
 

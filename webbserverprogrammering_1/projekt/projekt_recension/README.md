@@ -125,8 +125,8 @@ Se till att repot innehåller:
 
 ## Bedömning
 
-| Nivå | Kriterier |
-| :--- | :--- |
-| **E** | Ni har en fungerande applikation med inloggning och möjlighet att skriva recensioner. Koden och databasstrukturen är versionshanterade. |
-| **C** | Applikationen har kategorier och sortering. Koden är uppdelad och strukturerad. Ni använder Git med branches och Issues. Databasstrukturen är tydligt versionshanterad via SQL-filer (`database.sql` eller `migrations/`). God databasdesign. |
-| **A** | Applikationen har sociala funktioner (Följa, Flöden). Koden är "Clean" och säker (skydd mot SQL-injection/XSS). Ni har ett professionellt Git-flöde med Code Reviews (Pull Requests) där databasförändringar har checkats in i samma PR som motsvarande kodändringar. |
+| Aspekt / Betygsnivå | **Betyget E** | **Betyget C** | **Betyget A** |
+| :--- | :--- | :--- | :--- |
+| **1. Autentisering & Databasdesign** | Fungerande registrering och inloggning. Lösenord hashas med `password_hash()` och verifieras med `password_verify()`. Sessionshantering via `$_SESSION` håller användaren inloggad. | Välstrukturerade tabeller med relationer mellan användare och recensioner (En-till-Många). Kategorier och sortering på betyg eller datum fungerar. | Avancerad databasdesign med **Många-till-Många-relationer** (kopplingstabell för t.ex. följarflöde `user_followers` eller taggar). SQL-schema och testdata finns i repot. |
+| **2. Webbsäkerhet & Auktorisering** | Applikationen skyddar mot grundläggande säkerhetshål. Inloggningsuppgifter exponeras inte i klartext. | **Auktoriseringskontroller** säkerställer att användare endast kan redigera/radera sina *egna* inlägg. Konsekventa Prepared Statements mot SQLi och `htmlspecialchars()` mot XSS. | Genomarbetad säkerhetsarkitektur: skydd mot sessionsstöld (`session_regenerate_id()`), tillämpning av PRG-mönstret (Post-Redirect-Get) och säker felhantering utan känsliga databasläckor. |
+| **3. Teamflöde & Git-samarbete** | Båda personerna har bidragit till ett gemensamt GitHub-repository med källkod och databasexport (`.sql`). | Tydlig uppdelning av arbetet med **branches och GitHub Issues**. Databasens struktur hålls synkroniserad mellan utvecklarna via delade SQL-filer. | Professionellt teamflöde: Samtliga funktioner slås samman via **Pull Requests (PR)** med dokumenterade **Code Reviews** och godkännande från den andra parten innan merge. |
