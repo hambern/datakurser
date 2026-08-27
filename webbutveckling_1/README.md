@@ -81,6 +81,9 @@ ssh -p 3690 ditt_login@student.oedu.se
 ```
 
 ### Använd Visual Studio Code med Remote - SSH
+
+Vi rekommenderar och använder **[Visual Studio Code](https://code.visualstudio.com/)** som gemensam kodredigerare i alla våra kurser. Med tillägget **Remote - SSH** redigerar du filer direkt på servern i realtid:
+
 1. Installera **Visual Studio Code**: <https://code.visualstudio.com/>
 2. Installera tillägget **"Remote - SSH"** (av Microsoft).
 3. Klicka på den gröna ikonen längst ner till vänster och välj **Connect to Host...** -> **Add New SSH Host...**.

@@ -21,6 +21,7 @@ Kurserna bygger på varandra i en naturlig och professionell utvecklingstrappa:
 
 ## 🛠️ Gemensamma utvecklarverktyg
 
+- **Kodredigerare:** [Visual Studio Code](https://code.visualstudio.com/) (vår gemensamma editor — använd tillägget [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) för att arbeta direkt mot utvecklingsservern)
 - **Utvecklingsserver:** [`student.oedu.se`](https://student.oedu.se) (SSH-port: `3690`)
 - **Databashantering:** [`admin.student.oedu.se`](https://admin.student.oedu.se) (phpMyAdmin)
 - **Versionshantering:** [GitHub](https://github.com)

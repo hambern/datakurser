@@ -85,13 +85,13 @@ Man kan skicka filer via ssh (sftp), standard port är 22 men på denna server �
 
 ### Logga in via ssh på port 3690
 
-`ssh -p 3690 ditt_login@student.oedu.se`
+```bash
+ssh -p 3690 ditt_login@student.oedu.se
+```
 
-Du kan också, när du fyllt i korrekt information i PhpStorm, logga in via ssh genom `Tools > Start SSH Session` i menyn.
+## Använd Visual Studio Code med Remote - SSH
 
-## Använd Visual Studio Code
-
-Jag rekommenderar att du i kursen använder programmet Visual Studio Code. Då kan du jobba direkt emot utvecklingsservern och behöver inte tänka på att "deploya". Följ nedanstående guide:
+Vi rekommenderar och använder **[Visual Studio Code](https://code.visualstudio.com/)** som gemensam kodredigerare i alla kurser. Med tillägget **Remote - SSH** jobbar du direkt mot utvecklingsservern i realtid:
 
 - Ladda ner och installera programmet här: <https://code.visualstudio.com/>
 - Installera därefter följande extension-paket:
