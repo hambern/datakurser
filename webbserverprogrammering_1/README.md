@@ -12,13 +12,6 @@ I denna kurs använder vi **[Laracasts: PHP For Beginners](https://laracasts.com
 > **💡 Kursens pedagogiska upplägg (Flipped Classroom):**  
 > Du tittar på de rekommenderade Laracasts-avsnitten som **förberedelse och hemläxa** i din egen takt. I klassrummet ägnar vi lektionstiden åt handledning, problemlösning och praktiskt kodande på de fyra projekten!
 
-| Projekt i klassrummet | Rekommenderade Laracasts-avsnitt i hemläxa |
-| :--- | :--- |
-| **1. [Gästboken](projekt/projekt_gastbok/)** | **Del 1** (1.1–1.7, 1.10), **Del 2** (2.5, 2.6, 2.9) & **Del 3** (3.5, 3.6) |
-| **2. [ToDo-appen](projekt/projekt_todo/)** | **Del 3** (3.1, 3.2, 3.4, 3.7, 3.8) & **Del 4** (4.8) |
-| **3. [Recensionsprojektet](projekt/projekt_recension/)** | **Del 3** (3.3), **Del 5** (5.1, 5.2, 5.4, 5.5) & **Del 6** (6.3, 6.4) |
-| **4. [Examinerande MVC (Flight)](projekt/projekt_mvc/)** | **Del 4** (4.1–4.3, 4.5, 4.6), **Del 5** (5.3), **Del 7** (7.1, 7.2) & **Del 8–9** (8.1, 9.1) |
-
 ### 2. Digital referenshandbok: PHP: The Right Way
 **[PHP: The Right Way](https://phptherightway.com/)** fungerar som kursens kvalitetsstandard och uppslagsverk för modern god praxis:
 - **Databaser & PDO:** Korrekt databasåtkomst och hantering av prepared statements.
