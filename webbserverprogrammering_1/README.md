@@ -27,6 +27,15 @@ Flight PHP är ett modernt och lättviktigt PHP-mikroramverk som gör det enkelt
 - [Startmall på GitHub](https://github.com/hambern/boilerplate-flight)
 - [Flight PHP:s officiella dokumentation](https://docs.flightphp.com/)
 
+---
+
+## ⚡ Kodexperiment & Sandlåda: StackBlitz (Kopplat till GitHub)
+
+Vill du snabbt skissa på en frontend-idé, en layout eller dela kod för snabb felsökning utan att ändra på din skarpa server?
+- Använd **[StackBlitz](https://stackblitz.com/)** direkt i webbläsaren.
+- **💡 Logga in med GitHub:** Klicka på *"Sign In with GitHub"* så sparas dina experiment på samma utvecklarprofil som du använder i kurserna.
+- Perfekt för att skissa på HTML/CSS/JavaScript-gränssnitt eller dela en koddialog i Teams innan du bygger in det i ditt PHP-projekt.
+
 ## 🧭 Kursens Projektuppgifter
 
 Kursen är uppbyggd kring fyra stegvis fördjupande projekt där du går från din första databaskoppling till en komplett MVC-applikation:

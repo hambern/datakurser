@@ -30,5 +30,5 @@ Kurserna bygger på varandra i en naturlig och professionell utvecklingstrappa:
 - **Versionshantering:** [GitHub](https://github.com)
 - **Digitala läromedel & kurser:** [The Odin Project](https://www.theodinproject.com/) (Webbutveckling 1) & [Laracasts](https://laracasts.com/series/php-for-beginners-2023-edition) (Webbserverprogrammering 1)
 - **Kvalitetsstandard & god praxis:** [PHP: The Right Way](https://phptherightway.com/)
-- **Frontend-experiment:** [CodePen.io](https://codepen.io/)
+- **Webbläsar-sandlåda & snabbstart:** [StackBlitz](https://stackblitz.com/) (Kopplat till GitHub)
 - **Startmall för MVC/PHP:** [boilerplate-flight](https://github.com/hambern/boilerplate-flight)

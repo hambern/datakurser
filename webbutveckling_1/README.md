@@ -29,14 +29,14 @@ Observera att det kommer att komma prov på innehållet i **The Odin Project**:
 
 ---
 
-## 🧪 Snabbstart & Lekstuga: CodePen (Första lektionen)
+## ⚡ Snabbstart & Sandlåda: StackBlitz (Kopplat till GitHub)
 
-Innan vi sätter upp filer och mappar i Visual Studio Code börjar vi med att experimentera direkt i webbläsaren på **[CodePen.io](https://codepen.io/)**:
-- **Noll krångel:** Ingen installation eller server behövs – klicka bara på *Start Coding* och skriv din första HTML och CSS direkt.
-- **Direkt visuell feedback (Live Preview):** Så fort du ändrar en färg, text eller marginal ser du resultatet omedelbart.
-- **Digitalt kladdpapper:** Perfekt under hela kursen för att snabbt testa en ny idé, en knappanimation eller en flexbox-layout innan du bygger in det i ditt riktiga projekt.
-- **Enkelt att dela felsökning:** Har du kört fast? Klistra in din kod i en Pen och skicka länken i chatten (t.ex. via **Microsoft Teams**) till din lärare eller en klasskompis. De kan direkt se koden, testa ändringar och hjälpa dig hitta buggen!
-- **Skapa ett gratiskonto:** Logga gärna in med din privata e-post eller GitHub så att dina experiment ("Pens") sparas och kan visas upp.
+Innan vi sätter upp filer och ansluter med Remote-SSH i Visual Studio Code börjar vi med att experimentera direkt i webbläsaren på **[StackBlitz](https://stackblitz.com/)**:
+- **Full VS Code-miljö direkt i webbläsaren:** Gränssnittet, kortkommandona och filträdet är identiska med Visual Studio Code, vilket gör övergången till den riktiga utvecklingsmiljön helt sömlös.
+- **Riktig filstruktur:** Du lär dig hantera riktiga filer (`index.html`, `style.css`, `script.js`) och hur de kopplas ihop från första lektionen.
+- **Direkt visuell feedback (Live Preview):** Så fort du ändrar en färg, text eller marginal ser du resultatet omedelbart i samma fönster.
+- **Enkelt att dela felsökning:** Har du kört fast? Spara ditt projekt och skicka länken i chatten (t.ex. via **Microsoft Teams**) till din lärare eller en klasskompis för att snabbt få hjälp.
+- **💡 Logga in med GitHub:** Klicka på **"Sign In with GitHub"** när du öppnar StackBlitz. Då sparas alla dina experiment automatiskt på ditt GitHub-konto, du slipper hålla reda på fler lösenord och kan med ett klick exportera dina projekt till riktiga GitHub-repositories!
 
 ---
 
