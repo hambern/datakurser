@@ -27,10 +27,11 @@ Läs och titta på följande avsnitt i **[Laracasts: PHP For Beginners](https://
 
 ### 🎬 Rekommenderade Laracasts-avsnitt (Hemläxa & Förberedelse):
 - **Del 1: The Fundamentals**
-  - [1.1 How to Choose a Programming Language](https://laracasts.com/episodes/2551) & [1.2 Tools of the Trade](https://laracasts.com/episodes/2552)
   - [1.3 Your First PHP Tag](https://laracasts.com/episodes/2554)
-  - [1.4 Variables](https://laracasts.com/episodes/2555), [1.5 Conditionals and Booleans](https://laracasts.com/episodes/2556)
-  - [1.6 Arrays](https://laracasts.com/episodes/2559) & [1.7 Associative Arrays](https://laracasts.com/episodes/2561)
+  - [1.4 Variables](https://laracasts.com/episodes/2555)
+  - [1.5 Conditionals and Booleans](https://laracasts.com/episodes/2556)
+  - [1.6 Arrays](https://laracasts.com/episodes/2559)
+  - [1.7 Associative Arrays](https://laracasts.com/episodes/2561)
   - [1.10 Separate Logic From the Template](https://laracasts.com/episodes/2565) *(Dela upp PHP-kod från HTML)*
 - **Del 2: Dynamic Web Applications**
   - [2.5 Create a MySQL Database](https://laracasts.com/episodes/2577)
