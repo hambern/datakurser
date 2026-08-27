@@ -44,7 +44,7 @@ Kursen är uppbyggd kring ett fåtal kreativa och engagerande projekt där du f�
 | Projekt | Beskrivning | Vad du lär dig |
 | :--- | :--- | :--- |
 | **1. [Portalsida](projekt/projekt_portalsida/)** | Skapa din personliga startsida och presentationshub på webbservern. | HTML5-struktur, semantik, CSS, länkning, filer på servern och responsiv viewport. |
-| **2. [Informationssida om ditt intresse](projekt/projekt_komprimering/)** | Välj ett eget favoritämne och bygg en responsiv sajt med hero-video och bildgalleri. | CSS Flexbox/Grid, responsiv design (Media Queries), bild-/videokomprimering (WebP/MP4), tillgänglighet (`alt`-texter) och upphovsrätt. |
+| **2. [Informationssida om ditt intresse](projekt/projekt_intressesida/)** | Välj ett eget favoritämne och bygg en responsiv sajt med hero-video och bildgalleri. | CSS Flexbox/Grid, responsiv design (Media Queries), bild-/videokomprimering (WebP/MP4), tillgänglighet (`alt`-texter) och upphovsrätt. |
 | **3. [Webbquiz om Internets Historia](projekt/projekt_fragesport/)** | Bygg ett interaktivt frågesportspel i webbläsaren med fakta från Internetmuseum. | JavaScript, DOM-manipulation (`querySelector`, `addEventListener`), villkorsstyrd logik, poängräkning och `localStorage`. |
 | **4. [Slutprojektet](projekt/projekt_slut/)** | Planera, producera, testa och lansera ett komplett webbprojekt med **fullständig kreativ frihet** kring idé och tema. | Hela utvecklingsprocessen: Projektplanering, responsiv layout (Grid/Flexbox), JavaScript-interaktivitet, Lighthouse-optimering och slutrapport. |
 
