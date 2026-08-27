@@ -14,10 +14,22 @@ Efter avslutat projekt ska ni kunna:
 
 ## 📚 Kunskapskrav & Vad ni behöver läsa på om
 
-Läs och genomför följande guider innan ni börjar bygga er gemensamma applikation:
-- 📖 **[The Odin Project: Git in the Real World](https://www.theodinproject.com/lessons/foundations-git-basics)** — Arbetsflödet med branches, Pull Requests och kodgranskning i team.
-- 📖 **[GitHub Docs: Collaborating with Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests)** — Steg-för-steg hur man skapar och granskar en PR på GitHub.
-- 📖 **[The Odin Project: Database Relationships](https://www.theodinproject.com/lessons/nodejs-databases)** — Förstå kopplingstabeller (pivot tables) för Många-till-Många (N:M) relationer (t.ex. `user_followers`).
+Läs och titta på följande avsnitt i **[Laracasts: PHP For Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)** samt guider innan ni börjar bygga er gemensamma applikation:
+
+### 🎬 Rekommenderade Laracasts-avsnitt (Hemläxa & Förberedelse):
+- **Del 3: Notes Mini-Project**
+  - [3.3 Introduction to Authorization](https://laracasts.com/episodes/2619) *(Vem har rätt att se och ändra data?)*
+- **Del 5: Sessions and Authentication**
+  - [5.1 PHP Sessions 101](https://laracasts.com/episodes/2679) *(Hur fungerar `$_SESSION`?)*
+  - [5.2 Register a New User](https://laracasts.com/episodes/2702) *(Skapa användarkonton)*
+  - [5.4 Manage Passwords Like This For The Remainder of Your Career](https://laracasts.com/episodes/2713) *(Säker lösenordshashning)*
+  - [5.5 Log In and Log Out](https://laracasts.com/episodes/2714) *(In- och utloggning)*
+- **Del 6: Refactoring Techniques**
+  - [6.3 The PRG Pattern (and Session Flashing)](https://laracasts.com/episodes/2734) *(Post-Redirect-Get och felmeddelanden)*
+  - [6.4 Flash Old Form Data to the Session](https://laracasts.com/episodes/2737) *(Behåll inmatad data vid valideringsfel)*
+
+### 📖 Kompletterande guider:
+- 📖 **[GitHub Docs: Collaborating with Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests)** — Steg-för-steg hur man skapar och granskar en PR på GitHub samt teamflöde.
 - 📖 **[PHP: The Right Way — Säkerhet & Sessions](https://phptherightway.com/#security)** — Säker användarautentisering med `password_hash()`, `password_verify()` och `$_SESSION`.
 
 ---

@@ -1,6 +1,6 @@
 # 📚 Datakurser — Örnsköldsviks Gymnasium
 
-Välkommen till samlingsplatsen för kursmaterial, övningsuppgifter och projektinstruktioner inom webbutveckling och programmering på **Örnsköldsviks Gymnasium**. Som huvudsakligt interaktivt läromedel använder vi **[The Odin Project](https://www.theodinproject.com/)**.
+Välkommen till samlingsplatsen för kursmaterial, övningsuppgifter och projektinstruktioner inom webbutveckling och programmering på **Örnsköldsviks Gymnasium**. Som digitala läromedel och referensverktyg använder vi **[The Odin Project](https://www.theodinproject.com/)** (Frontend), **[Laracasts](https://laracasts.com/series/php-for-beginners-2023-edition)** och **[PHP: The Right Way](https://phptherightway.com/)** (Backend).
 
 ---
 
@@ -28,6 +28,7 @@ Kurserna bygger på varandra i en naturlig och professionell utvecklingstrappa:
 - **Utvecklingsserver:** [`student.oedu.se`](https://student.oedu.se) (SSH-port: `3690`)
 - **Databashantering:** [`admin.student.oedu.se`](https://admin.student.oedu.se) (phpMyAdmin)
 - **Versionshantering:** [GitHub](https://github.com)
-- **Digital lärobok & träning:** [The Odin Project](https://www.theodinproject.com/)
+- **Digitala läromedel & kurser:** [The Odin Project](https://www.theodinproject.com/) (Webbutveckling 1) & [Laracasts](https://laracasts.com/series/php-for-beginners-2023-edition) (Webbserverprogrammering 1)
+- **Kvalitetsstandard & god praxis:** [PHP: The Right Way](https://phptherightway.com/)
 - **Frontend-experiment:** [CodePen.io](https://codepen.io/)
 - **Startmall för MVC/PHP:** [boilerplate-flight](https://github.com/hambern/boilerplate-flight)

@@ -2,31 +2,36 @@
 
 Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogrammering 1
 
-## Läromedel & Färdighetsträning: The Odin Project & Moderna Resurser
+## Läromedel & Färdighetsträning: Laracasts & PHP: The Right Way
 
-I denna kurs använder vi **[The Odin Project](https://www.theodinproject.com/)** som vårt digitala läromedel för webbserverns grunder, Git, databaskoncept och arkitektur, tillsammans med moderna PHP- och SQL-resurser.
+I denna kurs använder vi **[Laracasts: PHP For Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)** som digital videolärobok och **[PHP: The Right Way](https://phptherightway.com/)** som vårt officiella referensverk för modern backend-utveckling med PHP och MySQL.
 
-### 1. The Odin Project som konceptuell lärobok:
-1. Gå in på **<https://www.theodinproject.com/>** och spara som bokmärke.
-2. **Skapa ett användarkonto:**
-   > **💡 Tips för registrering:** Registrera dig gärna med din **privata e-postadress**. Då följer din profil, dina sparade framsteg och ditt framtida portfolio med dig även efter skoltiden. Det är dock självklart helt tillåtet att använda din skoladress om du föredrar det.
-3. Använd The Odin Project för att lära dig och fördjupa dig i:
-   - **Git & GitHub:** Versionshantering på riktigt.
-   - **Hur webben fungerar:** Klient/Server, HTTP-protokollet, Request/Response och statuskoder.
-   - **Databaser & SQL:** Relationsdatabaser, tabeller, datamodellering och CRUD.
-   - **Arkitektur & Säkerhet:** MVC-mönstret, autentisering, sessioner och skydd mot sårbarheter.
+### 1. Huvudsakligt läromedel: Laracasts (PHP for Beginners)
+**[Laracasts: PHP for Beginners (30 Days to Learn PHP)](https://laracasts.com/series/php-for-beginners-2023-edition)** är en gratis, modern videokurs i absolut världsklass av Jeffrey Way som lär dig modern PHP från grunden.
 
-### 2. Kompletterande resurser för PHP & SQL:
-Eftersom The Odin Project fokuserar på generella backend-koncept använder vi följande resurser för PHP-specifik träning:
-- **[PHP: The Right Way](https://phptherightway.com/)** – En fantastisk guide till modern god praxis i PHP (PDO, säkerhet, PSR-standarder).
+> **💡 Kursens pedagogiska upplägg (Flipped Classroom):**  
+> Du tittar på de rekommenderade Laracasts-avsnitten som **förberedelse och hemläxa** i din egen takt. I klassrummet ägnar vi lektionstiden åt handledning, problemlösning och praktiskt kodande på de fyra projekten!
+
+| Projekt i klassrummet | Rekommenderade Laracasts-avsnitt i hemläxa |
+| :--- | :--- |
+| **1. [Gästboken](projekt/projekt_gastbok/)** | **Del 1** (1.1–1.7, 1.10), **Del 2** (2.5, 2.6, 2.9) & **Del 3** (3.5, 3.6) |
+| **2. [ToDo-appen](projekt/projekt_todo/)** | **Del 3** (3.1, 3.2, 3.4, 3.7, 3.8) & **Del 4** (4.8) |
+| **3. [Recensionsprojektet](projekt/projekt_recension/)** | **Del 3** (3.3), **Del 5** (5.1, 5.2, 5.4, 5.5) & **Del 6** (6.3, 6.4) |
+| **4. [Examinerande MVC (Flight)](projekt/projekt_mvc/)** | **Del 4** (4.1–4.3, 4.5, 4.6), **Del 5** (5.3), **Del 7** (7.1, 7.2) & **Del 8–9** (8.1, 9.1) |
+
+### 2. Digital referenshandbok: PHP: The Right Way
+**[PHP: The Right Way](https://phptherightway.com/)** fungerar som kursens kvalitetsstandard och uppslagsverk för modern god praxis:
+- **Databaser & PDO:** Korrekt databasåtkomst och hantering av prepared statements.
+- **Säkerhet & Validering:** Riktlinjer för att förhindra säkerhetshål som XSS, CSRF och SQL-injections.
+- **Kodstandarder:** PSR-standarder och ren, professionell kodstruktur.
+
+### 3. Kompletterande resurser för SQL & kodträning:
+- **[SQLBolt](https://sqlbolt.com/)** & **[SQL Murder Mystery](https://mystery.knightlab.com/)** – Interaktiva och roliga sätt att öva SQL-frågor och tabellrelationer.
 - **[Exercism PHP Track](https://exercism.org/tracks/php)** – Gratis interaktiv kodträning i modern PHP med automatiserade tester.
-- **[SQL Murder Mystery](https://mystery.knightlab.com/)** & **[SQLBolt](https://sqlbolt.com/)** – Interaktiva och roliga sätt att öva SQL-frågor.
 - **SQL-videospellista:** <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI>
 
-### Flight PHP
-
+### 4. Mikroramverket Flight PHP
 Flight PHP är ett modernt och lättviktigt PHP-mikroramverk som gör det enkelt att bygga professionella och snabba webbapplikationer med routing och MVC. Vi använder skolans officiella startmall för Flight PHP:
-
 - [Startmall på GitHub](https://github.com/hambern/boilerplate-flight)
 - [Flight PHP:s officiella dokumentation](https://docs.flightphp.com/)
 
@@ -118,7 +123,6 @@ php_value error_reporting -1
 
 Moderna AI-verktyg är kraftfulla, men **för dig som lär dig backend-programmering och databaser är de ett tveeggat svärd**.
 
-Som vårt läromedel **The Odin Project** betonar i [A note on AI code generation](https://www.theodinproject.com/lessons/foundations-motivation-and-mindset#a-note-on-ai-code-generation):
 > *"För nybörjare leder användning av AI-kodgenerering ofta till stora kunskapsluckor och en falsk trygghet (The Illusion of Competence). Programmering handlar inte om att generera text snabbt, utan om att träna din hjärna i problemlösning, logiskt tänkande och felsökning. Den kampen kan inte en AI göra åt dig."*
 
 Inom backend är detta extra kritiskt: AI-genererad kod innehåller ofta dolda säkerhetsluckor (som bristande validering eller SQL-injections) som en nybörjare inte har förutsättningar att upptäcka.

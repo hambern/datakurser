@@ -14,9 +14,20 @@ Efter avslutat projekt ska du kunna:
 
 ## 📚 Kunskapskrav & Vad du behöver läsa på om
 
-Läs och genomför följande lektioner och övningar innan du bygger ToDo-applikationen:
-- 📖 **[The Odin Project: Git Basics & Branching](https://www.theodinproject.com/lessons/foundations-git-basics)** — Varför och hur man arbetar i *Feature Branches* (`git checkout -b feature/min-funktion`).
-- 📖 **[The Odin Project: Relational Databases](https://www.theodinproject.com/lessons/nodejs-databases)** — Förstå hur primärnycklar (`PRIMARY KEY`) och främmande nycklar (`FOREIGN KEY`) skapar relationer mellan tabeller.
+Läs och titta på följande avsnitt i **[Laracasts: PHP For Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)** samt övningar innan du bygger ToDo-applikationen:
+
+### 🎬 Rekommenderade Laracasts-avsnitt (Hemläxa & Förberedelse):
+- **Del 3: Notes Mini-Project**
+  - [3.1 Database Tables and Indexes](https://laracasts.com/episodes/2608) *(Primärnycklar och index)*
+  - [3.2 Render the Notes and Note Page](https://laracasts.com/episodes/2609) *(Hämta och lista data)*
+  - [3.4 Programming is Rewriting](https://laracasts.com/episodes/2620) *(Refaktorisering och kodförbättring)*
+  - [3.7 Intro to Form Validation](https://laracasts.com/episodes/2629) *(Validera inmatning)*
+  - [3.8 Extract a Simple Validator Class](https://laracasts.com/episodes/2633) *(Återanvändbar valideringsklass)*
+- **Del 4: Project Organization**
+  - [4.8 Updating With PATCH Requests](https://laracasts.com/episodes/2675) *(Uppdatera status på uppgifter)*
+
+### 📖 Kompletterande guider & SQL-träning:
+- 📖 **[GitHub Docs: About Branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)** — Varför och hur man arbetar i *Feature Branches* (`git checkout -b feature/min-funktion`).
 - 🎯 **[SQLBolt: Queries with JOINs (Lektion 6–7)](https://sqlbolt.com/lesson/select_queries_with_joins)** — Praktiska interaktiva övningar i att koppla ihop tabeller via `INNER JOIN` och `LEFT JOIN`.
 - 🕵️‍♂️ **[SQL Murder Mystery](https://mystery.knightlab.com/)** — Ett spännande detektivspel där du löser ett mord genom att skriva SQL-queries med `WHERE`, `JOIN` och filter!
 

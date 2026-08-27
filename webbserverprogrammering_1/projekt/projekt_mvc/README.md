@@ -41,9 +41,24 @@ Vi använder skolans officiella startmall: **[Startmall med Flight PHP på GitHu
 
 ## 📚 Kunskapskrav & Vad du behöver läsa på om
 
-Läs och genomför följande dokumentation och guider innan och under tiden du bygger din MVC-applikation:
+Läs och titta på följande avsnitt i **[Laracasts: PHP For Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)** samt dokumentation innan och under tiden du bygger din MVC-applikation:
+
+### 🎬 Rekommenderade Laracasts-avsnitt (Hemläxa & Förberedelse):
+- **Del 4: Project Organization**
+  - [4.1 Resourceful Naming Conventions](https://laracasts.com/episodes/2634) *(Strukturerade namngivningskonventioner)*
+  - [4.2 PHP Autoloading and Extraction](https://laracasts.com/episodes/2635) & [4.3 Namespacing: What, Why, How?](https://laracasts.com/episodes/2646)
+  - [4.5 Build a Better Router](https://laracasts.com/episodes/2654) & [4.6 One Request, One Controller](https://laracasts.com/episodes/2657)
+- **Del 5: Sessions and Authentication**
+  - [5.3 Introduction to Middleware](https://laracasts.com/episodes/2708) *(Skydda rutter med behörighetskrav)*
+- **Del 7: Meet Composer**
+  - [7.1 Composer and Free Autoloading](https://laracasts.com/episodes/2744) *(PSR-4 Autoloading)*
+  - [7.2 Install Two Composer Packages: Collections and PestPHP](https://laracasts.com/episodes/2746) *(Pakethantering)*
+- **Del 8 & 9: Testing & Wrapping Up**
+  - [8.1 Testing Approaches, Terms, and Considerations](https://laracasts.com/episodes/2946) *(Kvalitetssäkring och testning)*
+  - [9.1 The Next Step in Your PHP Journey](https://laracasts.com/episodes/2955)
+
+### 📖 Kompletterande dokumentation:
 - 📖 **[Startmallens kompletta README](https://github.com/hambern/boilerplate-flight)** — Startmallens genomgång om Front Controller, `.htaccess`, routing, MVC-arkitektur och `PdoWrapper`.
-- 📖 **[The Odin Project: What is a Framework and MVC?](https://www.theodinproject.com/lessons/ruby-on-rails-introduction-to-frameworks)** — Konceptuell förklaring av hur ett webbramverk strukturerar kod enligt Model-View-Controller.
 - 📖 **[Flight PHP: Officiell dokumentation](https://docs.flightphp.com/)** — Läs om hur `Flight::route()`, `Flight::render()` och `Flight::redirect()` fungerar.
 - 📖 **[Composer: Getting Started](https://getcomposer.org/doc/00-intro.md)** — Hur `composer.json` och PSR-4 autoloading fungerar.
 - 📖 **[PHP: The Right Way — Säkerhet & Password Hashing](https://phptherightway.com/#password_hashing)** — Korrekt användning av `password_hash()` och `password_verify()`.

@@ -23,11 +23,27 @@ Innan du börjar:
 
 ## 📚 Kunskapskrav & Vad du behöver läsa på om
 
-Läs och genomför följande lektioner och guider innan du börjar bygga gästboken:
-- 📖 **[The Odin Project: Git Basics](https://www.theodinproject.com/lessons/foundations-git-basics)** — Hur Git fungerar, repositories, commits och staging area (`git add .`, `git commit`).
-- 📖 **[The Odin Project: Databases Overview](https://www.theodinproject.com/lessons/nodejs-databases)** — Vad en relationsdatabas är, tabeller, rader, kolumner och primärnycklar (`PRIMARY KEY`).
-- 📖 **[PHP: The Right Way — Databaser & PDO](https://phptherightway.com/#databases_pdo)** — Bästa praxis för PDO och Prepared Statements (`?`) för att skydda mot SQL-injection.
+Läs och titta på följande avsnitt i **[Laracasts: PHP For Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)** samt guider innan du börjar bygga gästboken:
+
+### 🎬 Rekommenderade Laracasts-avsnitt (Hemläxa & Förberedelse):
+- **Del 1: The Fundamentals**
+  - [1.1 How to Choose a Programming Language](https://laracasts.com/episodes/2551) & [1.2 Tools of the Trade](https://laracasts.com/episodes/2552)
+  - [1.3 Your First PHP Tag](https://laracasts.com/episodes/2554)
+  - [1.4 Variables](https://laracasts.com/episodes/2555), [1.5 Conditionals and Booleans](https://laracasts.com/episodes/2556)
+  - [1.6 Arrays](https://laracasts.com/episodes/2559) & [1.7 Associative Arrays](https://laracasts.com/episodes/2561)
+  - [1.10 Separate Logic From the Template](https://laracasts.com/episodes/2565) *(Dela upp PHP-kod från HTML)*
+- **Del 2: Dynamic Web Applications**
+  - [2.5 Create a MySQL Database](https://laracasts.com/episodes/2577)
+  - [2.6 PDO First Steps](https://laracasts.com/episodes/2578)
+  - [2.9 SQL Injection Vulnerabilities Explained](https://laracasts.com/episodes/2585) *(Prepared Statements)*
+- **Del 3: Notes Mini-Project**
+  - [3.5 Intro to Forms and Request Methods](https://laracasts.com/episodes/2622) *(POST och formulär)*
+  - [3.6 Always Escape Untrusted Input](https://laracasts.com/episodes/2626) *(XSS & `htmlspecialchars`)*
+
+### 📖 Kompletterande guider:
+- 📖 **[PHP: The Right Way — Databaser & PDO](https://phptherightway.com/#databases_pdo)** — Bästa praxis för PDO och Prepared Statements (`?`).
 - 🎯 **[SQLBolt: Interactive SQL Tutorial](https://sqlbolt.com/)** — Gör lektion 1–5 för att bli bekväm med `SELECT` och `INSERT`.
+- 📖 **[GitHub Docs: Git Basics](https://docs.github.com/en/get-started/getting-started-with-git)** — Hur Git fungerar, repositories, commits och staging area (`git add .`, `git commit`).
 
 ---
 
@@ -164,7 +180,7 @@ git commit -m "Feature: Kopplat gästboken till MySQL-databas"
 | **A** | Du använder **Prepared Statements** för säkerhet (mot SQL-injections) och `htmlspecialchars` (mot XSS). Databasstrukturen är korrekt och koden följer "Best Practices". |
 
 ## Tips & Resurser
+- [Laracasts: PHP For Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)
 - [PHP: The Right Way - Databaser & PDO](https://phptherightway.com/#databases_pdo)
 - [PHP.net: PDO Prepared Statements](https://www.php.net/manual/en/pdo.prepared-statements.php)
-- [The Odin Project: Databases Overview](https://www.theodinproject.com/lessons/nodejs-databases)
 - [GitHub Docs: SSH-nycklar](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
