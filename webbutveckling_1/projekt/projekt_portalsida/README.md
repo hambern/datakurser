@@ -42,7 +42,20 @@ Sidan ska innehålla:
 4. **QR-kod:** En QR-kod som pekar på din egen URL, så att man lätt kan scanna och öppna sidan i mobilen.
 
 ### 3. Tekniska Krav
-- **Normalize.css:** Använd `normalize.css` för att nollställa webbläsarens standardmarginaler ([Ladda ner här](https://necolas.github.io/normalize.css/)).
+- **Modern CSS Reset:** Lägg in en modern CSS-reset överst i din `style.css` (eller i en separat `reset.css`) för att nollställa marginaler, sätta `box-sizing: border-box` och göra bilder responsiva:
+  ```css
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  img, picture, video {
+    display: block;
+    max-width: 100%;
+  }
+  ```
 - **Semantisk HTML:** Använd meningsfulla taggar (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`).
 - **Responsivitet:** Glöm inte `viewport`-taggen i `<head>` så att sidan skalas rätt på mobiler:
   ```html
@@ -56,5 +69,5 @@ Sidan ska innehålla:
 | Aspekt / Betygsnivå | **Betyget E** | **Betyget C** | **Betyget A** |
 | :--- | :--- | :--- | :--- |
 | **1. HTML-struktur & Semantik** | Sidan har en giltig grundstruktur (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`). Korrekta rubriknivåer (`<h1>`, `<h2>`), punktlistor för navigation samt bild med `alt`-text och fungerande länkar. | Sidan använder semantiska taggar konsekvent (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`). Koden är välindenterad och följer W3C-standarder utan allvarliga valideringsfel. | Exemplarisk semantik och tillgänglighet. Alla länk- och bildelement är optimerade, och källkoden är exceptionellt ren, lättläst och logiskt uppbyggd. |
-| **2. CSS, Layout & Responsivitet** | Separat CSS-fil används. Grundläggande färger, typsnitt och marginaler är satta. Sidan har en fungerande `viewport`-tagg och fungerar i webbläsaren. | Genomtänkt mobilanpassad layout som ser bra ut på både mobil och desktop. `normalize.css` används och layouten bygger på flexibla principer eller grundläggande Flexbox. | Professionell "digitalt visitkort"-känsla. Avancerad användning av modern CSS (Flexbox/Grid, CSS-variabler eller subtle hover-animationer). Harmonisk färgpalett och modern typografi. |
+| **2. CSS, Layout & Responsivitet** | Separat CSS-fil används. Grundläggande färger, typsnitt och marginaler är satta. Sidan har en fungerande `viewport`-tagg och fungerar i webbläsaren. | Genomtänkt mobilanpassad layout som ser bra ut på både mobil och desktop. En modern CSS-reset används och layouten bygger på flexibla principer eller grundläggande Flexbox. | Professionell "digitalt visitkort"-känsla. Avancerad användning av modern CSS (Flexbox/Grid, CSS-variabler eller subtle hover-animationer). Harmonisk färgpalett och modern typografi. |
 | **3. Serverpublicering & Kodordning** | Filerna är korrekt namngivna (`index.html`, `style.css`) och publicerade på rätt plats i `public_html/` på skolans webbserver `student.oedu.se`. | Fil- och mappstruktur följer god Linux-standard (små bokstäver, inga mellanslag). Sidan laddar snabbt och felfritt via dess publika webbadress. | Sidan och alla externa resurser (bilder, QR-kod, CSS) laddar felfritt via HTTPS. Koden är välstrukturerad och validerar rent i W3C Validator. |
