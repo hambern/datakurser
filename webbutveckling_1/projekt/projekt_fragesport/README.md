@@ -98,6 +98,26 @@ function showQuestion() {
 }
 ```
 
+### Spara och hämta Highscore med `localStorage`
+
+Webbläsarens inbyggda `localStorage` gör att du kan spara data i användarens webbläsare så att poäng och inställningar finns kvar även om sidan laddas om eller webbläsaren stängs:
+
+```javascript
+// 1. Hämta tidigare highscore när sidan laddas (eller 0 om inget finns sparat än)
+const savedHighscore = localStorage.getItem("quiz_highscore") || 0;
+document.querySelector("#highscore-display").textContent = `Rekord: ${savedHighscore} poäng`;
+
+// 2. Kontrollera och spara nytt rekord när quizet avslutas
+function updateHighscore(finalScore) {
+    const currentHighscore = Number(localStorage.getItem("quiz_highscore")) || 0;
+    
+    if (finalScore > currentHighscore) {
+        localStorage.setItem("quiz_highscore", finalScore);
+        console.log("Nytt personbästa sparat i localStorage!");
+    }
+}
+```
+
 ---
 
 ## Bedömning
@@ -113,4 +133,5 @@ function showQuestion() {
 ## Resurser
 - [The Odin Project: Foundations Course](https://www.theodinproject.com/paths/foundations/courses/foundations)
 - [MDN Web Docs: Manipulating documents (DOM)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
+- [MDN Web Docs: Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 - [Internetmuseum](https://www.internetmuseum.se/)
