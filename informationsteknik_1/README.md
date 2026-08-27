@@ -5,8 +5,6 @@
 
 Informationsteknik är centralt för att samhället ska fungera. Ämnet behandlar uppbyggnad av it-infrastruktur och den roll som digital teknik har för både individer och samhälle samt etiska och säkerhetsmässiga aspekter inom området.
 
----
-
 ## Ämnets syfte
 Undervisningen i ämnet informationsteknik ska syfta till att eleverna utvecklar kunskaper om informationsteknikens roll i samhället. Undervisningen ska även bidra till att eleverna utvecklar kunskaper om vad hållbar utveckling innebär inom informationsteknik. Undervisningen ska ge eleverna möjlighet att utveckla kunskaper om datorns uppbyggnad samt förståelse av hur it-infrastrukturens olika delar samverkar och kommunicerar.
 
@@ -17,8 +15,6 @@ Undervisningen i ämnet informationsteknik ska ge eleverna förutsättningar att
 *   Kunskaper om it-infrastruktur samt om datorns delar och funktioner.
 *   Förmåga att lösa problem med hjälp av programmering och anpassning av hårdvara.
 *   Förmåga att värdera säkerhetsmässiga aspekter inom området.
-
----
 
 ## Centralt innehåll (Nivå 1)
 Undervisningen i kursen ska behandla följande centrala innehåll:
@@ -39,8 +35,6 @@ Undervisningen i kursen ska behandla följande centrala innehåll:
 *   Några vanliga säkerhetsrisker i samband med lagring av data och vid informationshantering.
 *   Riktlinjer, rutiner och arbetssätt inom it-säkerhet.
 
----
-
 ## 🧭 Kursens Projektuppgifter
 
 Här är kursens praktiska moment. Du bör göra dem i denna ordning då kunskaperna bygger på varandra:
@@ -53,8 +47,6 @@ Här är kursens praktiska moment. Du bör göra dem i denna ordning då kunskap
 | **4. [Arkitekten](projekt/projekt_natverk/)** | Designa nätverksinfrastrukturen för ett modernt kontor eller LAN. | IP-adresser, subnät, routrar, switchar, Wi-Fi och datakommunikation. |
 | **5. [White Hat Hacker](projekt/projekt_sakerhet/)** | Genomför en säkerhetsgranskning (Audit) och riskanalys. | Säkerhetsrisker, hotbilder, lösenordshantering och förebyggande skyddsåtgärder. |
 | **6. [Uppfinnaren](projekt/projekt_iot/)** | Designa en smart IoT-pryl för framtiden med sensorer och mikrokontroller. | Grundläggande programmeringslogik, sensorer, hårdvaruanpassning och integritet/privacy. |
-
----
 
 ## Betygskriterier
 

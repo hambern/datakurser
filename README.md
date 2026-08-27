@@ -2,8 +2,6 @@
 
 Välkommen till samlingsplatsen för kursmaterial, övningsuppgifter och projektinstruktioner inom webbutveckling och programmering på **Örnsköldsviks Gymnasium**. Som digitala läromedel och referensverktyg använder vi **[The Odin Project](https://www.theodinproject.com/)** (Frontend), **[Laracasts](https://laracasts.com/series/php-for-beginners-2023-edition)** och **[PHP: The Right Way](https://phptherightway.com/)** (Backend).
 
----
-
 ## 🧭 Tillgängliga kurser
 
 | Kurs | Kurskod | Beskrivning | Snabbstart |
@@ -20,8 +18,6 @@ Kurserna bygger på varandra i en naturlig och professionell utvecklingstrappa:
    Du skapar din personliga **Portalsida** på webbservern och lär dig semantisk HTML5, responsiv CSS (Flexbox/Grid), medieoptimering och interaktivitet med JavaScript och DOM.
 2. **[Webbserverprogrammering 1](webbserverprogrammering_1/) — Servern & Datan (Backend):**  
    Du tar dina frontend-kunskaper och kopplar på serverlogik och databaser! Du bygger din första databasdrivna **Gästbok** (länkad från din portalsida), bemästrar databasrelationer och autentisering i **ToDo-appen**, samarbetar med Git i **Recensionsprojektet**, och bygger slutligen en modern webbapplikation med **MVC-arkitektur och Flight PHP**.
-
----
 
 ## 🛠️ Gemensamma utvecklarverktyg
 

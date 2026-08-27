@@ -28,8 +28,6 @@ Flight PHP är ett modernt och lättviktigt PHP-mikroramverk som gör det enkelt
 - [Startmall på GitHub](https://github.com/hambern/boilerplate-flight)
 - [Flight PHP:s officiella dokumentation](https://docs.flightphp.com/)
 
----
-
 ## ⚡ Kodexperiment & Sandlåda: StackBlitz (Kopplat till GitHub)
 
 Vill du snabbt skissa på en frontend-idé, en layout eller dela kod för snabb felsökning utan att ändra på din skarpa server?
@@ -48,7 +46,20 @@ Kursen är uppbyggd kring fyra stegvis fördjupande projekt där du går från d
 | **3. [Recensionsapplikation](projekt/projekt_recension/)** | Samarbeta i par för att bygga en komplett plattform för recensioner med inloggning och följarflöde. | Professionellt teamflöde i Git (Pull Requests, Code Reviews, Issues), databassynkning via SQL-filer, många-till-många-relationer (kopplingstabeller) och säker sessionshantering (`password_hash`, `$_SESSION`). |
 | **4. [Examinerande MVC-Projekt](projekt/projekt_mvc/)** | Bygg en komplett, skalbar webbapplikation med mikroramverket Flight PHP utifrån startmallen på GitHub. | Strikt Model-View-Controller (MVC)-arkitektur, routing, Composer & PSR-4 autoloading, Front Controller-mönstret, säkerhetsarkitektur och projektrapport. |
 
----
+## 🧩 Roliga kluringar & Backend-spel (Frivillig träning & bonus)
+
+När du blir klar tidigt med en uppgift eller vill ta en paus från ditt huvudsakliga kodande kan du träna dina backend-, SQL- och säkerhetsfärdigheter på ett lekfullt sätt:
+
+### Databas- & SQL-mysterier
+1. **[SQL Murder Mystery](https://mystery.knightlab.com/)** - Ett mord har begåtts i SQL City! Använd dina SQL-kunskaper för att förhöra vittnen, granska alibin och hitta mördaren i polisens relationsdatabas.
+2. **[SQL Police Department](https://sqlpd.com/)** - Lös kluriga brottsfall som datautredare med hjälp av SQL-frågor och tabellkopplingar.
+3. **[SQLBolt](https://sqlbolt.com/)** - Snabba interaktiva övningar direkt i webbläsaren för att bemästra `SELECT`, `JOIN` och databasmanipulering.
+
+### Terminal-, Säkerhets- & Logikspel
+1. **[OverTheWire: Bandit](https://overthewire.org/wargames/bandit/)** - Bli en mästare i Linux-terminalen! Ett "escape room"-spel över SSH där varje nivå ger dig lösenordet till nästa konto om du kan använda rätt Linux-kommandon.
+2. **[Hack This Site! – Basic Missions](https://www.hackthissite.org/)** - Träna på hur formulär, backend-validering, dolda fält och enkla säkerhetsmissar fungerar i uppdragsform.
+3. **[OverTheWire: Natas](https://overthewire.org/wargames/natas/)** - Webbsäkerhet från grunden. Lär dig hur servrar, cookies, lösenordshantering och SQL-injections fungerar bakom kulisserna.
+4. **[Regex Crossword](https://regexcrossword.com/)** - Lös korsord med hjälp av reguljära uttryck. Extremt beroendeframkallande kluring som gör dig till expert på textmönster och inputvalidering.
 
 ### Information om utvecklingsservern som vi jobbar på
 
@@ -140,8 +151,6 @@ Inom backend är detta extra kritiskt: AI-genererad kod innehåller ofta dolda s
 4. **Egna fria sidoprojekt:**  
    När du väl behärskar grunderna och vill bygga egna hobbyappar på fritiden är det fritt fram att utforska AI-assistenter som komplement. Startmallen för Flight PHP innehåller då filen `AGENTS.md` som ger AI-verktyg full kontext om projektet.
 
----
-
 ## Webbserverprogrammering (WES)
 **Typ:** GY11 Kursplan
 
@@ -168,8 +177,6 @@ Undervisningen ska ge eleverna möjlighet att utveckla kunskaper om projekt som 
 - **Webbserverprogrammering 2**, 100 poäng, som bygger på kursen webbserverprogrammering 1.
 - **Webbtjänster**, 100 poäng. Kursen får bara anordnas i vidareutbildning i form av ett fjärde tekniskt år i gymnasieskolan.
 
----
-
 ## Webbserverprogrammering 1 (WESWEB01) — 100 poäng
 
 **Beskrivning:**  
@@ -190,8 +197,6 @@ Undervisningen i kursen ska behandla följande centrala innehåll:
 - Applikationsarkitektur och separation av olika slags logik.
 - Kvalitetssäkring av dynamiska webbapplikationers funktionalitet, säkerhet och kodkvalitet.
 - Grundläggande säkerhet och sätt att identifiera hot och sårbarheter samt hur attacker kan motverkas genom effektiva åtgärder.
-
----
 
 ### Betygskriterier
 

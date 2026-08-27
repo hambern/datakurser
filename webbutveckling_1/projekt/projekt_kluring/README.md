@@ -55,5 +55,7 @@ function visaLedtrad() {
 | **A** | Ett riktigt "Notpron"-liknande spel! Du använder ljud, bildmanipulation eller JavaScript på ett smart sätt. Designen bygger en stämning (t.ex. skräcktema eller hacker-tema). |
 
 ## Inspiration
--   [Notpron](http://notpron.org/notpron/) - Världens svåraste webbgåta.
+-   [Notpron](https://notpron.com/notpron/) - Legendarisk onlinegåta känd som "världens svåraste webbgåta".
+-   [Oddpawn](https://oddpawn.com/) - Modern web riddle med dolda ledtrådar i källkod och bildfiler.
+-   [AE27FF](https://ae27ff.drastic.net/) - Klurig gåtsajt med fokus på källkod, DevTools och avkodning.
 -   [Cicada 3301](https://en.wikipedia.org/wiki/Cicada_3301) - Legendariskt internetmysterium.

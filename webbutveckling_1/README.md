@@ -2,8 +2,6 @@
 
 Denna mapp innehåller uppgifter och genomgångar till kursen **Webbutveckling 1** (`WEUWEB01`).
 
----
-
 ## Läromedel & Färdighetsträning: The Odin Project
 
 I denna kurs använder vi **[The Odin Project (Foundations Course)](https://www.theodinproject.com/paths/foundations/courses/foundations)** som vårt huvudsakliga interaktiva läromedel och digitala lärobok.
@@ -24,8 +22,6 @@ The Odin Project är en världsledande, öppen och modern utbildningsplattform s
 ### 📝 Prov på The Odin Project
 Observera att det kommer att komma prov på innehållet i **The Odin Project**.
 
----
-
 ## ⚡ Snabbstart & Sandlåda: StackBlitz (Kopplat till GitHub)
 
 Innan vi sätter upp filer och ansluter med Remote-SSH i Visual Studio Code börjar vi med att experimentera direkt i webbläsaren på **[StackBlitz](https://stackblitz.com/)**:
@@ -34,8 +30,6 @@ Innan vi sätter upp filer och ansluter med Remote-SSH i Visual Studio Code bör
 - **Direkt visuell feedback (Live Preview):** Så fort du ändrar en färg, text eller marginal ser du resultatet omedelbart i samma fönster.
 - **Enkelt att dela felsökning:** Har du kört fast? Spara ditt projekt och skicka länken i chatten (t.ex. via **Microsoft Teams**) till din lärare eller en klasskompis för att snabbt få hjälp.
 - **💡 Logga in med GitHub:** Klicka på **"Sign In with GitHub"** när du öppnar StackBlitz. Då sparas alla dina experiment automatiskt på ditt GitHub-konto, du slipper hålla reda på fler lösenord och kan med ett klick exportera dina projekt till riktiga GitHub-repositories!
-
----
 
 ## 🧭 Kursens Projektuppgifter
 
@@ -48,34 +42,32 @@ Kursen är uppbyggd kring ett fåtal kreativa och engagerande projekt där du f�
 | **3. [Webbquiz om Internets Historia](projekt/projekt_fragesport/)** | Bygg ett interaktivt frågesportspel i webbläsaren med fakta från Internetmuseum. | JavaScript, DOM-manipulation (`querySelector`, `addEventListener`), villkorsstyrd logik, poängräkning och `localStorage`. |
 | **4. [Slutprojektet](projekt/projekt_slut/)** | Planera, producera, testa och lansera ett komplett webbprojekt med **fullständig kreativ frihet** kring idé och tema. | Hela utvecklingsprocessen: Projektplanering, responsiv layout (Grid/Flexbox), JavaScript-interaktivitet, Lighthouse-optimering och slutrapport. |
 
----
-
 ## 🧩 Roliga kluringar & CSS-spel (Frivillig träning & bonus)
 
 När du blir klar tidigt med en uppgift eller vill ta en paus från ditt huvudsakliga kodande kan du träna dina färdigheter på ett lekfullt sätt:
 
-### Roliga kluringar (Webbinspektören)
+### Roliga kluringar (Webbinspektören & Web Riddles)
 1. **[Kluringen (Webbgåtor)](projekt/projekt_kluring/)** - Skapa (eller lös) ett eget Notpron-liknande gåtspel med dolda ledtrådar i källkoden.
 2. **[Hambergs kluring 1](https://student.oedu.se/~mh6802/kul/mattias_kul_01/)** - Enkel men klurig gåta där du måste undersöka sidan noggrant.
 3. **[Hambergs kluring 2](https://student.oedu.se/~mh6802/kul/mattias_kul_02/)** - Mer utmanande gåta som kräver utforskande av sidans struktur.
 4. **[Hambergs kluring 3](https://student.oedu.se/~mh6802/kul/mattias_kul_03/)** - Klurig gåta där du verkligen måste tänka utanför boxen.
-5. **[Notpron](http://notpron.org/notpron/)** - Legendarisk onlinegåta känd som "världens svåraste webbspel".
+5. **[Notpron](https://notpron.com/notpron/)** - Legendarisk onlinegåta känd som "världens svåraste webbspel".
+6. **[Oddpawn](https://oddpawn.com/)** - Modern och välgjord webbgåta i Notprons anda (granska HTML, bildmetadata och URL:er).
+7. **[AE27FF](https://ae27ff.drastic.net/)** - Minimalistisk gåtsajt med fokus på källkod, DevTools, nätverksflikar och avkodning.
 
-### CSS-spel (Flexbox & Layout)
-1. **[Flexbox Froggy](https://flexboxfroggy.com/#sv)** - Hjälp en groda till sin näckros med Flexbox.
-2. **[Flexbox Adventure](https://codingfantasy.com/games/flexboxadventure)** - Äventyrsspel som tränar flexbox-positionering.
-3. **[Flexbox Defense](http://www.flexboxdefense.com/)** - Försvara din bas genom att placera torn med CSS.
-4. **[CSSBattle](https://cssbattle.dev)** - Tävla mot andra utvecklare i att återskapa grafiska mönster med så lite CSS som möjligt.
-
----
+### CSS- & JavaScript-spel (Layout, Selektorer & Logik)
+1. **[CSS Diner](https://flukeout.github.io/)** - Träna alla typer av CSS-selektorer (klasser, ID, barn/syskon, pseudoklasser) på ett lekfullt sätt.
+2. **[Flexbox Froggy](https://flexboxfroggy.com/#sv)** - Hjälp en groda till sin näckros med Flexbox.
+3. **[Grid Garden](https://cssgridgarden.com/#sv)** - Odla din morotsodling och bemästra CSS Grid på 28 korta nivåer.
+4. **[Flexbox Defense](http://www.flexboxdefense.com/)** - Försvara din bas genom att placera torn med CSS Flexbox.
+5. **[CSSBattle](https://cssbattle.dev)** - Tävla mot andra utvecklare i att återskapa grafiska mönster med så lite CSS som möjligt.
+6. **[Untrusted (JavaScript)](https://alexnisnevich.github.io/untrusted/)** - Äventyrsspel där du tar dig vidare genom att manipulera och skriva om spelets JavaScript-kod i realtid.
 
 ## Validering
 
 Ta gärna för vana att alltid validera dina filer innan inlämning:
 - **HTML5 Validator:** <http://html5.validator.nu>
 - **CSS Validator:** <http://jigsaw.w3.org/css-validator>
-
----
 
 ## Information om skolans server
 
@@ -95,8 +87,6 @@ ssh -p 3690 ditt_login@student.oedu.se
 4. Skriv in: `ssh -p 3690 ditt_login@student.oedu.se`
 5. Öppna din mapp `public_html` på servern. Nu redigerar du filer direkt på servern utan att behöva ladda upp manuellt!
 
----
-
 ## Namnge filer och mappar
 
 1. **Små bokstäver:** På en Linux-server är filnamn skiftlägeskänsliga (`index.html` är inte samma som `Index.html`). Använd alltid små bokstäver.
@@ -104,8 +94,6 @@ ssh -p 3690 ditt_login@student.oedu.se
 3. **Undvik mellanslag:** Använd understreck (`_`) eller bindestreck (`-`) istället för mellanslag.
 4. **Startsidan:** Filen `index.html` fungerar automatiskt som webbplatsens startsida i varje mapp.
 5. **Filändelser:** Använd standardiserade filändelser som `.html`, `.css` och `.js`.
-
----
 
 ## 🤖 En viktig notis om AI och kodgenerering (ChatGPT, Copilot m.fl.)
 
@@ -125,8 +113,6 @@ Som vårt läromedel **The Odin Project** betonar i [A note on AI code generatio
 4. **Egna fria sidoprojekt:**  
    När du väl behärskar grunderna och vill experimentera med egna idéer på fritiden (portfolios, hobbyappar, spel) är det fritt fram att utforska AI-assistenter som komplement.
 
----
-
 ## Webbutveckling — GY25 Ämnesplan
 
 **Kurskod:** WEBB1000X (Nivå 1)  
@@ -140,8 +126,6 @@ Eleverna ska ges möjlighet att utveckla kunskaper om olika webbteknikers konstr
 I undervisningen ska eleverna ges möjlighet att utveckla kunskaper om och färdigheter i att använda verktyg för att producera och kontrollera den kod som hanteras av webbklienten. Eleverna ska även ges möjlighet att utveckla förmåga att använda relevant terminologi.
 
 Undervisningen ska ge eleverna möjlighet att arbeta praktiskt med utveckling av delar till en webbplats. Undervisningen ska också ge eleverna tillfälle till arbete i projektform. På så vis ska eleverna ges möjlighet att omsätta sina kunskaper i webbutveckling till omdömesgilla handlingar.
-
----
 
 ### Centralt innehåll (Nivå 1)
 
@@ -174,8 +158,6 @@ Undervisningen i ämnet webbutveckling på nivå 1 ska behandla följande centra
 #### Lagar och andra bestämmelser
 - Riktlinjer, lagar och andra bestämmelser som styr hantering av digital information, till exempel upphovsrätt och bestämmelser som gäller hantering av personuppgifter.
 - Etiska överväganden i samband med webbutveckling.
-
----
 
 ### Betygskriterier (GY25)
 
