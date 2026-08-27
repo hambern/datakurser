@@ -96,9 +96,9 @@ När du lämnar in ditt projekt, se till att din mappstruktur speglar handbokens
 
 ## Bilaga: Snabbguide för Lighthouse
 
-(Kolla kapitel 4 i Handboken för mer detaljer om _varför_ detta är viktigt.)
+Lighthouse i webbläsaren hjälper dig att automatiskt mäta och analysera din webbplats prestanda (*Performance*), tillgänglighet (*Accessibility*), god praxis (*Best Practices*) och sökmotoroptimering (*SEO*).
 
-För att nå betyg C eller A måste du optimera din sida. Så här gör du:
+För att nå betyg C eller A ska du analysera och optimera din sida. Så här gör du:
 
 1.  Öppna din sida i Google Chrome (eller använd Firefox motsvarighet).
 2.  Högerklicka någonstans på sidan och välj **Inspektera** (eller tryck `F12`).
