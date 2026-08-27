@@ -17,6 +17,7 @@ I denna kurs använder vi **[Laracasts: PHP For Beginners](https://laracasts.com
 - **Databaser & PDO:** Korrekt databasåtkomst och hantering av prepared statements.
 - **Säkerhet & Validering:** Riktlinjer för att förhindra säkerhetshål som XSS, CSRF och SQL-injections.
 - **Kodstandarder:** PSR-standarder och ren, professionell kodstruktur.
+- 📱 **PDF / E-bok:** För dig som föredrar att läsa offline, på iPad eller Kindle finns boken att ladda ner gratis via **[PHP: The "Right" Way (Leanpub PDF/EPUB/Kindle)](https://leanpub.com/phptherightway)**.
 
 ### 3. Kompletterande resurser för SQL-träning:
 - **[SQLBolt](https://sqlbolt.com/)** & **[SQL Murder Mystery](https://mystery.knightlab.com/)** – Interaktiva och roliga sätt att öva SQL-frågor och tabellrelationer.
