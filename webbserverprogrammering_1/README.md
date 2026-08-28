@@ -4,7 +4,7 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogramm
 
 ## Läromedel & Färdighetsträning: Laracasts & PHP: The Right Way
 
-I denna kurs använder vi **[Laracasts: PHP For Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)** och **[Laracasts: Git Me Some Version Control](https://laracasts.com/series/git-me-some-version-control)** som digitala videoläroböcker samt **[PHP: The Right Way](https://phptherightway.com/)** som vårt officiella referensverk för modern backend-utveckling med PHP och MySQL.
+I denna kurs använder vi **[Laracasts: PHP For Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)**, **[Laracasts: Git Me Some Version Control](https://laracasts.com/series/git-me-some-version-control)** och **[Laracasts: MySQL Database Design](https://laracasts.com/series/mysql-database-design)** som digitala videoläroböcker samt **[PHP: The Right Way](https://phptherightway.com/)** som vårt officiella referensverk för modern backend-utveckling med PHP och MySQL.
 
 ### 1. Huvudsakligt läromedel för PHP: Laracasts (PHP for Beginners)
 **[Laracasts: PHP for Beginners (30 Days to Learn PHP)](https://laracasts.com/series/php-for-beginners-2023-edition)** är en gratis, modern videokurs i absolut världsklass av Jeffrey Way som lär dig modern PHP från grunden.
@@ -24,7 +24,8 @@ I kursen arbetar vi med versionshantering i alla projekt. Som introduktion till 
 - **Kodstandarder:** PSR-standarder och ren, professionell kodstruktur.
 - 📱 **PDF / E-bok:** För dig som föredrar att läsa offline, på iPad eller Kindle finns boken att ladda ner gratis via **[PHP: The "Right" Way (Leanpub PDF/EPUB/Kindle)](https://leanpub.com/phptherightway)**.
 
-### 4. Kompletterande resurser för SQL-träning:
+### 4. Databasdesign & SQL-träning
+- **[Laracasts: MySQL Database Design](https://laracasts.com/series/mysql-database-design)** – Gratis videoserie om hur man designar och modellerar relationsdatabaser, sätter primär-/främmande nycklar och hanterar tabellrelationer (1:1, 1:N, N:M).
 - **[SQLBolt](https://sqlbolt.com/)** & **[SQL Murder Mystery](https://mystery.knightlab.com/)** – Interaktiva och roliga sätt att öva SQL-frågor och tabellrelationer.
 - **SQL-videospellista:** <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI>
 
