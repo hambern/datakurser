@@ -4,26 +4,31 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogramm
 
 ## Läromedel & Färdighetsträning: Laracasts & PHP: The Right Way
 
-I denna kurs använder vi **[Laracasts: PHP For Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)** som digital videolärobok och **[PHP: The Right Way](https://phptherightway.com/)** som vårt officiella referensverk för modern backend-utveckling med PHP och MySQL.
+I denna kurs använder vi **[Laracasts: PHP For Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)** och **[Laracasts: Git Me Some Version Control](https://laracasts.com/series/git-me-some-version-control)** som digitala videoläroböcker samt **[PHP: The Right Way](https://phptherightway.com/)** som vårt officiella referensverk för modern backend-utveckling med PHP och MySQL.
 
-### 1. Huvudsakligt läromedel: Laracasts (PHP for Beginners)
+### 1. Huvudsakligt läromedel för PHP: Laracasts (PHP for Beginners)
 **[Laracasts: PHP for Beginners (30 Days to Learn PHP)](https://laracasts.com/series/php-for-beginners-2023-edition)** är en gratis, modern videokurs i absolut världsklass av Jeffrey Way som lär dig modern PHP från grunden.
 
 > **💡 Kursens pedagogiska upplägg (Flipped Classroom):**  
 > Du tittar på de rekommenderade Laracasts-avsnitten som **förberedelse och hemläxa** i din egen takt. I klassrummet ägnar vi lektionstiden åt handledning, problemlösning och praktiskt kodande på de fyra projekten!
 
-### 2. Digital referenshandbok: PHP: The Right Way
+### 2. Versionshantering med Git & GitHub: Laracasts
+I kursen arbetar vi med versionshantering i alla projekt. Som introduktion till Git och samarbetsflöden använder vi:
+- **[Laracasts: Git Me Some Version Control](https://laracasts.com/series/git-me-some-version-control)** – Gratis och extremt pedagogisk videoserie av Jeffrey Way som lär dig grunderna i Git, staging, commits, branches och GitHub från grunden.
+- **[Learn Git Branching](https://learngitbranching.js.org/?locale=sv_SE)** – Interaktivt, visuellt övningsspel i webbläsaren för att träna branches, checkout och merges.
+
+### 3. Digital referenshandbok: PHP: The Right Way
 **[PHP: The Right Way](https://phptherightway.com/)** fungerar som kursens kvalitetsstandard och uppslagsverk för modern god praxis:
 - **Databaser & PDO:** Korrekt databasåtkomst och hantering av prepared statements.
 - **Säkerhet & Validering:** Riktlinjer för att förhindra säkerhetshål som XSS, CSRF och SQL-injections.
 - **Kodstandarder:** PSR-standarder och ren, professionell kodstruktur.
 - 📱 **PDF / E-bok:** För dig som föredrar att läsa offline, på iPad eller Kindle finns boken att ladda ner gratis via **[PHP: The "Right" Way (Leanpub PDF/EPUB/Kindle)](https://leanpub.com/phptherightway)**.
 
-### 3. Kompletterande resurser för SQL-träning:
+### 4. Kompletterande resurser för SQL-träning:
 - **[SQLBolt](https://sqlbolt.com/)** & **[SQL Murder Mystery](https://mystery.knightlab.com/)** – Interaktiva och roliga sätt att öva SQL-frågor och tabellrelationer.
 - **SQL-videospellista:** <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI>
 
-### 4. Mikroramverket Flight PHP
+### 5. Mikroramverket Flight PHP
 Flight PHP är ett modernt och lättviktigt PHP-mikroramverk som gör det enkelt att bygga professionella och snabba webbapplikationer med routing och MVC. Vi använder skolans officiella startmall för Flight PHP:
 - [Startmall på GitHub](https://github.com/hambern/boilerplate-flight)
 - [Flight PHP:s officiella dokumentation](https://docs.flightphp.com/)
