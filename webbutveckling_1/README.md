@@ -85,10 +85,18 @@ ssh -p 3690 ditt_login@student.oedu.se
 Vi rekommenderar och använder **[Visual Studio Code](https://code.visualstudio.com/)** som gemensam kodredigerare i alla våra kurser. Med tillägget **Remote - SSH** redigerar du filer direkt på servern i realtid:
 
 1. Installera **Visual Studio Code**: <https://code.visualstudio.com/>
-2. Installera tillägget **"Remote - SSH"** (av Microsoft).
-3. Klicka på den gröna ikonen längst ner till vänster och välj **Connect to Host...** -> **Add New SSH Host...**.
+2. Installera tillägget **"Remote - SSH"** (av Microsoft): <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
+3. Klicka på ikonen längst ner till vänster (eller ikonen *Remote Explorer* i sidomenyn) och välj **Connect to Host...** -> **Add New SSH Host...**.
 4. Skriv in: `ssh -p 3690 ditt_login@student.oedu.se`
 5. Öppna din mapp `public_html` på servern. Nu redigerar du filer direkt på servern utan att behöva ladda upp manuellt!
+
+> [!TIP]
+> **Slipp skriva lösenord varje gång (SSH-nyckel):**
+> 1. Installera tillägget **"SSH key generator"** (av Amadeus): <https://marketplace.visualstudio.com/items?itemName=AmadeusITGroup.ssh-key-generator>
+> 2. Öppna kommando-paletten med `Ctrl + Shift + P` och kör kommandot `SSH: Generate SSH key`.
+> 3. Välj den server du vill koppla ihop dig med: `student.oedu.se`
+> 4. Ange ditt lösenord till servern en sista gång.
+> 5. Nu ansluter du automatiskt i fortsättningen utan lösenord!
 
 ## Namnge filer och mappar
 

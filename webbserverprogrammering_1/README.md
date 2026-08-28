@@ -101,21 +101,19 @@ ssh -p 3690 ditt_login@student.oedu.se
 
 Vi rekommenderar och använder **[Visual Studio Code](https://code.visualstudio.com/)** som gemensam kodredigerare i alla kurser. Med tillägget **Remote - SSH** jobbar du direkt mot utvecklingsservern i realtid:
 
-- Ladda ner och installera programmet här: <https://code.visualstudio.com/>
-- Installera därefter följande extension-paket:
-  - "Remote - SSH": <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
-  - "SSH key generator": <https://marketplace.visualstudio.com/items?itemName=AmadeusITGroup.ssh-key-generator>
-- Klicka på ikonen till vänster som ser ut som en skärm med en liten ring längst ner till höger
-- Lägg till servern student.oedu.se och ange dina inloggningsuppgifter:
-  - Klicka på "+" bredvid SSH
-  - Skriv in SSH-kommandot: `ssh -p 3690 ditt_login@student.oedu.se`
-  - Spara anslutningen till `C:\Users\ditt_login\.ssh\config`
-- Nu är det dags att generera din SSH-nyckel för att kunna ansluta utan lösenord:
-  - Öppna upp kommando-paletten med `Ctrl + Shift + P` och kör kommandot `SSH: Generate SSH key`.
-  - Välj den server du vill koppla ihop dig med: `student.oedu.se`
-  - Ange ditt lösenord till servern
-- Nu bör du kunna ansluta till din server utan att behöva ange ditt lösenord
-- Om du blir ombedd att ange vilken typ av server det är så är det en Linux-server
+1. Installera **Visual Studio Code**: <https://code.visualstudio.com/>
+2. Installera tillägget **"Remote - SSH"** (av Microsoft): <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>
+3. Klicka på ikonen för *Remote Explorer* i sidopanelen (eller den gröna/blå ikonen längst ner till vänster) och välj **Connect to Host...** -> **Add New SSH Host...** (eller klicka på `+` bredvid SSH).
+4. Skriv in SSH-kommandot: `ssh -p 3690 ditt_login@student.oedu.se` och spara i din konfigurationsfil (t.ex. `C:\Users\ditt_login\.ssh\config` eller `~/.ssh/config`).
+5. Anslut till servern och öppna din hemmapp eller `public_html`. (Om du blir ombedd att välja operativsystem väljer du **Linux**).
+
+> [!TIP]
+> **Slipp skriva lösenord varje gång (SSH-nyckel):**
+> 1. Installera tillägget **"SSH key generator"** (av Amadeus): <https://marketplace.visualstudio.com/items?itemName=AmadeusITGroup.ssh-key-generator>
+> 2. Öppna kommando-paletten med `Ctrl + Shift + P` och kör kommandot `SSH: Generate SSH key`.
+> 3. Välj den server du vill koppla ihop dig med: `student.oedu.se`
+> 4. Ange ditt lösenord till servern en sista gång.
+> 5. Nu ansluter du automatiskt i fortsättningen utan lösenord!
 
 Då kan du arbeta direkt emot din utvecklingsserver utan att behöva ha några lokala kopior i din egen dator.
 
