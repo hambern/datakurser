@@ -31,6 +31,7 @@ Läs och titta på följande avsnitt i **[Laracasts: PHP For Beginners](https://
 ### 📖 Kompletterande guider:
 - 📖 **[GitHub Docs: Collaborating with Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests)** — Steg-för-steg hur man skapar och granskar en PR på GitHub samt teamflöde.
 - 📖 **[PHP: The Right Way — Säkerhet & Sessions](https://phptherightway.com/#security)** — Säker användarautentisering med `password_hash()`, `password_verify()` och `$_SESSION`.
+- 📖 **[PHP: The Right Way — Interagera med databaser & MVC-struktur](https://phptherightway.com/#databases_interacting_title)** — Exempel och resonemang kring hur du delar upp din kod i Model, View och Controller (om ni bygger i ren PHP).
 
 ---
 
@@ -130,3 +131,10 @@ Se till att repot innehåller:
 | **1. Autentisering & Databasdesign** | Fungerande registrering och inloggning. Lösenord hashas med `password_hash()` och verifieras med `password_verify()`. Sessionshantering via `$_SESSION` håller användaren inloggad. | Välstrukturerade tabeller med relationer mellan användare och recensioner (En-till-Många). Kategorier och sortering på betyg eller datum fungerar. | Avancerad databasdesign med **Många-till-Många-relationer** (kopplingstabell för t.ex. följarflöde `user_followers` eller taggar). SQL-schema och testdata finns i repot. |
 | **2. Webbsäkerhet & Auktorisering** | Applikationen skyddar mot grundläggande säkerhetshål. Inloggningsuppgifter exponeras inte i klartext. | **Auktoriseringskontroller** säkerställer att användare endast kan redigera/radera sina *egna* inlägg. Konsekventa Prepared Statements mot SQLi och `htmlspecialchars()` mot XSS. | Genomarbetad säkerhetsarkitektur: skydd mot sessionsstöld (`session_regenerate_id()`), tillämpning av PRG-mönstret (Post-Redirect-Get) och säker felhantering utan känsliga databasläckor. |
 | **3. Teamflöde & Git-samarbete** | Båda personerna har bidragit till ett gemensamt GitHub-repository med källkod och databasexport (`.sql`). | Tydlig uppdelning av arbetet med **branches och GitHub Issues**. Databasens struktur hålls synkroniserad mellan utvecklarna via delade SQL-filer. | Professionellt teamflöde: Samtliga funktioner slås samman via **Pull Requests (PR)** med dokumenterade **Code Reviews** och godkännande från den andra parten innan merge. |
+| **4. Struktur & Kodkvalitet** | Grundläggande läsbar kod med fungerande struktur. | Koden är välstrukturerad och prydlig med tydlig ansvarsfördelning och separation mellan formulär/presentation och backend-logik. | Koden är ren, välstrukturerad och på ett genomtänkt sätt uppdelad enligt **MVC** (Model, View, Controller) där databasmodeller, vyer och controllers hålls tydligt isär (frivilligt om ni bygger i ren PHP eller använder skolans Flight-mall). |
+
+## Tips & Resurser
+- [PHP: The Right Way — Interagera med databaser & MVC-struktur](https://phptherightway.com/#databases_interacting_title) *(Inspiration för att strukturera i Model, View och Controller i ren PHP)*
+- [Startmall med Flight PHP på GitHub](https://github.com/hambern/boilerplate-flight) *(Frivilligt att använda om ni vill ha en färdig MVC-grund)*
+- [PHP: The Right Way — Säkerhet & Sessions](https://phptherightway.com/#security)
+- [GitHub Docs: Collaborating with Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests)

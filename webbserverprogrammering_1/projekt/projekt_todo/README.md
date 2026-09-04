@@ -28,6 +28,7 @@ Läs och titta på följande avsnitt i **[Laracasts: PHP For Beginners](https://
 
 ### 📖 Kompletterande guider & SQL-träning:
 - 📖 **[GitHub Docs: About Branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)** — Varför och hur man arbetar i *Feature Branches* (`git checkout -b feature/min-funktion`).
+- 📖 **[PHP: The Right Way — Interagera med databaser & MVC-struktur](https://phptherightway.com/#databases_interacting_title)** — Exempel och resonemang kring hur du delar upp din kod i Model, View och Controller (särskilt relevant för högre betyg om du inte använder ett ramverk).
 - 🎯 **[SQLBolt: Queries with JOINs (Lektion 6–7)](https://sqlbolt.com/lesson/select_queries_with_joins)** — Praktiska interaktiva övningar i att koppla ihop tabeller via `INNER JOIN` och `LEFT JOIN`.
 - 🕵️‍♂️ **[SQL Murder Mystery](https://mystery.knightlab.com/)** — Ett spännande detektivspel där du löser ett mord genom att skriva SQL-queries med `WHERE`, `JOIN` och filter!
 
@@ -93,9 +94,11 @@ Repot ska innehålla:
 | Aspekt / Betygsnivå | **Betyget E** | **Betyget C** | **Betyget A** |
 | :--- | :--- | :--- | :--- |
 | **1. CRUD & Databasrelationer (SQL/PDO)** | Applikationen klarar grundläggande CRUD: skapa uppgifter (`INSERT`), visa dem (`SELECT`) och ta bort dem (`DELETE`). Data sparas permanent i MySQL. | Full CRUD inklusive statusändring (`UPDATE`). Flera tabeller används (t.ex. `tasks` och `categories`) med relationer via främmande nycklar och `INNER JOIN` eller `LEFT JOIN`. | Avancerad SQL med dynamisk filtrering och sortering (`WHERE`, `ORDER BY`, `JOIN`) baserat på användarval. Korrekt indexering och kaskadborttagning (`ON DELETE CASCADE`) vid behov. |
-| **2. Säkerhet, Validering & Kodkvalitet** | Fungerande PHP-kod med databasanslutning via PDO. Grundläggande kontroll av inmatning. | **Prepared Statements** används konsekvent vid alla databasfrågor som tar användardata. Validering kontrollerar att uppgifter inte skapas utan titel. | Strukturerad och modulär kod (t.ex. separat valideringsklass/funktioner). Skydd mot XSS via `htmlspecialchars()` och god användarupplevelse vid felaktig inmatning. |
+| **2. Säkerhet & Validering** | Fungerande PHP-kod med databasanslutning via PDO. Grundläggande kontroll av inmatning. | **Prepared Statements** används konsekvent vid alla databasfrågor som tar användardata. Validering kontrollerar att uppgifter inte skapas utan titel. | Omfattande validering och skydd mot XSS via `htmlspecialchars()`. God användarupplevelse och tydliga felmeddelanden vid felaktig inmatning. |
 | **3. Git & Feature Branching** | Projektet är versionshanterat med Git och uppladdat på GitHub med databasens `.sql`-fil. | **Feature Branching** har använts för minst en funktion (`git checkout -b`, merge till `main`). Tydliga commit-meddelanden som beskriver vad som ändrats. | Konsekvent och professionell användning av branches för varje ny feature (`feature/kategorier`, `feature/status` etc.). Ren Git-historik och tydlig `README.md` med installationsanvisningar. |
+| **4. Struktur & Kodkvalitet** | Grundläggande läsbar kod med fungerande struktur. | Koden är strukturerad och prydlig med god separation mellan logik och presentation (t.ex. uppdelad i funktioner eller separata filer). | Koden är ren, välstrukturerad och på ett rimligt sätt uppdelad enligt **MVC** (Model, View, Controller) där databasfrågor, presentationsvyer och logik hålls åtskilda (frivilligt om man använder ren PHP eller ett ramverk som t.ex. Flight). |
 
 ## Tips
 -   **Join:** `SELECT tasks.title, categories.name FROM tasks JOIN categories ON tasks.category_id = categories.id`
 -   **Sortering:** `SELECT * FROM tasks ORDER BY created_at DESC`
+-   **MVC-arkitektur:** Se [PHP: The Right Way — Interagera med databaser](https://phptherightway.com/#databases_interacting_title) för inspiration om hur du strukturerar Model, View och Controller i ren PHP. (Vill du hellre använda skolans [Flight-boilerplate](https://github.com/hambern/boilerplate-flight) är det också tillåtet).

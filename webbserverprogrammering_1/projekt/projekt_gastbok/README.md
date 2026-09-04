@@ -43,6 +43,7 @@ Läs och titta på följande avsnitt i **[Laracasts: PHP For Beginners](https://
 
 ### 📖 Kompletterande guider:
 - 📖 **[PHP: The Right Way — Databaser & PDO](https://phptherightway.com/#pdo_extension)** — Bästa praxis för PDO och Prepared Statements (`?`).
+- 📖 **[PHP: The Right Way — Interagera med databaser & MVC-struktur](https://phptherightway.com/#databases_interacting_title)** — Exempel och vägledning för hur du strukturerar kod i Model, View och Controller (särskilt relevant för högre betyg).
 - 🎯 **[SQLBolt: Interactive SQL Tutorial](https://sqlbolt.com/)** — Gör lektion 1–5 för att bli bekväm med `SELECT` och `INSERT`.
 - 📖 **[GitHub Docs: Git Basics](https://docs.github.com/en/get-started/getting-started-with-git)** — Hur Git fungerar, repositories, commits och staging area (`git add .`, `git commit`).
 
@@ -178,10 +179,12 @@ git commit -m "Feature: Kopplat gästboken till MySQL-databas"
 | :--- | :--- | :--- | :--- |
 | **1. PHP & Databasintegration (MySQL/PDO)** | Korrekt tabell skapad i MySQL. Databasanslutning via PDO fungerar. Inlägg sparas via `INSERT` och visas på sidan via `SELECT` i datumordning. | Databasanslutningen ligger i en separat återanvändbar fil (`db.php`) med korrekt felhantering (`PDOException`). Datatyper (`VARCHAR`, `TEXT`, `TIMESTAMP`) är genomtänkta. | Robust databasstruktur med primärnyckel och auto-increment. PHP-koden hanterar tomma inlägg, formaterar datum snyggt och har optimal PDO-felrapportering (`ERRMODE_EXCEPTION`). |
 | **2. Webbsäkerhet & Validering** | Grundläggande funktion utan uppenbara krascher. Data från formuläret hanteras via `POST`. | **Prepared Statements** med platshållare (`?` eller namngivna parametrar) används konsekvent för att förhindra SQL-injections. | Fullständig tillämpning av god säkerhetspraxis: Prepared Statements mot SQL-injection och `htmlspecialchars()` mot XSS vid presentation. Servervalidering kontrollerar att fält inte skickas tomma. |
-| **3. Versionshantering, Struktur & Kodkvalitet** | Projektet är versionshanterat med Git (minst en initial commit) och uppladdat till ett repository på GitHub. | Regelbundna commits i Git med beskrivande commit-meddelanden. PHP-koden är prydligt uppdelad med indrag och tydlig struktur mellan formulär, logik och presentation. | Professionellt versionshanterat på GitHub med en tydlig `README.md` och eventuell `.gitignore`. Koden är ren, välkommenterad och följer etablerade PHP-konventioner. |
+| **3. Versionshantering (Git & GitHub)** | Projektet är versionshanterat med Git (minst en initial commit) och uppladdat till ett repository på GitHub. | Regelbundna commits i Git med beskrivande commit-meddelanden som visar arbetsprocessen. | Professionellt versionshanterat på GitHub med en tydlig `README.md`, ändamålsenlig `.gitignore` och väldokumenterade commits genom hela projektet. |
+| **4. Struktur & Kodkvalitet** | Grundläggande läsbar kod med fungerande struktur. | PHP-koden är prydligt strukturerad med god kodstil, konsekventa indrag och tydlig separation mellan formulär, logik och presentation. | Koden är ren, välstrukturerad och på ett rimligt sätt uppdelad enligt **MVC** (Model, View, Controller) där databaslogik, presentationsvyer och flödesstyrning hålls tydligt åtskilda. |
 
 ## Tips & Resurser
 - [Laracasts: PHP For Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)
 - [PHP: The Right Way - Databaser & PDO](https://phptherightway.com/#pdo_extension)
+- [PHP: The Right Way - MVC och Databaser](https://phptherightway.com/#databases_interacting_title) *(Bra exempel och resonemang kring hur kod delas upp i Model, View och Controller)*
 - [PHP.net: PDO Prepared Statements](https://www.php.net/manual/en/pdo.prepared-statements.php)
 - [GitHub Docs: SSH-nycklar](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
