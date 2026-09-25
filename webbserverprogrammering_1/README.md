@@ -17,14 +17,14 @@ I kursen arbetar vi med versionshantering i alla projekt. Som introduktion till 
 - **[Laracasts: Git Me Some Version Control](https://laracasts.com/series/git-me-some-version-control)** – Gratis och extremt pedagogisk videoserie av Jeffrey Way som lär dig grunderna i Git, staging, commits, branches och GitHub från grunden.
 - **[Learn Git Branching](https://learngitbranching.js.org/?locale=sv_SE)** – Interaktivt, visuellt övningsspel i webbläsaren för att träna branches, checkout och merges.
 
-### 3. Databasdesign & Modellering: Laracasts
-- **[Laracasts: MySQL Database Design](https://laracasts.com/series/mysql-database-design)** – Gratis videoserie om hur man designar och modellerar relationsdatabaser, sätter primär-/främmande nycklar och hanterar tabellrelationer (1:1, 1:N, N:M).
+### 3. Databaser & MySQL med PHP: Laracasts
+- **[Laracasts: PHP for Beginners – Databaser & MySQL (Avsnitt 16–22)](https://laracasts.com/series/php-for-beginners-2023-edition/episodes/16)** – Gratis och publik videokurs i världsklass där Jeffrey Way går igenom att skapa en MySQL-databas, koppla upp och ställa frågor med PDO, kapsla in logik i en databasklass samt förstå SQL-injection och grundläggande tabellstrukturer.
 
 ### 4. Digital referenshandbok: PHP: The Right Way
-**[PHP: The Right Way](https://phptherightway.com/)** fungerar som kursens kvalitetsstandard och uppslagsverk för modern god praxis:
-- **Databaser & PDO:** Korrekt databasåtkomst och hantering av prepared statements.
-- **Säkerhet & Validering:** Riktlinjer för att förhindra säkerhetshål som XSS, CSRF och SQL-injections.
-- **Kodstandarder:** PSR-standarder och ren, professionell kodstruktur.
+**[PHP: The Right Way](https://phptherightway.com/)** fungerar som kursens officiella kvalitetsstandard och referensverk för modern god praxis:
+- **[Databaser & PDO](https://phptherightway.com/#databases):** Vår huvudsakliga referens för hur man ansluter säkert med PDO, hanterar transaktioner och använder Prepared Statements.
+- **[Säkerhet & Validering](https://phptherightway.com/#security):** Riktlinjer för att förhindra säkerhetshål som XSS, CSRF och SQL-injections.
+- **[Kodstandarder](https://phptherightway.com/#code_style_guide):** PSR-standarder och ren, professionell kodstruktur.
 - 📱 **PDF / E-bok:** För dig som föredrar att läsa offline, på iPad eller Kindle finns boken att ladda ner gratis via **[PHP: The "Right" Way (Leanpub PDF/EPUB/Kindle)](https://leanpub.com/phptherightway)**.
 
 ### 5. Kompletterande resurser för SQL-träning
