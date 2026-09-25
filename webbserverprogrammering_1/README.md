@@ -2,36 +2,41 @@
 
 Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogrammering 1
 
-## Läromedel & Färdighetsträning: Laracasts & PHP: The Right Way
+## Läromedel & Färdighetsträning: PHP, SQL & Backend
 
-I denna kurs använder vi videokurser från **[Laracasts](https://laracasts.com/)** som digitala läromedel samt **[PHP: The Right Way](https://phptherightway.com/)** som vårt officiella referensverk för modern backend-utveckling med PHP och MySQL.
+I denna kurs skiljer vi tydligt på programmeringsspråket **PHP** (serverlogik och bearbetning), frågespråket **SQL** (databasstruktur och sökningar) samt hur de kopplas samman säkert via **PDO**:
+- **PHP:** Videokurs via **[Laracasts: PHP for Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)**.
+- **SQL & Databaser:** Kärnfulla videolektioner via **[W3Schools SQL Tutorial](https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI)** samt interaktiva övningar på **[SQLBolt](https://sqlbolt.com/)**.
+- **Kopplingen PHP + Databas & Säkerhet:** **[PHP: The Right Way](https://phptherightway.com/)** (kursens officiella kvalitetsstandard för PDO, Prepared Statements och bästa praxis).
 
 > **💡 Frivilliga men varmt rekommenderade videoläromedel:**  
-> Serierna på Laracasts fungerar som kursens genomgångar och digitala läroböcker. De är **frivilliga men varmt rekommenderade** att titta på i din egen takt (t.ex. som förberedelse och hemläxa). I klassrummet ägnar vi lektionstiden åt handledning, problemlösning och praktiskt kodande på de fyra projekten!
+> Videomaterialet fungerar som kursens genomgångar och digitala läroböcker. De är **frivilliga men varmt rekommenderade** att titta på i din egen takt (t.ex. som förberedelse och hemläxa). I klassrummet ägnar vi lektionstiden åt handledning, problemlösning och praktiskt kodande på de fyra projekten!
 
-### 1. Grundläggande PHP: Laracasts (PHP for Beginners)
-- **[Laracasts: PHP for Beginners (30 Days to Learn PHP)](https://laracasts.com/series/php-for-beginners-2023-edition)** – Gratis, modern videokurs i absolut världsklass av Jeffrey Way som lär dig modern PHP från grunden.
+### 1. Grundläggande backend-programmering i PHP: Laracasts
+- **[Laracasts: PHP for Beginners (30 Days to Learn PHP)](https://laracasts.com/series/php-for-beginners-2023-edition)** – Gratis, modern videokurs i absolut världsklass av Jeffrey Way som lär dig modern PHP från grunden (variabler, villkor, loopar, arrayer, funktioner och mallstruktur).
 
-### 2. Versionshantering med Git & GitHub: Laracasts
+### 2. Databaser & SQL-frågespråket: W3Schools & Interaktiva övningar
+För att lära dig strukturera relationsdatabaser och skriva effektiva SQL-frågor använder vi:
+- **[W3Schools: SQL Video Tutorial (YouTube-spellista)](https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI)** – Kursens huvudsakliga videokälla för att lära sig SQL. Består av 11 korta, fokuserade videolektioner (1–3 minuter styck) som rakt på sak går igenom de viktigaste satserna:
+  - Grundläggande syntax, struktur och `SELECT` (hämta data)
+  - Filtrering med `WHERE`, logiska operatorer (`AND`, `NOT`) och `NULL`-värden
+  - Datahantering med `INSERT INTO`, `UPDATE` och `DELETE`
+  - Sortering med `ORDER BY` och unika träffar med `SELECT DISTINCT`
+- **[SQLBolt](https://sqlbolt.com/)** & **[SQL Murder Mystery](https://mystery.knightlab.com/)** – Interaktiva och roliga sätt att öva SQL-frågor och tabellrelationer direkt i webbläsaren.
+
+### 3. Digital referenshandbok: PHP: The Right Way (PDO & Säkerhet)
+**[PHP: The Right Way](https://phptherightway.com/)** fungerar som kursens officiella kvalitetsstandard och referensverk för hur PHP kopplas ihop med databasen och hur backend-kod struktureras professionellt:
+- **[Databaser & PDO](https://phptherightway.com/#databases):** Vår huvudsakliga referens för hur man ansluter säkert med PDO från PHP, hanterar transaktioner och använder Prepared Statements.
+- **[Säkerhet & Validering](https://phptherightway.com/#security):** Riktlinjer för att förhindra säkerhetshål som XSS, CSRF och SQL-injections samt hantera lösenord med `password_hash()`.
+- **[Kodstandarder](https://phptherightway.com/#code_style_guide):** PSR-standarder och ren, professionell kodstruktur.
+- 📱 **PDF / E-bok:** För dig som föredrar att läsa offline, på iPad eller Kindle finns boken att ladda ner gratis via **[PHP: The "Right" Way (Leanpub PDF/EPUB/Kindle)](https://leanpub.com/phptherightway)**.
+
+### 4. Versionshantering med Git & GitHub: Laracasts
 I kursen arbetar vi med versionshantering i alla projekt. Som introduktion till Git och samarbetsflöden använder vi:
 - **[Laracasts: Git Me Some Version Control](https://laracasts.com/series/git-me-some-version-control)** – Gratis och extremt pedagogisk videoserie av Jeffrey Way som lär dig grunderna i Git, staging, commits, branches och GitHub från grunden.
 - **[Learn Git Branching](https://learngitbranching.js.org/?locale=sv_SE)** – Interaktivt, visuellt övningsspel i webbläsaren för att träna branches, checkout och merges.
 
-### 3. Databaser & MySQL med PHP: Laracasts
-- **[Laracasts: PHP for Beginners – Databaser & MySQL (Avsnitt 16–22)](https://laracasts.com/series/php-for-beginners-2023-edition/episodes/16)** – Gratis och publik videokurs i världsklass där Jeffrey Way går igenom att skapa en MySQL-databas, koppla upp och ställa frågor med PDO, kapsla in logik i en databasklass samt förstå SQL-injection och grundläggande tabellstrukturer.
-
-### 4. Digital referenshandbok: PHP: The Right Way
-**[PHP: The Right Way](https://phptherightway.com/)** fungerar som kursens officiella kvalitetsstandard och referensverk för modern god praxis:
-- **[Databaser & PDO](https://phptherightway.com/#databases):** Vår huvudsakliga referens för hur man ansluter säkert med PDO, hanterar transaktioner och använder Prepared Statements.
-- **[Säkerhet & Validering](https://phptherightway.com/#security):** Riktlinjer för att förhindra säkerhetshål som XSS, CSRF och SQL-injections.
-- **[Kodstandarder](https://phptherightway.com/#code_style_guide):** PSR-standarder och ren, professionell kodstruktur.
-- 📱 **PDF / E-bok:** För dig som föredrar att läsa offline, på iPad eller Kindle finns boken att ladda ner gratis via **[PHP: The "Right" Way (Leanpub PDF/EPUB/Kindle)](https://leanpub.com/phptherightway)**.
-
-### 5. Kompletterande resurser för SQL-träning
-- **[SQLBolt](https://sqlbolt.com/)** & **[SQL Murder Mystery](https://mystery.knightlab.com/)** – Interaktiva och roliga sätt att öva SQL-frågor och tabellrelationer.
-- **SQL-videospellista:** <https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI>
-
-### 6. Mikroramverket Flight PHP
+### 5. Mikroramverket Flight PHP
 Flight PHP är ett modernt och lättviktigt PHP-mikroramverk som gör det enkelt att bygga professionella och snabba webbapplikationer med routing och MVC. Vi använder skolans officiella startmall för Flight PHP:
 - [Startmall på GitHub](https://github.com/hambern/boilerplate-flight)
 - [Flight PHP:s officiella dokumentation](https://docs.flightphp.com/)
