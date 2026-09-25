@@ -10,7 +10,7 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogramm
   11 korta videolektioner (1–3 min) som fokuserat går igenom SQL-satser (`SELECT`, `WHERE`, `INSERT`, `UPDATE`, `DELETE`, `ORDER BY`). Träna praktiskt på **[SQLBolt](https://sqlbolt.com/)** och **[SQL Murder Mystery](https://mystery.knightlab.com/)**.
 - 🎬 **Videokomplement (PHP):** **[Laracasts: PHP for Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)**  
   Frivillig men varmt rekommenderad videokurs för dig som lär dig bäst genom att se kod skrivas steg för steg.
-- 🌿 **Versionshantering:** **[Laracasts: Git Me Some Version Control](https://laracasts.com/series/git-me-some-version-control)** & **[Learn Git Branching](https://learngitbranching.js.org/?locale=sv_SE)**.
+- 🌿 **Versionshantering (Git):** Officiella guider via **[Git - Learn](https://git-scm.com/learn)**, videoguide på **[Laracasts: Git Me Some Version Control](https://laracasts.com/series/git-me-some-version-control)** och interaktiv träning på **[Learn Git Branching](https://learngitbranching.js.org/?locale=sv_SE)**.
 - ✈️ **Mikroramverk:** **[Flight PHP](https://docs.flightphp.com/)** & **[Startmall på GitHub](https://github.com/hambern/boilerplate-flight)** för MVC i senare projekt.
 
 ## ⚡ Kodexperiment & Sandlåda: StackBlitz (Kopplat till GitHub)
