@@ -4,16 +4,19 @@ Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogramm
 
 ## Läromedel & Färdighetsträning: PHP, SQL & Backend
 
-I denna kurs skiljer vi tydligt på programmeringsspråket **PHP** (serverlogik och bearbetning), frågespråket **SQL** (databasstruktur och sökningar) samt hur de kopplas samman säkert via **PDO**:
-- **PHP:** Videokurs via **[Laracasts: PHP for Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)**.
-- **SQL & Databaser:** Kärnfulla videolektioner via **[W3Schools SQL Tutorial](https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI)** samt interaktiva övningar på **[SQLBolt](https://sqlbolt.com/)**.
-- **Kopplingen PHP + Databas & Säkerhet:** **[PHP: The Right Way](https://phptherightway.com/)** (kursens officiella kvalitetsstandard för PDO, Prepared Statements och bästa praxis).
+Kursens **huvudsakliga läromedel** för PHP och backend-utveckling är **[PHP: The Right Way](https://phptherightway.com/)** – en officiell kvalitetsstandard och referenshandbok för modern god praxis, PDO och webbsäkerhet.
 
-> **💡 Frivilliga men varmt rekommenderade videoläromedel:**  
-> Videomaterialet fungerar som kursens genomgångar och digitala läroböcker. De är **frivilliga men varmt rekommenderade** att titta på i din egen takt (t.ex. som förberedelse och hemläxa). I klassrummet ägnar vi lektionstiden åt handledning, problemlösning och praktiskt kodande på de fyra projekten!
+Som komplement och färdighetsträning använder vi:
+- 📖 **Huvudsakligt läromedel (PHP):** **[PHP: The Right Way](https://phptherightway.com/)** – Kursens grundbok och kvalitetsstandard för modern PHP, PDO-databasåtkomst, säkerhet och kodstruktur.
+- 🗄️ **Databaser & SQL:** **[W3Schools: SQL Video Tutorial](https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI)** (kärnfulla videolektioner) samt interaktiva övningar på **[SQLBolt](https://sqlbolt.com/)**.
+- 🎬 **Frivilligt videokomplement (PHP):** **[Laracasts: PHP for Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)** – Varmt rekommenderat extra stöd för dig som lär dig bäst genom att titta på pedagogiska videogenomgångar i egen takt.
 
-### 1. Grundläggande backend-programmering i PHP: Laracasts
-- **[Laracasts: PHP for Beginners (30 Days to Learn PHP)](https://laracasts.com/series/php-for-beginners-2023-edition)** – Gratis, modern videokurs i absolut världsklass av Jeffrey Way som lär dig modern PHP från grunden (variabler, villkor, loopar, arrayer, funktioner och mallstruktur).
+### 1. Huvudsakligt läromedel: PHP: The Right Way
+**[PHP: The Right Way](https://phptherightway.com/)** fungerar som kursens officiella läromedel och kvalitetsstandard för professionell backend-kod:
+- **[Databaser & PDO](https://phptherightway.com/#databases):** Vår huvudsakliga referens för hur man ansluter säkert med PDO från PHP, hanterar transaktioner och använder Prepared Statements.
+- **[Säkerhet & Validering](https://phptherightway.com/#security):** Riktlinjer för att förhindra säkerhetshål som XSS, CSRF och SQL-injections samt hantera lösenord med `password_hash()`.
+- **[Kodstandarder](https://phptherightway.com/#code_style_guide):** PSR-standarder och ren, professionell kodstruktur.
+- 📱 **PDF / E-bok:** För dig som föredrar att läsa offline, på iPad eller Kindle finns boken att ladda ner gratis via **[PHP: The "Right" Way (Leanpub PDF/EPUB/Kindle)](https://leanpub.com/phptherightway)**.
 
 ### 2. Databaser & SQL-frågespråket: W3Schools & Interaktiva övningar
 För att lära dig strukturera relationsdatabaser och skriva effektiva SQL-frågor använder vi:
@@ -24,12 +27,10 @@ För att lära dig strukturera relationsdatabaser och skriva effektiva SQL-fråg
   - Sortering med `ORDER BY` och unika träffar med `SELECT DISTINCT`
 - **[SQLBolt](https://sqlbolt.com/)** & **[SQL Murder Mystery](https://mystery.knightlab.com/)** – Interaktiva och roliga sätt att öva SQL-frågor och tabellrelationer direkt i webbläsaren.
 
-### 3. Digital referenshandbok: PHP: The Right Way (PDO & Säkerhet)
-**[PHP: The Right Way](https://phptherightway.com/)** fungerar som kursens officiella kvalitetsstandard och referensverk för hur PHP kopplas ihop med databasen och hur backend-kod struktureras professionellt:
-- **[Databaser & PDO](https://phptherightway.com/#databases):** Vår huvudsakliga referens för hur man ansluter säkert med PDO från PHP, hanterar transaktioner och använder Prepared Statements.
-- **[Säkerhet & Validering](https://phptherightway.com/#security):** Riktlinjer för att förhindra säkerhetshål som XSS, CSRF och SQL-injections samt hantera lösenord med `password_hash()`.
-- **[Kodstandarder](https://phptherightway.com/#code_style_guide):** PSR-standarder och ren, professionell kodstruktur.
-- 📱 **PDF / E-bok:** För dig som föredrar att läsa offline, på iPad eller Kindle finns boken att ladda ner gratis via **[PHP: The "Right" Way (Leanpub PDF/EPUB/Kindle)](https://leanpub.com/phptherightway)**.
+### 3. Frivilligt videokomplement i PHP: Laracasts
+> **💡 Rekommenderat extra stöd:**  
+> För dig som föredrar att lära dig via rörlig bild är Laracasts ett suveränt extra stöd. Serien är **helt frivillig men varmt rekommenderad** att titta på i egen takt (t.ex. som förberedelse och repetition). I klassrummet ägnar vi lektionstiden åt handledning, problemlösning och praktiskt kodande på de fyra projekten!
+- **[Laracasts: PHP for Beginners (30 Days to Learn PHP)](https://laracasts.com/series/php-for-beginners-2023-edition)** – Gratis, modern videokurs i absolut världsklass av Jeffrey Way som visar modern PHP i praktiken (variabler, funktioner, loopar, routing och mallstruktur).
 
 ### 4. Versionshantering med Git & GitHub: Laracasts
 I kursen arbetar vi med versionshantering i alla projekt. Som introduktion till Git och samarbetsflöden använder vi:

@@ -1,6 +1,6 @@
 # 📚 Datakurser — Örnsköldsviks Gymnasium
 
-Välkommen till samlingsplatsen för kursmaterial, övningsuppgifter och projektinstruktioner inom webbutveckling och programmering på **Örnsköldsviks Gymnasium**. Som digitala läromedel och referensverktyg använder vi **[The Odin Project](https://www.theodinproject.com/)** (Frontend), **[Laracasts](https://laracasts.com/series/php-for-beginners-2023-edition)** och **[PHP: The Right Way](https://phptherightway.com/)** (Backend).
+Välkommen till samlingsplatsen för kursmaterial, övningsuppgifter och projektinstruktioner inom webbutveckling och programmering på **Örnsköldsviks Gymnasium**. Som digitala läromedel och referensverktyg använder vi **[The Odin Project](https://www.theodinproject.com/)** (Frontend) och **[PHP: The Right Way](https://phptherightway.com/)** (Backend), med **[Laracasts](https://laracasts.com/series/php-for-beginners-2023-edition)** och **[W3Schools](https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI)** som videokomplement.
 
 ## 🧭 Tillgängliga kurser
 
@@ -25,7 +25,7 @@ Kurserna bygger på varandra i en naturlig och professionell utvecklingstrappa:
 - **Utvecklingsserver:** [`student.oedu.se`](https://student.oedu.se) (SSH-port: `3690`)
 - **Databashantering:** [`admin.student.oedu.se`](https://admin.student.oedu.se) (phpMyAdmin)
 - **Versionshantering:** [GitHub](https://github.com)
-- **Digitala läromedel & kurser:** [The Odin Project](https://www.theodinproject.com/) (Webbutveckling 1) & [Laracasts](https://laracasts.com/series/php-for-beginners-2023-edition) (Webbserverprogrammering 1)
-- **Kvalitetsstandard & god praxis:** [PHP: The Right Way](https://phptherightway.com/)
+- **Digitala läromedel:** [The Odin Project](https://www.theodinproject.com/) (Webbutveckling 1) & [PHP: The Right Way](https://phptherightway.com/) (Webbserverprogrammering 1)
+- **Videokomplement & färdighetsträning:** [Laracasts](https://laracasts.com/series/php-for-beginners-2023-edition) (PHP) & [W3Schools SQL Tutorial](https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI) (SQL)
 - **Webbläsar-sandlåda & snabbstart:** [StackBlitz](https://stackblitz.com/) (Kopplat till GitHub)
 - **Startmall för MVC/PHP:** [boilerplate-flight](https://github.com/hambern/boilerplate-flight)
