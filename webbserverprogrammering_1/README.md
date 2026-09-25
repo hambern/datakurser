@@ -2,45 +2,16 @@
 
 Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogrammering 1
 
-## Läromedel & Färdighetsträning: PHP, SQL & Backend
+## Läromedel & Resurser
 
-Kursens **huvudsakliga läromedel** för PHP och backend-utveckling är **[PHP: The Right Way](https://phptherightway.com/)** – en officiell kvalitetsstandard och referenshandbok för modern god praxis, PDO och webbsäkerhet.
-
-Som komplement och färdighetsträning använder vi:
-- 📖 **Huvudsakligt läromedel (PHP):** **[PHP: The Right Way](https://phptherightway.com/)** – Kursens grundbok och kvalitetsstandard för modern PHP, PDO-databasåtkomst, säkerhet och kodstruktur.
-- 🗄️ **Databaser & SQL:** **[W3Schools: SQL Video Tutorial](https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI)** (kärnfulla videolektioner) samt interaktiva övningar på **[SQLBolt](https://sqlbolt.com/)**.
-- 🎬 **Frivilligt videokomplement (PHP):** **[Laracasts: PHP for Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)** – Varmt rekommenderat extra stöd för dig som lär dig bäst genom att titta på pedagogiska videogenomgångar i egen takt.
-
-### 1. Huvudsakligt läromedel: PHP: The Right Way
-**[PHP: The Right Way](https://phptherightway.com/)** fungerar som kursens officiella läromedel och kvalitetsstandard för professionell backend-kod:
-- **[Databaser & PDO](https://phptherightway.com/#databases):** Vår huvudsakliga referens för hur man ansluter säkert med PDO från PHP, hanterar transaktioner och använder Prepared Statements.
-- **[Säkerhet & Validering](https://phptherightway.com/#security):** Riktlinjer för att förhindra säkerhetshål som XSS, CSRF och SQL-injections samt hantera lösenord med `password_hash()`.
-- **[Kodstandarder](https://phptherightway.com/#code_style_guide):** PSR-standarder och ren, professionell kodstruktur.
-- 📱 **PDF / E-bok:** För dig som föredrar att läsa offline, på iPad eller Kindle finns boken att ladda ner gratis via **[PHP: The "Right" Way (Leanpub PDF/EPUB/Kindle)](https://leanpub.com/phptherightway)**.
-
-### 2. Databaser & SQL-frågespråket: W3Schools & Interaktiva övningar
-För att lära dig strukturera relationsdatabaser och skriva effektiva SQL-frågor använder vi:
-- **[W3Schools: SQL Video Tutorial (YouTube-spellista)](https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI)** – Kursens huvudsakliga videokälla för att lära sig SQL. Består av 11 korta, fokuserade videolektioner (1–3 minuter styck) som rakt på sak går igenom de viktigaste satserna:
-  - Grundläggande syntax, struktur och `SELECT` (hämta data)
-  - Filtrering med `WHERE`, logiska operatorer (`AND`, `NOT`) och `NULL`-värden
-  - Datahantering med `INSERT INTO`, `UPDATE` och `DELETE`
-  - Sortering med `ORDER BY` och unika träffar med `SELECT DISTINCT`
-- **[SQLBolt](https://sqlbolt.com/)** & **[SQL Murder Mystery](https://mystery.knightlab.com/)** – Interaktiva och roliga sätt att öva SQL-frågor och tabellrelationer direkt i webbläsaren.
-
-### 3. Frivilligt videokomplement i PHP: Laracasts
-> **💡 Rekommenderat extra stöd:**  
-> För dig som föredrar att lära dig via rörlig bild är Laracasts ett suveränt extra stöd. Serien är **helt frivillig men varmt rekommenderad** att titta på i egen takt (t.ex. som förberedelse och repetition). I klassrummet ägnar vi lektionstiden åt handledning, problemlösning och praktiskt kodande på de fyra projekten!
-- **[Laracasts: PHP for Beginners (30 Days to Learn PHP)](https://laracasts.com/series/php-for-beginners-2023-edition)** – Gratis, modern videokurs i absolut världsklass av Jeffrey Way som visar modern PHP i praktiken (variabler, funktioner, loopar, routing och mallstruktur).
-
-### 4. Versionshantering med Git & GitHub: Laracasts
-I kursen arbetar vi med versionshantering i alla projekt. Som introduktion till Git och samarbetsflöden använder vi:
-- **[Laracasts: Git Me Some Version Control](https://laracasts.com/series/git-me-some-version-control)** – Gratis och extremt pedagogisk videoserie av Jeffrey Way som lär dig grunderna i Git, staging, commits, branches och GitHub från grunden.
-- **[Learn Git Branching](https://learngitbranching.js.org/?locale=sv_SE)** – Interaktivt, visuellt övningsspel i webbläsaren för att träna branches, checkout och merges.
-
-### 5. Mikroramverket Flight PHP
-Flight PHP är ett modernt och lättviktigt PHP-mikroramverk som gör det enkelt att bygga professionella och snabba webbapplikationer med routing och MVC. Vi använder skolans officiella startmall för Flight PHP:
-- [Startmall på GitHub](https://github.com/hambern/boilerplate-flight)
-- [Flight PHP:s officiella dokumentation](https://docs.flightphp.com/)
+- 📖 **Huvudsakligt läromedel (PHP & Backend):** **[PHP: The Right Way](https://phptherightway.com/)**  
+  Kursens officiella referenshandbok för god praxis, [databaser & PDO](https://phptherightway.com/#databases), [säkerhet](https://phptherightway.com/#security) och [kodstandarder](https://phptherightway.com/#code_style_guide). Finns även som gratis [e-bok](https://leanpub.com/phptherightway).
+- 🗄️ **Databaser & SQL:** **[W3Schools: SQL Video Tutorial](https://www.youtube.com/playlist?list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI)**  
+  11 korta videolektioner (1–3 min) som fokuserat går igenom SQL-satser (`SELECT`, `WHERE`, `INSERT`, `UPDATE`, `DELETE`, `ORDER BY`). Träna praktiskt på **[SQLBolt](https://sqlbolt.com/)** och **[SQL Murder Mystery](https://mystery.knightlab.com/)**.
+- 🎬 **Videokomplement (PHP):** **[Laracasts: PHP for Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)**  
+  Frivillig men varmt rekommenderad videokurs för dig som lär dig bäst genom att se kod skrivas steg för steg.
+- 🌿 **Versionshantering:** **[Laracasts: Git Me Some Version Control](https://laracasts.com/series/git-me-some-version-control)** & **[Learn Git Branching](https://learngitbranching.js.org/?locale=sv_SE)**.
+- ✈️ **Mikroramverk:** **[Flight PHP](https://docs.flightphp.com/)** & **[Startmall på GitHub](https://github.com/hambern/boilerplate-flight)** för MVC i senare projekt.
 
 ## ⚡ Kodexperiment & Sandlåda: StackBlitz (Kopplat till GitHub)
 
