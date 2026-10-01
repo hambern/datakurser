@@ -51,129 +51,91 @@ Inga råfiler direkt från kameran får laddas upp!
 
 ---
 
-## 💡 Kodexempel & Tips
+## 💡 Kod-ledtrådar & Byggblock
 
-### 1. Grundläggande CSS & Nollställning (`style.css`)
+### 1. Semantisk HTML-struktur (Skiss)
+Tänk på att dela upp din HTML-kod med semantiska taggar:
+```html
+<header>  <!-- Sidhuvud med logotyp och nav-meny -->
+<main>    <!-- Huvudinnehåll -->
+  <section class="hero">     <!-- Välkomstsektion -->
+  <section class="galleri">  <!-- Kort eller bildgalleri -->
+</main>
+<footer>  <!-- Sidfot med copyright/källor -->
+```
+
+### 2. Nollställning och responsiva medier (CSS-grund)
 ```css
-/* Nollställ marginaler och aktivera korrekt box-model */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: system-ui, -apple-system, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f9;
-}
-
-/* Gör bilder och videor responsiva */
+/* Gör att bilder och videor inte växer utanför sin behållare */
 img, video {
   max-width: 100%;
   height: auto;
-  display: block;
 }
 ```
 
-### 2. Navigeringsfält med Flexbox
-```html
-<header class="navbar">
-  <h1 class="logo">Min Intressesida</h1>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#om">Om</a></li>
-      <li><a href="#galleri">Galleri</a></li>
-      <li><a href="#video">Video</a></li>
-    </ul>
-  </nav>
-</header>
-```
+### 3. Flexbox-mönster (Användbara egenskaper)
 
+**A. Rad med innehåll i var sin ände (t.ex. i en meny):**
 ```css
-.navbar {
+.flex-header {
   display: flex;
-  justify-content: space-between; /* Skjuter ut logotyp till vänster och meny till höger */
-  align-items: center;            /* Centrerar vertikalt */
-  background-color: #1a1a2e;
-  color: #fff;
-  padding: 1rem 2rem;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;                    /* Luft mellan menylänkarna */
-  list-style: none;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
 }
 ```
 
-### 3. Responsivt Kortgalleri med Flexbox
-```html
-<section class="card-container">
-  <article class="card">
-    <img src="images/foto1.webp" alt="Beskrivning av bilden" width="600" height="400">
-    <h3>Rubrik</h3>
-    <p>Kort beskrivande text om innehållet.</p>
-  </article>
-  <!-- Fler kort... -->
-</section>
-```
-
+**B. Galleri eller kort som bryter rad automatiskt (`flex-wrap`):**
 ```css
-/* Container för alla kort */
-.card-container {
+.flex-galleri {
   display: flex;
-  flex-wrap: wrap;       /* Tillåter korten att bryta till ny rad */
-  gap: 20px;             /* Avstånd mellan korten */
-  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 20px; /* Luft mellan elementen */
+}
+```
+
+**C. Responsiv riktning (Media Query):**
+```css
+/* Mobil-först: Stapla vertikalt */
+.min-sektion {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Kort på mobil (tar 100% av bredden) */
-.card {
-  flex: 1 1 100%;
-  background: #fff;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* För större skärmar (t.ex. surfplatta och dator) */
+/* Skärmar bredare än 768px: Placera i bredd */
 @media (min-width: 768px) {
-  .card {
-    /* 3 kolumner: 1/3 bredd minus gap */
-    flex: 1 1 calc(33.333% - 20px);
-    min-width: 250px;
+  .min-sektion {
+    flex-direction: row;
   }
 }
 ```
 
-### 4. Inbäddad Video (HTML)
+### 4. HTML-syntax för media
 ```html
-<section class="video-section">
-  <h2>Se videoklippet</h2>
-  <video controls poster="images/poster.webp" width="1280" height="720">
-    <source src="media/video.mp4" type="video/mp4">
-    Din webbläsare stöder inte videotaggen.
-  </video>
-</section>
+<!-- Bild med alt-text och dimensioner för att undvika layout shift -->
+<img src="bilder/foto.webp" alt="Kort beskrivning" width="800" height="600">
+
+<!-- Inbäddad video med kontrollknappar -->
+<video controls poster="bilder/startbild.webp" width="1280" height="720">
+  <source src="media/video.mp4" type="video/mp4">
+</video>
 ```
 
 ---
 
-## 🛠️ Praktiska tips för elever
+## 🛠️ Praktiska tips
 
-1. **Använd `gap` istället för `margin`:**
-   När du har `display: flex` räcker det att sätta `gap: 1.5rem;` på föräldern för att få jämnt avstånd mellan alla barn. Du slipper mixtra med marginaler på enskilda element!
-2. **Gör kort responsiva med `flex-wrap`:**
-   Sätt `display: flex; flex-wrap: wrap;` på container-elementet och `flex: 1 1 100%;` på korten. I din `@media (min-width: 768px)` ändrar du kortens `flex` till t.ex. `flex: 1 1 calc(33.333% - 20px);`.
-3. **Undvik att sidan "hoppar" (Layout Shift):**
-   Ange alltid ursprunglig `width` och `height` direkt i HTML-koden på bilderna (t.ex. `width="600" height="400"`). Kombinerat med `max-width: 100%; height: auto;` i CSS kommer bilderna att skalas snyggt utan att sidan hoppar runt medan de laddas.
+1. **Använd `gap` istället för `margin` på barn:**
+   Med `display: flex` sätter du `gap: 1.5rem;` direkt på föräldern för att få jämnt avstånd mellan barn-elementen.
+2. **Gör kort elastiska med `flex`:**
+   Testa kombinera `flex: 1;` eller `flex-basis` tillsammans med `flex-wrap: wrap;` för att skapa ett galleri som anpassar sig efter skärmens bredd.
+3. **Ange alltid `width` och `height` på `<img>`:**
+   Det hjälper webbläsaren att reservera plats för bilden medan den laddas, vilket förhindrar att sidan hoppar runt.
 
 ---
 
