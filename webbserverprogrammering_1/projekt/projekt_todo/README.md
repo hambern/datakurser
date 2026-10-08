@@ -62,9 +62,23 @@ I det här projektet möts din webbläsare (frontend) och servern (backend). Det
 
 3. ⚡ **AJAX / `fetch()` – Den smidiga genvägen i bakgrunden (Bonus/Kul idé!)**
    - Vad händer om du bockar i en checkbox för *"Klar"* och inte vill att hela sidan ska ladda om och blinka till?
-   - Då kan lite JavaScript i webbläsaren skicka en signal i smyg till servern med `fetch('complete.php', ...)` och bocka av uppgiften direkt på skärmen!
+   - Då kan lite JavaScript i webbläsaren skicka en signal i smyg till servern med `fetch()` och bocka av uppgiften direkt på skärmen!
+   ```javascript
+   // JavaScript i webbläsaren (skickar ID och lyssnar på svaret):
+   fetch('complete.php', {
+       method: 'POST',
+       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+       body: 'id=' + taskId
+   })
+   .then(response => response.json())
+   .then(data => {
+       if (data.success) {
+           console.log('Klarmarkerad!');
+       }
+   });
+   ```
    ```php
-   // complete.php tar emot ID, uppdaterar och svarar med JSON:
+   // complete.php tar emot ID, uppdaterar databasen och svarar med JSON:
    $taskId = $_POST['id'];
    // UPDATE tasks SET completed_at = NOW() WHERE id = ?
    header('Content-Type: application/json');
