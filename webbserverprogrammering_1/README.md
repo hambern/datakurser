@@ -1,6 +1,10 @@
 # Webbserverprogrammering 1
 
-Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogrammering 1
+Denna mapp innehåller uppgifter och genomgångar till kursen Webbserverprogrammering 1.
+
+> [!IMPORTANT]
+> **Fokus i denna kurs är Backend & PHP:**  
+> Till skillnad från *Webbutveckling 1* (där fokus är ren frontend med *The Odin Project*) hamnar frontend och avancerad CSS i bakgrunden här. I denna kurs ligger allt fokus på serversidan: **PHP**, relationsdatabaser (**MySQL/SQL**), säkerhet (Prepared Statements, validering) och strukturerad serverkod. Enkel, funktionell HTML räcker för gränssnitten.
 
 ## Läromedel & Resurser
 
