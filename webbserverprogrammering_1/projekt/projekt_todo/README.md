@@ -34,6 +34,47 @@ Läs och titta på följande avsnitt i **[Laracasts: PHP For Beginners](https://
 
 ---
 
+## 💬 Hur pratar Frontend och Backend med varandra?
+
+I det här projektet möts din webbläsare (frontend) och servern (backend). Det finns framför allt tre sätt de pratar ihop sig på:
+
+1. 🔍 **GET – "Hämta och visa!"**
+   - Används när du bara vill be servern om data utan att ändra något.
+   - **I ToDo-appen:** När du klickar på en länk för att filtrera (`index.php?filter=Skola`) eller sortera (`index.php?sort=date`).
+   ```php
+   // Ta emot med $_GET:
+   $filter = $_GET['filter'] ?? 'Alla';
+   // Använd i din SQL: SELECT * FROM tasks WHERE category = ?
+   ```
+
+2. 📬 **POST – "Här är data, spara detta!"**
+   - Används när du skickar formulärdata som förändrar databasen.
+   - **I ToDo-appen:** När du fyller i formuläret och klickar *"Skapa uppgift"* (`<form method="POST">`). Hela sidan laddas om och PHP sparar uppgiften.
+   ```php
+   // Ta emot med $_POST och skicka vidare:
+   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+       $title = $_POST['title'];
+       // Spara i databasen...
+       header('Location: index.php'); // Ladda om listan rent och snyggt!
+       exit;
+   }
+   ```
+
+3. ⚡ **AJAX / `fetch()` – Den smidiga genvägen i bakgrunden (Bonus/Kul idé!)**
+   - Vad händer om du bockar i en checkbox för *"Klar"* och inte vill att hela sidan ska ladda om och blinka till?
+   - Då kan lite JavaScript i webbläsaren skicka en signal i smyg till servern med `fetch('complete.php', ...)` och bocka av uppgiften direkt på skärmen!
+   ```php
+   // complete.php tar emot ID, uppdaterar och svarar med JSON:
+   $taskId = $_POST['id'];
+   // UPDATE tasks SET completed_at = NOW() WHERE id = ?
+   header('Content-Type: application/json');
+   echo json_encode(['success' => true]);
+   ```
+
+> 💡 **Tips för projektet:** Börja enkelt med vanliga **GET-** och **POST-formulär**! Att använda `fetch()` för att bocka av uppgifter är helt frivilligt men ett kul sätt att testa hur moderna webbappar fungerar.
+
+---
+
 ## Arbetsgång (Feature Branching)
 I detta projekt ska du inte jobba direkt i `main`-branchen. För varje steg nedan ska du:
 1.  Skapa en ny branch: `git checkout -b feature/kategorier`
