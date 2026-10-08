@@ -2,6 +2,10 @@
 
 Denna mapp innehåller uppgifter och genomgångar till kursen **Webbutveckling 1** (`WEUWEB01`).
 
+> [!IMPORTANT]
+> **Fokus i denna kurs är Ren Frontend:**  
+> I denna kurs bygger vi för webbläsaren! Allt fokus ligger på klientsidan: semantisk struktur med **HTML5**, modern layout och responsivitet med **CSS (Flexbox)** samt interaktivitet via **JavaScript** och DOM-manipulation. Backend och serverprogrammering hör inte hemma här (det hanteras separat i *Webbserverprogrammering 1*). Vårt primära läromedel är **The Odin Project**.
+
 ## Läromedel & Färdighetsträning: The Odin Project
 
 I denna kurs använder vi **[The Odin Project (Foundations Course)](https://www.theodinproject.com/paths/foundations/courses/foundations)** som vårt huvudsakliga interaktiva läromedel och digitala lärobok.
